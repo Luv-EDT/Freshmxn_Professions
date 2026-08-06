@@ -1,0 +1,1786 @@
+{
+  "professional_sector": "Software & Computing",
+  "professional_sector_id": 1,
+  "version": "14.0",
+  "profession_count": 14,
+  "sector_verification_note": "Sector 1 contains ZERO Tier A professions — nothing in computing is statutorily licensed in India. Almost every record is Tier C judgment. The only verified facts here are the JEE/class-12 subject gates, from data/verified_facts.json.",
+  "professions": [
+    {
+      "id": "swc-software-developer",
+      "profession": "Software Developer",
+      "one_liner": "Writes the code behind apps and websites people use every day.",
+      "job_roles": [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full-Stack Developer",
+        "Android Developer",
+        "iOS Developer",
+        "Software Engineer",
+        "API Developer",
+        "Smart Contract Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "RASCI",
+        "TSSC",
+        "HSSC",
+        "MESC",
+        "LSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Maths helps but BCA and B.Sc IT accept most streams."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Tech CSE, BCA or B.Sc Computer Science (3-4 years)"
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Working projects on GitHub — this is what actually gets you hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main (B.Tech)",
+          "CUET (BCA/B.Sc)"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply. No exam needed for most BCA/B.Sc seats."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.5-8.0",
+        "mid_career_lpa": "8.0-20.0",
+        "mid_career_midpoint": 14.0,
+        "payback_years": 1.04,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 8,
+          "skill_physical": 0,
+          "skill_digital": 45,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 53,
+        "band": "medium",
+        "reason": "Syntax and boilerplate are skill, and that is what AI now does. What remains is deciding what to build, how it should behave at the edges, and why the last approach failed. Junior implementation work shrinks; deciding what is worth implementing does not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Smart Contract Engineer is retained here after Blockchain was dropped as a standalone profession. The Indian Web3 market is too thin to support a separate career, but the role exists inside general development."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "swc-website-store-builder",
+      "profession": "Website & Online Store Builder",
+      "one_liner": "Builds and looks after websites and online shops for small businesses, usually freelance.",
+      "job_roles": [
+        "WordPress Developer",
+        "Shopify Developer",
+        "Webflow Developer",
+        "Website Maintenance Freelancer",
+        "E-commerce Store Setup Specialist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "RASCI",
+        "MESC",
+        "THSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "self_study",
+          "requirement": "Learn WordPress or Shopify — free, online, no gatekeeper"
+        },
+        {
+          "step": 2,
+          "stage": "portfolio",
+          "requirement": "Build 3-5 real sites, even unpaid, for local businesses"
+        },
+        {
+          "step": 3,
+          "stage": "first_clients",
+          "requirement": "Freelance platforms or local word of mouth"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "No entrance exam. This is the lowest-barrier entry point in the sector."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.5-4.0",
+        "mid_career_lpa": "3.0-6.0",
+        "mid_career_midpoint": 4.5,
+        "payback_years": 0.11,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 3,
+          "knowledge_retrievable": 7,
+          "skill_physical": 0,
+          "skill_digital": 65,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 72,
+        "band": "high",
+        "reason": "Almost pure execution skill on digital output, which is the most exposed combination in the sector. What survives is the client relationship — knowing a local business well enough to run their store. Building the pages themselves is already largely automated. Raised clarity 20->25. The durable part of this work is understanding what a local business actually needs versus what they asked for — that is 'for whom' clarity. Page-building itself is fully exposed."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Highest AI exposure in the sector AND the lowest salary band. Is this still a responsible recommendation, or only viable as a stepping stone into Software Developer? Needs a human call on whether it ships as a destination career."
+      }
+    },
+    {
+      "id": "swc-game-developer",
+      "profession": "Game & Interactive Media Developer",
+      "one_liner": "Builds video games and 3D interactive worlds — the code, the rules and the environments.",
+      "job_roles": [
+        "Game Programmer",
+        "Unity Developer",
+        "Unreal Engine Developer",
+        "Game Designer",
+        "Level Designer",
+        "Mobile Game Developer",
+        "AR Developer",
+        "VR Developer",
+        "Simulation Developer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Game Designer",
+              "Level Designer"
+            ],
+            "higher": [
+              "openness",
+              "existential",
+              "verbal"
+            ],
+            "lower": [
+              "logical",
+              "attention_span"
+            ],
+            "why": "Designers decide what is fun and why a world feels alive — imaginative, meaning-driven work. Programmers on the same team live in engine internals and precise state. Same profession, opposite temperaments."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES",
+        "AASSC",
+        "HSSC",
+        "CSDCI"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Game development diploma, or self-taught Unity/Unreal"
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "2-3 finished playable games or XR demos. Studios hire on this, not marks."
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "Portfolio-based hiring. Private game/animation institutes admit without an entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-12.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.44,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 0,
+          "skill_digital": 45,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "Asset production and boilerplate gameplay code are exposed. Judging what is actually fun, and why a level feels wrong, is clarity that does not transfer to a model."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "AR/VR was merged in here — identical Unity/Unreal skillset and same studios, since India's standalone XR market is small. Confirm the merge, and confirm the salary band covers both."
+      }
+    },
+    {
+      "id": "swc-ai-ml-engineer",
+      "profession": "Artificial Intelligence & Machine Learning Engineer",
+      "one_liner": "Teaches computers to recognise patterns, predict things and answer in language.",
+      "job_roles": [
+        "Machine Learning Engineer",
+        "Data Scientist",
+        "Natural Language Processing Engineer",
+        "Computer Vision Engineer",
+        "MLOps Engineer",
+        "Applied AI Engineer",
+        "LLM Application Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "HSSC",
+        "RASCI",
+        "ASCI",
+        "LSC",
+        "TSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, but Maths makes this far easier"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Tech, BCA, B.Sc CS/Statistics/Maths (3-4 years)"
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "Strong linear algebra and probability, plus real ML projects"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main (B.Tech)",
+          "CUET (BCA/B.Sc)"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "6.0-14.0",
+        "mid_career_lpa": "15.0-30.0",
+        "mid_career_midpoint": 22.5,
+        "payback_years": 0.6,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 18,
+          "knowledge_retrievable": 7,
+          "skill_physical": 0,
+          "skill_digital": 35,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 42,
+        "band": "medium",
+        "reason": "Model training is increasingly automated. Framing the problem, judging whether the data answers the question, and deciding when the model is good enough to ship are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The early band reflects a hiring market that has moved fast in both directions. Treat the ceiling as cycle-dependent rather than structural."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Widest salary band in the file (6-14 LPA) and the most likely to be wrong. The undergrad tier is also contestable given how much hiring is portfolio-based."
+      }
+    },
+    {
+      "id": "swc-data-analyst",
+      "profession": "Data Analyst",
+      "one_liner": "Turns messy company data into charts and answers that help people decide.",
+      "job_roles": [
+        "Business Data Analyst",
+        "Business Intelligence Developer",
+        "Product Analyst",
+        "Reporting Analyst",
+        "Power BI / Tableau Developer",
+        "Marketing Analytics Executive"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "RASCI",
+        "LSC",
+        "HSSC",
+        "TSSC",
+        "MEPSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Analytics certification — Excel, SQL, Power BI or Tableau"
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "3-4 dashboards built on real public datasets"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "No entrance exam. Certification and portfolio route."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-12.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.11,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 8,
+          "knowledge_retrievable": 12,
+          "skill_physical": 0,
+          "skill_digital": 55,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 67,
+        "band": "high",
+        "reason": "Reporting and dashboard-building is skill on digital output — squarely in the blast radius. Product Analyst survives because it depends on knowing which question is worth asking and arguing for a decision."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "Tagged certificate because the certification-plus-portfolio route genuinely works in India. Many employers still screen on a degree, so the route is real but not frictionless."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "High AI exposure AND a contested tier downgrade (undergrad -> certificate). This is a very common recommendation for commerce students, so getting it wrong is costly."
+      }
+    },
+    {
+      "id": "swc-data-engineer",
+      "profession": "Data Engineer",
+      "one_liner": "Builds the pipes and storage that carry a company's data safely from place to place.",
+      "job_roles": [
+        "Data Engineer",
+        "Database Administrator",
+        "ETL Developer",
+        "Data Warehouse Engineer",
+        "Big Data Engineer",
+        "Analytics Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "TSSC",
+        "RASCI",
+        "LSC",
+        "PSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Tech, BCA or B.Sc Computer Science"
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "SQL, Python, and a cloud data stack"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main (B.Tech)",
+          "CUET (BCA/B.Sc)"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "5.0-10.0",
+        "mid_career_lpa": "12.0-22.0",
+        "mid_career_midpoint": 17.0,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 8,
+          "skill_physical": 0,
+          "skill_digital": 45,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 53,
+        "band": "medium",
+        "reason": "Pipeline boilerplate is generated well by AI. Judging correctness, cost and what to do when data is wrong at 3am is clarity with real consequences."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "swc-cybersecurity-specialist",
+      "profession": "Cybersecurity Specialist",
+      "one_liner": "Defends computer systems from attack, and tests them by trying to break in first.",
+      "job_roles": [
+        "Security Operations Centre (SOC) Analyst",
+        "Penetration Tester",
+        "Application Security Engineer",
+        "Cloud Security Engineer",
+        "Digital Forensics Analyst",
+        "Governance, Risk & Compliance (GRC) Analyst",
+        "Incident Response Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Penetration Tester"
+            ],
+            "higher": [
+              "openness",
+              "reasoning",
+              "confidence"
+            ],
+            "lower": [
+              "agreeableness",
+              "dogmatism"
+            ],
+            "why": "Breaking in rewards lateral, rule-bending curiosity. The GRC and compliance side of the same profession rewards the opposite: procedure, documentation and firm adherence to a standard."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "TSSC",
+        "PSSC",
+        "HYSSC",
+        "SMSSC",
+        "HSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "certification",
+          "requirement": "CompTIA Security+, CEH, or OSCP for the offensive side"
+        },
+        {
+          "step": 3,
+          "stage": "practice",
+          "requirement": "Capture-the-flag competitions and home lab work"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "Certification-driven, not exam-driven."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "9.0-18.0",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.17,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 35,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "L1 alert triage is skill and heavily exposed. Adversarial judgement — attackers adapt, so the right response is never a fixed procedure — is clarity, as is being the accountable human during a breach."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Tier downgraded undergrad -> certificate on judgment alone; consequential if wrong. Separately, the offensive-security roles need a human to check how they are framed for school-age users."
+      }
+    },
+    {
+      "id": "swc-cloud-devops-engineer",
+      "profession": "Cloud & DevOps Engineer",
+      "one_liner": "Keeps apps running on the internet — fast, always on, and cheap to run.",
+      "job_roles": [
+        "Cloud Engineer (AWS / Azure / GCP)",
+        "DevOps Engineer",
+        "Site Reliability Engineer",
+        "Platform Engineer",
+        "Systems Administrator",
+        "Kubernetes Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "TSSC",
+        "RASCI",
+        "MESC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "certification",
+          "requirement": "AWS, Azure or Google Cloud associate certification"
+        },
+        {
+          "step": 3,
+          "stage": "practice",
+          "requirement": "Deploy and run your own projects end to end"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "Vendor certification route, no entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "4.0-9.0",
+        "mid_career_lpa": "10.0-20.0",
+        "mid_career_midpoint": 15.0,
+        "payback_years": 0.15,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 5,
+          "skill_digital": 40,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "Config and scripting is exposed. Deciding architecture trade-offs, and being answerable when production is down, is not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "swc-software-tester",
+      "profession": "Software Tester",
+      "one_liner": "Hunts for bugs and broken behaviour before customers ever see them.",
+      "job_roles": [
+        "Manual QA Tester",
+        "Automation Test Engineer",
+        "Software Development Engineer in Test (SDET)",
+        "Performance Test Engineer",
+        "Mobile App Tester",
+        "Accessibility Tester"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Manual QA Tester",
+              "Accessibility Tester"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "logical",
+              "openness"
+            ],
+            "why": "Manual QA is sustained, patient, detail-holding work. SDET and performance testing are programming jobs and want the abstraction and problem-decomposition the manual side does not."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "TSSC",
+        "HSSC",
+        "SCPWD"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Software testing certification (ISTQB is the common one)"
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "Move to automation early — Selenium or Playwright"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "Certification route, no entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "3.0-5.5",
+        "mid_career_lpa": "5.0-10.0",
+        "mid_career_midpoint": 7.5,
+        "payback_years": 0.12,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 5,
+          "knowledge_retrievable": 15,
+          "skill_physical": 0,
+          "skill_digital": 60,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 75,
+        "band": "high",
+        "reason": "Manual QA is the highest skill-to-clarity ratio in the sector: repetitive execution on digital output. SDET and performance testing carry more clarity and are materially safer. Anyone entering should target automation from day one."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "ai_exposure",
+          "statement": "The high band is driven by MANUAL QA. SDET and performance testing sit in a materially different position. Anyone entering should target automation from day one rather than manual testing."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "High AI exposure on a profession that is still one of the largest entry-level employers in Indian IT. Warning students away from a job market that currently hires at volume is a serious call — needs a human decision on how strongly to flag it."
+      }
+    },
+    {
+      "id": "swc-it-support-network-technician",
+      "profession": "IT Support & Network Technician",
+      "one_liner": "Fixes the computers, wifi and networks an office runs on.",
+      "job_roles": [
+        "IT Helpdesk Technician",
+        "Desktop Support Engineer",
+        "Network Engineer",
+        "Network Operations Centre (NOC) Engineer",
+        "Field Service Technician (IT)",
+        "Hardware & Networking Technician"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "IT Helpdesk Technician",
+              "Desktop Support Engineer"
+            ],
+            "higher": [
+              "extraversion",
+              "emotional_intelligence",
+              "agreeableness"
+            ],
+            "lower": [
+              "logical",
+              "attention_span"
+            ],
+            "why": "Helpdesk is a people job wearing a technical coat — the daily skill is calming someone and hearing what they actually mean. Network and NOC engineering on the same ladder is solitary and systems-shaped."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "TSSC",
+        "ESSCI",
+        "BFSI",
+        "RASCI",
+        "HSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI or polytechnic diploma in computer hardware and networking"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "CompTIA A+ or Cisco CCNA to move up"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI/polytechnic admission is on class 10 marks, not an entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "2.0-4.0",
+        "mid_career_lpa": "4.0-8.0",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.17,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Skill-heavy but most of that skill is physical — crimping cable, replacing hardware, walking to a site. L1 phone scripts are exposed; field and network work is not. Raised clarity 20->25. Helpdesk work is the classic gap between what a user reports and what is actually wrong — diagnosing the real problem behind the stated one is 'what' and 'for whom' clarity."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Lowest salary band in the sector. Confirm it is worth listing as a destination career rather than only as an entry point that leads to networking or cloud."
+      }
+    },
+    {
+      "id": "swc-embedded-iot-developer",
+      "profession": "Embedded Software & IoT Developer",
+      "one_liner": "Writes the code that lives inside machines — cars, meters, drones, smart devices.",
+      "job_roles": [
+        "Embedded Software Engineer",
+        "Firmware Developer",
+        "IoT Application Developer",
+        "RTOS Engineer",
+        "Automotive Software Engineer",
+        "Device Driver Developer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "ESSCI",
+        "ASDC",
+        "IT-ITES",
+        "AASSC",
+        "PSSC",
+        "IASC",
+        "SMSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Electronics, ECE or Electrical (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Embedded C, microcontrollers, hands-on board work"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "8.0-16.0",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 1.0,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 5,
+          "skill_physical": 20,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Protected on two layers at once: deep foundational knowledge of how hardware actually behaves, plus physical bench work. Debugging a board with an oscilloscope is not a text problem."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "entry_window depends on state lateral-entry rules, which vary — some states cap at 26. Needs per-state confirmation before the bypass is presented as reliable."
+      }
+    },
+    {
+      "id": "swc-enterprise-software-consultant",
+      "profession": "Enterprise Software Consultant",
+      "one_liner": "Sets up and customises the big software that large companies run on.",
+      "job_roles": [
+        "SAP Consultant (FICO / MM / ABAP)",
+        "Salesforce Developer",
+        "Salesforce Administrator",
+        "ERP Functional Consultant",
+        "ServiceNow Developer",
+        "Oracle Applications Consultant",
+        "Microsoft Power Platform Developer",
+        "RPA Developer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "ERP Functional Consultant",
+              "Salesforce Administrator"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Functional consulting is sitting with a client's finance team and drawing out how they really work. The developer roles beside it — ABAP, Apex — are solitary technical build work."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "RASCI",
+        "SMSSC",
+        "LSC",
+        "CGSC",
+        "MEPSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Commerce is genuinely useful for the finance modules."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's — B.Com and BBA are common routes, not just B.Tech"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "SAP, Salesforce or ServiceNow platform certification"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (for any bachelor's)"
+        ],
+        "private_reputed": [],
+        "note": "No specialised entrance. Platform certification after graduation is the real gate."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "9.0-18.0",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.67,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 45
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Platform configuration is exposed. Sitting with a client's finance team to work out why their process is the way it is, and owning a migration that could halt their business, is clarity. Raised clarity 40->45. The job is understanding why a client's finance or supply process is the way it is before changing it. Strongly 'for whom' — configuration is the exposed part."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "No-code and RPA were merged in here as enterprise tooling rather than kept as a standalone career. Confirm the merge — the alternative view is that RPA is its own job family in Indian IT services."
+      }
+    },
+    {
+      "id": "swc-it-business-systems-analyst",
+      "profession": "IT Business & Systems Analyst",
+      "one_liner": "Sits between users and coders, and turns 'what we need' into 'what to build'.",
+      "job_roles": [
+        "IT Business Analyst",
+        "Systems Analyst",
+        "Functional Consultant",
+        "Requirements Analyst",
+        "Technical Business Analyst (BFSI)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "HSSC",
+        "RASCI",
+        "TSSC",
+        "MEPSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's — BBA, B.Com, BCA and B.Tech all work"
+        },
+        {
+          "step": 3,
+          "stage": "skills",
+          "requirement": "SQL, requirement documentation, and a domain (banking, retail, health)"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (for any bachelor's)"
+        ],
+        "private_reputed": [],
+        "note": "No specialised entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "9.0-18.0",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.67,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 55
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Now the safest desk job in the sector. Drafting is exposed, but 55% of the work is getting people who disagree to state what they actually want — that is clarity and it does not erode."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Sits in Software & Computing rather than Business because in Indian IT services this is a technical job family — SQL, systems, requirements. The craft is closer to computing than to management."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "swc-vfx-graphics-developer",
+      "profession": "VFX & Graphics Technical Developer",
+      "one_liner": "Builds the software tools and pipelines that film and animation studios use to make effects.",
+      "job_roles": [
+        "VFX Pipeline Developer",
+        "Technical Artist",
+        "Tools Developer (Maya / Houdini / Nuke)",
+        "Rendering Engineer",
+        "CAD & Simulation Software Developer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Technical Artist"
+            ],
+            "higher": [
+              "spatial",
+              "openness",
+              "musical"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Technical artists sit between art and code and are judged on whether a shot looks right. Pipeline and tools developers on the same team are judged on whether the system holds under load."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES",
+        "AASSC",
+        "ASDC",
+        "CGSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, but Maths is close to essential here"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Tech CSE, B.Sc CS, or a VFX/animation diploma for the pipeline track"
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Python tools for Maya or Houdini, or rendering demos with source code"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main (B.Tech)",
+          "CUET (B.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "VFX and animation institutes admit on portfolio, without an entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "8.0-15.0",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.5,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 0,
+          "skill_digital": 45,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "Revised down from high. Generative models hit execution skill hard, but pipeline and tools work is increasingly about design judgement — knowing what artists need and what a shot should look like — rather than hand-crafting output. The skill layer erodes; the design clarity does not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "India is a global VFX outsourcing hub employing tens of thousands, and this record effectively warns students about it. That is a consequential claim about a large real industry and needs a human decision."
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "UI/UX Designer",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "IT-ITES",
+      "why": "The craft is design, not computing."
+    },
+    {
+      "profession": "Product Manager",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "IT-ITES",
+      "why": "Managing a product is a management profession whatever the product is."
+    },
+    {
+      "profession": "IT Project Manager / Scrum Master",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "IT-ITES",
+      "why": "Delivery management is management."
+    },
+    {
+      "profession": "Technical Writer",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "IT-ITES",
+      "why": "All writing professions share one parent; the subject is a tag."
+    },
+    {
+      "profession": "Coding Instructor / Computer Teacher",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "IT-ITES",
+      "why": "Teaching-anything rule."
+    },
+    {
+      "profession": "Computer Science Researcher",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "EXT-RND",
+      "why": "Academic/lab research track. Industry AI research stays here as a job role."
+    },
+    {
+      "profession": "Animator / VFX Artist",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "MESC",
+      "why": "Craft is visual art. The tools-and-pipeline side stays here as VFX & Graphics Technical Developer."
+    },
+    {
+      "profession": "Digital Marketer / SEO Specialist",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "IT-ITES",
+      "why": "The job is selling, not computing."
+    },
+    {
+      "profession": "Chip Design Engineer",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "ESSCI",
+      "why": "Hardware design. Software-on-hardware stays here as Embedded Developer. Listed in Sector 2 under this exact name, with VLSI Design Engineer as a job role."
+    },
+    {
+      "profession": "Bioinformatics Scientist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "LSSSDC",
+      "why": "Goal is biological knowledge; computing is the instrument."
+    },
+    {
+      "profession": "GIS & Remote Sensing Analyst",
+      "goes_to": "14. Environment & Sustainability",
+      "tag_here_instead": "SCGJ",
+      "why": "Applied to land, forest and climate questions."
+    }
+  ],
+  "removed_in_v3": [
+    {
+      "profession": "Blockchain & Web3 Developer",
+      "action": "removed",
+      "why": "Thin and volatile Indian market post-2022. Not defensible to present to a 10th-grader as a destination career. Smart Contract Engineer retained as a job role under Software Developer."
+    },
+    {
+      "profession": "Virtual & Augmented Reality Developer",
+      "action": "merged into Game & Interactive Media Developer",
+      "why": "Identical Unity/Unreal skillset and the same studios. India's standalone XR market is too small to justify a separate profession."
+    },
+    {
+      "profession": "No-Code App & Automation Specialist",
+      "action": "merged into Enterprise Software Consultant",
+      "why": "Power Platform and RPA are enterprise tooling. As a standalone destination it was the most AI-exposed entry in the sector."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "Research-as-a-career: academic/lab CS research sits in Sector 3, mirroring the teaching-anything rule. Industry AI research stays here as a job role.",
+    "IT Business Analyst kept here (not Sector 5) because the day-to-day skill set is SQL, systems and requirements, and in India it is an IT-services job family.",
+    "Website & Online Store Builder kept separate from Software Developer because degree_dependency differs (none vs undergrad) — load-bearing for a recommender serving students with no degree path."
+  ],
+  "changelog": {
+    "3.0": [
+      "17 -> 14 professions. Removed Blockchain; merged AR/VR into Game Developer; merged No-Code into Enterprise Consultant.",
+      "Computer Graphics Programmer reframed as VFX & Graphics Technical Developer — 'graphics engine programmer' barely exists in India, VFX pipeline work does.",
+      "Added ai_exposure (protections/exposures checklist, net score, band, reason at job-role level).",
+      "Added after_undergrad and self_employment for the college and early-professional journeys.",
+      "entrance_exams restructured into national + private_reputed. Government-only was a false picture.",
+      "entry_window flattened so machine-readable fields (max_years_since_class12, max_age, is_hard_block) are separate from explanatory text.",
+      "cost_of_entry_inr withdrawn — the figures were estimates, not research."
+    ],
+    "2.1": [
+      "Added entry_window and admin_review."
+    ],
+    "2.0": [
+      "Rebuilt on schema with path_to_entry, verification, subject-set prerequisites."
+    ],
+    "1.1": [
+      "Data Analyst and Cybersecurity downgraded undergrad -> certificate under the strict test."
+    ],
+    "4.0": [
+      "ai_exposure replaced with the knowledge/skill/clarity model. Knowledge was commoditised by the internet, skill is being commoditised by AI, clarity is not. exposure_raw = knowledge + skill, but skill counts only when output is digital — physical skill is a moat, not a liability.",
+      "VFX & Graphics Technical Developer revised high -> medium. The work is shifting from execution skill to design judgement, which is clarity.",
+      "Removed 'Solution Architect' job role — professions and their roles are entry identities, not seniority tiers."
+    ],
+    "5.0": [
+      "Knowledge split into foundational vs retrievable; skill split into physical vs digital. Exposure = retrievable_knowledge + digital_skill. Protection = foundational_knowledge + physical_skill + clarity.",
+      "Foundational knowledge is protective, not exposed: mental models are what let you reason at all, judge whether an AI answer is right, and direct the tool. Only lookup knowledge was commoditised by the internet.",
+      "Dropped the output_is_physical boolean — the split now lives inside the composition, which handles mixed professions a flag could not.",
+      "Bands recalibrated to the narrower exposure range: high >=65, medium 40-64, low <40.",
+      "legal_accountability retained as a separate dampener — it moves the band down one step, because a licensed human must still sign even when the underlying tasks automate."
+    ],
+    "6.0": [
+      "Added cost_barrier — SPARSE and verified-only, null unless money is a primary gate. Commercial Pilot is the first populated case at 35-80 lakh self-funded, which is a bigger barrier than any exam in this dataset. This is the disciplined version of the cost_of_entry field withdrawn earlier: no universal estimates, only the handful of cases where cost decides.",
+      "Added earning_note — flags where entry_salary_band_inr systematically understates, chiefly trades and freelance-heavy professions where self-employment is common. Qualitative by design; no fabricated numbers."
+    ],
+    "7.0": [
+      "Replaced entry_salary_band_inr and earning_note with a three-part economics block: cost_of_entry_lakh, early_earnings_lpa (years 1-3), mid_career_lpa (years 5-8, EMPLOYED only), and derived payback_years.",
+      "Entry pay alone was structurally biased toward long credentialed runways — it compared a 19-year-old welder with zero debt against a 22-year-old engineer with 6 lakh of fees and called the welder poorer.",
+      "mid_career explicitly EXCLUDES business ownership. If a plumber's income depends on running a contracting firm, the earning attribute is entrepreneurship (Sector 5), not plumbing.",
+      "cost_of_entry is now universal rather than sparse, because the payback ratio needs a denominator. Anchored on verified fee data: government ITI 0.05-0.4 L, government B.Tech ~6 L, private B.Tech ~13 L, CPL 35-80 L."
+    ],
+    "8.0": [
+      "Added shipping block, DERIVED from data/filter_rules.json — never hand-set. Professions failing the compensation filter are flagged ship:false and RETAINED, not deleted.",
+      "Kept rather than deleted for three reasons: the 4.5 threshold is calibrated for urban India and a tier-3 threshold would differ; the threshold is a product decision that will be tuned; and a flag can be rendered as a delete while a delete cannot be rendered as a flag."
+    ],
+    "9.0": [
+      "Removed the stored shipping block. ship/filtered is a DERIVED value — computable any time from economics.mid_career_midpoint + ai_exposure.band + data/filter_rules.json. Storing a derived value only creates drift risk. The rule lives in filter_rules.json; the application evaluates it at query time."
+    ],
+    "10.0": [
+      "Re-scored clarity across the sector under the sharpened definition — clarity of OBJECTIVE and PROBLEM: what, how, FOR WHOM, and why. The 'for whom' dimension was previously underweighted.",
+      "Replaced the shipping block with a single derived boolean `filter`. True = passes the compensation rule in data/filter_rules.json. Validated on every export so it cannot drift.",
+      "Website & Online Store Builder: exposure 77 -> 72 (high)",
+      "IT Support & Network Technician: exposure 30 -> 25 (low)",
+      "Enterprise Software Consultant: exposure 45 -> 40 (medium)"
+    ],
+    "11.0": [
+      "Added nuances — a list of {field, statement, source?} recording settled subtleties where a tag value alone would mislead.",
+      "RULE: nuances are SETTLED, admin_review is UNSETTLED. A nuance is something true we already know; an admin_review is a decision a human still owes. Without that line nuances becomes a dumping ground.",
+      "Every nuance must name a field that actually exists on the record — validator-enforced.",
+      "The Architect title-protection note moved out of admin_review.reason, where it did not belong."
+    ],
+    "12.0": [
+      "Cross-file reconciliation: routed_elsewhere said 'VLSI / Chip Design Engineer' but Sector 2 names it 'Chip Design Engineer'. A promise must name its destination exactly."
+    ],
+    "13.0": [
+      "Added demand_signal { india_demand, pathway } — two ORTHOGONAL questions that were being conflated.",
+      "india_demand asks whether society needs this work. pathway asks where you can realistically train for it: 'india', 'any', or 'abroad'. A weak Indian pathway is NOT weak demand — India imports most medical devices, which is evidence of demand, not absence of it.",
+      "pathway deliberately does NOT rate Indian institutions as strong or weak. It states where the training exists, which is factual and actionable, rather than passing judgment on colleges."
+    ],
+    "14.0": [
+      "PART B. Added role_spread — records which job roles inside a profession deviate from its baseline, and on which of the 19 psychometric factors.",
+      "higher/lower are RELATIVE to the profession's own profile, never absolute scores. Actual scoring stays in the separate psychometric pipeline; this only flags internal variance so the pipeline and the UI know where one profession contains two different people.",
+      "Factor names are constrained by data/psychometric_factors.json and every named role must exist in that profession's job_roles — both validator-enforced.",
+      "6 of 14 professions in this sector are 'wide'."
+    ]
+  },
+  "locked": {
+    "status": "LOCKED",
+    "date": "2026-08-06",
+    "passed": [
+      "export_csv.py per-field validation",
+      "audit.py cross-field consistency",
+      "duplicate job roles across professions",
+      "cross-file routed_elsewhere reconciliation",
+      "DECISIONS.md spec-drift check",
+      "manual iteration-2 read of every key"
+    ],
+    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved — those are decisions still owed by a human.",
+    "open_admin_reviews": 10
+  }
+}

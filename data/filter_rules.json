@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "note": "Shipping thresholds live HERE, in one place, not baked into profession records. Professions that fail are flagged ship:false, never deleted — a flag can be rendered as a delete, a delete cannot be rendered as a flag. Change a number here and re-run tools/export_csv.py to re-derive every shipping block.",
+  "compensation_filter": {
+    "mid_career_floor_lpa": 4.5,
+    "ai_penalty_clause": {
+      "mid_career_below_lpa": 6.0,
+      "when_ai_exposure": "high"
+    },
+    "rule": "CUT if mid_career_midpoint < 4.5 LPA, OR (mid_career_midpoint < 6.0 AND ai_exposure.band == 'high')",
+    "rationale": [
+      "Why an absolute ceiling and not the payback ratio: payback does not discriminate. Every profession except Commercial Pilot repays in under 2.5 years, and the TRADES have the best ratios in the dataset — Mason repays in 0.09 years while trapping you at 3.0 LPA for life. Ranking by payback would put masons first. Payback is kept as a capital-risk FLAG, not a filter.",
+      "Why 4.5 and not 5.0: at 5.0 the cut takes Welder, which has AI exposure 7 — the most future-proof career in the dataset. Also HVAC and Solar Technician, both growing. Deleting the safest careers over 50,000 rupees a year is the wrong trade.",
+      "Why 4.5 and not 4.0: 4.0 at 5-8 years of experience is barely above an IT fresher salary. A career still paying that after 8 years is a trap.",
+      "Why the AI clause exists: a pure pay filter keeps Website & Online Store Builder at exactly 4.5 despite exposure 77 — low pay in a job that is actively disappearing. The clause also correctly SPARES Software Tester (7.5) and Data Analyst (9.0), which are high-exposure but pay enough that entering via the automation track is rational."
+    ]
+  },
+  "regional_note": "4.5 LPA is calibrated for urban and metro India. In tier-3 and rural districts the same figure supports a materially different standard of living. This is the main reason failing professions are retained rather than deleted — a regional threshold can be applied later only if the data still exists.",
+  "known_limitations": [
+    "Wage figures come from commercial salary aggregators (Indeed, Glassdoor, salary sites), not government data. India has no authoritative free source for occupational earnings.",
+    "Automobile Mechanic fails at 4.2 but EV servicing is genuinely lifting demand. Flagged for revisit.",
+    "mid_career EXCLUDES business ownership by design. A plumber running a contracting firm earns well, but the earning attribute there is entrepreneurship (Sector 5), not plumbing."
+  ]
+}

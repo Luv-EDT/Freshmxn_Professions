@@ -1,0 +1,2358 @@
+{
+  "professional_sector": "Healthcare & Medicine",
+  "professional_sector_id": 4,
+  "version": "1.1",
+  "profession_count": 20,
+  "sector_verification_note": "The most heavily Tier A sector in the taxonomy — the mirror image of Sector 1, where nothing is licensed. 18 of 20 professions name a statutory licensing body. Two verified facts shape everything: NEET applies equally to government, private AND deemed colleges, so there is NO private bypass for medicine; and the NCAHP Act 2021 moved allied health from unregulated to statutorily licensed, making physiotherapy, optometry, MLT and the imaging and OT technologist roles Tier A rather than open-market.",
+  "professions": [
+    {
+      "id": "hlt-doctor",
+      "profession": "Doctor",
+      "one_liner": "Diagnoses and treats illness — the person you see when something is wrong.",
+      "job_roles": [
+        "General Physician",
+        "Surgeon",
+        "Paediatrician",
+        "Gynaecologist",
+        "Psychiatrist",
+        "Anaesthesiologist",
+        "Radiologist",
+        "Pathologist",
+        "Emergency Medicine Physician",
+        "Cardiologist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Psychiatrist",
+              "General Physician"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "verbal",
+              "agreeableness"
+            ],
+            "lower": [
+              "spatial",
+              "bodily"
+            ],
+            "why": "Psychiatry and general practice are conversation-led and depend on reading a person over time. Surgery and radiology in the same profession are spatial, procedural and largely wordless."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT",
+        "EXT-DEFENCE",
+        "LSSSDC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology AND English, with 50 percent in PCB"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NEET UG. Minimum age 17, no upper age limit, no cap on attempts."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "MBBS (4.5 years) at an NMC-recognised college"
+        },
+        {
+          "step": 4,
+          "stage": "internship",
+          "requirement": "Compulsory 12-month rotating internship (CRMI)"
+        },
+        {
+          "step": 5,
+          "stage": "registration",
+          "requirement": "Register with a State Medical Council — mandatory to practise"
+        },
+        {
+          "step": 6,
+          "stage": "specialisation",
+          "requirement": "NEET PG then MD/MS for a specialist career (3 more years)"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "NEET UG"
+        ],
+        "private_reputed": [],
+        "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_window": null,
+      "licensing_body": "National Medical Commission (NMC)",
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 25.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "18-45",
+        "mid_career_midpoint": 31.5,
+        "payback_years": 2.78,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 10,
+          "skill_physical": 25,
+          "skill_digital": 5,
+          "clarity": 30
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Diagnostic support is improving fast and will change the work, but a registered human must examine, decide and carry liability. Physical examination and procedures are not text problems."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#nmc-registration",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Cost is BIMODAL, not a range. A government seat costs roughly 1-5 lakh for the whole degree; a private or deemed seat costs 60 lakh to 1.2 crore. The figure shown is a blend and describes almost nobody. Which side of that line a student lands on is decided entirely by their NEET rank."
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "There is NO private bypass. Unlike engineering, money cannot open a door NEET has closed — the same eligibility applies to government, private and deemed colleges alike.",
+          "source": "data/verified_facts.json#neet-ug-eligibility"
+        },
+        {
+          "field": "entry_window",
+          "statement": "Null because NEET has no upper age limit and no cap on attempts. A commerce graduate is not permanently blocked — they can add PCB through NIOS and sit NEET at any age. It is a long cost, roughly 8 years, not a closed door.",
+          "source": "data/verified_facts.json#neet-ug-eligibility"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The bimodal cost is the single most consequential number in this dataset and the schema cannot express it — one field, two realities 20x apart. Verify actual government vs private MBBS fee ranges and decide how to present them before shipping."
+      }
+    },
+    {
+      "id": "hlt-dentist",
+      "profession": "Dentist",
+      "one_liner": "Treats teeth and gums — fillings, extractions, braces and oral surgery.",
+      "job_roles": [
+        "General Dentist",
+        "Orthodontist",
+        "Endodontist",
+        "Oral & Maxillofacial Surgeon",
+        "Periodontist",
+        "Prosthodontist",
+        "Paedodontist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology and English with 50 percent in PCB"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NEET UG"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "BDS (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "internship",
+          "requirement": "Compulsory 1-year rotating internship"
+        },
+        {
+          "step": 5,
+          "stage": "registration",
+          "requirement": "Register with a State Dental Council under the Dental Council of India"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "NEET UG"
+        ],
+        "private_reputed": [],
+        "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_window": null,
+      "licensing_body": "Dental Council of India (DCI)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 15.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "6-15",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 3.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 37,
+          "skill_digital": 5,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 13,
+        "band": "low",
+        "reason": "Almost entirely manual work inside a patient's mouth, with a licensed human carrying liability. Treatment planning software is exposed; the hands are not."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "KNOWN OVERSUPPLY. India produces far more BDS graduates than the market absorbs, and a large share end up underemployed or move into non-clinical work. The salary band shown may flatter the typical outcome. Verify before recommending, and consider whether it needs a warning rather than a straight listing."
+      }
+    },
+    {
+      "id": "hlt-ayurveda-doctor",
+      "profession": "Ayurveda Doctor",
+      "one_liner": "Treats patients using Ayurveda — India's traditional system of medicine.",
+      "job_roles": [
+        "Ayurveda Physician",
+        "Panchakarma Specialist",
+        "Ayurvedic Surgeon (Shalya)",
+        "Kayachikitsa Specialist",
+        "Unani Physician",
+        "Siddha Physician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT",
+        "LSSSDC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology and English"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NEET UG"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "BAMS, BUMS or BSMS (5.5 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with a State Board under the National Commission for Indian System of Medicine"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "NEET UG"
+        ],
+        "private_reputed": [],
+        "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_window": null,
+      "licensing_body": "National Commission for Indian System of Medicine (NCISM)",
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 10.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "6-14",
+        "mid_career_midpoint": 10.0,
+        "payback_years": 2.22,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 12,
+          "skill_physical": 25,
+          "skill_digital": 5,
+          "clarity": 30
+        },
+        "legal_accountability": true,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Clinical examination and hands-on therapies are physical, and a registered practitioner carries legal responsibility. Classical text lookup is exposed; deciding what a specific patient needs is not."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-homeopathy-doctor",
+      "profession": "Homeopathy Doctor",
+      "one_liner": "Treats patients using homeopathy.",
+      "job_roles": [
+        "Homeopathic Physician",
+        "Consultant Homeopath",
+        "Homeopathic Paediatric Practitioner"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology and English"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NEET UG"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "BHMS (5.5 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with a State Board under the National Commission for Homoeopathy"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "NEET UG"
+        ],
+        "private_reputed": [],
+        "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_window": null,
+      "licensing_body": "National Commission for Homoeopathy (NCH)",
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-12",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 2.13,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 12,
+          "skill_physical": 20,
+          "skill_digital": 5,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Long consultations built on listening and case-taking. A registered practitioner is legally accountable for the patient."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-veterinary-doctor",
+      "profession": "Veterinary Doctor",
+      "one_liner": "Treats animals — pets, livestock and wildlife.",
+      "job_roles": [
+        "Veterinary Surgeon",
+        "Livestock Veterinary Officer",
+        "Small Animal Practitioner",
+        "Veterinary Pathologist",
+        "Wildlife Veterinarian",
+        "Poultry & Dairy Health Officer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "HSSC",
+        "EXT-GOVT",
+        "FICSI"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology and English"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NEET UG for the all-India quota; state and ICAR entrances also apply"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.V.Sc & A.H. (5.5 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with a State Veterinary Council under the Veterinary Council of India"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "NEET UG",
+          "ICAR AIEEA UG"
+        ],
+        "private_reputed": [],
+        "note": "Admission routes vary by state — confirm the current rule for the student's state."
+      },
+      "entry_window": null,
+      "licensing_body": "Veterinary Council of India (VCI)",
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 5.0,
+        "early_earnings_lpa": "4-7",
+        "mid_career_lpa": "8-16",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 0.91,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "India has the world's largest livestock population and a fast-growing companion-animal market, but veterinary posts are concentrated in government animal husbandry departments."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 10,
+          "skill_physical": 30,
+          "skill_digital": 5,
+          "clarity": 27
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Physical examination of animals that cannot describe symptoms, plus surgery and field work in livestock settings. A registered vet is legally accountable."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Veterinary admission has moved between NEET and ICAR AIEEA and varies by state. Verify the current route before shipping."
+      }
+    },
+    {
+      "id": "hlt-nurse",
+      "profession": "Nurse",
+      "one_liner": "Cares for patients around the clock — the person who is actually there.",
+      "job_roles": [
+        "Staff Nurse",
+        "ICU / Critical Care Nurse",
+        "Operation Theatre Nurse",
+        "Paediatric Nurse",
+        "Community Health Nurse",
+        "Nurse Educator",
+        "Midwife"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT",
+        "EXT-DEFENCE"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology and English"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "State nursing entrances or CUET; some states use NEET"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Sc Nursing (4 years), or GNM diploma (3 years)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with a State Nursing Council and the Indian Nursing Council — mandatory to practise"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "State nursing entrance exams",
+          "CUET"
+        ],
+        "private_reputed": [],
+        "note": "Entrance routes vary widely by state."
+      },
+      "entry_window": null,
+      "licensing_body": "Indian Nursing Council (INC)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-10",
+        "mid_career_midpoint": 7.5,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any",
+        "note": "Among the highest-demand professions in India and one of the few with a genuine, well-trodden international route — Gulf, UK and Ireland recruit Indian nurses at scale."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Overwhelmingly physical and present-tense — lifting, monitoring, administering, noticing a patient deteriorate before a monitor does. A registered nurse is legally accountable."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "One of very few professions in this dataset where working abroad is a mainstream, well-established path rather than an exception. Gulf, UK and Ireland actively recruit Indian nurses, and pay differs several-fold."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Nursing entrance routes vary by state and some states have moved to NEET. Verify. Also confirm the salary band — Indian nursing pay is widely reported as low relative to workload, and the band may be optimistic for private hospitals."
+      }
+    },
+    {
+      "id": "hlt-pharmacist",
+      "profession": "Pharmacist",
+      "one_liner": "Dispenses medicines and checks they are safe to take together.",
+      "job_roles": [
+        "Community Pharmacist",
+        "Hospital Pharmacist",
+        "Clinical Pharmacist",
+        "Industrial Pharmacist",
+        "Drug Safety Associate",
+        "Regulatory Affairs Executive"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "HSSC",
+        "RASCI"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Chemistry, plus Biology or Maths"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "State pharmacy entrances or CUET"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Pharm (4 years) or D.Pharm (2 years)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with a State Pharmacy Council — mandatory to practise"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State pharmacy entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "B.Pharm accepts PCM or PCB, so a maths student is not excluded."
+      },
+      "entry_window": null,
+      "licensing_body": "Pharmacy Council of India (PCI)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-11",
+        "mid_career_midpoint": 8.0,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 20,
+          "skill_digital": 10,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Drug interaction lookup is the most automatable part and is already software-assisted. What remains is a registered human legally responsible for what is dispensed, plus counselling patients who did not understand what the doctor said."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "Unlike almost every other clinical profession here, B.Pharm accepts PCM as well as PCB. A maths-stream student who missed biology can still enter pharmacy."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-physiotherapist",
+      "profession": "Physiotherapist",
+      "one_liner": "Helps people move again after injury, surgery or illness.",
+      "job_roles": [
+        "Physiotherapist",
+        "Sports Physiotherapist",
+        "Neuro Physiotherapist",
+        "Orthopaedic Physiotherapist",
+        "Cardiopulmonary Physiotherapist",
+        "Paediatric Physiotherapist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "SPEFL",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology and English"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "CUET or state allied-health entrances"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "BPT (4.5 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with the Physiotherapy Professional Council under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Physiotherapy Professional Council (NCAHP)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 5.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-12",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 1.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 8,
+          "skill_physical": 45,
+          "skill_digital": 2,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Hands on a body, adjusting in real time to what it does. Among the least automatable professions in the entire dataset — the treatment IS physical contact."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Newly regulated. The NCAHP Act 2021 moved physiotherapy from an unregulated field to one where practice without registration is prohibited. Implementation is still rolling out state by state.",
+          "source": "data/verified_facts.json#ncahp-allied-health"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-optometrist",
+      "profession": "Optometrist",
+      "one_liner": "Tests eyesight and prescribes glasses and contact lenses.",
+      "job_roles": [
+        "Optometrist",
+        "Contact Lens Practitioner",
+        "Vision Therapist",
+        "Low Vision Specialist",
+        "Ophthalmic Technician",
+        "Refractionist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "RASCI"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "CUET or state allied-health entrances"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Optom / B.Sc Optometry (4 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with the Ophthalmic Science Professional Council under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Ophthalmic Science Professional Council (NCAHP)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-10",
+        "mid_career_midpoint": 7.5,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India has a very large uncorrected refractive error burden and optical retail is expanding fast."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 22,
+          "knowledge_retrievable": 12,
+          "skill_physical": 35,
+          "skill_digital": 6,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 18,
+        "band": "low",
+        "reason": "Autorefractors already automate measurement, but subjective refraction is a conversation with a patient about what they can actually see, and a registered practitioner signs the prescription."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-audiologist-speech-therapist",
+      "profession": "Audiologist & Speech Therapist",
+      "one_liner": "Helps people who cannot hear well or struggle to speak.",
+      "job_roles": [
+        "Audiologist",
+        "Speech-Language Pathologist",
+        "Cochlear Implant Audiologist",
+        "Early Intervention Therapist",
+        "Hearing Aid Specialist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "SCPWD",
+        "EXT-EDU"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "AIISH entrance or CUET"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "BASLP (4 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with the Rehabilitation Council of India — mandatory to practise"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "AIISH entrance",
+          "CUET"
+        ],
+        "private_reputed": [],
+        "note": "AIISH Mysuru is the leading institution and runs its own entrance."
+      },
+      "entry_window": null,
+      "licensing_body": "Rehabilitation Council of India (RCI)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "6-13",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.89,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 22,
+          "knowledge_retrievable": 10,
+          "skill_physical": 33,
+          "skill_digital": 10,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Therapy is repeated human interaction over months, often with children. Diagnostic audiometry is partly automated; teaching a child to speak is not."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#statutory-health-councils",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-occupational-therapist",
+      "profession": "Occupational Therapist",
+      "one_liner": "Helps people relearn everyday tasks after injury, stroke or disability.",
+      "job_roles": [
+        "Occupational Therapist",
+        "Paediatric Occupational Therapist",
+        "Hand Therapist",
+        "Mental Health Occupational Therapist",
+        "Rehabilitation Specialist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "SCPWD",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "CUET or state allied-health entrances"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "BOT (4.5 years including internship)"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Occupational Therapy Professional Council (NCAHP)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3-5.5",
+        "mid_career_lpa": "5.5-11",
+        "mid_career_midpoint": 8.25,
+        "payback_years": 0.94,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 8,
+          "skill_physical": 42,
+          "skill_digital": 5,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 13,
+        "band": "low",
+        "reason": "Hands-on rehabilitation adapted to one person's home, job and body. Physical and highly individual."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-dietitian",
+      "profession": "Dietitian & Clinical Nutritionist",
+      "one_liner": "Plans what patients should eat to manage illness and stay well.",
+      "job_roles": [
+        "Clinical Dietitian",
+        "Sports Nutritionist",
+        "Renal Dietitian",
+        "Paediatric Nutritionist",
+        "Community Nutrition Officer",
+        "Food Service Dietitian"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "FICSI",
+        "SPEFL",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Biology, or Home Science with a science subject"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "CUET or university entrances"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Sc Nutrition & Dietetics (3 years)"
+        },
+        {
+          "step": 4,
+          "stage": "internship",
+          "requirement": "Hospital dietetic internship"
+        },
+        {
+          "step": 5,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Nutrition Science Professional Council (NCAHP)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-12",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India's diabetes and cardiac disease burden is driving clinical nutrition demand, and corporate wellness is a growing second market."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 10,
+          "skill_digital": 10,
+          "clarity": 40
+        },
+        "legal_accountability": true,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Diet chart generation is heavily automatable and already commoditised by apps. What survives is getting a real person to actually change what they eat — clarity and behaviour change, not calculation."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-medical-lab-technologist",
+      "profession": "Medical Laboratory Technologist",
+      "one_liner": "Runs the blood and sample tests doctors rely on to diagnose.",
+      "job_roles": [
+        "Medical Laboratory Technologist",
+        "Histopathology Technician",
+        "Microbiology Lab Technician",
+        "Blood Bank Technician",
+        "Biochemistry Lab Technologist",
+        "Phlebotomist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "LSSSDC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.Sc MLT (3 years) or DMLT diploma (2 years)"
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Medical Laboratory Professional Council (NCAHP)",
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "2-4",
+        "mid_career_lpa": "4-8",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.5,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Analysers automate the measurement, but samples must be physically drawn, prepared and handled, and a registered technologist signs the report. Histopathology in particular remains manual."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Sits in Healthcare, not Science & Research, because the work is clinical diagnosis for a named patient. The research-lab equivalent is Laboratory Technician in Sector 3."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-radiology-technologist",
+      "profession": "Radiology & Imaging Technologist",
+      "one_liner": "Operates X-ray, CT and MRI machines to take images inside the body.",
+      "job_roles": [
+        "Radiographer",
+        "CT Technologist",
+        "MRI Technologist",
+        "Ultrasound Technician",
+        "Radiotherapy Technologist",
+        "Cath Lab Technologist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "ESSCI"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.Sc Radiology & Imaging Technology (3-4 years) or a diploma"
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Medical Radiology Professional Council (NCAHP)",
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-10",
+        "mid_career_midpoint": 7.5,
+        "payback_years": 0.53,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 18,
+          "knowledge_retrievable": 12,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "AI reads images well and will keep improving — but that is the RADIOLOGIST's task, not this one. Positioning a frightened patient, running the machine safely and managing radiation dose stay physical and human."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-ot-anaesthesia-technologist",
+      "profession": "Operation Theatre & Anaesthesia Technologist",
+      "one_liner": "Prepares the operating theatre and assists during surgery.",
+      "job_roles": [
+        "Operation Theatre Technologist",
+        "Anaesthesia Technologist",
+        "Surgical Technologist",
+        "CSSD Technician",
+        "Perfusionist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.Sc OT & Anaesthesia Technology (3-4 years) or a diploma"
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Operation Theatre Professional Council (NCAHP)",
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-9",
+        "mid_career_midpoint": 7.0,
+        "payback_years": 0.53,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 12,
+          "skill_physical": 48,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Sterile technique, instrument handling and machine setup inside a live operating theatre. Entirely physical, high consequence, and legally accountable."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-dialysis-technologist",
+      "profession": "Dialysis & Critical Care Technologist",
+      "one_liner": "Runs dialysis and life-support machines for very ill patients.",
+      "job_roles": [
+        "Dialysis Technologist",
+        "Critical Care Technologist",
+        "Renal Replacement Technician",
+        "Ventilator Technician",
+        "ECMO Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry, Biology"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.Sc Dialysis / Critical Care Technology (3 years) or a diploma"
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Renal Care Professional Council (NCAHP)",
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.5-4.5",
+        "mid_career_lpa": "4.5-8",
+        "mid_career_midpoint": 6.25,
+        "payback_years": 0.57,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India's chronic kidney disease burden and the spread of dialysis centres into smaller towns make this one of the fastest-growing allied health roles."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 12,
+          "skill_physical": 48,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Machine operation beside a patient whose life depends on it, for hours at a time. Physical, monitored and legally accountable."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-emergency-medical-technician",
+      "profession": "Emergency Medical Technician",
+      "one_liner": "First to reach an emergency — keeps people alive on the way to hospital.",
+      "job_roles": [
+        "Emergency Medical Technician",
+        "Ambulance Paramedic",
+        "Advanced Life Support Technician",
+        "Emergency Room Technician",
+        "Disaster Response Medic"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT",
+        "EXT-DEFENCE"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Biology"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Certificate or B.Sc in Emergency Medical Technology (6 months to 3 years)"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "BLS and ACLS certification"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register under the NCAHP Act 2021"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State allied-health entrance exams"
+        ],
+        "private_reputed": [],
+        "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_window": null,
+      "licensing_body": "Emergency Medical Professional Council (NCAHP)",
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "2-4",
+        "mid_career_lpa": "4-7",
+        "mid_career_midpoint": 5.5,
+        "payback_years": 0.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 50,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Physical, unpredictable and time-critical. Decisions made in minutes with incomplete information at a roadside. Nothing about it is a text problem."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#ncahp-allied-health",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Lowest-paid profession in this sector and physically and emotionally demanding. Confirm the salary band and whether it is a durable career or mainly a route into nursing."
+      }
+    },
+    {
+      "id": "hlt-biomedical-equipment-technician",
+      "profession": "Biomedical Equipment Technician",
+      "one_liner": "Installs and repairs the machines a hospital runs on.",
+      "job_roles": [
+        "Biomedical Equipment Technician",
+        "Hospital Equipment Maintenance Technician",
+        "Medical Device Service Engineer",
+        "Calibration Technician",
+        "Equipment Installation Specialist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "ESSCI",
+        "SMSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10_12",
+          "requirement": "Science stream"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Diploma or B.Sc in Biomedical Equipment Technology (2-3 years)"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Hospitals, device distributors and service companies hire directly"
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Manufacturer certification on specific equipment is what raises pay"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET",
+          "State polytechnic admission"
+        ],
+        "private_reputed": [],
+        "note": "Diploma admission is on class 10 or 12 marks."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "2.5-4.5",
+        "mid_career_lpa": "5-9",
+        "mid_career_midpoint": 7.0,
+        "payback_years": 0.43,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India imports most medical devices, which creates large and durable demand for people who install, calibrate and repair them — demand that exists precisely BECAUSE the design happens elsewhere."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 50,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Physical repair and calibration of equipment inside hospitals. A machine that is down must be attended in person."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Sits in Healthcare rather than Engineering because the work happens inside clinical care delivery. The B.Tech design-side role is Biomedical Engineer in Sector 2."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "hlt-medical-coder",
+      "profession": "Medical Coder",
+      "one_liner": "Turns doctors' notes into the standard codes hospitals and insurers use.",
+      "job_roles": [
+        "Medical Coder",
+        "Medical Biller",
+        "Clinical Documentation Specialist",
+        "Health Information Technician",
+        "Medical Records Officer",
+        "Claims Analyst (health)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "BFSI",
+        "IT-ITES"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream; a life-science background helps"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's — B.Sc life sciences, nursing, pharmacy and BPT are common"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "CPC or CCS certification is the actual hiring gate"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Healthcare BPOs and hospital revenue-cycle teams hire directly"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "No entrance exam. Professional certification (CPC/CCS) is what employers screen on."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 0.8,
+        "early_earnings_lpa": "3-5",
+        "mid_career_lpa": "5-10",
+        "mid_career_midpoint": 7.5,
+        "payback_years": 0.2,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 35,
+          "skill_physical": 0,
+          "skill_digital": 40,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 75,
+        "band": "high",
+        "reason": "THE MOST AI-EXPOSED PROFESSION IN THIS SECTOR by a wide margin. The work is mapping documented text to a code set using rules — retrievable knowledge plus digital execution, with almost no physical or clarity component. Auditing and denial management survive longer than routine coding."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Very high AI exposure in a sector where everything else is protected. This is a large Indian employment category — healthcare BPOs employ hundreds of thousands — so calling it exposed is a consequential claim. It is also one of very few healthcare careers open to a non-PCB student, which makes removing it costly for that audience. Needs a human decision."
+      }
+    },
+    {
+      "id": "hlt-public-health-professional",
+      "profession": "Public Health Professional",
+      "one_liner": "Works on the health of whole populations, not one patient at a time.",
+      "job_roles": [
+        "Epidemiologist",
+        "Public Health Officer",
+        "Programme Manager (health)",
+        "Health Policy Analyst",
+        "Disease Surveillance Officer",
+        "Community Health Specialist",
+        "Biostatistician (public health)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Epidemiologist",
+              "Biostatistician (public health)"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion",
+              "emotional_intelligence"
+            ],
+            "why": "Epidemiology and biostatistics are analytical, data-bound work. Programme management and community health in the same profession are field jobs that live on persuading people and institutions."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-GOVT",
+        "EXT-DEV",
+        "EXT-RND"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's — MBBS, BDS, nursing, life sciences, statistics and social sciences all feed in"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "MPH (Master of Public Health) — this is the real entry qualification"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Government health programmes, WHO and UN agencies, NGOs, research institutes"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET PG",
+          "Institute entrances (IIPH, AIIMS, TISS)"
+        ],
+        "private_reputed": [],
+        "note": "MPH admission is open to graduates of many disciplines, not only medicine."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 0.67,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://allen.in/neet/eligibility-criteria",
+            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any",
+        "note": "Post-COVID investment in surveillance and health systems, plus a large NGO and multilateral sector."
+      },
+      "filter": true,
+      "after_undergrad": "masters_is_the_entry",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Data analysis is exposed. Deciding which population question matters, and persuading a government to act on it, is not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "mid_stream_entry",
+          "statement": "One of the most reachable healthcare careers for a non-PCB student. The MPH accepts graduates from statistics, social sciences and management — no NEET, no biology at class 12, no clinical degree required."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Clinical Psychologist / Counsellor",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "HSSC",
+      "why": "INTERVENE on wellbeing. RCI-registered clinical psychology is psychological intervention, not medicine."
+    },
+    {
+      "profession": "Hospital Administrator",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "HSSC",
+      "why": "Running an organisation is management whatever the organisation does."
+    },
+    {
+      "profession": "Medical Representative",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "LSSSDC",
+      "why": "The job is selling."
+    },
+    {
+      "profession": "Biomedical Engineer",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "HSSC",
+      "why": "Designs devices. The hospital-side maintenance role stays here as Biomedical Equipment Technician."
+    },
+    {
+      "profession": "Clinical Research Associate",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "HSSC",
+      "why": "Produces trial evidence rather than treating a named patient."
+    },
+    {
+      "profession": "Drug Discovery Scientist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "LSSSDC",
+      "why": "Research career. Listed in Sector 3 under this exact name, with Pharmacologist and Preclinical Toxicologist as job roles."
+    },
+    {
+      "profession": "Yoga Instructor",
+      "goes_to": "18. Personal Care & Wellness",
+      "tag_here_instead": "BWSSC",
+      "why": "Wellness rather than clinical treatment. BNYS naturopathy doctors are a separate question — see boundary notes."
+    },
+    {
+      "profession": "Medical Writer",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "LSSSDC",
+      "why": "All writing professions share one parent."
+    },
+    {
+      "profession": "Genetic Counsellor",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "HSSC",
+      "why": "PROVISIONAL — counselling families through a diagnosis. Very small in India; flagged for review."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "AYURVEDA and HOMEOPATHY are separate professions because they have separate statutory councils — NCISM and NCH. Unani and Siddha are folded into Ayurveda as job roles since they share NCISM. BNYS (naturopathy and yoga) is currently NOT included; it is small and sits awkwardly between this sector and Sector 18. Needs your call.",
+    "MEDICAL CODER is the only high AI-exposure profession here and one of the only healthcare careers open to a non-PCB student. Removing it would close the sector almost entirely to commerce and arts students.",
+    "PUBLIC HEALTH PROFESSIONAL is mid_stream_entry 'after_any_degree' — the MPH accepts statistics, social science and management graduates. This is the sector's main door for non-medical students and was flagged during Sector 3 as needing a home.",
+    "NURSE is the clearest 'pathway: any' case in the dataset — Gulf, UK and Ireland recruit Indian nurses at scale and pay differs several-fold. Confirm how prominently international routes should be surfaced.",
+    "DENTIST carries a known oversupply problem in India. Listed with a high-priority review rather than quietly omitted."
+  ],
+  "changelog": {
+    "1.0": [
+      "Initial build. 20 professions; 18 name a statutory licensing body.",
+      "Verified: NEET UG eligibility (no upper age limit, no attempt cap, no private bypass), NMC registration and the compulsory 12-month internship, the NCAHP Act 2021, and the UGC list of statutory health councils.",
+      "NCAHP Act 2021 is the biggest single finding — allied health is now Tier A, not open-market.",
+      "Kept both promises made to this sector: Biomedical Equipment Technician (from Sector 2) and Medical Laboratory Technologist (from Sector 3)."
+    ],
+    "1.1": [
+      "Cross-file reconciliation: routing named 'Pharmacologist / Drug Discovery Scientist' but Sector 3 names it 'Drug Discovery Scientist'. A promise must name its destination exactly — same class of error as the VLSI naming mismatch in Sector 1."
+    ]
+  },
+  "locked": {
+    "status": "LOCKED",
+    "date": "2026-08-06",
+    "passed": [
+      "export_csv.py per-field validation",
+      "audit.py cross-field consistency",
+      "duplicate job roles across professions",
+      "cross-file routed_elsewhere reconciliation",
+      "DECISIONS.md spec-drift check",
+      "manual iteration-2 read of every key"
+    ],
+    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved.",
+    "open_admin_reviews": 6
+  }
+}

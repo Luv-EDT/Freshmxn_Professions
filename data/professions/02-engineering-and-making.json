@@ -1,0 +1,4314 @@
+{
+  "professional_sector": "Engineering & Making",
+  "professional_sector_id": 2,
+  "version": "15.0",
+  "profession_count": 32,
+  "sector_verification_note": "Unlike Sector 1, this sector has real Tier A licensing — DGCA for pilots and aircraft engineers, DG Shipping for marine engineers, Council of Architecture for architects. Class 12 subject gates and ITI entry rules are Tier B verified. Salary bands remain judgment throughout; India has no authoritative free source for them. NOTE: the AMIE / Institution of Engineers route named in the brief is deliberately EXCLUDED from every path_to_entry — recognition for post-2013 enrolments is unresolved in the Delhi High Court and it is not safe to recommend.",
+  "professions": [
+    {
+      "id": "eng-civil-engineer",
+      "profession": "Civil Engineer",
+      "one_liner": "Designs and supervises the building of roads, bridges, dams and buildings.",
+      "job_roles": [
+        "Site Engineer",
+        "Structural Engineer",
+        "Highway Engineer",
+        "Geotechnical Engineer",
+        "Water Resources Engineer",
+        "Construction Planning Engineer",
+        "Quantity Surveyor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Site Engineer",
+              "Construction Planning Engineer"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "extraversion"
+            ],
+            "lower": [
+              "spatial",
+              "attention_span"
+            ],
+            "why": "Site work is outdoors, physical, and mostly about getting people and materials to move under time pressure. Structural and geotechnical design in the same profession is desk-bound, spatial and unhurried."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "IESC",
+        "EXT-GOVT",
+        "SCGJ",
+        "IISSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Civil Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "8.0-14.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 1.33,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Drawing production and routine calculation are exposed. Judging ground conditions on site, and carrying responsibility for a structure that must not fall down, are not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "Chemistry is NOT compulsory for engineering. JEE Main Paper 1 requires Physics and Maths plus any one of Chemistry, Biology, Biotechnology or a vocational subject — so Physics + Maths + Computer Science qualifies. This applies to every B.Tech profession in this sector.",
+          "source": "data/verified_facts.json#jee-main-paper1-btech"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-mechanical-engineer",
+      "profession": "Mechanical Engineer",
+      "one_liner": "Designs and maintains machines, engines, vehicles and the systems that manufacture things.",
+      "job_roles": [
+        "Design Engineer",
+        "Production Engineer",
+        "Maintenance Engineer",
+        "Quality Engineer",
+        "HVAC Design Engineer",
+        "Tool & Die Engineer",
+        "Industrial Engineer",
+        "Piping Design Engineer",
+        "Turbomachinery Engineer",
+        "Rolling Stock / Railway Engineer",
+        "Vehicle Design Engineer",
+        "Powertrain Engineer",
+        "EV Systems Engineer",
+        "Vehicle Testing Engineer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Production Engineer",
+              "Maintenance Engineer",
+              "Quality Engineer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "bodily"
+            ],
+            "lower": [
+              "openness",
+              "spatial"
+            ],
+            "why": "Plant-floor work rewards routine discipline, physical presence and consistency. The design and R&D side of the same profession rewards abstraction, spatial reasoning and tolerance for ambiguity."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CGSC",
+        "SMSSC",
+        "ASDC",
+        "AASSC",
+        "IISSSC",
+        "HYSSC",
+        "PSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Mechanical Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.0-6.5",
+        "mid_career_lpa": "5.0-12.0",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 1.26,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "CAD drafting and standard calculation are exposed. Diagnosing why a machine actually fails on the shop floor, and designing for real manufacturing constraints, are not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [
+        {
+          "field": "entry_window",
+          "statement": "The diploma and B.Sc lateral-entry bypass generally has no upper age limit, but some states cap it between 18 and 26. Confirm the rule for the student's state before relying on it. Applies to every B.Tech profession in this sector.",
+          "source": "data/verified_facts.json#btech-lateral-entry"
+        },
+        {
+          "field": "job_roles",
+          "statement": "Automobile engineering is folded in here. It shares the same skill set as mechanical engineering — thermodynamics, mechanics, CAD, materials, manufacturing — and differs only by industry. Two professions with the same skill profile would always surface together in a psychometric recommender, adding noise without information. Students drawn to vehicles should find this through the automotive industrial tag and the vehicle job roles."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-electrical-engineer",
+      "profession": "Electrical Engineer",
+      "one_liner": "Designs and looks after the systems that generate and carry electricity.",
+      "job_roles": [
+        "Power Systems Engineer",
+        "Substation Engineer",
+        "Electrical Design Engineer",
+        "Transmission & Distribution Engineer",
+        "Testing & Commissioning Engineer",
+        "Solar Plant Engineer",
+        "Wind Energy Engineer",
+        "Grid Integration Engineer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Testing & Commissioning Engineer",
+              "Substation Engineer"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Commissioning is live, physical and unforgiving — a mistake is lethal and irreversible. Electrical design work in the same profession is desk-based and iterative."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "PSSC",
+        "CGSC",
+        "SCGJ",
+        "CSDCI",
+        "IISSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Electrical Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-12.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.33,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Load calculations and drawing work are exposed. Commissioning live equipment, where a mistake is lethal and irreversible, is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Renewable energy engineering is NOT a separate profession — it is electrical engineering applied to solar and wind. A coverage probe found the skill set already here, with the certificate tier covered by Solar Panel Technician. India's renewable targets are growing these roles fast."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-electronics-communication-engineer",
+      "profession": "Electronics & Communication Engineer",
+      "one_liner": "Designs the circuits and signal systems inside phones, networks and electronic devices.",
+      "job_roles": [
+        "Electronics Design Engineer",
+        "PCB Design Engineer",
+        "RF Engineer",
+        "Telecom Network Engineer",
+        "Test & Validation Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "ESSCI",
+        "TSSC",
+        "AASSC",
+        "SMSSC",
+        "IASC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Electronics & Communication (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.5-7.0",
+        "mid_career_lpa": "7.0-14.0",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 1.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 25,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Schematic capture and routine PCB layout are exposed. Debugging a board that works in simulation and fails on the bench is physical, and stays human."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-chip-design-engineer",
+      "profession": "Chip Design Engineer",
+      "one_liner": "Designs the microchips that run every electronic device.",
+      "job_roles": [
+        "VLSI Design Engineer",
+        "Physical Design Engineer",
+        "Design Verification Engineer",
+        "Analog Design Engineer",
+        "FPGA Engineer",
+        "DFT Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "ESSCI",
+        "SMSSC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Electronics / VLSI (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "8.0-16.0",
+        "mid_career_lpa": "18.0-35.0",
+        "mid_career_midpoint": 26.5,
+        "payback_years": 0.5,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any",
+        "note": "The India Semiconductor Mission is creating demand faster than Indian VLSI training fills it. India's design-services centres are world-class, so the Indian route is genuinely viable; abroad adds most value for advanced-node and architecture work."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Highest-paying entry in the sector and the most digital, so more exposed than other engineering branches. Deep device physics and debugging silicon that behaves unlike its model remain human."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Salary band is the highest in Sector 2 and rests on the current India Semiconductor Mission investment cycle. If that funding slows the band could be badly wrong. Verify against actual VLSI fresher offers before shipping."
+      }
+    },
+    {
+      "id": "eng-chemical-engineer",
+      "profession": "Chemical Engineer",
+      "one_liner": "Designs the large-scale processes that turn raw materials into fuels, medicines and plastics.",
+      "job_roles": [
+        "Process Engineer",
+        "Plant Operations Engineer",
+        "Quality Control Engineer",
+        "Process Design Engineer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Plant Operations Engineer"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "attention_span"
+            ],
+            "lower": [
+              "openness",
+              "spatial"
+            ],
+            "why": "Running a plant means shift work, alarms and decisions in minutes. Process design in the same profession is modelling and simulation with time to think."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HYSSC",
+        "LSSSDC",
+        "PCSC",
+        "RSDC",
+        "FICSI",
+        "SCGJ"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Chemical Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.5-7.0",
+        "mid_career_lpa": "7.0-14.0",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 1.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Process simulation is exposed. Judging plant safety, and being accountable when a reaction runs away, are not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-aerospace-engineer",
+      "profession": "Aerospace Engineer",
+      "one_liner": "Designs aircraft, rockets and satellites, and the systems that fly them.",
+      "job_roles": [
+        "Aerodynamics Engineer",
+        "Aircraft Structures Engineer",
+        "Propulsion Engineer",
+        "Avionics Engineer",
+        "Flight Test Engineer",
+        "Satellite Systems Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "EXT-DEFENCE",
+        "EXT-RND",
+        "SMSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Aerospace / Aeronautical Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "8.0-16.0",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 1.0,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 20,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Highest foundational-knowledge share in the sector. Simulation work is exposed; certifying that a design is safe to fly carries consequence a model cannot hold."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-mining-engineer",
+      "profession": "Mining Engineer",
+      "one_liner": "Plans how to extract coal, ore and minerals from the earth safely.",
+      "job_roles": [
+        "Mine Planning Engineer",
+        "Mine Safety Officer",
+        "Blasting Engineer",
+        "Mineral Processing Engineer",
+        "Ventilation Engineer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Mine Safety Officer"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "verbal",
+              "dogmatism"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Safety work is persuading crews and enforcing a standard against production pressure. Mine planning in the same profession is a spatial and computational job."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "SCMS",
+        "IISSSC",
+        "EXT-GOVT",
+        "SCGJ"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Mining Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "5.0-9.0",
+        "mid_career_lpa": "10.0-18.0",
+        "mid_career_midpoint": 14.0,
+        "payback_years": 0.86,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 25,
+          "skill_digital": 15,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Underground work cannot be done remotely, and statutory safety duties sit with a named person. Planning software is exposed; being the accountable officer below ground is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Statutory positions require DGMS (Directorate General of Mines Safety) certificates of competency on top of the degree — this is a real second gate not yet verified. Also confirm the salary band, which is unusually high for a fresher and reflects PSU pay scales."
+      }
+    },
+    {
+      "id": "eng-metallurgical-materials-engineer",
+      "profession": "Metallurgical & Materials Engineer",
+      "one_liner": "Works out which metals and materials to use, and why things break.",
+      "job_roles": [
+        "Metallurgist",
+        "Materials Engineer",
+        "Failure Analysis Engineer",
+        "Foundry Engineer",
+        "Welding Engineer",
+        "Heat Treatment Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IISSSC",
+        "SMSSC",
+        "CGSC",
+        "ASDC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Metallurgical & Materials Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.5-7.0",
+        "mid_career_lpa": "7.0-13.0",
+        "mid_career_midpoint": 10.0,
+        "payback_years": 1.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Failure analysis needs hands on the broken part and a microscope. Materials selection tables are exposed; judging why a component failed in service is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-marine-engineer",
+      "profession": "Marine Engineer",
+      "one_liner": "Runs and maintains the engines and machinery of ships at sea.",
+      "job_roles": [
+        "Marine Engineer Officer",
+        "Engine Room Watchkeeper",
+        "Shipyard Engineer",
+        "Port & Dock Engineer",
+        "Marine Surveyor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Marine Surveyor",
+              "Shipyard Engineer",
+              "Port & Dock Engineer"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily",
+              "neuroticism"
+            ],
+            "why": "Shore roles are inspection, documentation and report-writing on a normal schedule. Sailing as an engine-room officer means months away, confined machinery spaces and emotional steadiness under isolation."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSC",
+        "SMSSC",
+        "HYSSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Maths, usually with 60% and English at 50%"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "IMU CET or a DG Shipping approved institute entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech Marine Engineering at a DG Shipping approved institute (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "sea_time",
+          "requirement": "Mandatory sea service on board ship"
+        },
+        {
+          "step": 5,
+          "stage": "licence",
+          "requirement": "Certificate of Competency from the Directorate General of Shipping"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "IMU CET"
+        ],
+        "private_reputed": [],
+        "note": "Only DG Shipping approved institutes count. Verify approval before joining any college."
+      },
+      "entry_window": null,
+      "licensing_body": "Directorate General of Shipping (DG Shipping)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 12.0,
+        "early_earnings_lpa": "6.0-12.0",
+        "mid_career_lpa": "15.0-30.0",
+        "mid_career_midpoint": 22.5,
+        "payback_years": 1.33,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any",
+        "note": "Employment is on internationally flagged ships regardless of where you train, so the career is global by nature even when the qualification is Indian."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 5,
+          "skill_physical": 30,
+          "skill_digital": 10,
+          "clarity": 30
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Among the least exposed careers in the dataset. The work is physical, at sea, on machinery, and a licensed officer must hold the watch. Remote and autonomous shipping is decades from replacing this."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dgshipping-meo-coc",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "path_to_entry",
+          "statement": "Only DG Shipping approved institutes lead to a Certificate of Competency. A degree from a non-approved college does not qualify you to sail. College choice is itself a gate here, unlike most engineering.",
+          "source": "data/verified_facts.json#dgshipping-meo-coc"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "DG Shipping approval status of institutes, sea-time requirements and CoC examination structure are all unverified. Salary looks high because it is tax-advantaged sea pay — confirm how that is presented to students."
+      }
+    },
+    {
+      "id": "eng-petroleum-engineer",
+      "profession": "Petroleum Engineer",
+      "one_liner": "Finds and extracts oil and gas from underground reservoirs.",
+      "job_roles": [
+        "Drilling Engineer",
+        "Reservoir Engineer",
+        "Oil & Gas Production Engineer",
+        "Well Logging Engineer",
+        "Completion Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HYSSC",
+        "SCGJ",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Petroleum Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "5.0-10.0",
+        "mid_career_lpa": "12.0-25.0",
+        "mid_career_midpoint": 18.5,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Reservoir modelling is exposed. Rig-site decisions with millions of rupees a day at stake, made on incomplete data, are not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-robotics-automation-engineer",
+      "profession": "Robotics & Automation Engineer",
+      "one_liner": "Builds robots and automatic systems that run factories and machines.",
+      "job_roles": [
+        "Robotics Engineer",
+        "Automation Engineer",
+        "PLC & SCADA Engineer",
+        "Mechatronics Engineer",
+        "Industrial Vision Engineer",
+        "Controls Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IASC",
+        "SMSSC",
+        "CGSC",
+        "ASDC",
+        "ESSCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Mechatronics / Robotics / Instrumentation (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and site or plant exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "8.0-16.0",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 1.0,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Builds the automation rather than being replaced by it. Programming is exposed; commissioning a robot cell that must work against real physics on a real factory floor is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-07-31"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-architect",
+      "profession": "Architect",
+      "one_liner": "Designs buildings — how they look, how they work, and how they stand up.",
+      "job_roles": [
+        "Architect",
+        "Urban Designer",
+        "Landscape Architect",
+        "Architectural Conservationist",
+        "Building Information Modelling (BIM) Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Building Information Modelling (BIM) Specialist",
+              "Architectural Conservationist"
+            ],
+            "higher": [
+              "attention_span",
+              "logical",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "BIM and conservation work is precise, standards-bound and documentation-heavy. Design architecture in the same profession is generative and comfortable with an unformed brief."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "EXT-GOVT",
+        "SCGJ",
+        "FFSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Maths with 45% aggregate in PCM"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NATA or JEE Main Paper 2A"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Arch (5 years) at a Council of Architecture approved school"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Register with the Council of Architecture — mandatory to call yourself an Architect"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "NATA",
+          "JEE Main Paper 2A"
+        ],
+        "private_reputed": [],
+        "note": "Only CoA-approved schools count."
+      },
+      "entry_window": null,
+      "licensing_body": "Council of Architecture (CoA)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 10.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-12.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 2.22,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 5,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 45
+        },
+        "legal_accountability": true,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Highest clarity share in the sector. Rendering and drawing production are heavily exposed to generative tools. Deciding how people will actually move through a space, negotiating with clients and regulators, and signing off legally are not."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#coa-architect-title-protection",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "CoA registration protects the TITLE 'Architect', NOT the activity. Per the Supreme Court no registration is required to do architectural work — only registered persons may call themselves an Architect. Municipal plan sanction generally still requires a registered architect's stamp, which is why legal_accountability is retained, but this moat is weaker than in medicine, law or aviation.",
+          "source": "data/verified_facts.json#coa-architect-title-protection"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "SECTOR PLACEMENT: Architect is in Engineering & Making because it is licensed, structural and makes physical buildings. The competing view puts it in Design & Creative Arts. Interior and landscape DESIGN are routed to Sector 8, which makes this boundary sharp. Needs your call. Also note the entry salary is low relative to a 5-year degree plus registration."
+      }
+    },
+    {
+      "id": "eng-commercial-pilot",
+      "profession": "Commercial Pilot",
+      "one_liner": "Flies passenger and cargo aircraft for a living.",
+      "job_roles": [
+        "Commercial Pilot",
+        "First Officer",
+        "Charter Pilot",
+        "Cargo Pilot",
+        "Flight Instructor",
+        "Agricultural / Utility Pilot"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Flight Instructor"
+            ],
+            "higher": [
+              "verbal",
+              "agreeableness",
+              "emotional_intelligence"
+            ],
+            "lower": [],
+            "why": "Instructing is a teaching job — patience and the ability to stay calm while someone else makes mistakes at the controls. Line flying is procedural and largely solitary."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "THSC",
+        "EXT-DEFENCE",
+        "LSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths. Both can be added later through NIOS if you took another stream."
+        },
+        {
+          "step": 2,
+          "stage": "medical",
+          "requirement": "DGCA Class 2 medical, then Class 1 medical before training"
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "200 flying hours at a DGCA-approved Flying Training Organisation"
+        },
+        {
+          "step": 4,
+          "stage": "exams",
+          "requirement": "DGCA ground exams and the RTR(A) radio telephony test"
+        },
+        {
+          "step": 5,
+          "stage": "licence",
+          "requirement": "Commercial Pilot Licence issued by DGCA. Minimum age 18, no upper age limit. There is no upper age limit."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "DGCA ground examinations",
+          "RTR(A)"
+        ],
+        "private_reputed": [],
+        "note": "No degree needed. Entry is by medical fitness, flying hours and DGCA exams."
+      },
+      "entry_window": null,
+      "licensing_body": "Directorate General of Civil Aviation (DGCA)",
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 57.0,
+        "early_earnings_lpa": "10.0-18.0",
+        "mid_career_lpa": "25.0-45.0",
+        "mid_career_midpoint": 35.0,
+        "payback_years": 4.07,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.fmsaviationacademy.com/cost-of-becoming-a-pilot-in-india-2026/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 35,
+          "skill_digital": 5,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Among the least exposed careers in the dataset despite heavy cockpit automation, because regulation requires licensed humans on the flight deck and the physical, medical and legal requirements are immovable. Autopilot has existed for decades without reducing pilot headcount."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dgca-cpl-pilot",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The 57 lakh figure is SELF-FUNDED and is the real gate into this career — a larger barrier than any DGCA examination. It excludes type rating, which is an additional cost.",
+          "source": "data/verified_facts.json#dgca-cpl-pilot"
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "Physics and Maths can be added later through NIOS, so a commerce or arts student is NOT blocked from this career. DGCA has separately approved dropping the PCM requirement altogether, pending Ministry of Civil Aviation approval.",
+          "source": "data/verified_facts.json#dgca-cpl-pilot"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "COST IS THE REAL GATE AND WE HAVE NO FIELD FOR IT. CPL training runs roughly 40-60 lakh rupees, self-funded. Recommending this to a student without stating that is misleading — it is the one profession where the cost_of_entry field we withdrew genuinely mattered. Also re-check the pending DGCA proposal to drop the Physics/Maths requirement entirely."
+      }
+    },
+    {
+      "id": "eng-aircraft-maintenance-engineer",
+      "profession": "Aircraft Maintenance Engineer",
+      "one_liner": "Inspects, repairs and certifies aircraft as safe to fly.",
+      "job_roles": [
+        "Aircraft Maintenance Engineer (Mechanical)",
+        "Aircraft Maintenance Engineer (Avionics)",
+        "Line Maintenance Technician",
+        "Base Maintenance Technician",
+        "Aviation Quality Inspector"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "EXT-DEFENCE",
+        "LSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths, usually with 50%"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "2-3 year course at a DGCA-approved AME training institute"
+        },
+        {
+          "step": 3,
+          "stage": "exams",
+          "requirement": "DGCA module examinations"
+        },
+        {
+          "step": 4,
+          "stage": "experience",
+          "requirement": "Supervised maintenance experience on type"
+        },
+        {
+          "step": 5,
+          "stage": "licence",
+          "requirement": "AME Licence issued by DGCA — only a licence holder can certify an aircraft as airworthy"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "DGCA AME module examinations"
+        ],
+        "private_reputed": [],
+        "note": "Only DGCA-approved institutes count. Verify approval before paying any fees."
+      },
+      "entry_window": null,
+      "licensing_body": "Directorate General of Civil Aviation (DGCA)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.5,
+        "early_earnings_lpa": "3.0-7.0",
+        "mid_career_lpa": "6.0-12.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.3,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Hands inside an aircraft, and a licensed human signature required before it flies. The physical and legal moats are both absolute. Diagnostic software is exposed; certification is not."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dgca-cpl-pilot",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "India has a known oversupply of AME graduates relative to licence holders — many complete the course but never accumulate the experience to get licensed, and end up unemployed. That drop-off is not captured anywhere in this record and materially changes whether this should be recommended. Needs verification and a human decision. COST: AME course fees at DGCA-approved institutes are a likely cost gate — not yet verified."
+      }
+    },
+    {
+      "id": "eng-electrician",
+      "profession": "Electrician",
+      "one_liner": "Installs and repairs the wiring and electrical systems in homes, factories and sites.",
+      "job_roles": [
+        "Domestic Electrician",
+        "Industrial Electrician",
+        "Wireman",
+        "Electrical Maintenance Technician",
+        "Panel Board Technician",
+        "Solar PV Installer",
+        "Rooftop Solar Technician",
+        "Solar Plant O&M Technician",
+        "Battery Storage Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "PSSC",
+        "CSDCI",
+        "SCGJ",
+        "ESSCI",
+        "SMSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Electrician trade, 2 years"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.4,
+        "early_earnings_lpa": "1.8-4.0",
+        "mid_career_lpa": "3.5-6.5",
+        "mid_career_midpoint": 5.0,
+        "payback_years": 0.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 60,
+          "skill_digital": 0,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Near the floor of AI exposure. The work is physical, on site, in buildings that all differ, with lethal consequences for error. No part of pulling cable through a wall is a text problem."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Solar work is folded in here rather than kept as a separate profession. Solar PV installation is electrician skill plus a specialisation — DC wiring, inverters, mounting, working at height — not a separate skill set. India's renewable targets are growing these roles fast, so they are among the best-paying directions this trade can take."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-welder",
+      "profession": "Welder",
+      "one_liner": "Joins metal parts together — for buildings, pipelines, ships and machines.",
+      "job_roles": [
+        "Arc Welder",
+        "MIG / TIG Welder",
+        "Pipeline Welder",
+        "Structural Welder",
+        "Underwater Welder",
+        "Welding Inspector"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Welding Inspector"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness",
+              "verbal"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Inspection is judgement, documentation and saying no to work someone has already done. Welding itself is sustained physical skill."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "IISSSC",
+        "CSDCI",
+        "SMSSC",
+        "HYSSC",
+        "CGSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 8 pass is enough for this trade"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Welder trade, 6 months to 1 year"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.0-2.5",
+        "mid_career_lpa": "3.0-6.0",
+        "mid_career_midpoint": 4.5,
+        "payback_years": 0.17,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 8,
+          "knowledge_retrievable": 7,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 7,
+        "band": "low",
+        "reason": "The single least AI-exposed profession in the dataset so far. Highly physical, highly skilled, and performed in positions and spaces built for human bodies. Specialised welders — pipeline, underwater — earn multiples of the entry band."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "Class 8 pass is sufficient for this trade. Together with Plumber, this is the lowest formal educational barrier in the entire taxonomy.",
+          "source": "data/verified_facts.json#iti-ncvt-trades"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Class 8 entry makes this one of the two lowest-barrier professions in the whole taxonomy, which matters for equity. Confirm the salary band, and confirm how safety and physical risk are presented to school students."
+      }
+    },
+    {
+      "id": "eng-fitter-machinist",
+      "profession": "Fitter & Machine Operator",
+      "one_liner": "Shapes and assembles metal parts using lathes, CNC machines and hand tools.",
+      "job_roles": [
+        "Fitter",
+        "Turner",
+        "CNC Operator",
+        "CNC Programmer",
+        "Tool & Die Maker",
+        "Machine Shop Technician"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "CNC Programmer",
+              "Tool & Die Maker"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "CNC programming and die making are abstract and geometric — you think the cut before it happens. Fitting and turning are hands-on machine work."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CGSC",
+        "SMSSC",
+        "ASDC",
+        "AASSC",
+        "IISSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Fitter / Turner / Machinist trade, 2 years"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.4,
+        "early_earnings_lpa": "1.8-4.0",
+        "mid_career_lpa": "4.0-8.0",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 55,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "CNC programming is partly exposed, but setting up, holding tolerance and knowing by feel when a cut is wrong stay physical. This is the entry route into tool and die work, which pays well."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-plumber",
+      "profession": "Plumber",
+      "one_liner": "Installs and fixes water, drainage and gas pipe systems.",
+      "job_roles": [
+        "Plumber",
+        "Pipe Fitter",
+        "Sanitary Technician",
+        "Water Supply Technician",
+        "Gas Pipeline Fitter"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IPSC",
+        "CSDCI",
+        "SCGJ"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 8 pass is enough for this trade"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Plumber trade, 1 year"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "1.8-3.5",
+        "mid_career_lpa": "2.5-4.5",
+        "mid_career_midpoint": 3.5,
+        "payback_years": 0.08,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 8,
+          "knowledge_retrievable": 7,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 7,
+        "band": "low",
+        "reason": "Physical work in buildings that are all different, usually in spaces designed for a human body to reach into. Effectively unautomatable, and demand grows with urban construction."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "mid_career EXCLUDES business ownership by design. Tradespeople who build a contracting firm earn far more, but the earning attribute there is entrepreneurship — Sector 5 — not the trade itself. This is why the profession does not pass the compensation filter."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-carpenter-furniture-maker",
+      "profession": "Carpenter & Furniture Maker",
+      "one_liner": "Builds and fits wooden structures, doors, furniture and interiors.",
+      "job_roles": [
+        "Carpenter",
+        "Furniture Maker",
+        "Modular Kitchen Installer",
+        "Wood CNC Operator",
+        "Shuttering Carpenter",
+        "Interior Fit-out Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "FFSC",
+        "CSDCI",
+        "HCSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Carpenter trade, 1 year"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "1.8-3.5",
+        "mid_career_lpa": "2.5-4.5",
+        "mid_career_midpoint": 3.5,
+        "payback_years": 0.08,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 8,
+          "knowledge_retrievable": 7,
+          "skill_physical": 60,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 12,
+        "band": "low",
+        "reason": "Machine-made components are increasing, but measuring, fitting and finishing in a real room that is never square remains physical. Modular interiors are growing this trade in Indian cities."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "mid_career EXCLUDES business ownership by design. Tradespeople who build a contracting firm earn far more, but the earning attribute there is entrepreneurship — Sector 5 — not the trade itself. This is why the profession does not pass the compensation filter."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-mason-construction-technician",
+      "profession": "Mason & Construction Technician",
+      "one_liner": "Builds walls, floors and structures on construction sites.",
+      "job_roles": [
+        "Mason",
+        "Bar Bender & Steel Fixer",
+        "Tile & Marble Layer",
+        "Concrete Technician",
+        "Scaffolder",
+        "Waterproofing Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "IESC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 8 pass is enough for this trade"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Mason / Building Construction trade, 6 months to 1 year"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "1.5-3.0",
+        "mid_career_lpa": "2.0-4.0",
+        "mid_career_midpoint": 3.0,
+        "payback_years": 0.09,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 5,
+          "knowledge_retrievable": 5,
+          "skill_physical": 70,
+          "skill_digital": 0,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "The most physical composition in the dataset and effectively zero AI exposure. Construction is India's second largest employer after agriculture."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "mid_career EXCLUDES business ownership by design. Tradespeople who build a contracting firm earn far more, but the earning attribute there is entrepreneurship — Sector 5 — not the trade itself. This is why the profession does not pass the compensation filter."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-hvac-refrigeration-technician",
+      "profession": "AC & Refrigeration Technician",
+      "one_liner": "Installs and repairs air conditioners, fridges and cold storage systems.",
+      "job_roles": [
+        "AC Technician",
+        "Refrigeration Mechanic",
+        "HVAC Installation Technician",
+        "Chiller Technician",
+        "Cold Chain Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "FICSI",
+        "LSC",
+        "SCGJ",
+        "CGSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Refrigeration & Air Conditioning trade, 1-2 years"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.4,
+        "early_earnings_lpa": "1.8-4.0",
+        "mid_career_lpa": "3.5-6.0",
+        "mid_career_midpoint": 4.75,
+        "payback_years": 0.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 8,
+          "skill_physical": 60,
+          "skill_digital": 0,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 8,
+        "band": "low",
+        "reason": "Physical diagnosis and repair on site. One of the fastest growing trades in India as air conditioning and cold chain spread, and largely self-employable."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-automobile-mechanic",
+      "profession": "Automobile Mechanic",
+      "one_liner": "Diagnoses and repairs cars, bikes and commercial vehicles.",
+      "job_roles": [
+        "Auto Mechanic",
+        "Two-Wheeler Technician",
+        "Diesel Mechanic",
+        "Auto Electrician",
+        "EV Service Technician",
+        "Vehicle Body Repair Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "ASDC",
+        "SCGJ"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Mechanic Motor Vehicle trade, 2 years"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.4,
+        "early_earnings_lpa": "1.8-3.5",
+        "mid_career_lpa": "3.0-5.5",
+        "mid_career_midpoint": 4.25,
+        "payback_years": 0.15,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 8,
+          "skill_physical": 52,
+          "skill_digital": 3,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 11,
+        "band": "low",
+        "reason": "Diagnostic computers already assist and will do more, but removing and replacing a gearbox stays physical. EV servicing is an entirely new skill demand rather than a threat. Raised clarity 20->25. A customer describes a symptom, not a fault. Working out what is actually wrong from an imprecise account is diagnostic clarity, not lookup."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "mid_career EXCLUDES business ownership by design. Tradespeople who build a contracting firm earn far more, but the earning attribute there is entrepreneurship — Sector 5 — not the trade itself. This is why the profession does not pass the compensation filter."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-heavy-equipment-operator",
+      "profession": "Heavy Equipment Operator",
+      "one_liner": "Operates excavators, cranes and earthmoving machines on sites and mines.",
+      "job_roles": [
+        "Excavator Operator",
+        "Crane Operator",
+        "Bulldozer Operator",
+        "Forklift Operator",
+        "Drilling Rig Operator",
+        "Road Roller Operator"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IESC",
+        "CSDCI",
+        "SCMS",
+        "LSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 8 pass is enough for this trade"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Heavy Equipment Operation trade, 6 months to 1 year"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "2.0-5.0",
+        "mid_career_lpa": "4.0-7.0",
+        "mid_career_midpoint": 5.5,
+        "payback_years": 0.14,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 8,
+          "knowledge_retrievable": 7,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 7,
+        "band": "low",
+        "reason": "Autonomous heavy equipment exists in large open-pit mines abroad, but Indian sites are congested, unstructured and cost-sensitive. Operator demand tracks infrastructure spending, which is rising."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-land-surveyor",
+      "profession": "Land Surveyor",
+      "one_liner": "Measures land and sites precisely so that construction can be planned.",
+      "job_roles": [
+        "Land Surveyor",
+        "Total Station Operator",
+        "Drone Survey Technician",
+        "Cadastral Surveyor",
+        "Setting-out Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "IESC",
+        "EXT-GOVT",
+        "SCGJ"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Surveyor trade, 1-2 years"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.4,
+        "early_earnings_lpa": "2.0-4.5",
+        "mid_career_lpa": "4.0-6.5",
+        "mid_career_midpoint": 5.25,
+        "payback_years": 0.12,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 10,
+          "skill_physical": 45,
+          "skill_digital": 13,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 23,
+        "band": "low",
+        "reason": "Drone and automated processing take over the calculation and mapping, but someone must still stand on the land, set control points and resolve what the boundary actually is. More exposed than the other trades, still low."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-cad-draughtsman",
+      "profession": "CAD Draughtsman",
+      "one_liner": "Turns engineers' and architects' ideas into precise technical drawings.",
+      "job_roles": [
+        "CAD Draughtsman (Civil)",
+        "CAD Draughtsman (Mechanical)",
+        "BIM Technician",
+        "Technical Detailer",
+        "3D Modelling Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "CGSC",
+        "SMSSC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass with Science and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI Draughtsman (Civil / Mechanical) trade, 1-2 years"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "All India Trade Test (AITT) for the National Trade Certificate under NCVT"
+        },
+        {
+          "step": 4,
+          "stage": "apprenticeship",
+          "requirement": "1-2 year apprenticeship under a licensed tradesperson or employer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short-term courses have no age cap",
+          "Recognition of Prior Learning (RPL) certification for existing informal workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.4,
+        "early_earnings_lpa": "1.8-3.5",
+        "mid_career_lpa": "3.0-4.5",
+        "mid_career_midpoint": 3.75,
+        "payback_years": 0.15,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://schooledge.org/blog/iti-electrician-course-details-fees-salary-career",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-04"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 8,
+          "knowledge_retrievable": 12,
+          "skill_physical": 5,
+          "skill_digital": 55,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 67,
+        "band": "high",
+        "reason": "THE EXCEPTION AMONG THE TRADES. Purely digital execution with low clarity — generative CAD and text-to-drawing tools hit this directly. Every other trade here is protected by physical work; this one is not. The safer path is to use it as an entry point into BIM coordination or a diploma in civil or mechanical engineering."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#iti-ncvt-trades",
+        "checked_on": "2026-08-03"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Only trade in Sector 2 with high AI exposure, and it is a common recommendation for students who want a technical job without a degree. Telling them it is a dead end is consequential; not telling them is worse. Needs a human decision on framing."
+      }
+    },
+    {
+      "id": "eng-textile-engineer",
+      "profession": "Textile Engineer",
+      "one_liner": "Runs the machines and chemistry that turn fibre into fabric.",
+      "job_roles": [
+        "Textile Technologist",
+        "Spinning Technologist",
+        "Weaving Technologist",
+        "Dyeing & Finishing Chemist",
+        "Technical Textiles Engineer",
+        "Textile Quality Executive"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "TSC",
+        "AMHSSC",
+        "SMSSC",
+        "CGSC",
+        "PCSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Textile Technology / Textile Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and plant or site exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3-5.5",
+        "mid_career_lpa": "6-12",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.41,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Mill work is physical and process-bound — spinning, weaving and dyeing happen on machines, not screens. Production planning is partly exposed; diagnosing why a batch dyed unevenly is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Textile ENGINEERING sits here — fibre science, machinery, dyeing chemistry. Apparel and fashion PRODUCTION sits in Sector 8 as craft. The same split as Architect here versus Interior Designer in Sector 8."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "India's textile industry is the second-largest employer after agriculture, but this degree concentrates in a handful of institutions (IIT Delhi, VJTI, ICT Mumbai) and much of the industry hires general mechanical or chemical engineers instead. Verify how many textile engineering seats and dedicated roles actually exist before shipping."
+      }
+    },
+    {
+      "id": "eng-biomedical-engineer",
+      "profession": "Biomedical Engineer",
+      "one_liner": "Designs and looks after the machines that hospitals use to diagnose and treat.",
+      "job_roles": [
+        "Biomedical Engineer",
+        "Clinical Engineer (hospital)",
+        "Medical Device Design Engineer",
+        "Medical Imaging Systems Engineer",
+        "Regulatory Affairs Engineer (devices)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Clinical Engineer (hospital)"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "extraversion",
+              "agreeableness"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Hospital clinical engineering is done beside clinicians and patients, under their pressure and vocabulary. Device design in the same profession is a solitary, spatial engineering job."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "ESSCI",
+        "LSSSDC",
+        "SMSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Biomedical Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and plant or site exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3-4.5",
+        "mid_career_lpa": "5-9",
+        "mid_career_midpoint": 7.0,
+        "payback_years": 1.6,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any",
+        "note": "Demand in India is real but skewed — clinical engineering, service, regulatory and procurement, because most devices are imported. Device DESIGN work concentrates abroad or in a handful of Indian firms. The demand case stands on its own; the pathway question is separate."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Devices are physical and safety-critical, and hospital clinical engineering means hands on equipment people's lives depend on. Design documentation is exposed; commissioning an MRI is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "KNOWN WEAK OUTCOMES. India's medical device DESIGN industry is small — most devices are imported, and a large share of biomedical engineering graduates end up in maintenance roles or leave the field entirely. The degree promises more than the Indian market delivers. Verify employment outcomes before recommending this to students; it may warrant a warning rather than a straight listing."
+      }
+    },
+    {
+      "id": "eng-fire-safety-engineer",
+      "profession": "Fire & Safety Engineer",
+      "one_liner": "Stops industrial accidents and fires before they happen, and plans what to do if they do.",
+      "job_roles": [
+        "Health, Safety & Environment (HSE) Officer",
+        "Fire Protection Systems Designer",
+        "Industrial Safety Engineer",
+        "Loss Prevention Engineer",
+        "Safety Auditor",
+        "Process Safety Engineer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Safety Auditor",
+              "Loss Prevention Engineer"
+            ],
+            "higher": [
+              "dogmatism",
+              "conscientiousness",
+              "verbal"
+            ],
+            "lower": [
+              "bodily",
+              "extraversion"
+            ],
+            "why": "Auditing is desk and documentation work where holding a line against pressure is the skill. Field HSE in the same profession is walking a live site and reading what is about to go wrong."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "HYSSC",
+        "SMSSC",
+        "IISSSC",
+        "PSSC",
+        "CGSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory, plus one of Chemistry/Biology/Vocational"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 1, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Fire & Safety / Industrial Safety Engineering (4 years)"
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Internships and plant or site exposure decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "JEE Advanced"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE",
+          "SRMJEEE",
+          "COMEDK"
+        ],
+        "note": "State engineering entrances also apply."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2 (generally no upper age limit)",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "Private university admission"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3-5",
+        "mid_career_lpa": "6-12",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.5,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 25,
+          "skill_digital": 10,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Inspection is physical and site-based, and accountability for a preventable death cannot be delegated to software. Checklist generation and report writing are exposed; walking a plant and seeing what is about to go wrong is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper1-btech",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "The statutory Safety Officer post under Section 40B of the Factories Act is NOT listed here because it is not an entry role — state rules require an engineering degree PLUS five years of experience. It is what this career grows into. Entry is HSE work in construction and oil and gas, usually with a NEBOSH certification alongside the degree.",
+          "source": "data/verified_facts.json#factories-act-40b-safety-officer"
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null despite the statutory mandate. Section 40B requires factories to APPOINT a Safety Officer; it does not licence the person. There is no register and no bar on practising without it, so this is not Tier A licensing.",
+          "source": "data/verified_facts.json#factories-act-40b-safety-officer"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-drone-pilot",
+      "profession": "Drone Pilot & Operator",
+      "one_liner": "Flies drones for a living — spraying crops, surveying land, inspecting bridges and towers.",
+      "job_roles": [
+        "Drone Pilot",
+        "Agricultural Spraying Drone Operator",
+        "Survey Drone Operator",
+        "Infrastructure Inspection Pilot",
+        "Drone Data Processing Technician",
+        "Drone Maintenance Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "ASCI",
+        "CSDCI",
+        "IESC",
+        "SCGJ",
+        "EXT-DEFENCE",
+        "LSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass is the only education requirement"
+        },
+        {
+          "step": 2,
+          "stage": "medical",
+          "requirement": "DGCA medical certificate; minimum age 18"
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "Training at a DGCA-approved Remote Pilot Training Organisation (RPTO)"
+        },
+        {
+          "step": 4,
+          "stage": "licence",
+          "requirement": "Pass written and practical assessment for the Remote Pilot Certificate"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "DGCA RPTO written and practical assessment"
+        ],
+        "private_reputed": [],
+        "note": "No academic entrance exam. Entry is by training and assessment at an approved RPTO."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 65,
+        "is_hard_block": true,
+        "constrained_route": "Remote Pilot Certificate is issued only between ages 18 and 65",
+        "bypass": []
+      },
+      "licensing_body": "Directorate General of Civil Aviation (DGCA)",
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.8,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-9",
+        "mid_career_midpoint": 7.0,
+        "payback_years": 0.21,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Agricultural spraying, cadastral survey, infrastructure inspection and mining volumetrics are all scaling at once, and the Namo Drone Didi scheme is putting drones into rural hands."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "common",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 13,
+          "skill_physical": 45,
+          "skill_digital": 10,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 23,
+        "band": "low",
+        "reason": "Flying is physical and site-based, and a licensed human is legally responsible for the aircraft. Flight planning and image processing are exposed; being accountable for a machine over a public road is not. Automation increases drone USE rather than removing the pilot."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dgca-remote-pilot-certificate",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "Class 10 pass is the only educational requirement — no class 12, no degree. This is the most accessible statutorily licensed profession in the taxonomy, and one of very few Tier A careers open to someone who left school early.",
+          "source": "data/verified_facts.json#dgca-remote-pilot-certificate"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-precision-manufacturing-technician",
+      "profession": "Precision Manufacturing Technician",
+      "one_liner": "Works in dust-free cleanrooms making chips, medicines and precision parts.",
+      "job_roles": [
+        "Semiconductor Fab Technician",
+        "Cleanroom Operator (Pharma)",
+        "Wafer Process Technician",
+        "Precision Assembly Technician",
+        "Metrology Technician",
+        "Fab Equipment Maintenance Technician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "ESSCI",
+        "SMSSC",
+        "LSSSDC",
+        "AASSC",
+        "CGSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10_12",
+          "requirement": "Class 10 or 12; a science background helps"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI or diploma in electronics, instrumentation or chemical plant operation"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "Cleanroom protocol and GMP training, usually given by the employer"
+        },
+        {
+          "step": 4,
+          "stage": "on_job",
+          "requirement": "Process and equipment specialisation on the line — this is where pay rises"
+        }
+      ],
+      "entrance_exams": {
+        "national": [],
+        "private_reputed": [],
+        "note": "ITI and diploma admission is on class 10 or 12 marks. No entrance exam."
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 40,
+        "is_hard_block": false,
+        "constrained_route": "ITI admission is capped at age 40",
+        "bypass": [
+          "Employer-run apprenticeships and NSDC short courses have no age cap",
+          "Recognition of Prior Learning for existing manufacturing workers"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-10",
+        "mid_career_midpoint": 7.5,
+        "payback_years": 0.27,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://in.indeed.com/career/welder/salaries"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Pharma cleanroom demand is large and real TODAY — India is a major generics manufacturer. Semiconductor fab demand is emerging as Micron Sanand and Tata Dholera come online. The profession is deliberately broader than semiconductors so it does not rest on one industry."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 50,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Cleanroom work is physical, procedural and cannot be done remotely — someone must gown up and handle wafers or vials. Process monitoring is partly automated; hands in the cleanroom are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Deliberately broader than 'Semiconductor Fab Technician'. A coverage probe found no existing profession covering cleanroom process work, but naming it after semiconductors alone would bet the record on one emerging industry. Pharma cleanroom operation is the same skill set and employs large numbers in India today."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The semiconductor half of this profession rests on the India Semiconductor Mission delivering operational fabs at scale. Pharma cleanroom demand is real now and carries the record on its own, but the salary band and the fab job counts are both unverified. Check before shipping."
+      }
+    },
+    {
+      "id": "eng-nuclear-engineer",
+      "profession": "Nuclear Engineer",
+      "one_liner": "Designs and runs nuclear reactors, and keeps the radiation safely contained.",
+      "job_roles": [
+        "Reactor Design Engineer",
+        "Reactor Operations Engineer",
+        "Radiation Safety Officer",
+        "Nuclear Fuel Cycle Engineer",
+        "Nuclear Instrumentation Engineer",
+        "Radioactive Waste Management Engineer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "PSSC",
+        "EXT-RND",
+        "EXT-GOVT",
+        "EXT-DEFENCE",
+        "SMSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths compulsory"
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main, or a state or private engineering entrance"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Mechanical, Chemical, Electrical, Electronics, Metallurgy or Nuclear — or M.Sc Physics/Chemistry"
+        },
+        {
+          "step": 4,
+          "stage": "gate",
+          "requirement": "Clear GATE — this is the real gate into the Department of Atomic Energy"
+        },
+        {
+          "step": 5,
+          "stage": "training",
+          "requirement": "One-year BARC Training School course via OCES or DGFS, then appointment as Scientific Officer"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main Paper 1",
+          "GATE",
+          "BARC OCES / DGFS"
+        ],
+        "private_reputed": [
+          "BITSAT",
+          "VITEEE"
+        ],
+        "note": "GATE is the decisive exam. BARC screens on a GATE score from any of the last three years."
+      },
+      "entry_window": {
+        "max_years_since_class12": 3,
+        "max_age": null,
+        "is_hard_block": false,
+        "constrained_route": "JEE Main — admits only recent class 12 passouts",
+        "bypass": [
+          "3-year engineering diploma, then lateral entry into B.Tech year 2",
+          "B.Sc graduate lateral entry into B.Tech year 2",
+          "M.Sc Physics or Chemistry route into OCES, which bypasses B.Tech entirely"
+        ]
+      },
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "8-12",
+        "mid_career_lpa": "14-25",
+        "mid_career_midpoint": 19.5,
+        "payback_years": 0.6,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Pay follows central government Group A scales.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.getmyuni.com/btech-fees",
+            "https://salaryinsight.in/civil-engineer-salary/"
+          ],
+          "checked_on": "2026-08-06"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "India's nuclear capacity expansion and the opening of the sector to private participation are growing this, but absolute headcount stays small and concentrated in DAE units."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 8,
+          "skill_physical": 17,
+          "skill_digital": 15,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 23,
+        "band": "low",
+        "reason": "Among the most consequence-heavy engineering work there is — a licensed, accountable human is required at every safety decision. Simulation is exposed; deciding whether a reactor is safe to restart is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#barc-oces-dgfs-nuclear",
+        "checked_on": "2026-08-06"
+      },
+      "nuances": [
+        {
+          "field": "path_to_entry",
+          "statement": "You do NOT need a nuclear engineering degree. BARC recruits from Mechanical, Chemical, Electrical, Electronics, Metallurgy, Physics and Chemistry — GATE is the real gate, not the branch name. An M.Sc Physics graduate can enter OCES without any B.Tech at all.",
+          "source": "data/verified_facts.json#barc-oces-dgfs-nuclear"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "The Radiation Safety Officer job role requires AERB certification, which is a real second gate not yet verified. Also confirm the salary band — Scientific Officer pay follows central government scales with allowances that make CTC comparisons unreliable."
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Interior Designer",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "FFSC",
+      "why": "Craft is aesthetic and spatial design, not structural making. Architect stays here because it is licensed and structural."
+    },
+    {
+      "profession": "Industrial / Product Designer",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "CGSC",
+      "why": "Designs how a product looks and feels; the engineer designs how it works."
+    },
+    {
+      "profession": "Goldsmith / Bench Jeweller",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "GJSCI",
+      "why": "Sector 2 is industrial and technical making. Sector 8 is craft and aesthetic making. Handloom weaving and pottery follow the same rule."
+    },
+    {
+      "profession": "Agricultural Engineer",
+      "goes_to": "15. Agriculture & Food Systems",
+      "tag_here_instead": "ASCI",
+      "why": "Kept with the agriculture value chain where students looking for farm careers will find it. Contestable — see boundary notes."
+    },
+    {
+      "profession": "Embedded Software & IoT Developer",
+      "goes_to": "1. Software & Computing",
+      "tag_here_instead": "ESSCI",
+      "why": "Writes code. Chip Design Engineer stays here because it designs hardware."
+    },
+    {
+      "profession": "Environmental Engineer",
+      "goes_to": "14. Environment & Sustainability",
+      "tag_here_instead": "SCGJ",
+      "why": "Purpose defines it — the goal is environmental outcomes, not the artefact."
+    },
+    {
+      "profession": "Biomedical Equipment Technician",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Works inside clinical care delivery."
+    },
+    {
+      "profession": "Cabin Crew",
+      "goes_to": "16. Hospitality, Travel & Culinary",
+      "tag_here_instead": "AASSC",
+      "why": "Hosting people. Pilot stays here as licensed technical operation of complex machinery."
+    },
+    {
+      "profession": "Merchant Navy Deck Officer",
+      "goes_to": "16. Hospitality, Travel & Culinary",
+      "tag_here_instead": "LSC",
+      "why": "PROVISIONAL — navigation and cargo command rather than machinery. May belong here instead; flagged for review."
+    },
+    {
+      "profession": "Fashion & Apparel Production Technician",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "AMHSSC",
+      "why": "Craft and garment construction. Textile ENGINEERING — fibre, machinery, dyeing chemistry — stays here."
+    },
+    {
+      "profession": "Firefighter",
+      "goes_to": "7. Law, Governance & Public Service",
+      "tag_here_instead": "EXT-DEFENCE",
+      "why": "Uniformed public service under the cross-cutting rule, like Police Officer. The industrial fire prevention side stays here as Fire & Safety Engineer."
+    }
+  ],
+  "merged_into": [
+    {
+      "profession": "Solar Panel Technician",
+      "merged_into": "Electrician",
+      "why": "Solar PV installation is electrician skill plus a specialisation, and the roles were already duplicated across three professions. Findable via the Solar job roles and the SCGJ green-jobs tag."
+    },
+    {
+      "profession": "Automobile Engineer",
+      "merged_into": "Mechanical Engineer",
+      "why": "Passed the interest-alignment half of the profession test but failed the separate-skill-set half. Findable via the vehicle job roles and the ASDC automotive tag."
+    },
+    {
+      "profession": "Blockchain & Web3 Developer",
+      "merged_into": "Software Developer (Sector 1)",
+      "why": "Thin and volatile Indian market. Smart Contract Engineer retained as a job role."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "ARCHITECT sits here, not in Design & Creative Arts. Reasoning: statutory CoA licence, PCM prerequisite, structural responsibility, and the output is a physical building. Interior and landscape DESIGN are routed to Sector 8, so the boundary is craft-versus-licensed-construction. This is the single most contestable placement in the sector.",
+    "COMMERCIAL PILOT and AIRCRAFT MAINTENANCE ENGINEER sit here as licensed technical operation of machinery, while Cabin Crew goes to Hospitality. If you prefer an operations-versus-making split, both would move.",
+    "AGRICULTURAL ENGINEER routed to Sector 15 rather than kept here. The rule applied is that B.Tech branches normally live here, so this is a deliberate exception to keep Sector 15 substantive. Reverse it if you would rather all B.Tech branches sit together.",
+    "CHIP DESIGN ENGINEER is here rather than Sector 1 because it designs hardware; Embedded Software is in Sector 1 because it writes code. The two are adjacent and students may not see the difference from the names alone.",
+    "SKILLED TRADES are distributed inside this sector by degree_dependency = certificate, exactly as the brief specified, rather than being split into their own sector. Twelve of twenty-eight professions here are trades."
+  ],
+  "changelog": {
+    "1.0": [
+      "Initial build. 28 professions: 16 degree-tier, 12 certificate-tier trades.",
+      "AMIE / Institution of Engineers route excluded from all path_to_entry — post-2013 recognition unresolved in Delhi High Court.",
+      "Tier A verified: DGCA pilot licensing. Tier B verified: JEE subject gates, B.Arch eligibility, ITI/NCVT trade entry.",
+      "ITI age cap of 40 recorded as an entry_window on every trade."
+    ],
+    "2.0": [
+      "Added cost_barrier — SPARSE and verified-only, null unless money is a primary gate. Commercial Pilot is the first populated case at 35-80 lakh self-funded, which is a bigger barrier than any exam in this dataset. This is the disciplined version of the cost_of_entry field withdrawn earlier: no universal estimates, only the handful of cases where cost decides.",
+      "Added earning_note — flags where entry_salary_band_inr systematically understates, chiefly trades and freelance-heavy professions where self-employment is common. Qualitative by design; no fabricated numbers."
+    ],
+    "3.0": [
+      "Replaced entry_salary_band_inr and earning_note with a three-part economics block: cost_of_entry_lakh, early_earnings_lpa (years 1-3), mid_career_lpa (years 5-8, EMPLOYED only), and derived payback_years.",
+      "Entry pay alone was structurally biased toward long credentialed runways — it compared a 19-year-old welder with zero debt against a 22-year-old engineer with 6 lakh of fees and called the welder poorer.",
+      "mid_career explicitly EXCLUDES business ownership. If a plumber's income depends on running a contracting firm, the earning attribute is entrepreneurship (Sector 5), not plumbing.",
+      "cost_of_entry is now universal rather than sparse, because the payback ratio needs a denominator. Anchored on verified fee data: government ITI 0.05-0.4 L, government B.Tech ~6 L, private B.Tech ~13 L, CPL 35-80 L."
+    ],
+    "4.0": [
+      "Added shipping block, DERIVED from data/filter_rules.json — never hand-set. Professions failing the compensation filter are flagged ship:false and RETAINED, not deleted.",
+      "Kept rather than deleted for three reasons: the 4.5 threshold is calibrated for urban India and a tier-3 threshold would differ; the threshold is a product decision that will be tuned; and a flag can be rendered as a delete while a delete cannot be rendered as a flag."
+    ],
+    "5.0": [
+      "Removed the stored shipping block. ship/filtered is a DERIVED value — computable any time from economics.mid_career_midpoint + ai_exposure.band + data/filter_rules.json. Storing a derived value only creates drift risk. The rule lives in filter_rules.json; the application evaluates it at query time."
+    ],
+    "6.0": [
+      "Re-scored clarity across the sector under the sharpened definition — clarity of OBJECTIVE and PROBLEM: what, how, FOR WHOM, and why. The 'for whom' dimension was previously underweighted.",
+      "Replaced the shipping block with a single derived boolean `filter`. True = passes the compensation rule in data/filter_rules.json. Validated on every export so it cannot drift.",
+      "Automobile Mechanic: exposure 13 -> 11 (low)"
+    ],
+    "7.0": [
+      "tools/audit.py first run caught three tier errors: Marine Engineer, Architect and AME all named a licensing_body while sitting at tier B or C. Fixed by VERIFYING each against its statutory authority rather than by downgrading the tier.",
+      "CORRECTION on Architect: CoA registration is title protection, not activity licensing. Per the Supreme Court no registration is required to do architectural work — only to call yourself an Architect. Recorded in verified_facts and flagged for review.",
+      "Commercial Pilot entry_window set to null. DGCA imposes no age or recency limit, so an all-null window carried no information."
+    ],
+    "8.0": [
+      "Added nuances — a list of {field, statement, source?} recording settled subtleties where a tag value alone would mislead.",
+      "RULE: nuances are SETTLED, admin_review is UNSETTLED. A nuance is something true we already know; an admin_review is a decision a human still owes. Without that line nuances becomes a dumping ground.",
+      "Every nuance must name a field that actually exists on the record — validator-enforced.",
+      "The Architect title-protection note moved out of admin_review.reason, where it did not belong."
+    ],
+    "9.0": [
+      "Added three professions found by a coverage gap review: Textile Engineer, Biomedical Engineer, Fire & Safety Engineer. 28 -> 31.",
+      "Textile Engineer closes a real gap — India's textile industry is the second-largest employer after agriculture and TSC is a dedicated NSDC council. Earlier routing sent all textile work to Sector 8, which was only half right: apparel production is craft, textile engineering is industry.",
+      "Biomedical Engineer added with a HIGH admin_review: India's device design industry is small and graduate outcomes are known to be weak relative to the degree.",
+      "Fire & Safety Engineer added. Verified Section 40B of the Factories Act: the statutory Safety Officer post needs a degree PLUS five years, so it is recorded as a nuance rather than as the entry identity.",
+      "Firefighter routed to Sector 7 as uniformed public service, per the cross-cutting rule."
+    ],
+    "10.0": [
+      "Added demand_signal { india_demand, pathway } — two ORTHOGONAL questions that were being conflated.",
+      "india_demand asks whether society needs this work. pathway asks where you can realistically train for it: 'india', 'any', or 'abroad'. A weak Indian pathway is NOT weak demand — India imports most medical devices, which is evidence of demand, not absence of it.",
+      "pathway deliberately does NOT rate Indian institutions as strong or weak. It states where the training exists, which is factual and actionable, rather than passing judgment on colleges."
+    ],
+    "11.0": [
+      "Renewable Energy Engineer was PROPOSED and REJECTED. tools/probe.py found strong overlap with Solar Panel Technician (certificate tier) and Electrical Engineer (degree tier). Added Solar Plant Engineer, Wind Energy Engineer and Grid Integration Engineer as job roles on Electrical Engineer instead.",
+      "A new profession costs economics, verification, AI scoring and review. A job role costs one line. Probe first."
+    ],
+    "12.0": [
+      "Added Drone Pilot & Operator (Tier A, DGCA Remote Pilot Certificate) and Precision Manufacturing Technician. 31 -> 33.",
+      "Both were probed against the existing taxonomy first. Drone work showed only partial overlap — Land Surveyor had one drone job role, but flying under DGCA rules is a different skill set from surveying. Cleanroom process work showed no overlap at all.",
+      "Semiconductor Fab Technician became a JOB ROLE under the broader Precision Manufacturing Technician rather than a profession of its own, so the record does not depend on one emerging industry.",
+      "Drone Pilot is reachable on a CLASS 10 PASS — the most accessible statutorily licensed profession in the taxonomy so far."
+    ],
+    "13.0": [
+      "PART A of the demand-side cleanup. 33 -> 32 professions.",
+      "MERGED Solar Panel Technician into Electrician. Solar roles were duplicated across three professions — Electrician already listed 'Solar Installation Electrician' while Solar Panel Technician listed 'Solar Electrician'. Same person. Solar PV is electrician skill plus a specialisation, not a separate skill set.",
+      "MERGED Automobile Engineer into Mechanical Engineer. It passed the interest-alignment half of the profession test but failed the separate-skill-set half — same thermodynamics, mechanics, CAD and materials. Two professions with the same skill profile always surface together in a psychometric recommender.",
+      "ADDED Nuclear Engineer. Verified that BARC OCES/DGFS recruits from many engineering and science disciplines on a GATE score, so a dedicated nuclear degree is not required.",
+      "ADDED job roles found via EveryEng's domain list: Piping Design Engineer, Turbomachinery Engineer, Rolling Stock / Railway Engineer (all Mechanical).",
+      "FIXED exact duplicates: Petroleum's 'Production Engineer' renamed 'Oil & Gas Production Engineer'; 'Process Safety Engineer' removed from Chemical, where Fire & Safety Engineer is its home."
+    ],
+    "14.0": [
+      "PART B. Added role_spread — records which job roles inside a profession deviate from its baseline, and on which of the 19 psychometric factors.",
+      "higher/lower are RELATIVE to the profession's own profile, never absolute scores. Actual scoring stays in the separate psychometric pipeline; this only flags internal variance so the pipeline and the UI know where one profession contains two different people.",
+      "Factor names are constrained by data/psychometric_factors.json and every named role must exist in that profession's job_roles — both validator-enforced.",
+      "12 of 32 professions in this sector are 'wide'."
+    ],
+    "15.0": [
+      "Cross-file reconciliation caught a merge recorded as a routing — 'Solar Panel Technician' pointed at Sector 2 itself, which is meaningless. Added a separate merged_into block. A merge and a routing are different events and reconciliation only checks routings."
+    ]
+  },
+  "locked": {
+    "status": "LOCKED",
+    "date": "2026-08-06",
+    "passed": [
+      "export_csv.py per-field validation",
+      "audit.py cross-field consistency",
+      "duplicate job roles across professions",
+      "cross-file routed_elsewhere reconciliation",
+      "DECISIONS.md spec-drift check",
+      "manual iteration-2 read of every key"
+    ],
+    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved — those are decisions still owed by a human.",
+    "open_admin_reviews": 12
+  }
+}

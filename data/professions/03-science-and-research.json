@@ -1,0 +1,2496 @@
+{
+  "professional_sector": "Science & Research",
+  "professional_sector_id": 3,
+  "version": "6.0",
+  "profession_count": 19,
+  "sector_verification_note": "Two verified facts shape this whole sector. First, the runway is FUNDED — CSIR JRF pays Rs 37,000/month rising to Rs 42,000 as SRF, so a nine-year path to a research post costs little in fees. Second, under UGC/NEP rules a four-year UG at 75 percent now allows DIRECT PhD entry, skipping the master's entirely. Salary bands remain judgment; India has no authoritative source for scientist pay outside government scales.",
+  "professions": [
+    {
+      "id": "sci-physicist",
+      "profession": "Physicist",
+      "one_liner": "Studies how matter and energy behave, from particles to galaxies.",
+      "job_roles": [
+        "Research Scientist (Physics)",
+        "Experimental Physicist",
+        "Theoretical Physicist",
+        "Optics & Photonics Scientist",
+        "Nuclear Scientist",
+        "Instrumentation Scientist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Theoretical Physicist"
+            ],
+            "higher": [
+              "logical",
+              "existential",
+              "openness"
+            ],
+            "lower": [
+              "bodily",
+              "conscientiousness"
+            ],
+            "why": "Theory is abstraction sustained over years with no apparatus. Experimental physics in the same profession is building, aligning and babysitting equipment that mostly does not work yet."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "EXT-EDU",
+        "EXT-DEFENCE",
+        "AASSC",
+        "ESSCI",
+        "PSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Physics and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Physics (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Physics (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "8-14",
+        "mid_career_lpa": "14-24",
+        "mid_career_midpoint": 19.0,
+        "payback_years": 0.27,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any",
+        "note": "Low volume of posts, not low importance. A postdoc abroad is the normal path and is close to expected in most subfields."
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 5,
+          "skill_physical": 10,
+          "skill_digital": 15,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Literature search and routine computation are exposed. Deciding which experiment is worth running, and knowing when a result is an artefact rather than a discovery, is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-chemist",
+      "profession": "Chemist",
+      "one_liner": "Studies what substances are made of and creates new ones.",
+      "job_roles": [
+        "Research Scientist (Chemistry)",
+        "Synthetic Chemist",
+        "Analytical Chemist",
+        "Polymer Scientist",
+        "Electrochemist",
+        "Catalysis Scientist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "LSSSDC",
+        "PCSC",
+        "RSDC",
+        "HYSSC",
+        "EXT-EDU",
+        "FICSI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Chemistry"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Chemistry (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Chemistry (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "7-12",
+        "mid_career_lpa": "12-22",
+        "mid_career_midpoint": 17.0,
+        "payback_years": 0.32,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 7,
+          "skill_physical": 20,
+          "skill_digital": 10,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Bench work is physical and unavoidable — a reaction has to be run, worked up and characterised by hand. Reaction prediction is increasingly assisted; making it work is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-biologist",
+      "profession": "Biologist",
+      "one_liner": "Studies how living things work, from cells to whole ecosystems.",
+      "job_roles": [
+        "Research Scientist (Life Sciences)",
+        "Molecular Biologist",
+        "Geneticist",
+        "Cell Biologist",
+        "Physiologist",
+        "Immunologist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "LSSSDC",
+        "HSSC",
+        "EXT-EDU",
+        "ASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Biology"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Life Sciences / Zoology / Botany (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Life Sciences (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "6-11",
+        "mid_career_lpa": "11-20",
+        "mid_career_midpoint": 15.5,
+        "payback_years": 0.35,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 7,
+          "skill_physical": 20,
+          "skill_digital": 10,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Wet-lab work is hands-on and slow. Protocol lookup is exposed; designing an experiment that actually isolates the variable you care about is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-microbiologist",
+      "profession": "Microbiologist",
+      "one_liner": "Studies bacteria, viruses and fungi — how they live and how to control them.",
+      "job_roles": [
+        "Microbiologist",
+        "Industrial Microbiologist",
+        "Food Safety Microbiologist",
+        "Virologist",
+        "Fermentation Scientist",
+        "Sterility Assurance Specialist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "FICSI",
+        "HSSC",
+        "EXT-RND",
+        "ASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Biology"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Microbiology (3 years)"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Microbiology — the normal hiring entry for industry"
+        },
+        {
+          "step": 4,
+          "stage": "industry_or_research",
+          "requirement": "Pharma and food QC hire at M.Sc; research posts need a PhD"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Central and state university entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 2.5,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-15",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.42,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 27,
+          "skill_digital": 5,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 13,
+        "band": "low",
+        "reason": "Culture work, plating and sterile technique are physical and cannot be simulated away. Pharma and food industries also require a named human to sign off on sterility."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-biotechnologist",
+      "profession": "Biotechnologist",
+      "one_liner": "Uses living cells and enzymes to make medicines, vaccines and materials.",
+      "job_roles": [
+        "Biotechnologist",
+        "Bioprocess Scientist",
+        "Upstream / Downstream Process Scientist",
+        "Vaccine Development Scientist",
+        "Genetic Engineer",
+        "Bioreactor Specialist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "EXT-RND",
+        "FICSI",
+        "ASCI",
+        "HSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Biology"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc or B.Tech Biotechnology"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc / M.Tech Biotechnology"
+        },
+        {
+          "step": 4,
+          "stage": "industry_or_research",
+          "requirement": "Biopharma manufacturing hires at PG; discovery roles need a PhD"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Central and state university entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "5-10",
+        "mid_career_lpa": "10-18",
+        "mid_career_midpoint": 14.0,
+        "payback_years": 0.53,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 25,
+          "skill_digital": 12,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Process development happens in bioreactors, not in text. India's biosimilar and vaccine manufacturing base makes this one of the more industrially grounded science careers."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-bioinformatics-scientist",
+      "profession": "Bioinformatics Scientist",
+      "one_liner": "Uses computers to make sense of genetic and biological data.",
+      "job_roles": [
+        "Bioinformatics Scientist",
+        "Computational Biologist",
+        "Genomics Data Scientist",
+        "Structural Bioinformatician",
+        "Pipeline Developer (Genomics)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "IT-ITES",
+        "EXT-RND",
+        "HSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Biology; Maths helps a great deal"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Biotechnology, Life Sciences or Computer Science"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Bioinformatics or Computational Biology"
+        },
+        {
+          "step": 4,
+          "stage": "skills",
+          "requirement": "Python, R and genomics pipelines decide who gets hired"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Central and state university entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "12-22",
+        "mid_career_midpoint": 17.0,
+        "payback_years": 0.44,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 0,
+          "skill_digital": 32,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "The most exposed profession in this sector — the output is code and analysis on a screen. What protects it is knowing which biological question the data can actually answer."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-geologist",
+      "profession": "Geologist",
+      "one_liner": "Studies rocks and the earth to find minerals, water and oil.",
+      "job_roles": [
+        "Geologist",
+        "Exploration Geologist",
+        "Hydrogeologist",
+        "Mining Geologist",
+        "Petroleum Geologist",
+        "Engineering Geologist",
+        "Seismologist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Exploration Geologist",
+              "Engineering Geologist"
+            ],
+            "higher": [
+              "bodily",
+              "naturalistic",
+              "confidence"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Field geology is remote, physical and weather-bound. Modelling and interpretation roles in the same profession are desk-based and computational."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "SCMS",
+        "HYSSC",
+        "EXT-GOVT",
+        "EXT-RND",
+        "SCGJ",
+        "CSDCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Geology (3 years)"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Geology or Applied Geology — the standard hiring entry"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Geological Survey of India, ONGC, Coal India and mining firms recruit at M.Sc"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "GATE (PSU recruitment)"
+        ],
+        "private_reputed": [],
+        "note": "GSI and ONGC recruit through their own examinations and through GATE."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "12-22",
+        "mid_career_midpoint": 17.0,
+        "payback_years": 0.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 25,
+          "skill_digital": 12,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Field mapping means being physically on the rock. Remote sensing and modelling are exposed; interpreting what the ground is actually doing is not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "entrance_exams",
+          "statement": "The Geological Survey of India and ONGC recruit through their own examinations and through GATE, not through the academic entrances listed. For government geology posts those are the real gate."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-atmospheric-ocean-scientist",
+      "profession": "Atmospheric & Ocean Scientist",
+      "one_liner": "Studies weather, climate and the sea to forecast and understand them.",
+      "job_roles": [
+        "Meteorologist",
+        "Climate Scientist",
+        "Oceanographer",
+        "Weather Forecaster",
+        "Climate Modeller",
+        "Marine Data Scientist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "EXT-GOVT",
+        "SCGJ",
+        "AASSC",
+        "ASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Physics and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Physics / Maths / Earth Science (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Atmospheric Science / Oceanography (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "6-11",
+        "mid_career_lpa": "11-19",
+        "mid_career_midpoint": 15.0,
+        "payback_years": 0.35,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 7,
+          "skill_physical": 12,
+          "skill_digital": 23,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Numerical modelling is heavily computational and partly exposed. Judging when a model is wrong about the real atmosphere, and owning a forecast people act on, is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-space-scientist",
+      "profession": "Astronomer & Space Scientist",
+      "one_liner": "Studies stars, planets and space, and builds the instruments that observe them.",
+      "job_roles": [
+        "Astronomer",
+        "Astrophysicist",
+        "Planetary Scientist",
+        "Space Instrumentation Scientist",
+        "Satellite Payload Scientist",
+        "Remote Sensing Scientist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "EXT-RND",
+        "EXT-DEFENCE",
+        "EXT-GOVT",
+        "EXT-EDU"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Physics and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Physics (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Physics / Astronomy (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "8-14",
+        "mid_career_lpa": "14-25",
+        "mid_career_midpoint": 19.5,
+        "payback_years": 0.27,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 32,
+          "knowledge_retrievable": 5,
+          "skill_physical": 8,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Highest foundational-knowledge share in the sector. Data reduction is exposed; deciding what a signal means, and designing an instrument that can detect it at all, is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "ISRO and IIST recruit through their own examinations and IIST admissions, which are not captured in entrance_exams. Verify the ISRO Scientist/Engineer entry route before shipping."
+      }
+    },
+    {
+      "id": "sci-materials-scientist",
+      "profession": "Materials Scientist",
+      "one_liner": "Designs new materials — stronger metals, better batteries, semiconductors.",
+      "job_roles": [
+        "Materials Scientist",
+        "Nanotechnology Researcher",
+        "Battery Materials Scientist",
+        "Semiconductor Materials Scientist",
+        "Ceramics & Composites Scientist",
+        "Corrosion Scientist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "ESSCI",
+        "IISSSC",
+        "SMSSC",
+        "PSSC",
+        "ASDC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Physics, Chemistry and Maths"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Physics / Chemistry / Materials (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Materials Science (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "7-13",
+        "mid_career_lpa": "13-24",
+        "mid_career_midpoint": 18.5,
+        "payback_years": 0.4,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 7,
+          "skill_physical": 22,
+          "skill_digital": 10,
+          "clarity": 33
+        },
+        "legal_accountability": false,
+        "exposure_raw": 17,
+        "band": "low",
+        "reason": "Characterisation is hands-on instrument work. India's semiconductor and battery investments are expanding this field rather than shrinking it."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-statistician",
+      "profession": "Statistician",
+      "one_liner": "Designs studies and works out what data actually proves.",
+      "job_roles": [
+        "Statistician",
+        "Biostatistician",
+        "Demographer",
+        "Population Researcher",
+        "Survey Methodologist",
+        "Government Statistical Officer",
+        "Clinical Biostatistician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "EXT-GOVT",
+        "LSSSDC",
+        "BFSI",
+        "HSSC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Maths compulsory"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Statistics, Maths, or B.Stat at ISI"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc / M.Stat Statistics — the standard hiring entry"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "ISI, government statistical services, pharma and insurance recruit at PG"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "ISI Admission Test",
+          "IIT JAM (M.Sc)",
+          "Indian Statistical Service (UPSC)"
+        ],
+        "private_reputed": [],
+        "note": "ISI's own admission test is the most competitive route."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "12-25",
+        "mid_career_midpoint": 18.5,
+        "payback_years": 0.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 0,
+          "skill_digital": 32,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Running a standard test is exposed; deciding which test is valid for this data, and whether the study design can support the claim at all, is exactly what models get wrong."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "entrance_exams",
+          "statement": "The Indian Statistical Institute runs its own admission test, which is the most competitive and most valuable route into this profession. The Indian Statistical Service is a separate UPSC exam."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-research-psychologist",
+      "profession": "Research Psychologist",
+      "one_liner": "Studies how the mind and behaviour work, through experiments and data.",
+      "job_roles": [
+        "Research Psychologist",
+        "Cognitive Scientist",
+        "Experimental Psychologist",
+        "Psychometrician",
+        "Neuropsychology Researcher",
+        "Human Factors Researcher"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "EXT-EDU",
+        "IT-ITES",
+        "EXT-DEV",
+        "HSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "ANY stream — B.A. Psychology accepts arts, commerce and science"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.A. or B.Sc Psychology (3 years)"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.A. or M.Sc Psychology"
+        },
+        {
+          "step": 4,
+          "stage": "doctorate",
+          "requirement": "PhD for a research career. RCI registration is NOT needed — that is for clinical practice."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.A./B.Sc)",
+          "UGC NET (PhD/JRF)"
+        ],
+        "private_reputed": [],
+        "note": "No science stream requirement. One of the most stream-open research careers."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "5-9",
+        "mid_career_lpa": "9-16",
+        "mid_career_midpoint": 12.5,
+        "payback_years": 0.43,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "possible_later",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 8,
+          "skill_physical": 5,
+          "skill_digital": 17,
+          "clarity": 45
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Highest clarity share in the sector. Designing a study that isolates a psychological variable, and judging whether an effect is real or an artefact of the measure, is not retrievable."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Research psychology sits in Science & Research, while clinical and counselling psychology sit in Sector 13 under the INTERVENE versus INTERPRET rule. This one produces knowledge about the mind; the clinical one changes a person's wellbeing and requires RCI registration."
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "One of very few research careers with no science-stream gate. A commerce or arts student can enter psychology directly, which makes this an unusually reachable research path for non-science students."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-forensic-scientist",
+      "profession": "Forensic Scientist",
+      "one_liner": "Analyses evidence from crime scenes to work out what happened.",
+      "job_roles": [
+        "Forensic Scientist",
+        "Forensic Chemist",
+        "DNA Analyst",
+        "Ballistics Examiner",
+        "Questioned Documents Examiner",
+        "Forensic Toxicologist",
+        "Crime Scene Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Crime Scene Analyst"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Scene work is physical, unpredictable and emotionally heavy, often at night. Laboratory analysis in the same profession is controlled, repetitive and precision-bound."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-DEFENCE",
+        "EXT-GOVT",
+        "EXT-RND",
+        "LSSSDC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Forensic Science, Chemistry or Life Sciences"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Forensic Science — the standard entry to a state Forensic Science Laboratory"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "State and central FSLs, police, and private labs recruit at PG"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Central and state university entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-14",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.5,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 22,
+          "knowledge_retrievable": 10,
+          "skill_physical": 30,
+          "skill_digital": 8,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 18,
+        "band": "low",
+        "reason": "Evidence is physical and chain-of-custody is a human responsibility. Instrument work and courtroom testimony both require an accountable person, even as analysis software improves."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Forensic scientists testify as expert witnesses but India has no statutory licensing body for them, so licensing_body is null and legal_accountability is false. Verify whether FSL appointment rules create a de facto credential gate."
+      }
+    },
+    {
+      "id": "sci-clinical-research-associate",
+      "profession": "Clinical Research Associate",
+      "one_liner": "Runs medical trials that test whether new drugs are safe and work.",
+      "job_roles": [
+        "Clinical Research Associate",
+        "Clinical Trial Coordinator",
+        "Clinical Data Manager",
+        "Pharmacovigilance Associate",
+        "Regulatory Affairs Associate",
+        "Medical Writer (regulatory)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Clinical Research Associate",
+              "Clinical Trial Coordinator"
+            ],
+            "higher": [
+              "extraversion",
+              "emotional_intelligence",
+              "verbal"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Site monitoring means constant travel and managing hospital staff who did not ask for you. Data management and pharmacovigilance in the same profession are sedentary and detail-bound."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "HSSC",
+        "EXT-RND"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Biology"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Life Sciences, B.Pharm, or BDS/BAMS for some roles"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "PG diploma in clinical research is the common route in"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "CROs and pharma companies hire at graduate level with certification"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Central and state university entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-16",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 0.5,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 18,
+          "knowledge_retrievable": 15,
+          "skill_physical": 12,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Documentation and data cleaning are exposed. Site monitoring means physically visiting hospitals, and regulatory accountability for trial integrity sits with a named person."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-drug-discovery-scientist",
+      "profession": "Drug Discovery Scientist",
+      "one_liner": "Finds and tests new molecules that could become medicines.",
+      "job_roles": [
+        "Medicinal Chemist",
+        "Pharmacologist",
+        "Preclinical Toxicologist",
+        "Formulation Scientist",
+        "Analytical Development Scientist",
+        "Preclinical Research Scientist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "EXT-RND",
+        "HSSC",
+        "PCSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "chemistry",
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Chemistry and Biology"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Pharmacy / Chemistry / Life Sciences (3 years), or a 4-year UG under NEP"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc Pharmacology / Medicinal Chemistry (2 years) — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "fellowship",
+          "requirement": "Clear CSIR-UGC NET / JRF for a funded PhD place"
+        },
+        {
+          "step": 5,
+          "stage": "doctorate",
+          "requirement": "PhD (4-5 years). This is the entry ticket to a research post."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET / JRF (PhD)"
+        ],
+        "private_reputed": [],
+        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "12-22",
+        "mid_career_midpoint": 17.0,
+        "payback_years": 0.44,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 28,
+          "knowledge_retrievable": 8,
+          "skill_physical": 20,
+          "skill_digital": 14,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 22,
+        "band": "low",
+        "reason": "Molecule generation is genuinely being automated. Synthesis, assay work and judging whether an effect will survive in a living system are not. India's large generics and CRO base makes this one of the more employable research careers."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read degree_dependency together with after_undergrad: masters_required."
+        },
+        {
+          "field": "after_undergrad",
+          "statement": "A doctorate is required, but the MASTER'S can now be skipped. Under UGC/NEP rules a four-year undergraduate degree with 75 percent allows direct entry to NET and to a PhD without an M.Sc. That removes two years from the runway and is not widely known.",
+          "source": "data/verified_facts.json#ugc-phd-four-year-ug-direct-entry"
+        },
+        {
+          "field": "economics",
+          "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
+          "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-laboratory-technician",
+      "profession": "Laboratory Technician",
+      "one_liner": "Runs the tests and keeps the instruments working in research and industrial labs.",
+      "job_roles": [
+        "Laboratory Technician",
+        "Research Assistant",
+        "Instrumentation Technician",
+        "Sample Preparation Technician",
+        "Lab Safety Officer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "FICSI",
+        "PCSC",
+        "EXT-RND",
+        "IISSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": [
+        "biology"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.Sc, or a 1-2 year laboratory technology diploma"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Research institutes, pharma QC labs and testing labs hire directly"
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Instrument specialisation — HPLC, GC-MS — is what raises pay"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Diploma routes admit on class 12 marks without an entrance exam."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "2-4",
+        "mid_career_lpa": "4-7",
+        "mid_career_midpoint": 5.5,
+        "payback_years": 0.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 12,
+          "knowledge_retrievable": 13,
+          "skill_physical": 50,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 18,
+        "band": "low",
+        "reason": "Physical sample handling and instrument operation dominate. Data entry is exposed; running an HPLC and knowing when the column is failing is not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Lowest-paid profession in this sector and the only certificate-adjacent one. Verify the mid-career band — instrument specialists earn materially more than general lab hands, and the range may hide two different careers."
+      }
+    },
+    {
+      "id": "sci-quality-control-analyst",
+      "profession": "Quality Control Analyst",
+      "one_liner": "Tests products to check they are safe, pure and meet the standard.",
+      "job_roles": [
+        "QC Analyst",
+        "QA Executive",
+        "Analytical Chemist (QC)",
+        "Stability Analyst",
+        "Food Testing Analyst",
+        "Validation Executive"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSSSDC",
+        "FICSI",
+        "PCSC",
+        "RSDC",
+        "AMHSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream with Chemistry"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Chemistry, Microbiology or a related science"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Pharma, food and chemical manufacturers hire directly at B.Sc"
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "GMP and regulatory audit exposure is what moves you up"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "IIT JAM (M.Sc)"
+        ],
+        "private_reputed": [],
+        "note": "Central and state university entrances also apply."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.5,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-9",
+        "mid_career_midpoint": 7.0,
+        "payback_years": 0.67,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/",
+            "https://www.thesisacewriters.com/blog/phd-stipend-in-india-ugc-csir-fellowships-2026"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 40,
+          "skill_digital": 10,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Instrument work and physical sampling dominate, and regulated industries require a named analyst to sign a release. Report generation is exposed; the signature is not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    },
+    {
+      "id": "sci-computer-science-researcher",
+      "profession": "Computer Science Researcher",
+      "one_liner": "Invents the algorithms and systems that future software will be built on.",
+      "job_roles": [
+        "Computer Science Researcher",
+        "Machine Learning Research Scientist",
+        "Algorithms Researcher",
+        "Systems Researcher",
+        "Cryptography Researcher",
+        "Human-Computer Interaction Researcher"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "IT-ITES",
+        "EXT-EDU",
+        "EXT-DEFENCE"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Maths compulsory"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Tech CSE or B.Sc Computer Science"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Tech or M.Sc — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "doctorate",
+          "requirement": "PhD. Industry research labs and academia both require it."
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "JEE Main (B.Tech)",
+          "CUET (B.Sc)",
+          "GATE (M.Tech/PhD)",
+          "UGC NET Computer Science"
+        ],
+        "private_reputed": [
+          "BITSAT"
+        ],
+        "note": "GATE is the dominant route into M.Tech and PhD programmes."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "10-18",
+        "mid_career_lpa": "18-35",
+        "mid_career_midpoint": 26.5,
+        "payback_years": 0.43,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 5,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Highest-paying research career in the sector and the most digital, so more exposed than the lab sciences. What protects it is that the job is inventing methods that do not exist yet — the exact thing a model trained on existing methods cannot do."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read together with after_undergrad: masters_required."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Sits in Science & Research, not Software & Computing, because the output is new knowledge rather than shipped software. Industry AI research inside product teams stays in Sector 1 as a job role under AI & Machine Learning Engineer. The boundary is what the work produces, not the subject matter."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Salary band reflects industry research labs (Microsoft Research India, Google Research India, Adobe Research), which pay far above academic posts at IITs and IISc. The range may be hiding two very different careers — verify before shipping."
+      }
+    },
+    {
+      "id": "sci-mathematician",
+      "profession": "Mathematician",
+      "one_liner": "Works on pure mathematics — proofs, structures and the logic beneath everything.",
+      "job_roles": [
+        "Research Mathematician",
+        "Cryptographer",
+        "Operations Research Scientist",
+        "Mathematical Modeller",
+        "Number Theory Researcher",
+        "Topologist"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-RND",
+        "EXT-EDU",
+        "EXT-DEFENCE",
+        "BFSI",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Maths compulsory"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Maths, or B.Math at CMI / B.Stat at ISI"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "M.Sc or M.Math — skippable with a 4-year UG at 75 percent"
+        },
+        {
+          "step": 4,
+          "stage": "doctorate",
+          "requirement": "PhD, then a research or faculty post"
+        }
+      ],
+      "entrance_exams": {
+        "national": [
+          "CUET (B.Sc)",
+          "CMI Entrance",
+          "ISI Admission Test",
+          "IIT JAM (M.Sc)",
+          "CSIR-UGC NET Mathematical Sciences"
+        ],
+        "private_reputed": [],
+        "note": "CMI and ISI entrance tests are the elite route and are taken directly after class 12."
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "12-24",
+        "mid_career_midpoint": 18.0,
+        "payback_years": 0.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/"
+          ],
+          "checked_on": "2026-08-05"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": "rare",
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 35,
+          "knowledge_retrievable": 5,
+          "skill_physical": 0,
+          "skill_digital": 15,
+          "clarity": 45
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "The highest foundational-knowledge and clarity shares in the entire dataset. Models can check and even suggest proofs, but deciding which conjecture is worth years of work is not a retrieval problem."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-05"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' is the ceiling of this four-tier scale, but a B.Sc alone does NOT get you a research post — a PhD does. The scale reserves 'professional' for statutory licensing, which research is not. Read together with after_undergrad: masters_required."
+        },
+        {
+          "field": "entrance_exams",
+          "statement": "CMI and ISI run their own entrance tests taken straight after class 12, leading to B.Math and B.Stat. These are the strongest mathematics routes in India and sit outside the CUET/university system most students know about."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": null,
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Clinical / Counselling Psychologist",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "HSSC",
+      "why": "INTERVENE versus INTERPRET. Clinical work changes a person's wellbeing and needs RCI registration; research psychology produces knowledge and stays here."
+    },
+    {
+      "profession": "Archaeologist",
+      "goes_to": "17. Humanities, Culture & Belief",
+      "tag_here_instead": "EXT-CULT",
+      "why": "Interprets and preserves heritage rather than producing empirical natural-science knowledge."
+    },
+    {
+      "profession": "Anthropologist / Sociologist",
+      "goes_to": "17. Humanities, Culture & Belief",
+      "tag_here_instead": "EXT-RND",
+      "why": "METHOD DECIDES, NOT DISCIPLINE. Ethnography, participant observation and cultural interpretation go to Sector 17. Quantitative social research — demography, census and survey analysis — is empirical and stays here, covered as job roles under Statistician. This follows the precedent already set by research psychology sitting in Sector 3."
+    },
+    {
+      "profession": "Economist",
+      "goes_to": "6. Finance & Economics",
+      "tag_here_instead": "EXT-RND",
+      "why": "Has its own professional sector."
+    },
+    {
+      "profession": "Environmental Scientist",
+      "goes_to": "14. Environment & Sustainability",
+      "tag_here_instead": "SCGJ",
+      "why": "Purpose defines it — environmental outcomes, not knowledge for its own sake."
+    },
+    {
+      "profession": "Agricultural Scientist / Agronomist",
+      "goes_to": "15. Agriculture & Food Systems",
+      "tag_here_instead": "ASCI",
+      "why": "Kept with the agriculture value chain, under ICAR."
+    },
+    {
+      "profession": "Food Technologist",
+      "goes_to": "15. Agriculture & Food Systems",
+      "tag_here_instead": "FICSI",
+      "why": "Sits in the food value chain."
+    },
+    {
+      "profession": "Medical Laboratory Technologist",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Works inside clinical diagnosis. The research-lab equivalent stays here as Laboratory Technician."
+    },
+    {
+      "profession": "Data Scientist",
+      "goes_to": "1. Software & Computing",
+      "tag_here_instead": "IT-ITES",
+      "why": "Craft is computing. Statistician stays here because the craft is inference and study design."
+    },
+    {
+      "profession": "Science Teacher / Professor",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-EDU",
+      "why": "Teaching-anything rule. Note that most Indian research careers involve university teaching — see boundary notes."
+    },
+    {
+      "profession": "Science Journalist / Communicator",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "MESC",
+      "why": "All writing professions share one parent."
+    },
+    {
+      "profession": "Patent Agent",
+      "goes_to": "7. Law, Governance & Public Service",
+      "tag_here_instead": "EXT-LEGAL",
+      "why": "Requires a science degree but the work is intellectual property law."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "RESEARCHER versus PROFESSOR is the sharpest boundary in this sector. In India most research posts sit inside universities and involve teaching. The teaching-anything rule sends Professor to Sector 12, but a physicist at an IISER does both. Current split: if the primary output is NEW KNOWLEDGE it is Sector 3; if it is TAUGHT STUDENTS it is Sector 12. Students may not see the difference from the names.",
+    "RESEARCH PSYCHOLOGIST here versus CLINICAL PSYCHOLOGIST in Sector 13 is the intervene-versus-interpret rule working exactly as specified. Worth confirming this reads correctly to you, since it is the boundary you named in the brief.",
+    "STATISTICIAN is here rather than Sector 1 because the craft is inference and study design, not building software. Data Scientist went the other way. The two are adjacent.",
+    "ANTHROPOLOGIST and SOCIOLOGIST routed to Sector 17. Contestable for quantitative sociology, which is empirical research by any reasonable test.",
+    "SUBJECT GATES on B.Sc programmes vary by university and state. The class12_prerequisite values here reflect the common pattern, not a universal rule, and are judgment rather than verified."
+  ],
+  "changelog": {
+    "1.0": [
+      "Initial build. 17 professions, all degree-tier — this sector has no genuine certificate-only path.",
+      "Verified: CSIR JRF/SRF stipend rates, and UGC four-year-UG direct PhD entry.",
+      "after_undergrad is masters_required for 15 of 17, the first sector where that tag carries real weight.",
+      "Research Psychologist is class12_prerequisite 'any' and mid_stream_entry 'after_any_degree' — the only research career in the sector open to a commerce or arts student without restarting."
+    ],
+    "2.0": [
+      "ITERATION 2 review pass — errors the automated audit could not see.",
+      "Microbiologist: years_to_qualify 7 -> 5. B.Sc 3 + M.Sc 2 = 5, matching Geologist, Statistician and Forensic Scientist which share that structure.",
+      "Biotechnologist: years_to_qualify 7 -> 5. B.Sc 3 + M.Sc 2 = 5, matching Geologist, Statistician and Forensic Scientist which share that structure.",
+      "Bioinformatics Scientist: years_to_qualify 7 -> 5. B.Sc 3 + M.Sc 2 = 5, matching Geologist, Statistician and Forensic Scientist which share that structure.",
+      "Laboratory Technician: degree_dependency undergrad -> certificate, mid_stream restart -> open. Its own path_to_entry offers a 1-2 year diploma; cost 1.0L and 2 years to qualify are certificate-tier, not degree-tier. Caused by a faulty ternary in the build script.",
+      "Added a degree_dependency nuance to all eight PhD-track professions: 'undergrad' is the scale's ceiling but a B.Sc alone does not get you a research post. Must be read with after_undergrad.",
+      "Added entrance_exams nuances for Geologist (GSI/ONGC own exams, GATE) and Statistician (ISI admission test)."
+    ],
+    "3.0": [
+      "Cross-file reconciliation caught a REAL GAP: Sector 1 routed 'Computer Science Researcher' here and it did not exist. Added.",
+      "Added Mathematician. Pure mathematics had no home — Statistician is applied inference, a different craft.",
+      "Statistician gains Demographer and Population Researcher job roles, giving quantitative social research a home without creating a thin new profession.",
+      "Anthropologist/Sociologist routing sharpened to state the rule: METHOD decides, not discipline."
+    ],
+    "4.0": [
+      "Added demand_signal { india_demand, pathway } — two ORTHOGONAL questions that were being conflated.",
+      "india_demand asks whether society needs this work. pathway asks where you can realistically train for it: 'india', 'any', or 'abroad'. A weak Indian pathway is NOT weak demand — India imports most medical devices, which is evidence of demand, not absence of it.",
+      "pathway deliberately does NOT rate Indian institutions as strong or weak. It states where the training exists, which is factual and actionable, rather than passing judgment on colleges."
+    ],
+    "5.0": [
+      "PART B. Added role_spread — records which job roles inside a profession deviate from its baseline, and on which of the 19 psychometric factors.",
+      "higher/lower are RELATIVE to the profession's own profile, never absolute scores. Actual scoring stays in the separate psychometric pipeline; this only flags internal variance so the pipeline and the UI know where one profession contains two different people.",
+      "Factor names are constrained by data/psychometric_factors.json and every named role must exist in that profession's job_roles — both validator-enforced.",
+      "4 of 19 professions in this sector are 'wide'."
+    ],
+    "6.0": [
+      "Duplicate-job-role check caught 'Toxicologist' under both Forensic Scientist and Drug Discovery Scientist. Genuinely different work sharing one word: forensic toxicology reads poisons in bodies for a court; preclinical toxicology establishes whether a candidate drug is safe. Renamed to 'Forensic Toxicologist' and 'Preclinical Toxicologist'."
+    ]
+  },
+  "locked": {
+    "status": "LOCKED",
+    "date": "2026-08-06",
+    "passed": [
+      "export_csv.py per-field validation",
+      "audit.py cross-field consistency",
+      "duplicate job roles across professions",
+      "cross-file routed_elsewhere reconciliation",
+      "DECISIONS.md spec-drift check",
+      "manual iteration-2 read of every key"
+    ],
+    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved — those are decisions still owed by a human.",
+    "open_admin_reviews": 4
+  }
+}

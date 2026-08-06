@@ -1,0 +1,130 @@
+{
+  "version": "1.0",
+  "note": "FIXED taxonomy. 18 professional sectors. Do not add, rename, merge or split. Every profession has exactly one parent here.",
+  "cross_cutting_rule": {
+    "statement": "Employers that span many professions — Defence and the Armed Forces, Police, ISRO, Railways, Government — are INDUSTRIAL SECTOR TAGS, not professional sectors.",
+    "resolution": "The uniformed or institutional identity goes under Law, Governance & Public Service. Specialist roles keep their home sector and carry the relevant industrial tag.",
+    "worked_examples": [
+      { "case": "Army officer", "sector": "7. Law, Governance & Public Service", "tag": "EXT-DEFENCE" },
+      { "case": "Army doctor", "sector": "4. Healthcare & Medicine", "tag": "EXT-DEFENCE" },
+      { "case": "Air Force pilot", "sector": "2. Engineering & Making", "tag": "EXT-DEFENCE + AASSC" },
+      { "case": "ISRO propulsion engineer", "sector": "2. Engineering & Making", "tag": "AASSC + EXT-RND" },
+      { "case": "ISRO research scientist", "sector": "3. Science & Research", "tag": "EXT-RND" },
+      { "case": "Railway civil engineer", "sector": "2. Engineering & Making", "tag": "EXT-GOVT + CSDCI" },
+      { "case": "Police officer (IPS)", "sector": "7. Law, Governance & Public Service", "tag": "EXT-DEFENCE" },
+      { "case": "Police forensic scientist", "sector": "3. Science & Research", "tag": "EXT-DEFENCE" },
+      { "case": "Government school teacher", "sector": "12. Education & Training", "tag": "EXT-GOVT + EXT-EDU" }
+    ]
+  },
+  "professional_sectors": [
+    {
+      "id": 1,
+      "slug": "software-and-computing",
+      "name": "Software & Computing",
+      "scope": "Building, running and securing software, data and computer systems."
+    },
+    {
+      "id": 2,
+      "slug": "engineering-and-making",
+      "name": "Engineering & Making",
+      "scope": "Designing, building and maintaining physical things and systems. Includes distributed skilled trades, separated by the degree_dependency tag rather than by sector."
+    },
+    {
+      "id": 3,
+      "slug": "science-and-research",
+      "name": "Science & Research",
+      "scope": "Producing new empirical knowledge. Includes pure and research psychology."
+    },
+    {
+      "id": 4,
+      "slug": "healthcare-and-medicine",
+      "name": "Healthcare & Medicine",
+      "scope": "Diagnosing and treating the human or animal body."
+    },
+    {
+      "id": 5,
+      "slug": "business-management-and-entrepreneurship",
+      "name": "Business, Management & Entrepreneurship",
+      "scope": "Running organisations, selling, and starting ventures."
+    },
+    {
+      "id": 6,
+      "slug": "finance-and-economics",
+      "name": "Finance & Economics",
+      "scope": "Money, capital, risk and the study of economies."
+    },
+    {
+      "id": 7,
+      "slug": "law-governance-and-public-service",
+      "name": "Law, Governance & Public Service",
+      "scope": "Three families: Law & Justice (lawyer, judge, prosecutor) + Civil & Administrative Services (IAS, IPS, IRS) + Policy & Diplomacy.",
+      "boundary": "ONLY careers whose work exists because the state or justice system exists. A profession that merely works FOR government stays in its home sector and carries a Government industrial tag instead."
+    },
+    {
+      "id": 8,
+      "slug": "design-and-creative-arts",
+      "name": "Design & Creative Arts",
+      "scope": "Making things look, feel and work well. Visual and applied craft."
+    },
+    {
+      "id": 9,
+      "slug": "media-film-and-storytelling",
+      "name": "Media, Film & Storytelling",
+      "scope": "Telling stories and moving information to an audience."
+    },
+    {
+      "id": 10,
+      "slug": "performing-arts-and-music",
+      "name": "Performing Arts & Music",
+      "scope": "Live and recorded performance: music, dance, theatre."
+    },
+    {
+      "id": 11,
+      "slug": "sports-and-fitness",
+      "name": "Sports & Fitness",
+      "scope": "Athletic performance and physical conditioning."
+    },
+    {
+      "id": 12,
+      "slug": "education-and-training",
+      "name": "Education & Training",
+      "scope": "Teaching anything, to anyone, at any level. Subject does not change the parent sector."
+    },
+    {
+      "id": 13,
+      "slug": "social-impact-and-psychology",
+      "name": "Social Impact & Psychology",
+      "scope": "INTERVENE on wellbeing. Applied psychology, counselling, social work, development sector."
+    },
+    {
+      "id": 14,
+      "slug": "environment-and-sustainability",
+      "name": "Environment & Sustainability",
+      "scope": "Protecting and managing natural systems and the climate."
+    },
+    {
+      "id": 15,
+      "slug": "agriculture-and-food-systems",
+      "name": "Agriculture & Food Systems",
+      "scope": "Growing, breeding, processing and moving food and fibre."
+    },
+    {
+      "id": 16,
+      "slug": "hospitality-travel-and-culinary",
+      "name": "Hospitality, Travel & Culinary",
+      "scope": "Hosting, feeding and moving people."
+    },
+    {
+      "id": 17,
+      "slug": "humanities-culture-and-belief",
+      "name": "Humanities, Culture & Belief",
+      "scope": "INTERPRET and PRESERVE ideas, heritage and faith."
+    },
+    {
+      "id": 18,
+      "slug": "personal-care-and-wellness",
+      "name": "Personal Care & Wellness",
+      "scope": "Care of the body and appearance outside clinical medicine."
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "note": "Eligibility facts fetched from source and reused across sectors. Fetch once, audit in one place. Re-check dated entries yearly — these rules change.",
+  "facts": [
+    {
+      "key": "jee-main-paper1-btech",
+      "statement": "JEE Main Paper 1 (B.Tech) requires Physics and Mathematics as compulsory class 12 subjects, plus any one of Chemistry, Biology, Biotechnology or a Technical Vocational subject.",
+      "class12_subjects": [
+        "physics",
+        "maths"
+      ],
+      "implication": "Chemistry is NOT compulsory for engineering. Physics + Maths + Computer Science qualifies. A stream-bucket model gets this wrong.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-07-31",
+      "source": "https://engineering.careers360.com/articles/jee-main-eligibility-faqs"
+    },
+    {
+      "key": "jee-main-attempt-window",
+      "statement": "JEE Main 2026 is open only to candidates who passed class 12 in 2024 or 2025, or are appearing in 2026. Those who passed in 2023 or earlier are NOT eligible.",
+      "implication": "The EXAM expires ~3 years after class 12. The PROFESSION does not — see fact 'btech-lateral-entry'. This is why entry_window attaches to routes, not professions: a profession is blocked only when every route is blocked. An earlier reading of this fact wrongly concluded engineering was a hard block.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-07-31",
+      "source": "https://engineering.careers360.com/articles/jee-main-eligibility-faqs"
+    },
+    {
+      "key": "barch-eligibility",
+      "statement": "B.Arch requires class 12 with Physics, Chemistry and Mathematics, with 45% aggregate in PCM, plus NATA or JEE Main Paper 2A. Alternative route: 10+3 diploma with Mathematics.",
+      "class12_subjects": [
+        "physics",
+        "chemistry",
+        "maths"
+      ],
+      "implication": "Physics is compulsory, not just Maths. Corrects an earlier error that used the pre-2020 CoA rule.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-07-31",
+      "source": "https://neramclasses.com/counseling/concepts/eligibility-45-vs-50-rule",
+      "authority": "Council of Architecture, Minimum Standards of Architectural Education Regulations 2020"
+    },
+    {
+      "key": "jee-main-paper2b-bplan",
+      "statement": "JEE Main Paper 2B (B.Planning) requires Mathematics in class 12. Physics and Chemistry are not required.",
+      "class12_subjects": [
+        "maths"
+      ],
+      "implication": "A Commerce-with-Maths student is eligible for B.Planning but not B.Arch. Subject-set modelling captures this; stream buckets do not.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-07-31",
+      "source": "https://engineering.careers360.com/articles/jee-main-eligibility-faqs"
+    },
+    {
+      "key": "btech-lateral-entry",
+      "statement": "Holders of a 3-year AICTE-approved engineering diploma (45% general / 40% reserved) can enter B.Tech directly in year 2 via state LEET exams. B.Sc graduates are also eligible for lateral entry.",
+      "implication": "This is the bypass that stops the JEE window being a hard block. Generally no upper age limit, though some states cap between 18 and 26 — confirm per state before relying on it. Also means a B.Sc graduate has a route into engineering without JEE at all.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-07-31",
+      "source": "https://www.collegedekho.com/articles/all-you-need-to-know-about-btech-lateral-entry/",
+      "caveat": "State-level variation is real and unverified per state. Flagged for admin review."
+    },
+    {
+      "key": "iti-ncvt-trades",
+      "statement": "ITI admission: Indian citizens aged 14-40. Engineering trades (Electrician, Fitter) need class 10 with Science/Maths. Non-engineering trades (Welder, Plumber) accept class 8 pass. Courses run 6 months to 2 years. Trainees sit the All India Trade Test (AITT) for the National Trade Certificate (NTC) under NCVT.",
+      "class12_subjects": [],
+      "implication": "Welder and Plumber at class-8 entry are the LOWEST-barrier professions in the entire taxonomy — significant for equity and for students who leave school early. The 40-year upper age limit is a genuine entry_window for every ITI trade.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-03",
+      "source": "https://www.collegedekho.com/articles/iti-admission-process/",
+      "caveat": "Marks thresholds (35-45%) and process vary by state Directorate of Training."
+    },
+    {
+      "key": "dgca-cpl-pilot",
+      "statement": "DGCA Commercial Pilot Licence: minimum age 18, NO upper age limit. Class 12 with Physics and Mathematics. Requires Class 2 then Class 1 medical, DGCA ground exams, 200 flying hours, and RTR(A).",
+      "class12_subjects": [
+        "physics",
+        "maths"
+      ],
+      "implication": "Physics and Maths can be cleared through NIOS separately — so a commerce or arts student is NOT blocked, they add the subjects. No upper age limit means mid_stream_entry is open, not restart_undergrad. DGCA has also approved relaxing the PCM requirement entirely, pending Ministry of Civil Aviation approval — re-check this.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-03",
+      "source": "https://www.fmsaviationacademy.com/pilot-eligibility-in-india/",
+      "authority": "Directorate General of Civil Aviation (DGCA)"
+    },
+    {
+      "key": "amie-iei-recognition",
+      "statement": "AMIE (Institution of Engineers India) is an examination-based membership qualification, not a university degree. Enrolments from 1928 to 31 May 2013 are recognised by MHRD/AICTE as equivalent to B.E./B.Tech. For enrolments from 1 June 2013 onward, the recognition question is still pending in the Delhi High Court.",
+      "implication": "DO NOT present AMIE as a reliable non-degree route into engineering. The brief named the Institution of Engineers as a source for unconventional routes, but current enrolments carry unresolved legal risk. Excluded from path_to_entry across Sector 2 for this reason.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-03",
+      "source": "https://amiestudycircle.com/recognition-of-amie-exam.html",
+      "caveat": "Contested. Treat as unsafe to recommend until the court matter resolves."
+    },
+    {
+      "key": "nsdc-sector-skill-councils",
+      "statement": "NSDC has approved 38 Sector Skill Councils. The public roster lists 36; Healthcare SSC and Infrastructure Equipment SSC complete the 38.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-07-30",
+      "source": "https://nationalskillsnetwork.in/sector-skill-councils/"
+    },
+    {
+      "key": "dgshipping-meo-coc",
+      "statement": "The Directorate General of Shipping issues Marine Engineer Officer (MEO) Certificates of Competency. MEO Class 4 authorises service as Officer in Charge of an Engineering Watch; MEO Class 1 authorises service as Chief Engineer on any vessel worldwide. Candidates must pass written and oral examinations and complete preparatory courses at DG-approved institutes.",
+      "implication": "Marine Engineer is genuinely Tier A — you cannot serve as an engine-room officer without a DG Shipping CoC. Only DG Shipping approved institutes count, so college choice is itself a gate.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-05",
+      "source": "https://www.dgshipping.gov.in/Content/viewNotice.aspx?noticeid=996",
+      "authority": "Directorate General of Shipping, Government of India"
+    },
+    {
+      "key": "coa-architect-title-protection",
+      "statement": "The Architects Act 1972 created the Council of Architecture and a statutory register. The Supreme Court has held that registration is NOT required to perform architectural work — but ONLY persons on the register may use the title 'Architect' and practise architecture as such.",
+      "implication": "IMPORTANT CORRECTION. Architecture is TITLE-PROTECTED, not activity-licensed like medicine or law. An unregistered person may design buildings; they may not call themselves an Architect. In practice most municipal plan sanctions still require a registered architect's signature, which is why legal_accountability is retained — but this is weaker than the licensing in medicine, law or aviation, and it is flagged for review.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-05",
+      "source": "https://www.indiacode.nic.in/bitstream/123456789/1690/1/197220.pdf",
+      "authority": "Council of Architecture, under the Architects Act 1972"
+    },
+    {
+      "key": "csir-jrf-srf-stipend",
+      "statement": "CSIR-UGC NET JRF pays Rs 37,000 per month for the first two years, upgrading to Senior Research Fellow at Rs 42,000 per month from year three. Annual contingency grant Rs 20,000. The award runs a maximum of five years.",
+      "implication": "A research career's long runway is FUNDED, not self-funded — roughly 4.4 to 5.0 LPA during the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. This is why research professions carry a low cost_of_entry despite a 9-year runway.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-05",
+      "source": "https://www.adda247.com/teaching-jobs-exam/ugc-net-jrf-fellowship/"
+    },
+    {
+      "key": "ugc-phd-four-year-ug-direct-entry",
+      "statement": "Under NEP 2020 / UGC regulations, students holding a FOUR-YEAR undergraduate degree with at least 75 percent may appear directly for NET and enter a PhD without a master's. Five percent relaxation for SC/ST/OBC-NC/PwD/EWS. Direct entry is permitted for 4-year programmes that include a final-year research project.",
+      "implication": "MAJOR CHANGE for after_undergrad. Research careers still require a doctorate, so the tag stays masters_required — but the MASTER'S ITSELF can now be skipped via a 4-year UG. That shortens the runway by two years and is not widely known. Recorded as a nuance on every PhD-track profession.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-05",
+      "source": "https://news.careers360.com/students-75-percent-marks-in-4-year-ug-degrees-can-directly-appear-for-net-pursue-phd-ugc"
+    },
+    {
+      "key": "factories-act-40b-safety-officer",
+      "statement": "Section 40B of the Factories Act 1948 requires every factory employing 1000 or more workers to appoint a Safety Officer, and allows State Governments to mandate it for hazardous processes at any size. Qualifications are prescribed by state rules and typically require a recognised engineering or technology degree PLUS not less than five years of relevant experience.",
+      "implication": "The statutory Safety Officer post is NOT an entry-level job — the five-year experience requirement makes it a role you grow into. Under the no-seniority-tiers rule the profession is recorded at its ENTRY identity (HSE officer in construction or oil and gas, via a Fire & Safety degree plus NEBOSH), with the statutory post as a nuance. It is a mandated APPOINTMENT, not a licence, so licensing_body stays null.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-05",
+      "source": "https://indiankanoon.org/doc/871792/",
+      "authority": "The Factories Act 1948, Section 40B; state Safety Officer Rules"
+    },
+    {
+      "key": "dgca-remote-pilot-certificate",
+      "statement": "Under the Drone Rules 2021, DGCA issues a Remote Pilot Certificate. Eligibility: age 18 to 65, class 10 pass, a valid DGCA medical, and training at a DGCA-approved Remote Pilot Training Organisation (RPTO). Mandatory for all commercial operation of small drones (2-25 kg) and for commercial micro-drone use.",
+      "implication": "A statutorily licensed career reachable on a CLASS 10 PASS — among the most accessible Tier A professions in the taxonomy. The 18-65 age range is a genuine entry_window, though it binds nobody in this tool's audience.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://www.diligencecertification.com/remote-pilot-certificate/",
+      "authority": "Directorate General of Civil Aviation, under the Drone Rules 2021"
+    },
+    {
+      "key": "barc-oces-dgfs-nuclear",
+      "statement": "The Department of Atomic Energy recruits Scientific Officers through BARC's OCES (Orientation Course for Engineering Graduates and Science Postgraduates) and DGFS schemes. Screening is on a GATE score from any of the last three years, followed by interview, then a one-year course at a BARC Training School. Graduates are appointed as Scientific Officers (Group A Gazetted) across BARC, NPCIL, IGCAR and the Atomic Energy Regulatory Board.",
+      "implication": "You do NOT need a nuclear engineering degree. BARC recruits from Mechanical, Chemical, Electrical, Electronics, Metallurgy, Physics and Chemistry — a degree with a specialisation alongside a core discipline still qualifies. GATE, not a dedicated B.Tech Nuclear, is the real gate. This makes the profession reachable from most engineering branches.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://www.igcar.gov.in/ocests/Annexure-II_OCES-2026_Emp.%20News_ENGLISH_Advt_FINAL_latest.pdf",
+      "authority": "Department of Atomic Energy / Bhabha Atomic Research Centre"
+    },
+    {
+      "key": "neet-ug-eligibility",
+      "statement": "NEET UG: minimum age 17, NO upper age limit, NO limit on attempts. Requires Physics, Chemistry, Biology/Biotechnology AND English at class 12, with 50 percent in PCB for general category (40 percent SC/ST/OBC, 45 percent PwD). The SAME eligibility applies to government, private and deemed universities alike.",
+      "class12_subjects": [
+        "physics",
+        "chemistry",
+        "biology",
+        "english"
+      ],
+      "implication": "TWO things matter. (1) There is NO private bypass for medicine — unlike engineering, money cannot open a door that NEET has closed. (2) No age or attempt cap means a commerce graduate is NOT permanently blocked: they can add PCB through NIOS and sit NEET at any age. It is a long cost, not a hard block. An earlier example in DECISIONS.md overstated this as unreachable.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://allen.in/neet/eligibility-criteria"
+    },
+    {
+      "key": "nmc-registration",
+      "statement": "NMC registration is mandatory to practise medicine in India. The route is: MBBS from an NMC-recognised college, then a compulsory 12-month rotating internship (CRMI), then registration with a State Medical Council which syncs to the National Medical Register. Provisional registration is granted after final MBBS; permanent registration only after the internship.",
+      "implication": "MBBS alone does not let you practise — the 12-month internship and council registration are part of the qualification. This is why years_to_qualify for Doctor is 6, not 5.5.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://thedoctorsguardian.com/nmc-guidelines-for-mbbs-2026/",
+      "authority": "National Medical Commission"
+    },
+    {
+      "key": "ncahp-allied-health",
+      "statement": "The National Commission for Allied and Healthcare Professions Act 2021 PROHIBITS PRACTICE WITHOUT REGISTRATION. It establishes a national commission, ten professional councils — including the Physiotherapy Professional Council and the Ophthalmic Science Professional Council — state councils, and central and state registers.",
+      "implication": "MAJOR. Allied health in India moved from unregulated to statutorily licensed. Physiotherapist, Optometrist, Medical Laboratory Technologist, Radiographer and the OT/dialysis technologist roles are now Tier A with a licensing body, not open-market Tier C. Implementation is still rolling out state by state.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Public%20notice%20by%20NCAHP-signed.pdf",
+      "authority": "National Commission for Allied and Healthcare Professions, Act of 2021"
+    },
+    {
+      "key": "statutory-health-councils",
+      "statement": "UGC lists the statutory professional councils regulating health education and practice in India: Dental Council of India (Dentists Act 1948), Indian Nursing Council (INC Act 1947), Pharmacy Council of India (Pharmacy Act 1948), Veterinary Council of India (IVC Act 1984), National Commission for Indian System of Medicine, National Commission for Homoeopathy, and the Rehabilitation Council of India. INC and PCI registration are both mandatory to practise — PCI registration is done through State Pharmacy Councils, INC through State Nursing Councils.",
+      "implication": "Every clinical profession in Sector 4 has a named statutory body. This is the most heavily Tier A sector in the taxonomy — the opposite of Sector 1, where nothing is licensed at all.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://www.ugc.gov.in/UGCofficials/Professional_Councils",
+      "authority": "University Grants Commission list of statutory professional councils"
+    }
+  ],
+  "pending_verification": [
+    {
+      "key": "neet-ug-eligibility",
+      "needed_for": "Sector 4",
+      "expect": "PCB + English, age 17+, attempt limits"
+    },
+    {
+      "key": "bci-llb-routes",
+      "needed_for": "Sector 7",
+      "expect": "5-year integrated after class 12; 3-year LLB after ANY bachelor's degree"
+    },
+    {
+      "key": "icai-ca-direct-entry",
+      "needed_for": "Sector 6",
+      "expect": "graduates skip Foundation, enter Intermediate directly"
+    },
+    {
+      "key": "ncte-bed-eligibility",
+      "needed_for": "Sector 12",
+      "expect": "B.Ed after any bachelor's; 4-year integrated ITEP after class 12"
+    },
+    {
+      "key": "rci-clinical-psychology",
+      "needed_for": "Sector 13",
+      "expect": "M.Phil/PsyD registration mandatory to practise clinically"
+    },
+    {
+      "key": "icar-aieea-eligibility",
+      "needed_for": "Sector 15",
+      "expect": "PCB or PCM/Agriculture stream for B.Sc Agriculture"
+    },
+    {
+      "key": "nid-dat-nift-eligibility",
+      "needed_for": "Sector 8",
+      "expect": "any stream, aptitude-based"
+    },
+    {
+      "key": "iei-amie-route",
+      "needed_for": "Sector 2",
+      "expect": "non-degree route to engineering qualification via Institution of Engineers"
+    }
+  ]
+}
