@@ -1,78 +1,113 @@
 # Profession Taxonomy — India Career Recommender
 
-Structural profession list for Indian school and college students. Psychometric
-factors, weights and `drivingReasons` are **not** in scope here — they attach later
-via a separate pipeline keyed on `profession.id`.
+Structural profession list for Indian school and college students, across four journeys:
+**class 9–10, class 11–12, college, early professionals.**
 
-**[DECISIONS.md](DECISIONS.md) is the spec.** Schema, scoring model, boundary rules and
-verification policy all live there. This file is orientation only.
+Psychometric factors, weights and `drivingReasons` are **not** in scope here — they attach later
+via a separate pipeline keyed on `profession.id`. `data/psychometric_factors.json` holds only the
+19-factor controlled vocabulary that `role_spread` is written against.
+
+**[DECISIONS.md](DECISIONS.md) is the spec** — schema, scoring, boundary rules, verification
+policy. **[.claude/CLAUDE.md](.claude/CLAUDE.md) is the working contract** — what to run, what never to do.
+This file is orientation only.
 
 ## Layout
 
 ```
-DECISIONS.md                    locked design decisions — read this first
+DECISIONS.md                    the spec — read before touching data
+.claude/CLAUDE.md               the working contract
 data/
-  professional_sectors.json     18 fixed parents
-  industrial_sectors.json       NSDC 38 Sector Skill Councils + EXT- extension tags
-  verified_facts.json           eligibility facts fetched from source, reused across sectors
-  professions/
-    01-software-and-computing.json
-    02-... (one file per professional sector)
+  professional_sectors.json     18 fixed parents + the cross-cutting employer rule
+  industrial_sectors.json       NSDC 38 Sector Skill Councils + 8 EXT- extension tags
+  psychometric_factors.json     the 19-factor vocabulary role_spread must use
+  verified_facts.json           every fetched fact, with source and date — fetch once, reuse
+  filter_rules.json             compensation thresholds AND preference presets. The only
+                                place filter logic lives.
+  entrance_gates.json           competition and seats per EXAM, shared across professions
+  professions/NN-<sector>.json  one file per professional sector
 tools/
-  export_csv.py                 JSON -> per-sector CSV, plus validation
-build/
-  *.csv                         generated, not hand-edited
+  export_csv.py                 per-field validation + CSV export
+  audit.py                      cross-field consistency + cross-FILE reconciliation
+  probe.py                      is this candidate already covered? Run BEFORE adding anything.
+build/*.csv                     generated, never hand-edited
 ```
 
-## Review workflow
+## Workflow
 
 ```bash
-python tools/export_csv.py            # all sectors built so far
-python tools/export_csv.py 01         # just one
+python tools/export_csv.py                        # validate + export, all sectors
+python tools/export_csv.py 01 03                  # just those
+python tools/audit.py                             # cross-field + cross-file
+python tools/probe.py "<name>" <defining skills>  # before adding a profession
 ```
 
-Writes `build/<nn>-<sector>.csv`, one row per profession, list fields joined with `|`.
-JSON stays the source of truth. The script also fails loudly on unknown industrial tags,
-illegal enum values, unknown class-12 subjects, missing verification blocks, and any
-Tier A profession that claims `judgment` instead of `verified`.
+**Both tools must be clean before any change ships.** They check different things: `export_csv`
+checks each field is legal on its own, `audit` checks the fields agree with each other. Real
+errors hide in the second — it has caught three wrong verification tiers, a whole missing
+profession, invented statutory body names, and a merge filed in the wrong sector.
 
-Each sector file also carries:
+`probe.py` also reads the **graveyard**: professions already routed away or merged. It answers
+"this was considered and deliberately not kept" rather than "genuinely new", so a recorded
+decision is not silently reversed.
 
-- `routed_elsewhere` — professions a reviewer will expect to find there and won't, with
-  the sector they actually went to and why. The audit trail for the single-parent rule.
-- `boundary_decisions_needing_your_signoff` — judgment calls that could reasonably have
-  gone the other way.
+### Blocks carried by every sector file
+
+- `routed_elsewhere` — professions a reviewer expects here and won't find, with where they went
+  and why. `audit.py` reconciles these: an unkept promise is an error once the target is built.
+- `merged_into` — same-sector merges. Not reconciled; a merge is not a routing.
+- `boundary_decisions_needing_your_signoff` — judgment calls that could have gone the other way.
+- `changelog` — every version, including every correction. Deleting one deletes the why.
+
+## Two things this repo will not do
+
+**No invented numbers.** No salary, fee or wage figure without a fetched source. Commercial
+aggregators disagreed by 4–5× on the same Indian profession, so where statutory pay exists — 7th
+CPC matrices, published fee schedules — that is the anchor, and the private-sector reality goes
+in a `nuance` beside it.
+
+**No field that ranks social status.** A `societal_tier` was requested and rejected; the factual
+substitute `employment_formality` was designed and also rejected, because it classes a funded
+startup founder and a daily-wage mason both as `informal`. Aspiration is served by a **query** —
+`filter_rules.json` → `preference_filters` — never by a column. See DECISIONS.md §8.7b.
 
 ## Sources
 
-### Actually consulted
-
-- [National Skills Network — Sector Skill Councils](https://nationalskillsnetwork.in/sector-skill-councils/) — the 36 published SSC names
-- [NSDC — Sector Skill Councils](https://nsdcindia.org/sector-skill-councils) — confirms 38 approved; page served no list
-- [Careers360 — JEE Main eligibility](https://engineering.careers360.com/articles/jee-main-eligibility-faqs) — class 12 subject requirements and the attempt window
-- [Neram Classes — B.Arch eligibility, CoA norm](https://neramclasses.com/counseling/concepts/eligibility-45-vs-50-rule) and [AFD India — NATA/B.Arch](https://afdindia.com/blog/post/nata-barch)
-
-Everything fetched is recorded with a date in `data/verified_facts.json`.
+Every fetched fact is in `data/verified_facts.json` with its source and date — **34 facts** and 13 entrance gates so
+far. Highlights: NEET, JEE and CAT eligibility · NMC and NCAHP registration · the ten NCAHP
+councils · DGMS certificates of competency · DG Shipping MEO Class IV sea time · ISRO's GATE
+route · AIIMS 7th CPC pay levels · ICAI, ICSI and Bar Council routes · UPSC age and attempt limits · the Actuaries Act · UGC's list of statutory professional councils.
 
 ### Named in the brief, NOT yet consulted
 
 NCS (National Career Service) · India Skills Report · NID · Sangeet Natak Akademi ·
 Institution of Engineers (India) · TERI · ICAR · NCO 2015 · NSDC QP-NOS.
 
-These will be opened as the sectors that need them come up — IEI for Sector 2, ICAR for
-Sector 15, NID and Sangeet Natak Akademi for Sectors 8 and 10.
+Opened as the sectors that need them come up — ICAR for Sector 15, NID and Sangeet Natak Akademi
+for Sectors 8 and 10.
 
-> An earlier version of this file listed all of the above under "Sources" as though they
-> had been used. They had not. Anything not fetched is marked `judgment` in the data, and
-> `verification.status` on every record tells you which is which.
+> An earlier version of this file listed all of the above under "Sources" as though they had been
+> used. They had not. That is correction #1 of nine on record in DECISIONS.md §10.
 
 ## Status
 
-| # | Professional sector | Professions | Verified / judgment | State |
+| # | Professional sector | Professions | Verified | Version |
 |---|---|---|---|---|
-| 1 | Software & Computing | 17 | 1 / 16 | drafted |
-| 2–18 | — | — | — | pending |
+| 1 | Software & Computing | 14 | 1 | v16 |
+| 2 | Engineering & Making | 32 | 31 | v19 |
+| 3 | Science & Research | 19 | 7 | v7 |
+| 4 | Healthcare & Medicine | 18 | 17 | v1.7 |
+| 5 | Business, Management & Entrepreneurship | 12 | 0 | v1.0 |
+| 6 | Finance & Economics | 8 | 2 | v1.0 |
+| 7 | Law, Governance & Public Service | 10 | 7 | v1.0 |
+| 8–18 | — | — | — | pending |
 
-Sector 1 is almost entirely `judgment` by nature, not by neglect: **nothing in computing
-is statutorily licensed in India**, so no Tier A authority exists to check against. Later
-sectors — Healthcare, Law, Education, Architecture — invert this ratio.
+**113 professions · 712 job roles · 151 nuances · 34 verified facts · 14 open admin reviews.**
+
+The verified/judgment ratio is a property of the sector, not of the effort spent. **Sector 1 is
+1 of 14, and Sector 5 is 0 of 12, because nothing in computing or in Indian general management is
+statutorily licensed** — no Tier A authority
+exists to check against. Sector 4 names 17 statutory licensing bodies. Sector 2 sits between.
+
+There is no `LOCKED` marker. There was one, and it lied — all four sectors were stamped locked on
+2026-08-06 and all four changed afterwards. A sector is finished when both tools are clean and
+every key has had two review passes; **finished does not mean frozen.**

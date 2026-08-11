@@ -1,0 +1,1369 @@
+{
+  "professional_sector": "Law, Governance & Public Service",
+  "professional_sector_id": 7,
+  "version": "1.0",
+  "profession_count": 10,
+  "sector_verification_note": "THE MOST STRUCTURALLY PROTECTED SECTOR IN THE TAXONOMY. Six of eight professions carry legal_accountability true — a person signs, and answers for it personally. Three name statutory licensing bodies (Bar Council of India, ICSI) and three more are entered only through state examinations. The single exception, Paralegal, is both the only unlicensed record and by far the most AI-exposed one, which is the sector's own argument about what licensing protects.",
+  "professions": [
+    {
+      "id": "law-lawyer",
+      "profession": "Lawyer",
+      "one_liner": "Argues and advises on what the law allows, requires and forbids.",
+      "job_roles": [
+        "Advocate (litigation)",
+        "Corporate Lawyer",
+        "Legal Counsel (in-house)",
+        "Public Prosecutor",
+        "Legal Advisor",
+        "Arbitration Counsel",
+        "Intellectual Property Attorney",
+        "Legal Researcher"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Advocate (litigation)",
+              "Public Prosecutor",
+              "Arbitration Counsel"
+            ],
+            "higher": [
+              "verbal",
+              "confidence",
+              "extraversion"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Litigation is performance under pressure — arguing on your feet before a judge who interrupts. Corporate and in-house work in the same profession is drafting and reviewing documents, largely alone and largely silent."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-LEGAL",
+        "EXT-GOVT",
+        "BFSI",
+        "MEPSC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Five-year integrated LLB after class 12, OR a three-year LLB after any bachelor's degree"
+        },
+        {
+          "step": 3,
+          "stage": "enrolment",
+          "requirement": "Enrol as an advocate with a State Bar Council under the Advocates Act 1961"
+        },
+        {
+          "step": 4,
+          "stage": "aibe",
+          "requirement": "Pass the All India Bar Examination for the Certificate of Practice"
+        },
+        {
+          "step": 5,
+          "stage": "practice",
+          "requirement": "Chambers, law firms, in-house legal teams, or independent practice"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CLAT",
+          "AILET",
+          "LSAT India",
+          "AIBE (after enrolment)",
+          "CUET (LLB)"
+        ],
+        "private_entrances": [
+          "SLAT"
+        ],
+        "note": "CLAT admits to the national law universities. AIBE is not an admission test — it comes after the degree and after Bar Council enrolment."
+      },
+      "entry_competition": {
+        "primary_gate": "clat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": "Bar Council of India",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3-10",
+        "mid_career_lpa": "12-35",
+        "mid_career_midpoint": 23.5,
+        "payback_years": 0.92,
+        "basis": "mid_career is 5-8 years post-enrolment, EMPLOYED only. The early band is unusually wide because litigation juniors earn very little for the first years while corporate firm entrants start high.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India has an enormous case backlog and a growing corporate compliance load. Demand is high but extremely stratified between tier-1 corporate firms and district courts."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent practice is the traditional shape of the profession — chambers first, then your own. Needs enrolment and a Certificate of Practice rather than capital.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 40,
+        "band": "low",
+        "reason": "Research, drafting and document review are exposed and already changing. Advocacy carries personal professional liability and a court will not hear software, which is what protects it."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "https://www.pw.live/judiciary/exams/aibe-exam-eligibility",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "mid_stream_entry",
+          "statement": "Law is one of the most reachable mid-career switches in the taxonomy. The three-year LLB accepts a graduate of ANY discipline, and there is no age limit on Bar Council enrolment or on AIBE attempts. A commerce or engineering graduate at thirty can still become a lawyer.",
+          "source": "https://www.pw.live/judiciary/exams/aibe-exam-eligibility"
+        },
+        {
+          "field": "economics",
+          "statement": "The widest early-earnings spread in the dataset, and it is structural rather than noisy. A litigation junior in a district court may earn almost nothing for two to three years while a tier-1 corporate firm entrant starts near the top of the band. Which one a student lands in is decided largely by which law school they attended."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-company-secretary",
+      "profession": "Company Secretary",
+      "one_liner": "Makes sure a company follows the law it is required to follow.",
+      "job_roles": [
+        "Company Secretary",
+        "Compliance Officer",
+        "Secretarial Auditor",
+        "Corporate Governance Analyst",
+        "Legal & Secretarial Executive",
+        "Listing Compliance Officer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "BFSI",
+        "EXT-LEGAL",
+        "IT-ITES",
+        "CGSC"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "ANY stream; minimum age 17 for CSEET"
+        },
+        {
+          "step": 2,
+          "stage": "cseet",
+          "requirement": "CSEET, the ICSI entrance test; graduates with 50 percent may skip it and enter Executive directly"
+        },
+        {
+          "step": 3,
+          "stage": "executive",
+          "requirement": "Executive Programme"
+        },
+        {
+          "step": 4,
+          "stage": "professional",
+          "requirement": "Professional Programme plus practical training — three to five years in total"
+        },
+        {
+          "step": 5,
+          "stage": "employment",
+          "requirement": "Listed companies, which are legally required to appoint one, plus firms in practice"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CSEET (ICSI)"
+        ],
+        "private_entrances": [],
+        "note": "ICSI runs the whole route. Executive and Professional examinations are held twice a year, in June and December."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Institute of Company Secretaries of India (ICSI)",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "10-22",
+        "mid_career_midpoint": 16.0,
+        "payback_years": 0.25,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "Demand is set by statute: every listed company and every company above a paid-up capital threshold must appoint a whole-time Company Secretary. That makes the floor legal rather than economic, but it also caps the size of the profession."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Practice as a Company Secretary in whole-time practice, doing secretarial audit and compliance for several companies.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 30,
+          "skill_physical": 0,
+          "skill_digital": 25,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 55,
+        "band": "low",
+        "reason": "Filings, registers and compliance checklists are highly structured and exposed. A Company Secretary is a Key Managerial Personnel who signs and is personally liable, and liability does not automate."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "https://www.catestseries.org/blogs/company-secretary-admission.php",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "NOT a secretary in the clerical sense, not a founder's-office generalist, and not a ministry Secretary — the shared word is a historical accident. Under the Companies Act 2013 a Company Secretary is a Key Managerial Personnel ranked alongside the CEO and CFO, mandatory for listed companies and personally liable for the company's regulatory filings."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Sits in Law, Governance & Public Service rather than Finance. Apply the sector test: delete company law and the role disappears entirely. Its object of concern is whether the organisation obeys the law, which is governance, not money. It is a separate profession from Corporate Lawyer — different statutory qualification, different daily work."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-civil-services-officer",
+      "profession": "Civil Services Officer",
+      "one_liner": "Runs the machinery of government — a district, a department, a policy.",
+      "job_roles": [
+        "IAS Officer",
+        "IFS Officer (Foreign Service)",
+        "IRS Officer",
+        "State Civil Services Officer",
+        "Sub-Divisional Magistrate",
+        "Revenue Officer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "IFS Officer (Foreign Service)"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Diplomacy is language, negotiation and living abroad for a career. District administration in the same service is field work — floods, elections, law and order, on the ground."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-GOVT",
+        "EXT-LEGAL",
+        "EXT-DEV"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream — the examination has no subject requirement"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A bachelor's degree in ANY discipline"
+        },
+        {
+          "step": 3,
+          "stage": "exam",
+          "requirement": "UPSC Civil Services Examination: Prelims, Mains and Interview"
+        },
+        {
+          "step": 4,
+          "stage": "training",
+          "requirement": "LBSNAA or the relevant service academy"
+        },
+        {
+          "step": 5,
+          "stage": "service",
+          "requirement": "Allocated to a service and a cadre"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UPSC Civil Services Examination",
+          "State Public Service Commission examinations"
+        ],
+        "private_entrances": [],
+        "note": "Minimum age 21. General: 32 years and 6 attempts. OBC: 35 and 9. SC/ST: 37 with unlimited attempts."
+      },
+      "entry_competition": {
+        "primary_gate": "upsc-cse",
+        "alternative_gates": []
+      },
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 32,
+        "is_hard_block": false,
+        "constrained_route": "UPSC CSE — age 32 and 6 attempts for General, 35 and 9 for OBC, 37 and unlimited for SC/ST. State PSC examinations have their own, often later, limits.",
+        "bypass": "State Public Service Commission examinations, which usually allow older candidates than UPSC - several states run to 38 or 40 - and the Indian Economic Service and other specialist UPSC examinations with their own limits."
+      },
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "8-12",
+        "mid_career_lpa": "15-25",
+        "mid_career_midpoint": 20.0,
+        "payback_years": 0.2,
+        "basis": "Pay follows central government pay matrices. CTC comparison understates the package — housing, medical, pension and allowances are not in the figure.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "A few hundred posts a year against roughly a million applicants. Demand for the ROLE is permanent and the state will always need administrators; the constraint is the examination, not the need."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 10,
+          "skill_digital": 15,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Discretionary authority exercised under law, with personal accountability for the decision. File processing and drafting are exposed; deciding, and answering for it, is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "https://vajiramandravi.com/upsc-exam/upsc-age-limit/",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "entry_window",
+          "statement": "The hardest genuine entry window in the taxonomy, and unlike JEE there is no lateral route around it. It is not a hard block because 32 is late enough that a graduate of any age under it can still start, and state service commissions often allow older candidates.",
+          "source": "https://vajiramandravi.com/upsc-exam/upsc-age-limit/"
+        },
+        {
+          "field": "economics",
+          "statement": "The most under-measured compensation in the dataset. Government housing, medical cover, pension terms and the authority attached to the post are a large part of why people pursue this, and none of it appears in a salary figure."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body, and that is correct rather than an omission. A District Magistrate is personally answerable by virtue of STATUTORY OFFICE under the CrPC, the revenue codes and service conduct rules - not through a professional council. No body licenses civil servants; the state appoints them and the law holds them liable."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "SUCCESS RATE. Roughly a million candidates compete for a few hundred posts, and many spend three to six prime years preparing full time, often with no fallback. The record currently presents this like any other examination route. Decide how the opportunity cost of preparation should be shown — it is the single largest unmeasured risk in the taxonomy."
+      }
+    },
+    {
+      "id": "law-police-officer",
+      "profession": "Police Officer",
+      "one_liner": "Enforces the law, investigates crime and keeps public order.",
+      "job_roles": [
+        "Sub-Inspector",
+        "Police Constable",
+        "IPS Officer",
+        "Investigating Officer",
+        "Cyber Crime Officer",
+        "Traffic Officer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-GOVT",
+        "EXT-DEFENCE",
+        "EXT-LEGAL"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream; constable recruitment often takes class 12 alone"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A bachelor's for Sub-Inspector and IPS; not required for constable"
+        },
+        {
+          "step": 3,
+          "stage": "exam",
+          "requirement": "State police recruitment boards, SSC CPO, or UPSC CSE for the IPS"
+        },
+        {
+          "step": 4,
+          "stage": "physical",
+          "requirement": "Physical standards and endurance tests are a genuine second gate"
+        },
+        {
+          "step": 5,
+          "stage": "training",
+          "requirement": "State police academy or SVPNPA for the IPS"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UPSC Civil Services Examination (IPS)",
+          "SSC CPO",
+          "State police recruitment examinations"
+        ],
+        "private_entrances": [],
+        "note": "Written examination plus physical efficiency tests. Age limits vary by state and by rank."
+      },
+      "entry_competition": {
+        "primary_gate": "upsc-cse",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "9-18",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.17,
+        "basis": "Government pay matrices, EMPLOYED only. Housing, medical and pension are excluded from the figure and are a material part of the package.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India is police-deficient against its own sanctioned strength, and state recruitment drives run in large cycles. One of the largest formal employers of non-graduates and general graduates in the country."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 20,
+          "skill_physical": 30,
+          "skill_digital": 10,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Physical presence, statutory authority and personal accountability. Record-keeping and some analysis are exposed; arresting someone, and answering for it in court, is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "https://vajiramandravi.com/upsc-exam/upsc-age-limit/",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Police sits here under the cross-cutting rule: a uniformed identity whose work exists because the state exists belongs to Sector 7. A forensic scientist employed by the same police department does NOT — they keep their home sector with a government tag."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body. Powers of arrest, search and seizure, and personal liability for their misuse, come from the Police Acts and the CrPC rather than from any licensing council."
+        },
+        {
+          "field": "verification",
+          "statement": "Entry is controlled by examination — UPSC Civil Services for the IPS, SSC CPO and state police recruitment boards for Sub-Inspector and Constable. Tier B rather than C: an authority decides who enters, even though no council licenses the profession afterwards. State recruitment rules vary and were not individually verified."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-armed-forces-officer",
+      "profession": "Armed Forces Officer",
+      "one_liner": "Commands soldiers, sailors or aircrew in the Indian Armed Forces.",
+      "job_roles": [
+        "Army Officer",
+        "Naval Officer",
+        "Air Force Officer",
+        "Technical Entry Officer",
+        "Logistics Officer (defence)",
+        "Education Officer (defence)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-DEFENCE",
+        "EXT-GOVT",
+        "AASSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream for NDA Army; Physics and Maths required for NDA Air Force and Navy"
+        },
+        {
+          "step": 2,
+          "stage": "exam",
+          "requirement": "NDA after class 12, or CDS and AFCAT after a degree, or technical and short-service entries"
+        },
+        {
+          "step": 3,
+          "stage": "ssb",
+          "requirement": "Services Selection Board — five days of psychological and group testing, the real filter"
+        },
+        {
+          "step": 4,
+          "stage": "training",
+          "requirement": "IMA, INA, AFA or OTA"
+        },
+        {
+          "step": 5,
+          "stage": "commission",
+          "requirement": "Permanent or Short Service Commission"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NDA (UPSC)",
+          "CDS (UPSC)",
+          "AFCAT",
+          "TES / TGC / SSC technical entries"
+        ],
+        "private_entrances": [],
+        "note": "The SSB interview, not the written examination, is where most candidates are filtered out."
+      },
+      "entry_competition": null,
+      "entry_window": {
+        "max_years_since_class12": null,
+        "max_age": 25,
+        "is_hard_block": false,
+        "constrained_route": "Age limits are strict and vary by entry: NDA is roughly 16.5 to 19.5, CDS and AFCAT run to about 25, and technical and short-service entries have their own bands.",
+        "bypass": "If the NDA window closes at about 19.5, CDS and AFCAT reopen entry after a degree to about 25, and technical, JAG and short-service entries run later still with their own bands."
+      },
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "8-12",
+        "mid_career_lpa": "15-25",
+        "mid_career_midpoint": 20.0,
+        "payback_years": 0.1,
+        "basis": "Defence pay matrix with Military Service Pay, EMPLOYED only. Housing, medical, canteen, pension and post-retirement benefits are excluded and are a large part of the package.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 30,
+          "skill_digital": 10,
+          "clarity": 25
+        },
+        "legal_accountability": true,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Physical, hierarchical and accountable command under conditions no system is trusted to hold. Analysis and logistics are exposed; leading people who may be hurt is not."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "https://vajiramandravi.com/upsc-exam/upsc-age-limit/",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Here rather than in Engineering & Making even for technical entries. The cross-cutting rule turns on IDENTITY: an officer is an officer first and an engineer second. A civilian engineer working for DRDO keeps Sector 2 with a defence tag."
+        },
+        {
+          "field": "entry_window",
+          "statement": "Age limits here are genuinely tight and are the tightest in the taxonomy for the NDA route, which closes at about 19.5. Unlike the civil services there is no later route that reopens at thirty, so a student who wants this has to decide early."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body. An officer is subject to the Army, Navy or Air Force Act and is personally answerable under military law - a stricter accountability than most licences impose, and one no council administers."
+        },
+        {
+          "field": "verification",
+          "statement": "Entry is controlled by examination — NDA and CDS are conducted by UPSC, AFCAT by the Air Force. Tier B rather than C. The SSB interview, not the written paper, is where most candidates are filtered out, and that stage is not an examination in the ordinary sense."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-judicial-services-officer",
+      "profession": "Judicial Services Officer",
+      "one_liner": "Sits as a judge in the district courts and decides cases.",
+      "job_roles": [
+        "Civil Judge (Junior Division)",
+        "Judicial Magistrate",
+        "Additional District Judge",
+        "Judicial Officer",
+        "Court Registrar"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-LEGAL",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "LLB — five-year integrated after class 12, or three-year after any degree"
+        },
+        {
+          "step": 3,
+          "stage": "enrolment",
+          "requirement": "Bar Council enrolment; some states require years of practice for the higher entry"
+        },
+        {
+          "step": 4,
+          "stage": "exam",
+          "requirement": "State Judicial Services Examination, conducted by the High Court or State PSC"
+        },
+        {
+          "step": 5,
+          "stage": "service",
+          "requirement": "Appointment as a Civil Judge, then progression through the district judiciary"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State Judicial Services Examination (Civil Judge)",
+          "Higher Judicial Services Examination"
+        ],
+        "private_entrances": [],
+        "note": "Conducted state by state. The junior entry usually allows fresh law graduates; the higher entry requires about seven years of practice."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Bar Council of India",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "7-11",
+        "mid_career_lpa": "14-28",
+        "mid_career_midpoint": 21.0,
+        "payback_years": 0.67,
+        "basis": "Judicial pay follows its own commission-set scales, EMPLOYED only. Housing, staff and pension are excluded from the figure.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India's subordinate judiciary runs with a large number of sanctioned posts vacant against an enormous pending caseload, so recruitment is regular and the need is structural."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 0,
+          "skill_digital": 15,
+          "clarity": 40
+        },
+        "legal_accountability": true,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "The highest combined foundational-knowledge and clarity share in the taxonomy. Judging is applying law to disputed facts and being personally accountable for the outcome — the most structurally protected work in the dataset."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "https://www.pw.live/judiciary/exams/aibe-exam-eligibility",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "A separate profession from Lawyer, not a senior version of one. Entry is by a distinct state examination taken after the LLB, and many judicial officers are appointed as fresh law graduates without practising as advocates at all."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-public-policy-professional",
+      "profession": "Public Policy Professional",
+      "one_liner": "Researches and designs the rules and programmes governments run on.",
+      "job_roles": [
+        "Policy Analyst",
+        "Policy Researcher",
+        "Legislative Assistant",
+        "Programme Evaluation Analyst",
+        "Government Affairs Analyst",
+        "Regulatory Affairs Analyst (policy)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-GOVT",
+        "EXT-DEV",
+        "EXT-RND",
+        "EXT-LEGAL",
+        "MEPSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; economics, law, political science and engineering all feed in"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "MPP or MA in public policy is the usual entry qualification"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Think tanks, LAMP fellowships, government advisory units, foundations, corporate government-affairs teams"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "Institute entrances (NLS, TISS, Ashoka, IIM public policy)"
+        ],
+        "private_entrances": [],
+        "note": "No single national gate; admission is programme by programme."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "5-10",
+        "mid_career_lpa": "12-25",
+        "mid_career_midpoint": 18.5,
+        "payback_years": 0.8,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any",
+        "note": "A young and growing field in India — think tanks, philanthropic funders and corporate government-affairs teams have expanded it well beyond the civil service."
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent policy consulting to foundations, industry bodies and international organisations.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Literature review and drafting are exposed. Deciding which problem a policy should solve, and for whom, is the clarity that carries this profession."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Distinct from Research Psychologist and other Sector 3 researchers, which study the world to know it. Policy work exists to CHANGE what the state does — without a state there is no policy profession, which is the Sector 7 test."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-paralegal",
+      "profession": "Paralegal & Legal Support Executive",
+      "one_liner": "Does the research, drafting and paperwork a legal team runs on.",
+      "job_roles": [
+        "Paralegal",
+        "Legal Assistant",
+        "Contract Management Executive",
+        "Legal Operations Executive",
+        "Court Clerk",
+        "Documentation Executive (legal)",
+        "Compliance Assistant"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-LEGAL",
+        "IT-ITES",
+        "BFSI",
+        "MEPSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "certificate",
+          "requirement": "Paralegal or legal-support diploma; a BA LLB is not required"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "Any bachelor's helps; law graduates awaiting enrolment often start here"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Law firms, in-house legal teams, legal process outsourcing firms, courts"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance exam. Hired on drafting ability and attention to detail."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "5-11",
+        "mid_career_midpoint": 8.0,
+        "payback_years": 0.27,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "India's legal process outsourcing industry serves United States and United Kingdom firms at scale, which is where much of this employment actually sits."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freelance contract drafting and documentation support for small firms and startups.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 35,
+          "skill_physical": 0,
+          "skill_digital": 35,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 70,
+        "band": "high",
+        "reason": "THE MOST EXPOSED PROFESSION IN THIS SECTOR by a wide margin. Document review, contract abstraction and legal research are exactly what language models do well, and legal process outsourcing is built on that work. There is no licence and no personal liability to protect it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "The base layer of the legal pyramid, listed beside Lawyer at its apex. It is also the only unlicensed profession in this sector, which is exactly why it is the most AI-exposed one — the licence and the liability are what protect the others."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Highest AI exposure in Sector 7 and no licence to protect it, in a profession whose Indian employment sits largely in legal process outsourcing for foreign firms — the segment most directly substitutable. It is also a genuine entry route for law graduates awaiting enrolment. Decide how strongly to frame the exposure."
+      }
+    },
+    {
+      "id": "law-firefighter",
+      "profession": "Firefighter",
+      "one_liner": "Runs towards fires, collapses and accidents to get people out.",
+      "job_roles": [
+        "Firefighter",
+        "Fire Operator",
+        "Rescue Operator",
+        "Municipal Fire Officer",
+        "Emergency Response Operator",
+        "Fire Station Officer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-GOVT",
+        "CSDCI",
+        "HYSSC",
+        "AASSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Class 12 in any stream; some state cadres take class 10"
+        },
+        {
+          "step": 2,
+          "stage": "physical",
+          "requirement": "Height, chest, endurance and running standards - a genuine and strict gate"
+        },
+        {
+          "step": 3,
+          "stage": "exam",
+          "requirement": "State fire service or municipal corporation recruitment; some states recruit through the police board"
+        },
+        {
+          "step": 4,
+          "stage": "training",
+          "requirement": "State fire service training academy"
+        },
+        {
+          "step": 5,
+          "stage": "employment",
+          "requirement": "State fire services, municipal corporations, airports, refineries, large industrial plants"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State fire service recruitment examinations",
+          "Municipal corporation recruitment"
+        ],
+        "private_entrances": [],
+        "note": "Written test plus physical efficiency. Age and physical standards vary by state."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "3-5",
+        "mid_career_lpa": "6-12",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.12,
+        "basis": "State pay matrices, EMPLOYED only. Housing, medical and pension sit outside the figure and are a material part of the package.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "Indian fire services run understaffed against their own sanctioned strength, and industrial and airport fire safety adds private demand on top of municipal."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 60,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Among the least exposed work in the entire taxonomy. Entering a burning building and cutting someone out of a car is physical, unstructured and irreducibly human."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Routed here from Sector 2, where Fire & Safety Engineer sits. The split is that the engineer DESIGNS systems so a fire never starts, which is engineering; the firefighter is a uniformed public servant who responds when it does, which is the Sector 7 cross-cutting rule."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "law-patent-agent",
+      "profession": "Patent Agent",
+      "one_liner": "Writes and files patents, and argues for them at the patent office.",
+      "job_roles": [
+        "Patent Agent",
+        "Patent Analyst",
+        "Patent Drafting Specialist",
+        "Prior Art Search Analyst",
+        "IP Paralegal",
+        "Patent Prosecution Associate"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "EXT-LEGAL",
+        "EXT-RND",
+        "LSSSDC",
+        "ESSCI",
+        "IT-ITES"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Science stream in practice, because the degree below requires it"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A degree in science, pharmacy, engineering or technology from a university established under Indian law — a hard requirement under Section 126 of the Patents Act 1970. A law degree alone does NOT qualify you."
+        },
+        {
+          "step": 3,
+          "stage": "exam",
+          "requirement": "The Patent Agent Examination conducted by the Indian Patent Office"
+        },
+        {
+          "step": 4,
+          "stage": "registration",
+          "requirement": "Registration on the Register of Patent Agents"
+        },
+        {
+          "step": 5,
+          "stage": "employment",
+          "requirement": "IP law firms, corporate IP teams, research organisations, IP analytics firms"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "Patent Agent Examination (Indian Patent Office)"
+        ],
+        "private_entrances": [],
+        "note": "The examination requires a science or technology degree. There is no alternative qualification."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Controller General of Patents, Designs and Trade Marks (Register of Patent Agents)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "4-9",
+        "mid_career_lpa": "12-28",
+        "mid_career_midpoint": 20.0,
+        "payback_years": 0.62,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "India files a growing number of patents and does large volumes of IP support work for foreign firms, but the registered patent agent population is small."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent patent practice once registered - drafting and prosecution for startups and research institutions.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": true,
+        "exposure_raw": 45,
+        "band": "low",
+        "reason": "Prior-art searching and first-draft claim writing are directly exposed. A registered agent signs filings and answers for them, and the claim-drafting judgment that decides how broad a patent is remains the craft."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "https://www.intepat.com/blog/patent-agent-in-india",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Routed here from Sector 3. The subject matter is science but the work is law - delete the Patents Act and the profession disappears, which is the Sector 7 test. Sector 3 keeps the research the patent describes."
+        },
+        {
+          "field": "path_to_entry",
+          "statement": "The requirement runs opposite to most legal careers: a SCIENCE OR ENGINEERING degree is mandatory and a law degree alone does not qualify you to sit the examination. One of the few routes where a B.Tech or B.Sc graduate has an advantage over an LLB holder."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Section 126 of the Patents Act 1970 sets four conditions: Indian citizenship, age at least 21, a science, pharmacy, engineering or technology degree from an Indian university, and passing the qualifying examination — or ten years of service as a patent examiner. Section 125 requires the Controller General to maintain the Register of Patent Agents, and until your name is on it you cannot lawfully practise. That makes this Tier A in the strict sense: practising unregistered is unlawful, not merely unrecognised.",
+          "source": "https://www.intepat.com/blog/patent-agent-in-india"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Forensic Scientist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "EXT-LEGAL",
+      "why": "Employed by police, but the skill is laboratory science. The cross-cutting rule keeps specialists in their home sector."
+    },
+    {
+      "profession": "Legal Journalist",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "EXT-LEGAL",
+      "why": "Reporting on courts is journalism."
+    },
+    {
+      "profession": "Social Worker (government schemes)",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "EXT-GOVT",
+      "why": "Intervening on wellbeing, whoever pays for it."
+    },
+    {
+      "profession": "Teacher (government school)",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-GOVT",
+      "why": "Teaching-anything rule; the employer is a tag."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "CIVIL SERVICES OFFICER carries a high-priority review on the SUCCESS RATE problem: roughly a million candidates for a few hundred posts, with many spending three to six prime years preparing full time. The taxonomy has no field for opportunity cost of preparation, and this is where its absence hurts most.",
+    "ARMED FORCES OFFICER is here rather than in Engineering & Making even for technical entries. The cross-cutting rule turns on identity: an officer is an officer first.",
+    "JUDICIAL SERVICES OFFICER is a separate profession from Lawyer, not a seniority tier of it — entry is a distinct state examination and many are appointed as fresh law graduates.",
+    "PRIVATE SECURITY (security guards, roughly nine million people) is deliberately NOT here. It fails the sector test — private security does not exist because the state exists. It is a real coverage gap with no obvious home and needs a decision.",
+    "PARALEGAL is the base layer of the legal pyramid and the only unlicensed record in the sector. It is flagged high because its Indian employment sits largely in legal process outsourcing, the segment most directly substitutable by language models."
+  ],
+  "changelog": {
+    "1.0": [
+      "Sector 7 built. 8 professions.",
+      "Three statutory routes verified: Bar Council enrolment and AIBE for Lawyer, ICSI for Company Secretary, UPSC age and attempt limits for Civil Services Officer.",
+      "Company Secretary promise kept — routed here from Sector 5 on the section 2.1 test that deleting company law deletes the role.",
+      "Added Paralegal & Legal Support Executive as the sector's base layer.",
+      "Recorded that law is one of the most reachable mid-career switches in the taxonomy: the three-year LLB takes a graduate of any discipline, with no age limit on enrolment or AIBE.",
+      "ECONOMICS ARE ALL 'judgment'. Government pay in particular is understated by design — housing, medical, pension and allowances sit outside any CTC figure.",
+      "Added Firefighter and Patent Agent, both promised to this sector by Sectors 2 and 3 and both missed on the first pass - caught by cross-file reconciliation, the check that exists precisely because a promised profession once went missing entirely.",
+      "entry_window bypasses recorded for Civil Services Officer and Armed Forces Officer. Neither is a hard block, and the audit correctly refused that claim until the reopening route was named.",
+      "Nuances added to Civil Services Officer, Police Officer and Armed Forces Officer explaining that legal_accountability rests on STATUTORY OFFICE rather than a licence. The audit rule was relaxed to accept that, but only with the justification written down.",
+      "ITERATION 2. Patent Agent VERIFIED against Section 126 of the Patents Act 1970 after export_csv.py refused a Tier A record carrying 'judgment' status. The science-degree requirement and the Register of Patent Agents are both statutory, and the licensing body name was corrected to the Controller General maintaining that register. This is the check that would have caught the invented NCAHP council names, working as intended.",
+      "Police Officer and Armed Forces Officer moved Tier C to TIER B. Entry to both is controlled by examination — UPSC, SSC CPO, AFCAT and state boards — which is the Tier B definition. Neither names a licensing body because none licenses them after entry."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Two sector-wide problems. FIRST, government compensation is systematically understated here: five of eight professions are paid on state pay matrices where housing, medical cover and pension are a large part of the package and appear in no salary figure. SECOND, and larger, the taxonomy has no way to express the OPPORTUNITY COST OF PREPARATION. UPSC, judicial services and state PSC routes routinely consume three to six years of full-time preparation with a very low success rate, and that risk is invisible in every field the schema currently has."
+  }
+}

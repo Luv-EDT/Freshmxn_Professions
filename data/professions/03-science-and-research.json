@@ -1,7 +1,7 @@
 {
   "professional_sector": "Science & Research",
   "professional_sector_id": 3,
-  "version": "6.0",
+  "version": "7.1",
   "profession_count": 19,
   "sector_verification_note": "Two verified facts shape this whole sector. First, the runway is FUNDED — CSIR JRF pays Rs 37,000/month rising to Rs 42,000 as SRF, so a nine-year path to a research post costs little in fees. Second, under UGC/NEP rules a four-year UG at 75 percent now allows DIRECT PhD entry, skipping the master's entirely. Salary bands remain judgment; India has no authoritative source for scientist pay outside government scales.",
   "professions": [
@@ -79,13 +79,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -113,7 +117,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 30,
@@ -213,13 +222,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -246,7 +259,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -344,13 +362,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -377,7 +399,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -470,12 +497,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Central and state university entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -502,7 +533,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -580,12 +616,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Central and state university entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -612,7 +652,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -688,12 +733,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Central and state university entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -720,7 +769,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent analysis consulting for biotech and diagnostics firms.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -817,13 +871,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "GATE (PSU recruitment)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GSI and ONGC recruit through their own examinations and through GATE."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -850,7 +908,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -939,13 +1002,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -972,7 +1039,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -1071,13 +1143,18 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
+          "GATE (ISRO Scientist/Engineer + M.Tech/PhD)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
-        "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+        "private_entrances": [],
+        "note": "ISRO recruits Scientist/Engineer 'SC' through its Centralised Recruitment Board on GATE score plus interview - there is no separate ISRO written examination. IIST admits through JEE Advanced."
+      },
+      "entry_competition": {
+        "primary_gate": "gate",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1104,7 +1181,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 32,
@@ -1138,12 +1220,21 @@
           "field": "economics",
           "statement": "The long runway is FUNDED, not self-funded. CSIR-UGC JRF pays Rs 37,000 a month for two years, rising to Rs 42,000 as SRF — roughly 4.4 to 5.0 LPA through the PhD. But it is a stipend, not a salary: no PF, no gratuity, and it ends. That is why cost_of_entry is low despite nine years.",
           "source": "data/verified_facts.json#csir-jrf-srf-stipend"
+        },
+        {
+          "field": "entrance_exams",
+          "statement": "ISRO no longer sets its own written paper for Scientist/Engineer 'SC' recruitment. Shortlisting is on GATE score alone, in a ratio of about one to seven, followed by interview, and the GATE paper must match the discipline of the post. Entry is at 7th CPC Pay Level 10, basic 56,100 rupees a month before allowances. IIST is a separate door, admitted through JEE Advanced. This is a recruitment route, not an admission route - the exam is taken after the degree, not before it.",
+          "source": "https://www.careerpower.in/blog/isro-scientist-engineer-recruitment-2026"
+        },
+        {
+          "field": "entry_competition",
+          "statement": "primary_gate is GATE rather than CSIR-UGC NET, against the pattern in the rest of this sector. ISRO is by a wide margin the largest employer of space scientists in India and recruits Scientist/Engineer 'SC' on GATE score alone, so here the employment gate outranks the research one. A student aiming at academia still faces CSIR-UGC NET."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "ISRO and IIST recruit through their own examinations and IIST admissions, which are not captured in entrance_exams. Verify the ISRO Scientist/Engineer entry route before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1205,13 +1296,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1238,7 +1333,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -1333,14 +1433,18 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "ISI Admission Test",
           "IIT JAM (M.Sc)",
           "Indian Statistical Service (UPSC)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "ISI's own admission test is the most competitive route."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1367,7 +1471,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent statistical consulting to research groups, trials and surveys.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1448,12 +1557,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.A./B.Sc)",
           "UGC NET (PhD/JRF)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "No science stream requirement. One of the most stream-open research careers."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1480,7 +1593,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent research consulting, assessment design and survey work.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1586,12 +1704,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Central and state university entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1618,7 +1740,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 22,
@@ -1638,11 +1765,22 @@
         "source": null,
         "checked_on": "2026-08-05"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "after_undergrad",
+          "statement": "The master's is not an advantage here, it is the floor, and this matters because BSc Forensic Science is marketed heavily to Indian students. No Central or State Forensic Science Laboratory Scientific Officer post accepts a standalone BSc in Forensic Science as the final qualifying degree - every one requires a master's. Several ask for a SUBJECT-SPECIFIC bachelor's underneath it, in chemistry, zoology, botany, biotechnology or physics, with forensic science taken at master's level. A student who takes BSc Forensic Science expecting it to be the qualification has bought the wrong degree.",
+          "source": "https://www.buddingforensicexpert.in/2026/07/is-bsc-forensic-science-worth-it-in-india.html"
+        },
+        {
+          "field": "licensing_body",
+          "statement": "There is no statutory licensing body and none is named, but FSL recruitment rules act as a hard credential gate in practice: the master's requirement is set in the appointment rules themselves, not by a professional council. The absence of a licence is not an open market here.",
+          "source": "https://www.buddingforensicexpert.in/2026/07/is-bsc-forensic-science-worth-it-in-india.html"
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Forensic scientists testify as expert witnesses but India has no statutory licensing body for them, so licensing_body is null and legal_accountability is false. Verify whether FSL appointment rules create a de facto credential gate."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1710,12 +1848,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Central and state university entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1742,7 +1884,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 18,
@@ -1825,13 +1972,17 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET / JRF (PhD)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "GATE is an alternative route into some PhD programmes and PSU research posts."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1858,7 +2009,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -1950,11 +2106,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Diploma routes admit on class 12 marks without an entrance exam."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1981,7 +2141,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -2001,11 +2166,16 @@
         "source": null,
         "checked_on": "2026-08-05"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The band spans two careers that are not the same job. A general lab hand running routine samples sits at the bottom of it; a technician who owns a specific instrument - HPLC, GC-MS, NGS sequencing, flow cytometry - sits at the top and is hired on that instrument by name. The difference is a named skill, not seniority, and it is reachable without a further degree."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Lowest-paid profession in this sector and the only certificate-adjacent one. Verify the mid-career band — instrument specialists earn materially more than general lab hands, and the range may hide two different careers."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -2059,12 +2229,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "IIT JAM (M.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Central and state university entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "iit-jam",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -2091,7 +2265,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -2168,16 +2347,22 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main (B.Tech)",
           "CUET (B.Sc)",
           "GATE (M.Tech/PhD)",
           "UGC NET Computer Science"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT"
         ],
         "note": "GATE is the dominant route into M.Tech and PhD programmes."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": null,
       "licensing_body": null,
@@ -2203,7 +2388,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 30,
@@ -2231,12 +2421,16 @@
         {
           "field": "professional_sector",
           "statement": "Sits in Science & Research, not Software & Computing, because the output is new knowledge rather than shipped software. Industry AI research inside product teams stays in Sector 1 as a job role under AI & Machine Learning Engineer. The boundary is what the work produces, not the subject matter."
+        },
+        {
+          "field": "economics",
+          "statement": "The band hides two different careers with the same title. Industry research labs - Microsoft Research India, Google Research India, Adobe Research - sit at the top of it and hire a very small number of people. An assistant professor post at an IIT or IISc, which is where most research careers actually go, sits far lower and is on a UGC pay scale. Same PhD, same publications, pay that differs by a multiple."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Salary band reflects industry research labs (Microsoft Research India, Google Research India, Adobe Research), which pay far above academic posts at IITs and IISc. The range may be hiding two very different careers — verify before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -2290,15 +2484,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (B.Sc)",
           "CMI Entrance",
           "ISI Admission Test",
           "IIT JAM (M.Sc)",
           "CSIR-UGC NET Mathematical Sciences"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "CMI and ISI entrance tests are the elite route and are taken directly after class 12."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -2324,7 +2522,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_required",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 35,
@@ -2477,20 +2680,16 @@
     ],
     "6.0": [
       "Duplicate-job-role check caught 'Toxicologist' under both Forensic Scientist and Drug Discovery Scientist. Genuinely different work sharing one word: forensic toxicology reads poisons in bodies for a court; preclinical toxicology establishes whether a candidate drug is safe. Renamed to 'Forensic Toxicologist' and 'Preclinical Toxicologist'."
-    ]
-  },
-  "locked": {
-    "status": "LOCKED",
-    "date": "2026-08-06",
-    "passed": [
-      "export_csv.py per-field validation",
-      "audit.py cross-field consistency",
-      "duplicate job roles across professions",
-      "cross-file routed_elsewhere reconciliation",
-      "DECISIONS.md spec-drift check",
-      "manual iteration-2 read of every key"
     ],
-    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved — those are decisions still owed by a human.",
-    "open_admin_reviews": 4
+    "7.0": [
+      "RESEARCH BATCH. Four admin_review items closed; Sector 3 review queue is now empty.",
+      "Astronomer & Space Scientist: GATE added to entrance_exams. ISRO recruits Scientist/Engineer 'SC' on GATE score plus interview with no separate written paper, entering at 7th CPC Level 10, basic 56,100 a month. IIST admits through JEE Advanced.",
+      "Forensic Scientist: THE CREDENTIAL GATE IS REAL. No CFSL or state FSL Scientific Officer post accepts a standalone BSc Forensic Science; every one requires a master's, several over a subject-specific bachelor's. That degree is marketed heavily to Indian students and does not qualify anyone for the job it advertises. Recorded as a nuance on after_undergrad.",
+      "Laboratory Technician and Computer Science Researcher: both bands confirmed as spanning two different careers - general lab hand versus named-instrument specialist, and industry research lab versus academic post - and both now say so in a nuance rather than hiding it in a range."
+    ],
+    "7.1": [
+      "entry_competition added across the sector. primary_gate points at the DECISIVE gate, not the first one sat: CSIR-UGC NET or IIT JAM rather than CUET, because CUET feeds ordinary B.Sc programmes with no national seat pool while the fellowship decides whether a research career is financially survivable at all.",
+      "Astronomer & Space Scientist is the exception and points at GATE — ISRO recruits on GATE score alone and is the dominant employer in the field."
+    ]
   }
 }

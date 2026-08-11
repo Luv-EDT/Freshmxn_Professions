@@ -28,6 +28,24 @@ def load():
     return out
 
 
+def load_decided():
+    """Professions ALREADY CONSIDERED AND DELIBERATELY NOT KEPT — routed out, or merged away.
+
+    Without this, probing 'Medical Coder' answered "a genuinely new profession" two days after
+    it was removed on purpose, which would invite re-adding it. A decision that cost a long
+    discussion has to be visible to the tool that asks the same question again.
+    """
+    out = []
+    for f in sorted((ROOT / "data" / "professions").glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        src = d["professional_sector"]
+        for r in d.get("routed_elsewhere", []):
+            out.append(("ROUTED", r["profession"], f"{src} -> {r['goes_to']}", r["why"]))
+        for m in d.get("merged_into", []):
+            out.append(("MERGED", m["profession"], f"into {m['merged_into']} ({src})", m["why"]))
+    return out
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
@@ -39,6 +57,19 @@ def main():
     print(f"CANDIDATE: {name}")
     print(f"terms: {', '.join(terms)}\n")
 
+    # Check the graveyard FIRST — a decision already taken outranks a similarity score.
+    decided = []
+    for kind, prof, where, why in load_decided():
+        hay = prof.lower()
+        if any(t in hay for t in terms) or name.lower() in hay or hay in name.lower():
+            decided.append((kind, prof, where, why))
+    if decided:
+        print("  !! ALREADY DECIDED — this was considered and deliberately not kept here.")
+        for kind, prof, where, why in decided:
+            print(f"     [{kind}] {prof}  ({where})")
+            print(f"       {why}")
+        print("     Re-adding it means REVERSING a recorded decision. Read the sector changelog first.\n")
+
     hits = []
     for sector, p in load():
         matched_roles = [r for r in p["job_roles"] if any(t in r.lower() for t in terms)]
@@ -48,7 +79,7 @@ def main():
         if score:
             hits.append((score, sector, p, matched_roles, prof_match, line_match))
 
-    if not hits:
+    if not hits and not decided:
         print("  NO OVERLAP FOUND — a genuinely new profession, or the terms are wrong.")
         print("  Try again with the skills that define the work, not the job title.")
         return 0

@@ -1,8 +1,8 @@
 {
   "professional_sector": "Healthcare & Medicine",
   "professional_sector_id": 4,
-  "version": "1.1",
-  "profession_count": 20,
+  "version": "1.7",
+  "profession_count": 18,
   "sector_verification_note": "The most heavily Tier A sector in the taxonomy — the mirror image of Sector 1, where nothing is licensed. 18 of 20 professions name a statutory licensing body. Two verified facts shape everything: NEET applies equally to government, private AND deemed colleges, so there is NO private bypass for medicine; and the NCAHP Act 2021 moved allied health from unregulated to statutorily licensed, making physiotherapy, optometry, MLT and the imaging and OT technologist roles Tier A rather than open-market.",
   "professions": [
     {
@@ -88,11 +88,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "NEET UG"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_competition": {
+        "primary_gate": "neet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "National Medical Commission (NMC)",
@@ -105,10 +109,9 @@
         "payback_years": 2.78,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://www.vedantu.com/neet/mbbs-fees-in-government-vs-private-colleges"
           ],
           "checked_on": "2026-08-06"
         }
@@ -119,7 +122,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Private practice or a clinic after registration, commonly alongside a hospital post.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 30,
@@ -153,12 +161,17 @@
           "field": "entry_window",
           "statement": "Null because NEET has no upper age limit and no cap on attempts. A commerce graduate is not permanently blocked — they can add PCB through NIOS and sit NEET at any age. It is a long cost, roughly 8 years, not a closed door.",
           "source": "data/verified_facts.json#neet-ug-eligibility"
+        },
+        {
+          "field": "economics",
+          "statement": "The stored figure is a blend of two costs that are twenty times apart and it describes almost no real student. A government MBBS seat costs roughly 10,000-50,000 rupees a year - under 3 lakh for the whole degree, and as little as 6,000 a year at AIIMS Delhi. A private or deemed seat runs 15-25 lakh a year, 85 lakh to 1.3 crore for the course. Which one a student pays is decided entirely by their NEET rank, not by anything they can plan for.",
+          "source": "https://www.vedantu.com/neet/mbbs-fees-in-government-vs-private-colleges"
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "The bimodal cost is the single most consequential number in this dataset and the schema cannot express it — one field, two realities 20x apart. Verify actual government vs private MBBS fee ranges and decide how to present them before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -217,11 +230,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "NEET UG"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_competition": {
+        "primary_gate": "neet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Dental Council of India (DCI)",
@@ -234,11 +251,8 @@
         "payback_years": 3.33,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
+          "status": "judgment",
+          "sources": [],
           "checked_on": "2026-08-06"
         }
       },
@@ -248,7 +262,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own clinic, the normal destination in dentistry — a chair and a compressor are the capital.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -268,11 +287,16 @@
         "source": "data/verified_facts.json#statutory-health-councils",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Demand is real but graduate supply outruns it. India opens far more BDS seats than the market absorbs, so a large share of graduates end up underemployed or leave clinical work. This is an oversupply of dentists, not a fall in the need for dentistry - which is why the record stands with the demand tag unchanged rather than being dropped."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "KNOWN OVERSUPPLY. India produces far more BDS graduates than the market absorbs, and a large share end up underemployed or move into non-clinical work. The salary band shown may flatter the typical outcome. Verify before recommending, and consider whether it needs a warning rather than a straight listing."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -326,11 +350,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "NEET UG"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_competition": {
+        "primary_gate": "neet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "National Commission for Indian System of Medicine (NCISM)",
@@ -343,11 +371,8 @@
         "payback_years": 2.22,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
+          "status": "judgment",
+          "sources": [],
           "checked_on": "2026-08-06"
         }
       },
@@ -357,7 +382,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own clinic or panchakarma centre after BAMS registration.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -431,11 +461,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "NEET UG"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NEET is mandatory for government, private AND deemed universities alike. There is no private bypass."
+      },
+      "entry_competition": {
+        "primary_gate": "neet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "National Commission for Homoeopathy (NCH)",
@@ -448,11 +482,8 @@
         "payback_years": 2.13,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
+          "status": "judgment",
+          "sources": [],
           "checked_on": "2026-08-06"
         }
       },
@@ -462,7 +493,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own clinic after BHMS registration, usually built patient by patient.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -541,12 +577,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
-          "NEET UG",
-          "ICAR AIEEA UG"
+        "public_routes": [
+          "NEET UG"
         ],
-        "private_reputed": [],
-        "note": "Admission routes vary by state — confirm the current rule for the student's state."
+        "private_entrances": [],
+        "note": "NEET UG is the ONLY accepted entrance for BVSc & AH at every recognised government and private college. The Veterinary Council of India runs the 15 percent All India Quota counselling on NEET rank. ICAR AIEEA is for POSTGRADUATE MVSc admission, not undergraduate."
+      },
+      "entry_competition": {
+        "primary_gate": "neet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Veterinary Council of India (VCI)",
@@ -559,11 +598,8 @@
         "payback_years": 0.91,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
+          "status": "judgment",
+          "sources": [],
           "checked_on": "2026-08-06"
         }
       },
@@ -574,7 +610,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own small-animal clinic, or a livestock practice serving farms in a district.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 28,
@@ -591,14 +632,20 @@
       "verification": {
         "tier": "A",
         "status": "verified",
-        "source": "data/verified_facts.json#statutory-health-councils",
-        "checked_on": "2026-08-06"
+        "source": "https://www.shiksha.com/science/veterinary-science-admission-chp",
+        "checked_on": "2026-08-09"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "entrance_exams",
+          "statement": "ICAR AIEEA was listed here as an undergraduate route and that was wrong. AIEEA admits to MVSc at postgraduate level; the undergraduate BVSc door is NEET UG alone, the same examination and the same Physics-Chemistry-Biology-English subject set as MBBS. A student who wants to treat animals faces exactly the same gate as one who wants to treat people.",
+          "source": "https://www.shiksha.com/science/veterinary-science-admission-chp"
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Veterinary admission has moved between NEET and ICAR AIEEA and varies by state. Verify the current route before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -653,12 +700,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "State nursing entrance exams",
           "CUET"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Entrance routes vary widely by state."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Indian Nursing Council (INC)",
@@ -671,10 +722,9 @@
         "payback_years": 0.8,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -686,7 +736,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -710,12 +765,17 @@
         {
           "field": "demand_signal",
           "statement": "One of very few professions in this dataset where working abroad is a mainstream, well-established path rather than an exception. Gulf, UK and Ireland actively recruit Indian nurses, and pay differs several-fold."
+        },
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Senior Nursing Officer / Staff Nurse Grade-I at Level 8, basic 47,600 to 1,51,100 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Nursing entrance routes vary by state and some states have moved to NEET. Verify. Also confirm the salary band — Indian nursing pay is widely reported as low relative to workload, and the band may be optimistic for private hospitals."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -768,12 +828,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State pharmacy entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "B.Pharm accepts PCM or PCB, so a maths student is not excluded."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Pharmacy Council of India (PCI)",
@@ -786,10 +850,9 @@
         "payback_years": 0.8,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -800,7 +863,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own retail pharmacy, which needs a drug licence held against your registration.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -824,6 +892,11 @@
         {
           "field": "class12_prerequisite",
           "statement": "Unlike almost every other clinical profession here, B.Pharm accepts PCM as well as PCB. A maths-stream student who missed biology can still enter pharmacy."
+        },
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Pharmacist at Level 5, basic 29,200 to 92,300 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
         }
       ],
       "admin_review": {
@@ -883,12 +956,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Physiotherapy Professional Council (NCAHP)",
@@ -901,10 +978,9 @@
         "payback_years": 1.33,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -915,7 +991,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own clinic or home-visit practice, often built from a hospital job on the side.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -940,6 +1021,11 @@
           "field": "licensing_body",
           "statement": "Newly regulated. The NCAHP Act 2021 moved physiotherapy from an unregulated field to one where practice without registration is prohibited. Implementation is still rolling out state by state.",
           "source": "data/verified_facts.json#ncahp-allied-health"
+        },
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Physiotherapist at Level 6, basic 35,400 to 1,12,400 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
         }
       ],
       "admin_review": {
@@ -998,15 +1084,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
       },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
       "entry_window": null,
-      "licensing_body": "Ophthalmic Science Professional Council (NCAHP)",
+      "licensing_body": "Ophthalmic Sciences Professional Council (NCAHP)",
       "years_to_qualify": 4,
       "economics": {
         "cost_of_entry_lakh": 3.0,
@@ -1016,10 +1106,9 @@
         "payback_years": 0.8,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1031,7 +1120,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own optical store, where the earning is retail margin on frames and lenses, not the eye test.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 22,
@@ -1051,7 +1145,13 @@
         "source": "data/verified_facts.json#ncahp-allied-health",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Optometrist at Level 6, basic 35,400 to 1,12,400 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -1108,12 +1208,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "AIISH entrance",
           "CUET"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "AIISH Mysuru is the leading institution and runs its own entrance."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Rehabilitation Council of India (RCI)",
@@ -1126,11 +1230,8 @@
         "payback_years": 0.89,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
+          "status": "judgment",
+          "sources": [],
           "checked_on": "2026-08-06"
         }
       },
@@ -1140,7 +1241,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own speech and hearing clinic, with hearing-aid fitting as the commercial half.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 22,
@@ -1217,12 +1323,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Occupational Therapy Professional Council (NCAHP)",
@@ -1235,10 +1345,9 @@
         "payback_years": 0.94,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1249,7 +1358,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Private paediatric or rehabilitation practice after hospital experience.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -1269,7 +1383,13 @@
         "source": "data/verified_facts.json#ncahp-allied-health",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Occupational Therapist at Level 6, basic 35,400 to 1,12,400 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -1331,12 +1451,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Nutrition Science Professional Council (NCAHP)",
@@ -1349,10 +1473,9 @@
         "payback_years": 0.8,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1364,7 +1487,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Private consulting practice, increasingly online, plus corporate and gym tie-ups.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1384,7 +1512,13 @@
         "source": "data/verified_facts.json#ncahp-allied-health",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Assistant Dietician at Level 6, basic 35,400 to 1,12,400 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -1436,15 +1570,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
       },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
       "entry_window": null,
-      "licensing_body": "Medical Laboratory Professional Council (NCAHP)",
+      "licensing_body": "Medical Laboratory and Life Sciences Professional Council (NCAHP)",
       "years_to_qualify": 3,
       "economics": {
         "cost_of_entry_lakh": 1.5,
@@ -1454,10 +1592,11 @@
         "payback_years": 0.5,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://articles.findmycollege.com/paramedical-salary-in-india-overview/",
+            "https://result91.com/article/aiims-cre-salary-2025",
+            "https://www.payscale.com/research/IN/Job=Medical_Laboratory_Technician/Salary"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1468,7 +1607,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own collection centre or small diagnostic lab, which needs registration and a pathologist tie-up.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -1492,6 +1636,11 @@
         {
           "field": "professional_sector",
           "statement": "Sits in Healthcare, not Science & Research, because the work is clinical diagnosis for a named patient. The research-lab equivalent is Laboratory Technician in Sector 3."
+        },
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Medical Laboratory Technologist at Level 6, basic 35,400 to 1,12,400 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
         }
       ],
       "admin_review": {
@@ -1545,15 +1694,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
       },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
       "entry_window": null,
-      "licensing_body": "Medical Radiology Professional Council (NCAHP)",
+      "licensing_body": "Medical Radiology, Imaging and Therapeutic Technology Professional Council (NCAHP)",
       "years_to_qualify": 3,
       "economics": {
         "cost_of_entry_lakh": 2.0,
@@ -1563,10 +1716,11 @@
         "payback_years": 0.53,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://articles.findmycollege.com/paramedical-salary-in-india-overview/",
+            "https://result91.com/article/aiims-cre-salary-2025",
+            "https://www.payscale.com/research/IN/Job=Radiographer/Salary"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1577,7 +1731,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 18,
@@ -1597,7 +1756,13 @@
         "source": "data/verified_facts.json#ncahp-allied-health",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits Radiographer at Level 5, basic 29,200 to 92,300 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -1647,15 +1812,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
       },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
       "entry_window": null,
-      "licensing_body": "Operation Theatre Professional Council (NCAHP)",
+      "licensing_body": "Trauma, Burn Care and Surgical/Anaesthesia Related Technology Professional Council (NCAHP)",
       "years_to_qualify": 3,
       "economics": {
         "cost_of_entry_lakh": 2.0,
@@ -1665,10 +1834,10 @@
         "payback_years": 0.53,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://articles.findmycollege.com/paramedical-salary-in-india-overview/",
+            "https://result91.com/article/aiims-cre-salary-2025"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1679,7 +1848,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -1699,7 +1873,13 @@
         "source": "data/verified_facts.json#ncahp-allied-health",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Pay in this profession is bimodal and the stored band is a blend of the two. A government post sits on the 7th CPC matrix - AIIMS recruits OT Assistant at Level 5, basic 29,200 to 92,300 rupees a month, before dearness and house rent allowance. A private hospital pays a fraction of that for the same work, and aggregate 'average salary' figures are dominated by private employment, which is why they read low. Which side a student lands on is decided by whether they clear a government recruitment examination, not by the qualification.",
+          "source": "https://result91.com/article/aiims-cre-salary-2025"
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -1749,15 +1929,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
       },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
       "entry_window": null,
-      "licensing_body": "Renal Care Professional Council (NCAHP)",
+      "licensing_body": "Medical Technologists and Physician Associate Professional Council (NCAHP)",
       "years_to_qualify": 3,
       "economics": {
         "cost_of_entry_lakh": 2.0,
@@ -1767,10 +1951,9 @@
         "payback_years": 0.57,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://articles.findmycollege.com/paramedical-salary-in-india-overview/"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1782,7 +1965,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -1859,15 +2047,19 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET",
           "State allied-health entrance exams"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "NCAHP is moving towards a common entrance and licensing exam; until then state and university entrances apply."
       },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
       "entry_window": null,
-      "licensing_body": "Emergency Medical Professional Council (NCAHP)",
+      "licensing_body": "Trauma, Burn Care and Surgical/Anaesthesia Related Technology Professional Council (NCAHP)",
       "years_to_qualify": 2,
       "economics": {
         "cost_of_entry_lakh": 1.0,
@@ -1877,10 +2069,9 @@
         "payback_years": 0.33,
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
-          "status": "verified",
+          "status": "judgment",
           "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
+            "https://articles.findmycollege.com/paramedical-salary-in-india-overview/"
           ],
           "checked_on": "2026-08-06"
         }
@@ -1891,7 +2082,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -1911,228 +2107,16 @@
         "source": "data/verified_facts.json#ncahp-allied-health",
         "checked_on": "2026-08-06"
       },
-      "nuances": [],
-      "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Lowest-paid profession in this sector and physically and emotionally demanding. Confirm the salary band and whether it is a durable career or mainly a route into nursing."
-      }
-    },
-    {
-      "id": "hlt-biomedical-equipment-technician",
-      "profession": "Biomedical Equipment Technician",
-      "one_liner": "Installs and repairs the machines a hospital runs on.",
-      "job_roles": [
-        "Biomedical Equipment Technician",
-        "Hospital Equipment Maintenance Technician",
-        "Medical Device Service Engineer",
-        "Calibration Technician",
-        "Equipment Installation Specialist"
-      ],
-      "role_spread": {
-        "spread": "narrow",
-        "deviating_roles": []
-      },
-      "industrial_sectors": [
-        "HSSC",
-        "ESSCI",
-        "SMSSC"
-      ],
-      "degree_dependency": "certificate",
-      "mid_stream_entry": "open",
-      "class12_prerequisite": [
-        "physics",
-        "chemistry"
-      ],
-      "path_to_entry": [
-        {
-          "step": 1,
-          "stage": "class_10_12",
-          "requirement": "Science stream"
-        },
-        {
-          "step": 2,
-          "stage": "training",
-          "requirement": "Diploma or B.Sc in Biomedical Equipment Technology (2-3 years)"
-        },
-        {
-          "step": 3,
-          "stage": "employment",
-          "requirement": "Hospitals, device distributors and service companies hire directly"
-        },
-        {
-          "step": 4,
-          "stage": "progression",
-          "requirement": "Manufacturer certification on specific equipment is what raises pay"
-        }
-      ],
-      "entrance_exams": {
-        "national": [
-          "CUET",
-          "State polytechnic admission"
-        ],
-        "private_reputed": [],
-        "note": "Diploma admission is on class 10 or 12 marks."
-      },
-      "entry_window": null,
-      "licensing_body": null,
-      "years_to_qualify": 3,
-      "economics": {
-        "cost_of_entry_lakh": 1.5,
-        "early_earnings_lpa": "2.5-4.5",
-        "mid_career_lpa": "5-9",
-        "mid_career_midpoint": 7.0,
-        "payback_years": 0.43,
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
-        "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
-          "checked_on": "2026-08-06"
-        }
-      },
-      "demand_signal": {
-        "india_demand": "high",
-        "pathway": "india",
-        "note": "India imports most medical devices, which creates large and durable demand for people who install, calibrate and repair them — demand that exists precisely BECAUSE the design happens elsewhere."
-      },
-      "filter": true,
-      "after_undergrad": "work_first",
-      "self_employment": "possible_later",
-      "ai_exposure": {
-        "work_composition": {
-          "knowledge_foundational": 15,
-          "knowledge_retrievable": 15,
-          "skill_physical": 50,
-          "skill_digital": 5,
-          "clarity": 15
-        },
-        "legal_accountability": false,
-        "exposure_raw": 20,
-        "band": "low",
-        "reason": "Physical repair and calibration of equipment inside hospitals. A machine that is down must be attended in person."
-      },
-      "verification": {
-        "tier": "C",
-        "status": "judgment",
-        "source": null,
-        "checked_on": "2026-08-06"
-      },
       "nuances": [
         {
-          "field": "professional_sector",
-          "statement": "Sits in Healthcare rather than Engineering because the work happens inside clinical care delivery. The B.Tech design-side role is Biomedical Engineer in Sector 2."
+          "field": "economics",
+          "statement": "The lowest-paid profession in Sector 4 and the shortest to enter, and both facts matter together. It is a genuine destination - ambulance services, hospital emergency departments and industrial and event medical cover employ EMTs permanently - and it is also the most common bridge into nursing and other allied health courses, because the certificate stacks. The work is physically hard, done in shifts, and carries repeated exposure to trauma."
         }
       ],
       "admin_review": {
         "required": false,
-        "priority": null,
+        "priority": "none",
         "reason": null
-      }
-    },
-    {
-      "id": "hlt-medical-coder",
-      "profession": "Medical Coder",
-      "one_liner": "Turns doctors' notes into the standard codes hospitals and insurers use.",
-      "job_roles": [
-        "Medical Coder",
-        "Medical Biller",
-        "Clinical Documentation Specialist",
-        "Health Information Technician",
-        "Medical Records Officer",
-        "Claims Analyst (health)"
-      ],
-      "role_spread": {
-        "spread": "narrow",
-        "deviating_roles": []
-      },
-      "industrial_sectors": [
-        "HSSC",
-        "BFSI",
-        "IT-ITES"
-      ],
-      "degree_dependency": "certificate",
-      "mid_stream_entry": "after_any_degree",
-      "class12_prerequisite": "any",
-      "path_to_entry": [
-        {
-          "step": 1,
-          "stage": "class_12",
-          "requirement": "Any stream; a life-science background helps"
-        },
-        {
-          "step": 2,
-          "stage": "degree",
-          "requirement": "Any bachelor's — B.Sc life sciences, nursing, pharmacy and BPT are common"
-        },
-        {
-          "step": 3,
-          "stage": "certification",
-          "requirement": "CPC or CCS certification is the actual hiring gate"
-        },
-        {
-          "step": 4,
-          "stage": "employment",
-          "requirement": "Healthcare BPOs and hospital revenue-cycle teams hire directly"
-        }
-      ],
-      "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
-        "note": "No entrance exam. Professional certification (CPC/CCS) is what employers screen on."
-      },
-      "entry_window": null,
-      "licensing_body": null,
-      "years_to_qualify": 4,
-      "economics": {
-        "cost_of_entry_lakh": 0.8,
-        "early_earnings_lpa": "3-5",
-        "mid_career_lpa": "5-10",
-        "mid_career_midpoint": 7.5,
-        "payback_years": 0.2,
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
-        "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
-          "checked_on": "2026-08-06"
-        }
-      },
-      "demand_signal": {
-        "india_demand": "moderate",
-        "pathway": "india"
-      },
-      "filter": true,
-      "after_undergrad": "work_first",
-      "self_employment": "rare",
-      "ai_exposure": {
-        "work_composition": {
-          "knowledge_foundational": 10,
-          "knowledge_retrievable": 35,
-          "skill_physical": 0,
-          "skill_digital": 40,
-          "clarity": 15
-        },
-        "legal_accountability": false,
-        "exposure_raw": 75,
-        "band": "high",
-        "reason": "THE MOST AI-EXPOSED PROFESSION IN THIS SECTOR by a wide margin. The work is mapping documented text to a code set using rules — retrievable knowledge plus digital execution, with almost no physical or clarity component. Auditing and denial management survive longer than routine coding."
-      },
-      "verification": {
-        "tier": "C",
-        "status": "judgment",
-        "source": null,
-        "checked_on": "2026-08-06"
-      },
-      "nuances": [],
-      "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "Very high AI exposure in a sector where everything else is protected. This is a large Indian employment category — healthcare BPOs employ hundreds of thousands — so calling it exposed is a consequential claim. It is also one of very few healthcare careers open to a non-PCB student, which makes removing it costly for that audience. Needs a human decision."
       }
     },
     {
@@ -2201,12 +2185,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET PG",
           "Institute entrances (IIPH, AIIMS, TISS)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "MPH admission is open to graduates of many disciplines, not only medicine."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -2217,13 +2205,10 @@
         "mid_career_lpa": "8-18",
         "mid_career_midpoint": 13.0,
         "payback_years": 0.67,
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. This profession has no statutory registration, so there is no registration date to count from. Self-employed and consulting income is excluded.",
         "verification": {
-          "status": "verified",
-          "sources": [
-            "https://allen.in/neet/eligibility-criteria",
-            "https://www.ugc.gov.in/UGCofficials/Professional_Councils"
-          ],
+          "status": "judgment",
+          "sources": [],
           "checked_on": "2026-08-06"
         }
       },
@@ -2234,7 +2219,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_is_the_entry",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent consulting to NGOs, foundations and government programmes.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -2321,11 +2311,29 @@
       "goes_to": "13. Social Impact & Psychology",
       "tag_here_instead": "HSSC",
       "why": "PROVISIONAL — counselling families through a diagnosis. Very small in India; flagged for review."
+    },
+    {
+      "profession": "Medical Coder",
+      "goes_to": "6. Finance & Economics",
+      "tag_here_instead": "HSSC",
+      "why": "NOT A PROFESSION - a set of job roles. Coding, billing and claims work is classifying documents against a published rulebook and getting a payer to pay. That is the same skill as insurance claims processing; healthcare is only the industry the documents come from. Absorb 'Medical Coder', 'Medical Biller' and 'Claims Analyst (health)' as job roles under the relevant claims or insurance profession, tagged HSSC."
+    },
+    {
+      "profession": "Health Information Technician",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "HSSC",
+      "why": "NOT A PROFESSION - job roles. Records administration is operations work whatever the records are about, the same reasoning that routes Hospital Administrator here. Absorb 'Health Information Technician', 'Medical Records Officer' and 'Clinical Documentation Specialist' as job roles, tagged HSSC."
+    },
+    {
+      "profession": "Biomedical Equipment Technician",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "HSSC",
+      "why": "Fails the substitution test of section 8.95 - swap the hospital for a factory and calibration and instrument repair are the same job, so health is the setting and not the object of concern. In Sector 2 it is a JOB ROLE of Biomedical Engineer, not a profession: the two records described one labour market from opposite ends."
     }
   ],
   "boundary_decisions_needing_your_signoff": [
     "AYURVEDA and HOMEOPATHY are separate professions because they have separate statutory councils — NCISM and NCH. Unani and Siddha are folded into Ayurveda as job roles since they share NCISM. BNYS (naturopathy and yoga) is currently NOT included; it is small and sits awkwardly between this sector and Sector 18. Needs your call.",
-    "MEDICAL CODER is the only high AI-exposure profession here and one of the only healthcare careers open to a non-PCB student. Removing it would close the sector almost entirely to commerce and arts students.",
+    "MEDICAL CODER was REMOVED from this sector in v1.3 and its job roles routed to Sectors 5 and 6. It failed the substitution test: coding claims against a rulebook is the same job whether the claim is medical or motor. This entry previously described it as living here, which stopped being true two versions ago.",
     "PUBLIC HEALTH PROFESSIONAL is mid_stream_entry 'after_any_degree' — the MPH accepts statistics, social science and management graduates. This is the sector's main door for non-medical students and was flagged during Sector 3 as needing a home.",
     "NURSE is the clearest 'pathway: any' case in the dataset — Gulf, UK and Ireland recruit Indian nurses at scale and pay differs several-fold. Confirm how prominently international routes should be surfaced.",
     "DENTIST carries a known oversupply problem in India. Listed with a high-priority review rather than quietly omitted."
@@ -2339,20 +2347,47 @@
     ],
     "1.1": [
       "Cross-file reconciliation: routing named 'Pharmacologist / Drug Discovery Scientist' but Sector 3 names it 'Drug Discovery Scientist'. A promise must name its destination exactly — same class of error as the VLSI naming mismatch in Sector 1."
+    ],
+    "1.2": [
+      "ITERATION 3, requested after iteration 2 returned zero issues. It did not.",
+      "CORRECTION 1 - INVENTED STATUTORY BODY NAMES. Six of the nine NCAHP council names were written from plausibility rather than from the source. The fetched fact named only two councils; the rest were guessed. 'Renal Care Professional Council', 'Emergency Medical Professional Council' and 'Operation Theatre Professional Council' do not exist. Corrected against the statutory list of ten categories: dialysis moves to Medical Technologists and Physician Associate, and both the OT/anaesthesia and emergency records move to Trauma, Burn Care and Surgical/Anaesthesia Related Technology.",
+      "CORRECTION 2 - UNSOURCED MONEY MARKED VERIFIED. All 20 economics blocks claimed status 'verified' citing the NEET eligibility page and the UGC councils page. Neither contains a rupee figure. All 20 downgraded to 'judgment'; real fee and salary sources attached where they exist. New sector_admin_review opened.",
+      "CORRECTION 3 - basis text on Medical Coder, Public Health Professional and Biomedical Equipment Technician said mid-career is counted 'after full registration'. None of the three has any registration. Rewritten.",
+      "Doctor: bimodal MBBS cost recorded as a sourced nuance and the admin_review sharpened.",
+      "Medical Coder and Biomedical Equipment Technician: nuances recording that NCAHP names 'Clinical Coder' and 'Biomedical Engineer' as covered titles, and why each record still sits outside them."
+    ],
+    "1.3": [
+      "REMOVED Medical Coder. It failed the profession test on the skill-set half: interest alignment with healthcare, yes, but the skill is classifying documents against a rulebook - identical to insurance claims processing. Healthcare was the INDUSTRY, not the skill set, and the rule is to push an overlap down to the industrial tag rather than up into a sector.",
+      "Every field on the record already said so and was not read as a whole: class12_prerequisite 'any' in a sector where 18 of 20 demand PCB, industrial_sectors carrying BFSI and IT-ITES alongside HSSC, skill_physical 0, and the only null licensing_body among the clinical records.",
+      "It was originally placed here for a bad reason - it was one of the only non-PCB doors into the sector, and that gap was allowed to justify the category. Reasoning backwards from a gap to a placement. Public Health Professional is now the only Sector 4 profession open to a non-PCB student, which is the correct answer: clinical work does require biology.",
+      "Its six job roles split across two routed_elsewhere promises - coding, billing and claims to Sector 6, records and documentation to Sector 5 - both to be absorbed as JOB ROLES, not rebuilt as professions. Reconciliation will hold both.",
+      "Sector 4 is now 19 professions. The 'only high AI exposure profession in the sector' finding goes with it: every remaining profession scores under 40."
+    ],
+    "1.4": [
+      "MOVED Biomedical Equipment Technician to Sector 2, reversing an earlier routing. Same error class as Medical Coder, caught by the same test: its own nuance justified the placement with 'the work happens inside clinical care delivery', and Sector 2's routing note said 'works inside clinical care delivery'. Both are arguments from the SETTING, which section 8.95 now rejects.",
+      "Substitution test: swap the hospital for a factory and calibration, installation and instrument repair are the same job. Health is not constitutive here - contrast Public Health Professional, where removing health leaves nothing.",
+      "probe.py scores it 16 against Biomedical Engineer, below the merge threshold, so it stands as a separate profession in Sector 2 rather than being folded in. Repair and design are different skill sets - the Automobile Mechanic vs Mechanical Engineer precedent.",
+      "Sector 4 is now 18 professions, and every one of them has health itself as its object of concern."
+    ],
+    "1.5": [
+      "ECONOMICS RESEARCH BATCH. Commercial salary aggregators were checked for this sector and REJECTED as a source: PayScale, Indeed, Glassdoor and SalaryExpert disagree by four to five times on the same profession - optometrist alone ranged from 33,400 rupees a year to 14.2 lakh. Numbers that families act on cannot rest on that.",
+      "Anchored on statutory pay instead. AIIMS 7th CPC pay levels recorded as verified fact aiims-7cpc-allied-health-pay-levels and attached to nine professions as an economics nuance.",
+      "THE FINDING: Sector 4 pay is bimodal, structurally the same problem as the bimodal MBBS cost. A government post is on a published matrix; a private hospital pays a fraction for identical work. One band cannot say this, so the bands stay 'judgment' and the nuance carries the truth.",
+      "Nurse's admin_review is answered and closed - the government-versus-private gap it asked about is now recorded with a statutory source.",
+      "sector_admin_review re-scoped from 'go and verify these numbers' to the real question, which is presentational: one blended band, or two bands. The same call settles Doctor's cost."
+    ],
+    "1.6": [
+      "RESEARCH BATCH. The last two admin_review items closed; Sector 4's per-profession queue is empty and only the sector-wide bimodal-pay question remains.",
+      "Veterinary Doctor CORRECTED. ICAR AIEEA UG was listed as an undergraduate entrance route and is not one - AIEEA admits to postgraduate MVSc. NEET UG is the sole undergraduate door to BVSc at every recognised college, with VCI running the 15 percent All India Quota on NEET rank.",
+      "Emergency Medical Technician: confirmed as a genuine destination and also the most common bridge into nursing, because the certificate stacks. Physical and emotional load recorded."
+    ],
+    "1.7": [
+      "Corrected a stale boundary decision that still described Medical Coder as a Sector 4 profession after it had been removed in v1.3. It survived because NO TOOL PRINTED these entries - 18 of them sat in the sector files unread. audit.py now reports the count under OPEN QUEUES."
     ]
   },
-  "locked": {
-    "status": "LOCKED",
-    "date": "2026-08-06",
-    "passed": [
-      "export_csv.py per-field validation",
-      "audit.py cross-field consistency",
-      "duplicate job roles across professions",
-      "cross-file routed_elsewhere reconciliation",
-      "DECISIONS.md spec-drift check",
-      "manual iteration-2 read of every key"
-    ],
-    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved.",
-    "open_admin_reviews": 6
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "RESEARCHED, NOT RESOLVED - the finding is that the schema cannot express the answer. Sector 4 pay is BIMODAL, the same shape as the MBBS cost problem. Government posts sit on a published statutory matrix: AIIMS places allied health at 7th CPC Levels 4 to 6 and nursing at Level 8, basic 25,500 to 1,51,100 a month before allowances. Private hospitals pay a fraction - reported at roughly a third for nurses. Commercial aggregators were checked and are unusable: PayScale, Indeed, Glassdoor and SalaryExpert disagree by four to five times on the SAME profession, and their averages are dominated by private employment. Every economics block therefore stays 'judgment' rather than being fake-verified against a source that contradicts its neighbour. The decision owed is presentational, not factual: does a profession get one blended band, or a government band and a private band? The same decision settles Doctor's cost. Nine professions now carry a nuance recording their statutory pay level."
   }
 }

@@ -1,0 +1,1643 @@
+{
+  "professional_sector": "Business, Management & Entrepreneurship",
+  "professional_sector_id": 5,
+  "version": "1.0",
+  "profession_count": 12,
+  "sector_verification_note": "TIER C BY NATURE, like Sector 1. Nothing in Indian general management is statutorily licensed — no council controls who may call themselves a marketer, an HR professional or a consultant. The one Tier B fact that governs the sector is CAT eligibility, and it is the most OPEN gate in the taxonomy: any three-year degree in any subject, 50 percent, no age limit, no attempt cap. That is why almost every record here is class12_prerequisite 'any' and mid_stream_entry 'after_any_degree'. This is the sector a student who took a wrong turn elsewhere can still reach.",
+  "professions": [
+    {
+      "id": "mgt-marketing-specialist",
+      "profession": "Marketing Specialist",
+      "one_liner": "Works out who would buy something, and how to reach them.",
+      "job_roles": [
+        "Digital Marketing Specialist",
+        "SEO Specialist",
+        "Performance Marketing Executive",
+        "Brand Executive",
+        "Content Marketing Specialist",
+        "Social Media Manager",
+        "Marketing Analyst",
+        "Trade Marketing Executive"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Brand Executive",
+              "Content Marketing Specialist"
+            ],
+            "higher": [
+              "openness",
+              "verbal",
+              "existential"
+            ],
+            "lower": [
+              "logical",
+              "attention_span"
+            ],
+            "why": "Brand and content work is about what a thing means to someone and rewards imagination and language. Performance marketing and SEO on the same team are measurement jobs run on dashboards and attribution models."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "RASCI",
+        "IT-ITES",
+        "BFSI",
+        "THSC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's — BBA, B.Com, mass communication and arts all feed in"
+        },
+        {
+          "step": 3,
+          "stage": "skills",
+          "requirement": "Google Ads, Meta Ads, analytics and SEO certifications carry real hiring weight"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Agencies, in-house marketing teams, e-commerce and D2C brands"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (BBA/B.Com)"
+        ],
+        "private_entrances": [],
+        "note": "No entrance gate. Platform certifications and a portfolio of campaigns are what employers screen on."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 0.67,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Every business that sells online needs this, and India's D2C and e-commerce growth has made it one of the largest entry-level hiring pools outside IT services."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance campaign management, then a small agency. Clients are won on demonstrable results, so a portfolio substitutes for a brand name.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 30,
+          "skill_physical": 0,
+          "skill_digital": 35,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 65,
+        "band": "high",
+        "reason": "Copy drafting, keyword research and creative variation are being absorbed fast. What survives is deciding WHO to talk to and WHY — positioning and budget allocation carry the clarity."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Digital Marketer and SEO Specialist were routed here from Sector 1. The tools are technical but the job is selling, and the skill set is audience and message rather than computing."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-sales-professional",
+      "profession": "Sales Professional",
+      "one_liner": "Finds buyers, understands what they need, and closes the deal.",
+      "job_roles": [
+        "Business Development Executive",
+        "Inside Sales Executive",
+        "Key Account Executive",
+        "Medical Representative",
+        "Field Sales Executive",
+        "Channel Sales Executive",
+        "Pre-Sales Consultant",
+        "Customer Success Executive"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Pre-Sales Consultant",
+              "Inside Sales Executive"
+            ],
+            "higher": [
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily",
+              "extraversion"
+            ],
+            "why": "Pre-sales and inside sales are desk jobs run on product depth and written proposals. Field and channel sales are travel-heavy, face-to-face and built on stamina and relationships."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "RASCI",
+        "BFSI",
+        "LSSSDC",
+        "IT-ITES",
+        "ASDC",
+        "THSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; B.Pharm or B.Sc is usual for medical representatives"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Hired directly, then trained on the product by the employer"
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Territory, then key accounts — earnings move with the incentive component"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance exam anywhere in this profession."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "7-16",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.67,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "The single largest non-IT graduate hiring category in India. Every product company, bank, insurer and pharma firm hires at volume every year."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent channel partner, distributor or manufacturer's representative, carrying a territory on commission.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 20,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Prospecting and follow-up are being automated. Persuading a person who has not decided what they want, in a room, is not — the clarity and human-trust share is what protects this."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The band understates the top of this profession more than any other in the sector, because a large share of sales pay is variable. Two people on the same base can take home very different amounts in the same year, and the figure shown is a fixed-pay view."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Medical Representative was routed here from Healthcare. The employer is a pharma company and the product is medicine, but the skill set is selling — the substitution test puts the industry in the tag, not the sector."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-hr-professional",
+      "profession": "Human Resources Professional",
+      "one_liner": "Hires people, keeps them, and handles everything about working there.",
+      "job_roles": [
+        "Recruiter / Talent Acquisition Specialist",
+        "HR Generalist",
+        "HR Business Partner",
+        "Learning & Development Specialist",
+        "Compensation & Benefits Analyst",
+        "HR Operations Executive",
+        "Employee Relations Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Compensation & Benefits Analyst",
+              "HR Operations Executive"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion",
+              "emotional_intelligence"
+            ],
+            "why": "Compensation design and HR operations are analytical, policy-bound and largely solitary. Recruitment and employee relations in the same profession are conversations all day, often difficult ones."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "IT-ITES",
+        "BFSI",
+        "RASCI",
+        "HSSC",
+        "CGSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; psychology, commerce and management are common"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "MBA in HR or an MSW / PG diploma in HR is the usual accelerator, not a requirement"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "In-house HR teams, staffing firms, consultancies"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "XAT",
+          "CMAT",
+          "MAT",
+          "CUET (BBA)"
+        ],
+        "private_entrances": [
+          "NMAT",
+          "SNAP",
+          "IIFT"
+        ],
+        "note": "CAT needs any three-year degree at 50 percent, with NO age limit and NO attempt cap. An MBA is the common accelerator in this sector, not the door."
+      },
+      "entry_competition": {
+        "primary_gate": "cat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3-5.5",
+        "mid_career_lpa": "7-15",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.71,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent recruitment consultancy, which needs a network rather than capital, or freelance L&D facilitation.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 30,
+          "skill_physical": 0,
+          "skill_digital": 25,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Screening, scheduling and payroll administration are heavily automatable. Judging whether someone will work out, and handling a grievance, are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "HR sits here and not in Sector 13 Social Impact & Psychology even though it deals with people's wellbeing. The object of concern is the ORGANISATION — hiring, retaining and paying a workforce. A counsellor intervenes on a person's wellbeing for its own sake; HR does it because the company needs the person to work."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-operations-manager",
+      "profession": "Operations & Administration Manager",
+      "one_liner": "Keeps an organisation actually running day to day.",
+      "job_roles": [
+        "Operations Executive",
+        "Business Operations Analyst",
+        "Hospital Administrator",
+        "Facility & Administration Manager",
+        "Health Information Technician",
+        "Medical Records Officer",
+        "Clinical Documentation Specialist",
+        "Process Excellence Executive",
+        "Vendor Management Executive"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Health Information Technician",
+              "Medical Records Officer",
+              "Clinical Documentation Specialist"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion",
+              "openness"
+            ],
+            "why": "Records and documentation roles are precise, standards-bound desk work judged on accuracy. Hospital and facility administration in the same profession is people-facing crisis management for most of the day."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "HSSC",
+        "IT-ITES",
+        "RASCI",
+        "BFSI",
+        "THSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; BBA and B.Com are common, and hospital administration takes health graduates too"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "MBA or MHA (Master of Hospital Administration) for the larger administrator roles"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Hospitals, corporates, shared-services centres, hotels, education institutions"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "XAT",
+          "CMAT",
+          "MAT",
+          "CUET (BBA)"
+        ],
+        "private_entrances": [
+          "NMAT",
+          "SNAP",
+          "IIFT"
+        ],
+        "note": "CAT needs any three-year degree at 50 percent, with NO age limit and NO attempt cap. An MBA is the common accelerator in this sector, not the door."
+      },
+      "entry_competition": {
+        "primary_gate": "cat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3-5.5",
+        "mid_career_lpa": "7-15",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.71,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 35,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 60,
+        "band": "medium",
+        "reason": "Records administration, scheduling and reporting are highly automatable and the documentation roles at one end of this profession are directly exposed. Running a hospital's day, where something is always broken and someone must decide, is not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Hospital Administrator and the health records roles were routed here from Sector 4. Running an organisation is management whatever the organisation does, and records administration is operations work whatever the records are about."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "This profession contains its own exposure gradient. The records and documentation roles sit well above the profession's overall score; the administrator roles sit well below it. A student should be told which end they are entering."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-supply-chain-manager",
+      "profession": "Supply Chain & Logistics Manager",
+      "one_liner": "Plans how goods get made, stored and delivered on time.",
+      "job_roles": [
+        "Supply Chain Analyst",
+        "Procurement Executive",
+        "Demand Planner",
+        "Inventory Planning Executive",
+        "Logistics Coordinator",
+        "Warehouse Operations Executive",
+        "Import-Export Executive",
+        "Sourcing Executive"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSC",
+        "MEPSC",
+        "RASCI",
+        "FICSI",
+        "ASDC",
+        "AMHSSC",
+        "CGSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; BBA, B.Com and engineering all feed in"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "MBA in operations or a PG diploma in supply chain is the common accelerator"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Manufacturers, e-commerce, 3PL logistics firms, retail chains"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "XAT",
+          "CMAT",
+          "MAT",
+          "CUET (BBA)"
+        ],
+        "private_entrances": [
+          "NMAT",
+          "SNAP",
+          "IIFT"
+        ],
+        "note": "CAT needs any three-year degree at 50 percent, with NO age limit and NO attempt cap. An MBA is the common accelerator in this sector, not the door."
+      },
+      "entry_competition": {
+        "primary_gate": "cat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.5-6",
+        "mid_career_lpa": "8-16",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 0.63,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "E-commerce, quick commerce and the PLI manufacturing push have made this one of the fastest-growing management functions in India."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freight forwarding or customs broking agency, or an independent sourcing agent for overseas buyers.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 25,
+          "skill_physical": 5,
+          "skill_digital": 30,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Forecasting, route planning and reorder decisions are exactly what optimisation systems do well. Supplier negotiation and handling a disrupted shipment are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-logistics-warehouse-operator",
+      "profession": "Logistics & Warehouse Operator",
+      "one_liner": "Moves, stores and dispatches goods so orders actually arrive.",
+      "job_roles": [
+        "Warehouse Associate",
+        "Inventory Assistant",
+        "Dispatch Executive",
+        "Forklift Operator (warehouse)",
+        "Last-Mile Delivery Executive",
+        "Loading Supervisor",
+        "Packing & Fulfilment Associate"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "LSC",
+        "RASCI",
+        "FICSI",
+        "AMHSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 is enough for most entry roles"
+        },
+        {
+          "step": 2,
+          "stage": "certificate",
+          "requirement": "LSC skill certification, or a forklift or material-handling licence"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "E-commerce fulfilment centres, 3PL warehouses, retail distribution, quick-commerce dark stores"
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Team lead, then shift and warehouse operations — the ladder is real and internal"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance exam. Hired directly, often with employer-run training."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.8-3",
+        "mid_career_lpa": "3.5-6",
+        "mid_career_midpoint": 4.75,
+        "payback_years": 0.12,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "One of the largest employment expansions in India over the last decade, driven by e-commerce and quick commerce. The base of the logistics pyramid, and the layer that actually hires at scale."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Owning a delivery vehicle and contracting to a logistics firm, or a small local transport business.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 5,
+          "knowledge_retrievable": 15,
+          "skill_physical": 55,
+          "skill_digital": 10,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Physical handling of goods in unstructured spaces. Warehouse automation is real but capital-intensive and concentrated in the largest facilities; most Indian warehousing is manual."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "This is the BASE of the logistics pyramid, listed beside Supply Chain & Logistics Manager at its apex — the same treatment Mason gets beside Civil Engineer. Industry employment figures count this layer; profession size does not follow from them."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 4.75 lakh and owning a vehicle and contracting to a logistics firm is a common step up, but no reliable Indian figure exists for what an owner-driver clears after EMI and fuel."
+      }
+    },
+    {
+      "id": "mgt-retail-store-operations",
+      "profession": "Retail & Store Operations",
+      "one_liner": "Runs the shop floor — stock, displays, billing and customers.",
+      "job_roles": [
+        "Retail Sales Associate",
+        "Cashier / Billing Executive",
+        "Visual Merchandiser",
+        "Stock & Inventory Assistant",
+        "Customer Service Associate (retail)",
+        "Category Assistant",
+        "Store Operations Executive"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Visual Merchandiser"
+            ],
+            "higher": [
+              "spatial",
+              "openness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Visual merchandising is a design job — how a space looks and moves people through it. The rest of the shop floor is a service job built on patience with strangers."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "RASCI",
+        "AMHSSC",
+        "THSC",
+        "FICSI",
+        "MEPSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Class 12 in any stream; some roles take class 10"
+        },
+        {
+          "step": 2,
+          "stage": "certificate",
+          "requirement": "RASCI retail skill certification, or employer-run induction training"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Organised retail chains, malls, brand stores, supermarkets, quick-commerce stores"
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Section, then store operations — retail promotes from the floor more than most sectors"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance exam. Hired on communication and availability."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.8-3.5",
+        "mid_career_lpa": "4-8",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.11,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Organised retail employs at very large scale and hires continuously, including in tier-2 and tier-3 cities where few other formal entry-level jobs exist."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own retail shop or a brand franchise. Retail experience translates directly into running a store, which is the most common small business in India.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 5,
+          "knowledge_retrievable": 20,
+          "skill_physical": 40,
+          "skill_digital": 15,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Billing and stock counting are automatable and self-checkout exists. Persuading someone in a shop, handling a complaint and physically running a floor are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "The base of the retail pyramid, and a formal organised-sector job — a store associate has an employer, a salary slip and a shift roster. It is included for the same reason as the construction trades: the layer that employs the most people should not be invisible because it sits at the bottom of a pyramid."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-product-manager",
+      "profession": "Product Manager",
+      "one_liner": "Decides what a product should do next, and why.",
+      "job_roles": [
+        "Associate Product Manager",
+        "Product Manager",
+        "Product Analyst (product management)",
+        "Product Marketing Manager",
+        "Growth Product Manager",
+        "Product Owner"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "BFSI",
+        "RASCI",
+        "MEPSC",
+        "HSSC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; engineering, design and business are the common feeders"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Usually entered LATERALLY after two to four years in engineering, design, analytics or sales"
+        },
+        {
+          "step": 4,
+          "stage": "post_graduate",
+          "requirement": "An MBA is a common but optional accelerator, especially for the APM route"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "XAT",
+          "CMAT",
+          "MAT",
+          "CUET (BBA)"
+        ],
+        "private_entrances": [
+          "NMAT",
+          "SNAP",
+          "IIFT"
+        ],
+        "note": "CAT needs any three-year degree at 50 percent, with NO age limit and NO attempt cap. An MBA is the common accelerator in this sector, not the door."
+      },
+      "entry_competition": {
+        "primary_gate": "cat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "8-16",
+        "mid_career_lpa": "20-40",
+        "mid_career_midpoint": 30.0,
+        "payback_years": 0.25,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India's product-company and global-capability-centre growth has made this a large and well-paid function, concentrated in Bengaluru, Gurugram, Hyderabad and Pune."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Founding a product company, or independent product consulting for early-stage startups.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 45
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "The highest clarity share in this sector, and that is the whole protection. Specification documents and competitor summaries are automatable; deciding WHAT TO BUILD AND FOR WHOM, and being accountable for the choice, is the job."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "mid_stream_entry",
+          "statement": "This profession is almost never entered straight out of a degree. It is a lateral destination reached after a few years in engineering, design, analytics or sales, which is why years_to_qualify is 5 rather than 3. A student should read it as a second job, not a first one."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-project-manager",
+      "profession": "Project Manager",
+      "one_liner": "Gets a piece of work finished on time with the people available.",
+      "job_roles": [
+        "Project Coordinator",
+        "Scrum Master",
+        "IT Project Manager",
+        "PMO Analyst",
+        "Agile Coach",
+        "Programme Coordinator",
+        "Implementation Manager"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "MEPSC",
+        "BFSI",
+        "CSDCI",
+        "HSSC",
+        "CGSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "PMP, PRINCE2 or Certified Scrum Master are what employers screen on"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "IT services, construction, consulting, manufacturing, banking"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance exam. Professional certification carries the hiring weight, and most entrants arrive from a delivery role."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "5-9",
+        "mid_career_lpa": "12-24",
+        "mid_career_midpoint": 18.0,
+        "payback_years": 0.43,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent delivery consulting or agile coaching, usually on the strength of certifications and a client network.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 25,
+          "skill_physical": 0,
+          "skill_digital": 25,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "Status reporting, planning and tracking are being absorbed by tooling. Getting a team to agree and holding a scope against pressure is a human negotiation."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "IT Project Manager and Scrum Master were routed here from Sector 1. Delivery management is management; the industry is the tag. The certifications, not a degree, are what the market actually screens on."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-management-consultant",
+      "profession": "Management Consultant",
+      "one_liner": "Is brought in to work out why a business is stuck, and what to change.",
+      "job_roles": [
+        "Business Analyst (consulting)",
+        "Strategy Analyst",
+        "Management Consultant",
+        "Process Consultant",
+        "Business Transformation Analyst",
+        "Research Associate (consulting)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "BFSI",
+        "IT-ITES",
+        "HSSC",
+        "RASCI",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; hiring skews to engineering, economics and commerce from a narrow set of campuses"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "An MBA from a top-tier institute is the main entry route into the strategy firms"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Strategy firms, Big Four advisory, boutique and in-house strategy teams"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "XAT",
+          "CMAT",
+          "MAT",
+          "CUET (BBA)"
+        ],
+        "private_entrances": [
+          "NMAT",
+          "SNAP",
+          "IIFT"
+        ],
+        "note": "CAT needs any three-year degree at 50 percent, with NO age limit and NO attempt cap. An MBA is the common accelerator in this sector, not the door."
+      },
+      "entry_competition": {
+        "primary_gate": "cat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 15.0,
+        "early_earnings_lpa": "8-18",
+        "mid_career_lpa": "20-45",
+        "mid_career_midpoint": 32.5,
+        "payback_years": 1.15,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india",
+        "note": "Real and well paid, but hiring is concentrated in a small number of firms recruiting from a small number of campuses. Demand is moderate because the funnel is narrow, not because the work is scarce."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent consulting once a client network exists — the common exit after several years in a firm.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 25,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "Research, benchmarking and slide production are being absorbed quickly and those are the analyst-level tasks. Framing the right question and persuading a board carry the clarity."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Distinct from IT Business & Systems Analyst in Sector 1, which scored a real overlap on probe. The separation is the skill set: an IT business analyst works in SQL, systems and requirement documents for one system; a management consultant works on organisation, process and strategy across a business."
+        },
+        {
+          "field": "economics",
+          "statement": "cost_of_entry_lakh is high because the realistic route runs through a top-tier MBA, where two-year fees at the IIMs and ISB sit well above a normal postgraduate programme. The entry cost is the differentiator, not the degree itself."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-market-research-analyst",
+      "profession": "Market Research Analyst",
+      "one_liner": "Finds out what customers actually think, and what that means for a business.",
+      "job_roles": [
+        "Market Research Analyst",
+        "Consumer Insights Executive",
+        "Survey Research Executive",
+        "Qualitative Research Executive",
+        "Category Insights Analyst",
+        "Field Research Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Qualitative Research Executive",
+              "Field Research Coordinator"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "verbal",
+              "extraversion"
+            ],
+            "lower": [
+              "logical",
+              "attention_span"
+            ],
+            "why": "Qualitative research is sitting with people and hearing what they will not say directly. Quantitative and category analysis in the same profession is survey design and statistics."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "RASCI",
+        "FICSI",
+        "BFSI",
+        "IT-ITES",
+        "AMHSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; economics, statistics, psychology and commerce are common"
+        },
+        {
+          "step": 3,
+          "stage": "employment",
+          "requirement": "Research agencies, consumer goods firms, media and retail insight teams"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (B.Sc/BA)"
+        ],
+        "private_entrances": [],
+        "note": "No entrance gate into the profession."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.5-6",
+        "mid_career_lpa": "8-16",
+        "mid_career_midpoint": 12.0,
+        "payback_years": 0.63,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent research consulting, usually specialising in one category or one method.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 30,
+          "skill_physical": 5,
+          "skill_digital": 30,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 60,
+        "band": "medium",
+        "reason": "Survey tabulation, coding of open responses and report drafting are directly exposed. Designing a question that does not lead the respondent, and reading a room in a focus group, are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Distinct from Statistician in Sector 3 and Data Analyst in Sector 1. The object of concern here is the CUSTOMER and what a business should do about them; the statistician's object is inference itself, and the data analyst's is the company's own operational data."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "mgt-entrepreneur",
+      "profession": "Entrepreneur & Small Business Owner",
+      "one_liner": "Starts and runs a business — and carries the risk of it.",
+      "job_roles": [
+        "Founder",
+        "Small Business Owner",
+        "Franchise Owner",
+        "D2C Brand Owner",
+        "Self-Employed Trader / Distributor",
+        "Co-Founder (operations)"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "RASCI",
+        "FICSI",
+        "AMHSSC",
+        "THSC",
+        "IT-ITES",
+        "LSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "any_stage",
+          "requirement": "No qualification exists and none is required — this is the only profession in the taxonomy you cannot be admitted to"
+        },
+        {
+          "step": 2,
+          "stage": "capability",
+          "requirement": "Usually a trade, craft, technical or sales skill first; the business is built on top of something you can already do"
+        },
+        {
+          "step": 3,
+          "stage": "capital",
+          "requirement": "Own savings, family capital, or a government scheme — MUDRA, PMEGP, Stand-Up India"
+        },
+        {
+          "step": 4,
+          "stage": "operation",
+          "requirement": "Registration, GST, and the discipline of running it"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. There is no entrance to entrepreneurship."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "0-4",
+        "mid_career_lpa": "4-15",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.5,
+        "basis": "HIGHLY UNCERTAIN and shown for shape, not prediction. Most small businesses do not reach the mid-career band and a meaningful share close. This is the one record where the range should not be read as an expectation.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India's workforce is majority self-employed. This is not a niche path — it is how most Indians actually earn, though usually out of necessity rather than choice."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "This profession IS self-employment; there is no employed version of it. The ceiling is genuinely unbounded upward and the floor is zero, which is why no ceiling figure is claimed.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 15,
+          "skill_digital": 15,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Not meaningfully exposed as a whole, because the work is deciding what to do with incomplete information and living with the consequence. Individual tasks inside a small business are heavily automatable, which mostly makes one person able to run more."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "This record strains the profession test and is included deliberately. Interest alignment is clear and the sector is named for it, but the SKILL SET is not separate — running a business is sales, operations and finance combined. It earns its place as the destination those skills combine into, and because leaving it out would make the sector's own name false."
+        },
+        {
+          "field": "economics",
+          "statement": "The only record in the taxonomy whose early_earnings band starts at zero, and that is not a formatting artefact. A founder can earn nothing for years. Every other profession here pays from the first month."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The economics are unlike anything else in the dataset: outcomes are extremely dispersed, survivorship bias is severe in every available source, and a range is close to meaningless. Decide whether to show numbers at all for this record, or present it with the range suppressed and the risk stated instead. Also decide whether it should surface for school-age users at all, or only for college and working-age ones."
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Chartered Accountant",
+      "goes_to": "6. Finance & Economics",
+      "tag_here_instead": "BFSI",
+      "why": "Object of concern is money and value, not the organisation and its customers."
+    },
+    {
+      "profession": "Banker / Financial Analyst",
+      "goes_to": "6. Finance & Economics",
+      "tag_here_instead": "BFSI",
+      "why": "Same boundary — capital and markets are Sector 6."
+    },
+    {
+      "profession": "Company Secretary",
+      "goes_to": "7. Law, Governance & Public Service",
+      "tag_here_instead": "MEPSC",
+      "why": "Delete company law and the role disappears entirely. Governance, not management. See DECISIONS.md section 2.1."
+    },
+    {
+      "profession": "Hotel & Restaurant Manager",
+      "goes_to": "16. Hospitality, Travel & Culinary",
+      "tag_here_instead": "THSC",
+      "why": "Hospitality management is its own sector, with its own object of concern — the guest."
+    },
+    {
+      "profession": "Event Manager",
+      "goes_to": "16. Hospitality, Travel & Culinary",
+      "tag_here_instead": "MESC",
+      "why": "Events belong with hospitality and experience, not general management."
+    },
+    {
+      "profession": "Advertising Creative / Copywriter",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "MESC",
+      "why": "Making the advertisement is a creative craft; deciding who to show it to is marketing."
+    },
+    {
+      "profession": "Corporate Trainer",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "MEPSC",
+      "why": "Teaching-anything rule. L&D Specialist is retained here as a job role."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "ENTREPRENEUR is included despite failing half the profession test — the skill set is not separate, it is sales plus operations plus finance combined. Kept because the sector is named for it and because omitting it would make the taxonomy claim that entrepreneurship is not a career. Flagged high for its economics.",
+    "RETAIL & STORE OPERATIONS and LOGISTICS & WAREHOUSE OPERATOR are BASE-LAYER professions, added on the Mason-beside-Civil-Engineer precedent. They employ at enormous scale, they are formal organised-sector jobs with salary slips, and they are among the few formal entry-level jobs available in tier-2 and tier-3 cities. They are also removed by the formal_workplace_track preference preset — deliberately, since that filter is opt-in.",
+    "MANAGEMENT CONSULTANT versus IT BUSINESS & SYSTEMS ANALYST (Sector 1) scored a real overlap on probe. Kept separate on skill set: systems and SQL versus organisation and strategy. Contestable.",
+    "MARKET RESEARCH ANALYST versus STATISTICIAN (Sector 3) versus DATA ANALYST (Sector 1). Split by object of concern: the customer, inference itself, and the company's own operational data.",
+    "OPERATIONS & ADMINISTRATION MANAGER absorbed Hospital Administrator and the health records roles from Sector 4. That makes it a wide profession spanning a hospital administrator and a medical records officer. Confirm the merge is not too broad."
+  ],
+  "changelog": {
+    "1.0": [
+      "Sector 5 built. 12 professions.",
+      "TIER C BY NATURE — nothing in Indian general management is licensed. The sector's only statutory fact is CAT eligibility, which is the most open gate in the taxonomy.",
+      "All six promises made to this sector were kept: Product Manager and Project Manager as professions; Digital Marketer and SEO Specialist into Marketing Specialist; Medical Representative into Sales Professional; Hospital Administrator and Health Information Technician into Operations & Administration Manager.",
+      "Added two BASE-LAYER professions the taxonomy was missing entirely — Retail & Store Operations and Logistics & Warehouse Operator. Between them they cover employment in the tens of millions, concentrated exactly where formal entry-level work is scarcest.",
+      "ECONOMICS ARE ALL 'judgment'. No Indian salary source was fetched for this sector, and after the Sector 4 finding that commercial aggregators disagree by four to five times on the same profession, unsourced figures are not marked verified. Recorded as a sector_admin_review.",
+      "Two exact-duplicate job roles renamed: 'Forklift Operator' also existed under Heavy Equipment Operator in Sector 2 (construction plant, not warehousing) and 'Product Analyst' under Data Analyst in Sector 1 (product ANALYTICS, not product management). Same string, different jobs."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Every economics block in this sector is 'judgment' with no sources. The figures are reasoned from the Indian graduate market rather than fetched, and they must be sourced before the sector ships. Sales Professional and Entrepreneur are the two worst cases: sales pay is heavily variable and the fixed-pay view understates it, and entrepreneurship outcomes are so dispersed that a range may be the wrong format entirely."
+  }
+}

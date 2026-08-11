@@ -1,0 +1,1051 @@
+{
+  "professional_sector": "Finance & Economics",
+  "professional_sector_id": 6,
+  "version": "1.0",
+  "profession_count": 8,
+  "sector_verification_note": "SPLIT TIER. The statutory half is real — ICAI governs Chartered Accountancy and its route was verified — but most of the sector is open market: nobody licenses a financial analyst, a banker or a wealth manager's employer. SEBI and IRDAI impose REGISTRATION on advisers and surveyors, which is a lighter thing than a licence to practise a profession. The Actuary record is deliberately left Tier B judgment rather than asserting IAI's statutory status unverified.",
+  "professions": [
+    {
+      "id": "fin-chartered-accountant",
+      "profession": "Chartered Accountant",
+      "one_liner": "Checks that a company's accounts are true, and works out what it owes.",
+      "job_roles": [
+        "Audit Assistant",
+        "Statutory Auditor",
+        "Internal Auditor",
+        "Tax Consultant",
+        "GST Practitioner",
+        "Forensic Auditor",
+        "Financial Reporting Analyst",
+        "Transfer Pricing Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Forensic Auditor",
+              "Internal Auditor"
+            ],
+            "higher": [
+              "reasoning",
+              "openness",
+              "dogmatism"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Forensic and internal audit is adversarial work — looking for what someone tried to hide, and holding a finding against pressure. Statutory audit and tax compliance in the same profession are procedural and deadline-bound."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "MEPSC",
+        "IT-ITES",
+        "RASCI",
+        "CGSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "ANY stream — commerce, science or arts all qualify for CA Foundation"
+        },
+        {
+          "step": 2,
+          "stage": "foundation",
+          "requirement": "CA Foundation; graduates with the required percentage skip it and enter Intermediate directly"
+        },
+        {
+          "step": 3,
+          "stage": "intermediate",
+          "requirement": "CA Intermediate, two groups"
+        },
+        {
+          "step": 4,
+          "stage": "articleship",
+          "requirement": "THREE YEARS of articleship training under a practising CA — this is the qualification, not an internship"
+        },
+        {
+          "step": 5,
+          "stage": "final",
+          "requirement": "CA Final plus the mandatory AICITSS course, then ICAI membership"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CA Foundation (ICAI)"
+        ],
+        "private_entrances": [],
+        "note": "ICAI runs its own examinations end to end. There is no university admission and no entrance test outside ICAI."
+      },
+      "entry_competition": {
+        "primary_gate": "ca-foundation",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": "Institute of Chartered Accountants of India (ICAI)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "15-35",
+        "mid_career_midpoint": 25.0,
+        "payback_years": 0.22,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Statutory audit is legally required for a very large number of Indian companies, so the demand floor is set by law rather than by the economy."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own practice after ICAI membership — audit, tax and advisory for small and mid-sized businesses. The most common destination in the profession, and it needs a certificate of practice, not capital.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 40,
+        "band": "low",
+        "reason": "Reconciliation, ledger scrutiny and return preparation are heavily exposed and already automating. What protects the profession is that the SIGNATURE carries statutory liability — an audit opinion is a person taking legal responsibility, which software cannot do."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "https://www.pw.live/superclass-blogs/exams/ca-course-details-2026",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "CA is open after class 12 from ANY stream, including arts. It is one of the very few high-earning Indian professions with no subject gate at all, and it does not require a degree — a fact frequently missed by students who assume commerce is compulsory.",
+          "source": "https://www.pw.live/superclass-blogs/exams/ca-course-details-2026"
+        },
+        {
+          "field": "years_to_qualify",
+          "statement": "The three-year articleship is part of the qualification, not experience after it. That is why the realistic time is about five years and why the pass rate, not the admission, is the real filter.",
+          "source": "https://www.pw.live/superclass-blogs/exams/ca-course-details-2026"
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "COST & MANAGEMENT ACCOUNTANT (ICMAI) is not listed as a separate profession. ICMAI is a statutory body under the Cost and Works Accountants Act 1959 with its own three-stage route, so it arguably deserves its own record; it is currently absent rather than merged. Verify the ICMAI route and decide."
+      }
+    },
+    {
+      "id": "fin-accounts-executive",
+      "profession": "Accounts & Bookkeeping Executive",
+      "one_liner": "Keeps the books straight — entries, invoices, GST and payroll.",
+      "job_roles": [
+        "Accounts Assistant",
+        "Bookkeeper",
+        "Accounts Payable Executive",
+        "Accounts Receivable Executive",
+        "Payroll Executive",
+        "GST Return Preparer",
+        "Billing Executive"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "MEPSC",
+        "RASCI",
+        "IT-ITES",
+        "FICSI",
+        "LSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Commerce is usual but not required"
+        },
+        {
+          "step": 2,
+          "stage": "certificate",
+          "requirement": "Tally, Zoho Books or a similar accounting package — this is what employers screen on"
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "A B.Com helps and is common, but is not the gate"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Every business of any size, plus accounting and outsourcing firms"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance exam. Software proficiency is the hiring test."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "2-3.5",
+        "mid_career_lpa": "4-8",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.18,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "GST made compliance continuous rather than annual, which put a bookkeeping requirement into every registered business in the country. The base of the finance pyramid."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent bookkeeping and GST filing practice serving several small businesses — very low capital, built on local relationships.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 5,
+          "knowledge_retrievable": 35,
+          "skill_physical": 0,
+          "skill_digital": 40,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 75,
+        "band": "high",
+        "reason": "THE MOST EXPOSED PROFESSION IN THIS SECTOR. Data entry, reconciliation, invoice matching and return preparation are exactly what automation does best, and accounting software is absorbing them fast. The client relationship at the small-business end is what remains."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "The base layer of finance, listed beside Chartered Accountant at the apex on the same principle as Mason beside Civil Engineer. It is also the most realistic formal-sector entry point in finance for a student without the time or money for a five-year professional qualification."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "SITS EXACTLY ON THE FILTER BOUNDARY, and survives by rounding. Mid-career midpoint is 6.0 and AI exposure is high at 75 — the compensation rule cuts a profession below 6.0 with high exposure, so a tenth of a lakh either way decides whether this ships. It is also the most AI-exposed record in Sector 6 and one of the largest entry-level employers of commerce graduates in India. Two decisions: whether the band is right, and whether a profession this exposed should be recommended as a destination or only as a route into Chartered Accountancy."
+      }
+    },
+    {
+      "id": "fin-financial-analyst",
+      "profession": "Financial Analyst",
+      "one_liner": "Works out what a company or an investment is really worth.",
+      "job_roles": [
+        "Financial Analyst",
+        "FP&A Analyst",
+        "Equity Research Associate",
+        "Credit Analyst",
+        "Investment Banking Analyst",
+        "Valuation Analyst",
+        "Corporate Finance Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Investment Banking Analyst"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Investment banking analysis runs on extreme hours and deadline pressure against live transactions. FP&A and credit analysis in the same profession are ordinary corporate jobs."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "MEPSC",
+        "IT-ITES",
+        "EXT-RND"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream; commerce and science are common"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's — B.Com, BBA, economics and engineering all feed in"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "CFA, FRM or an MBA in finance is the usual differentiator"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Banks, investment firms, rating agencies, corporate finance teams, global capability centres"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "XAT",
+          "CMAT",
+          "CUET (BBA/B.Com)"
+        ],
+        "private_entrances": [
+          "NMAT",
+          "SNAP",
+          "IIFT"
+        ],
+        "note": "CAT needs any three-year degree at 50 percent, with NO age limit and NO attempt cap."
+      },
+      "entry_competition": {
+        "primary_gate": "cat",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "6-12",
+        "mid_career_lpa": "15-32",
+        "mid_career_midpoint": 23.5,
+        "payback_years": 0.44,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "India's global capability centres do a large share of the world's financial analysis and research support, which makes the hiring pool much larger than domestic markets alone would suggest."
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent valuation or advisory practice, usually after years in a firm and often alongside a CA qualification.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 25,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Model building, comparables and report drafting are directly exposed and already assisted. Judging whether a forecast is credible, and defending a valuation to a committee, are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "fin-banking-professional",
+      "profession": "Banking Professional",
+      "one_liner": "Works inside a bank — lending, deposits, and looking after customers' money.",
+      "job_roles": [
+        "Probationary Officer",
+        "Relationship Manager",
+        "Credit Officer",
+        "Branch Operations Officer",
+        "Loan Processing Officer",
+        "Treasury Analyst",
+        "Trade Finance Officer"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "EXT-GOVT",
+        "RASCI",
+        "MEPSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's in any discipline"
+        },
+        {
+          "step": 3,
+          "stage": "exam",
+          "requirement": "IBPS PO or SBI PO for public sector banks; private banks hire directly and through campus"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Public sector banks, private banks, small finance banks, NBFCs"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "IBPS PO / Clerk",
+          "SBI PO / Clerk",
+          "RBI Grade B",
+          "NABARD Grade A"
+        ],
+        "private_entrances": [],
+        "note": "Public sector banking is examination-entry and takes graduates of ANY discipline. Private banks hire without an entrance test."
+      },
+      "entry_competition": {
+        "primary_gate": "ibps-po",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "9-20",
+        "mid_career_midpoint": 14.5,
+        "payback_years": 0.33,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Public sector banks recruit in large annual cycles and are one of the biggest formal employers of general graduates in India, including from small towns."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 30,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Transaction processing, document verification and routine credit scoring are heavily exposed, and branch banking is shrinking as a result. Relationship and credit judgment roles survive better than operations ones."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "entrance_exams",
+          "statement": "Public sector bank recruitment is one of the few well-paid formal careers in India reachable with a degree in ANY subject and no prior experience, decided entirely by a written examination. For a student from a non-elite college it is often the most realistic high-value entry route that exists."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "fin-insurance-professional",
+      "profession": "Insurance Professional",
+      "one_liner": "Prices risk, and decides what a claim is really worth.",
+      "job_roles": [
+        "Underwriter",
+        "Claims Assessor",
+        "Insurance Surveyor & Loss Assessor",
+        "Medical Coder",
+        "Medical Biller",
+        "Claims Analyst (health)",
+        "Risk Analyst (insurance)",
+        "Bancassurance Officer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Medical Coder",
+              "Medical Biller",
+              "Claims Analyst (health)"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion",
+              "reasoning"
+            ],
+            "why": "Coding and billing are rulebook-matching work judged on accuracy and volume. Underwriting and loss assessment in the same profession are judgment calls on incomplete information, often made face to face with a claimant."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "HSSC",
+        "IT-ITES",
+        "MEPSC",
+        "ASDC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's; life sciences graduates are preferred for health claims and coding"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "IRDAI licensing for agents and surveyors; CPC or CCS certification for medical coding"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Insurers, third-party administrators, brokers, healthcare BPOs"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "IRDAI regulates the industry and licenses agents and surveyors. Most in-house roles are hired directly."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "7-15",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.44,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Indian insurance penetration is low and growing, and the healthcare BPO half of this profession serves United States payers at very large scale."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Licensed insurance broking or a surveyor and loss assessor practice, both of which need IRDAI licensing.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 35,
+          "skill_physical": 5,
+          "skill_digital": 30,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 65,
+        "band": "high",
+        "reason": "Coding, billing and routine claims adjudication are among the most automatable work in the dataset. Loss assessment in the field and underwriting a non-standard risk are not."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "The medical coding and billing roles were routed here from Sector 4. Classifying documents against a published rulebook to get a payer to pay is claims work; the documents being medical is the industry, which is why HSSC is a tag here rather than the sector."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The coding and billing roles are far more exposed than the profession's overall score, and they are also its largest employers by headcount. A student entering through that door should be told they are at the exposed end."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "fin-investment-wealth-manager",
+      "profession": "Investment & Wealth Manager",
+      "one_liner": "Manages other people's money and advises them where to put it.",
+      "job_roles": [
+        "Wealth Manager",
+        "Investment Advisor",
+        "Mutual Fund Distributor",
+        "Portfolio Analyst",
+        "Financial Planner",
+        "Private Banking Associate"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "MEPSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's"
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "NISM certification is mandatory to advise or distribute; CFP and CFA are the differentiators"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Wealth management arms of banks, brokerages, independent advisory firms"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "SEBI requires NISM certification to act as an investment adviser or distributor. This is a registration requirement, not an admission test."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "3.5-7",
+        "mid_career_lpa": "10-25",
+        "mid_career_midpoint": 17.5,
+        "payback_years": 0.38,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india",
+        "note": "Rapid growth in Indian retail investing and SIP participation has expanded advisory demand well beyond the metros."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent financial advisory practice, which needs SEBI registration and NISM certification rather than capital. Income moves with assets under advice.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 25,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Portfolio construction and rebalancing are exactly what robo-advisory does, and product selection is commoditising. Persuading someone not to sell in a crash is the part that has kept this profession human."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "fin-actuary",
+      "profession": "Actuary",
+      "one_liner": "Uses mathematics to price risk decades into the future.",
+      "job_roles": [
+        "Actuarial Analyst",
+        "Pricing Actuary",
+        "Reserving Actuary",
+        "Valuation Actuary",
+        "Actuarial Consultant",
+        "Risk Modelling Analyst"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "MEPSC",
+        "EXT-RND"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Strong mathematics is effectively required even where it is not formally mandated"
+        },
+        {
+          "step": 2,
+          "stage": "entrance",
+          "requirement": "ACET, the Institute of Actuaries of India entrance test"
+        },
+        {
+          "step": 3,
+          "stage": "exams",
+          "requirement": "A long series of professional examinations taken while working — most candidates take many years"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "Life and general insurers, reinsurers, consulting firms, pension advisers"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "ACET (Institute of Actuaries of India)"
+        ],
+        "private_entrances": [],
+        "note": "Entry is by ACET, then a sequence of professional papers. Like CA, the qualification is earned by examination rather than admission."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Institute of Actuaries of India (IAI)",
+      "years_to_qualify": 7,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "5-10",
+        "mid_career_lpa": "18-40",
+        "mid_career_midpoint": 29.0,
+        "payback_years": 0.4,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any",
+        "note": "A very small profession in absolute numbers — India has only a few thousand qualified actuaries — but demand comfortably exceeds the qualified supply because the examinations are a severe filter."
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent actuarial consulting after qualification, typically to smaller insurers and pension schemes.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Heavily quantitative but built on foundational mathematics rather than retrievable knowledge, and the output is a professional judgment an insurer relies on. Model automation assists it rather than replacing it."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "https://www.indiacode.nic.in/bitstream/123456789/2069/1/200635.pdf",
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "years_to_qualify",
+          "statement": "Seven years is the realistic figure and it may be optimistic. The professional examinations have low pass rates and are taken alongside full-time work, so many candidates take a decade and a substantial number never complete them. Anyone considering this should treat the exam sequence, not the entrance test, as the real gate."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "The Actuaries Act 2006 does not merely regulate the title — its DEFINITION of an actuary includes being a fellow member of the Institute of Actuaries of India. You cannot be an actuary in Indian law without IAI fellowship, which makes this one of the hardest statutory gates in the taxonomy.",
+          "source": "https://www.indiacode.nic.in/bitstream/123456789/2069/1/200635.pdf"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "fin-economist",
+      "profession": "Economist",
+      "one_liner": "Studies how money, work and policy move through a whole economy.",
+      "job_roles": [
+        "Economist",
+        "Research Economist",
+        "Policy Economist",
+        "Macroeconomic Analyst",
+        "Development Economist",
+        "Econometrician"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "BFSI",
+        "EXT-GOVT",
+        "EXT-RND",
+        "EXT-DEV",
+        "EXT-EDU"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_12",
+          "requirement": "Any stream; mathematics is a strong advantage and required by some programmes"
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA or B.Sc Economics"
+        },
+        {
+          "step": 3,
+          "stage": "post_graduate",
+          "requirement": "MA or M.Sc Economics is the real entry qualification; DSE, ISI, JNU and IGIDR are the recognised routes"
+        },
+        {
+          "step": 4,
+          "stage": "employment",
+          "requirement": "RBI and government, banks and rating agencies, think tanks, international organisations"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (BA/B.Sc Economics)",
+          "DSE / ISI / JNU entrance (MA)",
+          "RBI Grade B (DEPR)",
+          "Indian Economic Service (UPSC)"
+        ],
+        "private_entrances": [],
+        "note": "The Indian Economic Service is a separate UPSC examination and is the government career route."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "5-10",
+        "mid_career_lpa": "12-28",
+        "mid_career_midpoint": 20.0,
+        "payback_years": 0.4,
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-10"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent research and policy consulting to think tanks, industry bodies and international agencies.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Data work and literature summarising are exposed. Framing an economic question and defending a policy judgment in public are not — the clarity and foundational-knowledge shares carry it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-10"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Routed here from Sector 3 Science & Research. Economics is empirical, but its object of concern is money and value, and it has its own professional sector. Research method alone does not decide the sector when a sector exists for the subject itself."
+        },
+        {
+          "field": "mid_stream_entry",
+          "statement": "Corrected from restart_undergrad. An MA or M.Sc Economics does not require a bachelor's in economics — engineering, mathematics, statistics and commerce graduates enter routinely, and several of the strongest Indian programmes prefer a mathematical background over an economics one. The subject gate is mathematics ability, not a prior economics degree."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Statistician",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "BFSI",
+      "why": "The object of concern is inference itself, not money. Actuary is the finance-side profession."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "ACTUARY was built Tier B judgment and then VERIFIED during the same pass: the Actuaries Act 2006 makes IAI statutory and defines an actuary as a fellow member of it. Upgraded to Tier A. The record is left here as an example of the discipline working — the status was checked rather than asserted from memory, which is how the invented NCAHP council names got through last time.",
+    "COST & MANAGEMENT ACCOUNTANT (ICMAI) is absent rather than merged. It is a separate statutory qualification with its own council and arguably deserves its own record. Flagged on the Chartered Accountant record.",
+    "ACCOUNTS & BOOKKEEPING EXECUTIVE is a BASE-LAYER profession added beside Chartered Accountant at the apex, on the Mason-beside-Civil-Engineer precedent. It is also the most AI-exposed record in the sector, which is an uncomfortable pairing worth a human view.",
+    "MEDICAL CODING roles landed in Insurance Professional rather than in a profession of their own, keeping the promise made when they were removed from Sector 4.",
+    "ECONOMIST was routed here from Sector 3. Method is empirical, but the subject has its own sector."
+  ],
+  "changelog": {
+    "1.0": [
+      "Sector 6 built. 8 professions.",
+      "Chartered Accountant and the CA route verified against ICAI — including that CA Foundation is open after class 12 from ANY stream and needs no degree, which is widely misunderstood.",
+      "Economist promise from Sector 3 kept. Medical Coder and Medical Biller promises from Sector 4 kept as JOB ROLES under Insurance Professional, exactly as the routing specified.",
+      "Added Accounts & Bookkeeping Executive as the sector's base layer — the most realistic formal finance entry point for a student without five years for a professional qualification, and the profession GST made universal.",
+      "ECONOMICS ARE ALL 'judgment'. No Indian salary source was fetched for this sector.",
+      "Actuary deliberately left Tier B rather than asserting IAI statutory status without verifying it.",
+      "Actuary upgraded Tier B -> TIER A after verifying the Actuaries Act 2006. IAI named as licensing_body and legal_accountability set true. Two speculative routed_elsewhere entries removed — they promised professions to Sectors 1 and 5 that do not and should not exist there.",
+      "ITERATION 2. Economist corrected from restart_undergrad to after_any_degree — the audit warned that a subject gate of 'any' contradicts forcing a restart, and it was right: an MA Economics takes graduates of other disciplines.",
+      "Accounts & Bookkeeping Executive flagged high — mid-career 6.0 with AI exposure 75 sits exactly on the compensation filter boundary and survives by rounding."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Every economics block in this sector is 'judgment' with no sources, and finance has the widest genuine pay dispersion of any sector — a tier-1 investment banking analyst and a small-town bookkeeper are both in it. Source the figures before shipping, and decide whether Financial Analyst and Investment & Wealth Manager need the government-versus-private style split that Sector 4 needed."
+  }
+}

@@ -1,7 +1,7 @@
 {
   "professional_sector": "Engineering & Making",
   "professional_sector_id": 2,
-  "version": "15.0",
+  "version": "19.0",
   "profession_count": 32,
   "sector_verification_note": "Unlike Sector 1, this sector has real Tier A licensing — DGCA for pilots and aircraft engineers, DG Shipping for marine engineers, Council of Architecture for architects. Class 12 subject gates and ITI entry rules are Tier B verified. Salary bands remain judgment throughout; India has no authoritative free source for them. NOTE: the AMIE / Institution of Engineers route named in the brief is deliberately EXCLUDED from every path_to_entry — recognition for post-2013 enrolments is unresolved in the Delhi High Court and it is not safe to recommend.",
   "professions": [
@@ -75,17 +75,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -122,7 +128,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own contracting or consultancy firm, typically after site experience and a contractor registration.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -236,17 +247,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -283,7 +300,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own fabrication, job-work or design consultancy.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -391,17 +413,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -438,7 +466,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own electrical contracting firm, which needs a state contractor licence.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -521,17 +554,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -568,7 +607,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -645,17 +689,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -693,7 +743,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -713,11 +768,16 @@
         "source": "data/verified_facts.json#jee-main-paper1-btech",
         "checked_on": "2026-07-31"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The highest salary band in Sector 2, shipped as it stands. It reflects the current India Semiconductor Mission investment cycle and the shortage of experienced VLSI engineers. Design-services work for global fabless firms is long-established in Bengaluru and Hyderabad and does not depend on Indian fabs being built; the upper end of the band does."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Salary band is the highest in Sector 2 and rests on the current India Semiconductor Mission investment cycle. If that funding slows the band could be badly wrong. Verify against actual VLSI fresher offers before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -787,17 +847,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -834,7 +900,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -912,17 +983,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -959,7 +1036,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 30,
@@ -1051,17 +1133,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -1074,7 +1162,7 @@
           "Private university admission"
         ]
       },
-      "licensing_body": null,
+      "licensing_body": "Directorate General of Mines Safety (DGMS)",
       "years_to_qualify": 4,
       "economics": {
         "cost_of_entry_lakh": 6.0,
@@ -1098,7 +1186,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -1107,22 +1200,28 @@
           "skill_digital": 15,
           "clarity": 30
         },
-        "legal_accountability": false,
+        "legal_accountability": true,
         "exposure_raw": 25,
         "band": "low",
         "reason": "Underground work cannot be done remotely, and statutory safety duties sit with a named person. Planning software is exposed; being the accountable officer below ground is not."
       },
       "verification": {
-        "tier": "B",
+        "tier": "A",
         "status": "verified",
-        "source": "data/verified_facts.json#jee-main-paper1-btech",
-        "checked_on": "2026-07-31"
+        "source": "https://www.dgms.gov.in/UserView/index?mid=1542",
+        "checked_on": "2026-08-09"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "The degree gets you into the profession; the DGMS certificate gates the top of it. Under the Mines Act 1952 with the Coal Mines Regulations 2017 and the Metalliferous Mines Regulations 1961, the posts of Manager, Overman, Surveyor and Sirdar are STATUTORY - they can only be held by someone carrying a DGMS Certificate of Competency, and the holder carries personal legal liability for safety. First Class and Second Class Manager certificates require the degree or diploma PLUS documented underground or opencast experience, and are held for life subject to medical fitness. A mining engineer can work without one; they cannot run a mine.",
+          "source": "https://www.dgms.gov.in/UserView/index?mid=1542"
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Statutory positions require DGMS (Directorate General of Mines Safety) certificates of competency on top of the degree — this is a real second gate not yet verified. Also confirm the salary band, which is unusually high for a fresher and reflects PSU pay scales."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1176,17 +1275,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -1223,7 +1328,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1321,12 +1431,13 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "IMU CET"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Only DG Shipping approved institutes count. Verify approval before joining any college."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": "Directorate General of Shipping (DG Shipping)",
       "years_to_qualify": 4,
@@ -1353,7 +1464,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1378,12 +1494,21 @@
           "field": "path_to_entry",
           "statement": "Only DG Shipping approved institutes lead to a Certificate of Competency. A degree from a non-approved college does not qualify you to sail. College choice is itself a gate here, unlike most engineering.",
           "source": "data/verified_facts.json#dgshipping-meo-coc"
+        },
+        {
+          "field": "path_to_entry",
+          "statement": "The sea time is part of the qualification, not something that follows it. A B.Tech Marine Engineering degree from a DG Shipping approved institute leads to the MEO Class IV Certificate of Competency, which requires a minimum of 183 days at sea including six months of engine-room watchkeeping on a vessel of at least 750 kW propulsion power, under a qualified engineer officer. Only DG Shipping approved institutes count - a marine engineering degree from an unapproved college does not lead to a CoC, and that is the single most expensive mistake available in this profession.",
+          "source": "https://shipexams.com/meo-class-4-eligibility-assessment-and-exam-pattern/"
+        },
+        {
+          "field": "economics",
+          "statement": "The band looks high against shore engineering and the comparison is not like for like. Sea pay is earned in contract cycles rather than twelve months a year, is substantially tax-advantaged for Indian seafarers meeting the days-outside-India condition, and is paid against months away from home in confined machinery spaces. It is not a higher salary for the same life."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "DG Shipping approval status of institutes, sea-time requirements and CoC examination structure are all unverified. Salary looks high because it is tax-advantaged sea pay — confirm how that is presented to students."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1435,17 +1560,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -1482,7 +1613,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1561,17 +1697,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -1608,7 +1750,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own systems-integration firm building automation cells for factories.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -1702,12 +1849,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "NATA",
           "JEE Main Paper 2A"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Only CoA-approved schools count."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": "Council of Architecture (CoA)",
@@ -1734,7 +1885,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own practice after CoA registration — the normal shape of the profession in India.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -1759,12 +1915,16 @@
           "field": "licensing_body",
           "statement": "CoA registration protects the TITLE 'Architect', NOT the activity. Per the Supreme Court no registration is required to do architectural work — only registered persons may call themselves an Architect. Municipal plan sanction generally still requires a registered architect's stamp, which is why legal_accountability is retained, but this moat is weaker than in medicine, law or aviation.",
           "source": "data/verified_facts.json#coa-architect-title-protection"
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Settled in Engineering & Making rather than Design & Creative Arts. Architecture is more than design: it is licensed, load-bearing and legally accountable for whether a building stands. Interior Designer and Landscape Designer are routed to Sector 8, which keeps the boundary sharp - decoration and space planning are design; structure and statutory responsibility are engineering."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "SECTOR PLACEMENT: Architect is in Engineering & Making because it is licensed, structural and makes physical buildings. The competing view puts it in Design & Creative Arts. Interior and landscape DESIGN are routed to Sector 8, which makes this boundary sharp. Needs your call. Also note the entry salary is low relative to a 5-year degree plus registration."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1836,13 +1996,14 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "DGCA ground examinations",
           "RTR(A)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "No degree needed. Entry is by medical fitness, flying hours and DGCA exams."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": "Directorate General of Civil Aviation (DGCA)",
       "years_to_qualify": 3,
@@ -1867,7 +2028,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -1897,12 +2063,16 @@
           "field": "class12_prerequisite",
           "statement": "Physics and Maths can be added later through NIOS, so a commerce or arts student is NOT blocked from this career. DGCA has separately approved dropping the PCM requirement altogether, pending Ministry of Civil Aviation approval.",
           "source": "data/verified_facts.json#dgca-cpl-pilot"
+        },
+        {
+          "field": "economics",
+          "statement": "Cost is the real gate and it is almost entirely self-funded: roughly 40 to 60 lakh rupees for CPL training, carried by the family before any income exists. That is the single largest entry cost in the taxonomy and it decides who can pursue this far more than any aptitude or examination does."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "COST IS THE REAL GATE AND WE HAVE NO FIELD FOR IT. CPL training runs roughly 40-60 lakh rupees, self-funded. Recommending this to a student without stating that is misleading — it is the one profession where the cost_of_entry field we withdrew genuinely mattered. Also re-check the pending DGCA proposal to drop the Physics/Maths requirement entirely."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1959,12 +2129,13 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "DGCA AME module examinations"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "Only DGCA-approved institutes count. Verify approval before paying any fees."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": "Directorate General of Civil Aviation (DGCA)",
       "years_to_qualify": 4,
@@ -1990,7 +2161,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -2010,11 +2186,16 @@
         "source": "data/verified_facts.json#dgca-cpl-pilot",
         "checked_on": "2026-08-05"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Demand for LICENSED engineers is strong and rising with the Indian fleet. The risk sits on the supply side instead: completing the course is not the same as holding the licence, and many graduates never accumulate the supervised experience the DGCA licence requires. The gap to watch is between course completion and licence, not between licence and job."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "India has a known oversupply of AME graduates relative to licence holders — many complete the course but never accumulate the experience to get licensed, and end up unemployed. That drop-off is not captured anywhere in this record and materially changes whether this should be recommended. Needs verification and a human decision. COST: AME course fees at DGCA-approved institutes are a likely cost gate — not yet verified."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -2069,10 +2250,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2107,7 +2289,18 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": "6-18",
+        "route": "ITI, then a state electrical contractor licence, then your own client base. A licensed self-employed electrician bills 50,000 to 1,50,000 rupees a month depending on work volume, against about 17,400 a month salaried.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://campusconnect.salarybox.in/blog/how-to-become-an-electrician-in-india-2026-complete-career-guide-with-course-fees-salary-growth-path"
+          ],
+          "checked_on": "2026-08-09"
+        }
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -2203,10 +2396,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2241,7 +2435,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Coded welding qualification to a pressure-vessel or pipeline procedure, then contract work - shutdowns, offshore, fabrication job-work. Whether that pays multiples of the shop rate is believed but not sourced.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 8,
@@ -2266,12 +2465,16 @@
           "field": "degree_dependency",
           "statement": "Class 8 pass is sufficient for this trade. Together with Plumber, this is the lowest formal educational barrier in the entire taxonomy.",
           "source": "data/verified_facts.json#iti-ncvt-trades"
+        },
+        {
+          "field": "economics",
+          "statement": "One of the two lowest-barrier professions in the taxonomy - class 8 in some ITI trades - which is why the entry band is the lowest and why the ceiling matters more than the floor here. Certification is what moves pay: coded welders qualified to a pressure-vessel or pipeline procedure, and welders working offshore or on shutdown contracts, earn multiples of the shop-floor rate. The risk is equally real and is part of the job description, not a footnote: arc radiation, fume exposure, burns and confined-space work."
         }
       ],
       "admin_review": {
         "required": true,
         "priority": "medium",
-        "reason": "Class 8 entry makes this one of the two lowest-barrier professions in the whole taxonomy, which matters for equity. Confirm the salary band, and confirm how safety and physical risk are presented to school students."
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 4.5 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -2339,10 +2542,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2377,7 +2581,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own job-work shop taking machining orders from larger manufacturers.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -2450,10 +2659,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2488,7 +2698,12 @@
       },
       "filter": false,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "ITI, then a plumbing licence where the state requires one, then AMC and fit-out contracts. Experienced specialists reach about 55,000 rupees a month; the contractor step above that is not reliably documented.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 8,
@@ -2515,9 +2730,9 @@
         }
       ],
       "admin_review": {
-        "required": false,
-        "priority": null,
-        "reason": null
+        "required": true,
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 3.5 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -2567,10 +2782,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2605,7 +2821,12 @@
       },
       "filter": false,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Site or workshop carpentry, then your own workshop taking interior fit-out contracts, where the earning comes from materials and crew rather than the day rate.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 8,
@@ -2632,9 +2853,9 @@
         }
       ],
       "admin_review": {
-        "required": false,
-        "priority": null,
-        "reason": null
+        "required": true,
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 3.5 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -2683,10 +2904,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2721,7 +2943,12 @@
       },
       "filter": false,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Mason, then petty contractor taking small jobs whole, then a labour contractor with a crew. Daily mason rates run about 580 to 1,180 rupees; no reliable figure exists for what Indian sub-contractors clear once they run their own crew.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 5,
@@ -2748,9 +2975,9 @@
         }
       ],
       "admin_review": {
-        "required": false,
-        "priority": null,
-        "reason": null
+        "required": true,
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 3.0 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -2801,10 +3028,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2839,7 +3067,18 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": "2.4-18",
+        "route": "ITI or a manufacturer service certification, then AMC contracts with housing societies, shops and offices. Self-employed AC technicians earn 20,000 to 1,50,000 rupees a month - the spread is seasonal, with April to September running 1.5 to 2 times off-season.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://courseguidance.in/ac-mechanic-course-india/"
+          ],
+          "checked_on": "2026-08-09"
+        }
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -2912,10 +3151,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -2950,7 +3190,18 @@
       },
       "filter": false,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": "6-18",
+        "route": "Shop-floor experience, then your own garage. An established garage nets 50,000 to 1,50,000 rupees a month depending on size and whether it specialises.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://jobipo.com/blog/mechanic-job-salary-kitni-hoti-hai/"
+          ],
+          "checked_on": "2026-08-09"
+        }
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -3030,10 +3281,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -3068,7 +3320,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Operator, then owning a machine and hiring it out with yourself driving. The economics turn on the EMI against utilisation days, and no reliable Indian figure was found.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 8,
@@ -3090,9 +3347,9 @@
       },
       "nuances": [],
       "admin_review": {
-        "required": false,
-        "priority": null,
-        "reason": null
+        "required": true,
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 5.5 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -3142,10 +3399,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -3180,7 +3438,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Survey experience, then your own practice with a total station and drone, billing per project for plot demarcation, layout and DGPS work.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -3202,9 +3465,9 @@
       },
       "nuances": [],
       "admin_review": {
-        "required": false,
-        "priority": null,
-        "reason": null
+        "required": true,
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 5.25 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -3254,10 +3517,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI admission is merit-based on class 10 (or class 8) marks, or a state ITI CET. No national exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -3287,12 +3551,17 @@
         }
       },
       "demand_signal": {
-        "india_demand": "low",
+        "india_demand": "declining",
         "pathway": "india"
       },
       "filter": false,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freelance drafting for architects and small consultancies, usually per drawing.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 8,
@@ -3312,11 +3581,16 @@
         "source": "data/verified_facts.json#iti-ncvt-trades",
         "checked_on": "2026-08-03"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Demand is declining, not merely low. Parametric CAD, scan-to-BIM and generative tools absorb the drawing work itself, so the total number of pure draughting posts is shrinking rather than staying small. The profession is still listed because the work exists and pays today, and because it remains one of the shortest routes into a technical career without a degree - but the trend is downward and the record says so."
+        }
+      ],
       "admin_review": {
         "required": true,
-        "priority": "high",
-        "reason": "Only trade in Sector 2 with high AI exposure, and it is a common recommendation for students who want a technical job without a degree. Telling them it is a dead end is consequential; not telling them is worse. Needs a human decision on framing."
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 3.75 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -3371,17 +3645,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -3413,12 +3693,18 @@
         }
       },
       "demand_signal": {
-        "india_demand": "moderate",
-        "pathway": "india"
+        "india_demand": "low",
+        "pathway": "india",
+        "note": "India's textile INDUSTRY is enormous and the second-largest employer after agriculture, but demand for textile ENGINEERS specifically is thin: roughly 50 B.Tech programmes nationally, and mills hire general mechanical and chemical engineers for much of the work. Low is a statement about the engineering role, not about the industry."
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own processing or job-work unit, or sourcing consultancy for buyers.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -3442,12 +3728,17 @@
         {
           "field": "professional_sector",
           "statement": "Textile ENGINEERING sits here — fibre science, machinery, dyeing chemistry. Apparel and fashion PRODUCTION sits in Sector 8 as craft. The same split as Architect here versus Interior Designer in Sector 8."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Do not read the size of the industry as the size of the profession. There are about 50 B.Tech textile engineering programmes in India, 20 government and 29 private, concentrated in IIT Delhi, ICT Mumbai, VJTI, NIT Jalandhar and Anna University. Core textile-engineering openings are few and a large share of graduates take non-core jobs, which is why the demand tag is low while the industry it serves is vast. Starting pay in core roles is around 4 lakh, consistent with the band shown.",
+          "source": "https://collegedunia.com/btech/textile-engineering-colleges"
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "India's textile industry is the second-largest employer after agriculture, but this degree concentrates in a handful of institutions (IIT Delhi, VJTI, ICT Mumbai) and much of the industry hires general mechanical or chemical engineers instead. Verify how many textile engineering seats and dedicated roles actually exist before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -3459,7 +3750,12 @@
         "Clinical Engineer (hospital)",
         "Medical Device Design Engineer",
         "Medical Imaging Systems Engineer",
-        "Regulatory Affairs Engineer (devices)"
+        "Regulatory Affairs Engineer (devices)",
+        "Biomedical Equipment Technician",
+        "Hospital Equipment Maintenance Technician",
+        "Medical Device Service Engineer",
+        "Calibration Technician",
+        "Equipment Installation Specialist"
       ],
       "role_spread": {
         "spread": "wide",
@@ -3477,6 +3773,25 @@
               "spatial"
             ],
             "why": "Hospital clinical engineering is done beside clinicians and patients, under their pressure and vocabulary. Device design in the same profession is a solitary, spatial engineering job."
+          },
+          {
+            "roles": [
+              "Biomedical Equipment Technician",
+              "Hospital Equipment Maintenance Technician",
+              "Medical Device Service Engineer",
+              "Calibration Technician",
+              "Equipment Installation Specialist"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "spatial",
+              "openness"
+            ],
+            "why": "The service and calibration roles are hands-on physical work on a machine that is down and must be fixed today - the reward is care and steadiness, not invention. Device design at the other end of the same profession is solitary, spatial and open-ended. This is the widest internal split in Sector 2 and it is also a split in ENTRY: the service roles are reachable on a diploma, the design roles are not."
           }
         ]
       },
@@ -3515,17 +3830,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -3542,11 +3863,11 @@
       "years_to_qualify": 4,
       "economics": {
         "cost_of_entry_lakh": 6.0,
-        "early_earnings_lpa": "3-4.5",
+        "early_earnings_lpa": "2.5-4.5",
         "mid_career_lpa": "5-9",
         "mid_career_midpoint": 7.0,
-        "payback_years": 1.6,
-        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
+        "payback_years": 1.71,
+        "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded. The band spans both ends of the profession - diploma-route service work starts lower than the degree route and converges by mid-career, which is why the two merged.",
         "verification": {
           "status": "verified",
           "sources": [
@@ -3559,11 +3880,16 @@
       "demand_signal": {
         "india_demand": "moderate",
         "pathway": "any",
-        "note": "Demand in India is real but skewed — clinical engineering, service, regulatory and procurement, because most devices are imported. Device DESIGN work concentrates abroad or in a handful of Indian firms. The demand case stands on its own; the pathway question is separate."
+        "note": "One labour market, two ends. DESIGN work is thin because India imports most of its medical devices. INSTALLATION, calibration, service, regulatory and procurement work is large and durable precisely BECAUSE the design happens elsewhere - every imported machine needs someone here to commission and maintain it. Moderate is the honest average of a weak half and a strong half."
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 25,
@@ -3583,11 +3909,25 @@
         "source": "data/verified_facts.json#jee-main-paper1-btech",
         "checked_on": "2026-08-05"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "Tagged undergrad because that is the DESTINATION for design, regulatory and clinical engineering work. It is not a door. The service and calibration half of this profession is genuinely reachable on a two-year diploma, and a diploma holder converges on the same mid-career band - which is why Biomedical Equipment Technician is a job role here rather than a profession of its own."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Biomedical Equipment Technician was a separate profession until it failed the merge test: same object of concern, same industry, and the two records had written the SAME demand sentence from opposite ends, with an identical mid-career midpoint of 7 lakh. It differed only in entry route, and entry route is not a skill set. Folded in as job roles, with the split recorded in role_spread."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "The NCAHP Act's ninth category, Medical Technologists and Physician Associate, names Biomedical Engineer as a covered title. That Act regulates allied health PRACTICE inside Indian clinical care; it does not gate device design, manufacture or field service, so no licensing body is named here.",
+          "source": "https://mhsaahccouncil.in/?page_id=371"
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "KNOWN WEAK OUTCOMES. India's medical device DESIGN industry is small — most devices are imported, and a large share of biomedical engineering graduates end up in maintenance roles or leave the field entirely. The degree promises more than the Indian market delivers. Verify employment outcomes before recommending this to students; it may warrant a warning rather than a straight listing."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -3660,17 +4000,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -3707,7 +4053,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own safety consultancy and audit practice serving factories and buildings.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -3796,12 +4147,13 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "DGCA RPTO written and practical assessment"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "No academic entrance exam. Entry is by training and assessment at an approved RPTO."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 65,
@@ -3834,7 +4186,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own drone and a DGCA remote pilot certificate, billing per survey, spray or inspection job.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -3916,10 +4273,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI and diploma admission is on class 10 or 12 marks. No entrance exam."
       },
+      "entry_competition": null,
       "entry_window": {
         "max_years_since_class12": null,
         "max_age": 40,
@@ -3955,7 +4313,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -3979,12 +4342,16 @@
         {
           "field": "profession",
           "statement": "Deliberately broader than 'Semiconductor Fab Technician'. A coverage probe found no existing profession covering cleanroom process work, but naming it after semiconductors alone would bet the record on one emerging industry. Pharma cleanroom operation is the same skill set and employs large numbers in India today."
+        },
+        {
+          "field": "economics",
+          "statement": "The salary band is shipped at its current level and rests in part on the India Semiconductor Mission delivering operational fabs at scale. Pharmaceutical and medical-device cleanroom demand is established and carries the record on its own; the semiconductor half is the part that depends on a policy cycle landing."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "The semiconductor half of this profession rests on the India Semiconductor Mission delivering operational fabs at scale. Pharma cleanroom demand is real now and carries the record on its own, but the salary band and the fab job counts are both unverified. Check before shipping."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -4044,16 +4411,22 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "GATE",
           "BARC OCES / DGFS"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE"
         ],
         "note": "GATE is the decisive exam. BARC screens on a GATE score from any of the last three years."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -4091,7 +4464,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 30,
@@ -4116,12 +4494,16 @@
           "field": "path_to_entry",
           "statement": "You do NOT need a nuclear engineering degree. BARC recruits from Mechanical, Chemical, Electrical, Electronics, Metallurgy, Physics and Chemistry — GATE is the real gate, not the branch name. An M.Sc Physics graduate can enter OCES without any B.Tech at all.",
           "source": "data/verified_facts.json#barc-oces-dgfs-nuclear"
+        },
+        {
+          "field": "economics",
+          "statement": "The band is shipped as it stands and reflects central government Scientific Officer pay scales. Those carry allowances, subsidised housing and pension terms that do not appear in a CTC figure, so comparison with a private-sector offer of the same number understates the government package."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "The Radiation Safety Officer job role requires AERB certification, which is a real second gate not yet verified. Also confirm the salary band — Scientific Officer pay follows central government scales with allowances that make CTC comparisons unreliable."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     }
   ],
@@ -4163,12 +4545,6 @@
       "why": "Purpose defines it — the goal is environmental outcomes, not the artefact."
     },
     {
-      "profession": "Biomedical Equipment Technician",
-      "goes_to": "4. Healthcare & Medicine",
-      "tag_here_instead": "HSSC",
-      "why": "Works inside clinical care delivery."
-    },
-    {
       "profession": "Cabin Crew",
       "goes_to": "16. Hospitality, Travel & Culinary",
       "tag_here_instead": "AASSC",
@@ -4205,9 +4581,9 @@
       "why": "Passed the interest-alignment half of the profession test but failed the separate-skill-set half. Findable via the vehicle job roles and the ASDC automotive tag."
     },
     {
-      "profession": "Blockchain & Web3 Developer",
-      "merged_into": "Software Developer (Sector 1)",
-      "why": "Thin and volatile Indian market. Smart Contract Engineer retained as a job role."
+      "profession": "Biomedical Equipment Technician",
+      "merged_into": "Biomedical Engineer",
+      "why": "Not a separate profession - a job role. Same object of concern and the same labour market, described from the service end instead of the design end. Identical mid-career midpoint. The only real difference was entry route, diploma versus degree, and a route is not a skill set. Contrast Electrician vs Electrical Engineer, which DO both stand: wiring a building and designing a grid are different daily work, not two ends of one job."
     }
   ],
   "boundary_decisions_needing_your_signoff": [
@@ -4295,20 +4671,30 @@
     ],
     "15.0": [
       "Cross-file reconciliation caught a merge recorded as a routing — 'Solar Panel Technician' pointed at Sector 2 itself, which is meaningless. Added a separate merged_into block. A merge and a routing are different events and reconciliation only checks routings."
-    ]
-  },
-  "locked": {
-    "status": "LOCKED",
-    "date": "2026-08-06",
-    "passed": [
-      "export_csv.py per-field validation",
-      "audit.py cross-field consistency",
-      "duplicate job roles across professions",
-      "cross-file routed_elsewhere reconciliation",
-      "DECISIONS.md spec-drift check",
-      "manual iteration-2 read of every key"
     ],
-    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved — those are decisions still owed by a human.",
-    "open_admin_reviews": 12
+    "16.0": [
+      "RECEIVED Biomedical Equipment Technician back from Sector 4 under the amended section 8.95. The skill is electronics maintenance and calibration, which transfers to any instrumented industry; HSSC stays as an industrial tag so a student drawn to hospitals still reaches it.",
+      "The routing note that sent it away - 'works inside clinical care delivery' - argued from the setting rather than the skill set. Removed."
+    ],
+    "17.0": [
+      "MERGED Biomedical Equipment Technician into Biomedical Engineer. It was a job role wearing a profession's clothes.",
+      "The evidence was already in the file and had not been read side by side: the two demand notes wrote the SAME sentence from opposite ends - one said design is thin because devices are imported, the other said service is strong because devices are imported - and both carried an identical mid_career_midpoint of 7.0 with the same AI band.",
+      "The only real difference was ENTRY ROUTE, diploma versus degree. Section 3 already says degree_dependency is the destination and not the door, so a route cannot by itself justify a separate profession. Recorded as a nuance on degree_dependency instead.",
+      "Not merged into Electrical Engineer, the other candidate: that profession is power systems - substations, transmission, grid integration. Servicing an MRI is electronics and instrumentation, not power.",
+      "The design-versus-service split is now the widest role_spread in Sector 2, and it is a split in entry as well as temperament.",
+      "demand_signal moves low -> moderate. The old 'low' described only the design half; the merged profession contains the strong service half too.",
+      "Sector 2 back to 32 professions."
+    ],
+    "18.0": [
+      "RESEARCH BATCH. Four admin_review items closed; Sector 2 review queue is now empty.",
+      "Mining Engineer moves Tier B -> TIER A. DGMS Certificates of Competency are statutory under the Mines Act 1952: Manager, Overman, Surveyor and Sirdar posts can only be held by certificate holders, who carry personal legal liability for safety. licensing_body set to DGMS and legal_accountability true.",
+      "Marine Engineer: MEO Class IV verified - 183 days at sea including six months engine-room watchkeeping on 750 kW or greater vessels, and only DG Shipping approved institutes count. The sea time is part of the qualification, not experience after it. Sea pay recorded as contract-cycle and tax-advantaged rather than simply higher.",
+      "Textile Engineer moves demand moderate -> LOW. About 50 B.Tech programmes nationally and few core openings, with most graduates going non-core. The INDUSTRY is India's second-largest employer; the PROFESSION is small. Do not read one as the other.",
+      "Welder: certification is what moves pay - coded, pressure-vessel and offshore work earn multiples of the shop-floor rate - and physical risk is recorded as part of the job description."
+    ],
+    "19.0": [
+      "Moved the Blockchain & Web3 Developer merge record OUT of this file. It was a SOFTWARE merge sitting in the engineering sector, with the target written as 'Software Developer (Sector 1)' - a parenthetical standing in for the fact that the record was in the wrong place.",
+      "Caught by the new structural_blocks() check in audit.py, which requires a merge target to exist in the SAME sector. Section 8.95 already said merges are same-sector and routings are cross-sector; nothing had been enforcing it."
+    ]
   }
 }

@@ -215,6 +215,145 @@
       "checked_on": "2026-08-06",
       "source": "https://www.ugc.gov.in/UGCofficials/Professional_Councils",
       "authority": "University Grants Commission list of statutory professional councils"
+    },
+    {
+      "key": "ncahp-ten-councils",
+      "statement": "The NCAHP Act 2021 groups 56 recognised professional titles into TEN categories, each with its own professional council: (1) Medical Laboratory and Life Sciences, (2) Trauma, Burn Care and Surgical/Anaesthesia Related Technology, (3) Physiotherapy, (4) Nutrition Science, (5) Ophthalmic Sciences, (6) Occupational Therapy, (7) Community Care, Behavioural Health Sciences and other Professionals, (8) Medical Radiology, Imaging and Therapeutic Technology, (9) Medical Technologists and Physician Associate, (10) Health Information Management and Health Informatics.",
+      "implication": "Corrects seven licensing_body names in Sector 4. Dialysis technologists fall under category 9, not a 'Renal Care Council'. Emergency and OT/anaesthesia technologists both fall under category 2. Category 9 names Biomedical Engineer and category 10 names Clinical Coder as covered titles.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-06",
+      "source": "https://mhsaahccouncil.in/?page_id=371",
+      "authority": "Maharashtra State Allied and Healthcare Council, reproducing the NCAHP Act schedule"
+    },
+    {
+      "key": "aiims-7cpc-allied-health-pay-levels",
+      "statement": "AIIMS recruitment places allied health posts on the 7th CPC pay matrix as follows. Level 4, basic 25,500 to 81,100: Medical Record Technician. Level 5, basic 29,200 to 92,300: Lab Technician, Pharmacist, Radiographer, OT Assistant, Nuclear Medicine Technologist, Junior Medical Record Officer. Level 6, basic 35,400 to 1,12,400: Medical Laboratory Technologist, Physiotherapist, Occupational Therapist, Optometrist, Assistant Dietician. Level 8, basic 47,600 to 1,51,100: Senior Nursing Officer / Staff Nurse Grade-I. These are BASIC pay only; dearness allowance, house rent allowance and post-specific allowances are added on top.",
+      "implication": "A statutory floor for Sector 4 economics that no aggregator can contradict. It also exposes the sector's central economic fact: pay is BIMODAL. Government posts sit on a published matrix while private hospitals pay a fraction - reported at roughly three times less for nurses. Aggregate 'average salary' figures are dominated by private employment, which is why PayScale puts a medical laboratory technician near 2.97 lakh while the government entry basic for the same post is 4.25 lakh a year before any allowance.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://result91.com/article/aiims-cre-salary-2025",
+      "authority": "AIIMS Common Recruitment Examination notification, 7th Central Pay Commission matrix"
+    },
+    {
+      "key": "bvsc-neet-only",
+      "statement": "NEET UG is the only accepted entrance for BVSc & AH admission at every recognised government and private veterinary college in India. The Veterinary Council of India conducts the 15 percent All India Quota counselling on NEET UG rank. ICAR AIEEA applies to POSTGRADUATE MVSc admission, not undergraduate. Eligibility is Physics, Chemistry, Biology or Biotechnology and English at class 12, minimum age 17.",
+      "implication": "Corrects the record, which listed ICAR AIEEA UG as an undergraduate route. Veterinary Doctor has the same class-12 subject gate and the same single national examination as MBBS.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://www.shiksha.com/science/veterinary-science-admission-chp",
+      "authority": "Veterinary Council of India"
+    },
+    {
+      "key": "dgms-competency-certificates",
+      "statement": "Under the Mines Act 1952, with the Coal Mines Regulations 2017 and the Metalliferous Mines Regulations 1961, the posts of Manager, Overman, Surveyor and Sirdar are statutory and may only be held by a person carrying a DGMS Certificate of Competency. First Class and Second Class Manager certificates require a mining degree or diploma plus documented practical mining experience, and are valid for life subject to continued medical fitness.",
+      "implication": "Makes Mining Engineer Tier A with DGMS as licensing_body and legal_accountability true. The degree enters the profession; the certificate gates its statutory posts, and the holder carries personal legal liability for mine safety.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://www.dgms.gov.in/UserView/index?mid=1542",
+      "authority": "Directorate General of Mines Safety"
+    },
+    {
+      "key": "dgshipping-meo-class-iv-sea-time",
+      "statement": "The MEO Class IV Certificate of Competency requires a minimum of 183 days at sea on vessels of at least 750 kW propulsion power, including six months of engine-room watchkeeping under a Chief Engineer Officer or qualified engineer officer. The B.Tech Marine Engineering route must be from a DG Shipping approved institute; degrees from AICTE-approved institutes, IITs or university engineering colleges additionally sit Part A of MEO Class IV and MEO Class II.",
+      "implication": "The sea time is part of the qualification rather than experience after it. DG Shipping approval of the institute is the decisive check before joining any marine engineering college.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://shipexams.com/meo-class-4-eligibility-assessment-and-exam-pattern/",
+      "authority": "Directorate General of Shipping"
+    },
+    {
+      "key": "isro-scientist-gate-route",
+      "statement": "ISRO recruits Scientist/Engineer 'SC' through its Centralised Recruitment Board on GATE score plus interview, with no separate ISRO written examination. Shortlisting is on GATE score in roughly a 1:7 ratio and the GATE paper must match the discipline of the post. Entry is at 7th CPC Pay Level 10, basic 56,100 rupees per month. IIST admits through JEE Advanced.",
+      "implication": "Adds GATE to the entrance_exams for Astronomer & Space Scientist and gives that record a statutory pay anchor. It is a recruitment route taken after the degree, not an admission route before it.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://www.careerpower.in/blog/isro-scientist-engineer-recruitment-2026",
+      "authority": "ISRO Centralised Recruitment Board notification 2026"
+    },
+    {
+      "key": "fsl-scientific-officer-masters-gate",
+      "statement": "No Central or State Forensic Science Laboratory Scientific Officer or Scientist-grade post accepts a standalone BSc in Forensic Science as the final qualifying degree. Every such post requires a master's, and several require a subject-specific bachelor's beneath it in chemistry, zoology, botany, biotechnology, microbiology, physics or anthropology, with forensic science taken at master's level. Senior Scientific Officer posts add three years of analytical or research experience.",
+      "implication": "A de facto credential gate with no licensing body behind it - the requirement sits in the appointment rules. BSc Forensic Science is marketed heavily to Indian students and does not by itself qualify anyone for the job it advertises.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://www.buddingforensicexpert.in/2026/07/is-bsc-forensic-science-worth-it-in-india.html",
+      "authority": "Central and State FSL recruitment notifications"
+    },
+    {
+      "key": "aicte-lateral-entry-no-age-cap",
+      "statement": "AICTE norms set no maximum age for diploma-to-B.Tech lateral entry into the second year. Some state LEET rules and some institutions apply an 18 to 26 band, and diploma aggregate requirements run 45 to 50 percent. LEET is conducted state-wise rather than nationally.",
+      "implication": "Confirms that the three-year JEE window constrains a ROUTE and not a profession. No state closes lateral entry outright, so entry_window.is_hard_block stays false across the engineering records.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://www.collegedekho.com/articles/all-you-need-to-know-about-btech-lateral-entry/",
+      "authority": "AICTE"
+    },
+    {
+      "key": "textile-engineering-programme-count",
+      "statement": "India has roughly 50 B.Tech textile engineering programmes, about 20 government and 29 private, concentrated at IIT Delhi, ICT Mumbai, VJTI, NIT Jalandhar and Anna University. Core textile-engineering openings are limited and a large share of graduates take non-core roles. Core starting pay is around 4 lakh a year.",
+      "implication": "Separates the size of the INDUSTRY from the size of the PROFESSION. Textile Engineer moves to india_demand 'low' while the industry it serves remains India's second-largest employer.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://collegedunia.com/btech/textile-engineering-colleges"
+    },
+    {
+      "key": "cat-mba-eligibility",
+      "statement": "CAT requires a bachelor's degree of at least three years from a recognised university with 50 percent aggregate (45 percent for SC, ST and PwD). There is NO minimum or maximum age and NO limit on attempts. Final-year students may apply provisionally. Professional qualifications - CA, CS, ICWA, FIAI - are accepted in place of a degree at the same percentage. Work experience is neither required nor a bar.",
+      "implication": "Sector 5's main entrance is the most OPEN gate in the taxonomy so far: any degree in any subject, at any age, any number of times. A commerce, arts, engineering or science graduate reaches management through the same door, which makes mid_stream_entry 'after_any_degree' correct across most of the sector and makes class12_prerequisite 'any'.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-09",
+      "source": "https://www.mbauniverse.com/cat/eligibility",
+      "authority": "Indian Institutes of Management, CAT notification"
+    },
+    {
+      "key": "icai-ca-route",
+      "statement": "The ICAI Chartered Accountancy route has four stages: Foundation, Intermediate, three years of articleship training, and Final, plus the mandatory AICITSS course. CA Foundation is open after class 12 from ANY stream - Commerce, Science or Arts. Eligible graduates skip Foundation and enter Intermediate directly. Articleship begins after clearing one or both Intermediate groups.",
+      "implication": "CA has no subject gate at class 12 and no degree requirement, so class12_prerequisite is 'any' and mid_stream_entry is 'open'. The three-year articleship is why years_to_qualify is about 5 and why the profession is earned rather than admitted to.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-10",
+      "source": "https://www.pw.live/superclass-blogs/exams/ca-course-details-2026",
+      "authority": "Institute of Chartered Accountants of India"
+    },
+    {
+      "key": "icsi-cs-route",
+      "statement": "The ICSI Company Secretary route has three levels: CSEET, Executive Programme and Professional Programme, plus practical training, taking three to five years in total. CSEET is open after class 12 in ANY stream, minimum age 17. Graduates with 50 percent, and candidates at the final level of the ICAI or ICMAI courses, may enter the Executive Programme directly. Executive and Professional examinations are held twice a year, in June and December.",
+      "implication": "Same shape as CA: no class-12 subject gate, no degree required, examination-and-training based. Company Secretary sits in Sector 7 - delete company law and the role disappears.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-10",
+      "source": "https://www.catestseries.org/blogs/company-secretary-admission.php",
+      "authority": "Institute of Company Secretaries of India"
+    },
+    {
+      "key": "bci-advocate-enrolment-aibe",
+      "statement": "To practise law in India: an LLB (three-year or five-year) from a recognised university with at least 45 percent (40 percent SC/ST/PwD), then enrolment as an advocate with a State Bar Council under Section 24 of the Advocates Act 1961, then the All India Bar Examination for the Certificate of Practice. Enrolment comes BEFORE the AIBE - registration will not proceed without an enrolment number. There is no age limit and no cap on AIBE attempts.",
+      "implication": "Lawyer is Tier A with the Bar Council of India as licensing_body and legal_accountability true. The absence of an age or attempt cap makes law reachable mid-career: a graduate of any discipline can take the three-year LLB at any age.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-10",
+      "source": "https://www.pw.live/judiciary/exams/aibe-exam-eligibility",
+      "authority": "Bar Council of India"
+    },
+    {
+      "key": "upsc-cse-age-attempts",
+      "statement": "UPSC Civil Services Examination requires a bachelor's degree in any discipline. Minimum age 21. Maximum age and attempts by category: General 32 years and 6 attempts; OBC 35 years and 9 attempts; SC and ST 37 years with unlimited attempts.",
+      "implication": "The hardest entry_window in the taxonomy and a genuine one - unlike JEE, there is no lateral route around it. is_hard_block stays false only because the age ceiling is high enough that a graduate of any age under 32 can still start. Degree discipline is irrelevant, so class12_prerequisite is 'any'.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-10",
+      "source": "https://vajiramandravi.com/upsc-exam/upsc-age-limit/",
+      "authority": "Union Public Service Commission"
     }
   ],
   "pending_verification": [

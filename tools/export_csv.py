@@ -33,9 +33,16 @@ COLUMNS = [
     "mid_stream_entry",
     "class12_prerequisite",
     "entrance_exams",
+    "entry_gate",
+    "applicants_per_seat",
+    "prep_years",
     "licensing_body",
     "after_undergrad",
     "self_employment",
+    "self_emp_ceiling_lpa",
+    "self_emp_route",
+    "india_demand",
+    "pathway",
     "ai_exposure",
     "ai_reason",
     "role_spread",
@@ -59,6 +66,9 @@ COLUMNS = [
 DEGREE_VALUES = {"none", "certificate", "undergrad", "professional"}
 ENTRY_VALUES = {"open", "after_any_degree", "restart_undergrad"}
 AFTER_UG = {"masters_required", "masters_is_the_entry", "masters_advantage", "work_first"}
+# self_employment is an OBJECT, not a string. The ceiling lives with the thing it belongs to.
+# Reason it exists: mid_career_lpa is EMPLOYED-ONLY by design (§8.4), which deleted exactly the
+# half of the income where the trades win and made a mason look trapped at 3.0 LPA for life.
 SELF_EMP = {"common", "possible_later", "rare"}
 BANDS = {"low", "medium", "high"}
 PROTECTIONS = {"legal_accountability", "physical_unstructured", "human_trust_is_the_product", "irreversible_risk"}
@@ -66,6 +76,31 @@ EXPOSURES = {"output_is_digital", "routine_rule_based", "no_client_relationship"
 SUBJECTS = {"physics", "chemistry", "maths", "biology", "english", "accountancy", "economics"}
 TIERS = {"A", "B", "C"}
 STATUSES = {"verified", "judgment"}
+
+# DEMAND is the answer to "should this be dropped?" — and the answer is almost always no.
+#   high       hiring at volume today
+#   moderate   steady, unremarkable hiring
+#   low        thin market, few posts — but STABLE. Physicist and Mathematician live here.
+#   declining  total employment is structurally SHRINKING because technology is absorbing
+#              the work itself. Still listed, because the work exists and pays today.
+# There is no 'obsolete' value: work that has actually died — typewriter mechanic, stone
+# tool maker — is never entered in the first place. See DECISIONS.md §8.45.
+DEMAND = {"high", "moderate", "low", "declining"}
+PATHWAY = {"india", "abroad", "any"}
+
+# entry_window keys, pinned. DECISIONS.md §4.3 documented `constrained_routes[]` and
+# `open_routes[]` while every record used `constrained_route` and `bypass` as strings, and
+# spec_drift() never noticed because it only compares TOP-LEVEL profession keys. Nested shapes
+# need pinning too.
+ENTRY_WINDOW_KEYS = {"max_years_since_class12", "max_age", "is_hard_block",
+                     "constrained_route", "bypass"}
+
+
+def gates():
+    return json.loads((ROOT / "data" / "entrance_gates.json").read_text(encoding="utf-8"))["gates"]
+
+
+GATES = gates()
 
 
 def filter_rules():
@@ -155,8 +190,47 @@ def check(p, valid_tags):
 
     if p.get("after_undergrad") not in AFTER_UG:
         out.append(f"{pid}: bad after_undergrad '{p.get('after_undergrad')}'")
-    if p.get("self_employment") not in SELF_EMP:
-        out.append(f"{pid}: bad self_employment '{p.get('self_employment')}'")
+    se = p.get("self_employment")
+    if not isinstance(se, dict):
+        out.append(f"{pid}: self_employment must be an object, not '{se}'")
+    else:
+        if se.get("likelihood") not in SELF_EMP:
+            out.append(f"{pid}: bad self_employment.likelihood '{se.get('likelihood')}'")
+        if se.get("likelihood") == "rare":
+            if se.get("ceiling_lpa") or se.get("route"):
+                out.append(f"{pid}: self_employment 'rare' must have null ceiling_lpa and route")
+        else:
+            if not (se.get("route") or "").strip():
+                out.append(f"{pid}: self_employment '{se.get('likelihood')}' needs a route — "
+                           f"how does someone actually get there?")
+
+    win = p.get("entry_window")
+    if win:
+        unknown = set(win) - ENTRY_WINDOW_KEYS
+        if unknown:
+            out.append(f"{pid}: entry_window has unknown key(s) {sorted(unknown)} — "
+                       f"the documented shape is {sorted(ENTRY_WINDOW_KEYS)}")
+
+    comp = p.get("entry_competition")
+    if comp is not None:
+        if comp.get("primary_gate") and comp["primary_gate"] not in GATES:
+            out.append(f"{pid}: entry_competition.primary_gate '{comp['primary_gate']}' "
+                       f"is not in entrance_gates.json")
+        for g in comp.get("alternative_gates") or []:
+            if g not in GATES:
+                out.append(f"{pid}: entry_competition alternative gate '{g}' is not in entrance_gates.json")
+        if not comp.get("primary_gate") and not comp.get("alternative_gates"):
+            out.append(f"{pid}: entry_competition present but names no gate — use null instead")
+
+    ds = p.get("demand_signal") or {}
+    if ds.get("india_demand") not in DEMAND:
+        out.append(f"{pid}: bad india_demand '{ds.get('india_demand')}' — one of {sorted(DEMAND)}")
+    if ds.get("pathway") not in PATHWAY:
+        out.append(f"{pid}: bad pathway '{ds.get('pathway')}' — one of {sorted(PATHWAY)}")
+    if ds.get("india_demand") == "declining" and not any(
+            n.get("field") == "demand_signal" for n in p.get("nuances", [])):
+        # 'declining' is a claim that a profession is shrinking. Never assert that bare.
+        out.append(f"{pid}: india_demand 'declining' needs a nuance on demand_signal saying WHY")
 
     r = p.get("admin_review")
     ai = p.get("ai_exposure")
@@ -183,8 +257,10 @@ def check(p, valid_tags):
             out.append(f"{pid}: bad ai_exposure band")
         if not ai.get("reason"):
             out.append(f"{pid}: ai_exposure needs a reason naming exposed vs safe job roles")
-        if ai.get("band") == "high" and not (r or {}).get("required"):
-            out.append(f"{pid}: ai_exposure high must be flagged for admin_review")
+        # A high band no longer forces an admin_review. ai_exposure SPEAKS FOR ITSELF — the
+        # application reads the tag and frames the warning, and no human decision is owed in the
+        # data. The same rule was removed from audit.py when that was decided; it survived here
+        # for three sectors, failing on exit code while the printed output read clean.
 
     if not r:
         out.append(f"{pid}: missing admin_review block")
@@ -232,13 +308,24 @@ def export(path, valid_tags):
                     "degree_dependency": p["degree_dependency"],
                     "mid_stream_entry": p["mid_stream_entry"],
                     "class12_prerequisite": prereq if prereq == "any" else " + ".join(prereq),
+                    "entry_gate": ((p.get("entry_competition") or {}).get("primary_gate") or ""),
+                    "applicants_per_seat": (
+                        GATES.get(((p.get("entry_competition") or {}).get("primary_gate") or ""), {})
+                        .get("applicants_per_seat") or ""),
+                    "prep_years": (
+                        GATES.get(((p.get("entry_competition") or {}).get("primary_gate") or ""), {})
+                        .get("preparation_years") or ""),
                     "entrance_exams": " | ".join(
-                        p.get("entrance_exams", {}).get("national", [])
-                        + p.get("entrance_exams", {}).get("private_reputed", [])
+                        p.get("entrance_exams", {}).get("public_routes", [])
+                        + p.get("entrance_exams", {}).get("private_entrances", [])
                     ) or "none",
                     "licensing_body": p.get("licensing_body") or "",
                     "after_undergrad": p.get("after_undergrad", ""),
-                    "self_employment": p.get("self_employment", ""),
+                    "self_employment": (p.get("self_employment") or {}).get("likelihood", ""),
+                    "self_emp_ceiling_lpa": (p.get("self_employment") or {}).get("ceiling_lpa") or "",
+                    "self_emp_route": (p.get("self_employment") or {}).get("route") or "",
+                    "india_demand": (p.get("demand_signal") or {}).get("india_demand", ""),
+                    "pathway": (p.get("demand_signal") or {}).get("pathway", ""),
                     "ai_exposure": (p.get("ai_exposure") or {}).get("band", ""),
                     "ai_reason": (p.get("ai_exposure") or {}).get("reason", ""),
                     "role_spread": " || ".join(

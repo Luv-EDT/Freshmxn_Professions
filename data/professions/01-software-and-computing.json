@@ -1,7 +1,7 @@
 {
   "professional_sector": "Software & Computing",
   "professional_sector_id": 1,
-  "version": "14.0",
+  "version": "16.0",
   "profession_count": 14,
   "sector_verification_note": "Sector 1 contains ZERO Tier A professions — nothing in computing is statutorily licensed in India. Almost every record is Tier C judgment. The only verified facts here are the JEE/class-12 subject gates, from data/verified_facts.json.",
   "professions": [
@@ -53,17 +53,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main (B.Tech)",
           "CUET (BCA/B.Sc)"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply. No exam needed for most BCA/B.Sc seats."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": null,
       "licensing_body": null,
@@ -90,7 +96,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance and contract development, or founding a product company.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -164,10 +175,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "No entrance exam. This is the lowest-barrier entry point in the sector."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 1,
@@ -188,12 +200,17 @@
         }
       },
       "demand_signal": {
-        "india_demand": "moderate",
+        "india_demand": "declining",
         "pathway": "india"
       },
       "filter": false,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance from the first client, then a small agency. This is the most common self-employment in Sector 1 and also the most exposed to no-code tools taking the low end.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 3,
@@ -213,11 +230,16 @@
         "source": null,
         "checked_on": "2026-08-03"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Demand is declining. Wix, Shopify and no-code builders have absorbed most of the simple brochure-and-catalogue work that defined this job, and generative tools are taking the rest of the low end. What survives is integration, performance and commerce operations for businesses that have outgrown a template. Still listed - Indian small business is enormous and the work has not vanished - but the direction is down."
+        }
+      ],
       "admin_review": {
         "required": true,
-        "priority": "high",
-        "reason": "Highest AI exposure in the sector AND the lowest salary band. Is this still a responsible recommendation, or only viable as a stepping stone into Software Developer? Needs a human call on whether it ships as a destination career."
+        "priority": "medium",
+        "reason": "SELF-EMPLOYMENT CEILING OWED. Employed mid-career is 4.5 lakh and people in this profession routinely go independent, but no reliable Indian figure was found for what they earn once they do. Until it exists the record understates the profession, which is exactly the defect this field was added to fix. The route is recorded; the number is not."
       }
     },
     {
@@ -284,10 +306,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "Portfolio-based hiring. Private game/animation institutes admit without an entrance exam."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 2,
@@ -313,7 +336,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Indie studio or contract development for larger studios.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -333,11 +361,16 @@
         "source": null,
         "checked_on": "2026-08-03"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "AR and VR development is merged in here rather than standing alone. The engines are the same - Unity and Unreal - the studios are largely the same, and India's standalone XR market is small. Confirmed as a merge rather than a separate profession."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "AR/VR was merged in here — identical Unity/Unreal skillset and same studios, since India's standalone XR market is small. Confirm the merge, and confirm the salary band covers both."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -387,16 +420,22 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main (B.Tech)",
           "CUET (BCA/B.Sc)"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": null,
       "licensing_body": null,
@@ -423,7 +462,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent consulting or founding a product company, on the strength of a portfolio.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 18,
@@ -447,12 +491,20 @@
         {
           "field": "economics",
           "statement": "The early band reflects a hiring market that has moved fast in both directions. Treat the ceiling as cycle-dependent rather than structural."
+        },
+        {
+          "field": "degree_dependency",
+          "statement": "Tagged undergrad because that is what the hiring market overwhelmingly screens on, not because the knowledge is unreachable otherwise. This is the profession in Sector 1 where a demonstrated portfolio - published models, competition results, real deployed systems - most often overrides the absence of a matching degree. The tag is the destination and the usual door; it is not the only door."
+        },
+        {
+          "field": "economics",
+          "statement": "The widest band in the taxonomy, and the width is real rather than an artefact. The same job title covers someone fine-tuning an existing model against a vendor API and someone training models at scale in a research-adjacent team, and Indian pay for the second is set by a small global market while pay for the first is set by ordinary IT services rates."
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "Widest salary band in the file (6-14 LPA) and the most likely to be wrong. The undergrad tier is also contestable given how much hiring is portfolio-based."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -501,10 +553,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "No entrance exam. Certification and portfolio route."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 1,
@@ -530,7 +583,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freelance analytics and dashboard work for small businesses.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 8,
@@ -557,9 +615,9 @@
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "High AI exposure AND a contested tier downgrade (undergrad -> certificate). This is a very common recommendation for commerce students, so getting it wrong is costly."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -607,16 +665,22 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main (B.Tech)",
           "CUET (BCA/B.Sc)"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": null,
       "licensing_body": null,
@@ -643,7 +707,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 12,
@@ -733,10 +802,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "Certification-driven, not exam-driven."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 2,
@@ -762,7 +832,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent penetration testing and audit practice, always under written scope.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -782,11 +857,20 @@
         "source": null,
         "checked_on": "2026-08-03"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "Tagged certificate rather than undergrad on the strength of how hiring actually works: OSCP, CEH, CISSP and equivalent certifications are what employers screen on, and the field takes entrants from IT support and networking backgrounds without a security degree. A computer science degree helps and is the common path; it is not the gate."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Penetration Tester and Red Team Analyst are offensive-security roles, and the skills are the same ones an attacker uses. What separates the profession from the crime is authorisation - a signed scope agreement before any testing - and that distinction belongs in front of a school-age student at the point the role is shown, not after."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "Tier downgraded undergrad -> certificate on judgment alone; consequential if wrong. Separately, the offensive-security roles need a human to check how they are framed for school-age users."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -833,10 +917,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "Vendor certification route, no entrance exam."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 2,
@@ -862,7 +947,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "possible_later",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent cloud consulting, usually after certifications and production experience.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -949,10 +1039,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "Certification route, no entrance exam."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 1,
@@ -978,7 +1069,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 5,
@@ -1005,9 +1101,9 @@
         }
       ],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "High AI exposure on a profession that is still one of the largest entry-level employers in Indian IT. Warning students away from a job market that currently hires at volume is a serious call — needs a human decision on how strongly to flag it."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1072,10 +1168,11 @@
         }
       ],
       "entrance_exams": {
-        "national": [],
-        "private_reputed": [],
+        "public_routes": [],
+        "private_entrances": [],
         "note": "ITI/polytechnic admission is on class 10 marks, not an entrance exam."
       },
+      "entry_competition": null,
       "entry_window": null,
       "licensing_body": null,
       "years_to_qualify": 1,
@@ -1101,7 +1198,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own AMC business maintaining IT for small offices and shops.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -1121,11 +1223,16 @@
         "source": null,
         "checked_on": "2026-08-03"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Listed as a destination, and it is a real one: network, systems and NOC work is a durable career with certification ladders - CCNA onwards - that raise pay without a degree. It is also the cheapest technical entry point in this sector, which is why the low band is not the whole story. A student should know both that it pays least at entry and that it is one of the few routes into cloud and infrastructure work that does not require an engineering seat."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "Lowest salary band in the sector. Confirm it is worth listing as a destination career rather than only as an entry point that leads to networking or cloud."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1182,17 +1289,23 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main Paper 1",
           "JEE Advanced"
         ],
-        "private_reputed": [
+        "private_entrances": [
           "BITSAT",
           "VITEEE",
           "SRMJEEE",
           "COMEDK"
         ],
         "note": "State engineering entrances also apply."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": [
+          "bitsat"
+        ]
       },
       "entry_window": {
         "max_years_since_class12": 3,
@@ -1229,7 +1342,12 @@
       },
       "filter": true,
       "after_undergrad": "masters_advantage",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 20,
@@ -1249,11 +1367,17 @@
         "source": "data/verified_facts.json#jee-main-paper1-btech",
         "checked_on": "2026-07-31"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "entry_window",
+          "statement": "The lateral-entry bypass is reliable at national level. AICTE norms set NO maximum age for diploma-to-B.Tech lateral entry, so the three-year JEE window constrains one route and not the profession. What varies is the state: some state LEET rules and some institutions apply an 18 to 26 band, and the diploma aggregate requirement runs 45 to 50 percent. A student should check their own state's LEET, but no state closes the door outright.",
+          "source": "https://www.collegedekho.com/articles/all-you-need-to-know-about-btech-lateral-entry/"
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "entry_window depends on state lateral-entry rules, which vary — some states cap at 26. Needs per-state confirmation before the bypass is presented as reliable."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1320,11 +1444,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (for any bachelor's)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "No specialised entrance. Platform certification after graduation is the real gate."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1351,7 +1479,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent implementation consulting, usually after certification and client relationships.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 15,
@@ -1371,11 +1504,16 @@
         "source": null,
         "checked_on": "2026-08-03"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "RPA and no-code automation are merged in here as enterprise tooling rather than kept as a separate career. The work is configuring a vendor platform against a client's process, which is this profession's skill set applied to a different tool. Confirmed as a merge."
+        }
+      ],
       "admin_review": {
-        "required": true,
-        "priority": "medium",
-        "reason": "No-code and RPA were merged in here as enterprise tooling rather than kept as a standalone career. Confirm the merge — the alternative view is that RPA is its own job family in Indian IT services."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     },
     {
@@ -1422,11 +1560,15 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "CUET (for any bachelor's)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "No specialised entrance exam."
+      },
+      "entry_competition": {
+        "primary_gate": "cuet-ug",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1453,7 +1595,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "rare",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -1543,12 +1690,16 @@
         }
       ],
       "entrance_exams": {
-        "national": [
+        "public_routes": [
           "JEE Main (B.Tech)",
           "CUET (B.Sc)"
         ],
-        "private_reputed": [],
+        "private_entrances": [],
         "note": "VFX and animation institutes admit on portfolio, without an entrance exam."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": []
       },
       "entry_window": null,
       "licensing_body": null,
@@ -1575,7 +1726,12 @@
       },
       "filter": true,
       "after_undergrad": "work_first",
-      "self_employment": "common",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance for studios, or a small pipeline and tools shop.",
+        "verification": null
+      },
       "ai_exposure": {
         "work_composition": {
           "knowledge_foundational": 10,
@@ -1597,9 +1753,9 @@
       },
       "nuances": [],
       "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "India is a global VFX outsourcing hub employing tens of thousands, and this record effectively warns students about it. That is a consequential claim about a large real industry and needs a human decision."
+        "required": false,
+        "priority": "none",
+        "reason": null
       }
     }
   ],
@@ -1767,20 +1923,23 @@
       "higher/lower are RELATIVE to the profession's own profile, never absolute scores. Actual scoring stays in the separate psychometric pipeline; this only flags internal variance so the pipeline and the UI know where one profession contains two different people.",
       "Factor names are constrained by data/psychometric_factors.json and every named role must exist in that profession's job_roles — both validator-enforced.",
       "6 of 14 professions in this sector are 'wide'."
+    ],
+    "15.0": [
+      "RESEARCH BATCH. Four admin_review items closed.",
+      "AI/ML Engineer: the wide band is real, not an artefact - the same title covers API fine-tuning at IT services rates and model training at global-market rates. Undergrad tier kept, with a nuance that a portfolio most often overrides it in this profession specifically.",
+      "Cybersecurity Specialist: the certificate tier stands - OSCP, CEH and CISSP are what employers screen on, and the field takes entrants from IT support and networking. Offensive-security roles now carry a nuance stating that authorisation is what separates the profession from the crime, and that it belongs in front of a school-age student at the point the role is shown.",
+      "IT Support & Network Technician: confirmed as a destination, not only a stepping stone.",
+      "Embedded Software & IoT Developer: AICTE sets NO maximum age for lateral entry, so the bypass is reliable nationally; state LEET rules vary within an 18 to 26 band."
+    ],
+    "16.0": [
+      "Received the Blockchain & Web3 Developer merge record from Sector 2, where it had been filed by mistake. Target corrected to 'Software Developer', which is in this sector - a merge is same-sector by definition."
     ]
   },
-  "locked": {
-    "status": "LOCKED",
-    "date": "2026-08-06",
-    "passed": [
-      "export_csv.py per-field validation",
-      "audit.py cross-field consistency",
-      "duplicate job roles across professions",
-      "cross-file routed_elsewhere reconciliation",
-      "DECISIONS.md spec-drift check",
-      "manual iteration-2 read of every key"
-    ],
-    "note": "Locked means both tools are clean and every key has had two review passes. It does NOT mean the admin_review queue is resolved — those are decisions still owed by a human.",
-    "open_admin_reviews": 10
-  }
+  "merged_into": [
+    {
+      "profession": "Blockchain & Web3 Developer",
+      "merged_into": "Software Developer",
+      "why": "Thin and volatile Indian market. Smart Contract Engineer retained as a job role."
+    }
+  ]
 }
