@@ -1,8 +1,8 @@
 {
   "professional_sector": "Healthcare & Medicine",
   "professional_sector_id": 4,
-  "version": "1.7",
-  "profession_count": 18,
+  "version": "1.9",
+  "profession_count": 20,
   "sector_verification_note": "The most heavily Tier A sector in the taxonomy — the mirror image of Sector 1, where nothing is licensed. 18 of 20 professions name a statutory licensing body. Two verified facts shape everything: NEET applies equally to government, private AND deemed colleges, so there is NO private bypass for medicine; and the NCAHP Act 2021 moved allied health from unregulated to statutorily licensed, making physiotherapy, optometry, MLT and the imaging and OT technologist roles Tier A rather than open-market.",
   "professions": [
     {
@@ -107,6 +107,7 @@
         "mid_career_lpa": "18-45",
         "mid_career_midpoint": 31.5,
         "payback_years": 2.78,
+        "distribution": "bimodal",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -166,12 +167,16 @@
           "field": "economics",
           "statement": "The stored figure is a blend of two costs that are twenty times apart and it describes almost no real student. A government MBBS seat costs roughly 10,000-50,000 rupees a year - under 3 lakh for the whole degree, and as little as 6,000 a year at AIIMS Delhi. A private or deemed seat runs 15-25 lakh a year, 85 lakh to 1.3 crore for the course. Which one a student pays is decided entirely by their NEET rank, not by anything they can plan for.",
           "source": "https://www.vedantu.com/neet/mbbs-fees-in-government-vs-private-colleges"
+        },
+        {
+          "field": "economics",
+          "statement": "economics.distribution is 'bimodal', which is a statement that the range and the midpoint should not be read as a typical income. Both pay AND cost are bimodal. A government MBBS seat costs roughly 1-5 lakh and a private or deemed seat 60 lakh to 1.2 crore; employed hospital pay and private practice income are likewise two distributions. The midpoint describes almost nobody. This is the sector-wide question DECISIONS.md has carried open since Sector 4 was built. The compensation filter does not fire on a power_law record, because deleting a profession on the strength of a number the record itself calls meaningless would be worse than showing it."
         }
       ],
       "admin_review": {
-        "required": false,
-        "priority": "none",
-        "reason": null
+        "required": true,
+        "priority": "high",
+        "reason": "economics.distribution is 'bimodal'. Both pay AND cost are bimodal. A government MBBS seat costs roughly 1-5 lakh and a private or deemed seat 60 lakh to 1.2 crore; employed hospital pay and private practice income are likewise two distributions. The midpoint describes almost nobody. This is the sector-wide question DECISIONS.md has carried open since Sector 4 was built. Decide how the application should present this record - suppress the range and state the risk, or show both halves separately."
       }
     },
     {
@@ -249,6 +254,7 @@
         "mid_career_lpa": "6-15",
         "mid_career_midpoint": 10.5,
         "payback_years": 3.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -369,6 +375,7 @@
         "mid_career_lpa": "6-14",
         "mid_career_midpoint": 10.0,
         "payback_years": 2.22,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -480,6 +487,7 @@
         "mid_career_lpa": "5-12",
         "mid_career_midpoint": 8.5,
         "payback_years": 2.13,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -596,6 +604,7 @@
         "mid_career_lpa": "8-16",
         "mid_career_midpoint": 12.0,
         "payback_years": 0.91,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -720,6 +729,7 @@
         "mid_career_lpa": "5-10",
         "mid_career_midpoint": 7.5,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -848,6 +858,7 @@
         "mid_career_lpa": "5-11",
         "mid_career_midpoint": 8.0,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -976,6 +987,7 @@
         "mid_career_lpa": "5-12",
         "mid_career_midpoint": 8.5,
         "payback_years": 1.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1104,6 +1116,7 @@
         "mid_career_lpa": "5-10",
         "mid_career_midpoint": 7.5,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1228,6 +1241,7 @@
         "mid_career_lpa": "6-13",
         "mid_career_midpoint": 9.5,
         "payback_years": 0.89,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1343,6 +1357,7 @@
         "mid_career_lpa": "5.5-11",
         "mid_career_midpoint": 8.25,
         "payback_years": 0.94,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1471,6 +1486,7 @@
         "mid_career_lpa": "5-12",
         "mid_career_midpoint": 8.5,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1590,6 +1606,7 @@
         "mid_career_lpa": "4-8",
         "mid_career_midpoint": 6.0,
         "payback_years": 0.5,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1714,6 +1731,7 @@
         "mid_career_lpa": "5-10",
         "mid_career_midpoint": 7.5,
         "payback_years": 0.53,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1832,6 +1850,7 @@
         "mid_career_lpa": "5-9",
         "mid_career_midpoint": 7.0,
         "payback_years": 0.53,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -1949,6 +1968,7 @@
         "mid_career_lpa": "4.5-8",
         "mid_career_midpoint": 6.25,
         "payback_years": 0.57,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -2067,6 +2087,7 @@
         "mid_career_lpa": "4-7",
         "mid_career_midpoint": 5.5,
         "payback_years": 0.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after full registration, EMPLOYED only. Private practice income is excluded — that depends on business skill, not the clinical qualification.",
         "verification": {
           "status": "judgment",
@@ -2205,6 +2226,7 @@
         "mid_career_lpa": "8-18",
         "mid_career_midpoint": 13.0,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. This profession has no statutory registration, so there is no registration date to count from. Self-employed and consulting income is excluded.",
         "verification": {
           "status": "judgment",
@@ -2254,6 +2276,338 @@
         "required": false,
         "priority": null,
         "reason": null
+      }
+    },
+    {
+      "id": "hlt-home-care-attendant",
+      "profession": "Elder & Home Care Attendant",
+      "one_liner": "Looks after people who cannot fully look after themselves - at home, daily, in person.",
+      "job_roles": [
+        "Home Care Attendant",
+        "Elder Care Attendant",
+        "Patient Care Attendant (Home)",
+        "Palliative Care Attendant",
+        "Disability Support Attendant",
+        "Post-operative Care Attendant",
+        "Live-in Caregiver",
+        "Care Coordinator (Home Health Agency)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Care Coordinator (Home Health Agency)"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness",
+              "extraversion"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Coordinators match attendants to families, handle rosters, complaints and billing for an agency. It is the step off physical care work and the only visible progression in this profession."
+          },
+          {
+            "roles": [
+              "Palliative Care Attendant"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "agreeableness",
+              "neuroticism"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "End-of-life care is physically and emotionally the hardest work here - pain, distress, families and death, sustained over weeks in someone's home with no clinical team present."
+          },
+          {
+            "roles": [
+              "Live-in Caregiver"
+            ],
+            "higher": [
+              "conscientiousness",
+              "agreeableness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Living in a client's home collapses the boundary between work and life entirely. Hours are nominal, privacy is absent, and it is the arrangement most open to exploitation."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "DWSSC",
+        "BWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Class 8 or 10 is typical."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A General Duty Assistant or home health aide course - HSSC/NSQF aligned, usually three to six months, covering vitals, mobility, hygiene and basic emergency response."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "A home healthcare agency, a hospital, an assisted living facility, or a family directly."
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Specialise in post-operative, palliative or dementia care, or move into agency coordination. Nursing is the qualification route upward and requires starting a degree."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Home healthcare agency training programmes"
+        ],
+        "note": "None. There is no statutory qualification and no register, which for work involving medication reminders, mobility and vulnerable people is a substantial gap."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.5-3.0",
+        "mid_career_lpa": "2.4-5.4",
+        "mid_career_midpoint": 3.9,
+        "payback_years": 0.13,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Taking private clients directly rather than through an agency, which pays considerably more because the agency margin is large - and which removes what little protection and recourse the agency arrangement provides.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Almost unexposed, and the honest note is that this is one of the professions AI is most often wrongly predicted to replace. Care is lifting, washing, feeding, watching and being present with a person who is frightened or in pain. Monitoring devices and reminder systems assist the attendant; they do not do the work. Care Coordinator carries the only real exposure, through scheduling and matching software."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High and structurally rising, and this is one of the most reliable demand signals in the dataset. India's population is ageing, households are smaller, and adult children increasingly live in other cities or countries. The need for paid care at home grows directly from all three and none of them reverses."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and it is a serious gap. Attendants handle medication reminders, mobility, catheters and vulnerable adults with no statutory qualification, no register and no background verification requirement. The Nursing councils regulate nurses; nothing regulates this."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Built in Sector 18 and moved here on independent review. The substitution test decided it: swap the home for a hospital ward and the work - bathing, feeding, positioning, mobility, post-operative and palliative support - survives unchanged, so the SETTING is the tag and the object of concern is a dependent person's body. It also belongs beside Nurse and Emergency Medical Technician psychometrically rather than beside Beautician and Tattoo Artist. DECISIONS.md 2.06 had assigned this base layer to Sector 4 all along."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced wage figure for Indian home care attendants, agency or private, and the AGENCY MARGIN - the gap between what a family pays and what the attendant receives - is reportedly large and is the single most decision-relevant number for anyone entering this work. Separately, GENERAL DUTY ASSISTANT - the hospital ward counterpart, and the other half of the base layer DECISIONS.md 2.06 assigns to this sector - still has no record anywhere and should be added beside this one."
+      }
+    },
+    {
+      "id": "hlt-general-duty-assistant",
+      "profession": "General Duty Assistant",
+      "one_liner": "The hospital ward attendant - moves, washes, feeds and watches patients, and assists nurses.",
+      "job_roles": [
+        "General Duty Assistant",
+        "Nursing Attendant",
+        "Patient Care Assistant (Hospital)",
+        "Ward Attendant",
+        "Operation Theatre Attendant",
+        "Patient Transport Attendant",
+        "Emergency Department Attendant",
+        "Geriatric Care Assistant"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Operation Theatre Attendant"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Theatre attendants work inside a sterile field discipline - positioning patients, handling equipment, managing waste - where a breach has consequences nobody sees for days. It is the most technical version of this work and the usual step up."
+          },
+          {
+            "roles": [
+              "Emergency Department Attendant"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "neuroticism"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Emergency work is unpredictable, physically heavy and frequently distressing - trauma, intoxication, families in crisis - with no control over what arrives."
+          },
+          {
+            "roles": [
+              "Geriatric Care Assistant"
+            ],
+            "higher": [
+              "agreeableness",
+              "emotional_intelligence",
+              "conscientiousness"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Long-stay elderly care is relationship work over weeks and months rather than episodic assistance, and it is the closest ward role to home care."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "DWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Class 10 or 12 depending on the programme. No stream requirement."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A General Duty Assistant course - HSSC/NSQF aligned, typically three to six months, covering vitals, patient handling, hygiene, infection control and basic emergency response."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Hospital ward, operation theatre, emergency department, or a nursing home. Much of it is contract employment through an agency rather than direct hospital employment."
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Theatre or emergency specialisation, or study toward ANM or GNM nursing - which is the real qualification route upward and means starting a formal programme."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Hospital and private institute GDA training programmes"
+        ],
+        "note": "None. There is no entrance examination and no statutory qualification, which is why this is the most accessible entry into an Indian hospital."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.5-3.0",
+        "mid_career_lpa": "2.4-5.4",
+        "mid_career_midpoint": 3.9,
+        "payback_years": 0.13,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Almost unexposed, and this is one of the roles AI is most often wrongly predicted to replace. Lifting a patient, turning them to prevent bed sores, cleaning them, and noticing that something has changed are physical acts performed on a specific body. Monitoring equipment assists the attendant and does not do the work. What has changed the job is documentation moving onto tablets, which is a tool."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "This is the WARD half of the healthcare base layer DECISIONS.md 2.06 has assigned to Sector 4 since it was built. The HOME half - Elder & Home Care Attendant - was built in Sector 18 and moved here on review. Both halves are now in Sector 4 and the 2.06 healthcare line is closed."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Rare, and correctly so. This role exists inside a hospital's clinical hierarchy under nursing supervision - there is no independent version. Anyone offering freelance 'ward attendant' work is describing home care, which is the separate record beside this one."
+        },
+        {
+          "field": "economics",
+          "statement": "Fails the compensation filter, and it is one of the largest entry-level healthcare jobs in India for a school-leaver with no degree. The distinction that actually determines pay and benefits is not the hospital's name but whether employment is DIRECT or through a manpower agency - and most of it is through an agency."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced wage figure for Indian General Duty Assistants, and the direct-versus-agency employment split - which determines pay, provident fund and job security more than the employer does - is unquantified. The ANM and GNM nursing route is named as the way up and its cost and duration are not stated on this record; a student deciding whether to take a three-month GDA course or a two-year ANM programme has nothing here to compare."
       }
     }
   ],
@@ -2383,6 +2737,16 @@
     ],
     "1.7": [
       "Corrected a stale boundary decision that still described Medical Coder as a Sector 4 profession after it had been removed in v1.3. It survived because NO TOOL PRINTED these entries - 18 of them sat in the sector files unread. audit.py now reports the count under OPEN QUEUES."
+    ],
+    "1.8": [
+      "ELDER & HOME CARE ATTENDANT ADDED, moved in from Sector 18 after independent review and asked-and-approved before this file was edited. The substitution test is what moved it: swap the home for a ward and the work survives unchanged, so the setting is the tag. It sits beside Nurse and Emergency Medical Technician, which is also where it belongs psychometrically.",
+      "This CLOSES HALF of the base-layer gap DECISIONS.md 2.06 has assigned to this sector since it was built. The other half - GENERAL DUTY ASSISTANT, the hospital ward attendant - still has no record anywhere and is carried on this record's admin_review.",
+      "economics.distribution added to every record in this sector as part of the approved schema change. Doctor is marked BIMODAL, which finally states in the data what this sector's sector_admin_review has said in prose since v1.0: MBBS cost is 1-5 lakh at a government seat and 60 lakh to 1.2 crore at a private one, and one figure cannot describe both."
+    ],
+    "1.9": [
+      "GENERAL DUTY ASSISTANT ADDED, asked and approved. This CLOSES the healthcare base-layer gap DECISIONS.md 2.06 has carried open since this sector was built. Both halves are now here: General Duty Assistant for the hospital ward, and Elder & Home Care Attendant for the home, which was built in Sector 18 and moved in at v1.8.",
+      "It is the most accessible entry into an Indian hospital - a three-to-six-month HSSC/NSQF certificate, no degree, no entrance examination - and it fails the compensation filter. Both facts belong on the record together.",
+      "self_employment is 'rare', which is unusual in this dataset and deliberate: the role exists inside a hospital's clinical hierarchy under nursing supervision. Anyone offering freelance ward-attendant work is describing home care, which is the separate record beside it."
     ]
   },
   "sector_admin_review": {

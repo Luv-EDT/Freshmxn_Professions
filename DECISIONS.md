@@ -23,7 +23,7 @@ Everything agreed before Sector 2. Change these only deliberately.
 | `entry_competition` | `{ primary_gate, alternative_gates[] }` keyed into `entrance_gates.json`, `null` if entry is not competitively gated. See §4.35 |
 | `licensing_body` | statutory body, `null` if unregulated |
 | `years_to_qualify` | typical years from class 12 to first job |
-| `economics` | `{ cost_of_entry_lakh, early_earnings_lpa, mid_career_lpa, mid_career_midpoint, payback_years, basis, verification }` — see §8.4 |
+| `economics` | `{ cost_of_entry_lakh, early_earnings_lpa, mid_career_lpa, mid_career_midpoint, payback_years, distribution, basis, verification }` — see §8.4 |
 | `demand_signal` | `{ india_demand, pathway, note? }` — see §8.45 |
 | `filter` | **derived** boolean. True = passes the compensation rule in `filter_rules.json`. See §8.5 |
 | `after_undergrad` | `masters_required` / `masters_is_the_entry` / `masters_advantage` / `work_first` — see §8.7 |
@@ -61,6 +61,29 @@ See §8.7. Ranking by payback would put masons first. It is kept
 because it correctly isolates capital risk, which for Commercial Pilot (4.07 years, 57 lakh self-funded)
 is the whole story.
 
+### `distribution` — what SHAPE the money is
+
+Added after the 18-sector build, because six records had reached the point of saying *in their own
+nuances* that their range was meaningless while `mid_career_midpoint` continued to drive the
+`filter` boolean that decides whether a profession is shown at all. **A number the data calls
+meaningless was gating visibility.**
+
+| value | meaning |
+|---|---|
+| `range` | the ordinary case. A midpoint describes a typical person. **Default.** |
+| `power_law` | a few earn enormously, most earn little, and there is almost no middle. **Exempt from the compensation filter** — deleting a profession on the strength of a midpoint that describes nobody is worse than showing it. |
+| `bimodal` | two distinct populations, not a spread. The midpoint is correct arithmetic and describes almost nobody. |
+
+Six `power_law`: Entrepreneur (S5) · Digital Content Creator (S9) · Actor (S10) · Professional
+Athlete (S11) · Esports Professional (S11) · Coaching Faculty (S12).
+Two `bimodal`: School Teacher (S12), KVS 8.3 lakh against private-school pay a fifth of it · Doctor
+(S4), where **both pay and MBBS cost** are bimodal — **this closes the sector-wide question Sector 4
+has carried open since it was built.**
+
+Anything other than `range` forces `admin_review.required` — validator-enforced. A record saying
+its own money cannot be averaged is describing an unsettled presentation decision, and §9 says
+those belong to a human. **The enum records the shape; it does not decide how to display it.**
+
 **All wage figures come from commercial salary aggregators, not government data.** India has no
 authoritative free source for occupational earnings. This is the single largest known weakness.
 
@@ -71,6 +94,7 @@ Single parent. No profession in two sectors. **Overlaps push down to industrial 
 - Teaching-anything → Sector 12, whatever the subject.
 - Empirical research → Sector 3. Interpretation/heritage → Sector 17.
 - **Method decides, not discipline.** Empirical and quantitative work goes to Sector 3 even when the subject is social — research psychology and demography sit there. Ethnography and cultural interpretation go to Sector 17. The discipline label is not the test.
+- **But the QUESTION decides between 3 and 13.** Empirical work asking *did this specific programme work* is Sector 13 — the client is a funder, the output is accountability, and the finding does not generalise. Empirical work asking a question whose answer holds beyond the case is Sector 3. Monitoring & Evaluation Analyst is quantitative to its core and sits in 13 on exactly this line; without the sentence, §2 read literally would move it and lose the distinction between producing knowledge and proving a claim.
 - **Intervene vs interpret** splits Sector 13 from Sector 17. A counsellor changes wellbeing (13). A historian explains it (17).
 
 ### 2.05 The 5 / 6 / 7 boundary
@@ -102,8 +126,37 @@ Two reasons, and the second matters more:
 **Still owed** — bases with no home yet: apparel (Tailor, Garment Maker, Handloom Weaver) → 8 or
 17 · agriculture (Farmer, Dairy Worker) → 15 · hospitality (Cook, Steward, Housekeeping) → 16 ·
 beauty (Beautician, Hair Stylist) → 18 · healthcare (General Duty Assistant, Home Health Aide) → 4.
+
+**Status after the 18-sector build and the review that followed:** apparel, agriculture,
+hospitality, beauty **and healthcare** are all **closed**. The healthcare line closed last: Elder &
+Home Care Attendant (the home) moved from Sector 18 into Sector 4, and General Duty Assistant (the
+ward) was added beside it. **Urban & Regional Planner** was also added to Sector 2 — not a base
+layer, but the same class of miss: §4 used B.Plan as its worked example of the
+`class12_prerequisite` rule and `verified_facts.json#jee-main-paper2b-bplan` had been fetched and
+verified, yet **no profession in any of the 18 sectors consumed it.** A fact existed for a
+profession that did not.
+
+*(superseded detail, kept for the record)* — Tailor, Handloom Weaver and Handicraft Artisan in 8; Farmer in 15; Cook, Steward and Housekeeping in 16; Beautician and Hair Stylist in 18. The healthcare line is **half open**: Sector 18 built *Elder & Home Care Attendant*, covering care in the home, which is where the substitution test is weakest — swap the home for a ward and the work survives, which argues the whole record belongs in Sector 4. **General Duty Assistant, the hospital half, has no record anywhere.** Both need one decision together, and Sector 4 is built.
 **Private security** (~9 million people) has no home at all: it fails the Sector 7 test, since
 private security does not exist because the state exists.
+
+**DECIDED, 2026-08-12 — private security is OMITTED, and this is a decision rather than a gap.**
+The independent review argued for reopening it: Firefighter already sits in Sector 7 and a factory
+fire crew does not exist because the state exists either, so §2.1's test was arguably written for
+the *legal* professions rather than for the protective-services family Sector 7 actually contains.
+That argument was heard and overruled on a different ground — **that AI surveillance will reduce
+guard headcount.**
+
+Recorded honestly, including its weakness: **no sourced headcount trend supports the decline
+either way.** The argument is strongest for the CCTV and monitoring roles, which analytics does
+substitute for. It is weakest for the guard at the gate, whose function is presence, intervention
+and giving the client someone to hold liable — surveillance *detects*, it does not stop anyone.
+PSARA 2005 formalisation has also been pushing this workforce toward licensed agencies rather than
+away.
+
+**If the decline is ever sourced, the rule says list it as `declining`, not omit it** — §8.45's
+only ground for omission is work that has actually died. Until then the taxonomy is silent on
+roughly nine million people by choice, and this paragraph is why.
 
 ### 2.1 Sector 7 boundary
 
@@ -404,6 +457,36 @@ Tier A/B facts get a `checked_on` date, because **rules change** — the B.Arch 
 Verified facts shared across sectors live in `data/verified_facts.json` so they're fetched once and audited in one place.
 
 **Cost:** ~5–8 fetches per sector, not 300.
+
+### 7.1 An OFFICE is not a LICENCE — the test before naming a `licensing_body`
+
+A `licensing_body` is only real if there is **unlicensed practice for it to police**. Ask one
+question:
+
+> **Could someone do this work without permission, and would that be unlawful?**
+
+If yes, a licence exists and a body can strike you off — Doctor, Architect, Advocate, Chartered
+Accountant. If the work is **impossible** without an appointment, it is an **office**, not a
+licence: there is no unlicensed judge, no unlicensed IAS officer, no unlicensed colonel. An office
+takes `licensing_body: null` and **Tier B** — the exam that appoints you is the gate.
+
+Two traps this rule closes:
+
+- **A prerequisite is not a licence.** Bar enrolment is required to *apply* for judicial services,
+  so it belongs in `path_to_entry`, not `licensing_body`. Needing a credential to enter the
+  competition does not mean that credential's body regulates the job you win.
+- **The body must be the one that regulates *this* work.** A plausible, real, correctly-spelled
+  body is still wrong if it does not control this occupation. The BCI cannot discipline a judge; a
+  judge who takes office **surrenders** Bar enrolment to the non-practising roll.
+
+**No tool can catch this.** Every automated check passed on Judicial Services Officer — the field
+was populated, the body existed, the source resolved, the record was `verified`. Only a human
+asking "is that body actually the one that licenses *this*?" found it (§10, correction #22).
+
+Consequence for `degree_dependency`: an office is `undergrad`, not `professional`. `professional`
+means *a licence gates the work*, and `audit.py`'s coupling
+`degree_dependency == "professional"` ⇒ requires `licensing_body` is correct **because** of this
+rule, not in spite of it.
 
 ---
 
@@ -867,3 +950,234 @@ entrances), and CUET (LLB) — a **public** central-university test sitting in t
 The drift was invisible because nothing validates what a *name* implies about its *contents*.
 Renamed to `public_routes` and `private_entrances`, the three certifications evicted to
 `path_to_entry` where each was already recorded, and CUET (LLB) moved to the public side.
+
+**Twelfth correction — a coverage gap standing in for a judgment, in the other direction.**
+Sector 1's Game & Interactive Media Developer carried **Game Designer** and **Level Designer** as
+job roles, because no design sector existed yet. That is the §2.06 error inverted: not reasoning
+from a gap *to* a placement, but parking work in the nearest built sector *because* its real home
+was unbuilt.
+
+The evidence was already inside the record and had been for sixteen versions. Its `role_spread`
+flagged exactly those two roles as deviating on `openness`, `existential` and `verbal`, with the
+note *"same profession, opposite temperaments."* **Opposite temperaments inside one record is
+usually two professions.** `role_spread` turns out to be a boundary detector as well as a
+psychometric one — a wide spread whose deviating group shares an object of concern different from
+the rest is a split waiting to be made.
+
+Caught by `duplicate_job_roles()` when Sector 8 claimed the same two titles. Fixed by moving both
+to Sector 8, where Game Designer is now a profession; Sector 1 keeps the engineering roles and
+gains a `routed_elsewhere` entry. **Asked before editing a built sector, and approved** — the
+build prompt's hard constraint working as intended.
+
+**Thirteenth correction — a sector written in isolation priced itself above the ones it sits
+beside.** Sector 8's first pass had UI/UX Designer at 18.5 LPA, Game Designer at 17.0, Industrial
+Designer at 16.0 and Advertising Creative at 15.5 — **all above Software Developer at 14.0.** In
+India a software developer out-earns a designer at 5–8 years at almost every employer, so the set
+was wrong even though each figure looked defensible alone.
+
+Nothing automated could catch it: every block passed `check_economics`, because internal
+consistency is all it tests. **A number can be individually valid and collectively false**, which
+is precisely what the cross-sector iteration exists for, and it is the first time that pass has
+paid for itself. Six blocks re-based.
+
+**Fourteenth correction — `routed_elsewhere` means two different things depending on whether the
+target is built.** Sectors 9 and 10 each wrote a routing note pointing at an *already built*
+sector: "Media Sales & Advertising Executive → Sector 5" and "Talent & Artist Manager → Sector 5."
+Both read as sensible boundary notes. Both failed `reconcile()`, and correctly.
+
+The distinction the field silently carries:
+
+| target | what the entry means |
+|---|---|
+| **unbuilt** sector | a **promise** — "put this there when you build it" |
+| **built** sector | an **assertion** — "this is already there," and the validator checks it |
+
+So a routing note aimed at a built sector is only legal when that sector genuinely contains the
+thing. When it does not, what you have found is **a coverage gap, not a routing decision**, and it
+belongs in `boundary_decisions_needing_your_signoff` where a human sees it — because closing it
+means amending a built sector, which requires asking.
+
+Talent & Artist Manager is now recorded there: it survives the substitution test as management,
+which points at Sector 5, and Sector 5 is finished and does not contain it.
+
+**Fifteenth correction — punctuation is not part of a word.** `reconcile()` reported Sector 7's
+promise of "Teacher (government school)" to Sector 12 as **broken**, when Sector 12 lists
+**Government School Teacher** and the promise was plainly kept. The matcher split the promise on
+whitespace and produced the tokens `(government` and `school)`, neither of which appears in any
+honest job title.
+
+Fixed by stripping non-alphanumerics from both the promise and the candidate entries before
+comparing. This is the same class of defect as the slash fix already recorded in that function —
+**the matcher kept inventing tokens that no real title could contain**, and every such invention
+is a false BROKEN report that pressure-tests a human into renaming good data to satisfy a bug.
+
+The general rule this pair establishes: when a validator says the data is wrong, check the
+validator's *tokeniser* before changing the data. Two of the three reconciliation failures found
+across Sectors 8–12 were the tool's fault, not the record's.
+
+**Sixteenth correction — the salary format does not fit six professions, and it is now a pattern
+rather than an exception.** `mid_career_lpa` is EMPLOYED-ONLY by design (§8.4), which was the right
+call when the dataset was engineering and medicine. Across Sectors 9–12 it has failed repeatedly,
+in two distinct shapes:
+
+| shape | records |
+|---|---|
+| **no employed version exists at scale** — income is per performance, session, booking or student | Musician · Dancer · Folk Performer · Instrument Maker · Theatre Practitioner · Sports Official |
+| **power-law income a range misrepresents** | Entrepreneur (S5) · Digital Content Creator (S9) · Actor (S10) · Professional Athlete (S11) · Esports Professional (S11) · Coaching Faculty (S12) |
+
+Both were already known singly — Entrepreneur was flagged in Sector 5 and Sector 4's bimodal pay
+is still open. What is new is that they are **structural**, not per-record oddities: six sectors
+have independently arrived at the same request. This is a **schema decision** and is recorded here
+rather than fixed, because inventing a second money format mid-build is exactly the kind of
+unilateral change the build contract forbids.
+
+**Seventeenth correction — a subject gate that deleted students the exam does not exclude.**
+Environmental Engineer (S14) and Agricultural Engineer (S15) both carried
+`class12_prerequisite: ["physics","chemistry","maths"]` behind a `jee-main` gate. But
+`verified_facts.json#jee-main-paper1-btech`, already in this repo, says JEE Main Paper 1 requires
+**Physics and Maths compulsorily plus any one of Chemistry, Biology, Biotechnology or a technical
+vocational subject.** Every one of the fifteen JEE-gated B.Tech records in Sector 2 correctly uses
+`["physics","maths"]`; only these two did not.
+
+This is not cosmetic. §8.5 lists `class12_prerequisite` as a **hard filter that removes**. A
+Physics + Maths + Computer Science student was being deleted from two professions they are eligible
+for. **An over-restrictive gate is the dangerous direction of error**: a gate that is too loose
+shows a student something they must then check, while a gate that is too tight shows them nothing
+at all and they never learn it was open. Found twice in this build — Sector 15's Agricultural
+Scientist and Food Technologist had the same defect with PCB.
+
+**Eighteenth correction — a household figure verifying an individual one.** Farmer (S15) marked its
+economics `verified` against the NSS 77th round Situation Assessment Survey. That survey gives
+₹10,218/month for an agricultural **HOUSEHOLD** — about 1.23 lakh a year for a whole family, of
+which only ₹3,798 is cultivation. The record asserted an individual mid-career midpoint of **1.8
+lakh**, which is *more than the entire household earns in the cited source*.
+
+`money_sources()` could not catch it, because the source genuinely does contain money — the check
+it would need is a **units** check, and no tool has one. This is the sixth correction's shape in a
+new disguise: not "verified against a page with no money", but **"verified against money that
+measures a different thing."** Downgraded to `judgment`; the excellent existing nuance stating the
+household problem is kept, and the `admin_review` now names which number the source does support.
+
+**Nineteenth correction — the entry_competition reflex, six times.** Across Sectors 13, 15, 16 and
+10 a `primary_gate` was set to the most **famous** exam a profession touches rather than the most
+**decisive** one: CUET for Social Worker, CAT for Development Professional, IBPS PO for
+Agri-Business, NCHMCT JEE for Chef **and** for Hotel & Restaurant Manager, NSD for Actor.
+
+All six records argued against themselves in their own text — Chef's `entrance_exams.note` said
+"most working Indian chefs sat neither", Actor's nuance said "almost none do", Hotel Manager was
+`after_any_degree` behind a 12,000-seat exam. **When a record contradicts its own gate in prose,
+the gate is wrong.** That is now the cheapest available check for this error and it should be run
+before the registry is consulted at all.
+
+The underlying pull is worth naming: a quantified gate looks like rigour. Recording a famous number
+*because it is the only number available* is the opposite of what the registry is for — the
+registry exists to say what a student is walking into, and 26 NSD places a year is not what an
+actor is walking into.
+
+**Twentieth correction — a meaningless number was deciding visibility.** Six records
+(Entrepreneur, Digital Content Creator, Actor, Professional Athlete, Esports Professional,
+Coaching Faculty) each carried a nuance saying their income is a power law that a range
+misrepresents. Meanwhile `mid_career_midpoint` — computed from that very range — continued to drive
+the derived `filter` boolean, which decides whether a profession is **shown at all**.
+
+So the dataset was simultaneously asserting *this number means nothing* and *this number decides
+whether a student ever sees this career*. It took six sectors independently arriving at the same
+complaint before the contradiction was visible, because each looked like a one-off presentation
+gripe rather than a structural fault.
+
+Fixed with one enum, `economics.distribution` (§8.4). It invents no numbers and adds no second
+money format, and it closed three separately-recorded problems at once: the six power-law records,
+School Teacher's KVS-versus-private gap, and **Sector 4's bimodal pay-and-cost question, open since
+Sector 4 was built.**
+
+**The generalisable lesson: when several records independently ask for the same exception, the
+schema is wrong, not the records.** The pattern was in the `nuances` field the whole time — a
+nuance is meant to record something *settled*, so six nuances describing an unsettled problem was
+itself the signal.
+
+**Twenty-first correction — a verified fact with no profession behind it.** `verified_facts.json`
+carried `jee-main-paper2b-bplan` — "JEE Main Paper 2B (B.Planning) requires Mathematics in class 12;
+Physics and Chemistry are not required" — and §4 used B.Plan as its **worked example** of the
+`class12_prerequisite` rule. **No profession in any of the eighteen sectors consumed it.** Somebody
+had gone and verified a fact for a career the taxonomy did not contain, and nothing noticed for
+eleven sectors.
+
+The cost was not academic. B.Planning is one of the very few routes into the built environment that
+needs **Maths alone** — no Physics, no Chemistry. A commerce student with Maths can enter it when
+B.Arch and B.Tech are both shut to them, and the dataset was silent on that door while quoting the
+rule that describes it.
+
+**A verified fact is a claim that somebody needed this.** An orphaned one is a profession-shaped
+hole with a receipt attached, and it is the cheapest possible signal of a coverage gap — cheaper
+than the substitution test, cheaper than a reviewer. `audit.py` now checks for it — `orphaned_facts()`.
+
+**The first thing it caught was not a missing profession but a missing citation.**
+`#barch-eligibility` was orphaned while Architect carried the exact PCM gate the fact establishes.
+The record was right and uncited: the source for *why Physics is compulsory* lived only in the
+facts file, so nothing tied the claim to its evidence. Now a nuance on `class12_prerequisite` does
+(S2 v20.1). **An orphaned fact has two possible causes — a profession that is missing, or a
+profession that is not citing its evidence — and the second is the more common one.** Five remain
+orphaned and are genuinely unused: `jee-main-attempt-window`, `amie-iei-recognition`,
+`nsdc-sector-skill-councils`, `cat-mba-eligibility`, `icar-aieea-fifteen-percent`.
+
+**Twenty-second correction — office is not licence, and treating it as one produced a false Tier
+A.** Judicial Services Officer (S7) named the **Bar Council of India** as its `licensing_body` and
+was Tier A. A judge does not practise under a BCI licence: an advocate who takes full-time service
+is moved to the **non-practising list and surrenders their enrolment certificate**, and the BCI has
+no power to strike off a judge. BCI enrolment is a prerequisite for *eligibility* — a
+`path_to_entry` step — not a licence.
+
+**This is now a standing rule — §7.1.** The test that settles it: **is there an unlicensed version of this work to
+police?** You can practise medicine or law without a licence, illegally, which is what makes NMC
+and BCI licensing bodies. **You cannot practise as a judge without being appointed one.** Where no
+unlicensed version can exist, the licensing frame does not apply and the profession is an *office*.
+
+The correct model was already in the same file, three times over — Civil Services Officer, Police
+Officer and Armed Forces Officer are all `undergrad` / `licensing_body: null` / Tier B /
+`legal_accountability: true` with a statutory-office nuance. **Judicial Services was the lone
+outlier in its own sector and nothing caught it for two versions**, because every automated check
+it touched was satisfied: it *had* a licensing body, it *was* verified, and the source page was
+real. Only the question "is this body actually the licensor?" would have caught it, and no tool
+asks that.
+
+A related coupling is now known to be too tight and is **not** changed here: `audit.py` requires
+`degree_dependency: "professional"` to name a licensing body. That holds for every professional
+degree in the dataset so far because they all lead to licensed practice — but an LLB leading to
+judicial office is the first counter-example, and the record is `undergrad` partly to satisfy a
+validator rather than purely on the merits. Flagged rather than fixed.
+
+**Twenty-third correction — the compensation filter was cutting careers on a number the record
+itself called incomplete.** 23 of 218 professions failed the filter, and **21 of the 23 had LOW AI
+exposure**. Mean AI exposure of what shipped was 32.2; of what was cut, 14.7. The filter was
+systematically deleting the most AI-proof half of the taxonomy.
+
+The cause was not the 4.5 threshold. It was that `mid_career_midpoint` **excludes business
+ownership by design** — `filter_rules.json` → `known_limitations` had said so in writing since v1.0
+— and the filter ran on it anyway. On a mason, a tailor, a weaver or a farmer, that midpoint is a
+floor somebody *leaves*, not a ceiling they hit.
+
+**The exemption, and why it is not a loophole:** `self_employment.likelihood == "common"` **AND**
+`admin_review.required`. Both are needed. `common` alone would spare records whose figure is simply
+low; `admin_review` alone would spare employees with no ownership path at all. Together they mean
+one thing only — *the record has already written down that this number is missing.* Which is the
+same principle as the `power_law` exemption: **do not filter on a figure the record has declared
+incomplete.** Both are self-closing: source the owner figure, the `admin_review` closes, and the
+profession re-enters the filter on the next run. 23 cuts → 12.
+
+**Two things this correction got wrong on the first attempt, and both matter more than the fix.**
+
+1. **It exempted Website & Online Store Builder** — self-employed, owes an owner figure, and scores
+   72 on AI exposure. The AI penalty clause was written *for that exact record*. A blanket
+   exemption would have cancelled the clause through the back door. So the exemption applies to
+   **the pay floor only, never the AI clause**: ownership answers *"is this figure the whole
+   income"*, and says nothing about *"is this work disappearing"*.
+2. **It was described as rescuing Automobile Mechanic, and it does not.** Automobile Mechanic is
+   what *revealed* the gap — cut at 4.25 with a self-employment ceiling of 6–18 lakh — but that
+   ceiling is **sourced**, so the record owes nothing, carries no `admin_review`, and stays cut.
+   The exemption covers records where the owner figure is **missing**, not records where it is
+   present and high. The honest fix for Automobile Mechanic is to raise the floor or filter on the
+   ceiling — not to widen this rule until it swallows the case that inspired it.
+
+**The general lesson: an exemption written from one motivating example will over-fire.** Check it
+against the record the original rule was written to catch, not only against the records you want
+rescued.

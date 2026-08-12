@@ -1,9 +1,9 @@
 {
   "professional_sector": "Engineering & Making",
   "professional_sector_id": 2,
-  "version": "19.0",
-  "profession_count": 32,
-  "sector_verification_note": "Unlike Sector 1, this sector has real Tier A licensing — DGCA for pilots and aircraft engineers, DG Shipping for marine engineers, Council of Architecture for architects. Class 12 subject gates and ITI entry rules are Tier B verified. Salary bands remain judgment throughout; India has no authoritative free source for them. NOTE: the AMIE / Institution of Engineers route named in the brief is deliberately EXCLUDED from every path_to_entry — recognition for post-2013 enrolments is unresolved in the Delhi High Court and it is not safe to recommend.",
+  "version": "20.1",
+  "profession_count": 33,
+  "sector_verification_note": "Unlike Sector 1, this sector has real Tier A licensing — DGCA for pilots and aircraft engineers, DG Shipping for marine engineers, Council of Architecture for architects. Class 12 subject gates and ITI entry rules are Tier B verified. Salary bands remain judgment throughout; India has no authoritative free source for them. NOTE: the AMIE / Institution of Engineers route named in the brief is deliberately EXCLUDED from every path_to_entry — recognition for post-2013 enrolments is unresolved in the Delhi High Court and it is not safe to recommend. Source: data/verified_facts.json#amie-iei-recognition.",
   "professions": [
     {
       "id": "eng-civil-engineer",
@@ -112,6 +112,7 @@
         "mid_career_lpa": "8.0-14.0",
         "mid_career_midpoint": 11.0,
         "payback_years": 1.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -284,6 +285,7 @@
         "mid_career_lpa": "5.0-12.0",
         "mid_career_midpoint": 8.5,
         "payback_years": 1.26,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -450,6 +452,7 @@
         "mid_career_lpa": "6.0-12.0",
         "mid_career_midpoint": 9.0,
         "payback_years": 1.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -591,6 +594,7 @@
         "mid_career_lpa": "7.0-14.0",
         "mid_career_midpoint": 10.5,
         "payback_years": 1.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -726,6 +730,7 @@
         "mid_career_lpa": "18.0-35.0",
         "mid_career_midpoint": 26.5,
         "payback_years": 0.5,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -884,6 +889,7 @@
         "mid_career_lpa": "7.0-14.0",
         "mid_career_midpoint": 10.5,
         "payback_years": 1.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1020,6 +1026,7 @@
         "mid_career_lpa": "8.0-16.0",
         "mid_career_midpoint": 12.0,
         "payback_years": 1.0,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1170,6 +1177,7 @@
         "mid_career_lpa": "10.0-18.0",
         "mid_career_midpoint": 14.0,
         "payback_years": 0.86,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1312,6 +1320,7 @@
         "mid_career_lpa": "7.0-13.0",
         "mid_career_midpoint": 10.0,
         "payback_years": 1.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1447,6 +1456,7 @@
         "mid_career_lpa": "15.0-30.0",
         "mid_career_midpoint": 22.5,
         "payback_years": 1.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1597,6 +1607,7 @@
         "mid_career_lpa": "12.0-25.0",
         "mid_career_midpoint": 18.5,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1734,6 +1745,7 @@
         "mid_career_lpa": "8.0-16.0",
         "mid_career_midpoint": 12.0,
         "payback_years": 1.0,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1869,6 +1881,7 @@
         "mid_career_lpa": "6.0-12.0",
         "mid_career_midpoint": 9.0,
         "payback_years": 2.22,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1919,6 +1932,10 @@
         {
           "field": "professional_sector",
           "statement": "Settled in Engineering & Making rather than Design & Creative Arts. Architecture is more than design: it is licensed, load-bearing and legally accountable for whether a building stands. Interior Designer and Landscape Designer are routed to Sector 8, which keeps the boundary sharp - decoration and space planning are design; structure and statutory responsibility are engineering."
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "PHYSICS is compulsory for B.Arch, not just Mathematics. The CoA Minimum Standards of Architectural Education Regulations 2020 require class 12 with Physics, Chemistry and Mathematics at 45% aggregate in PCM, plus NATA or JEE Main Paper 2A; the only alternative is a 10+3 diploma with Mathematics. An earlier draft quoted the pre-2020 rule and understated the gate. Source: data/verified_facts.json#barch-eligibility."
         }
       ],
       "admin_review": {
@@ -2013,6 +2030,7 @@
         "mid_career_lpa": "25.0-45.0",
         "mid_career_midpoint": 35.0,
         "payback_years": 4.07,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2145,6 +2163,7 @@
         "mid_career_lpa": "6.0-12.0",
         "mid_career_midpoint": 9.0,
         "payback_years": 1.3,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2273,6 +2292,7 @@
         "mid_career_lpa": "3.5-6.5",
         "mid_career_midpoint": 5.0,
         "payback_years": 0.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2419,6 +2439,7 @@
         "mid_career_lpa": "3.0-6.0",
         "mid_career_midpoint": 4.5,
         "payback_years": 0.17,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2565,6 +2586,7 @@
         "mid_career_lpa": "4.0-8.0",
         "mid_career_midpoint": 6.0,
         "payback_years": 0.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2682,6 +2704,7 @@
         "mid_career_lpa": "2.5-4.5",
         "mid_career_midpoint": 3.5,
         "payback_years": 0.08,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2696,7 +2719,7 @@
         "india_demand": "high",
         "pathway": "india"
       },
-      "filter": false,
+      "filter": true,
       "after_undergrad": "work_first",
       "self_employment": {
         "likelihood": "common",
@@ -2805,6 +2828,7 @@
         "mid_career_lpa": "2.5-4.5",
         "mid_career_midpoint": 3.5,
         "payback_years": 0.08,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2819,7 +2843,7 @@
         "india_demand": "moderate",
         "pathway": "india"
       },
-      "filter": false,
+      "filter": true,
       "after_undergrad": "work_first",
       "self_employment": {
         "likelihood": "common",
@@ -2927,6 +2951,7 @@
         "mid_career_lpa": "2.0-4.0",
         "mid_career_midpoint": 3.0,
         "payback_years": 0.09,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -2941,7 +2966,7 @@
         "india_demand": "high",
         "pathway": "india"
       },
-      "filter": false,
+      "filter": true,
       "after_undergrad": "work_first",
       "self_employment": {
         "likelihood": "common",
@@ -3051,6 +3076,7 @@
         "mid_career_lpa": "3.5-6.0",
         "mid_career_midpoint": 4.75,
         "payback_years": 0.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -3174,6 +3200,7 @@
         "mid_career_lpa": "3.0-5.5",
         "mid_career_midpoint": 4.25,
         "payback_years": 0.15,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -3304,6 +3331,7 @@
         "mid_career_lpa": "4.0-7.0",
         "mid_career_midpoint": 5.5,
         "payback_years": 0.14,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -3422,6 +3450,7 @@
         "mid_career_lpa": "4.0-6.5",
         "mid_career_midpoint": 5.25,
         "payback_years": 0.12,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -3540,6 +3569,7 @@
         "mid_career_lpa": "3.0-4.5",
         "mid_career_midpoint": 3.75,
         "payback_years": 0.15,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -3682,6 +3712,7 @@
         "mid_career_lpa": "6-12",
         "mid_career_midpoint": 9.0,
         "payback_years": 1.41,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -3867,6 +3898,7 @@
         "mid_career_lpa": "5-9",
         "mid_career_midpoint": 7.0,
         "payback_years": 1.71,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded. The band spans both ends of the profession - diploma-route service work starts lower than the degree route and converges by mid-career, which is why the two merged.",
         "verification": {
           "status": "verified",
@@ -4037,6 +4069,7 @@
         "mid_career_lpa": "6-12",
         "mid_career_midpoint": 9.0,
         "payback_years": 1.5,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -4169,6 +4202,7 @@
         "mid_career_lpa": "5-9",
         "mid_career_midpoint": 7.0,
         "payback_years": 0.21,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded.",
         "verification": {
           "status": "verified",
@@ -4296,6 +4330,7 @@
         "mid_career_lpa": "5-10",
         "mid_career_midpoint": 7.5,
         "payback_years": 0.27,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded.",
         "verification": {
           "status": "verified",
@@ -4447,6 +4482,7 @@
         "mid_career_lpa": "14-25",
         "mid_career_midpoint": 19.5,
         "payback_years": 0.6,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Pay follows central government Group A scales.",
         "verification": {
           "status": "verified",
@@ -4498,6 +4534,185 @@
         {
           "field": "economics",
           "statement": "The band is shipped as it stands and reflects central government Scientific Officer pay scales. Those carry allowances, subsidised housing and pension terms that do not appear in a CTC figure, so comparison with a private-sector offer of the same number understates the government package."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "eng-urban-planner",
+      "profession": "Urban & Regional Planner",
+      "one_liner": "Decides how a city or region grows - land use, zoning, transport, and what may be built.",
+      "job_roles": [
+        "Urban Planner",
+        "Town Planner",
+        "Regional Planner",
+        "Transport Planner",
+        "Land Use & Zoning Officer",
+        "Development Control Officer",
+        "GIS Planning Analyst",
+        "Housing & Settlement Planner",
+        "Urban Design Associate"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Transport Planner",
+              "GIS Planning Analyst"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Transport and spatial analysis is modelling - travel demand, network capacity, population projection - done in software against datasets. It is the quantitative end and it transfers directly to GIS and data work outside planning."
+          },
+          {
+            "roles": [
+              "Development Control Officer",
+              "Land Use & Zoning Officer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "confidence",
+              "verbal"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Development control is applying a statutory master plan to a specific application, refusing some, and being argued with by developers and politicians. It is a municipal post with real authority and real pressure, and it is where most planning graduates actually work."
+          },
+          {
+            "roles": [
+              "Urban Design Associate"
+            ],
+            "higher": [
+              "spatial",
+              "openness",
+              "bodily"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Urban design works at the scale of a street or a precinct - how a place feels to walk through. It sits between planning and architecture and is the most visual role here."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "EXT-GOVT",
+        "EXT-ENV",
+        "IASC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Mathematics. Physics and Chemistry are NOT required for B.Planning - this is one of the few built-environment routes open to a student without a full science stream."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main Paper 2B (B.Planning), or a state or institutional entrance."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Plan (4 years), or B.Arch followed by an M.Plan - the postgraduate route is how many architects enter planning."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "State Town & Country Planning department, a development authority, a municipal corporation, a Smart Cities or AMRUT programme unit, or a planning and infrastructure consultancy."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "JEE Main Paper 2B (B.Planning)",
+          "State planning entrance examinations",
+          "GATE (Architecture and Planning)"
+        ],
+        "private_entrances": [],
+        "note": "JEE Main Paper 2B is the main national route and it requires only Mathematics in class 12, which is a materially different door from the B.Arch one."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "7.0-16.0",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 1.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent planning and development consultancy - master plan work, environmental and transport studies, and development applications for private clients. Realistic after eight to ten years and it depends on knowing how a specific authority works.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 20,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "Moderately exposed on the analysis and protected on the decision. GIS Planning Analyst and Transport Planner work with spatial models and projections that are increasingly automated, and drafting a standard land-use report is generatable. What does not automate is Development Control Officer: refusing a builder's application under a statutory master plan, and defending that refusal, is authority exercised by a named person who can be sued and pressured."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#jee-main-paper2b-bplan",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "Mathematics ONLY, and this is the point of the record. JEE Main Paper 2B requires Maths in class 12 and does NOT require Physics or Chemistry, so a commerce student with Maths can enter the built environment through planning when B.Arch and B.Tech are closed to them. That door is barely known and it is why this profession was added.",
+          "source": "data/verified_facts.json#jee-main-paper2b-bplan"
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and it is the clearest contrast with Architect in this sector. The Architects Act 1972 protects the TITLE 'architect' and the Council of Architecture maintains a register; NOTHING equivalent exists for planners. The Institute of Town Planners India is a voluntary professional body, not a statutory regulator, which is why this record is Tier B and Architect is Tier A."
+        },
+        {
+          "field": "profession",
+          "statement": "Kept separate from Architect rather than folded in as job roles, on the merge test in DECISIONS.md 8.95. The object of concern differs - a building against a settlement - and so does the skill set: zoning law, transport modelling, demographic projection and statutory development control have no counterpart in structural design. The entry gates differ too, which is decisive: PCM and a protected title for one, Mathematics alone and no register for the other."
         }
       ],
       "admin_review": {
@@ -4695,6 +4910,15 @@
     "19.0": [
       "Moved the Blockchain & Web3 Developer merge record OUT of this file. It was a SOFTWARE merge sitting in the engineering sector, with the target written as 'Software Developer (Sector 1)' - a parenthetical standing in for the fact that the record was in the wrong place.",
       "Caught by the new structural_blocks() check in audit.py, which requires a merge target to exist in the SAME sector. Section 8.95 already said merges are same-sector and routings are cross-sector; nothing had been enforcing it."
+    ],
+    "20.0": [
+      "URBAN & REGIONAL PLANNER ADDED, asked and approved before this file was edited. It was the strongest evidenced gap found by the independent review of the completed 18-sector build: DECISIONS.md 4 uses B.Plan as its worked example of the class12_prerequisite rule and verified_facts.json#jee-main-paper2b-bplan was already registered, but NO PROFESSION IN ANY OF THE 18 SECTORS CONSUMED IT. A fact had been fetched and verified for a profession that did not exist.",
+      "THE REASON IT MATTERS TO A STUDENT: JEE Main Paper 2B requires Mathematics in class 12 and does NOT require Physics or Chemistry. A commerce student with Maths can enter the built environment through planning when B.Arch and B.Tech are both closed to them. That is a real and almost unknown door, and the taxonomy was silent on it.",
+      "Kept separate from Architect on the merge test: a building against a settlement, structural design against zoning and transport modelling, and - decisively - a protected title with a statutory register on one side and no regulator at all on the other."
+    ],
+    "20.1": [
+      "ARCHITECT now cites verified_facts.json#barch-eligibility on class12_prerequisite. The fact was fetched and verified but no profession referenced it, so audit.py's orphaned_facts() reported it. The PCM gate on this record was correct but uncited - the source for WHY Physics is compulsory lived only in the facts file.",
+      "sector_verification_note now cites verified_facts.json#amie-iei-recognition. The AMIE exclusion was stated here and enforced across every path_to_entry, but the fetched fact behind it was cited only in DECISIONS.md - the data asserted the exclusion without pointing at its evidence."
     ]
   }
 }

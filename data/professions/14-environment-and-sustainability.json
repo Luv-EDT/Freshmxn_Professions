@@ -1,0 +1,1410 @@
+{
+  "professional_sector": "14. Environment & Sustainability",
+  "professional_sector_id": 14,
+  "version": "1.2",
+  "profession_count": 8,
+  "sector_verification_note": "TIER C THROUGHOUT, with two gates that are not licences but behave like them. NABET/QCI accreditation decides who may SIGN an Environmental Impact Assessment report - an empanelment created by the clearance process rather than by any professions statute - and the UPSC Indian Forest Service examination controls entry to a 150-post cadre with statutory powers. Two verified facts anchor the sector at opposite ends of it: SEBI's BRSR mandate, which is the regulation that turned corporate sustainability into a job with a deadline, and the NAMASTE scheme and the Manual Scavengers Act, which document a base layer the law abolished and that still employs roughly a lakh people in urban India. This sector contains both the most fashionable white-collar profession in the dataset and its most dangerous manual one.",
+  "professions": [
+    {
+      "id": "env-environmental-engineer",
+      "profession": "Environmental Engineer",
+      "one_liner": "Builds and runs the systems that clean up what industry and cities produce.",
+      "job_roles": [
+        "Environmental Engineer",
+        "Water & Wastewater Treatment Engineer",
+        "Air Quality Engineer",
+        "Solid Waste Management Engineer",
+        "ETP & STP Operations Engineer",
+        "Environmental Compliance Engineer",
+        "Contaminated Site Remediation Specialist",
+        "Industrial Hygiene & Emissions Engineer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "ETP & STP Operations Engineer"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Running an effluent or sewage treatment plant is shift work on live process equipment with statutory discharge limits. It is operations rather than design, and it is where most environmental engineering jobs in India actually are."
+          },
+          {
+            "roles": [
+              "Environmental Compliance Engineer"
+            ],
+            "higher": [
+              "verbal",
+              "logical",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Compliance work is consents, returns and inspections with the State Pollution Control Board. It is regulatory rather than technical and sits closest to law."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "CSDCI",
+        "SCGJ",
+        "HYSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Mathematics. Chemistry is NOT compulsory - JEE Main Paper 1 accepts Chemistry, Biology, Biotechnology or a technical vocational subject as the third."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main, a state engineering entrance, or a private university entrance."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Environmental Engineering, or Civil or Chemical Engineering with an environmental specialisation."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Environmental consultancy, an industrial EHS department, a water or waste utility, or an EPC contractor building treatment plants."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "JEE Main",
+          "GATE",
+          "State engineering entrance examinations"
+        ],
+        "private_entrances": [],
+        "note": "Entry is the ordinary engineering route. GATE matters for M.Tech and for public sector pollution control board posts."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "7.0-16.0",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 1.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "An independent environmental consultancy doing consents, monitoring and compliance reporting for small industry. A common step after eight to ten years, and it depends on relationships with the State Pollution Control Board.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Low exposure and protected by physical infrastructure. A treatment plant is pumps, blowers and biology that must be kept alive, and ETP & STP Operations Engineer is nearly untouched. Environmental Compliance Engineer carries the exposure - consent applications, returns and standard reports are documentation work that generates well - but the signature on a statutory return still belongs to a person the board can act against."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and regulation-driven rather than market-driven, which makes it unusually predictable. Every industrial unit needs consent to operate and every city needs sewage treated, so demand tracks enforcement capacity rather than the economy. Where enforcement is weak, so is hiring."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Promised here from Sector 2 and it belongs here on the substitution test, narrowly. Remove the environment and a treatment plant engineer is a process engineer - but the object of concern is what happens to the discharge after it leaves the fence, and that is not a manufacturing question."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "env-environmental-scientist",
+      "profession": "Environmental Scientist",
+      "one_liner": "Measures what is happening to air, water, soil and ecosystems, and what a project will do.",
+      "job_roles": [
+        "Environmental Scientist",
+        "EIA Consultant",
+        "Environmental Monitoring Analyst",
+        "Air Quality Analyst",
+        "Water Quality Analyst",
+        "Soil & Groundwater Scientist",
+        "Ecotoxicologist",
+        "Environmental Laboratory Analyst",
+        "Biodiversity Assessment Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "EIA Consultant"
+            ],
+            "higher": [
+              "verbal",
+              "reasoning",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Environmental Impact Assessment is a regulatory document prepared for a clearance process, argued at public hearings and defended before an appraisal committee. It is part science and part advocacy, and the accredited coordinator signs it."
+          },
+          {
+            "roles": [
+              "Environmental Laboratory Analyst",
+              "Environmental Monitoring Analyst"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness",
+              "logical"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Monitoring and laboratory work is standardised sampling and analysis to a method, with chain-of-custody discipline. It is the entry job and it is where the data every other role depends on comes from."
+          },
+          {
+            "roles": [
+              "Biodiversity Assessment Specialist"
+            ],
+            "higher": [
+              "naturalistic",
+              "attention_span",
+              "bodily"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Biodiversity survey is fieldwork - transects, camera traps, species identification - often in difficult terrain and over seasons."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "EXT-RND",
+        "SCGJ"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream in practice; Biology or Chemistry are the usual routes and neither is formally required for every programme."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BSc in Environmental Science, or any science degree followed by an MSc in Environmental Science."
+        },
+        {
+          "step": 3,
+          "stage": "masters",
+          "requirement": "MSc is effectively the entry qualification for anything beyond laboratory analysis."
+        },
+        {
+          "step": 4,
+          "stage": "accreditation",
+          "requirement": "For EIA work, NABET/QCI accreditation as a Functional Area Expert or EIA Coordinator - this is what lets you sign a report."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "Environmental consultancy, a pollution control board, an industrial EHS team, a research institute or an NGO."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG",
+          "GATE (Ecology and Evolution)"
+        ],
+        "private_entrances": [
+          "NABET/QCI EIA accreditation"
+        ],
+        "note": "The accreditation, not the degree, is the gate that matters commercially - an EIA report has to be signed by an accredited coordinator."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.08,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent consultancy once NABET-accredited, which is the credential that lets you sign reports rather than prepare them for someone else's signature.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 20,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Low exposure, protected by sampling. Somebody has to be at the outfall with a bottle and at the stack with a probe, and Environmental Monitoring Analyst and Biodiversity Assessment Specialist are field jobs. EIA Consultant carries the real exposure: an EIA report is a long document assembled to a template from monitoring data, and much of the drafting is generatable. The accreditation and the public hearing are what a model cannot supply."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, but NOT unconstrained. NABET accreditation under the Quality Council of India determines who may sign an Environmental Impact Assessment report, which is a genuine commercial gate created by the environmental clearance process rather than by a professions statute. It is closer to an auditor's empanelment than to a licence."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate. The volume of work follows the environmental clearance pipeline - infrastructure, mining and industrial projects - so it moves with capital investment cycles rather than with environmental need."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "env-gis-analyst",
+      "profession": "GIS & Remote Sensing Analyst",
+      "one_liner": "Turns satellite imagery and maps into answers about land, water, forests and cities.",
+      "job_roles": [
+        "GIS Analyst",
+        "Remote Sensing Analyst",
+        "Cartographer",
+        "Geospatial Data Scientist",
+        "Photogrammetrist",
+        "Drone Survey Analyst",
+        "Spatial Database Administrator",
+        "Land Records Digitisation Specialist",
+        "Urban Mapping Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Geospatial Data Scientist"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "The modelling end - machine learning on imagery, change detection, time series. It sits closer to a Data Scientist in Sector 1 than to mapping, and it pays accordingly."
+          },
+          {
+            "roles": [
+              "Land Records Digitisation Specialist"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "verbal"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Digitising cadastral records is high-volume government work with legal consequences for land title. It is the largest single employer of GIS people in India and the least glamorous."
+          },
+          {
+            "roles": [
+              "Drone Survey Analyst"
+            ],
+            "higher": [
+              "spatial",
+              "bodily",
+              "logical"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Drone survey involves flying and field work as well as processing, and it is regulated - the pilot needs a DGCA Remote Pilot Certificate, which the analyst may not."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "IT-ITES",
+        "EXT-GOVT",
+        "IASC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Mathematics and Geography both help."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Geography, geology, environmental science, civil engineering, computer science or planning - all are normal routes in."
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "A postgraduate diploma or MSc in GIS and Remote Sensing, or demonstrable skill with QGIS, ArcGIS, Google Earth Engine and Python."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Government mapping and land records programmes, ISRO and state remote sensing centres, urban planning bodies, environmental consultancies, or private geospatial firms."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "GATE (Geomatics)",
+          "IIRS and state remote sensing centre courses"
+        ],
+        "private_entrances": [],
+        "note": "No profession-specific gate. Entry is on demonstrable tooling skill, which makes this one of the more open technical professions in the dataset."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-16.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent geospatial services - drone survey, mapping and land records work for local bodies and developers. Owning a survey drone changes the economics, and the operator needs a DGCA Remote Pilot Certificate.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 5,
+          "skill_digital": 40,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "The most exposed profession in this sector. Automated feature extraction, change detection and classification from satellite imagery are exactly what computer vision does, and Cartographer and much routine GIS Analyst work is already substantially automated. What survives is at both ends: Drone Survey Analyst because someone must fly and ground-truth, and Geospatial Data Scientist because building the models is the work rather than the casualty. Land Records Digitisation Specialist is protected for an unglamorous reason - the source documents are handwritten, disputed and legally consequential."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "industrial_sectors",
+          "statement": "Promised here from Sector 3 rather than kept with the sciences. The method is technical and could sit almost anywhere; the object of concern is land, water and ecosystems, which is this sector. The tagging to IT-ITES and EXT-GOVT is the honest signal that a GIS analyst's employer is very often neither environmental nor scientific."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and unusually policy-anchored: the largest single driver in India is government land records digitisation and urban mapping under national programmes, not private-sector demand."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "env-forest-officer",
+      "profession": "Forest, Wildlife & Conservation Professional",
+      "one_liner": "Protects forests and wildlife - as a government officer, a researcher, or with communities.",
+      "job_roles": [
+        "Indian Forest Service Officer",
+        "Forest Range Officer",
+        "Forester",
+        "Forest Guard",
+        "Wildlife Biologist",
+        "Conservation Project Officer",
+        "Wildlife Veterinarian Assistant",
+        "Eco-development & Community Forestry Officer",
+        "Nature Interpretation Guide",
+        "Anti-Poaching Watcher"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Indian Forest Service Officer",
+              "Forest Range Officer"
+            ],
+            "higher": [
+              "confidence",
+              "conscientiousness",
+              "logical"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Forest service is law enforcement and administration - a Range Officer holds statutory powers of search, seizure and prosecution under the Forest and Wildlife Acts, manages staff and budgets, and is transferred at the state's discretion."
+          },
+          {
+            "roles": [
+              "Wildlife Biologist"
+            ],
+            "higher": [
+              "naturalistic",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Research is survey design, data and publication rather than enforcement. It is the route through an MSc in Wildlife Science rather than through a public service examination, and it pays far less."
+          },
+          {
+            "roles": [
+              "Forest Guard",
+              "Anti-Poaching Watcher"
+            ],
+            "higher": [
+              "bodily",
+              "attention_span",
+              "neuroticism"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "The base layer, and the most dangerous work in this sector. Patrolling on foot in difficult terrain against armed poachers, usually on contract or daily wage, is what protection actually consists of."
+          },
+          {
+            "roles": [
+              "Eco-development & Community Forestry Officer",
+              "Nature Interpretation Guide"
+            ],
+            "higher": [
+              "extraversion",
+              "agreeableness",
+              "verbal"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "These roles work WITH the people living around a forest rather than policing them, and the skill is negotiation with communities whose livelihood the forest law restricts."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "EXT-GOVT",
+        "ASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science stream for the IFS route - the degree must include a listed science, or be in agriculture, forestry or engineering."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BSc in a science, forestry, agriculture or engineering. For research, an MSc in Wildlife Science or Ecology."
+        },
+        {
+          "step": 3,
+          "stage": "entrance_exam",
+          "requirement": "UPSC Indian Forest Service for the All-India cadre; state forest service and Range Officer examinations for the far larger state cadres."
+        },
+        {
+          "step": 4,
+          "stage": "training",
+          "requirement": "Indira Gandhi National Forest Academy for IFS officers, or a state forest training institute."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "Forest department, a protected area, a research institute, or a conservation NGO."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UPSC Indian Forest Service Examination",
+          "State Forest Service examinations",
+          "State Forest Range Officer and Forest Guard recruitment"
+        ],
+        "private_entrances": [],
+        "note": "The IFS preliminary examination is the same paper as the Civil Services preliminary, so the two routes share preparation entirely."
+      },
+      "entry_competition": {
+        "primary_gate": "upsc-ifos",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.0-8.0",
+        "mid_career_lpa": "7.0-18.0",
+        "mid_career_midpoint": 12.5,
+        "payback_years": 0.55,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Among the least exposed professions in the dataset. The work is being physically present in a forest - patrolling, identifying, seizing, negotiating - and a Range Officer's statutory powers require a person to exercise them. Wildlife Biologist carries the only real exposure, through automated species identification from camera trap images, which has changed the method rather than the job."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "One figure across two very different careers, and the record should be read with that in mind. An IFS officer enters on a Group A pay scale with housing and a pension; a Forest Guard is increasingly hired on contract or daily wage and earns a fraction of it, while doing the patrolling that carries the physical risk. The mid_career figure describes the officer end. This is the same bimodal problem as School Teacher in Sector 12 and MBBS cost in Sector 4."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing body, on the statutory-office precedent used for District Magistrate and Police Officer in Sector 7. A Forest Range Officer exercises powers of search, seizure and prosecution under the Indian Forest Act and the Wild Life (Protection) Act, and is personally answerable for their exercise."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Rare, and unusually clearly so. Forest protection authority derives entirely from statutory office - there is no independent version. The conservation NGO and research roles are employed too. Nature Interpretation Guide is the single exception and is a tourism livelihood rather than a conservation career."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Low in the sense that matters: 150 IFS posts a year nationally, and state Range Officer recruitment is intermittent. The Forest Guard cadre is far larger and is increasingly filled on contract and daily wage rather than as permanent posts."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "env-sustainability-esg",
+      "profession": "Sustainability & ESG Professional",
+      "one_liner": "Measures and reports what a company does to the environment and society, to a legal standard.",
+      "job_roles": [
+        "Sustainability Analyst",
+        "ESG Reporting Specialist",
+        "Carbon Accounting Analyst",
+        "Energy Auditor",
+        "Sustainability Consultant",
+        "ESG Assurance Associate",
+        "Climate Disclosure Analyst",
+        "Supply Chain Sustainability Analyst",
+        "Green Building Consultant"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Energy Auditor",
+              "Green Building Consultant"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "bodily"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "These are technical, on-site roles - walking a plant or a building, metering, and modelling energy use. Energy auditing is also certified by the Bureau of Energy Efficiency, which the reporting roles are not."
+          },
+          {
+            "roles": [
+              "ESG Assurance Associate"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Assurance is auditing someone else's sustainability claims to a standard, usually from inside an accountancy firm. It is closer to Sector 6 than to the rest of this profession and it is the segment BRSR Core is creating."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "SCGJ",
+        "MEPSC",
+        "BFSI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Environmental science, engineering, commerce or economics. This profession recruits from all four and the commerce route is growing fastest because the work is reporting."
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "Optional but valued: BEE Certified Energy Auditor, GHG accounting certifications, or a sustainability master's."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "A listed company's sustainability team, an accountancy or consulting firm's ESG practice, an assurance provider, or a rating agency."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CAT",
+          "CUET PG"
+        ],
+        "private_entrances": [
+          "Sustainability and GHG accounting certifications"
+        ],
+        "note": "No gate specific to this profession. An MBA route is common on the consulting side, which is why CAT is named."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 5.0,
+        "early_earnings_lpa": "4.0-8.0",
+        "mid_career_lpa": "7.0-18.0",
+        "mid_career_midpoint": 12.5,
+        "payback_years": 0.83,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent sustainability and energy audit consultancy, which is a real market because BRSR Core requires third-party assurance and small companies need help preparing to be assured.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 25,
+          "skill_physical": 10,
+          "skill_digital": 25,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "Substantially exposed, and it is worth being blunt because this profession is currently fashionable. ESG Reporting Specialist, Climate Disclosure Analyst and Carbon Accounting Analyst do work that is largely data collection, conversion against published emission factors, and narrative assembly to a template - which is close to a canonical automation target. What is protected is Energy Auditor and Green Building Consultant, because those require walking a site, and ESG Assurance Associate, because assurance requires a firm to put its name to an opinion."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High, and unusually well explained by a single regulation. SEBI's BRSR made sustainability reporting mandatory for the top 1,000 listed companies from FY 2022-23, and BRSR Core extends third-party assurance to all of them by FY 2026-27. That is a compliance deadline creating jobs, which is a far more reliable demand signal than corporate enthusiasm.",
+          "source": "data/verified_facts.json#brsr-mandatory-sustainability-reporting"
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The highest-paid profession in this sector is also among its most exposed, and those two facts are related: the work pays well because it is newly mandatory, and it is exposed because most of it is structured data assembly. A student entering it should aim at the assurance and audit end rather than the reporting end."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "env-renewable-energy",
+      "profession": "Renewable Energy Project Professional",
+      "one_liner": "Gets solar and wind projects built and running - siting, resource, permits, performance.",
+      "job_roles": [
+        "Solar Project Developer",
+        "Wind Resource Analyst",
+        "Renewable Energy Project Manager",
+        "Solar Plant Performance Analyst",
+        "Grid Integration Analyst",
+        "Renewable Energy Site Engineer",
+        "Battery Storage Analyst",
+        "Rooftop Solar Consultant",
+        "Power Purchase Agreement Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Wind Resource Analyst",
+              "Solar Plant Performance Analyst"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Resource and performance analysis is meteorology and statistics - predicting how much energy a site will yield over twenty years, which is what the project finance rests on. It is a desk discipline with no site presence."
+          },
+          {
+            "roles": [
+              "Rooftop Solar Consultant"
+            ],
+            "higher": [
+              "extraversion",
+              "verbal",
+              "confidence"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Rooftop solar is a consumer sale - explaining subsidy, payback and net metering to a household or a housing society. It is the retail end and it is the largest employer in this profession."
+          },
+          {
+            "roles": [
+              "Renewable Energy Site Engineer"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Site engineering is construction supervision in remote locations with long postings - solar parks are built in Rajasthan and Gujarat deserts, not near cities."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "SCGJ",
+        "PSSC",
+        "EXT-ENV",
+        "CSDCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Mathematics for the engineering route; any stream for the commercial and consulting roles."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Electrical, mechanical or energy engineering, or an economics or commerce degree for the project finance and PPA side."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "A developer, an EPC contractor, a consultancy, or a state renewable energy development agency."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Development, resource assessment, operations or offtake. These pay very differently and are hard to move between."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "JEE Main",
+          "GATE",
+          "CAT"
+        ],
+        "private_entrances": [],
+        "note": "No gate specific to renewable energy. Entry is through engineering or management in the ordinary way."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3.5-7.0",
+        "mid_career_lpa": "8.0-18.0",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 1.14,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Rooftop solar installation and EPC on own account, which is a genuine small-business route with modest capital, or independent technical advisory to lenders and developers after a decade.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 20,
+          "skill_digital": 25,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Moderate exposure concentrated on the analytical roles. Wind Resource Analyst, Solar Plant Performance Analyst and Battery Storage Analyst work on time-series modelling, which is directly automatable and already heavily software-mediated. Renewable Energy Site Engineer and Rooftop Solar Consultant are protected - one by being on a construction site in the desert, the other by having to persuade a housing society committee."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High, and among the best-founded demand signals in this dataset because it rests on installed capacity targets and on projects with financing already closed - not on sentiment. The caveat is geographic: development and operations jobs are in Rajasthan, Gujarat, Tamil Nadu and Karnataka."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Solar and wind ENGINEERING sits in Sector 2 - an electrical engineer is an electrical engineer, and Solar Panel Technician was merged into Electrician there on exactly that test. What is here is the project layer: siting, resource, permits, offtake and performance, where the object of concern is the energy transition rather than the machine."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "env-sanitation-worker",
+      "profession": "Waste Management & Sanitation Worker",
+      "one_liner": "Collects, sorts and disposes of what cities throw away, and keeps the sewers running.",
+      "job_roles": [
+        "Sanitation Worker",
+        "Waste Collection Worker",
+        "Waste Sorter & Segregator",
+        "Sewer & Septic Tank Worker",
+        "Material Recovery Facility Operator",
+        "Composting Unit Operator",
+        "Sanitation Supervisor",
+        "Waste Picker",
+        "Sanitation Entrepreneur (Mechanised Cleaning)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Sanitation Entrepreneur (Mechanised Cleaning)"
+            ],
+            "higher": [
+              "confidence",
+              "logical",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Owning and operating mechanised desludging or sweeping equipment on municipal contract. This is the route the NAMASTE scheme is explicitly designed to create, and it is the only path in this profession that leads out of manual work."
+          },
+          {
+            "roles": [
+              "Material Recovery Facility Operator",
+              "Composting Unit Operator"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Facility operation is machinery, process and quality of output rather than collection. It is the formal, safer end of waste work and it has a technical skill ladder."
+          },
+          {
+            "roles": [
+              "Sewer & Septic Tank Worker"
+            ],
+            "higher": [
+              "bodily",
+              "neuroticism"
+            ],
+            "lower": [
+              "verbal",
+              "openness"
+            ],
+            "why": "The most dangerous work in this dataset. Entry into confined spaces with toxic gas kills workers every year in India despite the practice being unlawful, and the deaths are recorded as hazardous cleaning rather than as manual scavenging."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "SCGJ",
+        "DWSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. This work is entered without schooling and overwhelmingly by people from Scheduled Caste communities."
+        },
+        {
+          "step": 2,
+          "stage": "profiling",
+          "requirement": "Profiling under the NAMASTE scheme for sewer and septic tank workers, which brings PPE, health insurance and training."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Urban local body, a private sanitation contractor, or informal waste picking. Most is contract or daily wage rather than municipal employment."
+        },
+        {
+          "step": 4,
+          "stage": "route_out",
+          "requirement": "Capital subsidy under NAMASTE to become a sanitation entrepreneur operating mechanised equipment - the scheme's own stated objective, and the only documented route out."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.1,
+        "early_earnings_lpa": "0.9-2.4",
+        "mid_career_lpa": "1.8-4.5",
+        "mid_career_midpoint": 3.15,
+        "payback_years": 0.06,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Owning mechanised desludging or collection equipment and contracting to urban local bodies. This is what the NAMASTE scheme's capital support exists to fund, and it is the difference between doing this work and running it.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 75,
+          "skill_digital": 0,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "Almost unexposed by AI, and that is the least important thing about the risk in this profession. The technology that matters here is not artificial intelligence but MECHANISATION - suction desludging machines, sewer robots and material recovery equipment - which is policy's declared answer to the deaths and which would displace exactly the manual roles it protects. Sanitation Supervisor and Material Recovery Facility Operator are the roles that survive mechanisation."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "data/verified_facts.json#sanitation-workers-namaste-pemsr",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High and permanent - every city generates waste daily - but this is demand for labour under conditions the law has already declared unacceptable. The Prohibition of Employment as Manual Scavengers Act 2013 bans manual handling of human excreta, and about 38,000 sewer and septic tank workers had been profiled under NAMASTE by September 2024 against a ministry estimate of around 100,000 in urban India.",
+          "source": "data/verified_facts.json#sanitation-workers-namaste-pemsr"
+        },
+        {
+          "field": "economics",
+          "statement": "Fails the compensation filter, and listing this profession is a deliberate decision rather than an oversight. It is one of the largest occupations in urban India, it is overwhelmingly done by Scheduled Caste workers on contract or daily wage, and leaving it out would let the taxonomy present Indian work as cleaner than it is. The record names the route out - mechanised sanitation entrepreneurship - because the scheme that funds it is the honest answer to the question a student would ask."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Sewer & Septic Tank Worker is listed and must be read with its role_spread entry. Entering a sewer or septic tank manually is unlawful and continues to kill workers in India each year. It is recorded so that the hazard is visible in the data, not because it is a career anyone should be routed toward."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Three things are owed. No sourced wage figure exists for Indian sanitation workers, municipal or contract. No figure exists for what a NAMASTE-supported sanitation entrepreneur earns, which is the only documented route out of manual work. And a presentation decision is needed that the schema cannot make: how a recommender should surface an occupation that is large, lawful in part, lethal in part, and caste-bound in practice - it should almost certainly never be RECOMMENDED, only described."
+      }
+    },
+    {
+      "id": "env-disaster-resilience",
+      "profession": "Disaster Risk & Climate Resilience Professional",
+      "one_liner": "Plans for floods, cyclones, heat and earthquakes before they happen, and coordinates after.",
+      "job_roles": [
+        "Disaster Management Officer",
+        "Emergency Operations Coordinator",
+        "Climate Risk & Vulnerability Analyst",
+        "Hazard Mapping Specialist",
+        "Early Warning Systems Analyst",
+        "Relief & Rehabilitation Coordinator",
+        "Heat Action Plan Coordinator",
+        "Community Preparedness Trainer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Relief & Rehabilitation Coordinator",
+              "Emergency Operations Coordinator"
+            ],
+            "higher": [
+              "confidence",
+              "extraversion",
+              "neuroticism"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Response work is command and logistics under time pressure with incomplete information, often for weeks without rest. It is a completely different temperament from the analytical planning half of this profession."
+          },
+          {
+            "roles": [
+              "Climate Risk & Vulnerability Analyst",
+              "Hazard Mapping Specialist"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Risk analysis is modelling and mapping done years before anything happens, for people who may never read it. The reward is invisible and the failure is catastrophic."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-ENV",
+        "EXT-GOVT",
+        "EXT-DEV"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Geography, geology, civil engineering, environmental science, planning or social work - all are routes in."
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "A master's in disaster management, climate science or urban planning; or entry through the development sector."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "State or district disaster management authority, a municipal resilience cell, a humanitarian agency, or a consultancy advising cities and lenders on climate risk."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "UPSC Civil Services Examination",
+          "State public service commissions"
+        ],
+        "private_entrances": [],
+        "note": "Many senior disaster management posts in India are held by administrative service officers rather than by specialists, which is a real constraint on this as a technical career."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-15.0",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent climate risk and resilience advisory to cities, lenders and companies. Growing, because climate risk disclosure is becoming a financial requirement rather than a public-sector one.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Moderate exposure on the analytical half. Hazard Mapping Specialist and Early Warning Systems Analyst work with models and geospatial data that are increasingly automated, and forecasting itself is a machine learning success story. Emergency Operations Coordinator and Community Preparedness Trainer are protected entirely - coordinating a response and persuading a village to evacuate are things done by a person who is there."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and it is a profession whose need and whose funded posts are badly mismatched. India's exposure to flood, cyclone and extreme heat is rising and measurable; the number of specialist posts is small, and the senior ones are usually filled by generalist administrative officers rather than by specialists."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Pathway is 'any' because climate risk analysis has become a financial-sector skill internationally - lenders and insurers now require it - which gives this profession an unusual escape route from India's thin public-sector demand."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Geologist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "EXT-RND",
+      "why": "Already built in Sector 3. Earth science as investigation is research; applying it to a discharge or a clearance is here."
+    },
+    {
+      "profession": "Atmospheric & Ocean Scientist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "EXT-RND",
+      "why": "Already built in Sector 3, on the same method test - understanding the atmosphere is science, forecasting a cyclone for a district authority is disaster management."
+    },
+    {
+      "profession": "Electrical Engineer",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "PSSC",
+      "why": "Already built in Sector 2, and Solar Panel Technician was merged into Electrician there. Renewable energy ENGINEERING is engineering; only the project layer is here."
+    },
+    {
+      "profession": "Agricultural Scientist & Agronomist",
+      "goes_to": "15. Agriculture & Food Systems",
+      "tag_here_instead": "ASCI",
+      "why": "Soil and water conservation for FARMING belongs with agriculture. The boundary is whether the object of concern is the yield or the ecosystem."
+    },
+    {
+      "profession": "Fisheries & Aquaculture Professional",
+      "goes_to": "15. Agriculture & Food Systems",
+      "tag_here_instead": "ASCI",
+      "why": "Fisheries is food production. Marine ecology as conservation stays here under Forest, Wildlife & Conservation Professional."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "ENVIRONMENTAL LAW HAS NO RECORD ANYWHERE, and it is a gap rather than a routing note. Sector 7's Lawyer does not list environmental practice or the National Green Tribunal among its job roles, and Sector 7 is built - so this cannot be recorded as routed_elsewhere without asserting something untrue. Decide: add it as a job role under Lawyer in Sector 7, which is where it belongs.",
+    "WASTE MANAGEMENT & SANITATION WORKER IS THE HARDEST INCLUSION IN THIS DATASET, and it needs an explicit decision rather than a default. It is one of the largest urban occupations in India, it is caste-bound in practice, part of it is unlawful, and it kills people every year. Omitting it would let the taxonomy present Indian work as cleaner than it is. Including it risks a recommender proposing it to a child. The record is written to be DESCRIBED and not RECOMMENDED - it fails the compensation filter, carries a required admin_review, and names mechanised sanitation entrepreneurship as the documented route out - but the application-side rule that stops it being surfaced as a suggestion does not exist yet and must.",
+    "SUSTAINABILITY & ESG PROFESSIONAL is the highest-paid profession in this sector and among its most AI-exposed, and those facts are connected: it pays well because BRSR made it mandatory, and it is exposed because most of the work is structured data assembly against published factors. The record says so rather than riding the sector's fashionability.",
+    "GIS & REMOTE SENSING ANALYST could reasonably sit in Sector 1 or Sector 3 - it was promised here from Sector 3. It is here because the object of concern is land, water and ecosystems, but its tagging to IT-ITES and EXT-GOVT is the honest signal that a GIS analyst's employer is very often neither environmental nor scientific. Confirm the placement.",
+    "FOREST, WILDLIFE & CONSERVATION PROFESSIONAL merges three quite different careers - the IFS officer, the wildlife researcher and the forest guard - into one record with a four-group role_spread. They share an object of concern and a workplace but not a skill set, so the merge is contestable. It is kept as one because splitting it would produce a research profession duplicating Sector 3 and a government-service profession duplicating Sector 7."
+  ],
+  "changelog": {
+    "1.2": [
+      "v1.2 - INDEPENDENT REVIEW, two findings accepted. Environmental Engineer required Physics, Chemistry AND Maths behind a JEE Main gate - but verified_facts.json#jee-main-paper1-btech says Chemistry is NOT compulsory, and all fifteen JEE-gated records in Sector 2 use physics+maths. A hard filter was deleting eligible students. Corrected. Sustainability & ESG was also re-based from 14.0 to 12.5: it sat level with Software Developer and above every core Sector 2 engineer, on the thirteenth correction's precedent.",
+      "Sector 14 built. 8 professions, 71 job roles.",
+      "v1.1 - FOURTH ITERATION. One real defect found: Forest, Wildlife & Conservation Professional showed a single mid-career figure of 12.5 lakh across two careers that share nothing economically. An IFS officer enters on a Group A scale with housing and a pension; a Forest Guard is increasingly on contract or daily wage and does the patrolling that carries the physical risk. The figure described the officer end and said so nowhere. An economics nuance now states it. This is the same bimodal defect as School Teacher in Sector 12 and MBBS cost in Sector 4, and it is the third sector to hit it.",
+      "ALL THREE INHERITED PROMISES KEPT as professions in their own right: Environmental Engineer from Sector 2, and Environmental Scientist and GIS & Remote Sensing Analyst from Sector 3.",
+      "ONE GATE ADDED: upsc-ifos, at 150 vacancies for 2025 and 80 for 2026 - one of the smallest cadres in the All-India Services. The applicant count is deliberately null: IFS candidates sit the SAME preliminary examination as the roughly one million UPSC Civil Services aspirants, and no source separates out how many opted for forestry. Its if_unsuccessful block is unusually strong because the preparation is wholly shared with UPSC CSE.",
+      "TWO VERIFIED FACTS AT OPPOSITE ENDS OF THE SECTOR. SEBI's BRSR mandate explains why Sustainability & ESG is one of very few genuinely growing white-collar professions here - the top 1,000 listed companies must report, and third-party assurance extends to all of them by FY 2026-27. The NAMASTE scheme and the Manual Scavengers Act 2013 document the opposite end: about 38,000 sewer and septic tank workers profiled against a ministry estimate of 100,000 in urban India, doing work the law has already prohibited.",
+      "GIS & REMOTE SENSING ANALYST is the most AI-exposed profession here at 55 - automated feature extraction and change detection are what computer vision does - and the exposure is concentrated in the middle of the profession rather than at the entry rung, which is unusual and worse.",
+      "THE SANITATION RECORD'S AI SECTION MAKES A POINT THAT GENERALISES: the technology threatening this profession is not AI but MECHANISATION, and it is the same mechanisation that policy is funding to stop workers dying. A dataset that only tracks AI exposure will miss displacement risks of this kind entirely."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "All eight economics blocks are 'judgment'. Three specific gaps. First and most urgent: no sourced wage figure for Indian sanitation workers, and none for what a NAMASTE-supported sanitation entrepreneur earns - the only documented route out of manual work, and therefore the most consequential missing number in this sector. Second: Forest Guard and Forest Range Officer pay sits on state pay matrices that are published and were not fetched, which would make Forest, Wildlife & Conservation Professional verifiable in the way Sector 12's teachers now are. Third: no figure was found for the ESG and sustainability salary premium, which is the claim driving students toward that profession. Beyond money, one presentation decision is owed and it is not a research task: how a recommender should handle an occupation that must be DESCRIBED but never SUGGESTED. Waste Management & Sanitation Worker is the first record in this dataset that needs that distinction, and the schema has no way to express it."
+  }
+}

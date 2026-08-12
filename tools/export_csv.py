@@ -63,6 +63,14 @@ COLUMNS = [
     "nuances",
 ]
 
+# The subset that fits in a chat window alongside the spec. Chosen to answer the four questions a
+# student actually asks: can I get in, what does it cost, what does it pay, is it safe.
+COMPACT_COLUMNS = [
+    "professional_sector", "profession", "one_liner", "degree_dependency",
+    "class12_prerequisite", "years_to_qualify", "cost_of_entry_lakh", "early_earnings_lpa",
+    "mid_career_lpa", "ai_exposure", "india_demand", "self_employment", "licensing_body", "ship",
+]
+
 DEGREE_VALUES = {"none", "certificate", "undergrad", "professional"}
 ENTRY_VALUES = {"open", "after_any_degree", "restart_undergrad"}
 AFTER_UG = {"masters_required", "masters_is_the_entry", "masters_advantage", "work_first"}
@@ -76,6 +84,14 @@ EXPOSURES = {"output_is_digital", "routine_rule_based", "no_client_relationship"
 SUBJECTS = {"physics", "chemistry", "maths", "biology", "english", "accountancy", "economics"}
 TIERS = {"A", "B", "C"}
 STATUSES = {"verified", "judgment"}
+# economics.distribution — what SHAPE the money is, which decides whether a midpoint means
+# anything at all. "range" is the ordinary case and the default.
+#   power_law   a few earn enormously, most earn little, and there is almost no middle. A
+#               midpoint describes nobody, so the compensation filter MUST NOT fire on it.
+#   bimodal     two distinct populations, not a spread — a KVS teacher at 8.3 lakh and a private
+#               school teacher at 1.5; a government MBBS seat at 1-5 lakh and a private one at 60+.
+#               The midpoint is real arithmetic and describes almost nobody.
+DISTRIBUTIONS = {"range", "power_law", "bimodal"}
 
 # DEMAND is the answer to "should this be dropped?" — and the answer is almost always no.
 #   high       hiring at volume today
@@ -115,11 +131,29 @@ def ships(p):
 
     Returns (ship: bool, failed: list[str]). The application does exactly this at query time.
     """
-    mid = (p.get("economics") or {}).get("mid_career_midpoint")
+    ec = p.get("economics") or {}
+    mid = ec.get("mid_career_midpoint")
     if mid is None:
         return True, []
+    # A power-law record's midpoint is arithmetic over a distribution with no middle. Filtering on
+    # it would delete a profession on the strength of a number the record itself calls meaningless.
+    if ec.get("distribution") == "power_law":
+        return True, []
+    # Same principle, second case: mid_career EXCLUDES business ownership by design (see
+    # filter_rules.json → known_limitations). Where going independent is NORMAL and the record
+    # openly owes an owner-income figure it could not source, the midpoint is a floor someone
+    # leaves, not a ceiling they hit. Automobile Mechanic is the proof — cut at 4.25 while its own
+    # SOURCED self_employment ceiling is 6–18 lakh. Both conditions are required: 'common' alone
+    # would spare records whose number is simply low, and admin_review alone spares employees.
+    # It exempts the PAY FLOOR ONLY, never the AI clause. Ownership answers "is this figure the
+    # whole income"; it does not answer "is this work disappearing". Website & Online Store Builder
+    # is self-employed AND owes an owner figure AND scores 72 — the clause was written for exactly
+    # that record, and letting ownership override it would have quietly cancelled the clause.
+    se = p.get("self_employment") or {}
+    owner_exempt = (se.get("likelihood") == "common"
+                    and (p.get("admin_review") or {}).get("required"))
     failed = []
-    if mid < RULES["mid_career_floor_lpa"]:
+    if mid < RULES["mid_career_floor_lpa"] and not owner_exempt:
         failed.append(f"mid_career {mid} < floor {RULES['mid_career_floor_lpa']}")
     clause = RULES["ai_penalty_clause"]
     if mid < clause["mid_career_below_lpa"] and p["ai_exposure"]["band"] == clause["when_ai_exposure"]:
@@ -133,6 +167,9 @@ def check_economics(pid, p, out):
     if not e:
         out.append(f"{pid}: missing economics block")
         return
+    if e.get("distribution", "range") not in DISTRIBUTIONS:
+        out.append(f"{pid}: bad economics.distribution '{e.get('distribution')}' — "
+                   f"one of {sorted(DISTRIBUTIONS)}")
     lo, hi = (e.get("mid_career_lpa") or "0-0").split("-")
     mid = e.get("mid_career_midpoint")
     if mid is None or abs(mid - (float(lo) + float(hi)) / 2) > 1e-9:
@@ -389,6 +426,50 @@ def export(path, valid_tags):
     return len(problems)
 
 
+def combine(files):
+    """Also emit build/ALL-professions.csv — every sector in one sheet.
+
+    The per-sector files stay, because a sector is the unit a human reviews. This is for the
+    check they cannot do: comparing ACROSS sectors. That pass caught three real defects in the
+    18-sector build and every one of them was invisible inside a single file — Sector 8 pricing
+    designers above Sector 1's software developers, Sector 15 pricing agricultural engineers above
+    Sector 2's mechanical ones, and Sector 16 putting a deck officer five lakh above the marine
+    engineer holding the parallel certificate on the same ship.
+
+    A number can be individually valid and collectively false, and you cannot see that with
+    eighteen files open. `professional_sector` is already the first column, so it sorts.
+
+    Only written when exporting the whole dataset — a partial run would produce a misleading
+    "ALL" sheet containing two sectors.
+    """
+    if len(files) < len(list(SRC.glob("*.json"))):
+        return
+    target = OUT / "ALL-professions.csv"
+    rows = []
+    for f in files:
+        csv_path = OUT / f"{f.stem}.csv"
+        if not csv_path.exists():
+            continue
+        with csv_path.open(encoding="utf-8-sig", newline="") as fh:
+            rows += list(csv.DictReader(fh))
+    with target.open("w", newline="", encoding="utf-8-sig") as fh:
+        w = csv.DictWriter(fh, fieldnames=COLUMNS)
+        w.writeheader()
+        w.writerows(rows)
+    print(f"{target.as_posix()}  ({len(rows)} professions, all sectors, for cross-sector sorting)")
+
+    # A paste-sized cut for pasting into a chat window — the full sheet is ~480 KB and will not
+    # fit alongside the spec. GENERATED, never hand-made: the first version of this was written
+    # by hand and went stale within an hour, still naming the Bar Council of India as the
+    # Judicial Services Officer's licensing body after that had been corrected everywhere else.
+    compact = OUT / "ALL-professions-COMPACT.csv"
+    with compact.open("w", newline="", encoding="utf-8-sig") as fh:
+        w = csv.DictWriter(fh, fieldnames=COMPACT_COLUMNS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+    print(f"{compact.as_posix()}  ({len(COMPACT_COLUMNS)} columns, sized to paste into a chat)")
+
+
 def main():
     wanted = sys.argv[1:]
     files = sorted(SRC.glob("*.json"))
@@ -400,6 +481,7 @@ def main():
 
     valid_tags = known_tags()
     issues = sum(export(f, valid_tags) for f in files)
+    combine(files)
     if issues:
         print(f"\n{issues} issue(s) found.")
     return 1 if issues else 0

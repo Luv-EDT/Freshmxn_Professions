@@ -1,0 +1,1691 @@
+{
+  "professional_sector": "12. Education & Training",
+  "professional_sector_id": 12,
+  "version": "1.1",
+  "profession_count": 10,
+  "sector_verification_note": "THE BEST-EVIDENCED SECTOR SINCE HEALTHCARE, and the first outside it with a statutory PAY anchor. Three of four sector facts carry money or law directly: the 7th CPC pay for Kendriya Vidyalaya teachers, the Anganwadi honorarium, and the Rehabilitation Council of India Act 1992 read from the Act itself. Tier placement is mixed by design - Special Educator is genuinely Tier A under RCI registration, School Teacher and College Teacher are Tier B behind TET and UGC NET, and the rest are Tier C. The sector's defining economic fact is that the SAME JOB is paid three completely different ways depending on employer: a Kendriya Vidyalaya primary teacher starts near 8.3 lakh a year, a state government teacher earns less, and a private school teacher in a small town may earn a fifth of it.",
+  "professions": [
+    {
+      "id": "edu-school-teacher",
+      "profession": "School Teacher",
+      "one_liner": "Teaches a class of children a subject, and is answerable for whether they learn it.",
+      "job_roles": [
+        "Government School Teacher",
+        "Primary Teacher (PRT)",
+        "Trained Graduate Teacher (TGT)",
+        "Post Graduate Teacher (PGT)",
+        "Pre-Primary Teacher",
+        "Physical Education Teacher",
+        "Computer Teacher",
+        "Language Teacher",
+        "Art & Design Teacher",
+        "Music, Dance & Drama Teacher",
+        "School Librarian"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Pre-Primary Teacher"
+            ],
+            "higher": [
+              "agreeableness",
+              "emotional_intelligence",
+              "bodily"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Teaching four-year-olds is care, routine and play rather than subject instruction. The qualification route is different too - a nursery teacher training diploma rather than a B.Ed."
+          },
+          {
+            "roles": [
+              "Post Graduate Teacher (PGT)"
+            ],
+            "higher": [
+              "long_term_memory",
+              "reasoning",
+              "logical"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Senior secondary teaching is subject expertise under board-examination pressure, with students who are nearly adults. It is closest of all school roles to lecturing."
+          },
+          {
+            "roles": [
+              "Physical Education Teacher"
+            ],
+            "higher": [
+              "bodily",
+              "extraversion",
+              "confidence"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Accountable for a curriculum and a class rather than for competitive results, which is what separates this role from Sports Coach in Sector 11."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. The stream decides which subject you can eventually teach, not whether you can teach."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A bachelor's degree in the subject, or D.El.Ed for primary teaching."
+        },
+        {
+          "step": 3,
+          "stage": "professional_qualification",
+          "requirement": "B.Ed (2 years) from an NCTE-recognised institution, or the integrated 4-year B.A./B.Sc B.Ed."
+        },
+        {
+          "step": 4,
+          "stage": "eligibility_test",
+          "requirement": "CTET or the state TET - a statutory minimum qualification for appointment to teach classes I to VIII."
+        },
+        {
+          "step": 5,
+          "stage": "recruitment",
+          "requirement": "KVS, NVS, state public service commission or state education department recruitment for government posts; direct interview for private schools."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CTET",
+          "State Teacher Eligibility Tests",
+          "KVS and NVS recruitment",
+          "State teacher recruitment examinations"
+        ],
+        "private_entrances": [],
+        "note": "TET is a statutory eligibility condition rather than a competitive entrance - passing it does not get you a post, it only makes you eligible to be considered for one."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-8.3",
+        "mid_career_lpa": "6.0-16.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.71,
+        "distribution": "bimodal",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://cdnbbsr.s3waas.gov.in/s3kv01caa336cce58eb396764dd9448259/uploads/2024/09/2024092019.pdf"
+          ],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Private tuition alongside a teaching post, which is near-universal in India, or running a coaching centre. Tuition income frequently exceeds the school salary in the private-school half of this profession.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 10,
+          "skill_digital": 10,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Low exposure and it is worth being precise about why, because content generation looks threatening. Lesson plans, worksheets and question banks do generate easily, and Computer Teacher and Language Teacher will feel that in preparation time. But the job is not producing material - it is holding the attention of forty children, noticing which one has stopped following, and being the adult in the room. Pre-Primary Teacher and Physical Education Teacher are the least exposed work in the sector."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#tet-mandatory-school-teaching",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "BIMODAL, and the single figure cannot say so. A Kendriya Vidyalaya PRT starts at roughly 8.3 lakh a year gross on the 7th CPC matrix - more than a fresh software developer - while a private school in a small town may pay 1.5 to 3 lakh for the same work. State government pay sits between the two. Which side of that gap you land on is decided by a recruitment examination, not by ability to teach.",
+          "source": "data/verified_facts.json#kvs-teacher-pay-7cpc"
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and the distinction matters. TET is a statutory ELIGIBILITY CONDITION under Section 23 of the RTE Act, not a licence: there is no register of teachers, no professional conduct jurisdiction and nobody is struck off. That is why this profession is Tier B rather than Tier A, despite the gate being real and hard.",
+          "source": "data/verified_facts.json#tet-mandatory-school-teaching"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and structurally so - India has a standing shortfall of qualified teachers, particularly in government schools and in science and mathematics. The shortage and the low private-sector pay coexist because they are different markets."
+        },
+        {
+          "field": "economics",
+          "statement": "economics.distribution is 'bimodal', which is a statement that the range and the midpoint should not be read as a typical income. Two populations, not a spread. A Kendriya Vidyalaya primary teacher starts near 8.3 lakh on the 7th CPC matrix; a private school teacher in a small town may earn a fifth of that. Which one you are is decided by a recruitment examination, not by ability. The compensation filter does not fire on a power_law record, because deleting a profession on the strength of a number the record itself calls meaningless would be worse than showing it."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "economics.distribution is 'bimodal'. Two populations, not a spread. A Kendriya Vidyalaya primary teacher starts near 8.3 lakh on the 7th CPC matrix; a private school teacher in a small town may earn a fifth of that. Which one you are is decided by a recruitment examination, not by ability. Decide how the application should present this record - suppress the range and state the risk, or show both halves separately."
+      }
+    },
+    {
+      "id": "edu-special-educator",
+      "profession": "Special Educator",
+      "one_liner": "Teaches children with disabilities and learning differences, and adapts how they are taught.",
+      "job_roles": [
+        "Special Educator",
+        "Learning Disability Specialist",
+        "Resource Room Teacher",
+        "Early Intervention Specialist",
+        "Inclusive Education Coordinator",
+        "Braille & Assistive Technology Instructor",
+        "Teacher of the Deaf",
+        "Shadow Teacher & Classroom Support Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Early Intervention Specialist"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "agreeableness",
+              "attention_span"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Early intervention works with children under six and with their parents, often delivering a diagnosis families have not accepted. The clinical and counselling content is far higher than in classroom special education."
+          },
+          {
+            "roles": [
+              "Braille & Assistive Technology Instructor"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Assistive technology is a technical specialism - devices, screen readers, Braille systems and adaptations. It is closer to rehabilitation engineering than to teaching."
+          },
+          {
+            "roles": [
+              "Shadow Teacher & Classroom Support Specialist"
+            ],
+            "higher": [
+              "agreeableness",
+              "conscientiousness"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Shadow support is one-to-one accompaniment of a single child inside a mainstream class. It is the commonest entry route, is usually paid by the family rather than the school, and carries no job security."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "HSSC",
+        "SCPWD"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A bachelor's degree, then B.Ed Special Education in a disability specialisation, from an RCI-recognised institution."
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Enrolment on the Central Rehabilitation Register maintained by the Rehabilitation Council of India. MANDATORY - practising without it is an offence under Section 13 of the RCI Act."
+        },
+        {
+          "step": 4,
+          "stage": "renewal",
+          "requirement": "Keep the CRR registration current. It is renewable, and lapsing it means you may not lawfully hold the post."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "Special school, inclusive mainstream school, early intervention centre, NGO, or private practice."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CTET (for school posts)",
+          "State Teacher Eligibility Tests"
+        ],
+        "private_entrances": [],
+        "note": "The binding requirement is not an entrance exam but RCI registration, which follows from the recognised qualification rather than from a test."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Rehabilitation Council of India (RCI)",
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "2.4-6.0",
+        "mid_career_lpa": "5.0-12.0",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 0.95,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Private practice - one-to-one remediation, assessment and shadow support paid for directly by families. Extremely common, and it is where the income in this profession actually is.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 10,
+          "skill_physical": 20,
+          "skill_digital": 5,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Among the least exposed professions in the dataset once legal accountability is applied. The work is reading one specific child's response minute by minute and changing approach, with a statutory register behind the judgment. Braille & Assistive Technology Instructor is the most exposed role, since some assistive functions are increasingly built into consumer devices - but that expands what the child can do rather than replacing the person teaching them to use it."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#rci-registration-mandatory",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "One of the very few genuinely Tier A professions outside healthcare and law. Section 13(2) of the RCI Act 1992 bars an unregistered person from holding office as, or practising as, a rehabilitation professional anywhere in India, and Section 13(3) makes contravention punishable with up to a year's imprisonment. Two limits are worth knowing: the maximum fine is Rs 1,000 and has not been revised since 1992, and Section 25 allows prosecution only on a written complaint by the Council.",
+          "source": "data/verified_facts.json#rci-registration-mandatory"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and rising, driven by the Rights of Persons with Disabilities Act 2016 and by schools being required to include children they previously excluded. The supply of RCI-registered special educators is far below what that implies, which is why shadow teaching is largely done by unregistered people - a gap the law does not acknowledge."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "edu-college-teacher",
+      "profession": "College & University Teacher",
+      "one_liner": "Teaches a subject at degree level and usually researches it - the academic career.",
+      "job_roles": [
+        "Assistant Professor",
+        "College Lecturer",
+        "Guest Faculty",
+        "Polytechnic Lecturer",
+        "Postdoctoral Researcher",
+        "Academic Tutor",
+        "Laboratory Instructor (College)",
+        "Media & Journalism Teacher"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Guest Faculty",
+              "Academic Tutor"
+            ],
+            "higher": [
+              "conscientiousness",
+              "verbal"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Guest and contract faculty do the same teaching for a fraction of the pay, no security and no research time. In many Indian colleges they now carry most of the teaching load, and it is the realistic first job."
+          },
+          {
+            "roles": [
+              "Postdoctoral Researcher"
+            ],
+            "higher": [
+              "reasoning",
+              "openness",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "A postdoc is a research position with little or no teaching, on a fixed-term fellowship. It sits between Sector 3 and this one and is a holding pattern rather than a destination."
+          },
+          {
+            "roles": [
+              "Polytechnic Lecturer",
+              "Laboratory Instructor (College)"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Technical and laboratory teaching is demonstration and supervision of practical work, with a diploma-level audience and an applied syllabus."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "EXT-RND",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream - it decides the subject."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Bachelor's then master's in the subject, usually with at least 55 percent."
+        },
+        {
+          "step": 3,
+          "stage": "eligibility_test",
+          "requirement": "UGC NET, or CSIR-UGC NET for the sciences. Qualifying with JRF also funds a PhD."
+        },
+        {
+          "step": 4,
+          "stage": "doctorate",
+          "requirement": "PhD - now effectively required for a permanent university post, and 4 to 6 years long."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "Assistant Professor at a college or university. Guest and contract faculty first, for most people."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UGC NET",
+          "CSIR-UGC NET",
+          "State Eligibility Tests (SET/SLET)"
+        ],
+        "private_entrances": [],
+        "note": "UGC NET is the eligibility gate for Assistant Professor posts nationally; states run their own SET/SLET as an alternative for state institutions."
+      },
+      "entry_competition": {
+        "primary_gate": "csir-ugc-net",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "4.5-9.0",
+        "mid_career_lpa": "9.0-18.0",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Consultancy, textbook writing, examining and online course teaching alongside a post. Full independence is rare - the salary and the institution are the career.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 35,
+          "knowledge_retrievable": 15,
+          "skill_physical": 5,
+          "skill_digital": 10,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Low exposure and unusually well protected, because the credential and the institution are the product. A model can explain a subject; it cannot award a degree, supervise a thesis or sit on an examination board. Academic Tutor and Guest Faculty are the exposed roles, since explanation-on-demand is exactly what students now get free. Research supervision and assessment are the durable core."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#csir-jrf-srf-stipend",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "years_to_qualify",
+          "statement": "Nine years from class 12 and that is the honest figure: three or four for the bachelor's, two for the master's, then a PhD of four to six. It is the longest runway in this dataset outside medicine, and unlike medicine there is no guaranteed post at the end."
+        },
+        {
+          "field": "entry_competition",
+          "statement": "CSIR-UGC NET is named as the primary gate for the same reason as in Sector 3 - the JRF stipend decides whether the PhD years are financially survivable. The humanities and social science UGC NET is a separate examination not yet in the registry, which is recorded in pending_gates."
+        },
+        {
+          "field": "mid_stream_entry",
+          "statement": "'after_any_degree' is true but hides the real lock: the subject of your MASTER'S is the profession. Any bachelor's degree can lead here, but switching discipline after that usually means starting again from a relevant bachelor's, because most universities will not admit you to a master's in a subject you have not read."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "edu-coaching-faculty",
+      "profession": "Coaching & Test-Prep Teacher",
+      "one_liner": "Teaches students to pass a specific examination - JEE, NEET, UPSC, banking, boards.",
+      "job_roles": [
+        "Coaching Faculty (Engineering Entrance)",
+        "Coaching Faculty (Medical Entrance)",
+        "Competitive Exam Faculty",
+        "Private Tutor",
+        "Online Tutor",
+        "Coding Instructor",
+        "Spoken English Trainer",
+        "Doubt-Solving Faculty",
+        "Test & Question Setter"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Private Tutor",
+              "Online Tutor"
+            ],
+            "higher": [
+              "agreeableness",
+              "emotional_intelligence",
+              "conscientiousness"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "One-to-one tuition is relationship work with a single student and their parents. It is the largest and least visible part of Indian education and the easiest to enter."
+          },
+          {
+            "roles": [
+              "Coaching Faculty (Engineering Entrance)",
+              "Coaching Faculty (Medical Entrance)"
+            ],
+            "higher": [
+              "confidence",
+              "extraversion",
+              "long_term_memory"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Teaching two hundred students at a time to beat an examination is performance under measured results. Faculty are retained on their students' ranks, which is a harder accountability than any school teacher faces."
+          },
+          {
+            "roles": [
+              "Test & Question Setter",
+              "Doubt-Solving Faculty"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Content roles inside the coaching industry - writing questions and answering queries at scale. These are the entry jobs and they are the ones being automated."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream - it decides what you can teach."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A bachelor's degree in the subject. For JEE and NEET coaching an IIT or medical background is what the market actually pays for."
+        },
+        {
+          "step": 3,
+          "stage": "demonstration",
+          "requirement": "A demo lecture. Coaching institutes hire on classroom performance, not on qualifications."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Coaching institute faculty, an edtech company, or private tuition on your own account."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. This profession has no entrance of its own - it teaches other people's."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.4-6.0",
+        "mid_career_lpa": "5.0-18.0",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.48,
+        "distribution": "power_law",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own tuition practice or a coaching centre. This is the normal end state, and a tutor with a reputation in one town earns multiples of an institute salary.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 5,
+          "skill_digital": 20,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Genuinely split, and the split runs through the middle of the profession. Doubt-Solving Faculty and Test & Question Setter are directly exposed - answering a doubt and generating a practice question are exactly what a model does, and edtech has already automated much of it. Private Tutor and star coaching faculty are protected by something a model cannot supply: a specific person the student and their parents trust with an outcome that decides the family's next twenty years."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The widest employed range in this sector, and it is a power law rather than a spread. Coaching faculty with a track record at the top institutes earn extraordinary sums; most faculty earn ordinary teaching salaries with worse job security. The mid-career figure describes the middle of a distribution that has very little middle."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and it is worth naming what drives it: the coaching industry exists because the gates in DECISIONS.md's own entrance_gates registry are as narrow as they are. This profession's demand is a direct function of NEET at 18.7 applicants per seat and JEE at 23.5."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Placed in Education rather than treated as a business, because the object of concern is a student learning something. The coaching CENTRE as an enterprise is Sector 5 entrepreneurship; the person in front of the class is here."
+        },
+        {
+          "field": "economics",
+          "statement": "economics.distribution is 'power_law', which is a statement that the range and the midpoint should not be read as a typical income. Star faculty at the top institutes earn extraordinary sums; the median is an ordinary teaching salary with worse job security. There is very little middle. The compensation filter does not fire on a power_law record, because deleting a profession on the strength of a number the record itself calls meaningless would be worse than showing it."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "A POWER-LAW INCOME presented as a range - DECISIONS.md 10 (sixteenth correction) names six such records and this was the only one not flagged. Star coaching faculty at the top institutes earn extraordinary sums and the median is an ordinary teaching salary with worse security; there is very little middle for a midpoint to describe. Decide whether to suppress the range and state the risk instead."
+      }
+    },
+    {
+      "id": "edu-early-childhood",
+      "profession": "Early Childhood & Anganwadi Educator",
+      "one_liner": "Looks after and teaches children under six - anganwadis, creches and preschools.",
+      "job_roles": [
+        "Anganwadi Worker",
+        "Anganwadi Helper",
+        "Preschool Teacher",
+        "Creche Worker",
+        "Balwadi Teacher",
+        "Early Childhood Care Assistant",
+        "Anganwadi Supervisor",
+        "Nutrition & Health Educator (ICDS)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Anganwadi Supervisor"
+            ],
+            "higher": [
+              "conscientiousness",
+              "verbal",
+              "extraversion"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Supervisors oversee a cluster of anganwadi centres - records, supplies, reporting and inspection. It is a graded government post with a pay scale, unlike the honorarium roles beneath it, and it is the only promotion route out of this profession."
+          },
+          {
+            "roles": [
+              "Preschool Teacher"
+            ],
+            "higher": [
+              "openness",
+              "musical",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Private preschool teaching is curriculum-led, parent-facing and urban. It shares an age group with anganwadi work and almost nothing else - different employer, different pay, different expectations."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "EXT-GOVT",
+        "HSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Class 10 or 12 depending on the state. Anganwadi Worker recruitment is usually class 10 or 12 pass."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "State ICDS training for anganwadi posts, or a Nursery Teacher Training / Early Childhood Care and Education diploma for private preschools."
+        },
+        {
+          "step": 3,
+          "stage": "recruitment",
+          "requirement": "Anganwadi posts are filled by the state Women and Child Development department, usually with a local residence requirement."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Anganwadi centre, creche, or private preschool chain."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State Anganwadi Worker recruitment"
+        ],
+        "private_entrances": [],
+        "note": "Anganwadi recruitment is a state government process rather than a national entrance, and it is normally restricted to women resident in the local area."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "0.6-1.8",
+        "mid_career_lpa": "1.2-3.6",
+        "mid_career_midpoint": 2.4,
+        "payback_years": 0.25,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "A private creche or playgroup, which needs a room and a licence rather than capital. It is the realistic route out of honorarium work for someone with the training.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 55,
+          "skill_digital": 0,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Almost unexposed. The work is physically caring for very small children, feeding them, weighing them and keeping them safe. Nutrition & Health Educator (ICDS) and Anganwadi Supervisor carry the only exposure, through the record-keeping and reporting that has already largely moved to a phone application."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Verified and grim. Anganwadi Workers are paid an HONORARIUM, not a salary - no pay scale, no increment, no pension. In Delhi that is Rs 12,720 a month including a generous state top-up; the fixed central component is a fraction of it, so the identical job pays several times less in states that add little. 13.5 lakh Anganwadi Workers and 10.2 lakh Helpers do this work.",
+          "source": "data/verified_facts.json#anganwadi-worker-honorarium"
+        },
+        {
+          "field": "filter",
+          "statement": "Fails the compensation filter, and listing it anyway is the point. This is among the largest single occupations in India, it is overwhelmingly done by women, it is often the only formal-sector work available in a village, and it is classified as voluntary service precisely so that it need not be paid as employment."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High in the sense that the posts exist in every village and turnover is real. It is not high in the sense of a growing career - the number of sanctioned anganwadi centres is largely fixed."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The honorarium figure is Delhi's, which is at the generous end. No state-by-state range was fetched, and the spread is the single most decision-relevant fact for a student considering this work. Also unresolved: whether an occupation the state deliberately classifies as voluntary service rather than employment should be presented in a salary field at all."
+      }
+    },
+    {
+      "id": "edu-vocational-trainer",
+      "profession": "Vocational & Skill Trainer",
+      "one_liner": "Teaches a trade to people who will do it - ITI, apprenticeship and skilling programmes.",
+      "job_roles": [
+        "ITI Instructor",
+        "Skill Development Trainer",
+        "Apprenticeship Trainer",
+        "Assessor (NSQF)",
+        "Workshop Instructor",
+        "Placement & Employability Trainer",
+        "Master Trainer",
+        "Industry Trainer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Assessor (NSQF)"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Assessment under the National Skills Qualifications Framework is judging whether a candidate meets a written standard, on behalf of a Sector Skill Council. The assessor does not train the people they assess."
+          },
+          {
+            "roles": [
+              "Placement & Employability Trainer"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Employability training is communication, interviews and workplace behaviour rather than a trade. It is attached to skilling programmes and is a different job entirely."
+          },
+          {
+            "roles": [
+              "ITI Instructor",
+              "Workshop Instructor"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Trade instruction is demonstration at a bench or a machine, taught by someone who did the job. It is the closest teaching gets to the trade itself."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "MEPSC",
+        "CGSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, or an ITI trade certificate."
+        },
+        {
+          "step": 2,
+          "stage": "trade_experience",
+          "requirement": "Work in the trade. This is what actually qualifies a vocational trainer and no course substitutes for it."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "Craft Instructor Training Scheme (CITS) for ITI posts, or a Sector Skill Council Train-the-Trainer certification for NSQF programmes."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Government or private ITI, a skilling partner under PMKVY, a corporate training centre, or an industry apprenticeship programme."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "Craft Instructor Training Scheme (CITS)",
+          "State ITI instructor recruitment"
+        ],
+        "private_entrances": [
+          "Sector Skill Council trainer certifications"
+        ],
+        "note": "CITS is the recognised public qualification for ITI instructors; Sector Skill Council certifications govern who may deliver and assess NSQF-aligned training."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "2.4-4.8",
+        "mid_career_lpa": "4.0-10.0",
+        "mid_career_midpoint": 7.0,
+        "payback_years": 0.42,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Running a private training centre affiliated to a Sector Skill Council, or independent corporate and industrial training. Both depend on holding the certifications that let you certify others.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Low exposure, protected by the same thing the trades themselves are protected by: you cannot teach someone to weld through a screen. Placement & Employability Trainer and Assessor (NSQF) carry the exposure - communication training and standards-based assessment are both substantially generatable. ITI Instructor and Workshop Instructor are as safe as the trade they teach."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and policy-driven rather than market-driven, which is a real risk worth naming. A large part of this profession is employed through government skilling schemes, so demand moves with scheme funding cycles rather than with the underlying need for trained workers."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Placed in Education rather than Sector 2 with the trades, on the teaching-anything rule. The counterpart decision is that a working electrician stays in Sector 2 - the same subject, split by whether you do the work or teach it."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "edu-corporate-trainer",
+      "profession": "Corporate Trainer & Learning Professional",
+      "one_liner": "Builds and runs training for people already in jobs - skills, systems, compliance, leadership.",
+      "job_roles": [
+        "Corporate Trainer",
+        "Learning Consultant",
+        "Soft Skills Trainer",
+        "Technical Trainer",
+        "Onboarding Specialist",
+        "Compliance Training Specialist",
+        "Sales Enablement Trainer",
+        "Learning Experience Designer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Technical Trainer"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Technical training teaches a specific system or product to people who will use it at work. It requires the underlying domain knowledge and is usually done by someone who moved across from the technical role."
+          },
+          {
+            "roles": [
+              "Soft Skills Trainer",
+              "Sales Enablement Trainer"
+            ],
+            "higher": [
+              "extraversion",
+              "confidence",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "These are performance-led roles - a room of adults who did not choose to be there and must be won over in the first ten minutes."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "EXT-EDU",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree."
+        },
+        {
+          "step": 3,
+          "stage": "domain_experience",
+          "requirement": "Several years doing the work you will train. Almost nobody enters corporate training directly from a degree, which makes this a second career rather than a first."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "In-house L&D team, a training consultancy, or independent practice."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.6-7.0",
+        "mid_career_lpa": "7.0-16.0",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.57,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent training consultancy charging per day or per programme. Very common in this profession and the standard second half of the career.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 20,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "Substantially exposed on the content side and protected on the delivery side. Compliance Training Specialist and Onboarding Specialist produce standardised material that generates well, and Learning Experience Designer is exposed for the same reason instructional design generally is. What survives is the room: reading whether thirty adults have actually understood something, and being credible to them because you have done the job."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "years_to_qualify",
+          "statement": "Six years, and it is not study - it is the domain experience the job requires before anyone will listen to you. This is a SECOND career, entered in the late twenties or thirties, and it should not be presented to a school student as a direct destination."
+        },
+        {
+          "field": "industrial_sectors",
+          "statement": "Promised to this sector from Sector 5. It sits in Education rather than Business because the object of concern is whether a person learns something, and the employer being a company is exactly what DECISIONS.md 2.2 calls a tag."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "edu-instructional-designer",
+      "profession": "Curriculum & Instructional Designer",
+      "one_liner": "Designs what gets taught and how - syllabi, textbooks, courses, assessments, e-learning.",
+      "job_roles": [
+        "Instructional Designer",
+        "Curriculum Developer",
+        "Educational Content Developer",
+        "Assessment & Question Designer",
+        "Textbook Writer",
+        "E-learning Developer",
+        "Academic Coordinator",
+        "Education Researcher",
+        "Learning Content Editor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Education Researcher"
+            ],
+            "higher": [
+              "reasoning",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Education research measures whether teaching worked, using survey and statistical method. It is empirical work and sits close to Sector 3."
+          },
+          {
+            "roles": [
+              "E-learning Developer"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "E-learning development is authoring-tool and multimedia production work. It is the technical end of the profession and the most directly exposed."
+          },
+          {
+            "roles": [
+              "Academic Coordinator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "extraversion",
+              "agreeableness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Coordination is timetables, teacher support and academic operations inside a school or institution. It is administration with a curriculum attached."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "IT-ITES",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree; a master's in education, a subject discipline or instructional design helps."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Samples of designed material - a module, an assessment, a course outline. Teaching experience is the commonest way in."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Edtech company, publisher, university teaching and learning centre, NGO, or a corporate L&D team."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-15.0",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance curriculum and content development for publishers, edtech firms and institutions, usually project by project. Common after five or six years.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "The most exposed profession in this sector. Generating a lesson sequence, a set of practice questions or a module outline is close to a canonical use of a language model, and Educational Content Developer, Assessment & Question Designer and E-learning Developer all sit directly in it. What holds is deciding what a specific cohort needs to learn and in what order, defending that against a syllabus committee, and knowing why the previous version failed - which is clarity, and is what Education Researcher and Curriculum Developer do."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "ai_exposure",
+          "statement": "The bottom rung is shrinking hard here. Content development was the standard entry job in Indian edtech and it employed very large numbers of graduates; that intake has visibly contracted. The senior design and research work is intact, but the ladder that produced people for it is not."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "edu-librarian",
+      "profession": "Librarian & Information Professional",
+      "one_liner": "Organises knowledge so people can find it - libraries, archives, digital collections.",
+      "job_roles": [
+        "Librarian",
+        "Assistant Librarian",
+        "Library Assistant",
+        "Cataloguer",
+        "Digital Repository Manager",
+        "Information Literacy Instructor",
+        "School & College Library Coordinator",
+        "Records & Documentation Officer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Digital Repository Manager"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Managing an institutional repository is metadata, standards and systems work. It is the part of librarianship that is closest to data engineering and the part that is growing."
+          },
+          {
+            "roles": [
+              "Information Literacy Instructor"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Teaching students how to search, evaluate sources and avoid plagiarism is front-of-room teaching, and it has become the most defensible part of the profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "EXT-CULT",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree, then B.Lib.I.Sc and usually M.Lib.I.Sc."
+        },
+        {
+          "step": 3,
+          "stage": "eligibility_test",
+          "requirement": "UGC NET in Library and Information Science for college and university librarian posts."
+        },
+        {
+          "step": 4,
+          "stage": "recruitment",
+          "requirement": "University, college, school, public library system, research institute or corporate information centre. Most good posts are government and filled by examination."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UGC NET (Library & Information Science)",
+          "State and central library recruitment"
+        ],
+        "private_entrances": [],
+        "note": "UGC NET is the eligibility condition for academic librarian posts, in the same way it is for Assistant Professor."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freelance cataloguing, records management and knowledge-management consultancy for institutions and companies. A thin market, and it depends on the digital skills rather than the traditional ones.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 10,
+          "skill_digital": 20,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Genuinely contested. Cataloguer and Library Assistant work is substantially automatable - metadata generation and classification are pattern tasks - and search itself has been the profession's competition for two decades. What has grown rather than shrunk is Information Literacy Instructor and Digital Repository Manager: when finding text became free, judging and curating it became the job."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low, and honestly so. School and college librarian posts in India are frequently unfilled or merged into other duties, and public library systems are thinly funded. The work exists; the sanctioned posts are shrinking."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Placed in Education rather than Sector 17 with heritage. An archivist preserving a collection for its own sake would belong in 17; a librarian exists so that a specific community of readers can learn, which is this sector's object of concern."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "edu-career-counsellor",
+      "profession": "Career & Education Counsellor",
+      "one_liner": "Helps students choose what to study and what to do next, and understands the routes.",
+      "job_roles": [
+        "Career Counsellor",
+        "School Guidance Counsellor",
+        "Admissions Counsellor",
+        "Study Abroad Consultant",
+        "Education Consultant",
+        "Placement Officer",
+        "Psychometric Assessor (Career)",
+        "Scholarship & Financial Aid Advisor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Study Abroad Consultant",
+              "Admissions Counsellor"
+            ],
+            "higher": [
+              "extraversion",
+              "conscientiousness",
+              "verbal"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "These are commission and target-driven roles representing institutions, which creates a conflict of interest the counselling roles do not have. It is the largest paid segment of the profession and the one a student should understand clearly."
+          },
+          {
+            "roles": [
+              "School Guidance Counsellor"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "agreeableness",
+              "attention_span"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "In-school guidance overlaps with pastoral and mental health support, and often involves the first conversation a distressed adolescent has with an adult."
+          },
+          {
+            "roles": [
+              "Psychometric Assessor (Career)"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Administering and interpreting aptitude and interest inventories is technical measurement work with a professional standard behind it, done for other counsellors as much as for students."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-EDU",
+        "MEPSC",
+        "HSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree; psychology, education or social work is the usual background."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "A career counselling certification, or a master's in psychology or education. Nothing is legally required."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "School counselling cell, private practice, an edtech or admissions company, or a college placement office."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Career counselling certifications (private providers)"
+        ],
+        "note": "No public entrance and no statutory qualification. This is one of the least regulated advisory roles a family will ever pay for."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 2.5,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-14.0",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.68,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent counselling practice charging per student or per assessment, and school retainers. Common, and it is where the profession's better practitioners end up.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 25,
+          "skill_physical": 0,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "High retrievable-knowledge content and it shows: the factual half of this job - which exam, which cutoff, which college, which deadline - is exactly what a well-built system answers better than a person. Admissions Counsellor and Study Abroad Consultant are directly exposed on that. What survives is the part this dataset exists to support rather than replace: knowing a specific sixteen-year-old, and what their family can afford, fear and accept."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, and this is a consumer-protection gap worth stating on the record. Anyone in India may charge a family for career advice with no qualification, no register and no complaints route, and a large part of the paid market is commission-based representation of colleges rather than advice."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Placed here rather than in Sector 13 with psychology because the object of concern is an educational and occupational decision, not wellbeing. The boundary is real: a school guidance counsellor doing clinical work needs RCI registration, and this profession does not."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Sports Coach",
+      "goes_to": "11. Sports & Fitness",
+      "tag_here_instead": "SPEFL",
+      "why": "Already built in Sector 11 and kept there deliberately. A coach is answerable for competitive results and selects the squad; a Physical Education Teacher is answerable for a curriculum and a class, and stays here as a job role."
+    },
+    {
+      "profession": "Clinical Psychologist / Counsellor",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "HSSC",
+      "why": "RCI registration under the same Act as Special Educator, but the object of concern is wellbeing rather than learning. School Guidance Counsellor stays here as a job role; clinical work does not."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "SCHOOL TEACHER IS TIER B, NOT TIER A, and the call is deliberate. TET is a statutory eligibility condition under Section 23 of the RTE Act and a real gate - but there is no register of teachers, no professional conduct jurisdiction and nobody is struck off. Tier A in this taxonomy means a body whose licence you practise without at your legal peril. Compare Special Educator in the same sector, which is Tier A because Section 13(2) of the RCI Act says exactly that.",
+    "CAREER & EDUCATION COUNSELLOR is placed here rather than in Sector 13. The object of concern is an educational and occupational decision, not wellbeing. Worth noting that this is the profession this entire dataset is built to support, and its most uncomfortable finding is about itself: the largest paid segment is commission-based representation of institutions rather than independent advice, and nothing regulates any of it.",
+    "LIBRARIAN & INFORMATION PROFESSIONAL could reasonably sit in Sector 17. It is here because a librarian exists so that a community of readers can learn; an archivist preserving a collection for its own sake would belong in 17. Confirm when Sector 17 is built.",
+    "ANGANWADI WORKER raises a question the schema cannot currently answer. The state classifies it as VOLUNTARY SERVICE paid by honorarium precisely so that it need not be paid as employment - no pay scale, no increment, no pension - and 13.5 lakh women do it. Presenting that in a mid_career_lpa field arguably dignifies an arrangement the field was not designed for. Flagged rather than resolved."
+  ],
+  "changelog": {
+    "1.1": [
+      "v1.1 - INDEPENDENT REVIEW, two findings accepted. Anganwadi economics were marked 'verified' against a Delhi honorarium of Rs 12,720 a month (1.53 lakh a year) while claiming a 3.6 lakh upper bound that no state approaches and no source carries - downgraded to judgment. And Coaching & Test-Prep Teacher was the only one of the six power-law records named in DECISIONS.md 10 without a required admin_review; it now has one.",
+      "Sector 12 built. 10 professions, 82 job roles.",
+      "ALL FOUR INHERITED PROMISES KEPT: Teacher (government school) as School Teacher; Science Teacher / Professor split across School Teacher and College & University Teacher; Corporate Trainer as its own profession; Coding Instructor as a job role under Coaching & Test-Prep Teacher, where it actually sits in the Indian market.",
+      "FOUR VERIFIED FACTS, three of them carrying money or criminal law. The RCI Act was read FROM THE ACT rather than from a summary, and that caught a real error: a secondary source stated that Section 13 makes unregistered practice a cognizable offence. The Act says Section 13(3) makes it punishable by up to a year's imprisonment or a Rs 1,000 fine, and Section 25 permits prosecution only on a written complaint by the Council - a materially weaker enforcement route. This is the seventh-NCAHP-council lesson applying to statute rather than to body names.",
+      "KVS PAY REFRAMES SCHOOL TEACHING. A central government primary teacher grosses about Rs 69,120 a month - roughly 8.3 lakh a year, above a fresh software developer - on a published 7th CPC scale. That is one half of a bimodal distribution whose other half is private school pay a fraction of it, and which half you land in is decided by a recruitment examination.",
+      "SPECIAL EDUCATOR IS THE FIRST TIER A PROFESSION OUTSIDE SECTORS 2, 4 AND 7. RCI registration is mandatory, enforceable and criminal, and it also governs the Clinical Psychologist promised to Sector 13.",
+      "CURRICULUM & INSTRUCTIONAL DESIGNER is the most AI-exposed profession here at 50, and the damage is concentrated on the entry rung: educational content development was one of the largest graduate intakes in Indian edtech and has visibly contracted.",
+      "ANGANWADI EDUCATOR is the sector's base layer and fails the compensation filter. 13.5 lakh Anganwadi Workers and 10.2 lakh Helpers, paid an honorarium rather than a wage, with a state component that varies several-fold between states."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Better evidenced than most, and the remaining gaps are specific. First: the KVS pay anchor covers only central government schools, and no source was fetched for STATE government teacher pay or for private school pay - which is where most Indian teachers actually are, and which makes the profession's headline figure describe a minority. Second: the anganwadi honorarium recorded is Delhi's, at the generous end, and the state-by-state spread is the most decision-relevant number for that record. Third: coaching faculty income is a power law - the star-faculty end is extraordinary and the median is an ordinary teaching salary with worse security - which puts this record with Entrepreneur, Digital Content Creator, Actor, Professional Athlete and Esports Professional in the growing set the range format misrepresents. That is now six records across five sectors and it is a schema decision, not a research task."
+  }
+}

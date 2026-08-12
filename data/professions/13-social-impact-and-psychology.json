@@ -1,0 +1,1392 @@
+{
+  "professional_sector": "13. Social Impact & Psychology",
+  "professional_sector_id": 13,
+  "version": "1.1",
+  "profession_count": 8,
+  "sector_verification_note": "A SPLIT SECTOR, and the split is the point. Two professions are Tier A under the Rehabilitation Council of India Act 1992 - Clinical Psychologist here, Special Educator in Sector 12 - where practising unregistered is a criminal offence. Everything beside them is Tier C and entirely unregulated, including the profession that most resembles the licensed one: the titles 'counsellor' and 'psychotherapist' carry NO statutory register in India, and a family paying for therapy cannot tell the two apart from a job title. That is recorded as the sector's central fact rather than smoothed over. Economically this sector shares Sector 10's problem in a different form: employment follows grant cycles, CSR compliance and scheme budgets rather than need, so posts appear and vanish on two-to-three-year project timelines.",
+  "professions": [
+    {
+      "id": "soc-clinical-psychologist",
+      "profession": "Clinical Psychologist",
+      "one_liner": "Assesses and treats mental illness - the only psychology role India licenses.",
+      "job_roles": [
+        "Clinical Psychologist",
+        "Neuropsychologist",
+        "Child & Adolescent Clinical Psychologist",
+        "Rehabilitation Psychologist",
+        "Forensic Psychologist",
+        "Psycho-diagnostician",
+        "Clinical Psychology Trainee",
+        "Community Mental Health Practitioner"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Neuropsychologist",
+              "Psycho-diagnostician"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Assessment work is standardised test administration, scoring and report writing. It is measurement rather than therapy, and much of it is done for a referring doctor or a court rather than for the person in the chair."
+          },
+          {
+            "roles": [
+              "Forensic Psychologist"
+            ],
+            "higher": [
+              "reasoning",
+              "confidence",
+              "verbal"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Forensic work serves a legal question rather than a patient, is adversarial, and ends in cross-examination. RCI registration is what makes the expert evidence admissible under Section 45 of the Indian Evidence Act."
+          },
+          {
+            "roles": [
+              "Community Mental Health Practitioner"
+            ],
+            "higher": [
+              "agreeableness",
+              "emotional_intelligence",
+              "naturalistic"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Community practice is outreach in low-resource settings - district hospitals, camps and homes - with far less diagnostic apparatus and far more social context."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-DEV",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "professional",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Psychology is available in arts, commerce and science streams and is not required at school."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA or BSc Psychology (3-4 years)."
+        },
+        {
+          "step": 3,
+          "stage": "masters",
+          "requirement": "MA or MSc in Psychology or Clinical Psychology (2 years)."
+        },
+        {
+          "step": 4,
+          "stage": "professional_qualification",
+          "requirement": "M.Phil in Clinical Psychology (2 years) at an RCI-recognised institution, including supervised clinical training. THIS is the step that makes practice lawful, and places are very few."
+        },
+        {
+          "step": 5,
+          "stage": "registration",
+          "requirement": "Enrolment on the Central Rehabilitation Register. Mandatory - practising without it is an offence under Section 13 of the RCI Act."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "M.Phil Clinical Psychology entrance (RCI-recognised institutions)",
+          "CUET PG"
+        ],
+        "private_entrances": [],
+        "note": "The M.Phil entrance is the real gate. It is institution-specific rather than national, which is why no single figure exists for how hard it is - and that opacity is itself a problem for a student planning this route."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Rehabilitation Council of India (RCI)",
+      "years_to_qualify": 9,
+      "economics": {
+        "cost_of_entry_lakh": 5.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-15.0",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 1.11,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Private practice, which is the normal destination. RCI registration is what makes it lawful and what lets a practitioner charge clinical rates rather than counselling rates.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 35,
+          "knowledge_retrievable": 15,
+          "skill_physical": 5,
+          "skill_digital": 5,
+          "clarity": 40
+        },
+        "legal_accountability": true,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Very low exposure once legal accountability is applied, and the reason is the strongest in the model: a registered human must assess, decide and carry liability, and Section 13(2) of the RCI Act makes that a legal requirement rather than a convention. Psycho-diagnostician work is the most exposed - test scoring and report drafting are substantially automatable - but the signature and the responsibility cannot move."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#rci-registration-mandatory",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Tier A and criminally enforced. Section 13(2) of the RCI Act 1992 bars an unregistered person from practising as a clinical psychologist anywhere in India or giving expert evidence; Section 13(3) makes contravention punishable with up to a year's imprisonment. The Mental Healthcare Act 2017 defines a clinical psychologist by reference to the same RCI recognition.",
+          "source": "data/verified_facts.json#rci-registration-mandatory"
+        },
+        {
+          "field": "mid_stream_entry",
+          "statement": "'after_any_degree' is technically true - the master's admission is what matters - but psychology master's programmes in practice want a psychology bachelor's, so a commerce or engineering graduate is usually restarting rather than switching. Read this as the door being open and narrow, not open and wide."
+        },
+        {
+          "field": "years_to_qualify",
+          "statement": "Nine years from class 12, and the bottleneck is the last two. The M.Phil in Clinical Psychology is the only route to lawful practice and India runs very few recognised places, so a large number of psychology postgraduates never reach it and work unregistered as counsellors instead."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and severely undersupplied - India has a very small number of registered clinical psychologists for its population. The shortage does not translate into easy entry, because the constraint is M.Phil seats rather than demand."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "soc-counsellor",
+      "profession": "Counsellor & Psychotherapist",
+      "one_liner": "Talks people through difficulty - the mental health work India does not regulate at all.",
+      "job_roles": [
+        "Counsellor",
+        "Psychotherapist",
+        "School Counsellor",
+        "Career & Student Counsellor",
+        "Marriage & Family Counsellor",
+        "Addiction & De-addiction Counsellor",
+        "Genetic Counsellor",
+        "Grief & Trauma Counsellor",
+        "Helpline Counsellor",
+        "Workplace Wellbeing Counsellor",
+        "Music & Arts Therapist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Genetic Counsellor"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Genetic counselling explains inheritance risk and test results to a family making a reproductive or treatment decision. It requires genetics rather than psychology training and is the only role here with a scientific knowledge base as its core."
+          },
+          {
+            "roles": [
+              "Addiction & De-addiction Counsellor"
+            ],
+            "higher": [
+              "confidence",
+              "neuroticism",
+              "conscientiousness"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Addiction work involves relapse, deception and confrontation, often in residential settings, and a large share of practitioners are themselves in recovery. It is the least gentle work in this profession."
+          },
+          {
+            "roles": [
+              "Helpline Counsellor"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "short_term_memory",
+              "verbal"
+            ],
+            "lower": [
+              "long_term_memory"
+            ],
+            "why": "Helpline work is single anonymous contacts, often in crisis, with no follow-up and no history. The skill is stabilising a stranger in twenty minutes."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-DEV",
+        "EXT-EDU"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Usually a BA or BSc in Psychology, then an MA or MSc. Nothing is legally required, which is the defining fact about this profession."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "A counselling or psychotherapy diploma and supervised practice hours. Reputable, entirely voluntary, and not verifiable by a client."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "School counselling cell, NGO, helpline, de-addiction centre, corporate wellbeing programme, or private practice."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG"
+        ],
+        "private_entrances": [
+          "Counselling and psychotherapy diplomas (private providers)"
+        ],
+        "note": "No statutory qualification exists. University admission is a normal one and confers no right to practise, because no such right is regulated."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "4.5-12.0",
+        "mid_career_midpoint": 8.25,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Private practice, seen either online or from a room, charging per session. Entry requires nothing but a client, which is both why the profession is accessible and why it is unsafe.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 5,
+          "skill_digital": 30,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "Clarity-heavy, and the band was raised to medium on the second pass because a low band contradicted this very paragraph. A counselling conversation IS output a model can produce, which is what skill_digital measures, and pretending otherwise understated the one profession here where AI competes with the SERVICE rather than the admin around it. This is the profession where AI chat products compete most directly with the service itself rather than with the work around it. Helpline Counsellor and Workplace Wellbeing Counsellor face that first, since both are single-contact and text-mediated. Marriage & Family Counsellor and Addiction & De-addiction Counsellor are protected by the work being relational and confrontational over months."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "data/verified_facts.json#counsellor-title-unregulated",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, and it is the most important thing on this record. The titles 'counsellor' and 'psychotherapist' carry NO statutory register in India - the RCI Act does not list a general counsellor among rehabilitation professionals. Anyone may use the title and charge for therapy. Association membership is not registration, and a client cannot tell the difference from a job title.",
+          "source": "data/verified_facts.json#counsellor-title-unregulated"
+        },
+        {
+          "field": "profession",
+          "statement": "Deliberately separated from Clinical Psychologist rather than merged, despite overlapping work. The two share an object of concern and much of a skill set, which would normally trigger the merge test in DECISIONS.md 8.95 - but one is Tier A with criminal enforcement and a nine-year runway, and the other has no gate at all. Merging them would hide exactly the distinction a student and a client most need."
+        },
+        {
+          "field": "economics",
+          "statement": "Sits below Clinical Psychologist for the same reason it is easier to enter: no registration means no protected scope, so rates are set by an open market with no floor. Practitioners who also hold an RCI registration charge clinical rates; those who do not, compete on price."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "soc-social-worker",
+      "profession": "Social Worker",
+      "one_liner": "Works with people the system is failing - families, children, patients, the displaced.",
+      "job_roles": [
+        "Social Worker",
+        "Medical & Psychiatric Social Worker",
+        "Child Welfare Officer",
+        "Probation Officer",
+        "Community Social Worker",
+        "Disaster Response & Relief Worker",
+        "Rehabilitation Social Worker",
+        "Case Worker",
+        "School Social Worker",
+        "Social Worker (Government Schemes)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Medical & Psychiatric Social Worker"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "conscientiousness",
+              "reasoning"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Hospital-based social work sits inside a clinical team - discharge planning, family counselling and welfare linkage. Psychiatric social work has an RCI-recognised M.Phil route of its own, which puts part of this role under the same statute as clinical psychology."
+          },
+          {
+            "roles": [
+              "Disaster Response & Relief Worker"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "neuroticism"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Relief work is physically hard field deployment at short notice into unsafe places. It is the least desk-bound social work there is."
+          },
+          {
+            "roles": [
+              "Probation Officer",
+              "Child Welfare Officer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "confidence"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "These are statutory posts with legal reporting duties to a court or a Child Welfare Committee. The social worker carries authority as well as care, which changes the relationship entirely."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-DEV",
+        "EXT-GOVT",
+        "HSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BSW, or any bachelor's degree followed by an MSW. The MSW is what the field actually recruits on."
+        },
+        {
+          "step": 3,
+          "stage": "fieldwork",
+          "requirement": "Supervised fieldwork placements, which are built into the MSW and are where employability is decided."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "NGO, hospital, government department, corporate CSR team, or a statutory post such as Probation Officer."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "TISS and central university MSW admissions",
+          "State recruitment for Probation and Child Welfare Officer posts"
+        ],
+        "private_entrances": [],
+        "note": "MSW admission is the practical gate. TISS and a handful of central universities are the sought-after routes; state universities admit far more people with much less competition."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-12.0",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_is_the_entry",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent consultancy to NGOs and funders on programme design, safeguarding and evaluation, usually after ten years in the field.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 15,
+          "skill_digital": 10,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Low exposure. The work is being physically present with people in difficulty, in homes, hospitals, shelters and courts, and holding a case over months. Case Worker documentation and reporting is the exposed part and it is real - social workers spend a great deal of time on records - but automating the paperwork frees the job rather than removing it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Psychiatric social work has an RCI-recognised M.Phil route and therefore falls under the same Act as clinical psychology, unlike the rest of this profession. A student intending hospital mental health work should read the Clinical Psychologist record alongside this one.",
+          "source": "data/verified_facts.json#rci-registration-mandatory"
+        },
+        {
+          "field": "entry_competition",
+          "statement": "Null, and deliberately so. MSW admission is the practical gate and it now runs largely through CUET PG - but pointing this record at CUET UG would repeat the mistake corrected in Sector 3, telling a would-be social worker that the hard part is getting into a bachelor's degree. It is not. The MSW admission is in pending_gates."
+        },
+        {
+          "field": "economics",
+          "statement": "Split by employer rather than by ability. A statutory government post - Probation Officer, Child Welfare Officer - carries a pay scale and a pension; the NGO sector pays modestly and on project funding cycles; corporate CSR pays best and employs fewest. The same MSW leads to all three."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and it depends on funding rather than need. The need is enormous and constant; the number of funded posts moves with government scheme budgets and CSR compliance, which is a different signal entirely."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "soc-development-professional",
+      "profession": "Development & Programme Professional",
+      "one_liner": "Designs and runs programmes meant to change something - poverty, health, education, rights.",
+      "job_roles": [
+        "Programme Officer",
+        "Project Coordinator (Development)",
+        "Livelihoods Specialist",
+        "Field Officer",
+        "Fundraising & Grants Officer",
+        "CSR Officer",
+        "Advocacy & Campaigns Officer",
+        "Partnerships Manager (Development)",
+        "Programme Documentation Officer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Fundraising & Grants Officer",
+              "Partnerships Manager (Development)"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "naturalistic"
+            ],
+            "why": "Raising money is proposal writing, donor relationships and reporting against commitments. It is the commercial function of the development sector and it pays best, precisely because everything else depends on it."
+          },
+          {
+            "roles": [
+              "Field Officer"
+            ],
+            "higher": [
+              "bodily",
+              "agreeableness",
+              "naturalistic"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Field officers live in the block or district they work in and do the actual mobilisation. It is the entry rung, it is where the sector's knowledge comes from, and it is paid least."
+          },
+          {
+            "roles": [
+              "Advocacy & Campaigns Officer"
+            ],
+            "higher": [
+              "verbal",
+              "confidence",
+              "openness"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Advocacy is public and adversarial - pressing government or business to change policy. It sits close to the Public Policy Professional in Sector 7 and differs by being outside the state rather than inside it."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-DEV",
+        "EXT-GOVT",
+        "MEPSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree. MSW, development studies, rural management (IRMA), public policy and economics are all common routes in."
+        },
+        {
+          "step": 3,
+          "stage": "field_exposure",
+          "requirement": "A fellowship or field stint - Gandhi Fellowship, Prime Minister's Rural Development Fellows, SBI Youth for India and similar. This is how most people actually enter."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "NGO, foundation, multilateral agency, government programme unit, or a corporate CSR team."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "IRMA and rural management entrances",
+          "CAT"
+        ],
+        "private_entrances": [
+          "Development fellowships (Gandhi Fellowship, PMRDF and others)"
+        ],
+        "note": "There is no gate specific to this profession. CAT is listed because a rural-management or MBA route into development is common and is one of the better-paid ways in."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-16.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent consultancy to NGOs, funders and government programmes - programme design, evaluation and proposal writing. Common after eight to ten years and generally better paid than the salaried version.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 20,
+          "skill_physical": 10,
+          "skill_digital": 20,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Moderately exposed on the paperwork and protected on the ground. Programme Documentation Officer and much of Fundraising & Grants Officer work - proposals, donor reports, log frames - is templated writing that generates well, and that is a large share of the sector's desk time. Field Officer and Advocacy & Campaigns Officer are protected by needing to be in a village or a room with people who can say no."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and structurally unstable. Employment here follows grant cycles, CSR compliance and government scheme budgets rather than the underlying problem, so posts appear and vanish on two-to-three-year project timelines. That instability is the profession's defining employment characteristic and is invisible in a salary range."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Pathway is 'any' because this is one of the few Indian professions with a genuine international ladder that does not require emigration - multilateral agencies, international NGOs and global foundations recruit in India for regional roles."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "soc-me-analyst",
+      "profession": "Monitoring, Evaluation & Impact Analyst",
+      "one_liner": "Measures whether a social programme actually worked, and says so when it did not.",
+      "job_roles": [
+        "Monitoring & Evaluation Officer",
+        "Impact Assessment Analyst",
+        "Research Associate (Development)",
+        "Survey & Field Research Coordinator",
+        "Data Analyst (Development)",
+        "Randomised Evaluation Field Manager",
+        "MIS & Reporting Analyst",
+        "Social Audit Facilitator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Randomised Evaluation Field Manager",
+              "Survey & Field Research Coordinator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "extraversion",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Running a field study means recruiting and managing dozens of enumerators across districts and protecting data quality when nobody is watching. It is operations management with a research standard attached."
+          },
+          {
+            "roles": [
+              "Social Audit Facilitator"
+            ],
+            "higher": [
+              "confidence",
+              "verbal",
+              "agreeableness"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Social audit is reading government scheme records aloud to the village the scheme was meant to serve. It is a public accountability ritual and it is sometimes dangerous."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-DEV",
+        "EXT-RND",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Mathematics helps substantially and is not required."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Economics, statistics, development studies, public policy or social sciences. The quantitative half of this job is what makes it distinct."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Research associate at a research organisation, an evaluation firm or an NGO's M&E unit. This is a recognised entry job with a defined skill test."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Impact evaluation, survey methods or programme MIS. The first transfers to economics research and academia."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "Master's in economics and public policy admissions"
+        ],
+        "private_entrances": [],
+        "note": "No profession-specific gate. Entry is on demonstrable statistical and field-research skill."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-6.5",
+        "mid_career_lpa": "6.0-16.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.84,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent evaluation consultancy, which is a real market - funders increasingly require third-party evaluation, and an evaluator's independence is the product.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 10,
+          "skill_digital": 30,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "The most exposed profession in this sector. MIS & Reporting Analyst and Data Analyst (Development) do work that is directly substitutable - cleaning, tabulating and charting survey data - and much of routine M&E reporting is already automated in dashboards. What survives is study design and the willingness to report a null result: deciding what would count as evidence that a programme failed, and saying so to the people who funded it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Kept separate from Development & Programme Professional rather than folded in as job roles. They share an object of concern but not a skill set - this is quantitative research method, survey design and statistics, and the merge test in DECISIONS.md 8.95 turns on the skill set being separate."
+        },
+        {
+          "field": "industrial_sectors",
+          "statement": "Tagged EXT-RND as well as EXT-DEV. The boundary with Sector 3 is the one DECISIONS.md 2 draws by METHOD rather than discipline: this is empirical, quantitative work, and it sits here only because its object of concern is whether an intervention helped rather than what is true in general."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "soc-community-worker",
+      "profession": "Community Development Worker",
+      "one_liner": "Organises people in a village or neighbourhood to claim services and run things themselves.",
+      "job_roles": [
+        "Community Mobiliser",
+        "Self-Help Group Facilitator",
+        "Village Level Entrepreneur",
+        "Panchayat Support Worker",
+        "Livelihoods Field Worker",
+        "Cluster Coordinator",
+        "Community Resource Person",
+        "Block Programme Assistant"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Village Level Entrepreneur"
+            ],
+            "higher": [
+              "confidence",
+              "logical",
+              "extraversion"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Village level entrepreneurs run a service - a common service centre, a banking correspondent point, an agri-input shop - on commission rather than salary. It is a small business wearing a development job's clothes."
+          },
+          {
+            "roles": [
+              "Cluster Coordinator",
+              "Block Programme Assistant"
+            ],
+            "higher": [
+              "conscientiousness",
+              "verbal",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Coordination roles sit between the field and the district office - reporting, verification and scheme paperwork. They are the first step off the field and the only visible promotion in this profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-DEV",
+        "EXT-GOVT",
+        "ASCI"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Class 10 or 12. Many roles specify residence in the block or village as a condition."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Programme induction training, usually run by the implementing agency or the state rural livelihoods mission."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "State rural livelihoods mission, an NGO project, a self-help group federation, or a scheme delivery unit."
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Cluster or block coordination, or running a village-level enterprise on commission."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State rural livelihoods mission recruitment"
+        ],
+        "private_entrances": [],
+        "note": "Recruitment is local and by the implementing agency, usually with a residence requirement rather than an examination."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "0.9-2.4",
+        "mid_career_lpa": "1.8-4.5",
+        "mid_career_midpoint": 3.15,
+        "payback_years": 0.12,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "A village-level enterprise on commission - common service centre, banking correspondent, agri-input or insurance agency. This is the realistic route above a programme honorarium, and it is a business rather than a promotion.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 55,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Almost unexposed. The work is walking to households, holding meetings, and being a person the village already knows and trusts. Block Programme Assistant carries the only meaningful exposure, through scheme reporting that has largely moved onto phone applications - which has changed the job rather than removed it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The base layer of the development sector, and it fails the compensation filter. Most of these roles are paid a project honorarium or a per-activity incentive rather than a salary, on contracts tied to a scheme's funding period. There is no pay scale and usually no notice period."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and geographically inverted relative to most of this dataset - these posts exist in rural blocks and small towns and barely exist in metros. For a student outside a city this is often the only formal development-sector entry available locally."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure for community worker honoraria or for the commission a village level entrepreneur earns, and the second is the entire route out of a 2.7 LPA ceiling. Both vary by state and by scheme, which is exactly why an unsourced national range is close to meaningless here."
+      }
+    },
+    {
+      "id": "soc-disability-inclusion",
+      "profession": "Rehabilitation & Disability Inclusion Professional",
+      "one_liner": "Makes work, buildings and services usable by disabled people, and supports them into them.",
+      "job_roles": [
+        "Vocational Rehabilitation Counsellor",
+        "Disability Rights Officer",
+        "Accessibility Auditor",
+        "Assistive Technology Specialist",
+        "Multi-purpose Rehabilitation Worker",
+        "Community Based Rehabilitation Worker",
+        "Inclusive Employment Specialist",
+        "Sign Language Interpreter"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Accessibility Auditor",
+              "Assistive Technology Specialist"
+            ],
+            "higher": [
+              "spatial",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Auditing a building or a website against an accessibility standard is technical compliance work with a written specification. It is closer to inspection than to rehabilitation."
+          },
+          {
+            "roles": [
+              "Sign Language Interpreter"
+            ],
+            "higher": [
+              "bodily",
+              "short_term_memory",
+              "verbal"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Interpreting is real-time bilingual performance between Indian Sign Language and a spoken language. It is a language profession that happens to sit in disability services, and India has very few qualified interpreters."
+          },
+          {
+            "roles": [
+              "Community Based Rehabilitation Worker"
+            ],
+            "higher": [
+              "agreeableness",
+              "bodily",
+              "naturalistic"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "CBR work is home visits in villages, teaching families to do therapy themselves because no therapist will ever come. It is the largest and least paid part of this profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "SCPWD",
+        "EXT-DEV",
+        "HSSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "A bachelor's degree, then an RCI-recognised qualification for the rehabilitation roles, or a specialist course for interpreting and accessibility."
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Enrolment on the Central Rehabilitation Register IF the role is one the RCI Act lists - vocational counsellors and multi-purpose rehabilitation workers are listed; accessibility auditors are not."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Disability NGO, a national institute, a state disability commissioner's office, a company's inclusion team, or an accessibility consultancy."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Accessibility and sign language certifications"
+        ],
+        "note": "There is no single gate, because the profession spans RCI-registered rehabilitation roles and entirely unregulated technical ones."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent accessibility auditing and inclusion consultancy, which has become a real market since the Rights of Persons with Disabilities Act 2016 made compliance a legal obligation for employers and public buildings.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 15,
+          "skill_physical": 25,
+          "skill_digital": 10,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Low exposure with an unusual twist: the technologies that automate parts of this profession are the same ones that expand what disabled people can do independently. Sign Language Interpreter faces genuine competition from automated interpretation, though Indian Sign Language is poorly resourced and that is some way off. Community Based Rehabilitation Worker and Vocational Rehabilitation Counsellor are protected by home visits and by RCI accountability."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null at the profession level, but NOT for every role inside it. The RCI Act lists vocational counsellors and employment officers dealing with the handicapped, and multi-purpose rehabilitation workers, among rehabilitation professionals - those require Central Rehabilitation Register enrolment. Accessibility Auditor and Sign Language Interpreter do not. A student must check which role they are entering.",
+          "source": "data/verified_facts.json#rci-registration-mandatory"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and rising for a specific legal reason: the Rights of Persons with Disabilities Act 2016 places obligations on employers, public buildings and services, which created a compliance market where there had been only charity."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "soc-child-protection",
+      "profession": "Child Protection & Family Welfare Officer",
+      "one_liner": "Protects children at risk - abuse, trafficking, child labour, adoption and institutional care.",
+      "job_roles": [
+        "Child Protection Officer",
+        "Child Welfare Committee Support Officer",
+        "Childline Coordinator",
+        "Adoption & Foster Care Officer",
+        "Legal-cum-Probation Officer",
+        "Superintendent (Child Care Institution)",
+        "Outreach Worker (Children at Risk)",
+        "POCSO Support Person"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "POCSO Support Person",
+              "Legal-cum-Probation Officer"
+            ],
+            "higher": [
+              "confidence",
+              "verbal",
+              "conscientiousness"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "These roles accompany a child through a criminal process - police, medical examination, court testimony. They are statutory appointments with defined legal duties and they require holding steady in an adversarial setting."
+          },
+          {
+            "roles": [
+              "Outreach Worker (Children at Risk)"
+            ],
+            "higher": [
+              "bodily",
+              "confidence",
+              "agreeableness"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Outreach is street and railway-station work with children who have run away or been trafficked. It is night work in unsafe places and it is the sharpest end of this profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-DEV",
+        "EXT-GOVT",
+        "EXT-LEGAL"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "MSW, psychology, sociology, child development or law. Statutory posts specify qualifications and experience with children."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "District Child Protection Unit, a Child Care Institution, Childline, or a child rights NGO."
+        },
+        {
+          "step": 4,
+          "stage": "statutory_post",
+          "requirement": "Appointment to a statutory role under the Juvenile Justice Act or POCSO framework, which carries defined legal duties."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State District Child Protection Unit recruitment",
+          "CUET PG"
+        ],
+        "private_entrances": [],
+        "note": "Statutory child protection posts are filled by state recruitment against qualifications set in the Juvenile Justice rules, rather than by a competitive national examination."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-11.0",
+        "mid_career_midpoint": 8.0,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_is_the_entry",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 15,
+          "skill_digital": 5,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Very low exposure. The work is interviewing frightened children, judging whether a home is safe, and being personally answerable under the Juvenile Justice Act and POCSO for a decision about a child's life. Case documentation is the only exposed part, and it is documentation that a court will read."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true without a licensing body, which is permitted for the same reason it is on a District Magistrate in Sector 7: the accountability rests on STATUTORY OFFICE. Persons appointed under the Juvenile Justice Act and the POCSO framework carry personal legal duties in respect of a named child, enforceable in court."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Rare, and it is one of the few professions in Sectors 8 to 13 where that is true. Child protection authority derives from a statutory post or an accredited institution - there is no independent version of this work, and anyone offering one should be treated with suspicion."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and constrained by sanctioned posts rather than by need. District Child Protection Units are mandated nationally and are widely understaffed, which is a funding fact rather than a demand signal."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Research Psychologist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "EXT-RND",
+      "why": "Already built in Sector 3. DECISIONS.md 2 splits by METHOD, not discipline - empirical and quantitative psychology is research, and only intervention is here."
+    },
+    {
+      "profession": "Psychiatrist",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Already built in Sector 4 as a job role under Doctor. A psychiatrist is a registered medical practitioner who prescribes; the route is MBBS then MD."
+    },
+    {
+      "profession": "Occupational Therapist",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Already built in Sector 4 under the NCAHP framework. Clinical rehabilitation of function is healthcare, not social work."
+    },
+    {
+      "profession": "Special Educator",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-EDU",
+      "why": "Already built in Sector 12. Same RCI Act, same register - but the object of concern is a child learning, which is education."
+    },
+    {
+      "profession": "Public Policy Professional",
+      "goes_to": "7. Law, Governance & Public Service",
+      "tag_here_instead": "EXT-GOVT",
+      "why": "Already built in Sector 7. Policy work sits inside or alongside the state; advocacy from outside it stays here as a job role under Development & Programme Professional."
+    },
+    {
+      "profession": "Human Resources Professional",
+      "goes_to": "5. Business, Management & Entrepreneurship",
+      "tag_here_instead": "MEPSC",
+      "why": "Already built in Sector 5. Organisational and industrial psychology is applied to the organisation and its people, which is Sector 5's object of concern."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "COUNSELLOR & PSYCHOTHERAPIST IS DELIBERATELY NOT MERGED into Clinical Psychologist, even though they share an object of concern and much of a skill set - which is normally exactly what the merge test in DECISIONS.md 8.95 catches. They are kept apart because one is Tier A with criminal enforcement and a nine-year runway and the other has no gate at all, and merging them would hide the single most important thing a student or a client needs to know. This is the first deliberate exception to the merge rule in the dataset and it should be confirmed or overruled explicitly.",
+    "ASHA WORKERS HAVE NO HOME. Roughly a million Accredited Social Health Activists do community health outreach on an incentive-based honorarium. The object of concern is HEALTH, which puts them in Sector 4 - and Sector 4 is built and does not contain them. Like Talent & Artist Manager in Sector 10 this cannot be recorded as routed_elsewhere, because a promise to a built sector asserts something is already there. Decide: add to Sector 4, or admit here alongside Community Development Worker. This is the same gap Sector 4's own notes flagged for General Duty Assistant.",
+    "CHILD PROTECTION & FAMILY WELFARE OFFICER carries legal_accountability true with NO licensing body, on the statutory-office precedent set by District Magistrate and Police Officer in Sector 7. Persons appointed under the Juvenile Justice Act and POCSO have personal, court-enforceable duties toward a named child. If you reject that reading the AI band moves from low to medium.",
+    "MONITORING, EVALUATION & IMPACT ANALYST sits close to the Sector 3 boundary and is kept here on the object-of-concern test rather than the method test. Its method is empirical and quantitative, which DECISIONS.md 2 says sends work to Sector 3; its question is whether a specific intervention helped, which is this sector. The tension is real and is flagged."
+  ],
+  "changelog": {
+    "1.1": [
+      "Sector 13 built. 8 professions, 70 job roles.",
+      "v1.1 - FOURTH ITERATION, requested after the sector had already passed three. It found three real defects that the automated and cross-sector passes had both missed, which is the argument for the extra pass in one sentence.",
+      "v1.1 CORRECTION - THE CUET MISTAKE REPEATED, TWICE. Social Worker carried primary_gate 'cuet-ug' and Development & Programme Professional carried 'cat'. Neither is the gate that DETERMINES reaching the profession: a social worker's decisive step is MSW admission, and most development professionals enter through a fellowship or a field job and never sit CAT. This is exactly the error corrected in Sector 3 and recorded in DECISIONS.md 4.35, made again by the same reflex - reaching for the most famous exam a profession touches. Both are now null, each with a nuance saying why.",
+      "v1.1 CORRECTION - A BAND THAT CONTRADICTED ITS OWN REASON. Counsellor & Psychotherapist sat at exposure 30 and band 'low' while its reason paragraph said this is the profession where AI chat products compete most directly with the service itself. Both could not be true. A counselling conversation IS output a model can produce, which is what skill_digital measures, so the composition was wrong rather than the prose. Now 45 and medium.",
+      "ALL FOUR INHERITED PROMISES KEPT: Clinical / Counselling Psychologist arrives as TWO professions rather than one, deliberately; Genetic Counsellor as a job role under Counsellor & Psychotherapist; Social Worker (government schemes) as Social Worker, with the statutory posts named as job roles.",
+      "THE SECTOR'S CENTRAL FINDING is regulatory and it is a consumer-safety one. Only three mental health roles sit on a statutory register in India - Clinical Psychologist, Psychiatrist and Psychiatric Nurse. 'Counsellor', 'psychotherapist' and unqualified 'psychologist' have none. Association membership is not registration. This produced two professions where a lazier build would have produced one.",
+      "THE RCI ACT NOW GOVERNS THREE SECTORS - Special Educator in 12, Clinical Psychologist here, and parts of Rehabilitation & Disability Inclusion Professional. The Act was read directly in Sector 12 and that reading is reused rather than re-summarised.",
+      "NO NEW GATES, AND ONE IMPORTANT DEFERRAL. The M.Phil in Clinical Psychology is the decisive gate in this sector - it is what converts a psychology master's into lawful practice, and recognised places are very few. It is institution-specific rather than national, so no applicant or seat figure exists to record. That opacity is itself a finding: a psychology student cannot discover how hard the only route to licensed practice actually is.",
+      "MONITORING, EVALUATION & IMPACT ANALYST is the most AI-exposed profession here at 45; Clinical Psychologist and Child Protection Officer are the least, both at low with legal accountability applied.",
+      "CHILD PROTECTION & FAMILY WELFARE OFFICER is one of very few records in the dataset with self_employment 'rare', and the reason is worth stating: child protection authority derives from statutory office, so an independent version of this work should not exist."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "All eight economics blocks are 'judgment' with no sources. Three specific gaps stand out. First, the development sector's pay is EMPLOYER-SPLIT rather than experience-split - a statutory government post, an NGO project post and a corporate CSR post pay very differently for the same MSW, and one range cannot say so. Second, no sourced figure exists for community worker honoraria or for what a village level entrepreneur earns on commission, which is the whole route above a 2.7 LPA ceiling. Third and most useful to fix: the M.Phil in Clinical Psychology seat count nationally, because it is the binding constraint on the only licensed psychology profession in the country and a student currently has no way to see it. A structural note that is not a research task: employment across this sector follows funding cycles rather than need, so a two-to-three-year project horizon is the normal employment unit and nothing in the schema expresses that."
+  }
+}

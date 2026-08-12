@@ -126,16 +126,26 @@ NCAHP council names were written from plausibility and three of them did not exi
 
 | # | sector | professions | verified | ships | version |
 |---|---|---|---|---|---|
-| 1 | Software & Computing | 14 | 1 | 13 | v16 |
-| 2 | Engineering & Making | 32 | 31 | 27 | v19 |
-| 3 | Science & Research | 19 | 7 | 19 | v7 |
-| 4 | Healthcare & Medicine | 18 | 17 | 18 | v1.7 |
-| 5 | Business, Management & Entrepreneurship | 12 | 0 | 12 | v1.0 |
+| 1 | Software & Computing | 14 | 1 | 13 | v16.1 |
+| 2 | Engineering & Making | 33 | 32 | 31 | v20.1 |
+| 3 | Science & Research | 19 | 7 | 19 | v7.1 |
+| 4 | Healthcare & Medicine | 20 | 17 | 18 | v1.9 |
+| 5 | Business, Management & Entrepreneurship | 13 | 0 | 12 | v1.2 |
 | 6 | Finance & Economics | 8 | 2 | 8 | v1.0 |
-| 7 | Law, Governance & Public Service | 10 | 7 | 10 | v1.0 |
-| 8–18 | — | — | — | — | pending |
+| 7 | Law, Governance & Public Service | 10 | 7 | 10 | v1.1 |
+| 8 | Design & Creative Arts | 16 | 0 | 16 | v1.0 |
+| 9 | Media, Film & Storytelling | 12 | 0 | 11 | v1.0 |
+| 10 | Performing Arts & Music | 9 | 0 | 9 | v1.1 |
+| 11 | Sports & Fitness | 8 | 0 | 7 | v1.1 |
+| 12 | Education & Training | 10 | 3 | 9 | v1.1 |
+| 13 | Social Impact & Psychology | 8 | 1 | 7 | v1.1 |
+| 14 | Environment & Sustainability | 8 | 0 | 7 | v1.2 |
+| 15 | Agriculture & Food Systems | 8 | 0 | 8 | v1.2 |
+| 16 | Hospitality, Travel & Culinary | 8 | 1 | 7 | v1.1 |
+| 17 | Humanities, Culture & Belief | 8 | 1 | 8 | v1.0 |
+| 18 | Personal Care & Wellness | 6 | 1 | 6 | v1.2 |
 
-**113 professions · 712 job roles · 151 nuances · 34 verified facts · 14 open admin reviews.**
+**218 professions · 1639 job roles · 415 nuances · 56 verified facts · 51 profession-level and 15 sector-level admin reviews open.**
 
 The 7 open items are all the same thing: a profession where going independent is normal, employed
 mid-career is under ₹6 lakh, and **no sourced figure exists for what owners actually earn**. Until
@@ -157,7 +167,7 @@ All four sectors were stamped `LOCKED` on 2026-08-06 and all four changed afterw
 corrected four times. That is the process working, not failing. The version number and the
 `changelog` carry everything the marker pretended to.
 
-Sector 8 is Design & Creative Arts. It owes the **apparel base layer** — Tailor, Garment Maker, Handloom Weaver — which no sector currently covers, for an industry employing tens of millions (DECISIONS.md §8.45).
+**All 18 sectors are built.** The apparel base layer is closed — Tailor & Garment Maker, Handloom Weaver and Handicraft Artisan shipped in Sector 8. So did agriculture (Farmer, S15), hospitality (Cook, Steward, Housekeeping, S16) and beauty (Beautician, Hair Stylist, S18). **One base layer is still half open:** the healthcare one — Sector 18 built Elder & Home Care Attendant for the home, and General Duty Assistant for the ward has no record anywhere. See DECISIONS.md §2.06.
 
 ## What a profession is
 

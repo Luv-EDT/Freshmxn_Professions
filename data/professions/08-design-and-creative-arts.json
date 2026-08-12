@@ -1,0 +1,2463 @@
+{
+  "professional_sector": "8. Design & Creative Arts",
+  "professional_sector_id": 8,
+  "version": "1.0",
+  "profession_count": 16,
+  "sector_verification_note": "TIER C BY NATURE, for the same structural reason as Sector 1: nothing in Indian design is licensed. The Architects Act 1972 protects the title 'architect' and stops there - no statute registers an interior designer, a graphic designer, a product designer, an animator or a fashion designer, and none of them can be struck off. What DOES exist is a set of degree-granting institutes - NIFT under the NIFT Act 2006, NID, the IITs through UCEED, FDDI under the FDDI Act 2017 - which control who gets a qualification but not who may practise. Every profession here is therefore Tier C on entry, and the two Tier B facts in the sector are about institutes, not licences. ECONOMICS ARE JUDGMENT THROUGHOUT except Handloom Weaver, which is the one record in this sector standing on a government earnings survey - and it is a subsistence one.",
+  "professions": [
+    {
+      "id": "des-graphic-designer",
+      "profession": "Graphic & Visual Designer",
+      "one_liner": "Makes information look right and read clearly - logos, packaging, posters, brand systems.",
+      "job_roles": [
+        "Graphic Designer",
+        "Brand Identity Designer",
+        "Packaging Designer",
+        "Layout & Publication Designer",
+        "Motion Graphics Designer",
+        "Signage & Wayfinding Designer",
+        "Social Media Creative Designer",
+        "Typographer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Motion Graphics Designer"
+            ],
+            "higher": [
+              "spatial",
+              "logical"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Motion work is timing, sequencing and software pipelines - nearer to animation than to the typography and copy-driven judgment the rest of the profession runs on."
+          },
+          {
+            "roles": [
+              "Brand Identity Designer"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "confidence"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Identity work is argued for in a boardroom before it is drawn. The job is persuading people what a company should look like, not executing a brief someone else settled."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES",
+        "RASCI"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. No subject is required."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A 1-2 year diploma in graphic or communication design, or a B.Des. Neither is legally required."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Build a portfolio of 10-15 real pieces. This, not the certificate, is what gets read at hiring."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Junior designer at a studio, agency or in-house brand team; or freelance from the portfolio directly."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UCEED",
+          "NID DAT"
+        ],
+        "private_entrances": [],
+        "note": "Neither exam is required. They are the route into a B.Des at a public design institute, and most working graphic designers in India sat neither."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "6-14",
+        "mid_career_midpoint": 10.0,
+        "payback_years": 0.4,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance and small-studio work built off the same portfolio used to get hired; a one-person studio serving local businesses is the commonest form.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 0,
+          "skill_digital": 50,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 65,
+        "band": "high",
+        "reason": "The most exposed profession in this sector. Generative image tools now produce competent layouts, social creatives and packaging mockups from a prompt, and that is exactly the entry-level work a junior is hired to do. Social Media Creative Designer and Layout & Publication Designer face this first. Brand Identity Designer is the protected end - the work there is deciding what a company should look like and defending the call to people who disagree, which is clarity, not output."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "There is no qualification here at all. The portfolio IS the credential, and a self-taught designer with good work competes directly with a B.Des graduate. That cuts both ways: entry is genuinely open, and nothing protects the practitioner from being undercut."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The bottom rung is shrinking, not the profession. Studios still need someone to decide what is right and take responsibility for it - what they need fewer of is people to produce the twentieth variation of a banner."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-ux-designer",
+      "profession": "UI/UX Designer",
+      "one_liner": "Designs how an app or website works and feels, so people can use it without being taught.",
+      "job_roles": [
+        "UX Designer",
+        "UI Designer",
+        "Interaction Designer",
+        "UX Researcher",
+        "Design Systems Designer",
+        "Information Architect",
+        "Usability Analyst",
+        "Service Designer",
+        "Product Designer (Digital)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "UX Researcher",
+              "Usability Analyst"
+            ],
+            "higher": [
+              "verbal",
+              "emotional_intelligence",
+              "reasoning"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Research is interviewing strangers, watching them struggle and synthesising what they could not articulate. No visual composition is involved at all."
+          },
+          {
+            "roles": [
+              "Design Systems Designer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "A design system is infrastructure - naming, tokens, consistency and documentation used by other designers. It rewards rigour and punishes invention."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "IT-ITES",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Des, or any bachelor's degree followed by a UX course. Psychology, English and engineering graduates all enter this way."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Three or four case studies showing a problem, the research, the decisions and the outcome - not just screens."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Junior UX or UI designer on a product team."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UCEED",
+          "NID DAT"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required and neither is the usual route. This profession absorbs graduates from every discipline, which is why entry_competition is null."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 1.0,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance product design for startups, or a small independent studio. Common after 4-6 years, once a case-study portfolio can win work on its own.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 35,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "Screens generate easily; understanding does not. UI Designer is the exposed role - tools already produce clean, conventional layouts from a description. UX Researcher and Service Designer are the protected end, for the same reason an IT Business Analyst is: the work is establishing what a room of people who disagree actually need, and a model cannot know whose problem it is."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "industrial_sectors",
+          "statement": "Routed here from Sector 1. The tools are digital and the employer is usually a software company, but the object of concern is the person using the product - swap the software out for a hospital form or an ATM and the work survives unchanged."
+        },
+        {
+          "field": "entry_competition",
+          "statement": "Null on purpose. This is one of the few well-paid Indian professions with no gate of any kind - no exam, no licence, no required degree subject. A commerce or arts graduate can enter it directly, which is rare in this dataset."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-animator-vfx",
+      "profession": "Animator & VFX Artist",
+      "one_liner": "Makes drawings and digital models move - for film, series, games and advertising.",
+      "job_roles": [
+        "2D Animator",
+        "3D Animator",
+        "Character Rigger",
+        "VFX Compositor",
+        "Modelling & Texturing Artist",
+        "Lighting & Rendering Artist",
+        "Storyboard Artist",
+        "Matchmove Artist",
+        "Roto & Paint Artist",
+        "Motion Capture Artist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Roto & Paint Artist",
+              "Matchmove Artist"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness",
+              "verbal"
+            ],
+            "why": "Roto and matchmove are high-volume precision tasks done to a deadline against a reference plate. They are the industry's entry rung and the reason India has so many VFX jobs - and they involve no authorship whatsoever."
+          },
+          {
+            "roles": [
+              "Storyboard Artist"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "reasoning"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Storyboarding is narrative work - deciding what the audience sees and when. It is closer to directing than to any other role in the profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc or BA in Animation, B.Des, or any degree plus a 1-2 year animation and VFX diploma."
+        },
+        {
+          "step": 3,
+          "stage": "showreel",
+          "requirement": "A 60-90 second showreel in ONE discipline. Studios hire for a seat on a pipeline, not for general ability."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Junior artist at a VFX or animation studio, usually starting on roto, paint or matchmove."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UCEED",
+          "NID DAT"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required. Most entrants come through private animation institutes or a university B.Sc, and are hired on the showreel."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "2.5-5",
+        "mid_career_lpa": "7-18",
+        "mid_career_midpoint": 12.5,
+        "payback_years": 1.07,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance shots and sequences for studios, which is how a large part of the industry already works; established artists take contract work directly from overseas clients.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 55,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 65,
+        "band": "high",
+        "reason": "Generative video and automated rotoscoping attack this profession from the bottom, which is the worst place to be attacked. Roto & Paint Artist and Matchmove Artist are the exposed roles, and they are precisely the rungs India's outsourced VFX industry hires at volume. Character Rigger, Lighting & Rendering Artist and Storyboard Artist are more protected - rigging is engineering a puppet that must behave under any motion, and storyboarding is narrative judgment."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Pathway is 'any' because India is a global outsourcing centre for VFX and animation post-production, so a large share of the work is done here for foreign studios. That is also the vulnerability: the same economics that brought the work can move it."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The bottom rung is shrinking, not the career. A rigger or a lighting artist with five years of pipeline experience is not replaceable by a prompt - but the roto seat that used to be how those five years began is."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-illustrator",
+      "profession": "Illustrator & Concept Artist",
+      "one_liner": "Draws what does not exist yet - characters, worlds, book art, comics and editorial images.",
+      "job_roles": [
+        "Illustrator",
+        "Concept Artist",
+        "Comic & Graphic Novel Artist",
+        "Children's Book Illustrator",
+        "Editorial Illustrator",
+        "Character Designer",
+        "Matte Painter",
+        "Scientific & Medical Illustrator",
+        "Caricaturist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Scientific & Medical Illustrator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "naturalistic",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Accuracy to an anatomical, botanical or mechanical fact outranks invention entirely. The client is a textbook or a surgeon, and being interesting is not the brief."
+          },
+          {
+            "roles": [
+              "Comic & Graphic Novel Artist"
+            ],
+            "higher": [
+              "verbal",
+              "long_term_memory"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Sequential art is storytelling under a page count. The artist is usually also the author, carrying pacing and dialogue as well as drawing."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-CULT"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "practice",
+          "requirement": "Draw for two to three years and build a body of work. A BFA or design diploma helps and is not required."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "A public portfolio and a visible style. Commissions come from being findable."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Commissions from publishers, studios and agencies; or a staff concept artist seat at a game or animation studio."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. Entry is entirely by portfolio."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "1.8-4",
+        "mid_career_lpa": "5-12",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 0.17,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Commissions taken directly from publishers, studios and agencies, plus print and licensing income from your own work. Most illustrators are self-employed from day one.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 60,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 70,
+        "band": "high",
+        "reason": "The single most exposed profession in this dataset, and it would be dishonest to soften it. Text-to-image models were trained on exactly this output and produce it at near-zero marginal cost. Editorial Illustrator, Matte Painter and general Illustrator commissions are already contracting. What holds: Scientific & Medical Illustrator, where a named human is accountable for the accuracy of a diagram a surgeon will rely on, and Comic & Graphic Novel Artist, where the reader is buying an authored voice across hundreds of pages, not an image."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "ai_exposure",
+          "statement": "Listed at high exposure and kept, because the rule for dropping a profession is technological obsolescence of the NEED, not of the current method. People still want drawn worlds, comics and picture books. What has collapsed is the price of a single competent image."
+        },
+        {
+          "field": "economics",
+          "statement": "The employed figures describe a staff concept artist at a game or animation studio. A freelance illustrator's income is lumpy and commission-driven, and the range understates both its floor and its ceiling."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-game-designer",
+      "profession": "Game Designer",
+      "one_liner": "Decides what a game is and how it plays - rules, levels, difficulty, economy and story.",
+      "job_roles": [
+        "Game Designer",
+        "Level Designer",
+        "Narrative Designer",
+        "Systems & Economy Designer",
+        "Environment Artist",
+        "Character Artist (Games)",
+        "UI Designer (Games)",
+        "Technical Designer",
+        "Playtest & Balance Analyst"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Narrative Designer"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Narrative design is writing - branching dialogue, world lore and character. It shares almost nothing with tuning a difficulty curve or an in-game economy."
+          },
+          {
+            "roles": [
+              "Systems & Economy Designer",
+              "Playtest & Balance Analyst"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Economy and balance work is applied statistics on player behaviour data. It is the quantitative end of a profession most people join for the creative end."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree. Game design programmes exist but studios hire on shipped work."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Two or three finished small games, or levels and mods built in Unity or Unreal. Finished beats ambitious."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Junior designer or QA-to-design at a studio; India's studios cluster in Bengaluru, Pune, Hyderabad and Mumbai."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. Entry is on shipped work."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.5-7",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 0.57,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent release on Steam, itch.io or the app stores, usually as a two-to-five person team. Realistic only after several years of shipped experience.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 30,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "A clarity-heavy profession, which is what protects it. Environment Artist and Character Artist (Games) are exposed - they are asset production and generative tools reach them directly. Game Designer, Level Designer and Systems & Economy Designer are protected: the work is deciding what would be fun for a specific audience and then being proved wrong in playtesting, which is a judgment loop rather than an output task."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "industrial_sectors",
+          "statement": "Distinct from Sector 1's Game & Interactive Media Developer, and the substitution test is what separates them. Remove the game from the developer and a software engineer remains; remove it from the designer and nothing does. One writes the engine, the other decides what the engine should make you feel."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, not high. India has a very large games MARKET and a much smaller game DEVELOPMENT industry - most Indian studios do art and engineering services for foreign titles rather than original design. Reading market size as the number of design jobs is the error DECISIONS.md 8.45 warns against."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-interior-designer",
+      "profession": "Interior Designer",
+      "one_liner": "Plans the inside of homes, shops and offices - layout, light, materials and furniture.",
+      "job_roles": [
+        "Interior Designer",
+        "Space Planner",
+        "Retail & Store Design Specialist",
+        "Fixture & Joinery Designer",
+        "Lighting Designer",
+        "Exhibition & Stall Designer",
+        "Interior Project Coordinator",
+        "Modular Kitchen Specialist",
+        "Interior Stylist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Lighting Designer"
+            ],
+            "higher": [
+              "spatial",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Lighting design is photometrics and electrical layout as much as aesthetics, and is usually done for other designers rather than for the client directly."
+          },
+          {
+            "roles": [
+              "Interior Project Coordinator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "extraversion"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Coordination is site work - chasing carpenters, contractors and delivery dates. It is where most interior projects are actually won or lost, and it involves no design."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CSDCI",
+        "FFSC",
+        "RASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Des or B.Sc in Interior Design (4 years), or a 1-2 year diploma. Neither is legally required to practise."
+        },
+        {
+          "step": 3,
+          "stage": "site_experience",
+          "requirement": "Two to three years with a firm, learning execution - materials, vendors, costing and site supervision."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Designer at a studio or design-and-build firm, or independent practice."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NID DAT",
+          "UCEED"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required and most practising interior designers sat neither. Private colleges admit on marks or their own test."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "7-16",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 1.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent practice, usually as a design-and-build studio taking a margin on execution as well as a design fee. This is the normal shape of the profession in India, not an exception.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 30,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Layout options and renders generate easily, and Interior Stylist and Space Planner feel that first. What does not automate is the middle of the job: standing on a site where the wall is 40mm out, the client has changed their mind and the carpenter has cut the wrong sheet. Interior Project Coordinator and Fixture & Joinery Designer are protected by that reality."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, and this is the sector's most consequential settled fact. The Architects Act 1972 protects the TITLE 'architect' - it does not protect the ACTIVITY of designing interiors. Anyone in India may design and execute an interior with no registration and no degree. The Institute of Indian Interior Designers is a voluntary professional association, not a statutory regulator.",
+          "source": "data/verified_facts.json#design-practice-unregulated"
+        },
+        {
+          "field": "economics",
+          "statement": "The employed range describes a designer on a firm's payroll. Independent practice earns on execution margin rather than fee, and that is where the real income in this profession sits - which is exactly what mid_career_lpa excludes by design."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-industrial-designer",
+      "profession": "Industrial & Product Designer",
+      "one_liner": "Designs physical products - appliances, tools, vehicles, medical devices, furniture.",
+      "job_roles": [
+        "Industrial Designer",
+        "Product Designer (Hardware)",
+        "Furniture Designer",
+        "Transportation Designer",
+        "Toy Designer",
+        "CMF Designer",
+        "Packaging Structure Designer",
+        "Design Researcher",
+        "Model Maker & Prototyper"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Design Researcher"
+            ],
+            "higher": [
+              "verbal",
+              "emotional_intelligence",
+              "reasoning"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Research is fieldwork and interviews - watching how people actually use a stove or a wheelchair. It sets the brief rather than answering it."
+          },
+          {
+            "roles": [
+              "Model Maker & Prototyper"
+            ],
+            "higher": [
+              "bodily",
+              "attention_span"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Prototyping is workshop craft - foam, wood, 3D printing and finishing. It is the hands-on trade inside a profession that is otherwise screen-based."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CGSC",
+        "FFSC",
+        "ASDC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Physics and Maths help with the engineering side but are not required."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "UCEED for the IITs, or NID DAT. Private design colleges admit on their own tests."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Des in Industrial or Product Design (4 years), or M.Des after any degree via CEED."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "In-house design team at a manufacturer, or a product design consultancy."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UCEED",
+          "NID DAT",
+          "CEED"
+        ],
+        "private_entrances": [],
+        "note": "UCEED and NID DAT are the undergraduate routes; CEED is the postgraduate one and takes graduates of any discipline, which is how many engineers enter design."
+      },
+      "entry_competition": {
+        "primary_gate": "uceed",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 1.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent design consultancy serving manufacturers, normally after 5-8 years in-house - the work comes from a network, not a portfolio site.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "The least exposed design profession here, because the output has to survive manufacture. A model can generate a beautiful kettle; it cannot know the tooling budget, the draft angles, the certification regime or what the factory can actually make. CMF Designer and Packaging Structure Designer are the more exposed roles; Design Researcher and Model Maker & Prototyper are the least."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entry_competition",
+          "statement": "UCEED is named as primary because for THIS profession the public design institutes really are the dominant route into the good jobs - unlike graphic or UI design, where entry is portfolio-led and the exam is irrelevant. 15,408 candidates for 245 seats is 62.9 to 1, harder than JEE Main."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and the reason is structural: India manufactures at enormous scale but designs comparatively little of what it makes, because design authority for many products sits with the foreign brand owner. That is a real ceiling on the profession's size, not a comment on its quality."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-fashion-designer",
+      "profession": "Fashion Designer",
+      "one_liner": "Designs clothing and textiles - from mass-market ranges to couture and costume.",
+      "job_roles": [
+        "Fashion Designer",
+        "Textile & Surface Designer",
+        "Print & Pattern Designer",
+        "Costume Designer",
+        "Fashion Stylist",
+        "Knitwear Designer",
+        "Accessory Designer",
+        "Fashion Illustrator",
+        "Trend & Colour Forecaster"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Textile & Surface Designer",
+              "Print & Pattern Designer"
+            ],
+            "higher": [
+              "spatial",
+              "naturalistic",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Surface design is repeat geometry, colourways and material behaviour, done at a desk. It never involves dressing a person or presenting a collection."
+          },
+          {
+            "roles": [
+              "Fashion Stylist"
+            ],
+            "higher": [
+              "extraversion",
+              "emotional_intelligence",
+              "confidence"
+            ],
+            "lower": [
+              "conscientiousness"
+            ],
+            "why": "Styling is selection and persuasion for a shoot, a client or a film - the stylist designs nothing and makes nothing, but decides what reads."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AMHSSC",
+        "TSC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NIFT Entrance Examination, NID DAT or UCEED. Private and state colleges admit on their own tests."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Des in Fashion Design (4 years) at NIFT, NID or a private institute."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Assistant designer at an export house, a domestic brand or a designer studio."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NIFT Entrance Examination",
+          "NID DAT"
+        ],
+        "private_entrances": [],
+        "note": "NIFT is the volume route - 17,974 candidates for roughly 4,837 seats. It is a statutory institute under the NIFT Act 2006 and grants its own degrees."
+      },
+      "entry_competition": {
+        "primary_gate": "nift-entrance",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "2.5-6",
+        "mid_career_lpa": "6-14",
+        "mid_career_midpoint": 10.0,
+        "payback_years": 1.88,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own label, a boutique, or freelance design for export houses. In India this is the normal route to a real income in this profession rather than an alternative to it.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 20,
+          "skill_digital": 25,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Print & Pattern Designer and Fashion Illustrator are the exposed roles - generating colourways and repeats is exactly what image models do well. The rest of the profession is protected by cloth: fit, drape, fabric behaviour and how a garment moves on a body are physical problems learned by making, and a design that cannot be sewn at a price is not a design. Costume Designer is protected further by having to serve a character and a director."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The employed range describes an assistant or in-house designer at an export house or brand - where most NIFT graduates go, and it pays modestly. The public image of the profession comes from the very small number who run a successful label, and that income is entrepreneurship, excluded from mid_career_lpa by design."
+        },
+        {
+          "field": "entry_competition",
+          "statement": "NIFT at 3.7 applicants per seat is the MOST OPEN national design gate in the registry - 17 times easier to enter than UCEED. Fashion is widely believed to be a hard course to get into; at NIFT's scale, it is not."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-apparel-production",
+      "profession": "Fashion & Apparel Production Technician",
+      "one_liner": "Turns a design into something a factory can actually sew - patterns, fit, samples, quality.",
+      "job_roles": [
+        "Pattern Maker",
+        "Garment Technologist",
+        "Fit Technician",
+        "Sample Coordinator",
+        "CAD Pattern & Grading Specialist",
+        "Apparel Quality Controller",
+        "Cutting Room Supervisor",
+        "Production Merchandiser"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Production Merchandiser"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Merchandising is buyer correspondence, costing and delivery schedules. Pattern making next to it is three-dimensional geometry done on paper and cloth."
+          },
+          {
+            "roles": [
+              "Pattern Maker",
+              "CAD Pattern & Grading Specialist"
+            ],
+            "higher": [
+              "spatial",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Flattening a three-dimensional body into two-dimensional pieces, then grading it across eight sizes, is the most technical skill in the apparel chain and is done almost entirely alone."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AMHSSC",
+        "TSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Physics, Chemistry and Maths are needed ONLY for the NIFT B.F.Tech degree route, not for the trade route."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A 1-2 year diploma in apparel manufacturing or pattern making - NIFT, ATDC or an NSQF-aligned course."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Sampling or production floor at an export house in Tiruppur, Noida, Bengaluru or Ludhiana."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Move into pattern making, fit or quality - the skills that survive when a line is automated."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NIFT Entrance Examination"
+        ],
+        "private_entrances": [],
+        "note": "Required only for the NIFT B.F.Tech degree. The diploma and trade routes into this profession have no entrance exam at all."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "2.4-4.8",
+        "mid_career_lpa": "6-14",
+        "mid_career_midpoint": 10.0,
+        "payback_years": 0.42,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "An independent sampling or pattern-making unit serving several export houses - a common step once a pattern master has a reputation in a cluster.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 35,
+          "skill_digital": 15,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Protected by cloth and by the factory floor. CAD Pattern & Grading Specialist is the most exposed role, since grading is rule-based and already largely automated in software. Fit Technician and Pattern Maker are the safest work in the apparel chain: judging why a sleeve pulls on a real body, and knowing what to change, is a physical skill built over years."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "'any' is correct for the profession but hides a real fork. The NIFT B.F.Tech degree route requires Physics, Chemistry and Maths in class 12; the diploma and trade routes require nothing. A student without PCM is shut out of that one degree, not out of this profession."
+        },
+        {
+          "field": "profession",
+          "statement": "Deliberately named around PATTERN and FIT rather than around factory management. Generic production planning and line balancing survive the substitution test - they are the same job in an electronics plant - and belong in Sector 2. Pattern making, grading and fit do not survive it: they exist only because cloth behaves as it does."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-tailor",
+      "profession": "Tailor & Garment Maker",
+      "one_liner": "Cuts and sews clothing to measure or to a pattern - the base of the whole apparel industry.",
+      "job_roles": [
+        "Tailor",
+        "Sewing Machine Operator",
+        "Boutique Tailor",
+        "Alteration Specialist",
+        "Hand & Machine Embroiderer",
+        "Cutting Master",
+        "Ethnic Wear Specialist",
+        "Bespoke Suit Tailor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Sewing Machine Operator"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal",
+              "extraversion",
+              "openness"
+            ],
+            "why": "Factory line sewing is one operation repeated to a standard and a piece rate, with no customer contact at all. A boutique tailor's day is largely reading a customer, managing expectations and being trusted with a wedding."
+          },
+          {
+            "roles": [
+              "Bespoke Suit Tailor",
+              "Cutting Master"
+            ],
+            "higher": [
+              "spatial",
+              "bodily",
+              "long_term_memory"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Cutting from measurements with no paper pattern is the high skill of the trade, held by relatively few people and learned over a decade at a bench."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AMHSSC",
+        "TSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Many enter after class 8 or 10."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship with a working tailor, an ITI Sewing Technology trade, or an NSQF short course."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Operator at a garment unit, or with a neighbourhood tailor."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own shop with one to three machines, which is where the income actually changes."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "1.2-2.4",
+        "mid_career_lpa": "1.8-4.2",
+        "mid_career_midpoint": 3.0,
+        "payback_years": 0.11,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own tailoring shop or boutique, taking measure-to-order work and alterations directly. Capital needed is one or two machines.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 70,
+          "skill_digital": 0,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "Almost untouchable. Sewing a garment to fit a specific person is physical work in an unstructured environment, and every attempt to automate garment assembly has foundered on the fact that cloth is limp and will not hold its shape. Sewing Machine Operator is the only role with real exposure, and that is to automation of the factory line rather than to AI."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "These are EMPLOYED figures, largely piece-rate work in garment units, and they sit close to the legal minimum wage. They are not what a tailor with an established shop earns, and the record has no sourced figure for that - which is what the admin_review is for."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and stable, and worth stating plainly because the trade looks old-fashioned. Indian clothing is still overwhelmingly stitched to measure or altered after purchase, and both are jobs nobody has found a way to do remotely."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure exists for what an independent tailor or boutique owner earns. Without it the record shows 3.0 LPA and reads as a dead end, when independence is the normal path in this trade and the reason people enter it. This is the same gap flagged on Mason in Sector 2 and needs the same fix: a sourced self_employment.ceiling_lpa."
+      }
+    },
+    {
+      "id": "des-handloom-weaver",
+      "profession": "Handloom Weaver",
+      "one_liner": "Weaves cloth by hand on a loom - saris, stoles and yardage, mostly at home.",
+      "job_roles": [
+        "Handloom Weaver",
+        "Jacquard Weaver",
+        "Dyer",
+        "Warper & Sizer",
+        "Design Card Maker",
+        "Loom Mechanic",
+        "Natural Dye Specialist",
+        "Handloom Cluster Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Handloom Cluster Coordinator"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "The coordinator's day is government schemes, buyer orders, cooperative paperwork and getting yarn to twenty households. It touches the loom only indirectly."
+          },
+          {
+            "roles": [
+              "Loom Mechanic",
+              "Design Card Maker"
+            ],
+            "higher": [
+              "spatial",
+              "logical"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Setting up a jacquard and punching design cards is mechanical problem-solving. It is the engineering role inside a craft trade, and it serves a whole cluster."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "TSC",
+        "HCSSC",
+        "AMHSSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. The trade is usually learned at home from a parent, starting in the early teens."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Family apprenticeship, or a Weavers' Service Centre or Indian Institute of Handloom Technology course."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Weaving on piece rate for a master weaver or a cooperative society."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own loom, selling through a cooperative, a state emporium or direct online sale."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.15,
+        "early_earnings_lpa": "0.4-1.2",
+        "mid_career_lpa": "0.6-1.8",
+        "mid_career_midpoint": 1.2,
+        "payback_years": 0.19,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://en.themooknayak.com/livelihood/67-of-indias-handloom-weavers-mostly-dalits-adivasis-obcs-earn-under-rs-5000month"
+          ],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Weaving on your own loom and selling direct - through a cooperative, a state emporium, a design label or online - instead of on piece rate for a master weaver. Direct sale is the single biggest determinant of a weaver's income.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "The lowest AI exposure in this sector and among the lowest in the dataset. Handloom weaving is defined by being done by hand; the moment it is automated it becomes powerloom cloth, a different product in a different market. The threat to this profession has never been software - it is powerloom competition and the price of yarn."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The only economics block in this sector with a government source behind it, and it is a subsistence one: the Fourth All India Handloom Census 2019-20 found 67.1 percent of weavers earning under Rs 5,000 a month and only 6.7 percent above Rs 10,000. The range shown is that distribution converted to lakh per year.",
+          "source": "data/verified_facts.json#handloom-census-earnings"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "26.7 lakh weavers and 8.5 lakh allied workers is a very large headcount, and reading it as opportunity would be the exact error DECISIONS.md 8.45 warns against. Demand for handloom CLOTH is steady; demand for a weaver's LABOUR is priced at subsistence. Both are true and a student needs to be told both."
+        },
+        {
+          "field": "filter",
+          "statement": "Fails the compensation filter at 1.2 LPA, and rightly - but the profession is listed anyway. It is not disappearing, it is where 26.7 lakh people already are, and the application can reverse the filter for a student who is one of them."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure exists for what a weaver selling DIRECT earns - through a cooperative, an emporium or a design collaboration. That number is the whole difference between the census distribution and a viable livelihood, and without it the record shows only the piece-rate floor."
+      }
+    },
+    {
+      "id": "des-handicraft-artisan",
+      "profession": "Handicraft Artisan",
+      "one_liner": "Makes objects by hand as a trade - pottery, woodwork, metalware, cane, embroidery.",
+      "job_roles": [
+        "Potter",
+        "Wood Carver",
+        "Metal Craftsperson",
+        "Cane & Bamboo Artisan",
+        "Hand Embroiderer",
+        "Stone Carver",
+        "Block Printer",
+        "Terracotta Artisan",
+        "Toy & Doll Maker",
+        "Lacquerware Artisan"
+      ],
+      "role_spread": {
+        "spread": "narrow",
+        "deviating_roles": []
+      },
+      "industrial_sectors": [
+        "HCSSC",
+        "EXT-CULT",
+        "TSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Most craft skills are inherited within a family or a community."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship under a working artisan, or a Guru-Shishya or design development scheme of the Office of the Development Commissioner (Handicrafts)."
+        },
+        {
+          "step": 3,
+          "stage": "registration",
+          "requirement": "Artisan identity card, which is what opens access to government schemes, exhibitions and credit."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Producing on order for exporters and buyers, or selling direct at melas, emporia and online marketplaces."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.1,
+        "early_earnings_lpa": "0.6-1.8",
+        "mid_career_lpa": "1.2-3.6",
+        "mid_career_midpoint": 2.4,
+        "payback_years": 0.08,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Selling your own work directly - at exhibitions and melas, through a state emporium, or on an online marketplace - rather than producing on piece rate for an exporter. An artisan identity card unlocks the scheme and exhibition side of that.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 70,
+          "skill_digital": 0,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "As close to unexposed as this dataset contains. Every one of these roles is hand skill applied to a physical material in an unstructured setting, and part of the product's value is that a person made it. Where AI touches the trade at all it is on the selling side - listings, photographs and descriptions - not on the making."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "6.4 million artisans is INDUSTRY SIZE, not profession size, and the distinction matters more here than almost anywhere. The headcount is enormous and shrinking in real terms as younger family members leave; demand for the output is real but concentrated in exports and tourism, both volatile.",
+          "source": "data/verified_facts.json#handicraft-artisan-count"
+        },
+        {
+          "field": "economics",
+          "statement": "Judgment, with no sources, and that is a genuine failure rather than a shrug. No usable earnings survey for Indian handicraft artisans was found. The figures shown are reasoned from the handloom census next door - a related trade with a similar structure - and should not be trusted until sourced."
+        },
+        {
+          "field": "role_spread",
+          "statement": "Narrow despite ten very different materials. A potter and a cane worker look unalike but sit in almost the same psychometric place: hand skill, patience, spatial judgment, tolerance for repetition and an informal income. The material differs; the person the work suits does not."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Two gaps, both money. There is no sourced income figure for handicraft artisans at all, and none for what an artisan selling direct earns versus one on piece rate for an exporter. Until both exist this is the least evidenced record in the sector, and it describes 6.4 million people."
+      }
+    },
+    {
+      "id": "des-jeweller",
+      "profession": "Jewellery Designer & Goldsmith",
+      "one_liner": "Designs and makes jewellery - from bench work at the anvil to CAD for a retail chain.",
+      "job_roles": [
+        "Goldsmith",
+        "Bench Jeweller",
+        "Jewellery Designer",
+        "CAD Jewellery Designer",
+        "Diamond & Gemstone Setter",
+        "Gemmologist",
+        "Polisher & Finisher",
+        "Engraver",
+        "Wax Model Maker"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Jewellery Designer",
+              "CAD Jewellery Designer"
+            ],
+            "higher": [
+              "spatial",
+              "openness",
+              "logical"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Design here is drawing and 3D modelling for a brand or a retail range, done on a screen. Bench work next to it is fine motor metalwork learned by apprenticeship, and the two rarely sit in the same person."
+          },
+          {
+            "roles": [
+              "Gemmologist"
+            ],
+            "higher": [
+              "attention_span",
+              "reasoning",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Gemmology is identification and grading under a loupe against a standard - a laboratory discipline attached to a craft trade."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "GJSCI",
+        "HCSSC",
+        "RASCI"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, or none for the bench route."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship in a karigar workshop for the bench trade, or a jewellery design diploma or GJSCI-aligned course for the design side."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Karigar unit, a retail chain's design team, or an export manufacturing unit in Mumbai, Surat, Jaipur or Coimbatore."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own workshop supplying retailers, which is the standard shape of the Indian trade."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. Both the bench route and the design route are entered without an entrance exam."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "2-4",
+        "mid_career_lpa": "5-14",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own karigar workshop taking order work from retailers and wholesalers - the dominant structure of Indian jewellery manufacture, which is a network of small independent units rather than factories.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 50,
+          "skill_digital": 15,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "The bench is safe; the drawing board is not. Goldsmith, Bench Jeweller, Diamond & Gemstone Setter and Polisher & Finisher are hand skills on precious material where a mistake is unrecoverable, and none of that is a text problem. CAD Jewellery Designer is the exposed role - generating ring variations on a theme is exactly what these tools do - and Gemmologist sits in between, since machine grading of stones is already deployed commercially."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null. Nothing licenses a goldsmith in India. Hallmarking regulates the PRODUCT and the seller, not the craftsperson, and skill in this trade is certified by apprenticeship and reputation inside a karigar network rather than by any council."
+        },
+        {
+          "field": "role_spread",
+          "statement": "This is a single profession containing two quite different people, kept as one because they share an object of concern and a workshop. A student should read the deviating roles before choosing: the bench route needs no degree and no English; the CAD route needs both."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-advertising-creative",
+      "profession": "Advertising Creative & Copywriter",
+      "one_liner": "Comes up with the idea behind an ad and writes the words that carry it.",
+      "job_roles": [
+        "Copywriter",
+        "Art Director (Advertising)",
+        "Creative Strategist",
+        "Brand Content Writer",
+        "Advertising Scriptwriter",
+        "Digital Campaign Creative",
+        "Concept Writer",
+        "Packaging & Retail Copywriter"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Art Director (Advertising)"
+            ],
+            "higher": [
+              "spatial",
+              "openness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "The art director thinks in image and layout while the copywriter thinks in language. Agencies deliberately pair the two as a team for exactly that difference."
+          },
+          {
+            "roles": [
+              "Creative Strategist"
+            ],
+            "higher": [
+              "reasoning",
+              "verbal",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Strategy is the argument BEFORE the idea - who the audience is, what they believe now and what would change it. It is analytical work that constrains the creative brief rather than answering it."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "RASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree. English, mass communication and design are common but nothing is required."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "A spec book - campaigns you invented for real brands. This is what agencies read; the degree is not."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Junior copywriter or junior art director at an agency, or in-house on a brand team."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "MICAT (MICA Ahmedabad)"
+        ],
+        "note": "No exam is required. MICAT is the one well-known private entrance, and it leads to a postgraduate communication degree rather than to the job itself."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3-6",
+        "mid_career_lpa": "7-16",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance copywriting and independent creative consultancy, often for the same agencies and brands worked with in-house. Very common in this profession after 5-6 years.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 0,
+          "skill_digital": 50,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 65,
+        "band": "high",
+        "reason": "Volume copy is already being generated, and Brand Content Writer, Digital Campaign Creative and Packaging & Retail Copywriter feel it directly - product descriptions, social captions and variant headlines were the industry's junior training ground and are now largely a prompt. Creative Strategist and Art Director (Advertising) are the protected end: deciding what a brand should say, to whom, and defending that to a client who wants something else, is clarity work."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "ai_exposure",
+          "statement": "High, and the shape of the damage matters. This profession trained people by giving juniors the boring copy to write. That rung is going, which means the profession may keep its senior jobs while losing the ladder that produced them."
+        },
+        {
+          "field": "mid_stream_entry",
+          "statement": "One of the most open well-paid entries in the dataset. There is no exam, no licence, no required subject and no required degree discipline - a spec book written at home is a complete application."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "des-fine-artist",
+      "profession": "Fine Artist",
+      "one_liner": "Makes art as the work itself - painting, sculpture, printmaking, murals, installation.",
+      "job_roles": [
+        "Painter (Fine Art)",
+        "Sculptor",
+        "Printmaker",
+        "Muralist & Public Artist",
+        "Installation Artist",
+        "Ceramic Artist",
+        "Portrait Artist",
+        "Studio Assistant",
+        "Art Handler & Installer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Muralist & Public Artist"
+            ],
+            "higher": [
+              "extraversion",
+              "bodily",
+              "conscientiousness"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Public art is commissioned, scheduled, physically large and negotiated with a client or a municipality. It is project work with deadlines, unlike studio practice."
+          },
+          {
+            "roles": [
+              "Studio Assistant",
+              "Art Handler & Installer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "openness",
+              "confidence"
+            ],
+            "why": "These are the paid jobs inside the art world that involve no authorship - fabricating, crating, hanging and caring for other people's work. They are how many artists actually earn while building a practice."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BFA (4 years) at a government art college or university department. Not legally required, but it is where a practice and a network usually start."
+        },
+        {
+          "step": 3,
+          "stage": "practice",
+          "requirement": "Build a body of work and exhibit - group shows, residencies, art fairs."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Gallery representation and commissions, almost always alongside teaching, design work or studio assisting."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG"
+        ],
+        "private_entrances": [],
+        "note": "CUET UG is used for BFA admission at central universities; most state art colleges run their own aptitude test. Neither is required to work as an artist."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-9.0",
+        "mid_career_midpoint": 5.7,
+        "payback_years": 1.43,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Selling through galleries, commissions, residencies and direct sale. Practically every practising fine artist is self-employed by definition - the question is what subsidises the practice, and for most it is teaching or design work.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 55,
+          "skill_digital": 10,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Low exposure, for a reason worth stating precisely: what is sold here is not an image, it is an object made by a named person with a body of work behind it. Image generation devalues illustration, which sells the picture; it does not touch a sculpture, a print run or a commissioned mural. Portrait Artist is the most exposed role, and even there the market is largely for a painted object rather than a likeness."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low is honest and is not a reason to drop it. India has a small collecting market and few public art budgets, so the number of people who live on art alone is genuinely small. The work exists and is done; it is rarely a whole income."
+        },
+        {
+          "field": "economics",
+          "statement": "The range is wide and skewed because the distribution is: a small number of represented artists earn very well and most earn little from art itself. The figures assume a practice subsidised by teaching or design work, which is the normal case."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced income data for Indian fine artists was found, and the employed range is unusually speculative even by this sector's standards. The record also has no figure for what gallery representation actually changes, which is the single most important economic fact in this profession."
+      }
+    },
+    {
+      "id": "des-footwear-designer",
+      "profession": "Footwear & Leather Goods Designer",
+      "one_liner": "Designs and makes shoes, bags and leather goods - form, fit, materials and the last.",
+      "job_roles": [
+        "Footwear Designer",
+        "Leather Goods Designer",
+        "Last & Pattern Developer",
+        "Footwear Production Technologist",
+        "Leather Technologist",
+        "Sole & Component Designer",
+        "Footwear Quality Controller",
+        "Cobbler & Shoe Repair Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Cobbler & Shoe Repair Specialist"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness",
+              "spatial"
+            ],
+            "why": "Repair is manual craft learned on the job with no design component, usually self-employed at a roadside stall or a small shop. It is the base layer of this profession and its most accessible entry."
+          },
+          {
+            "roles": [
+              "Leather Technologist"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Leather technology is chemistry - tanning, finishing, testing and effluent. It is a laboratory discipline attached to a design and making trade."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSSC",
+        "AMHSSC",
+        "RASCI"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A diploma or B.Des at FDDI or a CLRI-linked institute, or an LSSC-aligned course; or apprenticeship for the repair and making trades."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Design or development team at a footwear manufacturer - Agra, Kanpur, Chennai and Ambur are the clusters."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Last development, fit or components - the parts of the job that cannot easily be moved to a cheaper country."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "FDDI AIST"
+        ],
+        "private_entrances": [],
+        "note": "FDDI's entrance is the main institutional route. FDDI is an Institute of National Importance under the FDDI Act 2017. The trade routes need no exam."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.8,
+        "early_earnings_lpa": "2.4-4.8",
+        "mid_career_lpa": "6-15",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 0.5,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "A small made-to-order or repair unit, or a components workshop supplying larger manufacturers. India's footwear industry is built on exactly these small units.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 20,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Protected by fit and by material. A shoe has to be walked in, and the last - the form a shoe is built around - is developed by physical iteration against real feet. Footwear Designer is the most exposed role at the styling end; Last & Pattern Developer, Leather Technologist and Cobbler & Shoe Repair Specialist are barely touched."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Kept separate from Fashion Designer rather than folded into it as job roles, on the merge test in DECISIONS.md 8.95. The object of concern is shared, but the skill set is not: last making, orthopaedic fit, sole construction and leather chemistry have no counterpart in garment design. The trade has its own Skill Council and its own national institute for the same reason."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Cobbler & Shoe Repair Specialist is deliberately inside this profession rather than left out as too small. It is the trade's genuine base layer, needs almost no capital, and is one of the few entries in this dataset open to someone with no schooling at all."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Photographer / Videographer",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "MESC",
+      "why": "The object of concern is the RECORD of something that happened, or the image as communication - not the design of a made object. A wedding photographer and a photojournalist share a craft; splitting them across two sectors would be the industry deciding, not the work."
+    },
+    {
+      "profession": "Film Production Designer / Set Designer",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "MESC",
+      "why": "Designs a world to be photographed for a story, answering to a director and a script. Remove the film and nothing survives - unlike an interior designer, whose room has to be lived in."
+    },
+    {
+      "profession": "Art Conservator & Restorer",
+      "goes_to": "17. Humanities, Culture & Belief",
+      "tag_here_instead": "EXT-CULT",
+      "why": "The object of concern is heritage and its survival, not making something new. Conservation is interpretation and stewardship of an existing object."
+    },
+    {
+      "profession": "Art & Design Teacher",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-EDU",
+      "why": "Teaching-anything goes to Sector 12 whatever the subject (DECISIONS.md 2)."
+    },
+    {
+      "profession": "Tattoo Artist",
+      "goes_to": "18. Personal Care & Wellness",
+      "tag_here_instead": "BWSSC",
+      "why": "The skill is drawing, but the object of concern is a permanent modification of a living person's body, with hygiene, consent and irreversibility as the governing constraints. That places it with personal care, not with design of objects. To be confirmed when Sector 18 is built."
+    },
+    {
+      "profession": "Makeup & Hair Artist",
+      "goes_to": "18. Personal Care & Wellness",
+      "tag_here_instead": "BWSSC",
+      "why": "Applied to a person, not to a made object. Film and fashion are employers here, which is exactly what the cross-cutting rule says is a tag."
+    },
+    {
+      "profession": "Architect",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "CSDCI",
+      "why": "Already built in Sector 2, and it belongs there: a building must stand up, and structural responsibility under the Architects Act 1972 is the defining constraint. Named here because students reasonably look for it under design."
+    },
+    {
+      "profession": "CAD Draughtsman",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "CGSC",
+      "why": "Already built in Sector 2. Draughting produces a manufacturing or construction document to a standard, not a designed proposal."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "FOOTWEAR & LEATHER GOODS DESIGNER kept as its own profession rather than folded into Fashion Designer as job roles. It shares an object of concern with fashion but not a skill set - last making, orthopaedic fit, sole construction and leather chemistry have no garment counterpart - so the merge test in 8.95 does not fire. The trade has its own Sector Skill Council (LSSC) and its own Institute of National Importance (FDDI). If you disagree, the fix is to demote it to job roles under Fashion Designer, and the Cobbler & Shoe Repair base layer would have to be preserved somewhere.",
+    "FASHION & APPAREL PRODUCTION TECHNICIAN was reframed without being renamed. Generic production planning, line balancing and factory quality SURVIVE the substitution test - they are the same job in an electronics plant - and would belong in Sector 2 beside Precision Manufacturing Technician. The profession is therefore built around pattern making, grading and fit, which exist only because cloth behaves as it does. The promise is still kept.",
+    "GAME DESIGNER was split from Sector 1's Game & Interactive Media Developer, and this one was ASKED AND APPROVED before Sector 1 was edited. Game Designer and Level Designer have been removed from that record (S1 v16.1) and now live here. Sector 1's own role_spread had already flagged those two roles as deviating on openness, existential and verbal with the note 'same profession, opposite temperaments' - opposite temperaments inside one record is usually two professions. A student searching 'game' should still be shown both.",
+    "FINE ARTIST is included with demand_signal 'low' and the sector's weakest economics. It is kept because Sector 8 is named 'Design & CREATIVE ARTS' and omitting painting and sculpture would make the taxonomy assert that art is not a career. Flagged high on admin_review for exactly that reason.",
+    "TAILOR, HANDLOOM WEAVER and HANDICRAFT ARTISAN close the apparel and craft base-layer gap recorded in DECISIONS.md 2.06, which named 8 or 17 as the destination. They are here rather than in 17 because the object of concern is a MADE OBJECT, not heritage or interpretation - a tailor stitching a school uniform is not doing cultural work. All three fail the compensation filter and all three carry a required admin_review."
+  ],
+  "changelog": {
+    "1.0": [
+      "Sector 8 built. 16 professions, 140 job roles, 34 nuances.",
+      "ALL SEVEN INHERITED PROMISES KEPT: UI/UX Designer, Animator & VFX Artist, Interior Designer, Industrial & Product Designer and Advertising Creative & Copywriter as professions in their own right; Goldsmith / Bench Jeweller inside Jewellery Designer & Goldsmith; Fashion & Apparel Production Technician kept under its promised name but BUILT around pattern making and fit, so that it survives the substitution test.",
+      "THREE BASE-LAYER PROFESSIONS added, closing the apparel and craft gap standing since DECISIONS.md 2.06: Tailor & Garment Maker, Handloom Weaver and Handicraft Artisan. Between them they describe well over 30 million working people, and all three fail the compensation filter. That is the point of listing them, not an argument against it.",
+      "TIER C THROUGHOUT. Nothing in Indian design is licensed. Two Tier B facts were fetched and they are about degree-granting institutes rather than licences: nift-statutory-status and design-practice-unregulated.",
+      "HANDLOOM WEAVER is the only economics block in the sector marked 'verified'. The Fourth All India Handloom Census 2019-20 gives an actual government earnings distribution - 67.1 percent of weavers under Rs 5,000 a month - and it is a subsistence one. Every other economics block is 'judgment' with no sources and is carried in the sector_admin_review.",
+      "TWO GATES ADDED: uceed (15,408 candidates for 245 seats, 62.9 to 1) and nift-entrance (17,974 for roughly 4,837 seats, 3.7 to 1). The contrast is the sector's most useful single finding - the two best-known design entrances differ in difficulty by seventeen times, and 'design is hard to get into' is true only of one of them.",
+      "FOUR GATES DEFERRED to pending_gates with reasons: NID DAT (NID does not publish applicant numbers), CEED, MICAT and FDDI AIST. NID DAT is still named in six professions' entrance_exams, which is allowed - naming an exam is not quantifying it.",
+      "ONLY TWO PROFESSIONS carry an entry_competition at all. Design entry is overwhelmingly portfolio-led, and pointing every record at UCEED would have repeated the CUET mistake corrected in Sector 3.",
+      "ITERATION 3 CORRECTION - SIX ECONOMICS BLOCKS RE-BASED. Written in isolation, this sector had UI/UX Designer at 18.5, Game Designer at 17.0, Industrial Designer at 16.0 and Advertising Creative at 15.5, all ABOVE Software Developer at 14.0 in Sector 1. That is not the Indian market: at 5-8 years a software developer out-earns a designer at almost every employer. Each figure looked defensible alone and the set was wrong, which is exactly what the cross-sector pass exists to catch. UI/UX, Industrial and Game Designer now sit at 13.0, Interior and Advertising at 11.5, Fashion at 10.0 - design below software and core engineering, which is the truth. Game Designer's cost also dropped from 5.0 to 3.0 to match its own stated route, which is any bachelor's degree.",
+      "THREE PROFESSIONS SIT AT HIGH AI EXPOSURE - Graphic & Visual Designer, Illustrator & Concept Artist and Advertising Creative & Copywriter. None is dropped. The rule for dropping is obsolescence of the NEED, and people still want drawn worlds, brands and advertisements. What has collapsed is the price of one competent image or one block of copy, and the damage lands on the junior rung that used to train people."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Fifteen of sixteen economics blocks are 'judgment' with no sources. Handloom Weaver is the sole exception and rests on the handloom census. Four records carry their own required admin_review because the missing number actively misleads: Tailor & Garment Maker, Handloom Weaver and Handicraft Artisan all show an employed figure below 4 LPA with no sourced figure for what independence earns, and Fine Artist has no usable Indian income data at all. A second, sector-wide gap: no source was found for what design DEGREES cost, so every cost_of_entry_lakh here is reasoned rather than fetched - including NIFT's, which is a statutory institute that publishes its fees."
+  }
+}

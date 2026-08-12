@@ -1,0 +1,1489 @@
+{
+  "professional_sector": "10. Performing Arts & Music",
+  "professional_sector_id": 10,
+  "version": "1.1",
+  "profession_count": 9,
+  "sector_verification_note": "TIER C THROUGHOUT, and this sector tests the schema harder than any before it. Nothing is licensed: the Sangeet Natak Akademi is the apex body and it promotes, funds and honours rather than registers, and Akashvani's artist grading is a voluntary broadcast credential that bars nobody from performing. Two Tier B facts were fetched and both describe bodies that do NOT control entry. The real problem here is not verification but FORMAT: eight of nine professions have essentially no employed version in India, so mid_career_lpa - which is employed-only by design - describes almost nobody. Six of nine carry a required admin_review for that reason, which is the highest proportion in the dataset and is a deliberate signal rather than an oversight.",
+  "professions": [
+    {
+      "id": "prf-musician",
+      "profession": "Musician & Instrumentalist",
+      "one_liner": "Performs music for a living - on stage, in a studio, at a temple, or at a wedding.",
+      "job_roles": [
+        "Classical Vocalist",
+        "Instrumentalist (Classical)",
+        "Playback Singer",
+        "Session Musician",
+        "Band Musician",
+        "Orchestra Player",
+        "Accompanist",
+        "Devotional & Temple Musician",
+        "Church Musician",
+        "Independent Recording Artist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Session Musician",
+              "Accompanist"
+            ],
+            "higher": [
+              "conscientiousness",
+              "short_term_memory",
+              "attention_span"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Session and accompaniment work is serving someone else's performance, note-perfect, first take, without being noticed. It is the steadiest paid work in music and the least visible."
+          },
+          {
+            "roles": [
+              "Playback Singer",
+              "Independent Recording Artist"
+            ],
+            "higher": [
+              "confidence",
+              "extraversion",
+              "openness"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "These are public-facing careers built on a recognisable voice and a personal audience. The skill is the same; the career is a completely different gamble."
+          },
+          {
+            "roles": [
+              "Classical Vocalist",
+              "Instrumentalist (Classical)"
+            ],
+            "higher": [
+              "long_term_memory",
+              "existential",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Indian classical training is a decade or more of guru-shishya study before public performance. It is the longest apprenticeship in this dataset and it is unpaid."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-CULT"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Serious training almost always starts in childhood, well before class 11."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Guru-shishya study, a music school, or a BA/MA in music at a university. Years, not months - classical training runs a decade."
+        },
+        {
+          "step": 3,
+          "stage": "credential",
+          "requirement": "Optional but useful: an Akashvani audition grade, which opens broadcast bookings. It licenses nothing."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Performance, session work, accompaniment, recording and teaching - almost every working musician does several of these."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "Akashvani music audition (grading, not entry)",
+          "CUET UG (BA Music)"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required to work. The Akashvani audition awards a broadcast grade rather than permission to perform."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "1.2-3.6",
+        "mid_career_lpa": "2.4-9.0",
+        "mid_career_midpoint": 5.7,
+        "payback_years": 0.62,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Performance fees, session work, private teaching and recording, usually all at once. Practically every Indian musician is self-employed and assembles an income from three or four sources rather than one.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 55,
+          "skill_digital": 10,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Low exposure and the reason is specific: what is bought here is a live human performing in a room, and generated audio does not substitute for that. Where exposure does bite is recorded and functional music - Session Musician work on advertising beds and library music is the role most at risk, because that market buys a sound rather than a performer. Classical Vocalist, Accompanist and Devotional & Temple Musician are essentially untouched."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "data/verified_facts.json#sangeet-natak-akademi-role",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, and the Sangeet Natak Akademi is not one despite being the apex body. It funds, documents and honours; it does not examine or register. The Akashvani grading system is the closest thing to a professional standard and it is voluntary - it opens broadcast bookings and bars nothing.",
+          "source": "data/verified_facts.json#akashvani-artist-grading"
+        },
+        {
+          "field": "years_to_qualify",
+          "statement": "Six is a conservative reading and applies to the point of earning, not competence. Indian classical training routinely runs ten to fifteen years from a start in childhood, unpaid throughout, which makes it the longest and least-visible runway in this dataset."
+        },
+        {
+          "field": "economics",
+          "statement": "The employed range describes salaried orchestra, ensemble and institutional posts, of which India has very few. It is close to fiction for most of this profession, where income is per performance, per session and per student. That is why the admin_review is required rather than optional."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "There is no employed version of this profession at any scale in India, so mid_career_lpa - which is EMPLOYED-ONLY by design - describes almost nobody. No sourced figure exists for performance fees, session rates or private tuition income, which is where the entire livelihood sits. This is the sharpest case in the dataset of the schema's salary format failing a profession, and it recurs across most of Sector 10."
+      }
+    },
+    {
+      "id": "prf-music-producer",
+      "profession": "Music Producer & Composer",
+      "one_liner": "Writes and builds the music itself - for film, advertising, artists and their own releases.",
+      "job_roles": [
+        "Music Producer",
+        "Film Music Composer",
+        "Songwriter",
+        "Lyricist",
+        "Arranger",
+        "Jingle Composer",
+        "Music Programmer",
+        "Mixing & Mastering Engineer",
+        "Background Score Composer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Lyricist",
+              "Songwriter"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Writing words for music is a literary craft, and in India often in a language the composer does not write in. Many lyricists play no instrument at all."
+          },
+          {
+            "roles": [
+              "Mixing & Mastering Engineer"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "musical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Mixing is technical judgment about frequency, dynamics and space, done to serve someone else's record. It is engineering that requires musical ears."
+          },
+          {
+            "roles": [
+              "Film Music Composer",
+              "Background Score Composer"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "reasoning",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Scoring is writing to picture on someone else's deadline and to a director's brief. The music is a service to a scene, which is a different job from writing a song."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Musical training plus production software. Formal music-production courses exist; most producers are self-taught on the tools."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Released or placed work. In music production credits are the only currency."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Assisting an established composer, advertising and jingle work, or independent releases and artist production."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "4-14",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Per-project fees, royalties and a home studio. Advertising and corporate work is what pays the bills between the projects people enter this profession for.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 40,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "The most exposed profession in this sector by a wide margin, and unusually the threat is to the paying middle rather than the entry rung. Generative audio already produces usable library music, advertising beds and background loops, which is exactly what Jingle Composer, Music Programmer and much Arranger work is. Film Music Composer and Background Score Composer are protected by having to serve a director, a scene and a deadline through revisions - and Lyricist by writing in a specific Indian language for a specific voice."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Royalty income is invisible in these figures and can be the larger half of a successful composer's earnings over time. It is also extremely uneven and arrives years late, so it cannot be represented as an annual salary."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The band is medium, but the exposure is unusually shaped: it hits FUNCTIONAL music - the anonymous score behind an advertisement or a corporate video - which is precisely the reliable commercial work that funds an Indian composer's career while they build toward film and artist projects."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "prf-dancer",
+      "profession": "Dancer & Choreographer",
+      "one_liner": "Performs and creates dance - classical, film, contemporary, folk and commercial.",
+      "job_roles": [
+        "Classical Dancer",
+        "Contemporary Dancer",
+        "Film Choreographer",
+        "Assistant Choreographer",
+        "Backup Dancer",
+        "Commercial & Event Dancer",
+        "Folk Dance Performer",
+        "Dance Company Member",
+        "Movement Director"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Film Choreographer",
+              "Assistant Choreographer"
+            ],
+            "higher": [
+              "spatial",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Choreography for screen is directing bodies to camera on a schedule, with dozens of dancers and a producer's budget. It is leadership and logistics as much as movement."
+          },
+          {
+            "roles": [
+              "Classical Dancer"
+            ],
+            "higher": [
+              "long_term_memory",
+              "existential",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Classical forms carry repertoire, mythology and abhinaya learned over a decade or more. The performance is interpretive rather than physical display."
+          },
+          {
+            "roles": [
+              "Movement Director"
+            ],
+            "higher": [
+              "reasoning",
+              "emotional_intelligence",
+              "verbal"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Movement direction shapes how actors inhabit their bodies in a play or film. It is coaching and analysis, and the movement director rarely performs."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-CULT",
+        "SPEFL"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Classical training generally starts in childhood."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Years under a guru, a dance school, or a BA/MA in dance at an institution such as Kalakshetra or Rabindra Bharati."
+        },
+        {
+          "step": 3,
+          "stage": "performance",
+          "requirement": "Arangetram or equivalent debut for classical forms; auditions and troupe work for commercial dance."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Performance, troupe membership, film and event work, choreography and teaching - nearly always several at once."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG (BA Dance)"
+        ],
+        "private_entrances": [],
+        "note": "Not required to perform. Degrees in dance exist and matter mainly for teaching posts, which belong to Sector 12."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-9.0",
+        "mid_career_midpoint": 5.7,
+        "payback_years": 0.71,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Performance fees, film and event bookings, and running a dance school - which in practice is what most classical dancers do, and it is the part that pays reliably.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 70,
+          "skill_digital": 5,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Among the least exposed professions in the dataset. Dance is a trained body in a physical space, and no part of that is a text or image problem. Synthetic video can depict dancing; it cannot be the dancer a company hires or the choreographer who rehearses forty people. Assistant Choreographer is the only role with any exposure, through pre-visualisation tools."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The employed range describes company and institutional posts, which India has very few of. It also hides a hard fact of this profession: performing income falls with age in a way most careers' do not, and teaching is not a fallback but the intended second half."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate rather than low because of the volume of commercial work - film, television, weddings and events employ far more dancers than the classical concert circuit does. A student attracted by the classical form should know the paying market is mostly elsewhere."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Performance fees, event rates and dance-school income are the whole livelihood and none is sourced. The record also has nothing on the age profile of performing income, which is the single most important economic fact in a physical performance career and is currently invisible."
+      }
+    },
+    {
+      "id": "prf-actor",
+      "profession": "Actor & Performer",
+      "one_liner": "Plays a part in front of an audience or a camera - stage, screen, television or ad film.",
+      "job_roles": [
+        "Stage Actor",
+        "Film Actor",
+        "Television Actor",
+        "Repertory Company Actor",
+        "Advertising Film Actor",
+        "Improv Performer",
+        "Mime Artist",
+        "Street Theatre Performer",
+        "Background Artist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Repertory Company Actor",
+              "Stage Actor"
+            ],
+            "higher": [
+              "long_term_memory",
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Theatre is ensemble work with months of rehearsal, a whole play held in memory and a live audience with no second take. Repertory is also the only salaried acting work in India, and it pays modestly."
+          },
+          {
+            "roles": [
+              "Background Artist"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "confidence",
+              "openness"
+            ],
+            "why": "Background and crowd work is long, unglamorous, poorly paid day work with no lines. It is how a large number of people in Mumbai and Hyderabad actually earn from film, and it leads nowhere by itself."
+          },
+          {
+            "roles": [
+              "Street Theatre Performer"
+            ],
+            "higher": [
+              "extraversion",
+              "confidence",
+              "existential"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Street theatre is performance without a stage, a ticket or a captive audience, usually carrying a social message. Holding a crowd that did not choose to watch is a distinct skill."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-CULT"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Theatre groups and college drama, then optionally NSD, FTII, or a private acting school. NSD requires six prior productions just to apply."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "A showreel and a photo portfolio, and registration with casting directors."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Auditions - advertising, television, web series and film. Advertising and television are where steady early income is."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "National School of Drama entrance",
+          "FTII JET"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required and most working Indian actors attended neither. NSD takes 26 students a year for the whole country."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.2-3.6",
+        "mid_career_lpa": "2.4-12",
+        "mid_career_midpoint": 7.2,
+        "payback_years": 0.83,
+        "distribution": "power_law",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Almost universal - actors are hired per project with no employment relationship. The exceptions are repertory companies and long-running television serials, both of which offer something closer to a salary.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 55,
+          "skill_digital": 10,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Low exposure on the composition, and the honest caveat is that synthetic performers are the one place this could change faster than the model suggests. Background Artist and Advertising Film Actor are the exposed roles - crowd replacement and synthetic presenters are already in commercial use. Stage Actor, Repertory Company Actor and Improv Performer are protected by the audience being in the room with a person who might fail."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entrance_exams",
+          "statement": "NSD was briefly recorded as this profession's primary_gate and has been removed on review. It takes 26 students a year nationally and almost no working Indian actor went through it, so naming it as THE gate would have told a fifteen-year-old that acting has a door 26 places wide. It does not - it has auditions, which cannot be counted. Recording a famous number because it is the only number available is the opposite of what the gate registry is for."
+        },
+        {
+          "field": "economics",
+          "statement": "A power-law distribution presented as a range, which is close to misleading. A handful earn extraordinarily, a thin layer of television and advertising actors earn a living, and most people who describe themselves as actors earn very little from acting in any given year."
+        },
+        {
+          "field": "economics",
+          "statement": "economics.distribution is 'power_law', which is a statement that the range and the midpoint should not be read as a typical income. A handful earn extraordinarily, a thin layer of television and advertising actors earn a living, and most people who describe themselves as actors earn very little from acting in any given year. The compensation filter does not fire on a power_law record, because deleting a profession on the strength of a number the record itself calls meaningless would be worse than showing it."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Same defect as Digital Content Creator in Sector 9 and Entrepreneur in Sector 5: the income distribution is a power law and a range may be the wrong format entirely. Decide whether to suppress the numbers and state the risk. No sourced figure exists for Indian television, advertising or repertory day rates, which are the realistic income for anyone who does make a living here."
+      }
+    },
+    {
+      "id": "prf-dj",
+      "profession": "DJ & Electronic Music Performer",
+      "one_liner": "Reads a room and plays music live to it - clubs, weddings, festivals and events.",
+      "job_roles": [
+        "Club DJ",
+        "Wedding & Event DJ",
+        "Radio DJ",
+        "Turntablist",
+        "Electronic Music Producer",
+        "Festival Performer",
+        "Mobile Disco Operator",
+        "Sound & Music Curator (Hospitality)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Wedding & Event DJ",
+              "Mobile Disco Operator"
+            ],
+            "higher": [
+              "extraversion",
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Wedding work is equipment logistics, client management and playing what the family wants rather than what you would choose. It is also where nearly all the money in Indian DJing is."
+          },
+          {
+            "roles": [
+              "Electronic Music Producer"
+            ],
+            "higher": [
+              "logical",
+              "musical",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Production is studio work made alone on a screen. Many producers never perform and many performers never produce, though the industry treats them as one career."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "THSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None."
+        },
+        {
+          "step": 2,
+          "stage": "equipment",
+          "requirement": "Controller, speakers and a laptop. This is the real cost of entry and it is why the figure is not near zero."
+        },
+        {
+          "step": 3,
+          "stage": "practice",
+          "requirement": "Build sets and a following - mixes online, small venues, and word of mouth in a city."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Residencies, wedding and event bookings, corporate parties and festivals. Wedding season is the income."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 2.5,
+        "early_earnings_lpa": "1.8-4.8",
+        "mid_career_lpa": "4-15",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.76,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "This profession is self-employment. Bookings are taken directly or through event agencies, and owning a full sound and lighting rig roughly doubles what a wedding booking pays.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 30,
+          "skill_digital": 35,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 45,
+        "band": "medium",
+        "reason": "Genuinely two-sided. Electronic Music Producer faces the same generative-audio pressure as the rest of music production, and automated mixing and recommendation already do a creditable job of sequencing tracks. But the paying job is not track selection - it is reading a specific room of drunk, tired or delighted people and changing course, which is why Club DJ, Wedding & Event DJ and Festival Performer are protected. A playlist has never been the competition; a playlist has always existed."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High, and it rests almost entirely on the Indian wedding market rather than on club culture. That makes the work seasonal and regionally spread rather than concentrated in a few metros, which is unusual for this sector."
+        },
+        {
+          "field": "economics",
+          "statement": "Wedding and event income arrives in a few months of the year and is billed per booking, not per month. Annual figures flatten a shape that a student planning cashflow needs to see."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "prf-folk-performer",
+      "profession": "Folk & Traditional Performer",
+      "one_liner": "Performs an inherited regional form - wedding bands, temple music, folk theatre, processions.",
+      "job_roles": [
+        "Folk Musician",
+        "Wedding Band Musician",
+        "Dhol & Percussion Player",
+        "Folk Theatre Artist",
+        "Temple & Ritual Performer",
+        "Puppeteer",
+        "Street Performer",
+        "Bhajan & Kirtan Singer",
+        "Processional Brass Player",
+        "Folk Troupe Member"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Puppeteer",
+              "Folk Theatre Artist"
+            ],
+            "higher": [
+              "verbal",
+              "long_term_memory",
+              "openness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Folk theatre and puppetry carry long narrative repertoires performed over hours, often with improvised topical commentary. The performer is a storyteller first."
+          },
+          {
+            "roles": [
+              "Wedding Band Musician",
+              "Processional Brass Player"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Band and procession work is physically hard, seasonal and standardised - marching, carrying, playing the same repertoire. It is also the largest employer in this profession by a distance."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-CULT",
+        "HCSSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Almost all of these forms are learned within a family or community from childhood."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship within the tradition. Some forms have state academies and guru-shishya schemes funded through the Sangeet Natak Akademi and state culture departments."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Weddings, festivals, temple calendars and processions - work follows the season and the local ritual year."
+        },
+        {
+          "step": 4,
+          "stage": "recognition",
+          "requirement": "State and national culture-department empanelment, festival circuits and grants, which is what lifts a folk performer above local rates."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "0.6-2.4",
+        "mid_career_lpa": "1.2-4.2",
+        "mid_career_midpoint": 2.7,
+        "payback_years": 0.13,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Performing on own account or as part of a family troupe, taking bookings directly. The step that actually changes income is empanelment with a state culture department or a festival circuit, which converts local rates into touring fees.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 70,
+          "skill_digital": 0,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "The lowest exposure in this sector along with dance, and for the same reason: the work is a human body performing in a physical place, usually as part of a ritual or a celebration whose whole point is that people are present. Recorded music substitutes for a wedding band at the cheap end of the market, but that substitution happened decades ago and is not new."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The base layer of Indian performing arts, and the numbers say so. Income is per booking, seasonal, cash and undocumented. This fails the compensation filter, which is correct, and it is listed anyway because it is where a very large number of performing livelihoods actually are."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and structurally uneven. Ritual and wedding demand is steady and geographically spread; the audience for long-form folk theatre is shrinking as television and phones absorb the evenings it used to fill. Those two facts point opposite ways and both are true."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Placed here rather than in Sector 17 with heritage because these are working performers being paid to perform, not custodians interpreting a tradition for study. The intervene-versus-interpret split in DECISIONS.md 2 is what decides it."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced income figure exists for any Indian folk performance work - not wedding band rates, not troupe fees, not state empanelment payments. Empanelment is named as the route by which income rises and its value is unknown, which makes the most important advice on this record unquantified."
+      }
+    },
+    {
+      "id": "prf-live-sound",
+      "profession": "Live Sound & Stage Technician",
+      "one_liner": "Makes a live show work - sound, lights, rigging, staging and the running of the event.",
+      "job_roles": [
+        "Live Sound Engineer",
+        "Monitor Engineer",
+        "Stage Manager",
+        "Lighting Operator (Live)",
+        "Backline Technician",
+        "Stage Rigger",
+        "AV Technician",
+        "Stage Crew",
+        "Event Production Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Stage Manager",
+              "Event Production Coordinator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "extraversion",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Running a show is schedule, communication and problem-solving under a clock that cannot be stopped. It is the management job inside a technical department."
+          },
+          {
+            "roles": [
+              "Stage Rigger"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Rigging carries genuine physical risk - trusses, motors and points over people's heads. It is the one role here where a mistake injures someone."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "ESSCI",
+        "THSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, or none. Physics helps with sound and electricity."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A sound or event-technology diploma, or entry as stage crew and learning on the job. Both routes are normal."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Crew for an event production or sound-hire company. Work is per show and heavily seasonal."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Front-of-house sound, monitors, lighting or rigging. Specialising is what separates day-rate crew from booked engineers."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.8-3.6",
+        "mid_career_lpa": "3.6-9.0",
+        "mid_career_midpoint": 6.3,
+        "payback_years": 0.37,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Owning equipment - a PA system, lighting rig or backline - and hiring it out with yourself operating it. Equipment ownership, not seniority, is how income rises in live production.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 50,
+          "skill_digital": 15,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Low exposure. Mixing a live band in a room with feedback, a bad PA and a singer who moves is a real-time physical problem, and automated mixing tools assume a studio. AV Technician is the most exposed role, since corporate AV is increasingly pre-programmed and automated. Stage Rigger and Backline Technician are untouched - the work is hardware in the air and on the floor."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High and growing, driven by live events, weddings, corporate conferences and a genuine festival circuit that did not exist fifteen years ago. This is the most reliably employable profession in Sector 10 and the least visible."
+        },
+        {
+          "field": "degree_dependency",
+          "statement": "Certificate, and the honest note is that the diploma matters less than the first crew job. Live production hires people it has seen work, which makes entry easy for anyone near a city with events and nearly impossible remotely."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "prf-instrument-maker",
+      "profession": "Musical Instrument Maker & Repairer",
+      "one_liner": "Builds, tunes and repairs instruments - sitars, tablas, harmoniums, guitars, pianos.",
+      "job_roles": [
+        "Instrument Maker (String)",
+        "Tabla & Percussion Maker",
+        "Harmonium Maker & Repairer",
+        "Guitar Luthier",
+        "Piano Tuner & Technician",
+        "Instrument Repair Technician",
+        "Bow Maker",
+        "Brass & Wind Instrument Technician"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Piano Tuner & Technician"
+            ],
+            "higher": [
+              "musical",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Piano tuning is an acoustic and mechanical discipline with an objective standard, practised on other people's instruments in their homes. It is a service call, not workshop making."
+          },
+          {
+            "roles": [
+              "Instrument Maker (String)",
+              "Guitar Luthier"
+            ],
+            "higher": [
+              "spatial",
+              "bodily",
+              "naturalistic"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Building a stringed instrument is woodwork with an acoustic result you cannot see - choosing timber by how it rings. It is the longest-apprenticed craft in this profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HCSSC",
+        "FFSC",
+        "MESC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. The trade is usually inherited or entered as a workshop apprentice."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship in a making workshop - Miraj, Kolkata, Delhi and Chennai are the main Indian centres."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Making or repairing for a workshop, a music shop or a distributor."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own workshop, which is where the difference between a wage and a livelihood is in this trade."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-7.2",
+        "mid_career_midpoint": 4.8,
+        "payback_years": 0.24,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own workshop making to order and repairing, selling direct to musicians and shops. A maker with a name among performers charges several times what workshop wages pay.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 70,
+          "skill_digital": 0,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 5,
+        "band": "low",
+        "reason": "Essentially unexposed. Instrument making is skilled handwork on natural materials judged by ear, and repair is diagnosis of a physical object in front of you. Nothing in the generative-AI wave touches any part of it. The threats to this trade are real but entirely different: cheap imported factory instruments and a shrinking number of apprentices."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low, and it is a thin but stable market rather than a collapsing one. The number of makers is falling faster than demand, which is why skilled repairers are genuinely scarce in most Indian cities - a student entering this trade competes with very few people."
+        },
+        {
+          "field": "economics",
+          "statement": "Workshop wages and an independent maker's income are barely the same profession. The employed figure is the floor; the route out of it is a reputation among performers, which takes years and is not purchasable."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced income figure for Indian instrument makers or repairers, employed or independent, and the gap between the two is the whole story of this trade. At 4.8 LPA employed with a named independent route and no ceiling, the record currently understates it in exactly the way self_employment.ceiling_lpa was added to prevent."
+      }
+    },
+    {
+      "id": "prf-theatre-practitioner",
+      "profession": "Theatre Practitioner & Director",
+      "one_liner": "Makes theatre happen - directing, writing plays, producing and running a company.",
+      "job_roles": [
+        "Theatre Director",
+        "Playwright",
+        "Dramaturg",
+        "Theatre Producer",
+        "Drama Facilitator",
+        "Applied Theatre Practitioner",
+        "Theatre Company Manager",
+        "Translation & Adaptation Writer (Theatre)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Playwright",
+              "Translation & Adaptation Writer (Theatre)"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Writing for the stage is solitary and slow, and in India frequently involves translating or adapting across languages. The playwright is rarely in the rehearsal room."
+          },
+          {
+            "roles": [
+              "Drama Facilitator",
+              "Applied Theatre Practitioner"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "agreeableness",
+              "conscientiousness"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Applied theatre uses drama in schools, prisons, hospitals and community work. The goal is the participants' change rather than a performance, and it is the most reliably funded work in this profession."
+          },
+          {
+            "roles": [
+              "Theatre Producer",
+              "Theatre Company Manager"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "extraversion"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Producing is budgets, venues, grants, sponsorship and touring. Indian theatre companies survive on this work and it is nothing like directing."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-CULT",
+        "EXT-DEV"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree - NSD requires one in any discipline to apply, plus six prior productions."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "NSD, a university drama department, or years inside a working theatre group. The group route is the commonest."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Directing for a company, applied theatre and workshop facilitation, and grant-funded productions. Very few make a living from productions alone."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "National School of Drama entrance"
+        ],
+        "private_entrances": [],
+        "note": "Not required. NSD takes 26 students a year nationally and most theatre practitioners in India trained inside a group instead."
+      },
+      "entry_competition": {
+        "primary_gate": "nsd-entrance",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-9.0",
+        "mid_career_midpoint": 5.7,
+        "payback_years": 0.95,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Running a company or working project to project on grants, commissions, corporate workshops and applied theatre contracts. Workshop and facilitation work is what most Indian theatre-makers actually live on.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 25,
+          "skill_digital": 5,
+          "clarity": 40
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "The lowest digital exposure in the dataset alongside the trades, and the highest clarity in this sector. The job is deciding what a play should mean now, to this audience, in this city - then getting thirty people to agree and rehearse it. Playwright is the only role with real exposure, and even there the constraint is that a play must survive being spoken aloud by actors for two hours."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low, and honestly so. India has few funded theatre companies, almost no commercial theatre outside a handful of cities, and shrinking state culture budgets. The work exists and is done; it is rarely a whole income, and applied theatre and corporate workshops are what make it viable."
+        },
+        {
+          "field": "economics",
+          "statement": "Understated even by this sector's standards, because grant-funded and commission income is lumpy and most practitioners hold a second job. The figures assume a practice subsidised by facilitation and workshop work, which is the normal case."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure for Indian theatre grant, commission or facilitation rates, which are the actual income here. The record also cannot show what proportion of practitioners hold a second job, which for this profession is the most decision-relevant fact there is."
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Music, Dance & Drama Teacher",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-EDU",
+      "why": "Teaching-anything goes to Sector 12 whatever the subject. This matters more here than anywhere: teaching is not a fallback for performers, it is where a large share of performing-arts income actually comes from, and a student must be shown both records together."
+    },
+    {
+      "profession": "Sound Designer / Audio Engineer (film and post)",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "MESC",
+      "why": "Already built in Sector 9. Post-production sound serves a screen story; live sound serves a performance in a room, and the two are different jobs with different equipment."
+    },
+    {
+      "profession": "Music Therapist",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "HSSC",
+      "why": "The object of concern is the client's wellbeing, and music is the method. Intervene rather than perform."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "TALENT & ARTIST MANAGER HAS NO HOME, and this is a real gap rather than a routing note. Booking, representing and negotiating for performers survives the substitution test as management, which points at Sector 5 - but Sector 5 is already built and does not contain it. It cannot be recorded as routed_elsewhere, because a promise to a built sector asserts something is already there. Decide: add it to Sector 5, or admit it here as a profession.",
+    "FOLK & TRADITIONAL PERFORMER is placed here rather than in Sector 17 with heritage. The intervene-versus-interpret split decides it: these are working performers being paid to perform at weddings, temples and festivals, not custodians interpreting a tradition for study. If you disagree, the alternative is a Sector 17 placement, and the base-layer argument would have to be made again there.",
+    "THE SALARY FORMAT FAILS THIS SECTOR, and it is a schema question rather than a data one. Musician, Dancer, Actor, Folk Performer, Instrument Maker and Theatre Practitioner all earn per performance, per session, per booking or per student. mid_career_lpa is EMPLOYED-ONLY by design (DECISIONS.md 8.4), which for these six deletes the entire livelihood and leaves a figure describing institutional posts India barely has. This is the same shape as the bimodal-pay question still open on Sector 4, and it now affects two whole sectors.",
+    "ACTOR & PERFORMER and DIGITAL CONTENT CREATOR (Sector 9) and ENTREPRENEUR (Sector 5) now form a set of three records whose income follows a power law that a range cannot express. Three sectors have independently arrived at the same request: decide whether to suppress the numbers and state the risk instead.",
+    "DJ & ELECTRONIC MUSIC PERFORMER is included as a profession rather than as job roles under Musician. The object of concern is shared but the skill set is not - selection, mixing and reading a live crowd have no counterpart in instrumental training - and the Indian wedding market makes it one of the larger performing livelihoods in the country."
+  ],
+  "changelog": {
+    "1.1": [
+      "v1.1 - INDEPENDENT REVIEW. Actor's primary_gate was NSD, and the record's own nuance conceded that almost no working Indian actor went through it. Nulled. Recording 26 places a year as the door to acting because it is the only countable number is the opposite of what the gate registry is for. NSD stays on Theatre Practitioner, where it is genuinely decisive.",
+      "Sector 10 built. 9 professions, 82 job roles.",
+      "TIER C THROUGHOUT. Two Tier B facts fetched, both about bodies that do not control entry: the Sangeet Natak Akademi (promotes and funds, does not register) and Akashvani's artist grading system (four grades B, B-High, A and Top, awarded by audition for BROADCAST booking, entirely voluntary).",
+      "ONE GATE ADDED: nsd-entrance, at 26 seats a year for the whole country - the smallest gate in the registry. Applicant numbers are not published and were not estimated, so applicants_per_seat is null. Its if_unsuccessful block is the clearest example in the registry of preparation that is intrinsically worth doing: NSD requires six theatre productions BEFORE you may apply, so the preparation is stage experience nobody can take away.",
+      "NSD'S STIPEND IS NOT RECORDED. Sources disagreed - figures from Rs 3,000 to Rs 9,500 a month were seen - so no amount was written. Under the money rule a contested figure is the same as an unsourced one.",
+      "SIX OF NINE PROFESSIONS CARRY A REQUIRED ADMIN_REVIEW, the highest proportion of any sector. In every case it is the same defect: the profession has no employed version at scale in India, so the schema's employed-only salary field describes almost nobody, and no per-performance, per-session or per-booking rate was sourced anywhere.",
+      "MUSIC PRODUCER & COMPOSER is the sector's only medium-plus AI exposure at 50, and the exposure has an unusual shape: it hits FUNCTIONAL music - advertising beds, library tracks, corporate scores - which is precisely the reliable commercial work that funds an Indian composer's career. Performance-based professions here sit at 5 to 15, among the lowest in the dataset."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "All nine economics blocks are 'judgment' with no sources, and unlike Sectors 5 and 8 this is not simply a fetching gap - the numbers the sector runs on do not exist in the salary format the schema uses. What is needed is a sourced set of PER-EVENT rates: performance fees, session rates, wedding band and DJ bookings, film and television day rates, private tuition fees per student per month, and state culture-department empanelment payments. Until those exist, six of nine records show an employed figure that describes institutional posts India barely has. Separately, and as a schema decision rather than a research task: Actor & Performer joins Digital Content Creator and Entrepreneur as a record whose income is a power law that a range misrepresents."
+  }
+}

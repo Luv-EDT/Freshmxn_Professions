@@ -1,0 +1,1422 @@
+{
+  "professional_sector": "15. Agriculture & Food Systems",
+  "professional_sector_id": 15,
+  "version": "1.2",
+  "profession_count": 8,
+  "sector_verification_note": "TIER C THROUGHOUT - nothing in Indian farming is licensed, and the only statutory register adjacent to this sector is veterinary, which is Sector 4. What this sector has instead is the BEST GOVERNMENT DATA in the dataset. The NSS 77th round Situation Assessment Survey gives an agricultural household's monthly income decomposed by source, and the decomposition carries the sector's central finding: since 2019 Indian farming households have earned more from WAGES than from cultivation. A second verified fact corrects a common misunderstanding - the ICAR national entrance fills only 15 percent of bachelor's seats at agricultural universities, so the famous exam is not the ordinary door. Six of eight professions here are self-employment at their core, which puts this sector with 10 and 11 in straining the employed-only salary format.",
+  "professions": [
+    {
+      "id": "agr-farmer",
+      "profession": "Farmer",
+      "one_liner": "Grows crops on land they own, rent or work - the occupation most Indians still live from.",
+      "job_roles": [
+        "Farmer",
+        "Agricultural Labourer",
+        "Tenant Farmer & Sharecropper",
+        "Organic & Natural Farming Practitioner",
+        "Seed Grower",
+        "Contract Farming Cultivator",
+        "Farm Manager",
+        "Custom Hiring Operator",
+        "Farmer Producer Organisation Member"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Agricultural Labourer"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness"
+            ],
+            "lower": [
+              "logical",
+              "openness"
+            ],
+            "why": "Farm labour is paid by the day for someone else's crop, with no land, no decision and no exposure to the harvest. It is the largest single form of rural employment and the poorest, and the survey data shows it is now the biggest income source even for households that farm their own land."
+          },
+          {
+            "roles": [
+              "Farm Manager",
+              "Contract Farming Cultivator"
+            ],
+            "higher": [
+              "logical",
+              "conscientiousness",
+              "reasoning"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Managing land for a company or under a buyback contract is agronomy plus record keeping against a specification. The risk shifts to the buyer and so does much of the decision-making."
+          },
+          {
+            "roles": [
+              "Custom Hiring Operator"
+            ],
+            "higher": [
+              "logical",
+              "spatial",
+              "confidence"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Owning a tractor, harvester or drone and hiring it out across a village is a machinery business attached to farming. It is capital rather than land, and it is one of the few documented ways a small farmer raises income."
+          },
+          {
+            "roles": [
+              "Organic & Natural Farming Practitioner"
+            ],
+            "higher": [
+              "naturalistic",
+              "openness",
+              "attention_span"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Certified organic and natural farming trades yield for price, requires certification and record-keeping, and takes three years of transition before the premium arrives."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "EXT-ENV",
+        "FICSI"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. This occupation is entered by inheritance far more often than by choice."
+        },
+        {
+          "step": 2,
+          "stage": "land",
+          "requirement": "Access to land - owned, inherited, leased or sharecropped. This, not a qualification, is the binding constraint."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "Krishi Vigyan Kendra training, state extension programmes, or a B.Sc Agriculture. None is required and most farmers have none."
+        },
+        {
+          "step": 4,
+          "stage": "scale",
+          "requirement": "Join a Farmer Producer Organisation, take up custom hiring, or add livestock - the documented routes to a viable income from a small holding."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (ICAR-UG)",
+          "State agricultural university admissions"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required to farm. They are the route into agricultural EDUCATION, and ICAR fills only 15 percent of those seats."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "0.6-1.8",
+        "mid_career_lpa": "0.9-2.7",
+        "mid_career_midpoint": 1.8,
+        "payback_years": 0.42,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Farming your own or leased land is self-employment by definition. What changes the income is not more land but a second engine: livestock, a Farmer Producer Organisation that aggregates and sells, custom hiring of machinery, or direct sale that skips the mandi.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Almost unexposed by AI, and that framing misses the point for this profession. The relevant technology is MECHANISATION and precision agriculture - drones, sensors, harvesters - which reduces the labour a hectare needs. That is good for a landowning farmer and bad for an Agricultural Labourer, who is the larger group. Advisory apps and image-based pest diagnosis substitute for extension advice rather than for the farmer."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "data/verified_facts.json#agricultural-household-income-nss77",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Verified, and it says something families are rarely told. An agricultural HOUSEHOLD earned Rs 10,218 a month in 2018-19 - about 1.23 lakh a year for a whole household - and only Rs 3,798 of it came from cultivation. Wages and salaries at Rs 4,063 are now the LARGER source. For most Indian farming families, farming is no longer the main source of the family's income.",
+          "source": "data/verified_facts.json#agricultural-household-income-nss77"
+        },
+        {
+          "field": "filter",
+          "statement": "Fails the compensation filter, and it is the largest occupation in the country. That is not an argument against the filter - the filter is telling the truth - but it is the sharpest illustration of why the application must be able to reverse it. A student from a farming family is not choosing whether farming pays; they are deciding what to do about a household that already lives on this."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High is the right value and it needs care in reading. It means the work exists at enormous scale and is not disappearing, not that entering it is a good financial decision. Roughly 45 percent of Indian workers are in agriculture producing about 18 percent of GDP, which is the whole problem in one ratio."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The verified figure is a HOUSEHOLD figure, not a personal income, and the schema has no way to say so - which risks a student reading 1.23 lakh as a salary. Two further gaps: no sourced figure for what a Farmer Producer Organisation membership or a custom hiring operation actually adds, which are the two documented routes upward, and no figure for agricultural labour daily wages, which is now the largest income source in farming households."
+      }
+    },
+    {
+      "id": "agr-agronomist",
+      "profession": "Agricultural Scientist & Agronomist",
+      "one_liner": "Works out how to grow more, better and with less - varieties, soil, pests, practice.",
+      "job_roles": [
+        "Agronomist",
+        "Plant Breeder",
+        "Soil Scientist",
+        "Plant Pathologist",
+        "Entomologist",
+        "Seed Technologist",
+        "Agricultural Research Scientist",
+        "Crop Advisory Specialist",
+        "Precision Agriculture Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Plant Breeder",
+              "Agricultural Research Scientist"
+            ],
+            "higher": [
+              "reasoning",
+              "attention_span",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Breeding a variety is a decade-long programme of crossing, selection and trials. It is the longest feedback loop in applied science and it is done inside ICAR institutes and state agricultural universities."
+          },
+          {
+            "roles": [
+              "Crop Advisory Specialist",
+              "Precision Agriculture Specialist"
+            ],
+            "higher": [
+              "verbal",
+              "logical",
+              "extraversion"
+            ],
+            "lower": [
+              "long_term_memory"
+            ],
+            "why": "Advisory roles sit with agri-input companies and agritech firms, translating agronomy into a recommendation a farmer will act on - and often into a product sale, which is a real conflict a student should see."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "EXT-RND",
+        "FICSI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Biology; Agriculture as a subject where offered. Mathematics is accepted in place of Biology for some programmes."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "State agricultural university counselling for most seats; CUET (ICAR-UG) for about 15 percent of them."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Sc (Hons) Agriculture, 4 years."
+        },
+        {
+          "step": 4,
+          "stage": "masters",
+          "requirement": "M.Sc in the specialisation. Effectively required for anything beyond field advisory work."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "ICAR institute or state agricultural university via the ARS examination, a seed or agri-input company, or an agritech firm."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (ICAR-UG)",
+          "State agricultural university admissions",
+          "ICAR ARS examination (Agricultural Research Service)"
+        ],
+        "private_entrances": [],
+        "note": "The ARS examination is the decisive gate for a research career; the degree entrance is the ordinary one and is mostly a state process."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-15.0",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent agronomy advisory, seed production on contract, or a consultancy to agritech and input companies. It depends on a reputation among farmers, which takes a decade.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 20,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Low exposure, protected by biology and by place. A model can read a research paper; it cannot run a multi-season varietal trial, judge a soil by handling it, or know why a recommendation that works in Punjab fails in Vidarbha. Crop Advisory Specialist carries the most exposure - image-based pest and disease diagnosis is genuinely good and is already deployed in farmer apps - but that displaces the routine half of advisory rather than the agronomist."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "PCB is listed because it is the common requirement, but this is one of the few science professions where Mathematics is accepted in place of Biology at many universities, and where Agriculture is itself a class 12 subject in several state boards. A student should check the specific university rather than assume."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and it splits sharply by employer. ICAR and state agricultural university posts are few and filled by examination; the growth is in private seed, agri-input and agritech companies, which pay better and offer no security."
+        },
+        {
+          "field": "entrance_exams",
+          "statement": "CUET (ICAR-UG) is listed first but is NOT the ordinary way in. It fills only 15 percent of bachelor's seats at the roughly 74 participating agricultural universities; the other 85 percent go through state quotas and state counselling. Treating this national examination as THE gate would overstate how closed agricultural education is by nearly seven times. It is the clearest case in the taxonomy of a famous national exam that most entrants never sit. Source: data/verified_facts.json#icar-aieea-fifteen-percent."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "agr-agricultural-engineer",
+      "profession": "Agricultural Engineer",
+      "one_liner": "Engineers the physical side of farming - machinery, irrigation, storage, processing.",
+      "job_roles": [
+        "Agricultural Engineer",
+        "Farm Machinery Engineer",
+        "Irrigation Engineer",
+        "Post-Harvest & Storage Engineer",
+        "Agricultural Structures Engineer",
+        "Farm Equipment Service Technician",
+        "Micro-Irrigation Designer",
+        "Agri-Drone Application Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Farm Equipment Service Technician"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Servicing tractors, harvesters and pump sets is a skilled trade entered through an ITI rather than a degree. It is the largest employment inside this profession and it exists in every taluka."
+          },
+          {
+            "roles": [
+              "Agri-Drone Application Specialist"
+            ],
+            "higher": [
+              "spatial",
+              "logical",
+              "confidence"
+            ],
+            "lower": [
+              "long_term_memory"
+            ],
+            "why": "Drone spraying and survey requires a DGCA Remote Pilot Certificate and is one of the genuinely new occupations in Indian agriculture. It is also a self-employment route - a drone and a licence is a business."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "CGSC",
+        "IESC",
+        "SCGJ"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Mathematics. Chemistry is NOT compulsory for the JEE route; agricultural university counselling may differ and should be checked against the specific university."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "JEE Main, a state engineering entrance, or agricultural university counselling."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech in Agricultural Engineering, offered mainly at agricultural universities rather than at engineering colleges."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Farm machinery manufacturer, an irrigation company, a food processing firm, a state agriculture engineering department, or a custom hiring centre."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "JEE Main",
+          "CUET (ICAR-UG)",
+          "State agricultural university admissions",
+          "GATE"
+        ],
+        "private_entrances": [],
+        "note": "This degree sits across two systems - some seats are filled through engineering entrances and some through agricultural university counselling, which confuses a lot of applicants."
+      },
+      "entry_competition": {
+        "primary_gate": "jee-main",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 5.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "5.0-11.0",
+        "mid_career_midpoint": 8.0,
+        "payback_years": 1.11,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "A custom hiring centre - owning machinery and hiring it out with an operator - or a micro-irrigation installation business. Both are the same insight: in Indian agriculture the money is in owning the equipment, not in operating someone else's.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 30,
+          "skill_digital": 15,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Low exposure. Machinery has to be designed for real field conditions and then repaired in them, and Farm Equipment Service Technician is as safe as any trade in Sector 2. Micro-Irrigation Designer carries some exposure since layout design is increasingly software driven, and Agri-Drone Application Specialist is an occupation that automation CREATED rather than threatens."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and rising for a specific reason: Indian farm labour is becoming scarcer and costlier as rural workers move to construction and services, which is pushing mechanisation on holdings that were previously too small to justify it. Custom hiring is how that reaches a two-hectare farm."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Farm Equipment Service Technician is deliberately inside this profession rather than left out as too junior. It is entered through an ITI, needs no degree, exists in every taluka, and is one of the few technical livelihoods genuinely available to a student who stays in a small town."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "agr-food-technologist",
+      "profession": "Food Technologist",
+      "one_liner": "Turns crops into food that keeps, is safe to eat, and tastes the same every time.",
+      "job_roles": [
+        "Food Technologist",
+        "Food Safety & Quality Manager",
+        "Product Development Technologist",
+        "Food Processing Supervisor",
+        "FSSAI Compliance Officer",
+        "Sensory Analyst",
+        "Dairy Technologist",
+        "Packaging Technologist (Food)",
+        "Food Microbiologist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Food Safety & Quality Manager",
+              "FSSAI Compliance Officer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Food safety work is auditing against FSSAI standards and HACCP plans, with legal consequences for the company and sometimes for the named person. It is regulatory rather than developmental."
+          },
+          {
+            "roles": [
+              "Product Development Technologist",
+              "Sensory Analyst"
+            ],
+            "higher": [
+              "openness",
+              "naturalistic",
+              "reasoning"
+            ],
+            "lower": [
+              "conscientiousness"
+            ],
+            "why": "Development is formulation and tasting - inventing a product and proving people like it. Sensory analysis is a measurement discipline built on human panels."
+          },
+          {
+            "roles": [
+              "Food Processing Supervisor"
+            ],
+            "higher": [
+              "bodily",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Running a processing line is shift supervision of people and machinery under hygiene discipline. It is the entry job in most Indian food companies."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "FICSI",
+        "ASCI",
+        "LSSSDC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Biology or Mathematics."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "CUET, a state agricultural university process, or JEE Main for the B.Tech Food Technology route."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Tech or B.Sc in Food Technology, Food Science or Dairy Technology."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "A food or dairy processing company, a quality and testing laboratory, a retail or restaurant chain's food safety team, or FSSAI-linked compliance work."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "JEE Main",
+          "CUET (ICAR-UG)",
+          "State agricultural university admissions"
+        ],
+        "private_entrances": [],
+        "note": "Entry is an ordinary degree admission. FSSAI training and certification matter later, for the compliance roles rather than for entry."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 5.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.11,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent food safety consultancy and FSSAI licensing support for small manufacturers and restaurants, or a small processing unit. The consultancy route is real and growing because compliance obligations now reach very small businesses.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 20,
+          "skill_physical": 25,
+          "skill_digital": 10,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Low exposure, protected by physical product and by regulation. Food has to be made, tested and tasted, and somebody must sign the safety records. Sensory Analyst is the most exposed role on paper - preference modelling from panel data is statistics - but it is protected by needing human panels in the first place. Food Safety & Quality Manager is protected by carrying named responsibility under food law."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "class12_prerequisite",
+          "statement": "Physics and Chemistry only, because listing Biology as well would wrongly shut out PCM students - Food Technology and B.Tech Food Engineering accept Mathematics in place of Biology at most universities. Over-restricting a subject gate is not a safe error in this dataset; it deletes a route a student actually has."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and among the more reliable demand signals in this dataset. It rests on two things that are both still expanding: India's shift from unpackaged to packaged food, and the extension of FSSAI licensing and hygiene obligations down to very small businesses. Both create work that did not exist a decade ago."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Promised here from Sector 3 rather than kept with the sciences. The method is applied chemistry and microbiology, but the object of concern is food - getting it from a field into a person safely - which is this sector."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "agr-dairy-livestock",
+      "profession": "Dairy & Livestock Professional",
+      "one_liner": "Keeps animals productive and healthy - milk, poultry, goats, and the systems around them.",
+      "job_roles": [
+        "Dairy Farmer",
+        "Dairy Worker",
+        "Poultry Farm Supervisor",
+        "Livestock Extension Worker",
+        "Artificial Insemination Technician",
+        "Milk Procurement Officer",
+        "Animal Nutrition Specialist",
+        "Goat & Small Ruminant Farmer",
+        "Para-Veterinary Worker"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Artificial Insemination Technician",
+              "Para-Veterinary Worker"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "These are technical animal-handling roles - inseminating, vaccinating, treating minor conditions - performed in villages where no veterinarian will come. They are trained, certified and the closest thing to primary animal healthcare most of rural India has."
+          },
+          {
+            "roles": [
+              "Milk Procurement Officer"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Procurement runs the collection network for a dairy cooperative or private dairy - testing, pricing, payments and farmer relationships across dozens of villages. It is the commercial job inside a livestock profession."
+          },
+          {
+            "roles": [
+              "Poultry Farm Supervisor"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Commercial poultry is the most industrialised animal production in India - batch cycles, feed conversion ratios, biosecurity and very thin margins. It is closer to factory management than to farming."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "FICSI",
+        "HSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None for the farm and technician routes; PCB for a B.Sc or B.V.Sc route."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A dairy or livestock diploma, an artificial insemination or para-vet certification, or a Krishi Vigyan Kendra course. Many enter with family experience and no certificate."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Own herd, a dairy cooperative, a private dairy, a commercial poultry or feed company, or the state animal husbandry department."
+        },
+        {
+          "step": 4,
+          "stage": "scale",
+          "requirement": "Grow the herd, or move into procurement, extension or feed - the routes that convert animal work into a salary."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State animal husbandry department recruitment"
+        ],
+        "private_entrances": [],
+        "note": "There is no entrance examination for the farm and technician routes. Veterinary practice is a different profession entirely and requires NEET and a B.V.Sc."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-6.0",
+        "mid_career_midpoint": 4.2,
+        "payback_years": 0.48,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Owning animals is the profession for most people in it. A dairy herd of ten crossbred cows supplying a cooperative is a different economic proposition from working on someone else's farm, and it is the standard aspiration.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 60,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Almost unexposed. Animals are handled, fed, milked and treated by people, in sheds, twice a day, every day. Milk Procurement Officer carries the only real exposure through automated testing and digital payment systems at collection centres, which has already changed that role substantially without removing it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Livestock contributed Rs 1,582 of an agricultural household's Rs 10,218 monthly income in 2018-19 - about 15 percent - and it is the most reliable component because milk sells daily while a crop sells twice a year. That daily cashflow, not the annual total, is why dairy matters to a small farming household.",
+          "source": "data/verified_facts.json#agricultural-household-income-nss77"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and India is the world's largest milk producer, but demand here means demand for OUTPUT rather than for salaried posts. Most of this profession is self-employment on a small herd; the salaried roles are in cooperatives, private dairies and feed companies and are far fewer."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure for what a small dairy herd actually earns net of feed, which is the calculation every entrant to this profession is really making, and none for artificial insemination or para-vet technician incomes. The livestock share of household income is sourced; the unit economics of the herd are not."
+      }
+    },
+    {
+      "id": "agr-horticulture",
+      "profession": "Horticulture & Plantation Professional",
+      "one_liner": "Grows fruit, vegetables, flowers, tea and spices - the high-value, high-risk end of farming.",
+      "job_roles": [
+        "Horticulturist",
+        "Orchard Manager",
+        "Floriculture Specialist",
+        "Plantation Supervisor",
+        "Protected Cultivation & Greenhouse Manager",
+        "Nursery Manager",
+        "Post-Harvest & Cold Chain Specialist",
+        "Landscape & Garden Supervisor",
+        "Mushroom & Speciality Crop Grower"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Plantation Supervisor"
+            ],
+            "higher": [
+              "extraversion",
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Tea, coffee and rubber estates are labour-managing jobs - hundreds of workers, housing, welfare and a colonial-era employment structure. It is people management in a remote location, not horticulture."
+          },
+          {
+            "roles": [
+              "Protected Cultivation & Greenhouse Manager"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "reasoning"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Polyhouse and hydroponic growing is climate control, nutrient dosing and pest management as an engineering problem. Capital cost is high, and it is the most technical growing in Indian agriculture."
+          },
+          {
+            "roles": [
+              "Landscape & Garden Supervisor"
+            ],
+            "higher": [
+              "spatial",
+              "openness",
+              "extraversion"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Landscaping serves clients and aesthetics rather than yield. It is an urban service livelihood attached to a rural profession and it pays more reliably than growing."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "FICSI",
+        "EXT-ENV"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream for the practical routes; PCB for a B.Sc Horticulture."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.Sc Horticulture, a diploma, or a Krishi Vigyan Kendra course. Many growers have none of these."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Own orchard or polyhouse, a plantation company, a nursery, an export packhouse, or a landscaping firm."
+        },
+        {
+          "step": 4,
+          "stage": "market",
+          "requirement": "Secure a buyer before you plant. In horticulture the market, not the crop, is what fails."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (ICAR-UG)",
+          "State agricultural university admissions"
+        ],
+        "private_entrances": [],
+        "note": "Not required for the practical routes, which is how most horticulture in India is entered."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "3.0-9.0",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Growing high-value crops on own or leased land and selling direct - to an exporter, a retail chain, or through a Farmer Producer Organisation. Horticulture is where direct marketing actually changes the economics, because the produce is worth enough to justify the effort.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 60,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Almost unexposed. Growing, pruning, harvesting and grading are physical work on living plants in a field or a polyhouse. Protected Cultivation & Greenhouse Manager carries a little exposure through automated climate and irrigation control, which is a tool the manager uses rather than a substitute for them."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and the risk profile is the opposite of staple farming. Horticulture returns several times more per hectare and has no minimum support price, no procurement and very little storage - so a price crash or a delayed truck destroys a season. Higher ceiling, no floor."
+        },
+        {
+          "field": "economics",
+          "statement": "The range understates the upside and hides the variance. A polyhouse of capsicum or a well-marketed orchard can earn many times the figures shown; a season with no buyer earns nothing and the input cost is already spent."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figures for horticulture returns per acre or for plantation sector wages, and the second matters: tea and coffee estate wages are set by state plantation labour rules and are published, which makes them fetchable and would anchor this record the way the NSS survey anchors Farmer."
+      }
+    },
+    {
+      "id": "agr-fisheries",
+      "profession": "Fisheries & Aquaculture Professional",
+      "one_liner": "Catches or farms fish and shrimp - marine, inland and pond, and the cold chain behind it.",
+      "job_roles": [
+        "Fisherman",
+        "Aquaculture Farm Manager",
+        "Shrimp Farm Technician",
+        "Fisheries Officer",
+        "Hatchery Technician",
+        "Fish Processing Supervisor",
+        "Aquatic Health Specialist",
+        "Ornamental Fish Breeder",
+        "Fish Seed Producer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Fisherman"
+            ],
+            "higher": [
+              "bodily",
+              "naturalistic",
+              "neuroticism"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Marine capture fishing is among the most dangerous occupations in India - long voyages, weather, debt to boat owners and a catch that may not come. It is traditional, community-based and almost entirely informal."
+          },
+          {
+            "roles": [
+              "Shrimp Farm Technician",
+              "Aquaculture Farm Manager"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Aquaculture is water chemistry, feed management and disease control on a capital-intensive pond. Shrimp in particular is a high-margin, high-risk export business where one disease outbreak wipes out a crop."
+          },
+          {
+            "roles": [
+              "Fisheries Officer"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness",
+              "logical"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "A state fisheries department post is extension, licensing and scheme delivery - a government job attached to the sector rather than work on the water."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "FICSI",
+        "EXT-ENV"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None for capture fishing and farm work; PCB for a B.F.Sc."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "B.F.Sc (4 years) for the professional and government routes; on-the-job or a short course for pond and hatchery work."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Own or crew a boat, an aquaculture farm, a hatchery, a processing and export unit, or a state fisheries department."
+        },
+        {
+          "step": 4,
+          "stage": "scale",
+          "requirement": "Own ponds or a hatchery. In aquaculture the returns and the risk both sit with whoever owns the water."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET (ICAR-UG)",
+          "State agricultural university admissions",
+          "State fisheries department recruitment"
+        ],
+        "private_entrances": [],
+        "note": "B.F.Sc admission runs through agricultural university systems. Nothing is required to fish."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.5-4.0",
+        "mid_career_lpa": "3.0-9.0",
+        "mid_career_midpoint": 6.0,
+        "payback_years": 0.73,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Owning ponds, a hatchery or a boat. Aquaculture is one of the higher-return self-employment routes in Indian agriculture and also one of the riskiest - a shrimp crop can fail completely.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 15,
+          "skill_physical": 60,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Almost unexposed. Fishing, pond management and hatchery work are physical, outdoor and biological. Aquatic Health Specialist and Aquaculture Farm Manager use sensing and water quality monitoring that is increasingly automated, which improves the work rather than replacing the person standing at the pond edge deciding whether to harvest early."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and export-linked, which is the risk. Indian shrimp aquaculture is built on a small number of export markets and their sanitary and anti-dumping decisions; a single trade action can collapse prices for a season. Inland fish for the domestic market is far steadier and far less profitable."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Fisherman is included as the base layer and should be read with its role_spread entry. Marine capture fishing is among the most dangerous occupations in the country, is largely informal, and is frequently financed by debt to a boat owner - a structure that determines the income more than the catch does."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced income figures for Indian capture fishing or for aquaculture returns per hectare, and the two are entirely different economies wrongly sharing one record's numbers. Fishermen's earnings in particular are shaped by boat-owner debt arrangements that no salary range can express."
+      }
+    },
+    {
+      "id": "agr-extension-agribusiness",
+      "profession": "Agricultural Extension & Agri-Business Professional",
+      "one_liner": "Connects farmers to knowledge, inputs, credit and buyers - the business side of farming.",
+      "job_roles": [
+        "Agricultural Extension Officer",
+        "Agri-Input Dealer",
+        "Farmer Producer Organisation Manager",
+        "Agri-Business Executive",
+        "Rural Credit & Agri-Finance Officer",
+        "Commodity & Mandi Trader",
+        "Agritech Field Executive",
+        "Warehouse & Procurement Officer",
+        "Krishi Vigyan Kendra Subject Specialist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Rural Credit & Agri-Finance Officer"
+            ],
+            "higher": [
+              "logical",
+              "conscientiousness",
+              "reasoning"
+            ],
+            "lower": [
+              "naturalistic"
+            ],
+            "why": "Agricultural lending is credit appraisal against land, crop and weather risk, done for a bank or an NBFC. It is a banking job that requires agronomy, and it pays like banking rather than like agriculture."
+          },
+          {
+            "roles": [
+              "Agri-Input Dealer"
+            ],
+            "higher": [
+              "extraversion",
+              "confidence",
+              "verbal"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Input dealers sell seed, fertiliser and pesticide, extend informal credit, and are in practice the main source of agronomic advice for most Indian farmers. That the adviser is also the seller is the sector's oldest conflict of interest."
+          },
+          {
+            "roles": [
+              "Farmer Producer Organisation Manager"
+            ],
+            "higher": [
+              "agreeableness",
+              "verbal",
+              "conscientiousness"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Running an FPO is aggregating produce from hundreds of small farmers and negotiating with buyers on their behalf. It is a cooperative business role and it is the policy-favoured answer to small holdings."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "ASCI",
+        "BFSI",
+        "RASCI",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream for the business roles; PCB or agriculture for extension posts."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "B.Sc Agriculture for extension and technical roles; any degree, or an agri-business MBA, for the commercial ones."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "State agriculture department, a Krishi Vigyan Kendra, an input or seed company, a bank's agriculture desk, an agritech firm, or an FPO."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "An input dealership or a procurement and trading business - the two commonest ways people in this profession end up working for themselves."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State agriculture department recruitment",
+          "IBPS PO",
+          "CAT",
+          "CUET (ICAR-UG)"
+        ],
+        "private_entrances": [
+          "Agri-business management entrances (IIM Ahmedabad PGP-FABM, IRMA)"
+        ],
+        "note": "There is no single gate. Government extension posts go through state recruitment, banking roles through IBPS, and agri-business management through CAT or the specialist entrances."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-16.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "An agri-input dealership, a procurement or trading business, or independent advisory to FPOs and agritech firms. The dealership is the classic route and it is a retail business with a credit book attached.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 25,
+          "skill_physical": 15,
+          "skill_digital": 15,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Moderately exposed, and the exposure lands on the sector's most valuable function. Extension advice - which variety, when to sow, what this leaf spot is - is exactly what farmer advisory apps and image diagnosis now do at zero marginal cost, and Agritech Field Executive and much of Agricultural Extension Officer work is directly substitutable. What survives is where money and trust change hands: Rural Credit & Agri-Finance Officer, Agri-Input Dealer and Farmer Producer Organisation Manager all depend on knowing a specific farmer well enough to lend to them or sell for them."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entry_competition",
+          "statement": "Null. IBPS PO is named in entrance_exams because banks recruit Agriculture Field Officers and it is a genuine well-paid route - but making it the primary_gate would say the way to become an agri-business professional is to pass a banking examination, which is false for almost everyone in this profession."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and it is the part of this sector where salaried jobs actually are. Agriculture employs about 45 percent of Indian workers but almost none of them are employees; the agri-input, agri-finance, agritech and FPO layer is where a graduate finds a salary in this sector."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Agri-Input Dealer is listed with its conflict of interest stated in the role_spread rather than hidden. In most of rural India the person selling the pesticide is also the person advising on whether it is needed, and a student entering this profession should understand that they are entering that position."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Veterinary Doctor",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Already built in Sector 4. Veterinary practice requires NEET, a B.V.Sc and registration with a state veterinary council - it is a licensed clinical profession, and the animals being livestock is exactly the kind of setting DECISIONS.md 2.2 calls a tag."
+    },
+    {
+      "profession": "Environmental Scientist",
+      "goes_to": "14. Environment & Sustainability",
+      "tag_here_instead": "EXT-ENV",
+      "why": "Already built in Sector 14. Soil and water science for the ECOSYSTEM sits there; soil science for the YIELD is here under Agricultural Scientist & Agronomist."
+    },
+    {
+      "profession": "Development & Programme Professional",
+      "goes_to": "13. Social Impact & Psychology",
+      "tag_here_instead": "EXT-DEV",
+      "why": "Already built in Sector 13 as Development & Programme Professional. Livelihoods work in villages is development work; the object of concern is poverty, not the crop."
+    },
+    {
+      "profession": "Dietitian & Clinical Nutritionist",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "LSSSDC",
+      "why": "Already built in Sector 4, and named here only because Dietitian & Clinical Nutritionist in Sector 4 is the nearest neighbour and students confuse the two. A dietitian advises a patient; a food technologist makes the product safe and shelf-stable."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "AGRICULTURAL POLICY HAS NO RECORD ANYWHERE. Sector 7's Public Policy Professional does not name agriculture, food security or the minimum support price among its job roles, and Sector 7 is built - so this cannot be written as routed_elsewhere without asserting something untrue. Given that agriculture is roughly 45 percent of Indian employment and the single most politically contested policy area in the country, its absence is a real gap. Decide: add it as a job role under Public Policy Professional in Sector 7.",
+    "FARMER IS THE HARDEST RECORD IN THE DATASET TO PRESENT HONESTLY, and the difficulty is structural rather than factual. The verified income figure is a HOUSEHOLD figure - Rs 10,218 a month for a whole family - and the schema has no way to say that a number is not a personal salary. A student reading 1.23 lakh as an individual income would be badly misled in one direction; omitting the largest occupation in the country would mislead in another. The record states the household basis in a nuance and carries a required admin_review, but the schema-level fix is owed.",
+    "SIX OF EIGHT PROFESSIONS HERE ARE SELF-EMPLOYMENT AT THEIR CORE - Farmer, Dairy & Livestock, Horticulture, Fisheries, and large parts of Agricultural Engineer and Agri-Business. mid_career_lpa is employed-only by design, which means for most of this sector it describes the wrong thing. This is the same defect recorded for Sectors 10 and 11 and it is now three sectors deep.",
+    "ICAR AIEEA WAS DELIBERATELY NOT ADDED AS A GATE, and the reasoning should be checked. It is a real national entrance and it would have looked authoritative in entry_competition - but it fills only 15 percent of bachelor's seats at participating universities, so recording it as the gate would have overstated how closed agricultural education is by nearly seven times. This is the CUET mistake from Sector 3 caught before it was made rather than after.",
+    "FISHERMAN AND AGRICULTURAL LABOURER are both listed as job roles inside larger professions rather than as professions of their own. Between them they describe tens of millions of people in the most dangerous and worst-paid work in the sector. Whether a base layer that large should be a job role or a profession is a real question, and the answer here was driven by their sharing an object of concern and a workplace with the professions they sit inside."
+  ],
+  "changelog": {
+    "1.1": [
+      "v1.1 - INDEPENDENT REVIEW, two findings accepted, one of them the most serious in the build. FARMER'S ECONOMICS WERE MARKED VERIFIED AGAINST A HOUSEHOLD FIGURE. The NSS survey gives Rs 10,218 a month for a whole agricultural HOUSEHOLD - 1.23 lakh a year - and the record asserted an individual mid-career midpoint of 1.8 lakh, more than the entire household earns in the source. money_sources() cannot catch this because the source does contain money; what was needed was a UNITS check, which no tool has. Downgraded to judgment. Agricultural Engineer also had the JEE Chemistry defect and is corrected.",
+      "Sector 15 built. 8 professions, 71 job roles, 19 nuances. Three full iterations.",
+      "ITERATION 2 CAUGHT THE CUET REFLEX A THIRD TIME. Agricultural Extension & Agri-Business Professional carried primary_gate 'ibps-po'. Banks do recruit Agriculture Field Officers and it is a real well-paid route, but making it the primary gate says the way into agri-business is to pass a banking examination - false for almost everyone in the profession. Now null. Counting Sector 13's two, this reflex has now been caught three times: the pull is always toward the most FAMOUS exam a profession touches rather than the most DECISIVE one.",
+      "ITERATION 2 ALSO CAUGHT AN OVER-RESTRICTIVE SUBJECT GATE, which is the more dangerous kind. Agricultural Scientist and Food Technologist both listed class12_prerequisite as PCB. Both degrees accept Mathematics in place of Biology at most universities, so PCB deleted a route PCM students actually have. Both are now Physics and Chemistry only. Over-restricting a subject gate is not a safe error - it silently removes options rather than adding them.",
+      "ITERATION 3 RE-BASED TWO ECONOMICS BLOCKS against the sectors they sit beside. Agricultural Engineer showed 10.5 lakh, above Mechanical Engineer at 8.5 and equal to Chemical Engineer at 10.5 in Sector 2 - agricultural engineering is one of the lower-paying branches in India, not one of the higher. Food Technologist showed 11.0, above Chemical Engineer. Now 8.0 and 9.0. Same defect as Sector 8's first pass and the same cause: a sector written in isolation prices itself against nothing.",
+      "ALL THREE INHERITED PROMISES KEPT as professions: Agricultural Engineer, Agricultural Scientist / Agronomist and Food Technologist. The base-layer gap recorded in DECISIONS.md 2.06 is also closed - Farmer as a profession, Dairy Worker as a job role inside Dairy & Livestock Professional.",
+      "THE NSS 77TH ROUND SURVEY IS THE FIND OF THIS SECTOR and it is the best government data in the dataset. An agricultural household earned Rs 10,218 a month in 2018-19, of which cultivation contributed Rs 3,798 and WAGES contributed Rs 4,063. Farming is no longer the largest source of income for Indian farming families. That single decomposition reframes the Farmer record entirely and is why its economics are marked verified.",
+      "THE SECOND VERIFIED FACT PREVENTED A MISTAKE. ICAR AIEEA fills only 15 percent of bachelor's seats at the roughly 74 participating agricultural universities; the other 85 percent go through state counselling. Recording ICAR as the gate would have repeated the Sector 3 CUET error - naming a famous national exam as the decisive door when most entrants never sit it. It is in pending_gates with that reason rather than in the registry.",
+      "NO NEW GATES ADDED, which is unusual and deliberate. The two engineering-route professions point at jee-main; everything else in this sector is entered without a competitive examination at all.",
+      "AGRICULTURAL EXTENSION & AGRI-BUSINESS is the most AI-exposed profession here at 40, and the exposure lands on the sector's most valuable function: extension advice is exactly what farmer advisory apps and image-based diagnosis now do free. What survives is where money and trust change hands - credit, input supply and aggregation.",
+      "FOUR OF EIGHT PROFESSIONS carry a required admin_review, all for money, and all for the same underlying reason: the unit economics of owning the productive asset - a herd, a polyhouse, a pond, a boat - is what determines income in this sector, and none of it is sourced."
+    ],
+    "1.2": [
+      "AGRICULTURAL SCIENTIST & AGRONOMIST now cites verified_facts.json#icar-aieea-fifteen-percent on entrance_exams. The fact was verified when this sector was built but no record consumed it, so audit.py's orphaned_facts() reported it. It is the fact that stops CUET (ICAR-UG) being read as the gate into agriculture when it controls 15 percent of the seats behind it."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Unusually well anchored at the top and unsourced everywhere else. The NSS survey covers Farmer and, in part, Dairy & Livestock; the other six economics blocks are 'judgment'. The highest-value missing numbers are all UNIT ECONOMICS OF AN ASSET rather than salaries: what a ten-cow dairy herd nets of feed, what a polyhouse of capsicum returns per season, what a shrimp pond earns and how often a crop fails, what a custom hiring tractor earns in a year, and what a Farmer Producer Organisation membership actually adds. Every one of those is the real decision a person in this sector makes, and the schema's salary fields cannot hold any of them. Two fetchable items would improve things immediately: plantation labour wages, which are set by state rules and published, and agricultural labour daily wage rates, which are now the single largest income source in Indian farming households and are collected by the Labour Bureau."
+  }
+}

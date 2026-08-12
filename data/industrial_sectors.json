@@ -1,56 +1,202 @@
 {
   "version": "1.0",
   "master_list": "NSDC Sector Skill Councils (38)",
-  "source": "https://nsdcindia.org/sector-skill-councils ; cross-checked against https://nationalskillsnetwork.in/sector-skill-councils/",
-  "note": "Many-to-many tag. A profession may carry several of these. The NSDC roster is industry-focused and does NOT cover several regulated/public professional domains (law, government, academia, pure research, heritage). Extension tags below are prefixed EXT- so they can be stripped if you decide to stay strictly NSDC.",
+  "source": "https://nsdcindia.org/sector-skill-councils ; cross-checked against https://nationalskillsnetwork.in/sector-skill-councils/ ; data/verified_facts.json#nsdc-sector-skill-councils",
+  "note": "Many-to-many tag. A profession may carry several of these. The NSDC roster is industry-focused and does NOT cover several regulated/public professional domains (law, government, academia, pure research, heritage). Extension tags below are prefixed EXT- so they can be stripped if you decide to stay strictly NSDC. The count of 38 is verified: the public roster lists 36, and Healthcare SSC and Infrastructure Equipment SSC complete the set.",
   "nsdc_sector_skill_councils": [
-    { "code": "ASCI", "name": "Agriculture Skill Council of India" },
-    { "code": "AMHSSC", "name": "Apparel, Made-ups & Home Furnishing Sector Skill Council" },
-    { "code": "ASDC", "name": "Automotive Skills Development Council" },
-    { "code": "AASSC", "name": "Aerospace & Aviation Sector Skill Council" },
-    { "code": "BWSSC", "name": "Beauty & Wellness Sector Skill Council" },
-    { "code": "BFSI", "name": "BFSI Sector Skill Council of India" },
-    { "code": "CGSC", "name": "Capital Goods Skill Council" },
-    { "code": "CSDCI", "name": "Construction Skill Development Council of India" },
-    { "code": "DWSSC", "name": "Domestic Workers Sector Skill Council" },
-    { "code": "ESSCI", "name": "Electronics Sector Skills Council of India" },
-    { "code": "FICSI", "name": "Food Industry Capacity & Skill Initiative" },
-    { "code": "FFSC", "name": "Furniture & Fittings Skill Council" },
-    { "code": "GJSCI", "name": "Gem & Jewellery Skill Council of India" },
-    { "code": "HCSSC", "name": "Handicrafts & Carpet Sector Skill Council" },
-    { "code": "HSSC", "name": "Healthcare Sector Skill Council" },
-    { "code": "HYSSC", "name": "Hydrocarbon Sector Skill Council" },
-    { "code": "IISSSC", "name": "Indian Iron & Steel Sector Skill Council" },
-    { "code": "IPSC", "name": "Indian Plumbing Skills Council" },
-    { "code": "IESC", "name": "Infrastructure Equipment Skill Council" },
-    { "code": "IASC", "name": "Instrumentation Automation Surveillance & Communication Sector Skill Council" },
-    { "code": "IT-ITES", "name": "IT-ITeS Sector Skill Council (NASSCOM)" },
-    { "code": "LSSC", "name": "Leather Sector Skill Council" },
-    { "code": "LSSSDC", "name": "Life Sciences Sector Skill Development Council" },
-    { "code": "LSC", "name": "Logistics Sector Skill Council" },
-    { "code": "MEPSC", "name": "Management & Entrepreneurship and Professional Skills Council" },
-    { "code": "MESC", "name": "Media & Entertainment Skills Council" },
-    { "code": "SCMS", "name": "Skill Council for Mining Sector" },
-    { "code": "PCSC", "name": "Paints & Coatings Skill Council" },
-    { "code": "PSSC", "name": "Power Sector Skill Council" },
-    { "code": "RASCI", "name": "Retailers Association's Skill Council of India" },
-    { "code": "RSDC", "name": "Rubber Skill Development Council" },
-    { "code": "SCGJ", "name": "Skill Council for Green Jobs" },
-    { "code": "SCPWD", "name": "Skill Council for Persons with Disability" },
-    { "code": "SPEFL", "name": "Sports, Physical Education, Fitness & Leisure Skills Council" },
-    { "code": "SMSSC", "name": "Strategic Manufacturing Sector Skill Council" },
-    { "code": "TSSC", "name": "Telecom Sector Skill Council" },
-    { "code": "TSC", "name": "Textile Sector Skill Council" },
-    { "code": "THSC", "name": "Tourism & Hospitality Skill Council" }
+    {
+      "code": "ASCI",
+      "name": "Agriculture Skill Council of India"
+    },
+    {
+      "code": "AMHSSC",
+      "name": "Apparel, Made-ups & Home Furnishing Sector Skill Council"
+    },
+    {
+      "code": "ASDC",
+      "name": "Automotive Skills Development Council"
+    },
+    {
+      "code": "AASSC",
+      "name": "Aerospace & Aviation Sector Skill Council"
+    },
+    {
+      "code": "BWSSC",
+      "name": "Beauty & Wellness Sector Skill Council"
+    },
+    {
+      "code": "BFSI",
+      "name": "BFSI Sector Skill Council of India"
+    },
+    {
+      "code": "CGSC",
+      "name": "Capital Goods Skill Council"
+    },
+    {
+      "code": "CSDCI",
+      "name": "Construction Skill Development Council of India"
+    },
+    {
+      "code": "DWSSC",
+      "name": "Domestic Workers Sector Skill Council"
+    },
+    {
+      "code": "ESSCI",
+      "name": "Electronics Sector Skills Council of India"
+    },
+    {
+      "code": "FICSI",
+      "name": "Food Industry Capacity & Skill Initiative"
+    },
+    {
+      "code": "FFSC",
+      "name": "Furniture & Fittings Skill Council"
+    },
+    {
+      "code": "GJSCI",
+      "name": "Gem & Jewellery Skill Council of India"
+    },
+    {
+      "code": "HCSSC",
+      "name": "Handicrafts & Carpet Sector Skill Council"
+    },
+    {
+      "code": "HSSC",
+      "name": "Healthcare Sector Skill Council"
+    },
+    {
+      "code": "HYSSC",
+      "name": "Hydrocarbon Sector Skill Council"
+    },
+    {
+      "code": "IISSSC",
+      "name": "Indian Iron & Steel Sector Skill Council"
+    },
+    {
+      "code": "IPSC",
+      "name": "Indian Plumbing Skills Council"
+    },
+    {
+      "code": "IESC",
+      "name": "Infrastructure Equipment Skill Council"
+    },
+    {
+      "code": "IASC",
+      "name": "Instrumentation Automation Surveillance & Communication Sector Skill Council"
+    },
+    {
+      "code": "IT-ITES",
+      "name": "IT-ITeS Sector Skill Council (NASSCOM)"
+    },
+    {
+      "code": "LSSC",
+      "name": "Leather Sector Skill Council"
+    },
+    {
+      "code": "LSSSDC",
+      "name": "Life Sciences Sector Skill Development Council"
+    },
+    {
+      "code": "LSC",
+      "name": "Logistics Sector Skill Council"
+    },
+    {
+      "code": "MEPSC",
+      "name": "Management & Entrepreneurship and Professional Skills Council"
+    },
+    {
+      "code": "MESC",
+      "name": "Media & Entertainment Skills Council"
+    },
+    {
+      "code": "SCMS",
+      "name": "Skill Council for Mining Sector"
+    },
+    {
+      "code": "PCSC",
+      "name": "Paints & Coatings Skill Council"
+    },
+    {
+      "code": "PSSC",
+      "name": "Power Sector Skill Council"
+    },
+    {
+      "code": "RASCI",
+      "name": "Retailers Association's Skill Council of India"
+    },
+    {
+      "code": "RSDC",
+      "name": "Rubber Skill Development Council"
+    },
+    {
+      "code": "SCGJ",
+      "name": "Skill Council for Green Jobs"
+    },
+    {
+      "code": "SCPWD",
+      "name": "Skill Council for Persons with Disability"
+    },
+    {
+      "code": "SPEFL",
+      "name": "Sports, Physical Education, Fitness & Leisure Skills Council"
+    },
+    {
+      "code": "SMSSC",
+      "name": "Strategic Manufacturing Sector Skill Council"
+    },
+    {
+      "code": "TSSC",
+      "name": "Telecom Sector Skill Council"
+    },
+    {
+      "code": "TSC",
+      "name": "Textile Sector Skill Council"
+    },
+    {
+      "code": "THSC",
+      "name": "Tourism & Hospitality Skill Council"
+    }
   ],
   "extension_tags": [
-    { "code": "EXT-EDU", "name": "Education & Academia", "reason": "No NSDC SSC covers schools, colleges or universities as an employing industry." },
-    { "code": "EXT-LEGAL", "name": "Legal & Judicial Services", "reason": "No NSDC SSC covers legal practice." },
-    { "code": "EXT-GOVT", "name": "Government & Public Administration", "reason": "No NSDC SSC covers civil services or public administration. Also the tag for Railways and PSU employment." },
-    { "code": "EXT-DEFENCE", "name": "Defence, Armed Forces & Police", "reason": "Split from EXT-GOVT under the cross-cutting rule. Defence and police are cross-sector EMPLOYERS — an army doctor is Healthcare, an army officer is Law/Governance. Both carry this tag." },
-    { "code": "EXT-RND", "name": "Scientific Research & Development", "reason": "LSSSDC covers life-science industry only, not research institutions (CSIR, ISRO, DRDO, IITs)." },
-    { "code": "EXT-CULT", "name": "Arts, Culture, Heritage & Religion", "reason": "MESC covers commercial media, not museums, archives, classical arts institutions or religious institutions." },
-    { "code": "EXT-DEV", "name": "Development Sector, NGOs & CSR", "reason": "No NSDC SSC covers the social development sector as an employer." },
-    { "code": "EXT-ENV", "name": "Environment & Natural Resource Management", "reason": "SCGJ covers green *jobs* in industry; forestry, wildlife and regulatory environment work sit outside it." }
+    {
+      "code": "EXT-EDU",
+      "name": "Education & Academia",
+      "reason": "No NSDC SSC covers schools, colleges or universities as an employing industry."
+    },
+    {
+      "code": "EXT-LEGAL",
+      "name": "Legal & Judicial Services",
+      "reason": "No NSDC SSC covers legal practice."
+    },
+    {
+      "code": "EXT-GOVT",
+      "name": "Government & Public Administration",
+      "reason": "No NSDC SSC covers civil services or public administration. Also the tag for Railways and PSU employment."
+    },
+    {
+      "code": "EXT-DEFENCE",
+      "name": "Defence, Armed Forces & Police",
+      "reason": "Split from EXT-GOVT under the cross-cutting rule. Defence and police are cross-sector EMPLOYERS — an army doctor is Healthcare, an army officer is Law/Governance. Both carry this tag."
+    },
+    {
+      "code": "EXT-RND",
+      "name": "Scientific Research & Development",
+      "reason": "LSSSDC covers life-science industry only, not research institutions (CSIR, ISRO, DRDO, IITs)."
+    },
+    {
+      "code": "EXT-CULT",
+      "name": "Arts, Culture, Heritage & Religion",
+      "reason": "MESC covers commercial media, not museums, archives, classical arts institutions or religious institutions."
+    },
+    {
+      "code": "EXT-DEV",
+      "name": "Development Sector, NGOs & CSR",
+      "reason": "No NSDC SSC covers the social development sector as an employer."
+    },
+    {
+      "code": "EXT-ENV",
+      "name": "Environment & Natural Resource Management",
+      "reason": "SCGJ covers green *jobs* in industry; forestry, wildlife and regulatory environment work sit outside it."
+    }
   ]
 }

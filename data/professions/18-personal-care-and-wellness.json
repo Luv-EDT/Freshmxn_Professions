@@ -1,0 +1,1085 @@
+{
+  "professional_sector": "18. Personal Care & Wellness",
+  "professional_sector_id": 18,
+  "version": "1.2",
+  "profession_count": 6,
+  "sector_verification_note": "THE MOST UNREGULATED SECTOR IN THE DATASET, and it is the one where that matters most to a member of the public. Every profession here puts a practitioner's hands on a stranger's body - cutting, waxing, bleaching, massaging, tattooing, piercing, washing and lifting - and NOTHING registers any of them. There is one structured credential, the Yoga Certification Board's laddered scheme under the Ministry of AYUSH, and even that is voluntary: no statute bars an uncertified person from teaching yoga. The sector is also the dataset's clearest concentration of work that is physically safe from AI and economically precarious: six of eight professions sit at exposure 20 or below, and five carry a required admin_review because the employed figure describes a salaried floor while the profession's real income is independent, seasonal and unsourced.",
+  "professions": [
+    {
+      "id": "pcw-yoga-instructor",
+      "profession": "Yoga Instructor & Therapist",
+      "one_liner": "Teaches yoga, and at the therapy levels works with illness alongside doctors.",
+      "job_roles": [
+        "Yoga Instructor",
+        "Yoga Wellness Instructor",
+        "Yoga Teacher & Evaluator",
+        "Assistant Yoga Therapist",
+        "Yoga Therapist",
+        "School Yoga Teacher",
+        "Corporate Yoga Instructor",
+        "Yoga Studio Instructor",
+        "Online Yoga Coach"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Yoga Therapist",
+              "Assistant Yoga Therapist"
+            ],
+            "higher": [
+              "reasoning",
+              "conscientiousness",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "The therapy levels work with specific conditions - back pain, hypertension, diabetes - usually inside a hospital or AYUSH setting and alongside clinicians. It requires anatomy and pathology knowledge the teaching levels do not, and it is where the YCB ladder actually changes what you may do."
+          },
+          {
+            "roles": [
+              "Online Yoga Coach",
+              "Corporate Yoga Instructor"
+            ],
+            "higher": [
+              "verbal",
+              "confidence",
+              "extraversion"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Screen-mediated and workplace teaching cannot correct a posture by touch and works with people who are not there for yoga. It is the fastest-growing and least protected part of the profession."
+          },
+          {
+            "roles": [
+              "School Yoga Teacher"
+            ],
+            "higher": [
+              "agreeableness",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "School yoga has its own YCB syllabus and sits inside a school timetable, which makes it closer to Physical Education Teacher in Sector 12 than to studio teaching."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BWSSC",
+        "SPEFL",
+        "HSSC",
+        "EXT-EDU"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, or none for the entry YCB levels. A BA or MA in Yoga exists and is not required."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A YCB-aligned course, or training at a recognised yoga institution. Practice depth matters more than course length."
+        },
+        {
+          "step": 3,
+          "stage": "certification",
+          "requirement": "YCB level certification - Protocol Instructor, then Wellness Instructor, then Teacher and Evaluator. Valid five years and renewable."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "The therapy ladder - Assistant Yoga Therapist then Yoga Therapist - which is what opens hospital, AYUSH and clinical work and is where the pay separates."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "YCB level examinations (Ministry of AYUSH)"
+        ],
+        "private_entrances": [],
+        "note": "YCB is a certification ladder rather than an entrance examination. It is not legally required to teach yoga, and it is what government, school, hospital and reputable studio employers ask for."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "3.6-10.0",
+        "mid_career_midpoint": 6.8,
+        "payback_years": 0.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own classes, studio or online practice. Almost all yoga teaching income in India is self-employed - group classes, personal clients, corporate contracts and retreats - and the overseas market pays several times Indian rates.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 50,
+          "skill_digital": 5,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Low exposure. Adjusting a body in a room, judging what a person with a bad back should not do, and holding a group through a practice are physical and relational. Online Yoga Coach is the exposed role and it is exposed to free video rather than to AI - the internet is full of yoga instruction and always has been. Yoga Therapist is the most protected: it works with pathology alongside clinicians, and the YCB ladder is what certifies that."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#ycb-yoga-certification",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, and the distinction is commercially important rather than legal. YCB certification under the Ministry of AYUSH is a voluntary standardisation scheme - no statute bars an uncertified person from teaching yoga and nobody is struck off. What it does is open employment: government, schools, hospitals and reputable studios ask for it.",
+          "source": "data/verified_facts.json#ycb-yoga-certification"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and it is one of very few Indian professions with a genuine global market where India is the recognised source. That is why pathway is 'any': an Indian yoga teacher abroad earns several times the domestic rate, and it is a common career plan rather than an exception."
+        },
+        {
+          "field": "economics",
+          "statement": "The employed figure describes a studio or gym instructor on a salary, which is a minority of this profession. Income here is per class, per client and per retreat, and a teacher with a full personal roster or an overseas base earns well above the range shown."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "pcw-beautician",
+      "profession": "Beautician & Cosmetologist",
+      "one_liner": "Does skin, nails, hair removal and grooming treatments - salons, homes, bridal work.",
+      "job_roles": [
+        "Beautician",
+        "Cosmetologist",
+        "Skin Care Therapist",
+        "Nail Technician",
+        "Threading & Waxing Specialist",
+        "Mehndi Artist",
+        "Bridal Beauty Specialist",
+        "Salon Receptionist & Coordinator",
+        "Home Service Beautician"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Bridal Beauty Specialist",
+              "Mehndi Artist"
+            ],
+            "higher": [
+              "openness",
+              "extraversion",
+              "bodily"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Bridal work is seasonal, high-value and done to a deadline that cannot move, often starting before dawn at a client's home. It is where almost all the money in Indian beauty work is and it runs entirely on reputation and photographs."
+          },
+          {
+            "roles": [
+              "Home Service Beautician"
+            ],
+            "higher": [
+              "conscientiousness",
+              "extraversion",
+              "bodily"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "App-based and independent home service has become a large part of this profession. It removes the salon's overhead and its protection - the practitioner travels alone to strangers' homes and carries their own kit, safety and rating."
+          },
+          {
+            "roles": [
+              "Salon Receptionist & Coordinator"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness",
+              "extraversion"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Front desk work is booking, retail sales and client management with no treatment skill. It is a common entry into the industry for someone who has not trained."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BWSSC",
+        "RASCI",
+        "DWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Class 8 or 10 is typical and many enter younger."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A beauty and wellness course - BWSSC/NSQF aligned, a private academy, or apprenticeship in a salon. None is legally required."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Salon assistant, then therapist. Entry pay is low and much of it is commission on treatments and product sales."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own salon, home service practice, or bridal work - which is where the income actually changes and where most of this profession ends up."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Private beauty academy certifications"
+        ],
+        "note": "No public entrance and no statutory qualification. Certification is entirely a private market and the certificate an employer asks for is set by the salon, not by law."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.8,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-6.0",
+        "mid_career_midpoint": 4.2,
+        "payback_years": 0.38,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own salon, or home service and bridal work taken directly. Capital for a small salon is modest and bridal season income is concentrated and high. This is the normal shape of the profession, not an alternative to it.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Almost unexposed. Every treatment here is hands on another person's skin, hair or nails, in a room, with the client present. What AI touches is the surrounding business - booking, recommendations, before-and-after imagery for marketing - and Salon Receptionist & Coordinator is the only role with meaningful exposure, through app-based booking that has already removed a good deal of front-desk work."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Fails the compensation filter on the employed figure, which describes a salaried salon therapist - and that is not where this profession's money is. Bridal and home-service work is seasonal, cash and considerably better paid, and a salon owner is running a small business. The employed number is the floor, not the profession."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and among the most geographically distributed in the dataset - every town has salons, and the sector is one of the largest employers of Indian women without formal qualifications. App-based home service has extended it further into smaller cities."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and worth stating because these are invasive procedures. Anyone in India may perform chemical peels, bleaching and hair removal on a stranger with no training and no register. Certification is a private market with no floor, exactly as with Fitness Trainer in Sector 11."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced wage figure for Indian salon staff, and more importantly no figure for bridal or home-service earnings, which are where most of the income in this profession sits. At 4.2 LPA employed with independence named as the normal path and no ceiling, the record reads as a dead end for one of the largest occupations open to Indian women without qualifications."
+      }
+    },
+    {
+      "id": "pcw-hair-stylist",
+      "profession": "Hair Stylist & Barber",
+      "one_liner": "Cuts, colours and styles hair - salons, barbershops, homes, film and fashion.",
+      "job_roles": [
+        "Hair Stylist",
+        "Barber",
+        "Hair Colourist",
+        "Salon Hair Technician",
+        "Bridal Hair Stylist",
+        "Hair Spa & Treatment Specialist",
+        "Session Stylist (Fashion & Film)",
+        "Trichology Assistant",
+        "Mobile Barber"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Session Stylist (Fashion & Film)"
+            ],
+            "higher": [
+              "openness",
+              "confidence",
+              "spatial"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Session styling works on shoots, shows and film to a director's or photographer's brief rather than a client's preference. It is freelance, metro-based and pays several times salon rates - and it is a completely different career from a neighbourhood chair."
+          },
+          {
+            "roles": [
+              "Barber",
+              "Mobile Barber"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness",
+              "extraversion"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Barbering is high-volume, fast, largely male-clientele work at low unit prices, often learned in the family and practised from a small shop or a bicycle. It is one of the oldest and most widespread self-employed trades in India."
+          },
+          {
+            "roles": [
+              "Hair Colourist"
+            ],
+            "higher": [
+              "spatial",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Colour is chemistry - formulation, developer strength, timing and correction - and it is the technical specialism where mistakes are expensive and visible."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BWSSC",
+        "DWSSC",
+        "MESC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Most of this trade is learned by apprenticeship, frequently within a family."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship in a salon or barbershop, or a BWSSC-aligned or private academy course. The apprenticeship is the real route."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Salon or barbershop, initially washing and assisting before being given a chair."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own chair, own shop, or freelance session and bridal work. Almost everyone in this trade ends up self-employed."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Private hairdressing academy certifications"
+        ],
+        "note": "None. This is among the most open occupations in India and is entered without any qualification at all."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-7.0",
+        "mid_career_midpoint": 4.7,
+        "payback_years": 0.24,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own barbershop or salon chair, or freelance bridal and session work. A barbershop needs very little capital and is one of the most accessible small businesses in India; session styling needs a portfolio and a metro base.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 70,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Among the least exposed professions in the dataset. Cutting hair is manual skill performed on a specific head, in person, with an irreversible result. There is no digital output to substitute for and no plausible automation. The only role with any exposure is Trichology Assistant, through image-based scalp and hair analysis, which is a tool rather than a replacement."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The employed figure describes a salaried salon employee. The trade's normal form is a chair of your own - either renting one or running a shop - and a barber with a steady neighbourhood clientele or a stylist with bridal bookings earns well above the range shown. Session styling for fashion and film is a different economy again."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, universal and structurally safe. Hair grows everywhere, at the same rate, in every town, regardless of the economy. Along with tailoring it is one of the most reliably local livelihoods in this dataset."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure for Indian barber or stylist earnings, employed or independent, and independence is the trade's normal form. The gap between a neighbourhood barbershop, a salon chair in a metro and freelance session styling is the whole story of this profession's economics and none of it is sourced."
+      }
+    },
+    {
+      "id": "pcw-makeup-artist",
+      "profession": "Makeup Artist",
+      "one_liner": "Paints faces for cameras, weddings and stages - and makes them survive lights and hours.",
+      "job_roles": [
+        "Makeup Artist",
+        "Makeup & Hair Artist",
+        "Bridal Makeup Artist",
+        "Film & Television Makeup Artist",
+        "Fashion & Editorial Makeup Artist",
+        "Special Effects Makeup Artist",
+        "Prosthetics & Character Makeup Artist",
+        "Airbrush Makeup Specialist",
+        "Makeup Retail Consultant",
+        "Makeup Educator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Special Effects Makeup Artist",
+              "Prosthetics & Character Makeup Artist"
+            ],
+            "higher": [
+              "spatial",
+              "openness",
+              "bodily"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Prosthetics and effects work is sculpture, moulding and materials chemistry applied to a face - closer to model making than to cosmetics, and it is the one specialism here with a technical craft behind it."
+          },
+          {
+            "roles": [
+              "Makeup Retail Consultant"
+            ],
+            "higher": [
+              "extraversion",
+              "verbal",
+              "agreeableness"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Counter work in beauty retail is selling with a demonstration attached. It is salaried with commission, is how many artists first learn products, and it is the only role here that is not freelance."
+          },
+          {
+            "roles": [
+              "Bridal Makeup Artist"
+            ],
+            "higher": [
+              "conscientiousness",
+              "emotional_intelligence",
+              "bodily"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Bridal work is the Indian market. It is seasonal, starts before dawn, is done at the client's home under pressure, and carries the emotional weight of an event that cannot be redone."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BWSSC",
+        "MESC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A professional makeup course, or assisting an established artist. Assisting is how the film and fashion side is genuinely entered."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Photographed work. This profession hires entirely on images, which is why building a portfolio through unpaid shoots is standard."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Bridal clients, a salon, film and television production, fashion shoots, or beauty retail."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Private makeup academy certifications"
+        ],
+        "note": "None, and this is a market where expensive private academies sell placement they cannot guarantee. The portfolio is what gets work."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "1.5-4.0",
+        "mid_career_lpa": "3.0-10.0",
+        "mid_career_midpoint": 6.5,
+        "payback_years": 0.55,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance bridal, film and fashion work booked directly or through agencies. This profession is essentially entirely self-employed, and bridal season is where the income is concentrated.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 60,
+          "skill_digital": 5,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Low exposure. Makeup is applied by hand to a specific face and must survive hours and lights. Digital retouching has been available for two decades and did not remove the job, because the photograph is not the only deliverable - the person has to walk around looking like that. Makeup Retail Consultant carries the exposure, through virtual try-on tools that have already changed beauty retail."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Routed here from Sector 8 rather than kept with design. The skill is close to painting and the employers are film and fashion, but the object of concern is a treatment applied to a living person's body - which is what this sector is - and the constraints that govern it are skin, hygiene and hours worn, not composition."
+        },
+        {
+          "field": "economics",
+          "statement": "Concentrated and seasonal. Bridal work in the Indian wedding season is where most of the money is, and a well-known bridal artist earns multiples of the range shown. Film and television work pays per day and is metro-based. Neither is visible in an annual employed figure."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "pcw-spa-therapist",
+      "profession": "Spa & Massage Therapist",
+      "one_liner": "Gives therapeutic and relaxation treatments - spas, hotels, wellness centres, homes.",
+      "job_roles": [
+        "Spa Therapist",
+        "Massage Therapist",
+        "Reflexologist",
+        "Aromatherapist",
+        "Hydrotherapy & Body Treatment Therapist",
+        "Spa Receptionist & Coordinator",
+        "Wellness Centre Supervisor",
+        "Visually Impaired Massage Therapist",
+        "Panchakarma Therapist",
+        "Ayurveda Therapist",
+        "Abhyanga & Oil Therapy Technician",
+        "Wellness Retreat Therapist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Visually Impaired Massage Therapist"
+            ],
+            "higher": [
+              "bodily",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Massage therapy is one of the few skilled livelihoods with structured training and employment programmes for visually impaired practitioners in India, on the reasoning that touch sensitivity is the core skill. It is a recognised route and worth naming."
+          },
+          {
+            "roles": [
+              "Panchakarma Therapist",
+              "Ayurveda Therapist",
+              "Wellness Retreat Therapist"
+            ],
+            "higher": [
+              "naturalistic",
+              "conscientiousness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Panchakarma work sits inside an Ayurvedic prescription chain - the therapist performs procedures a BAMS practitioner has ordered - and runs over multi-day programmes with oils, heat and steam rather than single treatments. It is the same manual body therapy with a tradition and a clinical supervisor attached, which is why it is a role here rather than a profession of its own."
+          },
+          {
+            "roles": [
+              "Wellness Centre Supervisor",
+              "Spa Receptionist & Coordinator"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness",
+              "extraversion"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Front-of-house and supervision is booking, retail, therapist rosters and hygiene compliance. It is the step off the treatment table and the only reliable progression in a physically demanding job."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BWSSC",
+        "THSC",
+        "HSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Class 10 is typical."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A spa therapy or massage course - BWSSC/NSQF aligned, a hotel spa academy, or a specialist programme. Anatomy and contraindications are the parts that matter."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Hotel spa, standalone spa or wellness centre, cruise ship, or home service."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "A modality, or supervision. The physical toll of full-time treatment work is real and most therapists plan around it."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [
+          "Private spa and massage academy certifications"
+        ],
+        "note": "No public entrance and no statutory qualification, which in this profession is a genuine safety and dignity concern rather than a neutral fact."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.5-3.6",
+        "mid_career_lpa": "2.7-7.0",
+        "mid_career_midpoint": 4.85,
+        "payback_years": 0.39,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Home-visit practice and independent clients, which is common and better paid than salon employment. Hotel and cruise ship contracts are the other route and pay considerably more.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 65,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Almost unexposed. Manual therapy is hands on a body reading tension and responding to it, and no part of that is digital. Massage devices and chairs exist and have existed for decades without displacing therapists, because the judgment about pressure and contraindication is the service. Spa Receptionist & Coordinator carries the only real exposure through booking automation."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "AYURVEDA & PANCHAKARMA THERAPIST WAS BUILT AS A SEPARATE PROFESSION AND MERGED IN ON REVIEW, on the Solar Panel Technician precedent in DECISIONS.md 8.95 - same object of concern, same skill set plus a specialisation. The evidence was that the two records came out numerically identical on every economic field: cost 1.0, early 1.5-3.6, mid 2.7-7.0, midpoint 4.85, payback 0.39, certificate tier, two years, open entry. Two professions a builder cannot tell apart will always surface together in a psychometric recommender, which is the noise the merge test exists to prevent."
+        },
+        {
+          "field": "path_to_entry",
+          "statement": "One distinction survives the merge and must not be lost: a panchakarma THERAPIST is not an Ayurveda DOCTOR. Ayurveda Doctor in Sector 4 is a five-and-a-half-year BAMS with statutory registration and the right to diagnose and prescribe; the therapist performs treatments under that prescription. Marketing routinely conflates the two, which is how unqualified people come to present as Ayurvedic physicians."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and this profession needs the point made more sharply than most. Nothing in India registers a massage therapist or sets a standard for training in anatomy and contraindications, and the absence of regulation also leaves practitioners - who are disproportionately women and migrants working in private rooms - without a professional standing that would protect them. It is a safety gap in both directions."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and split by segment. Hotel and wellness-tourism spa work is growing and pays reasonably; the standalone and home-service market is crowded and informal. Cruise ship and overseas contracts are the highest-paying route and are why pathway is 'any'."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced wage figure for Indian spa or massage therapists, and none for cruise or overseas contract rates, which are the best-paid route. A second gap that is not about money: the working conditions and safety of practitioners in the informal home-service segment are a real concern and nothing in this record can express them."
+      }
+    },
+    {
+      "id": "pcw-tattoo-artist",
+      "profession": "Tattoo & Body Art Professional",
+      "one_liner": "Makes permanent marks on people - tattooing, piercing, and the hygiene that must go with it.",
+      "job_roles": [
+        "Tattoo Artist",
+        "Body Piercer",
+        "Permanent Makeup Artist",
+        "Tattoo Removal Technician",
+        "Scalp Micropigmentation Technician",
+        "Studio Hygiene & Sterilisation Technician",
+        "Tattoo Design Artist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Studio Hygiene & Sterilisation Technician"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Sterilisation, single-use protocol and cross-contamination control is the part of this trade that determines whether anyone gets hepatitis. It is a technical discipline with no creative content and it is the role the industry most often skips."
+          },
+          {
+            "roles": [
+              "Tattoo Design Artist"
+            ],
+            "higher": [
+              "openness",
+              "spatial",
+              "verbal"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Some studios separate design from application - the designer draws and consults, the artist inks. Design is the part closest to Sector 8's illustration and the part most exposed to generated imagery."
+          },
+          {
+            "roles": [
+              "Permanent Makeup Artist",
+              "Scalp Micropigmentation Technician"
+            ],
+            "higher": [
+              "attention_span",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Cosmetic tattooing - brows, lips, hairline - is technical and corrective rather than expressive, is done to a convention, and sits commercially inside beauty rather than tattoo culture."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "BWSSC",
+        "MESC",
+        "HSSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Drawing ability matters and is not certified."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Apprenticeship in a studio. There is no recognised Indian qualification, and courses sold as certification are not a substitute for supervised practice on skin."
+        },
+        {
+          "step": 3,
+          "stage": "hygiene",
+          "requirement": "Bloodborne pathogen and sterilisation training. This is the part that matters and nothing compels it."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Studio artist, then your own studio or chair. Reputation is built on a public portfolio and healed work."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.5-4.0",
+        "mid_career_lpa": "3.0-10.0",
+        "mid_career_midpoint": 6.5,
+        "payback_years": 0.36,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own studio or a rented chair. This is the normal form of the profession and the artist's own following is the entire business.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 55,
+          "skill_digital": 10,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Low exposure with one real crack. Tattoo Design Artist is directly exposed - generating tattoo designs is exactly what image models do, and clients now arrive with generated references. But the application is manual work on living skin with an irreversible result, and Tattoo Artist, Body Piercer and Permanent Makeup Artist are protected by that completely. What has changed is that the drawing is worth less and the hand is worth more."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Routed here from Sector 8 and the decision is confirmed. The skill is drawing, which pointed at design - but the object of concern is a permanent, irreversible modification of a living person's body, governed by hygiene, consent and bloodborne infection risk. Those constraints belong to personal care, not to the design of objects."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and this is the most serious unregulated-practice gap in the sector. Tattooing and piercing break the skin and carry hepatitis and HIV transmission risk, and India has no national licensing, no mandatory sterilisation standard and no inspection regime for studios. A student entering this trade should understand that the hygiene discipline is entirely on them."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Fitness Trainer & Instructor",
+      "goes_to": "11. Sports & Fitness",
+      "tag_here_instead": "SPEFL",
+      "why": "Already built in Sector 11. Yoga is placed here rather than there because Indian yoga is practised for wellbeing far more than for athletic performance, and because it has a national certification scheme that fitness training does not."
+    },
+    {
+      "profession": "Dietitian & Clinical Nutritionist",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Already built in Sector 4 under the NCAHP framework. Clinical nutrition is a regulated allied health profession; wellness diet advice without that qualification is not a profession this taxonomy should legitimise."
+    },
+    {
+      "profession": "Ayurveda Doctor",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Already built in Sector 4. BAMS is a five-and-a-half-year medical degree with statutory registration and the right to diagnose and prescribe. The therapist who performs treatments under that prescription is here, and the two are routinely conflated in marketing."
+    },
+    {
+      "profession": "Nurse",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "HSSC",
+      "why": "Already built in Sector 4 under the Nursing Councils. Named here because Elder & Home Care Attendant is frequently and wrongly marketed as nursing."
+    },
+    {
+      "profession": "Illustrator & Concept Artist",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "MESC",
+      "why": "Already built in Sector 8. Tattoo DESIGN is drawing; tattoo application is an irreversible procedure on skin, which is why the profession sits here."
+    },
+    {
+      "profession": "Elder & Home Care Attendant",
+      "goes_to": "4. Healthcare & Medicine",
+      "tag_here_instead": "BWSSC",
+      "why": "Built here and moved on review. Swap the home for a hospital ward and the work survives unchanged - the setting is the tag, and the object of concern is a dependent person's body rather than their appearance or wellbeing."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "AYURVEDA & PANCHAKARMA THERAPIST WAS MERGED INTO SPA & MASSAGE THERAPIST on independent review, and the merge should be confirmed or reversed explicitly. The case for merging is DECISIONS.md 8.95's Solar Panel Technician precedent and the fact that the two records were numerically identical on every economic field - which is what it looks like when a builder cannot actually distinguish two professions. The case against is that panchakarma work sits inside a BAMS practitioner's prescription chain, which spa therapy does not; if that is a genuinely separate skill set rather than a supervisory arrangement, the split should be restored.",
+    "TATTOO & BODY ART PROFESSIONAL was routed here from Sector 8 and the placement is confirmed. The skill is drawing, which argued for design; the object of concern is a permanent irreversible modification of a living body governed by hygiene, consent and bloodborne infection risk, which argues for here. It also carries what is probably the most serious unregulated-practice gap in the dataset: no national licensing, no mandatory sterilisation standard and no studio inspection regime for a procedure that breaks skin.",
+    "FIVE OF EIGHT PROFESSIONS CARRY A REQUIRED ADMIN_REVIEW and all five are the same defect. The employed figure describes a salaried salon, spa or agency worker; the profession's real income is independent, seasonal - bridal season, wedding season, wellness tourism - and overseas. Nothing in this sector's employed numbers describes where the money actually is, and none of the independent figures is sourced.",
+    "THE ABSENCE OF REGULATION IS THIS SECTOR'S DEFINING FEATURE and it should be surfaced in the application rather than left in licensing_body nulls. Chemical peels, hair bleaching, piercing, tattooing and unsupervised care of vulnerable adults are all performed in India with no qualification, no register and no complaints route. That is a fact about consumer safety AND about practitioner standing - the same absence that leaves clients unprotected leaves a largely female, largely informal workforce without professional recourse."
+  ],
+  "changelog": {
+    "1.1": [
+      "v1.1 - INDEPENDENT REVIEW. AYURVEDA & PANCHAKARMA THERAPIST WAS MERGED INTO SPA & MASSAGE THERAPIST on the Solar Panel Technician precedent in DECISIONS.md 8.95. The evidence was damning and came from the data rather than from argument: the two records were numerically IDENTICAL on every economic field - cost 1.0, early 1.5-3.6, mid 2.7-7.0, midpoint 4.85, payback 0.39, certificate tier, two years, open entry. Two professions a builder cannot tell apart economically will always surface together in a psychometric recommender, which is exactly the noise the merge test exists to prevent. The therapist-is-not-a-doctor distinction is preserved as a nuance, and the merge is flagged for sign-off.",
+      "Sector 18 built. 8 professions, 67 job roles. Three iterations.",
+      "ITERATION 1 caught two things. Sector 8's promise of 'Makeup & Hair Artist' named both crafts together and this sector had split them, so the promise did not resolve - a job role carrying the joint title now keeps it, which is honest because bridal work in India really is booked as one service. And the validator correctly refused Ayurveda & Panchakarma Therapist: an independent route named, no ceiling, and 4.85 lakh employed is exactly the dead-end pattern self_employment.ceiling_lpa exists to prevent. It now carries a required admin_review.",
+      "ITERATION 2 FOUND A DEFECT IN THE TOOLING RATHER THAN THE DATA. Elder & Home Care Attendant's mid_career_midpoint was stored as 3.9000000000000004 - binary floating point from (2.4 + 5.4) / 2 - and that string would have reached the CSV a human reads. The derived value is now rounded at source in the build helper, well inside audit.py's 1e-9 recomputation tolerance. It was the only such artifact in 208 records, which is why nothing had caught it: a defect that occurs once is invisible to every check that looks for patterns.",
+      "ITERATION 3 CONFIRMED THE SECTOR AGAINST ITS NEIGHBOURS rather than changing it. Yoga Instructor at 6.8 sits level with Fitness Trainer in Sector 11, which is right - they compete in the same market. Beautician at 4.2 sits above Tailor in Sector 8 at 3.0 and Handicraft Artisan at 2.4, which is also right. No re-basing was needed, the first time that has been true of a sector in this build.",
+      "THE INHERITED PROMISE IS KEPT: Yoga Instructor, promised from Sector 4, arrives as Yoga Instructor & Therapist with the YCB ladder recorded. The base-layer gap named in DECISIONS.md 2.06 is also closed - Beautician and Hair Stylist as professions in their own right - and both Sector 8 routings are honoured: Makeup Artist and Tattoo & Body Art Professional.",
+      "ONE VERIFIED FACT and it defines the sector by contrast. The Yoga Certification Board under the Ministry of AYUSH runs a laddered scheme from Yoga Volunteer to Therapeutic Yoga Consultant, with five-year renewable certificates. It is the only structured national credential anywhere in this sector - and it is VOLUNTARY. No statute bars an uncertified person from teaching yoga. Every other profession here has nothing at all.",
+      "NO GATES ADDED. YCB is recorded in pending_gates because it is a certification ladder rather than an entrance, and its pass rates were not fetched. Every profession in this sector carries entry_competition null, which is accurate: this is the least gated sector in the dataset.",
+      "SIX OF EIGHT PROFESSIONS SIT AT AI EXPOSURE 20 OR BELOW - the lowest concentration anywhere. Hair Stylist & Barber at 10 and Beautician at 15 are close to the floor. The work is manual, performed on a specific human body, in person, with an irreversible or immediately visible result. Where exposure exists it is on the surrounding business - booking, front desk, virtual try-on - and on Tattoo Design Artist, where generated imagery genuinely has devalued the drawing while leaving the hand untouched.",
+      "PHYSICALLY SAFE AND ECONOMICALLY PRECARIOUS IS THE SECTOR'S SHAPE. The same eight professions that AI cannot reach are the ones whose employed figures cluster between 2.4 and 4.2 lakh, whose real income is seasonal and independent, and which nothing regulates. That combination - safe from automation, unprotected by law, unsourced in the data - is the most important thing this sector says."
+    ],
+    "1.2": [
+      "ELDER & HOME CARE ATTENDANT MOVED TO SECTOR 4 on review, with approval. Sector 18's object of concern is appearance and wellbeing; a dependent person's body is health. Sector 18 is now 6 professions.",
+      "economics.distribution added to every record as part of the approved schema change. All six are 'range' - this sector's problem is that its employed figures describe a salaried floor while the real income is seasonal and independent, which is a sourcing gap rather than a distribution shape."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "All eight economics blocks are 'judgment' with no sources, and the gap is unusually structural. In every one of these professions the EMPLOYED figure - salon therapist, spa employee, agency attendant - is a floor that describes a minority, and the real income is independent, seasonal and concentrated: bridal and wedding season for beauty, hair and makeup; wellness tourism and cruise contracts for spa and Ayurveda therapy; private clients for home care. None of that is sourced anywhere. Three specific numbers would transform this sector: bridal-season earnings for beauty and hair work, cruise and overseas spa contract rates, and the AGENCY MARGIN in home care - the gap between what a family pays and what the attendant receives, which is reportedly large and is the single most decision-relevant figure for anyone entering care work. Beyond money, this sector raises the consumer-safety question more sharply than any other: it should probably surface the absence of regulation to a user directly rather than leaving it implicit in a null licensing_body."
+  }
+}

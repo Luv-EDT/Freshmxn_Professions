@@ -1,8 +1,8 @@
 {
   "professional_sector": "Business, Management & Entrepreneurship",
   "professional_sector_id": 5,
-  "version": "1.0",
-  "profession_count": 12,
+  "version": "1.2",
+  "profession_count": 13,
   "sector_verification_note": "TIER C BY NATURE, like Sector 1. Nothing in Indian general management is statutorily licensed — no council controls who may call themselves a marketer, an HR professional or a consultant. The one Tier B fact that governs the sector is CAT eligibility, and it is the most OPEN gate in the taxonomy: any three-year degree in any subject, 50 percent, no age limit, no attempt cap. That is why almost every record here is class12_prerequisite 'any' and mid_stream_entry 'after_any_degree'. This is the sector a student who took a wrong turn elsewhere can still reach.",
   "professions": [
     {
@@ -93,6 +93,7 @@
         "mid_career_lpa": "8-18",
         "mid_career_midpoint": 13.0,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -227,6 +228,7 @@
         "mid_career_lpa": "7-16",
         "mid_career_midpoint": 11.5,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -377,6 +379,7 @@
         "mid_career_lpa": "7-15",
         "mid_career_midpoint": 11.0,
         "payback_years": 0.71,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -524,6 +527,7 @@
         "mid_career_lpa": "7-15",
         "mid_career_midpoint": 11.0,
         "payback_years": 0.71,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -658,6 +662,7 @@
         "mid_career_lpa": "8-16",
         "mid_career_midpoint": 12.0,
         "payback_years": 0.63,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -767,6 +772,7 @@
         "mid_career_lpa": "3.5-6",
         "mid_career_midpoint": 4.75,
         "payback_years": 0.12,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -896,6 +902,7 @@
         "mid_career_lpa": "4-8",
         "mid_career_midpoint": 6.0,
         "payback_years": 0.11,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1024,6 +1031,7 @@
         "mid_career_lpa": "20-40",
         "mid_career_midpoint": 30.0,
         "payback_years": 0.25,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1140,6 +1148,7 @@
         "mid_career_lpa": "12-24",
         "mid_career_midpoint": 18.0,
         "payback_years": 0.43,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1267,6 +1276,7 @@
         "mid_career_lpa": "20-45",
         "mid_career_midpoint": 32.5,
         "payback_years": 1.15,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1403,6 +1413,7 @@
         "mid_career_lpa": "8-16",
         "mid_career_midpoint": 12.0,
         "payback_years": 0.63,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1518,6 +1529,7 @@
         "mid_career_lpa": "4-15",
         "mid_career_midpoint": 9.5,
         "payback_years": 0.5,
+        "distribution": "power_law",
         "basis": "HIGHLY UNCERTAIN and shown for shape, not prediction. Most small businesses do not reach the mid-career band and a meaningful share close. This is the one record where the range should not be read as an expectation.",
         "verification": {
           "status": "judgment",
@@ -1565,12 +1577,193 @@
         {
           "field": "economics",
           "statement": "The only record in the taxonomy whose early_earnings band starts at zero, and that is not a formatting artefact. A founder can earn nothing for years. Every other profession here pays from the first month."
+        },
+        {
+          "field": "economics",
+          "statement": "economics.distribution is 'power_law', which is a statement that the range and the midpoint should not be read as a typical income. Outcomes are extremely dispersed and survivorship bias is severe in every available source. Most new businesses do not reach a stable income at all. The compensation filter does not fire on a power_law record, because deleting a profession on the strength of a number the record itself calls meaningless would be worse than showing it. This record was the FIRST to raise the problem, in Sector 5, and it took five more sectors independently asking for the same exception before the schema was changed."
         }
       ],
       "admin_review": {
         "required": true,
         "priority": "high",
         "reason": "The economics are unlike anything else in the dataset: outcomes are extremely dispersed, survivorship bias is severe in every available source, and a range is close to meaningless. Decide whether to show numbers at all for this record, or present it with the range suppressed and the risk stated instead. Also decide whether it should surface for school-age users at all, or only for college and working-age ones."
+      }
+    },
+    {
+      "id": "mgt-commercial-driver",
+      "profession": "Commercial Vehicle Driver",
+      "one_liner": "Drives goods and people for a living under a commercial licence - trucks, buses, ambulances.",
+      "job_roles": [
+        "Heavy Vehicle Driver",
+        "Truck Driver",
+        "Bus Driver",
+        "State Transport Driver",
+        "Delivery Van Driver",
+        "Ambulance Driver",
+        "School Bus Driver",
+        "Tanker & Hazardous Goods Driver",
+        "Owner-Driver",
+        "Driving Instructor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "State Transport Driver",
+              "School Bus Driver"
+            ],
+            "higher": [
+              "conscientiousness",
+              "agreeableness",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "These are the salaried, rostered forms of the job - a state transport corporation post is permanent government employment with a pay scale and a pension, and school transport carries a duty of care toward children. Both are the opposite of piece-rate driving."
+          },
+          {
+            "roles": [
+              "Tanker & Hazardous Goods Driver"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "neuroticism"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Carrying fuel, chemicals or explosives requires a hazardous goods endorsement, specific training and route restrictions. It is the best-paid driving work and the consequence of a mistake is not a delayed delivery."
+          },
+          {
+            "roles": [
+              "Owner-Driver",
+              "Driving Instructor"
+            ],
+            "higher": [
+              "confidence",
+              "logical",
+              "verbal"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Owning the vehicle changes the job into a business - EMI, fuel, maintenance, load finding and idle days. Instruction is teaching rather than driving. Both are the routes off a wage and both need capital or a licence endorsement."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSC",
+        "ASDC",
+        "EXT-GOVT",
+        "THSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Most states require class 8 pass for a transport licence; a few require class 10."
+        },
+        {
+          "step": 2,
+          "stage": "licence",
+          "requirement": "A commercial or transport vehicle licence under the Motor Vehicles Act - a separate endorsement from a private licence, with a higher minimum age and a medical."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "A driver training institute, or learning under an experienced driver. Hazardous goods and passenger endorsements need specific training."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Logistics company, a state transport corporation, a bus operator, a school, a hospital, or a fleet. Corporation posts are filled by state recruitment."
+        },
+        {
+          "step": 5,
+          "stage": "independence",
+          "requirement": "Own the vehicle. This is the route off a wage in Indian road transport, and it is capital and risk rather than promotion."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "State transport corporation driver recruitment"
+        ],
+        "private_entrances": [],
+        "note": "There is no entrance examination. The gate is a commercial licence endorsement under the Motor Vehicles Act, which is a test and a medical rather than a competition."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "1.8-3.6",
+        "mid_career_lpa": "2.4-6.0",
+        "mid_career_midpoint": 4.2,
+        "payback_years": 0.19,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Owning a truck, van or bus and running it - the standard route above a driver's wage in Indian road transport. It is a leveraged small business: the EMI, fuel, maintenance and idle days all sit with the owner, and it can go badly wrong.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 60,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Very low exposure today and the largest long-horizon question of any base-layer profession in this dataset. Driving is physical control of a vehicle in unstructured traffic and nothing in the generative-AI wave touches it. AUTONOMOUS DRIVING IS THE REAL QUESTION and it is deliberately not scored as exposure here: Indian road conditions, mixed traffic and liability law make it far more distant than in the countries where the technology is being developed, and there is no sourced Indian timeline. A student entering this trade at 20 should know the question exists without being told a date nobody can source."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "APP-BASED RIDE-HAILING AND FOOD DELIVERY ARE DELIBERATELY EXCLUDED from this record, and the exclusion is the most important thing on it. Those are platform gig work: no employer, no ladder, no notice period, earnings claims that are routinely inflated in recruitment marketing, and a vehicle EMI that sits with the driver rather than the platform. This record covers LICENSED COMMERCIAL DRIVING - a transport endorsement, an employer, and in the case of a state transport corporation a permanent post with a pension. They are not the same occupation and presenting them as one is how the whole trade comes to look like gig work."
+        },
+        {
+          "field": "economics",
+          "statement": "The employed figure is a driver's wage. Two things sit outside it and both matter more: a state transport corporation post is permanent government employment on a pay scale, and long-haul and hazardous goods driving pays materially above the base-layer trades because India has a documented shortage of licensed heavy vehicle drivers. Neither is sourced here."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and structurally so - road freight moves the overwhelming majority of Indian goods and the shortage of licensed heavy vehicle drivers is well documented in the logistics industry. This is demand for a licensed skill, not for gig labour."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Three gaps. No sourced wage figure for Indian commercial drivers at any level. No figure for what an owner-driver actually clears after EMI, fuel, maintenance and idle days - which is the named route up and the one most likely to be oversold to someone. And a presentation decision this record cannot make: it should be DESCRIBED but arguably never SUGGESTED to a school student, which is the third record to need that distinction after Waste Management & Sanitation Worker and Religious & Ritual Professional."
       }
     }
   ],
@@ -1633,6 +1826,15 @@
       "Added two BASE-LAYER professions the taxonomy was missing entirely — Retail & Store Operations and Logistics & Warehouse Operator. Between them they cover employment in the tens of millions, concentrated exactly where formal entry-level work is scarcest.",
       "ECONOMICS ARE ALL 'judgment'. No Indian salary source was fetched for this sector, and after the Sector 4 finding that commercial aggregators disagree by four to five times on the same profession, unsourced figures are not marked verified. Recorded as a sector_admin_review.",
       "Two exact-duplicate job roles renamed: 'Forklift Operator' also existed under Heavy Equipment Operator in Sector 2 (construction plant, not warehousing) and 'Product Analyst' under Data Analyst in Sector 1 (product ANALYTICS, not product management). Same string, different jobs."
+    ],
+    "1.1": [
+      "economics.distribution added as part of the approved schema change. Entrepreneur & Small Business Owner is marked POWER_LAW - which is what this record's own admin_review has said since v1.0: 'outcomes are so dispersed that a range may be the wrong format entirely'. It was the first record in the dataset to raise the problem and the last to be fixed, because it took five more sectors reaching the same conclusion before it read as a schema fault rather than a one-off."
+    ],
+    "1.2": [
+      "COMMERCIAL VEHICLE DRIVER ADDED, asked and approved after a specific objection that the taxonomy should not push people toward the gig economy. The objection is answered by SCOPE rather than by omission: this record covers LICENSED commercial driving - a transport endorsement under the Motor Vehicles Act, an employer, and in the case of a state transport corporation a permanent post with a pension.",
+      "APP-BASED RIDE-HAILING AND FOOD DELIVERY ARE EXPLICITLY EXCLUDED and the exclusion is written into a nuance. They are platform gig work with no employer, no ladder, inflated earnings claims and the vehicle EMI on the driver. Collapsing them into the same record is exactly how the whole trade comes to look like gig work, and staying silent would have left a student meeting the platforms' recruitment marketing with nothing to weigh it against.",
+      "AUTONOMOUS DRIVING IS NOT SCORED AS AI EXPOSURE, deliberately. It is the real long-horizon question for this profession, but Indian road conditions, mixed traffic and liability law make it far more distant than in the countries developing it, and no sourced Indian timeline exists. The ai_exposure reason names the question without inventing a date.",
+      "Placed in Sector 5 beside Logistics & Warehouse Operator on the same base-layer reasoning (DECISIONS.md 2.06): the object of concern is moving goods and people for an organisation."
     ]
   },
   "sector_admin_review": {

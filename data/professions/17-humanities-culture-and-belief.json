@@ -1,0 +1,1399 @@
+{
+  "professional_sector": "17. Humanities, Culture & Belief",
+  "professional_sector_id": 17,
+  "version": "1.0",
+  "profession_count": 8,
+  "sector_verification_note": "TIER C THROUGHOUT EXCEPT ARCHAEOLOGY, and even there the regulation is of an ACTIVITY rather than of practitioners: the AMASR Act 1958 regulates archaeological excavation, but no council registers archaeologists and survey, museum and teaching work needs no authorisation. That fact was written deliberately narrowly - the India Code and ASI primary texts returned 403 and were not opened, so no section numbers or penalties are stated, because stating unopened statutory detail is the NCAHP error recorded in DECISIONS.md 10. The sector's structural feature is a consistent mismatch between NEED and FUNDED POSTS: India holds several million uncatalogued manuscripts, a vast quantity of deteriorating material and an enormous archaeological record, and trains a handful of people a year to work on any of it. Seven of eight professions carry demand_signal 'low', which is the highest concentration in the dataset and is a statement about budgets, not about need.",
+  "professions": [
+    {
+      "id": "hum-archaeologist",
+      "profession": "Archaeologist",
+      "one_liner": "Finds and reads the physical remains of the past - excavation, survey, dating, publication.",
+      "job_roles": [
+        "Archaeologist",
+        "Excavation Field Director",
+        "Field Survey Archaeologist",
+        "Epigraphist",
+        "Numismatist",
+        "Archaeobotanist & Archaeozoologist",
+        "Underwater Archaeologist",
+        "Archaeological Draughtsman",
+        "Site Documentation Officer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Epigraphist",
+              "Numismatist"
+            ],
+            "higher": [
+              "long_term_memory",
+              "attention_span",
+              "verbal"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Reading inscriptions and coins requires classical languages and scripts - Brahmi, Sanskrit, Persian, Tamil - held in memory. It is desk and museum work and it is where much of Indian archaeology's actual evidence is produced."
+          },
+          {
+            "roles": [
+              "Archaeobotanist & Archaeozoologist"
+            ],
+            "higher": [
+              "logical",
+              "naturalistic",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Analysing seeds, pollen and animal bone from a site is laboratory science attached to a humanities discipline, and it is closer in method to Sector 3 than to the rest of this profession."
+          },
+          {
+            "roles": [
+              "Field Survey Archaeologist",
+              "Excavation Field Director"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Field archaeology is months in a trench in the dry season, managing labour, recording stratigraphy and living on site. It is physically demanding outdoor work that the public image of the profession does not convey."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-RND",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Arts is the usual route and science backgrounds are valued for the analytical specialisms."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA in History, Archaeology or Ancient Indian History, Culture and Archaeology."
+        },
+        {
+          "step": 3,
+          "stage": "masters",
+          "requirement": "MA in Archaeology, or the two-year Post Graduate Diploma at the Institute of Archaeology, ASI - which is the recognised professional route and admits very few."
+        },
+        {
+          "step": 4,
+          "stage": "field_training",
+          "requirement": "Excavation seasons. Field experience is what qualifies an archaeologist in practice."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "ASI, a state archaeology department, a university, a museum, or heritage impact assessment for infrastructure projects."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG",
+          "UGC NET",
+          "Institute of Archaeology (ASI) PGDA admission"
+        ],
+        "private_entrances": [],
+        "note": "The ASI Institute of Archaeology diploma is the recognised professional qualification and takes a very small number of students; everything else is ordinary university admission."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 7,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Heritage impact assessment and archaeological consultancy for infrastructure projects, which is a real and growing market because large projects must assess archaeological impact. It requires the field credibility that only excavation experience gives.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 35,
+          "knowledge_retrievable": 20,
+          "skill_physical": 25,
+          "skill_digital": 10,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Low exposure and protected by the ground. Evidence has to be excavated, recorded and physically handled, and stratigraphy is read in a trench by a person who is standing in it. Archaeological Draughtsman is the most exposed role, since site drawing and plan production have largely moved to photogrammetry and digital modelling. Epigraphist carries genuine exposure too - machine reading of inscriptions and scripts is improving - but the interpretation of a damaged, ambiguous text remains judgment."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#amasr-excavation-regulated",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Null, and the distinction matters. The AMASR Act 1958 regulates EXCAVATION - digging is not open to anyone who wants to - but that is a permit regime over an activity, not a register of practitioners. No council licenses archaeologists and nobody is struck off, and survey, documentation, museum and teaching work needs no authorisation at all. Hence Tier B rather than Tier A.",
+          "source": "data/verified_facts.json#amasr-excavation-regulated"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Low, and honestly so. ASI and state archaeology posts are few and filled irregularly, university positions depend on UGC NET and a doctorate, and the field is romanticised far beyond its employment. The growing part is heritage impact assessment for infrastructure, which is consultancy rather than research."
+        },
+        {
+          "field": "years_to_qualify",
+          "statement": "Seven years, and for most people it is more - a permanent post generally needs a doctorate on top. A student should understand that this is an academic career in practice, with the same nine-year shape as College & University Teacher."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hum-anthropologist",
+      "profession": "Anthropologist & Sociologist",
+      "one_liner": "Studies how people actually live together - fieldwork, kinship, caste, custom, community.",
+      "job_roles": [
+        "Anthropologist",
+        "Sociologist",
+        "Ethnographer",
+        "Social Research Officer",
+        "Applied Anthropologist (Development)",
+        "Qualitative Research Specialist",
+        "Tribal Welfare Research Officer",
+        "User Researcher (Ethnographic)",
+        "Community Study & Survey Investigator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Community Study & Survey Investigator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "bodily",
+              "agreeableness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Survey investigators collect the data other people analyse - going house to house with a schedule, in the field, on a per-survey contract. It is the entry rung of Indian social research and it is where the NSS and census data everyone cites actually comes from."
+          },
+          {
+            "roles": [
+              "User Researcher (Ethnographic)"
+            ],
+            "higher": [
+              "verbal",
+              "emotional_intelligence",
+              "conscientiousness"
+            ],
+            "lower": [
+              "long_term_memory"
+            ],
+            "why": "Ethnographic user research applies fieldwork method inside technology and consumer companies. It pays several times what academic anthropology does and is the single largest non-academic destination for this training."
+          },
+          {
+            "roles": [
+              "Applied Anthropologist (Development)",
+              "Tribal Welfare Research Officer"
+            ],
+            "higher": [
+              "naturalistic",
+              "agreeableness",
+              "bodily"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Applied and welfare roles involve extended residence in communities, often remote, and produce recommendations for government or NGO programmes rather than publications."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-RND",
+        "EXT-DEV",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA in Sociology, Anthropology or a related social science."
+        },
+        {
+          "step": 3,
+          "stage": "masters",
+          "requirement": "MA. Effectively the entry qualification for everything except the corporate research roles, which will take a bright graduate."
+        },
+        {
+          "step": 4,
+          "stage": "fieldwork",
+          "requirement": "Extended fieldwork. This is the discipline's method and its credential - a thesis based on months in a community."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "University, a research institute, an development organisation, government welfare research, or a technology company's user research team."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG",
+          "UGC NET"
+        ],
+        "private_entrances": [],
+        "note": "Ordinary university admission. UGC NET is the gate that matters, and it matters because the academic post is the default destination."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "6.0-16.0",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent qualitative research and ethnographic consultancy for companies, development agencies and design firms. It pays substantially more than academic work and is the reason many people leave the academic track.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 35,
+          "knowledge_retrievable": 15,
+          "skill_physical": 15,
+          "skill_digital": 15,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Low exposure with one sharp qualification. Synthesising interview transcripts and coding qualitative data is directly automatable and that is a large part of junior research work - Qualitative Research Specialist and Social Research Officer feel it. What does not automate is the fieldwork itself: living somewhere long enough that people tell you what they actually do rather than what they are supposed to do. Demographer is protected by quantitative rigour rather than by presence."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low in academia, and that understates the profession's real prospects. The best-paid destination for this training in India is ethnographic user research inside technology and consumer companies, which pays several times what a university post does and hires steadily. A student should be shown that route explicitly, because the degree does not advertise it."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Placed here rather than in Sector 3 on the METHOD test in DECISIONS.md 2: ethnography and cultural interpretation belong to 17, empirical and quantitative social research to 3, where Research Psychologist and Statistician already sit. DEMOGRAPHER WAS INITIALLY LISTED HERE AND WAS REMOVED - Sector 3's Statistician already holds it, and the method test agrees with Sector 3. Population statistics is quantitative work whatever department it sits in."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hum-historian",
+      "profession": "Historian & Heritage Researcher",
+      "one_liner": "Works out what happened and why it matters - archives, sources, argument, publication.",
+      "job_roles": [
+        "Historian",
+        "Archival Researcher",
+        "Oral History Researcher",
+        "Heritage Researcher",
+        "Documentation Officer (Heritage)",
+        "Editorial Researcher (History)",
+        "Genealogy & Records Researcher",
+        "Public History Practitioner"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Oral History Researcher",
+              "Public History Practitioner"
+            ],
+            "higher": [
+              "verbal",
+              "emotional_intelligence",
+              "extraversion"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Oral and public history work with living people and general audiences rather than with documents - interviews, exhibitions, walks, podcasts. It is the outward-facing half of the discipline and the part with a market outside universities."
+          },
+          {
+            "roles": [
+              "Archival Researcher",
+              "Genealogy & Records Researcher"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Archive work is months in reading rooms with catalogues, handwriting and languages nobody uses any more. It is solitary and it is where the discipline's raw material comes from."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-RND",
+        "EXT-EDU"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA in History."
+        },
+        {
+          "step": 3,
+          "stage": "masters",
+          "requirement": "MA, then usually a PhD - a permanent academic post effectively requires it."
+        },
+        {
+          "step": 4,
+          "stage": "languages",
+          "requirement": "The languages and scripts your period needs - Persian, Sanskrit, Marathi Modi, Urdu, Portuguese. This is the real barrier to Indian historical research and it takes years."
+        },
+        {
+          "step": 5,
+          "stage": "work",
+          "requirement": "University, an archive, a research institute, publishing, museums, or heritage and documentation work."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG",
+          "UGC NET"
+        ],
+        "private_entrances": [],
+        "note": "Ordinary university admission, then UGC NET for academic posts."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 7,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-14.0",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent research, writing and consultancy - books, documentaries, heritage projects, corporate and institutional histories. Public history has a real market and it is growing faster than the academic one.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 40,
+          "knowledge_retrievable": 20,
+          "skill_physical": 5,
+          "skill_digital": 10,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Moderate on retrievable knowledge and low overall. What a model does well is exactly what the discipline does NOT value: summarising what is already known. Editorial Researcher (History) and Genealogy & Records Researcher are the exposed roles because both are look-up work. What holds is the archive - reading an unpublished, damaged, handwritten source in an old script and arguing about what it means - and Oral History Researcher, which depends on someone agreeing to talk to you."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "This range BLENDS two very different outcomes and a student should read it that way. Those who secure a permanent university post earn what College & University Teacher in Sector 12 shows - 13.5 lakh at mid-career on a UGC scale - and those who do not work as guest faculty, in publishing, in heritage or in research on considerably less. The figure here is the blend. The same relationship holds for Archaeologist and Classical Language & Manuscript Scholar, and it is why those three records sit below the academic one they lead to."
+        },
+        {
+          "field": "years_to_qualify",
+          "statement": "Seven years is the optimistic reading and it excludes the languages. Serious Indian historical research usually requires Persian, Sanskrit, Urdu or a regional script at working depth, learned alongside the degrees. That is the discipline's real cost of entry and it appears in no fee figure."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Low. Permanent history posts in Indian universities are few and contested, and much undergraduate teaching is done by guest faculty on per-lecture pay. The work exists; the funded posts are scarce, which is a different statement."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hum-museum-archive",
+      "profession": "Museum, Archive & Records Professional",
+      "one_liner": "Looks after collections and makes them usable - cataloguing, storage, display, access.",
+      "job_roles": [
+        "Museum Curator",
+        "Archivist",
+        "Collections Manager",
+        "Museum Registrar",
+        "Exhibition Researcher",
+        "Records Manager",
+        "Museum Education Officer",
+        "Digital Collections Officer",
+        "Gallery Assistant"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Museum Education Officer"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "agreeableness"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Education and outreach roles run school programmes, tours and workshops. They are public-facing teaching inside a collections institution and are frequently the only posts a museum is actually hiring for."
+          },
+          {
+            "roles": [
+              "Digital Collections Officer",
+              "Records Manager"
+            ],
+            "higher": [
+              "logical",
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Digitisation, metadata and records management are systems disciplines. They are the part of this profession that is growing, and they transfer to corporate and government information management."
+          },
+          {
+            "roles": [
+              "Museum Curator",
+              "Exhibition Researcher"
+            ],
+            "higher": [
+              "openness",
+              "long_term_memory",
+              "reasoning"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Curation is scholarship plus argument - deciding what a collection means and how to say it in a room. It is the role the profession is known for and the one it has fewest of."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-EDU",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA in History, Art History, Archaeology or a related discipline."
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "MA in Museology, Archival Studies or Art History, or a Library and Information Science qualification for the records side."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "National or state museum, the National Archives, a university collection, a private or corporate museum, or a records department."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG",
+          "UGC NET"
+        ],
+        "private_entrances": [],
+        "note": "Ordinary university admission. Government museum and archive posts are filled by public service recruitment."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-12.0",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freelance cataloguing, collection documentation and exhibition research for private collectors, galleries and corporate collections. A thin market and it depends on the digital skills more than the curatorial ones.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 25,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Genuinely contested and the profession is splitting. Cataloguing, metadata generation and condition-report drafting are directly automatable, and Gallery Assistant and much Collections Manager work is routine documentation. What has grown rather than shrunk is Digital Collections Officer - when description became cheap, deciding what to digitise and how to structure access became the job - and Museum Education Officer, which is teaching in a room."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low, and it is a funding fact rather than a need fact. India has an enormous quantity of material and very few funded posts to look after it; state museums are chronically understaffed and many positions go unfilled rather than being advertised. The growth is in private and corporate collections and in digitisation projects."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Distinguished from Librarian & Information Professional in Sector 12 by purpose. A librarian exists so a community can LEARN, which is education; an archivist exists so material SURVIVES and remains accessible, which is heritage. The records management roles sit awkwardly across that line."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hum-conservator",
+      "profession": "Art Conservator & Restorer",
+      "one_liner": "Stops old things falling apart - paintings, manuscripts, sculpture, textiles, buildings.",
+      "job_roles": [
+        "Art Conservator",
+        "Paintings Conservator",
+        "Manuscript & Paper Conservator",
+        "Textile Conservator",
+        "Stone & Sculpture Conservator",
+        "Architectural Conservator",
+        "Preventive Conservation Officer",
+        "Conservation Scientist",
+        "Conservation Technician"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Conservation Scientist"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Conservation science is analytical chemistry and materials work - identifying pigments, deterioration mechanisms and treatment chemistry in a laboratory. It supports the treatment work rather than performing it."
+          },
+          {
+            "roles": [
+              "Architectural Conservator"
+            ],
+            "higher": [
+              "spatial",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Building conservation is site work with contractors, masons and budgets, closer to a construction project than to bench conservation. It is also where most Indian conservation money is, because heritage buildings attract funding that objects do not."
+          },
+          {
+            "roles": [
+              "Preventive Conservation Officer"
+            ],
+            "higher": [
+              "logical",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Preventive conservation is environment, storage, pest and handling control across a whole collection. It saves far more material than treatment does and is almost invisible."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "CSDCI",
+        "EXT-RND"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Science is a real advantage - conservation is applied chemistry as much as craft - but arts backgrounds are accepted."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BSc or BA, then an MA or MSc in Conservation or Art Conservation. The National Museum Institute is the main Indian route and takes very few students."
+        },
+        {
+          "step": 3,
+          "stage": "apprenticeship",
+          "requirement": "Supervised bench practice. Conservation is a craft with an irreversible failure mode and it is learned under someone."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "National or state museum, ASI, INTACH, a private conservation studio, or an architectural conservation practice."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "National Museum Institute admission"
+        ],
+        "private_entrances": [],
+        "note": "Admission to conservation programmes is the constraint, and India runs very few of them."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 1.08,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Private conservation practice - treating works for collectors, galleries, temples and trusts, or architectural conservation consultancy. Independent practice is normal in this profession because institutional posts are so few.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 30,
+          "knowledge_retrievable": 15,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Among the least exposed professions in this sector and in the dataset. Conservation is hands on an irreplaceable physical object where a mistake cannot be undone, and every treatment decision is a judgment about a unique thing. Conservation Scientist carries some exposure through automated analysis of spectra and imaging, which is a tool the conservator uses. Nothing in the generative wave touches the bench."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Promised here from Sector 8 and it belongs here. The skill is close to fine art and craft, but the object of concern is HERITAGE and its survival, not making something new. The conservator's whole discipline is subordinating their own hand to what the original maker did."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Low in posts and enormous in need, which is the sector's recurring shape. India holds a vast quantity of deteriorating material and trains a handful of conservators a year. Scarcity here has not produced high pay, because the people who own the material mostly cannot fund the work."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced income figure for Indian conservators, institutional or private, and private practice is the profession's normal form so the employed range describes the minority. Architectural conservation in particular is project-fee work at a completely different scale from object conservation, and one range covers both."
+      }
+    },
+    {
+      "id": "hum-religious-professional",
+      "profession": "Religious & Ritual Professional",
+      "one_liner": "Conducts worship, rites and religious teaching - temples, mosques, churches, gurdwaras.",
+      "job_roles": [
+        "Temple Priest",
+        "Purohit & Ritual Specialist",
+        "Imam",
+        "Muezzin",
+        "Granthi",
+        "Pastor",
+        "Religious Teacher",
+        "Temple Administrator",
+        "Astrologer & Ritual Consultant",
+        "Religious Music Performer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Temple Administrator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "extraversion"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Running a temple or religious institution is administration - donations, staff, property, festivals and, in several states, a government endowments department. It is management inside a religious institution and needs no priestly training."
+          },
+          {
+            "roles": [
+              "Purohit & Ritual Specialist",
+              "Astrologer & Ritual Consultant"
+            ],
+            "higher": [
+              "verbal",
+              "extraversion",
+              "long_term_memory"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Freelance ritual work - weddings, housewarmings, funerals, consultations - is a client-facing self-employed practice built on reputation in a locality. It is where most of the income in this profession is."
+          },
+          {
+            "roles": [
+              "Religious Teacher"
+            ],
+            "higher": [
+              "verbal",
+              "long_term_memory",
+              "agreeableness"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Teaching scripture and religious instruction in a madrasa, pathshala, seminary or Sunday school overlaps with Sector 12 and is placed here because the authority to teach comes from religious standing rather than from a teaching qualification."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Training in most traditions begins in childhood and runs in parallel with or instead of school."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Traditional study - a pathshala, madrasa, seminary, gurukul or seminary equivalent - lasting years, and in several traditions requiring memorisation of a large corpus."
+        },
+        {
+          "step": 3,
+          "stage": "recognition",
+          "requirement": "Recognition by the tradition and by a community. There is no examination and no certificate anyone outside the tradition checks."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "An institution's post, or independent practice serving families in a locality. In several states temple appointments are made by a government religious endowments department."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. Entry is by traditional training and communal recognition."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "0.9-3.0",
+        "mid_career_lpa": "1.8-6.0",
+        "mid_career_midpoint": 3.9,
+        "payback_years": 0.15,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent ritual practice serving families directly - weddings, ceremonies, funerals, consultations - which is how most people in this profession actually earn, and it runs entirely on reputation within a locality.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 35,
+          "knowledge_retrievable": 15,
+          "skill_physical": 25,
+          "skill_digital": 0,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Very low exposure, and for a reason no other profession in this dataset has. What is purchased here is the presence of a person the family and the tradition accept as authorised to perform the rite. That authority is social and religious, and it cannot be supplied by a machine at any capability level. Astrologer & Ritual Consultant is the only role with real exposure, because chart generation and standard readings are already software - but there too the client is paying for a person."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Almost entirely informal, cash, and dependent on locality and tradition. A priest at a major temple, a salaried imam, and a purohit doing weekend ceremonies in a small town are three different economies sharing one record. There is also a real structural fact: in several Indian states temple priests and staff are appointed and paid by a government religious endowments department, which makes those posts formal employment with a scale."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Included because 'Belief' is in this sector's name and because this is a large, real, paid occupation in India that every other taxonomy of careers silently omits. Placing it here rather than nowhere is a decision that the object of concern is culture and belief, not that any claim is being made about the beliefs themselves."
+        },
+        {
+          "field": "years_to_qualify",
+          "statement": "Six years is a rough figure for reaching independent practice, and it understates several traditions badly - memorising the Quran, or Vedic recitation to ritual standard, takes far longer and usually begins in childhood."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced income figure of any kind, and the profession is unusually hard to source because most of it is informal and cash. One thing IS fetchable and would materially improve the record: several state governments run religious endowments departments that appoint and pay temple staff on published scales, which would anchor at least the formal half. Also unresolved: whether a recommender should surface this profession at all, given that entry depends on birth, tradition and gender in ways no other record in this dataset does."
+      }
+    },
+    {
+      "id": "hum-classical-language",
+      "profession": "Classical Language & Manuscript Scholar",
+      "one_liner": "Reads what most people no longer can - Sanskrit, Persian, Pali, Prakrit, old scripts.",
+      "job_roles": [
+        "Sanskrit Scholar",
+        "Persian & Urdu Manuscript Scholar",
+        "Pali & Prakrit Scholar",
+        "Manuscriptologist",
+        "Palaeographer",
+        "Lexicographer",
+        "Translation Scholar",
+        "Classical Language Teacher",
+        "Digital Humanities Text Encoder"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Digital Humanities Text Encoder",
+              "Lexicographer"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Encoding, corpus building and dictionary work is systematic and technical. It is the part of this discipline with the clearest route into technology work, and machine translation and language-model projects now hire for exactly this."
+          },
+          {
+            "roles": [
+              "Manuscriptologist",
+              "Palaeographer"
+            ],
+            "higher": [
+              "attention_span",
+              "spatial",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Reading a damaged palm-leaf or paper manuscript in an obsolete script is slow, physical, solitary work. India holds several million uncatalogued manuscripts and very few people who can read them."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-EDU",
+        "EXT-RND",
+        "IT-ITES"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Sanskrit at school helps and is not required; many enter from other subjects."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "BA in Sanskrit, Persian, Pali or a classical language, at a general or a Sanskrit university."
+        },
+        {
+          "step": 3,
+          "stage": "masters",
+          "requirement": "MA, then usually a PhD. Manuscriptology and palaeography are taught as specialised diplomas at a handful of institutions."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "University, a manuscript library or mission, a research institute, publishing, or - increasingly - a technology company building language resources."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET UG",
+          "CUET PG",
+          "UGC NET"
+        ],
+        "private_entrances": [],
+        "note": "Ordinary university admission. Sanskrit and classical language departments are among the least competitive humanities admissions in India, which is a fact about supply rather than about the difficulty of the subject."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 7,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-13.0",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.54,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_required",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Freelance translation, manuscript cataloguing and consultancy to publishers, institutions and technology companies building Indian language resources. Thin but real, and the technology demand is new.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 40,
+          "knowledge_retrievable": 20,
+          "skill_physical": 10,
+          "skill_digital": 10,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Low overall and moving in two directions at once. Machine translation and script recognition are advancing on exactly this material, and Translation Scholar and parts of Palaeographer work face that directly. But the same technology has CREATED demand: building Indian language corpora, evaluating model output in Sanskrit or Persian, and encoding texts requires people who can actually read them, and Digital Humanities Text Encoder and Lexicographer are growing because of AI rather than despite it."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low, with an unusual and genuine upside. Traditional posts are few. But India holds several million uncatalogued manuscripts, and language-technology work now needs people who can read classical and regional scripts - which is the first time in a century that this training has had a growing non-academic market."
+        },
+        {
+          "field": "economics",
+          "statement": "Sanskrit and classical language departments carry government scholarships and stipends that partly offset the cost, which is why cost_of_entry is lower than for other humanities records here. The employed figure is an academic one."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hum-heritage-management",
+      "profession": "Heritage & Cultural Management Professional",
+      "one_liner": "Runs heritage as a going concern - sites, festivals, cultural centres, funding, policy.",
+      "job_roles": [
+        "Heritage Site Manager",
+        "Cultural Programme Officer",
+        "Festival & Cultural Curator",
+        "Heritage Interpretation Planner",
+        "Cultural Policy Researcher",
+        "Arts Funding & Grants Officer",
+        "Heritage Impact Assessment Consultant",
+        "Community Heritage Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Heritage Impact Assessment Consultant"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "conscientiousness"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Assessing what a road, metro or dam will do to heritage is a regulatory deliverable for an infrastructure project. It is the best-paid work in this profession and it is adversarial - the client usually wants the project to proceed."
+          },
+          {
+            "roles": [
+              "Festival & Cultural Curator",
+              "Cultural Programme Officer"
+            ],
+            "higher": [
+              "openness",
+              "extraversion",
+              "conscientiousness"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Programming a festival or a cultural centre is curation plus event production plus fundraising. It overlaps heavily with Event Manager in Sector 16 and differs by the programme being the point rather than the client."
+          },
+          {
+            "roles": [
+              "Community Heritage Coordinator"
+            ],
+            "higher": [
+              "agreeableness",
+              "verbal",
+              "naturalistic"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Community heritage work negotiates between conservation rules and the people who actually live in or around a heritage site, whose livelihoods those rules constrain."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-CULT",
+        "EXT-DEV",
+        "THSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree; history, architecture, archaeology, arts management and development studies are the common routes."
+        },
+        {
+          "step": 3,
+          "stage": "specialisation",
+          "requirement": "A master's in heritage management, conservation, arts administration or public policy. Several Indian programmes exist and they are small."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "ASI or a state department, INTACH or a heritage trust, a cultural foundation, a city heritage cell, a festival, or consultancy."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "CUET PG",
+          "Heritage management master's admissions"
+        ],
+        "private_entrances": [],
+        "note": "No profession-specific gate. Entry is on a relevant master's and demonstrated project work."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 5,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "2.4-5.5",
+        "mid_career_lpa": "5.0-14.0",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 1.01,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent heritage consultancy - impact assessment, interpretation planning and grant writing for trusts, developers and government bodies. Impact assessment in particular is a real fee-earning market driven by regulation.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 25,
+          "skill_physical": 10,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Moderate on retrievable knowledge and low overall. Grant applications, interpretation text and standard assessment reporting all generate well, and Arts Funding & Grants Officer feels that most. What survives is negotiation and judgment on the ground: Community Heritage Coordinator and Heritage Site Manager both spend their time reconciling conservation rules with people whose livelihoods those rules affect, which is neither a text problem nor a popular one."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Low and funding-dependent, with one genuinely growing segment. Cultural and heritage budgets in India are thin and posts are few - but heritage impact assessment is required for large infrastructure projects, which makes it regulation-driven demand of the same kind that BRSR created for ESG work in Sector 14."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Kept here rather than in Sector 16 with Event Manager, and the distinction is what the work is FOR. An event manager delivers a client's event; a cultural curator decides what is worth programming and defends it. When the job is purely delivery it belongs in 16."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Librarian & Information Professional",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-EDU",
+      "why": "Already built in Sector 12. A librarian exists so a community can LEARN, which is education; an archivist exists so material SURVIVES, which is heritage. The records management roles sit across that line and are held here."
+    },
+    {
+      "profession": "Research Psychologist",
+      "goes_to": "3. Science & Research",
+      "tag_here_instead": "EXT-RND",
+      "why": "Already built in Sector 3. DECISIONS.md 2 splits by METHOD: empirical and quantitative social research goes to 3, ethnography and cultural interpretation stay here."
+    },
+    {
+      "profession": "Fine Artist",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "EXT-CULT",
+      "why": "Already built in Sector 8. Making new work is creative practice; conserving and interpreting existing work is heritage."
+    },
+    {
+      "profession": "Tour Guide",
+      "goes_to": "16. Hospitality, Travel & Culinary",
+      "tag_here_instead": "THSC",
+      "why": "Already built in Sector 16 under Travel & Tourism Professional. Guiding is a hosted-visitor service; heritage interpretation PLANNING - deciding what a site should say - stays here."
+    },
+    {
+      "profession": "Public Policy Professional",
+      "goes_to": "7. Law, Governance & Public Service",
+      "tag_here_instead": "EXT-GOVT",
+      "why": "Already built in Sector 7. Cultural POLICY research is held here as a job role because the object of concern is culture; policy work as a career belongs there."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "RELIGIOUS & RITUAL PROFESSIONAL is the most consequential inclusion decision in this sector and needs an explicit answer. It is a large, real, paid occupation in India that career taxonomies routinely omit, and 'Belief' is in the sector's name. But it is unlike every other record here: entry frequently depends on birth, tradition and gender in ways nothing else in this dataset does, and a recommender proposing it to a student on psychometric fit would be making a category error. It is written to be DESCRIBED rather than SUGGESTED - the same distinction Waste Management & Sanitation Worker in Sector 14 needed, and the schema still has no way to express it. That is now two records requiring it.",
+    "ANTHROPOLOGIST & SOCIOLOGIST sits on the Sector 3 boundary and the duplicate check settled it. Demographer was listed here on the first pass and Sector 3's Statistician already held it; rather than argue, the method test in DECISIONS.md 2 was applied as written - population statistics is quantitative work whatever department it sits in - and the role was removed. No built sector needed amending, which is what happens when the rule is followed instead of the institution.",
+    "SEVEN OF EIGHT PROFESSIONS CARRY demand_signal 'low', the highest concentration anywhere in the dataset. That is accurate and it deserves a decision about presentation: a student matched to this sector psychometrically will see almost nothing but low-demand records, which is honest but may read as the tool telling them their interests are worthless. The counterweight - that the best-paid destination for anthropology training in India is ethnographic user research in technology companies, and that language technology now needs classical language readers - is in nuances where it may not be seen.",
+    "HERITAGE & CULTURAL MANAGEMENT PROFESSIONAL overlaps Event Manager in Sector 16 at the festival and programming end. The split used is whether the job is DELIVERY (16) or deciding what is worth programming and defending it (17). It is a defensible line and a thin one."
+  ],
+  "changelog": {
+    "1.0": [
+      "Sector 17 built. 8 professions, 71 job roles. Three iterations.",
+      "ITERATION 1 CAUGHT A DUPLICATE THAT SETTLED A BOUNDARY. Demographer was listed under Anthropologist & Sociologist and Sector 3's Statistician already held it. Rather than argue the case, the method test in DECISIONS.md 2 was applied as written - population statistics is quantitative work whatever department it sits in - and the role was removed here. No built sector needed amending, which is what happens when the rule is followed rather than the institution. It was replaced by Community Study & Survey Investigator, the field-collection entry rung that produces the NSS and census data everyone else cites.",
+      "ITERATION 3 FOUND A CROSS-SECTOR GAP RATHER THAN AN ERROR. Four professions here lead primarily to a university post, and Sector 12's College & University Teacher shows 13.5 lakh at mid-career on a UGC scale while these records show 9.0 to 9.5. That is not a contradiction - these blend those who get the post with the majority who do not - but nothing said so. An economics nuance now states the relationship explicitly, because a student comparing the two records would otherwise conclude the numbers disagree.",
+      "BOTH INHERITED PROMISES KEPT as professions: Archaeologist, and Anthropologist / Sociologist. Sector 8's promise of Art Conservator & Restorer is also kept as a profession.",
+      "ONE VERIFIED FACT, AND IT WAS DELIBERATELY WRITTEN SHORT. The AMASR Act 1958 regulates archaeological excavation - that much the opened source supports. Section numbers, licence mechanics and penalties are NOT stated, because the India Code and ASI primary texts returned 403 and were never opened. The fact says so explicitly. This is the NCAHP lesson applied before the error rather than after: seven council names were once written from plausibility and three did not exist.",
+      "ARCHAEOLOGIST IS TIER B, NOT TIER A, and the reasoning matters for the taxonomy generally. The AMASR Act controls an ACTIVITY - excavation - not a profession. No council registers archaeologists, nobody is struck off, and survey, museum and teaching work needs no authorisation. A permit regime over one activity is not a licence to practise.",
+      "NO NEW GATES. Two are recorded as pending and both matter more here than elsewhere: UGC NET in the humanities, because in this sector the academic post IS the profession for most graduates, and ASI recruitment, because it decides whether archaeology is a career or a degree.",
+      "THE SECTOR'S CENTRAL FINDING IS A MISMATCH. Need is enormous and funded posts are almost absent - several million uncatalogued manuscripts against a handful of trained manuscriptologists, a vast deteriorating material heritage against a few conservators trained each year. Scarcity has not produced high pay, because the people who hold the material cannot fund the work.",
+      "TWO PROFESSIONS FOUND GENUINELY NEW AI-DRIVEN DEMAND, which is unusual in this dataset. Classical Language & Manuscript Scholar is growing BECAUSE of language technology - building Indian language corpora and evaluating model output requires people who can read the scripts - and Digital Collections Officer grew once description became cheap and deciding what to digitise became the job."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "All eight economics blocks are 'judgment' with no sources, and this sector is harder to source than most because so much of it is either academic pay or informal income. Three things are fetchable and would each anchor a record. First, UGC pay scales for Assistant Professor, which govern the default destination for at least four professions here and are published - the same fix that made School Teacher verifiable in Sector 12. Second, ASI and state archaeology department pay scales. Third and most novel: several state governments run religious endowments departments that appoint and pay temple staff on published scales, which would anchor at least the formal half of Religious & Ritual Professional, currently the least evidenced record in the sector. Beyond money, one presentation decision is owed and it is the second time it has come up: Religious & Ritual Professional, like Waste Management & Sanitation Worker in Sector 14, must be DESCRIBED but should probably never be SUGGESTED by a recommender, and the schema cannot say so."
+  }
+}

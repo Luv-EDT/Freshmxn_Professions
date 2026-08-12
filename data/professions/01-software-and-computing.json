@@ -1,7 +1,7 @@
 {
   "professional_sector": "Software & Computing",
   "professional_sector_id": 1,
-  "version": "16.0",
+  "version": "16.1",
   "profession_count": 14,
   "sector_verification_note": "Sector 1 contains ZERO Tier A professions — nothing in computing is statutorily licensed in India. Almost every record is Tier C judgment. The only verified facts here are the JEE/class-12 subject gates, from data/verified_facts.json.",
   "professions": [
@@ -80,6 +80,7 @@
         "mid_career_lpa": "8.0-20.0",
         "mid_career_midpoint": 14.0,
         "payback_years": 1.04,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -189,6 +190,7 @@
         "mid_career_lpa": "3.0-6.0",
         "mid_career_midpoint": 4.5,
         "payback_years": 0.11,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -250,8 +252,6 @@
         "Game Programmer",
         "Unity Developer",
         "Unreal Engine Developer",
-        "Game Designer",
-        "Level Designer",
         "Mobile Game Developer",
         "AR Developer",
         "VR Developer",
@@ -262,19 +262,19 @@
         "deviating_roles": [
           {
             "roles": [
-              "Game Designer",
-              "Level Designer"
+              "AR Developer",
+              "VR Developer",
+              "Simulation Developer"
             ],
             "higher": [
-              "openness",
-              "existential",
-              "verbal"
+              "spatial",
+              "logical",
+              "conscientiousness"
             ],
             "lower": [
-              "logical",
-              "attention_span"
+              "openness"
             ],
-            "why": "Designers decide what is fun and why a world feels alive — imaginative, meaning-driven work. Programmers on the same team live in engine internals and precise state. Same profession, opposite temperaments."
+            "why": "These build training, industrial and medical simulations where fidelity to a real system is the requirement. Correctness outranks delight, which is the opposite of what an entertainment title is optimised for."
           }
         ]
       },
@@ -320,6 +320,7 @@
         "mid_career_lpa": "6.0-12.0",
         "mid_career_midpoint": 9.0,
         "payback_years": 0.44,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -365,6 +366,10 @@
         {
           "field": "job_roles",
           "statement": "AR and VR development is merged in here rather than standing alone. The engines are the same - Unity and Unreal - the studios are largely the same, and India's standalone XR market is small. Confirmed as a merge rather than a separate profession."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Game Designer and Level Designer were removed from this profession and moved to Sector 8, where Game Designer is now a profession in its own right. This record covers the people who BUILD the game; the people who decide what the game IS sit in Design & Creative Arts. A student searching for game work should be shown both."
         }
       ],
       "admin_review": {
@@ -446,6 +451,7 @@
         "mid_career_lpa": "15.0-30.0",
         "mid_career_midpoint": 22.5,
         "payback_years": 0.6,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -567,6 +573,7 @@
         "mid_career_lpa": "6.0-12.0",
         "mid_career_midpoint": 9.0,
         "payback_years": 0.11,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -691,6 +698,7 @@
         "mid_career_lpa": "12.0-22.0",
         "mid_career_midpoint": 17.0,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -816,6 +824,7 @@
         "mid_career_lpa": "9.0-18.0",
         "mid_career_midpoint": 13.5,
         "payback_years": 0.17,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -931,6 +940,7 @@
         "mid_career_lpa": "10.0-20.0",
         "mid_career_midpoint": 15.0,
         "payback_years": 0.15,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1053,6 +1063,7 @@
         "mid_career_lpa": "5.0-10.0",
         "mid_career_midpoint": 7.5,
         "payback_years": 0.12,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1182,6 +1193,7 @@
         "mid_career_lpa": "4.0-8.0",
         "mid_career_midpoint": 6.0,
         "payback_years": 0.17,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1326,6 +1338,7 @@
         "mid_career_lpa": "8.0-16.0",
         "mid_career_midpoint": 12.0,
         "payback_years": 1.0,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1463,6 +1476,7 @@
         "mid_career_lpa": "9.0-18.0",
         "mid_career_midpoint": 13.5,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1579,6 +1593,7 @@
         "mid_career_lpa": "9.0-18.0",
         "mid_career_midpoint": 13.5,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1710,6 +1725,7 @@
         "mid_career_lpa": "8.0-15.0",
         "mid_career_midpoint": 11.5,
         "payback_years": 0.5,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years, EMPLOYED only. Business ownership excluded — that is Sector 5 economics, not this profession's.",
         "verification": {
           "status": "verified",
@@ -1825,6 +1841,12 @@
       "goes_to": "14. Environment & Sustainability",
       "tag_here_instead": "SCGJ",
       "why": "Applied to land, forest and climate questions."
+    },
+    {
+      "profession": "Game Designer / Level Designer",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "IT-ITES",
+      "why": "Held here as job roles until Sector 8 was built, which was an over-claim. Remove the game from the developer and a software engineer remains; remove it from the designer and nothing does. The object of concern is the designed experience, not computing."
     }
   ],
   "removed_in_v3": [
@@ -1933,6 +1955,11 @@
     ],
     "16.0": [
       "Received the Blockchain & Web3 Developer merge record from Sector 2, where it had been filed by mistake. Target corrected to 'Software Developer', which is in this sector - a merge is same-sector by definition."
+    ],
+    "16.1": [
+      "CORRECTION. Game Designer and Level Designer removed from Game & Interactive Media Developer and moved to Sector 8, where Game Designer is now a profession. This sector had been holding game design as job roles because no design sector existed yet - a coverage gap standing in for a judgment, which is the error DECISIONS.md warns against in the other direction.",
+      "The evidence was already in this file. role_spread flagged exactly those two roles as deviating on openness, existential and verbal, with the note 'same profession, opposite temperaments'. Opposite temperaments inside one record is usually two professions.",
+      "role_spread rewritten around the deviation that actually remains: AR, VR and Simulation Developer build fidelity-critical systems rather than entertainment."
     ]
   },
   "merged_into": [

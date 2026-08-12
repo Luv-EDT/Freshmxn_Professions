@@ -1,0 +1,1961 @@
+{
+  "professional_sector": "9. Media, Film & Storytelling",
+  "professional_sector_id": 9,
+  "version": "1.0",
+  "profession_count": 12,
+  "sector_verification_note": "TIER C THROUGHOUT, and unusually well evidenced for it. Nothing in Indian media is licensed: the Press Council of India is statutory but regulates newspapers' CONDUCT rather than journalists' right to practise, and it cannot strike anyone off. PIB accreditation is routinely mistaken for a licence and is only access to government premises. Against that, this sector holds something no other unlicensed sector has - a STATUTORY PAY SCHEDULE. The Majithia Wage Board, notified in 2011 and upheld by the Supreme Court in 2014, fixes basic pay for working journalists by class of newspaper. It anchors one economics block properly and carries two limits that matter: the figures have never been revised, and the Act covers newspapers only, not television or digital.",
+  "professions": [
+    {
+      "id": "med-journalist",
+      "profession": "Journalist & Reporter",
+      "one_liner": "Finds out what happened, checks it, and tells the public - in print, on air or online.",
+      "job_roles": [
+        "Reporter",
+        "Sub-Editor & Copy Editor",
+        "Correspondent",
+        "News Anchor",
+        "News Producer",
+        "Science Journalist",
+        "Legal Journalist",
+        "Business Journalist",
+        "Sports Journalist",
+        "Photojournalist",
+        "Fact-Checker",
+        "Data Journalist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Sub-Editor & Copy Editor",
+              "Fact-Checker"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness",
+              "verbal"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Desk work is checking, tightening and headlining other people's copy against a deadline. It never leaves the building, and it is where accuracy is actually enforced."
+          },
+          {
+            "roles": [
+              "News Anchor"
+            ],
+            "higher": [
+              "extraversion",
+              "confidence",
+              "short_term_memory"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Anchoring is live performance under time pressure - reading, listening to a producer and speaking simultaneously. It shares almost nothing with reporting except the subject matter."
+          },
+          {
+            "roles": [
+              "Data Journalist"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "spatial"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Data journalism is analysis and visualisation of records and datasets. The source is a spreadsheet rather than a person, and the skill is closer to a Data Analyst's."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree. A BA or MA in journalism or mass communication is common and is not required - subject expertise in economics, law or science is often worth more."
+        },
+        {
+          "step": 3,
+          "stage": "clips",
+          "requirement": "Published work. Student papers, campus magazines, freelance pieces and a blog all count; editors hire on what you have written."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Trainee reporter or sub-editor at a newspaper, broadcaster or digital newsroom."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "IIMC entrance",
+          "CUET UG",
+          "CUET PG"
+        ],
+        "private_entrances": [
+          "Symbiosis SET (Mass Communication)"
+        ],
+        "note": "None is required. IIMC is the best-known public postgraduate route; most working journalists in India entered without any of these."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "6-15",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "verified",
+          "sources": [
+            "https://meglc.gov.in/acts/Majithia-Wage-Board-Recommendations.pdf"
+          ],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance reporting, a subscriber-funded newsletter or an independent digital outlet. Increasingly common in India as staff newsrooms shrink, and it is where much of the serious reporting now happens.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 20,
+          "skill_physical": 5,
+          "skill_digital": 30,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "Aggregation, rewriting agency copy and templated market or sports reports are already automated, and those were the trainee's job. Sub-Editor & Copy Editor and Business Journalist on routine numbers are the exposed roles. What no model can do is be in the room: Correspondent, Photojournalist and any reporting that depends on a source trusting a named person are protected, and Fact-Checker is protected by being the answer to the problem."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "data/verified_facts.json#journalism-unregulated",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Anchored on the Majithia Wage Board, the only statutory pay schedule in this sector - entry basic of Rs 13,000 a month at the largest newspaper groups down to Rs 7,000 at the smallest, plus 20-35 percent variable pay and allowances. Two caveats travel with it and both matter: those are 2011 figures never since revised, and the Act binds NEWSPAPER establishments only.",
+          "source": "data/verified_facts.json#majithia-wage-board-journalists"
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null. The Press Council of India is statutory but regulates newspapers' CONDUCT, not journalists' right to work - it cannot strike anyone off. PIB accreditation is often mistaken for a licence; it only grants access to government premises.",
+          "source": "data/verified_facts.json#journalism-unregulated"
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and the shape is unusual: print newsrooms are contracting while digital and regional-language news are growing, so total employment is roughly flat with the jobs moving. A student should know that the growing half pays worse and is outside the Working Journalists Act altogether.",
+          "source": "https://www.newslaundry.com/2017/05/02/underpaid-media-will-the-majithia-wage-board-tussle-ever-end"
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-content-writer",
+      "profession": "Content Writer & Editor",
+      "one_liner": "Writes and edits the words other people publish - websites, manuals, books, documentation.",
+      "job_roles": [
+        "Content Writer",
+        "Technical Writer",
+        "Medical Writer",
+        "SEO Content Writer",
+        "UX Writer",
+        "Book Editor",
+        "Proofreader",
+        "Ghostwriter",
+        "Translator & Localisation Specialist",
+        "Commissioning Editor",
+        "Author"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Technical Writer",
+              "Medical Writer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Both write to a standard rather than a voice - an API reference or a clinical study report is judged on precision and completeness. Medical writing carries regulatory consequence, which is why it pays best in this profession."
+          },
+          {
+            "roles": [
+              "Author",
+              "Ghostwriter"
+            ],
+            "higher": [
+              "openness",
+              "long_term_memory",
+              "existential"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Book-length work is a solitary two-year commitment with no salary attached. It is the one role here that is a vocation rather than a job."
+          },
+          {
+            "roles": [
+              "Translator & Localisation Specialist"
+            ],
+            "higher": [
+              "verbal",
+              "long_term_memory",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Translation is deep two-language competence, and in India usually English plus one Indian language at professional depth. It is a different skill from composition."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES",
+        "LSSSDC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Technical and medical writing favour a science background but do not require one."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree. For Medical Writer a life-sciences, pharmacy or medical degree is effectively expected."
+        },
+        {
+          "step": 3,
+          "stage": "samples",
+          "requirement": "A portfolio of published or sample work. This is the whole application - there is no exam and no certificate anyone checks."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "In-house content or documentation team, an agency, a publisher, or a pharmaceutical or CRO writing group."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. There is no entrance examination into any part of this profession."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5-13",
+        "mid_career_midpoint": 9.0,
+        "payback_years": 0.54,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance writing and editing, which is how a large share of this work is already bought. Medical and technical writers command the highest independent rates because the domain knowledge is scarce.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 50,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 70,
+        "band": "high",
+        "reason": "The most exposed profession in this sector and one of the most exposed in the dataset. SEO Content Writer and general Content Writer produce exactly what language models produce, and that market has already repriced. Proofreader is going the same way. What holds is where someone must be ACCOUNTABLE for the text: Medical Writer, where a clinical study report is a regulatory document with a named author, and UX Writer, where the words are a product decision. Book Editor and Commissioning Editor are protected by judgment about what is worth publishing at all."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Technical Writer and Medical Writer were both promised to this sector from elsewhere - Technical Writer from Software & Computing, Medical Writer from Healthcare. Both are kept as job roles rather than professions because the skill set is the same writing craft applied to a different domain, which is what the merge test in DECISIONS.md 8.95 asks."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "High, and the honest framing is that this profession is repricing rather than disappearing. Demand for text has gone up, not down; what has collapsed is the price of ordinary text. The surviving work is the text that carries consequence or requires domain knowledge a model cannot be trusted with unsupervised."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate rather than high, which is a downgrade from where this profession sat two years ago. Content and SEO writing was one of the largest entry-level employers of Indian arts graduates, and that intake has visibly contracted."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-filmmaker",
+      "profession": "Filmmaker & Director",
+      "one_liner": "Decides what a film or series is and gets it made - story, cast, performance, final cut.",
+      "job_roles": [
+        "Film Director",
+        "Assistant Director",
+        "Screenwriter",
+        "Documentary Filmmaker",
+        "Casting Director",
+        "Script Supervisor",
+        "Ad Film Director",
+        "Web Series Director",
+        "Creative Producer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Screenwriter"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Screenwriting is solitary structural work done long before anyone is on set, and many screenwriters never direct. It is the one role here that needs no crew."
+          },
+          {
+            "roles": [
+              "Assistant Director",
+              "Script Supervisor"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "short_term_memory"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "The AD department runs the schedule and the continuity - it is logistics under pressure, and it is how almost everyone in Indian film actually enters. Invention is not the job; keeping a hundred people to a call sheet is."
+          },
+          {
+            "roles": [
+              "Casting Director"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "extraversion",
+              "long_term_memory"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Casting is reading people and remembering hundreds of them. It is a talent-scouting job that happens to sit inside filmmaking."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree, or a film school - FTII Pune, SRFTI Kolkata, or a private institute. Film school is a strong advantage and is not required; a large share of working Indian directors did not attend one."
+        },
+        {
+          "step": 3,
+          "stage": "apprenticeship",
+          "requirement": "Three to six years as an assistant director. This is the real entry route in Indian film and it is poorly paid."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Direct short films, ads or web content, then features. Documentary and advertising are the routes that pay while you build a reel."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "FTII JET",
+          "SRFTI entrance"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required. FTII and SRFTI share the JET entrance and are extremely competitive, but film school is one route into this profession rather than the route."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 6,
+      "economics": {
+        "cost_of_entry_lakh": 6.0,
+        "early_earnings_lpa": "2.0-5.0",
+        "mid_career_lpa": "5-18",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 1.71,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Independent and commissioned work - documentaries, advertising films, corporate video and streaming commissions. Almost every Indian director is legally self-employed, hired project to project.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 15,
+          "skill_digital": 20,
+          "clarity": 35
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "The most clarity-heavy profession in this sector, which is what protects it. Generative video produces shots; it does not decide what story is worth telling, what a performance should feel like, or whether a scene is working. Ad Film Director is the most exposed role, because short commercial video is where synthetic footage is being adopted fastest. Documentary Filmmaker is the least - it depends on access, trust and being physically present."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "years_to_qualify",
+          "statement": "Six years is longer than an MBBS, and it is not spent studying. It is three to six years of assistant directing on very low pay before anyone is trusted with a film. The runway, not the fee, is this profession's real cost of entry."
+        },
+        {
+          "field": "economics",
+          "statement": "The range is wide because the distribution is extreme - a working ad-film or streaming director earns well while most people who set out to direct never make a feature. The employed figure describes steady commissioned work, which is what the profession looks like for those who stay in it."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-cinematographer",
+      "profession": "Cinematographer & Camera Professional",
+      "one_liner": "Decides how a scene is lit and framed, and operates the camera that records it.",
+      "job_roles": [
+        "Cinematographer",
+        "Camera Operator",
+        "Focus Puller",
+        "Gaffer",
+        "Lighting Technician (Film)",
+        "Steadicam Operator",
+        "Digital Imaging Technician",
+        "Drone Cinematographer",
+        "Second Unit Cinematographer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Gaffer",
+              "Lighting Technician (Film)"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "The lighting department is physical trade work - rigging, power, safety and long hours - executing a cinematographer's intent. It is a skilled crew job with a different entry route from the creative one."
+          },
+          {
+            "roles": [
+              "Digital Imaging Technician"
+            ],
+            "higher": [
+              "logical",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "The DIT manages colour pipeline, data and on-set monitoring. It is a technical specialism that grew out of digital capture and is closer to post-production."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Film school, a cinematography diploma, or no formal training at all - many enter as camera attendants and learn on set."
+        },
+        {
+          "step": 3,
+          "stage": "crew",
+          "requirement": "Work up through the camera department: attendant, second assistant, focus puller, operator."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Cinematographer on ads, music videos, documentaries or independent films, then longer formats."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "FTII JET",
+          "SRFTI entrance"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required, and the crew route into this profession involves no exam at all."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "6-16",
+        "mid_career_midpoint": 11.0,
+        "payback_years": 0.54,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance day rates, which is how essentially the whole camera department works. Owning a camera package materially raises what you can charge.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 45,
+          "skill_digital": 15,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Protected by being physically present with equipment in a real space. Lighting a face, pulling focus on a moving actor and rigging a crane are not text problems, and no generative tool touches Gaffer, Focus Puller or Steadicam Operator. Digital Imaging Technician is the most exposed role, since colour and data management is increasingly automated software."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "Certificate rather than undergrad, and that is the truth of the camera department: it is a craft entered as an assistant and learned by doing. A degree helps you get the first job and nothing after that."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Marked common because it is nearly universal - the camera department is freelance almost by definition, hired per project at a day rate. There is no meaningful employed version of this profession outside television news and corporate in-house teams."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-film-editor",
+      "profession": "Film Editor & Post-Production Professional",
+      "one_liner": "Assembles the shot footage into the film - what stays, what goes, and in what order.",
+      "job_roles": [
+        "Film Editor",
+        "Video Editor",
+        "Assistant Editor",
+        "Colourist",
+        "Online Editor",
+        "Trailer Editor",
+        "Subtitling & Captioning Editor",
+        "Post-Production Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Colourist"
+            ],
+            "higher": [
+              "spatial",
+              "attention_span",
+              "openness"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Grading is a visual specialism with its own craft and its own suite. A colourist shapes how a film feels without changing a single cut."
+          },
+          {
+            "roles": [
+              "Subtitling & Captioning Editor",
+              "Post-Production Coordinator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "verbal"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "These are accuracy-and-schedule roles rather than storytelling ones, and in India subtitling is a large employer because of the number of languages a release needs."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "An editing diploma or film school, or self-taught on the software - the tools are cheap and the skill is demonstrable."
+        },
+        {
+          "step": 3,
+          "stage": "portfolio",
+          "requirement": "Cut real footage. A reel of finished work is the entire hiring test."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Assistant editor at a post house, or editing corporate, ad and digital content directly."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "FTII JET"
+        ],
+        "private_entrances": [],
+        "note": "Not required. Most editors in India are self-taught or diploma-trained and hired on a reel."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "6-15",
+        "mid_career_midpoint": 10.5,
+        "payback_years": 0.54,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance editing for agencies, production houses and creators - a laptop and a reel are the whole setup, which makes this one of the lowest-capital independent routes in the dataset.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 0,
+          "skill_digital": 50,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 60,
+        "band": "medium",
+        "reason": "Split down the middle. Subtitling & Captioning Editor is being automated fastest - machine transcription and translation already do the first pass - and Assistant Editor work like logging, syncing and rough assembly is going the same way. Film Editor proper is protected by the thing the job actually is: deciding what a scene needs, which is judgment about rhythm and performance, argued out with a director over weeks."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "High, and unusually for this sector it is growing rather than flat. Streaming, advertising, corporate video and the creator economy all consume edited video at volume, and India edits a great deal of it for overseas clients as well."
+        },
+        {
+          "field": "economics",
+          "statement": "Employed figures describe a post house or in-house team. Freelance editors working directly with agencies and creators can earn considerably more, and the capital needed to start is a laptop - which is why self_employment is marked common."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-sound-designer",
+      "profession": "Sound Designer & Audio Engineer",
+      "one_liner": "Builds everything you hear that is not music - dialogue, effects, atmosphere, the mix.",
+      "job_roles": [
+        "Sound Designer",
+        "Production Sound Mixer",
+        "Boom Operator",
+        "Re-recording Mixer",
+        "Foley Artist",
+        "Dubbing Engineer",
+        "Podcast Audio Editor",
+        "Broadcast Audio Engineer",
+        "Sound Editor"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Boom Operator",
+              "Production Sound Mixer"
+            ],
+            "higher": [
+              "bodily",
+              "attention_span",
+              "spatial"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Location sound is physical work on set - holding a boom for twelve hours, hearing a problem nobody else notices, and having one chance to capture a take."
+          },
+          {
+            "roles": [
+              "Foley Artist"
+            ],
+            "higher": [
+              "bodily",
+              "musical",
+              "openness"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Foley is performance: recreating footsteps, cloth and impacts in real time to picture, with props and a studio floor. It is the most physical craft in audio post."
+          },
+          {
+            "roles": [
+              "Dubbing Engineer"
+            ],
+            "higher": [
+              "conscientiousness",
+              "verbal",
+              "attention_span"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "India dubs enormously across languages, and this is high-volume technical work to a schedule rather than creative sound design."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Physics helps with acoustics and is not required."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A sound engineering diploma, a film school sound specialisation, or an apprenticeship in a studio."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Assistant at a recording or post studio, or boom operator on set."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Sound design, mixing, or live and broadcast audio - the three diverge quickly and pay differently."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "FTII JET"
+        ],
+        "private_entrances": [],
+        "note": "Not required. Private sound engineering institutes and studio apprenticeships are the normal routes, and this is one of the fields where a private course IS the entry."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "2.4-4.8",
+        "mid_career_lpa": "5-14",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.56,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance sound design and mixing, or a small home studio serving podcasts, ads and independent films. Audio post is one of the easiest crafts to run from a spare room.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 10,
+          "skill_physical": 25,
+          "skill_digital": 30,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 40,
+        "band": "medium",
+        "reason": "Dubbing Engineer and Podcast Audio Editor are the exposed roles - automated dialogue cleanup, levelling and even synthetic dubbing across languages are already commercial products, and India's dubbing volume makes that a large exposure. Production Sound Mixer, Boom Operator and Foley Artist are protected by having to be in a physical space with a microphone, and Re-recording Mixer by the judgment of what a scene should sound like."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entrance_exams",
+          "statement": "This is one of the fields the entrance-gate rules were relaxed for. There is no public entrance into sound engineering worth naming - private institutes are the route, and their fees are the real barrier. FTII's sound specialisation is the exception and takes a handful of students a year."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-photographer",
+      "profession": "Photographer & Videographer",
+      "one_liner": "Records what is in front of the lens - weddings, products, wildlife, news, people.",
+      "job_roles": [
+        "Photographer",
+        "Wedding Photographer",
+        "Product & Advertising Photographer",
+        "Fashion Photographer",
+        "Wildlife Photographer",
+        "Videographer",
+        "Photo Editor & Retoucher",
+        "Real Estate & Architectural Photographer",
+        "Event Videographer"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Wedding Photographer",
+              "Event Videographer"
+            ],
+            "higher": [
+              "extraversion",
+              "emotional_intelligence",
+              "bodily"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Wedding work is people management as much as photography - reading a family, working fourteen-hour days and never getting a second chance at a moment. It is also where most of the money in Indian photography actually is."
+          },
+          {
+            "roles": [
+              "Wildlife Photographer"
+            ],
+            "higher": [
+              "naturalistic",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Wildlife work is fieldcraft and patience - days of waiting, alone, in conditions nobody else would choose. The subject cannot be directed."
+          },
+          {
+            "roles": [
+              "Photo Editor & Retoucher"
+            ],
+            "higher": [
+              "spatial",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Retouching is desk work in software, and it is the part of the profession most directly exposed to generative tools."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "THSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A photography diploma or apprenticeship with a working photographer. Neither is required."
+        },
+        {
+          "step": 3,
+          "stage": "equipment",
+          "requirement": "A camera and lenses - the real capital cost of this profession, and the reason cost_of_entry is not near zero."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Second shooter at a wedding studio, assistant at a commercial studio, or direct client work."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "4-12",
+        "mid_career_midpoint": 8.0,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own studio or freelance practice, which is what almost all Indian photography is. Wedding work is the volume market and a photographer running a small team through a season earns well above the employed figure.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 45,
+          "skill_digital": 20,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 30,
+        "band": "low",
+        "reason": "Split sharply. Product & Advertising Photographer and Photo Editor & Retoucher are directly exposed - synthetic product imagery is already replacing catalogue shoots, and retouching is largely automated. Wedding Photographer, Event Videographer and Wildlife Photographer are nearly untouched, because the job is to be physically present while something real and unrepeatable happens."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The employed range badly understates this profession, because there is barely an employed version of it. Almost all Indian photographers are self-employed and wedding season income is concentrated into a few months. The number to look at is self_employment.route, not mid_career_lpa."
+        },
+        {
+          "field": "job_roles",
+          "statement": "Photojournalist is deliberately NOT listed here - it sits under Journalist & Reporter, because the object of concern there is the news, and a photojournalist answers to an editor and a standard of evidence rather than to a client."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-production-designer",
+      "profession": "Production Designer & Art Director (Film)",
+      "one_liner": "Builds the world a story is filmed in - sets, locations, props, the look of the place.",
+      "job_roles": [
+        "Production Designer",
+        "Art Director (Film)",
+        "Set Decorator",
+        "Prop Master",
+        "Set Construction Supervisor",
+        "Location Manager",
+        "Costume Supervisor",
+        "Concept Artist (Film)",
+        "Graphics & Signage Artist (Film)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Location Manager"
+            ],
+            "higher": [
+              "extraversion",
+              "conscientiousness",
+              "verbal"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Finding and securing locations is negotiation, permissions and logistics with landowners, police and municipalities. It is the least visual job in a visual department."
+          },
+          {
+            "roles": [
+              "Set Construction Supervisor",
+              "Prop Master"
+            ],
+            "higher": [
+              "bodily",
+              "spatial",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "These are workshop and site trades - carpentry, scenic painting, sourcing and maintaining hundreds of physical objects to a shooting schedule."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "CSDCI",
+        "FFSC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Architecture, interior design, fine art or film school - all four are common routes. None is required."
+        },
+        {
+          "step": 3,
+          "stage": "crew",
+          "requirement": "Art department assistant, then set decorator or art director. Entry is through the department, not through a qualification."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Production designer on ads, series and films."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "FTII JET"
+        ],
+        "private_entrances": [],
+        "note": "Not required."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "2.0-4.5",
+        "mid_career_lpa": "5-14",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 1.23,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance per project, like the rest of a film crew. Many art directors also take event, exhibition and retail-display work between films, which smooths the income.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 30,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 25,
+        "band": "low",
+        "reason": "Concept Artist (Film) is the exposed role, for the same reason illustration is - visual development boards are exactly what image models produce. Everything downstream is protected by physical construction: a set has to be built, dressed, lit and walked through by actors, and Set Construction Supervisor, Prop Master and Location Manager are craft and negotiation jobs in the real world."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "profession",
+          "statement": "Promised to this sector from Sector 8 rather than kept with Interior Designer, and the substitution test is why: remove the film and nothing survives. A set exists to be photographed from specific angles for a story - it does not have to be lived in, does not have to last, and often has no fourth wall."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-content-creator",
+      "profession": "Digital Content Creator",
+      "one_liner": "Makes and publishes their own video, audio or writing to an audience they built themselves.",
+      "job_roles": [
+        "Content Creator",
+        "YouTuber",
+        "Podcaster",
+        "Video Essayist",
+        "Livestreamer",
+        "Newsletter Writer",
+        "Community Manager",
+        "Short-Form Video Creator",
+        "Creator Operations Assistant"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Community Manager",
+              "Creator Operations Assistant"
+            ],
+            "higher": [
+              "conscientiousness",
+              "agreeableness",
+              "extraversion"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "These are the paid JOBS inside the creator economy rather than creator careers - running comments, sponsorships, scheduling and edits for someone else's channel. They are salaried, unlike the rest of the profession."
+          },
+          {
+            "roles": [
+              "Podcaster",
+              "Newsletter Writer"
+            ],
+            "higher": [
+              "verbal",
+              "reasoning",
+              "long_term_memory"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Audio and text formats reward depth and consistency over performance, and build smaller, more durable audiences than short-form video does."
+          },
+          {
+            "roles": [
+              "Livestreamer",
+              "Short-Form Video Creator"
+            ],
+            "higher": [
+              "extraversion",
+              "confidence",
+              "neuroticism"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Live and short-form work is continuous public performance with immediate feedback. It is the highest-visibility and least stable end of the profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "IT-ITES",
+        "RASCI"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None."
+        },
+        {
+          "step": 2,
+          "stage": "publishing",
+          "requirement": "Publish consistently for one to two years before any income appears. This unpaid period is the real cost of entry."
+        },
+        {
+          "step": 3,
+          "stage": "audience",
+          "requirement": "Reach the platform thresholds for monetisation, and more importantly an audience a sponsor will pay to reach."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Brand deals, platform revenue, affiliate income and own products. Salaried roles exist on the operations side."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "0.6-3.0",
+        "mid_career_lpa": "2.4-12",
+        "mid_career_midpoint": 7.2,
+        "payback_years": 0.28,
+        "distribution": "power_law",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "This profession IS self-employment for almost everyone in it - brand sponsorships, platform revenue share, affiliate sales and own products. The salaried version is working on someone else's channel.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 15,
+          "skill_physical": 15,
+          "skill_digital": 40,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Both attacked and enabled by the same tools. Short-Form Video Creator faces the sharpest exposure: synthetic video and voice make the format cheap to flood, which devalues volume while raising the value of a recognisable person. Video Essayist, Podcaster and Newsletter Writer are protected by parasocial trust - the audience is there for a specific human, which is the one thing a model cannot supply. Creator Operations Assistant is exposed on the editing and scheduling side."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The most dispersed income distribution in the dataset, worse even than Entrepreneur in Sector 5. A tiny number earn very large sums, a thin middle earns a living, and the overwhelming majority earn nothing at all. A range is close to meaningless here and should be read as such."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High demand for CREATORS is not the same as high probability of succeeding as one. Brand spending on creators is genuinely growing fast; the number of people competing for it is growing faster. This is the DECISIONS.md 8.45 error in its most seductive form."
+        },
+        {
+          "field": "degree_dependency",
+          "statement": "None, and it is the only profession in this sector with no gatekeeper of any kind - no employer, no editor, no client. That is precisely why the failure rate is what it is: nothing filters entry, so everything filters outcome."
+        },
+        {
+          "field": "economics",
+          "statement": "economics.distribution is 'power_law', which is a statement that the range and the midpoint should not be read as a typical income. A tiny number earn very large sums, a thin middle earns a living, and the overwhelming majority earn nothing. There is no middle to average. The compensation filter does not fire on a power_law record, because deleting a profession on the strength of a number the record itself calls meaningless would be worse than showing it."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The economics are not describable by a range and should probably not be shown as one. Outcomes follow a power law, survivorship bias in every available source is extreme, and no Indian survey of creator earnings was found. Decide whether to suppress the numbers and state the risk instead, as was proposed for Entrepreneur in Sector 5, and whether this record should surface for school-age users at all."
+      }
+    },
+    {
+      "id": "med-voice-artist",
+      "profession": "Voice Artist & Broadcast Presenter",
+      "one_liner": "Works with the voice - dubbing, narration, radio, hosting, commentary and announcements.",
+      "job_roles": [
+        "Voice Artist",
+        "Dubbing Artist",
+        "Radio Jockey",
+        "Narrator & Audiobook Reader",
+        "Sports Commentator",
+        "Television Presenter",
+        "Podcast Host",
+        "Announcer",
+        "E-learning Voiceover Artist"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Sports Commentator"
+            ],
+            "higher": [
+              "short_term_memory",
+              "long_term_memory",
+              "verbal"
+            ],
+            "lower": [
+              "agreeableness"
+            ],
+            "why": "Commentary is live, continuous, unscripted speech over an event you cannot control, carrying statistics and history in your head. It is the hardest live-voice job there is."
+          },
+          {
+            "roles": [
+              "Dubbing Artist"
+            ],
+            "higher": [
+              "musical",
+              "attention_span",
+              "bodily"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Dubbing is matching an existing performance in another language to exact lip timing. It is technical mimicry under a stopwatch, and India does it at enormous volume."
+          },
+          {
+            "roles": [
+              "Radio Jockey",
+              "Television Presenter"
+            ],
+            "higher": [
+              "extraversion",
+              "confidence",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Presenting is personality on demand for hours, with an audience that is not in the room. It is performance rather than craft."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "Voice and diction training, a radio jockeying course, or theatre. None is required; casting is on the voice."
+        },
+        {
+          "step": 3,
+          "stage": "demo",
+          "requirement": "A demo reel of two or three minutes across styles. This is the whole audition in voice work."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Dubbing studios, radio stations, e-learning and advertising voiceover, or live presenting."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "4-12",
+        "mid_career_midpoint": 8.0,
+        "payback_years": 0.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Freelance voice work booked per session or per hour, usually through studios and casting agents. A treated home booth is now enough to compete for remote sessions.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 20,
+          "skill_digital": 45,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "The most directly threatened profession in this sector, and the reason is specific: synthetic voice is commercially deployed and improving fast. E-learning Voiceover Artist, Announcer and Narrator & Audiobook Reader are the exposed roles - all three produce clean read-aloud text, which is exactly what voice models do. Dubbing Artist sits in the middle: automated cross-language dubbing exists but lip-sync performance in Indian languages is still hard. Sports Commentator, Radio Jockey and Television Presenter are protected because the audience is there for a live person reacting in real time."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "ai_exposure",
+          "statement": "Rated medium rather than high on the composition, but a student should read the reason before taking comfort from the band. This is the one profession in the sector where a named commercial technology substitutes for the core output rather than for the surrounding work."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-pr-communications",
+      "profession": "Public Relations & Communications Professional",
+      "one_liner": "Decides what an organisation says in public, and gets it said - press, crisis, reputation.",
+      "job_roles": [
+        "Public Relations Executive",
+        "Corporate Communications Executive",
+        "Media Relations Officer",
+        "Crisis Communications Specialist",
+        "Internal Communications Specialist",
+        "Speechwriter",
+        "Public Information Officer",
+        "Investor Communications Executive"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Speechwriter"
+            ],
+            "higher": [
+              "verbal",
+              "openness",
+              "long_term_memory"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Speechwriting is solitary craft in someone else's voice - the opposite of the relationship-driven rest of the profession."
+          },
+          {
+            "roles": [
+              "Crisis Communications Specialist"
+            ],
+            "higher": [
+              "reasoning",
+              "confidence",
+              "emotional_intelligence"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Crisis work is judgment under legal and reputational risk, usually at speed and out of hours. It is the highest-consequence version of this job and pays accordingly."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MEPSC",
+        "MESC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree; mass communication, English, political science and management are all common."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "PR agency account executive, or in-house corporate communications. Agency-side is the usual training ground."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Media relations, internal communications, public affairs or crisis - they pay very differently."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "IIMC entrance",
+          "CUET PG"
+        ],
+        "private_entrances": [
+          "Symbiosis SET (Mass Communication)",
+          "MICAT (MICA Ahmedabad)"
+        ],
+        "note": "None is required. This profession hires on writing ability and relationships, not on an exam."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "7-16",
+        "mid_career_midpoint": 11.5,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent communications consultancy, typically after 8-10 years, when the value is a personal network of editors and a track record in crises.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 20,
+          "skill_physical": 0,
+          "skill_digital": 35,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 55,
+        "band": "medium",
+        "reason": "Press releases, media lists and boilerplate statements are already generated, and Public Relations Executive at the junior end is where that lands. What does not automate is the relationship and the judgment: Crisis Communications Specialist and Media Relations Officer depend on knowing which editor will take a call, what a regulator will accept, and what must not be said - clarity work with legal consequences attached."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "A genuinely arguable placement, flagged for sign-off. Under DECISIONS.md 2.05 the object of concern for Sector 5 is 'the organisation and its customers', which would put PR there. It sits in Sector 9 because the craft is media - shaping a story and placing it with people who publish - and because a student choosing between journalism and PR is choosing between two sides of the same trade."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and structurally growing, for an unattractive reason: the more public scrutiny an organisation faces, the more it spends on managing what is said about it. This profession grows when trust falls."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "med-production-crew",
+      "profession": "Production Crew & Studio Technician",
+      "one_liner": "The crew that makes a shoot physically happen - rigging, grip, power, sets, studio floor.",
+      "job_roles": [
+        "Production Assistant",
+        "Grip",
+        "Light Attendant",
+        "Studio Floor Assistant",
+        "Rigger (Film & Events)",
+        "Camera Attendant",
+        "Playback & Teleprompter Operator",
+        "Broadcast Master Control Operator",
+        "Outside Broadcast Van Technician"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Broadcast Master Control Operator",
+              "Outside Broadcast Van Technician"
+            ],
+            "higher": [
+              "logical",
+              "attention_span",
+              "conscientiousness"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Broadcast operations is technical shift work in a control room or a van - signal chains, playout and live transmission. It is salaried and rostered, unlike the day-rate crew roles, and it is the one part of this profession with a career ladder that does not require moving into another job entirely."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "MESC",
+        "ESSCI"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None for crew roles. Broadcast operations usually wants a diploma in electronics or media technology."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "On-the-job. Most crew enter through someone they know on a unit; broadcast operations enters through an ITI or polytechnic diploma."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Day-rate crew on shoots and events, or a rostered post at a broadcaster or studio."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Move into a department - camera, lighting, grip or broadcast engineering - which is where pay starts to separate."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.3,
+        "early_earnings_lpa": "1.2-3.0",
+        "mid_career_lpa": "2.4-6.0",
+        "mid_career_midpoint": 4.2,
+        "payback_years": 0.14,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Owning equipment and hiring it out with yourself attached - lights, grip gear or a camera package. This is the standard way crew income rises in Indian film and events, and it is capital, not promotion.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 5,
+          "skill_physical": 65,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Almost unexposed, and for the plainest reason in the model: this is physical work in an unstructured space. Nothing generative rigs a light, lays a dolly track or loads a van. Broadcast Master Control Operator is the one role with real exposure, because automated playout has already reduced how many people a transmission needs."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The base layer of the film and television industry, and the pay reflects that: it fails the compensation filter. Work is per-day, seasonal and almost entirely informal, with no contract and no notice. The record shows this honestly rather than dressing up glamour-adjacent work as a career."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate and concentrated geographically. Essentially all of this employment is in Mumbai, Hyderabad, Chennai, Kochi and increasingly Noida - a student outside those cities cannot enter this profession without moving."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced figure exists for Indian film crew day rates, which are the only number that matters in this profession, and none for what equipment ownership earns - the route by which crew income actually rises. Both are needed before this record can be trusted, and at 4.2 LPA employed it currently reads as a dead end."
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Animator / VFX Artist",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "MESC",
+      "why": "Already built in Sector 8. Animation is the making of designed images; film is one of several places they are used."
+    },
+    {
+      "profession": "Advertising Creative / Copywriter",
+      "goes_to": "8. Design & Creative Arts",
+      "tag_here_instead": "MESC",
+      "why": "Already built in Sector 8. The object of concern is the brand idea, not the story."
+    },
+    {
+      "profession": "Music Producer / Composer",
+      "goes_to": "10. Performing Arts & Music",
+      "tag_here_instead": "MESC",
+      "why": "Music is its own object of concern and its own skill set. Film is an employer of composers, which the cross-cutting rule says is a tag."
+    },
+    {
+      "profession": "Actor",
+      "goes_to": "10. Performing Arts & Music",
+      "tag_here_instead": "MESC",
+      "why": "Performance is the object of concern, and an actor's craft is the same on a stage, a set or a dubbing floor. Film is the employer."
+    },
+    {
+      "profession": "Journalism Teacher / Media Educator",
+      "goes_to": "12. Education & Training",
+      "tag_here_instead": "EXT-EDU",
+      "why": "Teaching-anything goes to Sector 12 whatever the subject."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "PUBLIC RELATIONS & COMMUNICATIONS PROFESSIONAL is the one placement in this sector that could reasonably go the other way. DECISIONS.md 2.05 gives Sector 5 the object of concern 'the organisation and its customers', which describes corporate communications well. It is here because the craft is media - shaping a story and placing it with people who publish - and because journalism and PR are two sides of one trade that students choose between. Sector 5 is already built, so moving it would mean amending a built sector.",
+    "DIGITAL CONTENT CREATOR is included despite failing the profession test on the same clause Entrepreneur failed in Sector 5: the skill set is not separate, it is filming plus writing plus editing plus selling. It is kept because it is now one of the most commonly stated career aspirations of Indian teenagers, and omitting it would make the taxonomy silent on the thing a large share of its users are actually considering. Flagged high.",
+    "SOUND DESIGNER & AUDIO ENGINEER is the sector's clearest case of a field where the private institute IS the route - there is no public entrance worth naming outside FTII's handful of sound seats. This is exactly the situation the gate pairing rule was relaxed for, and no gate is recorded because no private institute's fees were sourced.",
+    "PRODUCTION CREW & STUDIO TECHNICIAN is added as the base layer of film and television, on the DECISIONS.md 2.06 pattern. It fails the compensation filter, is almost entirely informal, and is geographically locked to five cities. All three facts are stated on the record rather than smoothed over."
+  ],
+  "changelog": {
+    "1.0": [
+      "Sector 9 built. 12 professions, 111 job roles.",
+      "ALL FOUR INHERITED PROMISES KEPT as job roles rather than professions, on the merge test: Technical Writer and Medical Writer inside Content Writer & Editor, Science Journalist and Legal Journalist inside Journalist & Reporter. In each case the skill set is the same craft applied to a different domain, which is the definition of a job role rather than a profession.",
+      "BOTH SECTOR 8 PROMISES KEPT as professions: Photographer & Videographer, and Production Designer & Art Director (Film).",
+      "THE MAJITHIA WAGE BOARD is the find of this sector. It is a statutory pay schedule for working journalists - entry basic of Rs 13,000 a month at the largest newspaper groups down to Rs 7,000 at the smallest, plus 20-35 percent variable pay - notified in 2011 and upheld by the Supreme Court in 2014. It is the only statutory compensation source anywhere in Sectors 8 or 9 and it anchors Journalist & Reporter's economics. Its two limits are recorded on the fact and repeated in a nuance: the figures have never been revised, and television and digital news are outside the Act entirely, which is why some employers moved journalists onto digital mastheads.",
+      "NO NEW GATES. FTII JET and the IIMC entrance were both investigated and both DEFERRED to pending_gates: neither publishes applicant or seat numbers, and FTII JET is by reputation one of the hardest entrances in the country, which makes an estimated ratio more dangerous here than almost anywhere. Every profession in this sector therefore carries entry_competition null, which is the truth - media is entered on a portfolio, a reel or published clips, not on a rank.",
+      "TWO PROFESSIONS AT HIGH AI EXPOSURE: Content Writer & Editor at 70 and nothing else above 60 except by a narrow margin. Voice Artist & Broadcast Presenter is rated medium at 55 but carries a nuance warning that the band understates it - synthetic voice is the one commercially deployed technology in this sector that substitutes for the core output rather than the work around it.",
+      "DIGITAL CONTENT CREATOR carries a required admin_review on the same grounds as Entrepreneur in Sector 5: the income distribution is a power law and a range may be the wrong format entirely."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "Eleven of twelve economics blocks are 'judgment' with no sources; only Journalist & Reporter rests on the Majithia Wage Board. Two records carry their own required admin_review. The sector-wide gap is specific and fixable: Indian film and television work on DAY RATES, and no day rate anywhere in this sector was sourced - not for crew, not for camera, not for editors, not for voice sessions. Six of these twelve professions are freelance-by-default, so the annual-salary format the schema uses describes almost nobody in them. That is a presentation problem as much as a data one, and it is the same shape as the bimodal-pay question still open on Sector 4."
+  }
+}

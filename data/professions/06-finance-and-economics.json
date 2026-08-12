@@ -97,6 +97,7 @@
         "mid_career_lpa": "15-35",
         "mid_career_midpoint": 25.0,
         "payback_years": 0.22,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -219,6 +220,7 @@
         "mid_career_lpa": "4-8",
         "mid_career_midpoint": 6.0,
         "payback_years": 0.18,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -359,6 +361,7 @@
         "mid_career_lpa": "15-32",
         "mid_career_midpoint": 23.5,
         "payback_years": 0.44,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -476,6 +479,7 @@
         "mid_career_lpa": "9-20",
         "mid_career_midpoint": 14.5,
         "payback_years": 0.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -609,6 +613,7 @@
         "mid_career_lpa": "7-15",
         "mid_career_midpoint": 11.0,
         "payback_years": 0.44,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -724,6 +729,7 @@
         "mid_career_lpa": "10-25",
         "mid_career_midpoint": 17.5,
         "payback_years": 0.38,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -833,6 +839,7 @@
         "mid_career_lpa": "18-40",
         "mid_career_midpoint": 29.0,
         "payback_years": 0.4,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -960,6 +967,7 @@
         "mid_career_lpa": "12-28",
         "mid_career_midpoint": 20.0,
         "payback_years": 0.4,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",

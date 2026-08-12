@@ -354,6 +354,226 @@
       "checked_on": "2026-08-10",
       "source": "https://vajiramandravi.com/upsc-exam/upsc-age-limit/",
       "authority": "Union Public Service Commission"
+    },
+    {
+      "key": "nift-statutory-status",
+      "statement": "The National Institute of Fashion Technology is a statutory institute governed by the NIFT Act 2006 under the Ministry of Textiles, and was empowered by that Act to award its own degrees. It runs 19 campuses.",
+      "implication": "NIFT is the nearest thing to an authority in Indian fashion education, but it is a DEGREE-GRANTING body, not a licensing one. It controls who gets a NIFT degree; it does not control who may work as a fashion designer. Every profession in Sector 8 is therefore Tier B or C.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://en.wikipedia.org/wiki/National_Institute_of_Fashion_Technology",
+      "authority": "Ministry of Textiles, Government of India"
+    },
+    {
+      "key": "design-practice-unregulated",
+      "statement": "The Architects Act 1972 reserves the TITLE 'architect' to persons registered with the Council of Architecture. No equivalent statute registers interior designers, graphic designers, product designers, animators or fashion designers, and no Indian body licenses design practice.",
+      "implication": "Sector 8 is Tier C almost throughout, for the same structural reason as Sector 1: no authority exists to verify against. An interior designer may design and execute interiors with no registration at all; only calling oneself an architect is unlawful.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://en.wikipedia.org/wiki/Council_of_Architecture",
+      "authority": "Council of Architecture"
+    },
+    {
+      "key": "handloom-census-earnings",
+      "statement": "The Fourth All India Handloom Census 2019-20 records 26,73,891 handloom weavers and 8,48,621 allied workers. 67.1 percent of weavers earn under Rs 5,000 a month, 26.2 percent earn Rs 5,001-10,000, and only 6.7 percent earn above Rs 10,000.",
+      "implication": "The only Sector 8 profession with a real, government-sourced earnings distribution - and it is a subsistence one. Roughly 0.6 lakh a year for two-thirds of 26.7 lakh people. This is what a base layer actually looks like, and it is why headcount must never be read as opportunity.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://en.themooknayak.com/livelihood/67-of-indias-handloom-weavers-mostly-dalits-adivasis-obcs-earn-under-rs-5000month",
+      "authority": "Office of the Development Commissioner for Handlooms, Ministry of Textiles"
+    },
+    {
+      "key": "handicraft-artisan-count",
+      "statement": "India's handicrafts sector employs over 6.4 million artisans, around 64 percent of them women.",
+      "implication": "A base layer of the same order as construction or apparel, and almost entirely informal. No income figure was found alongside it, so the Handicraft Artisan economics block stays judgment - the headcount is industry size, not earnings (DECISIONS.md 8.45).",
+      "tier": "C",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://www.ibef.org/exports/handicrafts-industry-india",
+      "authority": "India Brand Equity Foundation"
+    },
+    {
+      "key": "journalism-unregulated",
+      "statement": "The Press Council of India is a statutory autonomous body created by the Press Council Act 1978. It sets Norms of Journalistic Conduct for newspapers and news agencies and adjudicates complaints against them. It does not register, license or strike off individual journalists, and no Indian body does.",
+      "implication": "Journalism is Tier C on entry: there is no qualification you must hold and no register you must be on. PIB accreditation, which is often mistaken for a licence, only grants access to government premises and events - it is not permission to practise. Anyone may call themselves a journalist and publish.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "http://mib.gov.in/en/ministry/organizations/press-council-india",
+      "authority": "Ministry of Information and Broadcasting"
+    },
+    {
+      "key": "majithia-wage-board-journalists",
+      "statement": "The Majithia Wage Board award, notified 11 November 2011 under the Working Journalists and Other Newspaper Employees (Conditions of Service) Act 1955 and upheld by the Supreme Court on 7 February 2014, fixes statutory basic pay for working journalists by class of newspaper establishment. Entry grade (Group 6) basic pay runs from Rs 13,000 a month at a Class I establishment (revenue Rs 1,000 crore and above) down to Rs 7,000 at Class VIII (under Rs 1 crore), plus variable pay of 35 percent of basic at Classes I-IV and 20 percent at Classes V-VIII, plus house rent and other allowances.",
+      "implication": "The ONLY statutory pay schedule anywhere in Sectors 8 and 9, and the right anchor for journalist economics under the rule that statutory pay beats commercial aggregators. Two limits must travel with it: the figures are 2011 money and no wage board has superseded them, and the Act covers NEWSPAPER establishments only - television and digital news are outside it entirely.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://meglc.gov.in/acts/Majithia-Wage-Board-Recommendations.pdf",
+      "authority": "Ministry of Labour and Employment / Wage Board for Working Journalists"
+    },
+    {
+      "key": "sangeet-natak-akademi-role",
+      "statement": "The Sangeet Natak Akademi, established 1952, is India's national academy of music, dance and drama and an autonomous body of the Ministry of Culture. It subsidises teaching institutions, funds research and documentation, organises festivals and confers awards and fellowships. It does not register, examine or license performers.",
+      "implication": "The apex body in Indian performing arts is a PROMOTING body, not a regulating one. Nothing controls who may perform, teach or charge for music, dance or theatre in India, so every profession in Sector 10 is Tier C. An SNA award is recognition after a career, not permission to have one.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://en.wikipedia.org/wiki/Sangeet_Natak_Akademi",
+      "authority": "Ministry of Culture, Government of India"
+    },
+    {
+      "key": "akashvani-artist-grading",
+      "statement": "Akashvani (All India Radio) grades musicians by audition into four grades - B, B-High, A and Top - and music composers into Grade-II, Grade-I and Top. Gradation and upgradation are decided by a Central Audition Board. A Grade artist must hold the grade seven years before applying for Top. Audition fees are Rs 1,000 for freshers, Rs 2,000 for upgradation to B-High or A, and Rs 5,000 for A to Top.",
+      "implication": "The nearest thing to a national professional standard for Indian classical musicians, and it is worth knowing precisely what it is NOT: it grades artists for BROADCAST booking, it is voluntary, and holding no grade bars nobody from performing or teaching. It is a credential that opens one employer's door, not a licence. The guidelines document sets audition fees but publishes no per-programme payment rates, so no earnings figure can be drawn from it.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://prasarbharati.gov.in/wp-content/uploads/2025/03/Guidelines-for-Music-Audition-System-of-Akashvani-Latest-2024.pdf",
+      "authority": "Prasar Bharati / Akashvani (All India Radio)"
+    },
+    {
+      "key": "sports-governance-act-2025",
+      "statement": "The National Sports Governance Act 2025 creates a statutory framework for recognising and overseeing national sports BODIES - it establishes a National Sports Board, a National Sports Tribunal and a National Sports Election Panel, and it requires federations to seat athlete representatives. It contains no provision licensing individual coaches, officials or athletes.",
+      "implication": "India's newest and most significant sports legislation regulates ORGANISATIONS, not practitioners. Nobody needs a licence to coach, train, referee or compete for money in India, so Sector 11 is Tier C throughout despite having fresh statute behind it. This is a useful correction to the assumption that new regulation means new credentialing.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://en.wikipedia.org/wiki/National_Sports_Governance_Act,_2025",
+      "authority": "Ministry of Youth Affairs and Sports"
+    },
+    {
+      "key": "sports-quota-government-recruitment",
+      "statement": "Indian Railways and other public employers recruit sportspersons through a dedicated sports quota against Group C and erstwhile Group D posts. A 2025 Railway Recruitment Cell notification offered 49 posts across 21 sports: 5 at 7th CPC Level 4/5, 16 at Level 2/3 and 28 at Level 1. Eligibility requires a placing in Category A/B/C championships, National Championships or National Games within the current and previous two financial years.",
+      "implication": "THE MOST IMPORTANT ECONOMIC FACT IN THIS SECTOR. For most Indian athletes the income from sport is not prize money or a professional contract - it is a permanent government salary obtained BECAUSE of sport, on the 7th CPC matrix, with a pension. It also shows the shape of the risk: the achievement window is only three financial years, so an athlete who peaks and then declines can miss the door entirely.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://www.pw.live/railway/exams/rrc-ner-sports-quota-recruitment-2025",
+      "authority": "Railway Recruitment Cell / Ministry of Railways"
+    },
+    {
+      "key": "tet-mandatory-school-teaching",
+      "statement": "The National Council for Teacher Education, by notifications dated 23 August 2010 and 29 July 2011 issued under Section 23 of the Right to Education Act 2009, made passing a Teacher Eligibility Test a minimum qualification for appointment as a teacher for classes I to VIII. The Central Teacher Eligibility Test is conducted for this purpose by the Central Board of Secondary Education on behalf of the Ministry of Education; states run their own TETs.",
+      "implication": "School teaching is Tier B, not Tier A. TET is an ELIGIBILITY CONDITION for appointment, not a licence issued by a council - there is no register of teachers and nobody is struck off. It is nonetheless a hard gate: without it a person cannot be appointed to teach classes I to VIII in any school covered by the RTE Act.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://ctet.nic.in/introduction/",
+      "authority": "National Council for Teacher Education / CBSE"
+    },
+    {
+      "key": "kvs-teacher-pay-7cpc",
+      "statement": "Kendriya Vidyalaya Sangathan teacher pay under the 7th Central Pay Commission: Primary Teacher (PRT) basic Rs 35,400 rising to Rs 1,12,400, approximate gross Rs 69,120 a month; Trained Graduate Teacher (TGT) basic Rs 44,900 to Rs 1,42,400, gross about Rs 86,220; Post Graduate Teacher (PGT) basic Rs 47,600, gross about Rs 90,080. Gross figures include dearness allowance at 50 percent of basic, house rent allowance at 30 percent for X-class cities, and transport allowance.",
+      "implication": "A STATUTORY PAY ANCHOR for school teaching, and it reframes the profession: a central government teacher starts at roughly 8.3 lakh a year, which is above a fresh software developer. But it describes only the central government schools. State government pay is lower and private school pay is dramatically lower, so the profession's economics are BIMODAL in the same way MBBS cost is - one field cannot say so.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://cdnbbsr.s3waas.gov.in/s3kv01caa336cce58eb396764dd9448259/uploads/2024/09/2024092019.pdf",
+      "authority": "Kendriya Vidyalaya Sangathan / 7th Central Pay Commission"
+    },
+    {
+      "key": "rci-registration-mandatory",
+      "statement": "The Rehabilitation Council of India Act 1992 defines rehabilitation professionals to include clinical psychologists and special teachers for educating and training the handicapped. Section 13(2) provides that no person other than one holding a recognised qualification and enrolled on the Central Rehabilitation Register may hold office as a rehabilitation professional, practise as one anywhere in India, sign a certificate required by law, or give expert evidence under Section 45 of the Indian Evidence Act. Section 13(3) makes contravention punishable with imprisonment up to one year, a fine up to Rs 1,000, or both. Section 25 allows prosecution only on a written complaint by a person authorised by the Council.",
+      "implication": "GENUINE TIER A, and it governs two sectors: Special Educator here and Clinical Psychologist in Sector 13. Read from the Act itself because a secondary source stated that Section 13 makes unregistered practice a cognizable offence - the Act says Section 13(3) makes it punishable and Section 25 requires a Council complaint before prosecution, which is a materially weaker enforcement route. The maximum fine of Rs 1,000 has never been revised since 1992.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://cdnbbsr.s3waas.gov.in/s3e58aea67b01fa747687f038dfde066f6/uploads/2023/11/202311021027188848.pdf",
+      "authority": "Rehabilitation Council of India"
+    },
+    {
+      "key": "anganwadi-worker-honorarium",
+      "statement": "Anganwadi Workers are paid an honorarium rather than a salary, split between a fixed central component and a state component that varies widely. In Delhi an Anganwadi Worker receives Rs 12,720 a month - central share Rs 2,700, state share Rs 8,520 and Rs 1,500 communication and conveyance allowance - and an Anganwadi Helper Rs 5,610 plus Rs 1,200 allowance.",
+      "implication": "The largest base layer in Indian education and among the largest in this dataset. Two things must travel with the figure: it is an HONORARIUM, so there is no pay scale, no increment and no pension, and the state component means the identical job pays several times more in one state than another. Delhi is at the generous end.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://wcd.delhi.gov.in/wcd/honorarium-anganwari-workers-and-anganwari-helpers",
+      "authority": "Department of Women and Child Development, Government of NCT of Delhi"
+    },
+    {
+      "key": "counsellor-title-unregulated",
+      "statement": "In India only three mental health roles sit on a statutory register: Clinical Psychologists on the Central Rehabilitation Register maintained under the RCI Act 1992, Psychiatrists on State Medical Registers, and Psychiatric Nurses with state nursing councils. The titles 'counsellor', 'psychotherapist' and unqualified 'psychologist' have NO statutory register - the RCI Act does not list a general counsellor among its rehabilitation professionals. Membership of a professional association is not enrolment on a government register.",
+      "implication": "The most consequential consumer-safety fact in this sector, and it produces two professions rather than one. Clinical Psychologist is Tier A and criminally enforced; Counsellor & Psychotherapist is Tier C and anyone may practise it. A family paying for therapy in India cannot tell the difference from the job title, and the taxonomy should not pretend otherwise.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://www.therapyroute.com/article/mental-health-licensing-regulation-in-india-2025-guide-by-therapyroute",
+      "authority": "Rehabilitation Council of India / Mental Healthcare Act 2017"
+    },
+    {
+      "key": "brsr-mandatory-sustainability-reporting",
+      "statement": "SEBI mandated Business Responsibility and Sustainability Reporting from financial year 2022-23. The top 1,000 listed companies by market capitalisation must file a BRSR covering 98 mandatory essential indicators. BRSR Core, a subset of 49 key performance indicators on emissions, energy, water and diversity, requires third-party assurance - beginning with the largest 150 companies and extending to all top 1,000 by FY 2026-27.",
+      "implication": "The regulatory engine behind the Sustainability & ESG profession in India. It is what converted corporate sustainability from a voluntary reputational activity into a compliance function with an audit trail and a deadline - which is why this is one of the few genuinely growing white-collar professions in the dataset. It also explains where the jobs are: listed companies and the assurance firms serving them.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://ecovadis.com/regulations/india-business-responsibility-and-sustainability-reporting-brsr/",
+      "authority": "Securities and Exchange Board of India"
+    },
+    {
+      "key": "sanitation-workers-namaste-pemsr",
+      "statement": "The Prohibition of Employment as Manual Scavengers and their Rehabilitation Act 2013 prohibits employing any person to manually clean, carry or handle human excreta. The NAMASTE scheme, run jointly by the Ministry of Social Justice and Empowerment and the Ministry of Housing and Urban Affairs with Rs 349.70 crore allocated, had profiled about 38,000 sewer and septic tank workers across 3,326 urban local bodies as of September 2024; the Ministry estimates around 100,000 such workers in urban India.",
+      "implication": "A base layer that the law formally abolished and that demonstrably still exists. The profession must be listed - roughly a lakh people do this work in cities alone - and it must be listed with the hazard and the caste concentration stated, not as a neutral occupation. NAMASTE's own design, which funds mechanisation and routes workers toward sanitation entrepreneurship, is the honest description of where this work should go.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://www.drishtiias.com/daily-updates/daily-news-analysis/namaste-scheme-2",
+      "authority": "Ministry of Social Justice and Empowerment / Ministry of Housing and Urban Affairs"
+    },
+    {
+      "key": "agricultural-household-income-nss77",
+      "statement": "The NSS 77th round Situation Assessment Survey puts the average monthly income of an agricultural household in 2018-19 at Rs 10,218, up from Rs 6,426 in 2012-13. The composition is: wages and salaries Rs 4,063 (39.8 percent), cultivation Rs 3,798 (37.2 percent), animal farming Rs 1,582 (15.5 percent), non-farm business Rs 641 (6.3 percent) and leased-out land Rs 134 (1.3 percent).",
+      "implication": "THE MOST IMPORTANT ECONOMIC FACT IN THIS SECTOR and possibly in the dataset. An agricultural HOUSEHOLD - not a person - earns about 1.23 lakh a year, and since 2019 MORE OF IT HAS COME FROM WAGES THAN FROM GROWING ANYTHING. Farming is, for most Indian farming families, no longer the main source of a farming family's income. Any career record for Farmer that does not say this is misleading a family about the occupation roughly 45 percent of Indian workers are in.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://ras.org.in/index.php?Article=situation_assessment_survey_of_agricultural_households_2019_a_statistical_note",
+      "authority": "National Statistical Office, NSS 77th round / MoSPI"
+    },
+    {
+      "key": "icar-aieea-fifteen-percent",
+      "statement": "The ICAR All India Entrance Examination, now conducted as CUET (ICAR-UG), fills only 15 percent of bachelor's degree seats at the roughly 74 participating agricultural universities. The remaining 85 percent are filled through state quotas and state admission processes.",
+      "implication": "A national entrance that controls a small minority of the seats behind it. Presenting ICAR AIEEA as THE gate into agricultural education would overstate how closed the sector is by a factor of nearly seven - the ordinary route into a B.Sc Agriculture is a state counselling process, not this examination. It is the clearest case in the registry of a famous national exam that most entrants never sit.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://icar.org.in/sites/default/files/Circulars/Information%20Bulletin_CUET%20(ICAR-UG)_2025.pdf",
+      "authority": "Indian Council of Agricultural Research"
+    },
+    {
+      "key": "dns-second-mate-coc",
+      "statement": "A merchant navy deck officer route runs: class 12 with Physics, Chemistry and Mathematics at 60 percent aggregate and 50 percent in English, 6/6 eyesight without aids and no colour blindness; a one-year DG Shipping approved Diploma in Nautical Science; 18 months of Structured Shipboard Training as a Deck Cadet; four months of post-sea shore training; then the Second Mates examination conducted by the Directorate General of Shipping. Passing it, with the mandatory STCW courses, awards the Second Mates (Foreign Going) Certificate of Competency and qualifies a cadet to serve as third officer.",
+      "implication": "Tier A. The Certificate of Competency is issued by a statutory authority and serving as a deck officer without one is unlawful, exactly as with the MEO certificates already recorded for Marine Engineer in Sector 2. Two constraints are unusual and decisive: the MEDICAL standard is absolute - uncorrected 6/6 vision and no colour blindness excludes a large number of otherwise eligible students - and the 18 months of shipboard training requires a SPONSORSHIP from a shipping company, which is the real bottleneck rather than the course admission.",
+      "tier": "A",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://tmi.tolani.edu/academics/dns-imu-programme/",
+      "authority": "Directorate General of Shipping / Indian Maritime University"
+    },
+    {
+      "key": "amasr-excavation-regulated",
+      "statement": "The Ancient Monuments and Archaeological Sites and Remains Act 1958 provides for the preservation of ancient and historical monuments and archaeological sites of national importance, for the REGULATION OF ARCHAEOLOGICAL EXCAVATIONS, and for the protection of sculptures, carvings and similar objects. The Archaeological Survey of India and the National Monuments Authority function under it.",
+      "implication": "Archaeology is the only profession in this sector where an activity is legally controlled - excavation is regulated under the AMASR Act, not open to anyone who wants to dig. But this is a PERMIT regime over an activity, not a register of practitioners: no council licenses archaeologists, nobody is struck off, and survey, documentation, museum and teaching work needs no authorisation at all. The record is therefore Tier B, with licensing_body null. THE ACT'S SECTION NUMBERS AND PENALTY PROVISIONS ARE DELIBERATELY NOT STATED HERE: the India Code and ASI primary texts returned 403 and were not opened, and stating unopened statutory detail is the error recorded in DECISIONS.md 10 for the NCAHP council names.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://en.wikipedia.org/wiki/AMASR_Act",
+      "authority": "Archaeological Survey of India / Ministry of Culture"
+    },
+    {
+      "key": "ycb-yoga-certification",
+      "statement": "The Yoga Certification Board was established in March 2018 under the Ministry of AYUSH to standardise yoga education and certify yoga professionals. Its professional levels run Yoga Volunteer, Yoga Protocol Instructor, Yoga Wellness Instructor, Yoga Teacher and Evaluator, Yoga Master, Assistant Yoga Therapist, Yoga Therapist and Therapeutic Yoga Consultant. Professional-level certificates are valid for five years and are renewable.",
+      "implication": "The only structured national credential anywhere in this sector, and it is worth being precise about what it is NOT. YCB certification is a voluntary standardisation scheme, not a licence: no statute bars an uncertified person from teaching yoga, and nobody is struck off. It matters commercially - government posts, schools, hospitals and reputable studios ask for it, and it is what separates a yoga TEACHER from a yoga THERAPIST working alongside clinicians. Tier B, licensing_body null.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-11",
+      "source": "https://www.ayushmanyog.com/post/what-is-ycb-certification",
+      "authority": "Yoga Certification Board, Ministry of AYUSH"
     }
   ],
   "pending_verification": [

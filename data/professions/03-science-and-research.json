@@ -100,6 +100,7 @@
         "mid_career_lpa": "14-24",
         "mid_career_midpoint": 19.0,
         "payback_years": 0.27,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -243,6 +244,7 @@
         "mid_career_lpa": "12-22",
         "mid_career_midpoint": 17.0,
         "payback_years": 0.32,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -383,6 +385,7 @@
         "mid_career_lpa": "11-20",
         "mid_career_midpoint": 15.5,
         "payback_years": 0.35,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -517,6 +520,7 @@
         "mid_career_lpa": "8-15",
         "mid_career_midpoint": 11.5,
         "payback_years": 0.42,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -636,6 +640,7 @@
         "mid_career_lpa": "10-18",
         "mid_career_midpoint": 14.0,
         "payback_years": 0.53,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -753,6 +758,7 @@
         "mid_career_lpa": "12-22",
         "mid_career_midpoint": 17.0,
         "payback_years": 0.44,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -892,6 +898,7 @@
         "mid_career_lpa": "12-22",
         "mid_career_midpoint": 17.0,
         "payback_years": 0.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1023,6 +1030,7 @@
         "mid_career_lpa": "11-19",
         "mid_career_midpoint": 15.0,
         "payback_years": 0.35,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1165,6 +1173,7 @@
         "mid_career_lpa": "14-25",
         "mid_career_midpoint": 19.5,
         "payback_years": 0.27,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1317,6 +1326,7 @@
         "mid_career_lpa": "13-24",
         "mid_career_midpoint": 18.5,
         "payback_years": 0.4,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1455,6 +1465,7 @@
         "mid_career_lpa": "12-25",
         "mid_career_midpoint": 18.5,
         "payback_years": 0.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1577,6 +1588,7 @@
         "mid_career_lpa": "9-16",
         "mid_career_midpoint": 12.5,
         "payback_years": 0.43,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1724,6 +1736,7 @@
         "mid_career_lpa": "8-14",
         "mid_career_midpoint": 11.0,
         "payback_years": 0.5,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1868,6 +1881,7 @@
         "mid_career_lpa": "8-16",
         "mid_career_midpoint": 12.0,
         "payback_years": 0.5,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -1993,6 +2007,7 @@
         "mid_career_lpa": "12-22",
         "mid_career_midpoint": 17.0,
         "payback_years": 0.44,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -2125,6 +2140,7 @@
         "mid_career_lpa": "4-7",
         "mid_career_midpoint": 5.5,
         "payback_years": 0.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -2249,6 +2265,7 @@
         "mid_career_lpa": "5-9",
         "mid_career_midpoint": 7.0,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12. For PhD-track research the runway to that point is roughly nine years.",
         "verification": {
           "status": "verified",
@@ -2373,6 +2390,7 @@
         "mid_career_lpa": "18-35",
         "mid_career_midpoint": 26.5,
         "payback_years": 0.43,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12.",
         "verification": {
           "status": "verified",
@@ -2507,6 +2525,7 @@
         "mid_career_lpa": "12-24",
         "mid_career_midpoint": 18.0,
         "payback_years": 0.33,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after qualifying, not 5-8 years after class 12.",
         "verification": {
           "status": "verified",

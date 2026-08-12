@@ -1,7 +1,7 @@
 {
   "professional_sector": "Law, Governance & Public Service",
   "professional_sector_id": 7,
-  "version": "1.0",
+  "version": "1.1",
   "profession_count": 10,
   "sector_verification_note": "THE MOST STRUCTURALLY PROTECTED SECTOR IN THE TAXONOMY. Six of eight professions carry legal_accountability true — a person signs, and answers for it personally. Three name statutory licensing bodies (Bar Council of India, ICSI) and three more are entered only through state examinations. The single exception, Paralegal, is both the only unlicensed record and by far the most AI-exposed one, which is the sector's own argument about what licensing protects.",
   "professions": [
@@ -103,6 +103,7 @@
         "mid_career_lpa": "12-35",
         "mid_career_midpoint": 23.5,
         "payback_years": 0.92,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years post-enrolment, EMPLOYED only. The early band is unusually wide because litigation juniors earn very little for the first years while corporate firm entrants start high.",
         "verification": {
           "status": "judgment",
@@ -229,6 +230,7 @@
         "mid_career_lpa": "10-22",
         "mid_career_midpoint": 16.0,
         "payback_years": 0.25,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -377,6 +379,7 @@
         "mid_career_lpa": "15-25",
         "mid_career_midpoint": 20.0,
         "payback_years": 0.2,
+        "distribution": "range",
         "basis": "Pay follows central government pay matrices. CTC comparison understates the package — housing, medical, pension and allowances are not in the figure.",
         "verification": {
           "status": "judgment",
@@ -510,6 +513,7 @@
         "mid_career_lpa": "9-18",
         "mid_career_midpoint": 13.5,
         "payback_years": 0.17,
+        "distribution": "range",
         "basis": "Government pay matrices, EMPLOYED only. Housing, medical and pension are excluded from the figure and are a material part of the package.",
         "verification": {
           "status": "judgment",
@@ -646,6 +650,7 @@
         "mid_career_lpa": "15-25",
         "mid_career_midpoint": 20.0,
         "payback_years": 0.1,
+        "distribution": "range",
         "basis": "Defence pay matrix with Military Service Pay, EMPLOYED only. Housing, medical, canteen, pension and post-retirement benefits are excluded and are a large part of the package.",
         "verification": {
           "status": "judgment",
@@ -727,7 +732,7 @@
         "EXT-LEGAL",
         "EXT-GOVT"
       ],
-      "degree_dependency": "professional",
+      "degree_dependency": "undergrad",
       "mid_stream_entry": "after_any_degree",
       "class12_prerequisite": "any",
       "path_to_entry": [
@@ -767,7 +772,7 @@
       },
       "entry_competition": null,
       "entry_window": null,
-      "licensing_body": "Bar Council of India",
+      "licensing_body": null,
       "years_to_qualify": 5,
       "economics": {
         "cost_of_entry_lakh": 6.0,
@@ -775,6 +780,7 @@
         "mid_career_lpa": "14-28",
         "mid_career_midpoint": 21.0,
         "payback_years": 0.67,
+        "distribution": "range",
         "basis": "Judicial pay follows its own commission-set scales, EMPLOYED only. Housing, staff and pension are excluded from the figure.",
         "verification": {
           "status": "judgment",
@@ -809,15 +815,27 @@
         "reason": "The highest combined foundational-knowledge and clarity share in the taxonomy. Judging is applying law to disputed facts and being personally accountable for the outcome — the most structurally protected work in the dataset."
       },
       "verification": {
-        "tier": "A",
+        "tier": "B",
         "status": "verified",
         "source": "https://www.pw.live/judiciary/exams/aibe-exam-eligibility",
-        "checked_on": "2026-08-10"
+        "checked_on": "2026-08-12"
       },
       "nuances": [
         {
           "field": "profession",
           "statement": "A separate profession from Lawyer, not a senior version of one. Entry is by a distinct state examination taken after the LLB, and many judicial officers are appointed as fresh law graduates without practising as advocates at all."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null, and it was WRONG before - this record named the Bar Council of India. A judge does not practise under a BCI licence. An advocate who takes full-time service is moved to the non-practising list and surrenders their enrolment certificate, and the BCI has no power to strike off a judge. BCI enrolment is a PREREQUISITE for eligibility, which is a path_to_entry step, not a licence to practise. Control over the subordinate judiciary vests in the High Court under Article 235 of the Constitution, which is appointment and discipline rather than licensing."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body, on the same statutory-office footing as Civil Services Officer, Police Officer and Armed Forces Officer in this sector. A judge is personally answerable for judicial orders by virtue of holding office, and the orders are appealable. There is no unlicensed version of this work to police: you cannot practise as a judge without being appointed one, which is why the licensing frame does not apply here at all."
+        },
+        {
+          "field": "degree_dependency",
+          "statement": "'undergrad' understates the qualification slightly and is the accurate value for how this profession is ENTERED. An LLB is a professional degree, but this record is not a licensed practice - it is an office reached by appointment after a state examination, exactly like the three other uniformed and administrative services in this sector, all of which are 'undergrad'. The LLB requirement is carried in path_to_entry where it belongs."
         }
       ],
       "admin_review": {
@@ -895,6 +913,7 @@
         "mid_career_lpa": "12-25",
         "mid_career_midpoint": 18.5,
         "payback_years": 0.8,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1010,6 +1029,7 @@
         "mid_career_lpa": "5-11",
         "mid_career_midpoint": 8.0,
         "payback_years": 0.27,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1131,6 +1151,7 @@
         "mid_career_lpa": "6-12",
         "mid_career_midpoint": 9.0,
         "payback_years": 0.12,
+        "distribution": "range",
         "basis": "State pay matrices, EMPLOYED only. Housing, medical and pension sit outside the figure and are a material part of the package.",
         "verification": {
           "status": "judgment",
@@ -1252,6 +1273,7 @@
         "mid_career_lpa": "12-28",
         "mid_career_midpoint": 20.0,
         "payback_years": 0.62,
+        "distribution": "range",
         "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Business ownership is excluded — that income is entrepreneurship, and self_employment carries it separately.",
         "verification": {
           "status": "judgment",
@@ -1359,6 +1381,11 @@
       "Nuances added to Civil Services Officer, Police Officer and Armed Forces Officer explaining that legal_accountability rests on STATUTORY OFFICE rather than a licence. The audit rule was relaxed to accept that, but only with the justification written down.",
       "ITERATION 2. Patent Agent VERIFIED against Section 126 of the Patents Act 1970 after export_csv.py refused a Tier A record carrying 'judgment' status. The science-degree requirement and the Register of Patent Agents are both statutory, and the licensing body name was corrected to the Controller General maintaining that register. This is the check that would have caught the invented NCAHP council names, working as intended.",
       "Police Officer and Armed Forces Officer moved Tier C to TIER B. Entry to both is controlled by examination — UPSC, SSC CPO, AFCAT and state boards — which is the Tier B definition. Neither names a licensing body because none licenses them after entry."
+    ],
+    "1.1": [
+      "CORRECTION - JUDICIAL SERVICES OFFICER WAS NOT TIER A AND THE BAR COUNCIL OF INDIA IS NOT ITS LICENSING BODY. A judge does not practise under a BCI licence: an advocate who takes full-time service is moved to the non-practising list and surrenders their enrolment certificate, and the BCI cannot strike off a judge. BCI enrolment is a prerequisite for ELIGIBILITY - a path_to_entry step - not a licence.",
+      "Now licensing_body null, Tier B, degree_dependency 'undergrad', on the same statutory-office footing as Civil Services Officer, Police Officer and Armed Forces Officer in this same sector - all three of which were already modelled correctly. This record was the outlier and nothing had noticed.",
+      "The deeper point, recorded in DECISIONS.md 10: THERE IS NO UNLICENSED VERSION OF BEING A JUDGE. You can practise medicine or law without a licence, illegally; you cannot practise as a judge without being appointed one. The licensing frame simply does not apply, and treating office as licence had produced a false Tier A."
     ]
   },
   "sector_admin_review": {

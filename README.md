@@ -92,16 +92,26 @@ for Sectors 8 and 10.
 
 | # | Professional sector | Professions | Verified | Version |
 |---|---|---|---|---|
-| 1 | Software & Computing | 14 | 1 | v16 |
-| 2 | Engineering & Making | 32 | 31 | v19 |
-| 3 | Science & Research | 19 | 7 | v7 |
-| 4 | Healthcare & Medicine | 18 | 17 | v1.7 |
-| 5 | Business, Management & Entrepreneurship | 12 | 0 | v1.0 |
+| 1 | Software & Computing | 14 | 1 | v16.1 |
+| 2 | Engineering & Making | 33 | 32 | v20.1 |
+| 3 | Science & Research | 19 | 7 | v7.1 |
+| 4 | Healthcare & Medicine | 20 | 17 | v1.9 |
+| 5 | Business, Management & Entrepreneurship | 13 | 0 | v1.2 |
 | 6 | Finance & Economics | 8 | 2 | v1.0 |
-| 7 | Law, Governance & Public Service | 10 | 7 | v1.0 |
-| 8–18 | — | — | — | pending |
+| 7 | Law, Governance & Public Service | 10 | 7 | v1.1 |
+| 8 | Design & Creative Arts | 16 | 0 | v1.0 |
+| 9 | Media, Film & Storytelling | 12 | 0 | v1.0 |
+| 10 | Performing Arts & Music | 9 | 0 | v1.1 |
+| 11 | Sports & Fitness | 8 | 0 | v1.1 |
+| 12 | Education & Training | 10 | 3 | v1.1 |
+| 13 | Social Impact & Psychology | 8 | 1 | v1.1 |
+| 14 | Environment & Sustainability | 8 | 0 | v1.2 |
+| 15 | Agriculture & Food Systems | 8 | 0 | v1.2 |
+| 16 | Hospitality, Travel & Culinary | 8 | 1 | v1.1 |
+| 17 | Humanities, Culture & Belief | 8 | 1 | v1.0 |
+| 18 | Personal Care & Wellness | 6 | 1 | v1.2 |
 
-**113 professions · 712 job roles · 151 nuances · 34 verified facts · 14 open admin reviews.**
+**218 professions · 1639 job roles · 415 nuances · 56 verified facts · 51 profession-level and 15 sector-level admin reviews open.**
 
 The verified/judgment ratio is a property of the sector, not of the effort spent. **Sector 1 is
 1 of 14, and Sector 5 is 0 of 12, because nothing in computing or in Indian general management is

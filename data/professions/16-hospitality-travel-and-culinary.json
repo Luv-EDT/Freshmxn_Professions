@@ -1,0 +1,1376 @@
+{
+  "professional_sector": "16. Hospitality, Travel & Culinary",
+  "professional_sector_id": 16,
+  "version": "1.1",
+  "profession_count": 8,
+  "sector_verification_note": "MOSTLY TIER C WITH ONE HARD TIER A. Merchant Navy Deck Officer sits under the Directorate General of Shipping exactly as Marine Engineer does in Sector 2 - a Certificate of Competency issued after a statutory examination, without which serving is unlawful. Everything else in this sector is unlicensed: nothing registers a chef, a housekeeper, a hotel manager or an event planner, and the only other credential is a Ministry of Tourism guide licence tied to specific monuments. The sector's structural feature is that it is unusually OPEN - NCHMCT JEE offers over 12,000 seats, and three of eight professions are entered with no qualification at all - and unusually dependent on an OVERSEAS pathway, which is where much of the real income in cooking, service and seafaring actually is and which no field here captures.",
+  "professions": [
+    {
+      "id": "hos-chef",
+      "profession": "Chef & Professional Cook",
+      "one_liner": "Cooks for a living at scale - hotels, restaurants, canteens, cloud kitchens, ships.",
+      "job_roles": [
+        "Commis Chef",
+        "Chef de Partie",
+        "Cook",
+        "Baker",
+        "Pastry Chef",
+        "Butcher",
+        "Cloud Kitchen Cook",
+        "Institutional & Canteen Cook",
+        "Private & Domestic Cook",
+        "Ship's Cook"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Pastry Chef",
+              "Baker"
+            ],
+            "higher": [
+              "attention_span",
+              "conscientiousness",
+              "logical"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Baking is chemistry with no room for adjustment - weights, temperatures and timing fixed in advance. It runs on a different shift from the kitchen and suits a different temperament from service cooking."
+          },
+          {
+            "roles": [
+              "Institutional & Canteen Cook",
+              "Private & Domestic Cook"
+            ],
+            "higher": [
+              "conscientiousness",
+              "agreeableness"
+            ],
+            "lower": [
+              "openness",
+              "confidence"
+            ],
+            "why": "Cooking for a hostel, a hospital, a factory canteen or a household is volume and consistency to a budget, with no menu creativity and no recognition. It is the largest employment in this profession by a wide margin and the least visible."
+          },
+          {
+            "roles": [
+              "Cloud Kitchen Cook"
+            ],
+            "higher": [
+              "bodily",
+              "short_term_memory",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Delivery-only kitchens are high-throughput assembly against app timers, with no dining room and no customer contact. The work is speed and packaging discipline rather than craft."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "THSC",
+        "FICSI",
+        "DWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream, or none. Craft courses take class 10 pass; the B.Sc route needs class 12."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "An IHM craft course or diploma, a B.Sc Hospitality and Hotel Administration, or a kitchen apprenticeship with no certificate at all - all three are normal."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Commis in a hotel or restaurant kitchen. Entry pay is low and hours are long; this is the profession's known filter."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "A section - garde manger, butchery, bakery, Indian, continental. Specialising is what moves a cook off the entry wage."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NCHMCT JEE",
+          "State hotel management institute admissions"
+        ],
+        "private_entrances": [],
+        "note": "Neither is required to cook professionally. NCHMCT JEE is the route into the degree, and a large share of working Indian chefs never sat it."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 2.0,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "3.6-12.0",
+        "mid_career_midpoint": 7.8,
+        "payback_years": 0.67,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own restaurant, cloud kitchen, catering business or tiffin service. Catering and cloud kitchens need far less capital than a restaurant and are the realistic first step; this is also where almost all the money in the profession is.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 60,
+          "skill_digital": 5,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Almost unexposed. Cooking is heat, hands, timing and taste in a physical kitchen, and no part of it is a text or image problem. Recipe generation touches menu development, which is a small slice of one senior role. The real technological pressure on this profession is different and worth naming: cloud kitchens and central production units are deskilling the line, turning cooks into assemblers of components made elsewhere."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "The wide mid-career range is a real spread, not uncertainty. A hotel kitchen in a metro, a cruise line contract and a small-town restaurant pay very differently for the same skill, and the overseas route - cruise ships, the Gulf, hotel chains abroad - is why pathway is 'any' and is how many Indian chefs actually raise their income."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and among the most geographically distributed in this dataset. Every town has kitchens. That makes it one of very few skilled livelihoods genuinely available to a student who does not move to a city."
+        },
+        {
+          "field": "entry_competition",
+          "statement": "Null, and it was wrong on the first pass. NCHMCT JEE was named as primary because it is the only quantified door in this sector - but this record's own entrance_exams note says most working Indian chefs never sat it, and both statements could not be true. Cooking is entered through a kitchen. The gate stays on Hotel & Restaurant Manager, where the IHM degree really is the main route."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hos-fb-service",
+      "profession": "Food & Beverage Service Professional",
+      "one_liner": "Serves guests food and drink and runs the room - restaurants, bars, banquets, trains, air.",
+      "job_roles": [
+        "Steward",
+        "Waiter",
+        "Restaurant Captain",
+        "Bartender",
+        "Barista",
+        "Sommelier",
+        "Banquet Service Staff",
+        "Room Service Attendant",
+        "Cafe & QSR Service Crew"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Bartender",
+              "Sommelier"
+            ],
+            "higher": [
+              "long_term_memory",
+              "extraversion",
+              "openness"
+            ],
+            "lower": [
+              "conscientiousness"
+            ],
+            "why": "Beverage specialisms carry a knowledge base - spirits, cocktails, wine regions and food pairing - that the rest of service does not. Both are also the roles where a personal following genuinely raises earnings."
+          },
+          {
+            "roles": [
+              "Banquet Service Staff",
+              "Cafe & QSR Service Crew"
+            ],
+            "higher": [
+              "bodily",
+              "conscientiousness"
+            ],
+            "lower": [
+              "verbal",
+              "openness"
+            ],
+            "why": "Banquet and quick-service work is high-volume, standardised and frequently casual or per-shift. It is how most people enter this profession and it teaches little that transfers upward."
+          },
+          {
+            "roles": [
+              "Restaurant Captain"
+            ],
+            "higher": [
+              "extraversion",
+              "emotional_intelligence",
+              "confidence"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Running a section means reading tables, handling complaints and directing staff during a service that cannot be paused. It is the first role with real judgment in it."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "THSC",
+        "RASCI",
+        "DWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None for most service roles; class 12 for hotel management programmes."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "An IHM or private hospitality course, a THSC-aligned certification, or straight on-the-job training. Most enter with the last."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Restaurant, hotel, cafe chain, catering company, railway or airline catering, or a cruise line."
+        },
+        {
+          "step": 4,
+          "stage": "specialisation",
+          "requirement": "Bar, wine, or supervision. Beverage specialisation is the clearest way to raise earnings inside service."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NCHMCT JEE",
+          "State hotel management institute admissions"
+        ],
+        "private_entrances": [],
+        "note": "Not required. Service is one of the most open occupations in India and hires largely on presentation and attitude."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 1.0,
+        "early_earnings_lpa": "1.5-3.6",
+        "mid_career_lpa": "2.4-8.0",
+        "mid_career_midpoint": 5.2,
+        "payback_years": 0.39,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "A cafe, bar or small restaurant of your own, or a catering and bartending service for events. Bartending in particular is a genuine freelance market at weddings and parties.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 15,
+          "skill_physical": 60,
+          "skill_digital": 5,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Low AI exposure and high exposure to something else. Ordering has already moved to apps and QR menus, and Cafe & QSR Service Crew and Room Service Attendant are the roles that shrinks - but that is self-service automation, not AI. What holds is hospitality itself: reading a table, fixing a complaint, and making a guest feel looked after. Sommelier and Bartender are protected further by knowledge and personality being the product."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Fails nothing on the filter but sits low, and the record should be read with tips and service charge in mind - neither is captured here and both are material in hotels and premium restaurants. The overseas route, especially cruise lines and the Gulf, is again where earnings change."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and permanently entry-friendly. This profession, along with retail in Sector 5, is one of the main places an Indian school-leaver with no qualification actually finds formal-sector work."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced wage figure for Indian hospitality service staff, and the record cannot show tips, service charge or the overseas premium - which between them are much of the real income. Cruise line and Gulf contract pay in particular is the difference between this being a low-wage job and a genuine earner, and no figure for it was found."
+      }
+    },
+    {
+      "id": "hos-housekeeping",
+      "profession": "Housekeeping & Accommodation Services Professional",
+      "one_liner": "Keeps rooms, buildings and linen clean and ready - hotels, hospitals, offices, homestays.",
+      "job_roles": [
+        "Housekeeping Attendant",
+        "Room Attendant",
+        "Housekeeping Supervisor",
+        "Laundry Supervisor",
+        "Linen & Uniform Room Attendant",
+        "Public Area Attendant",
+        "Facility Housekeeping Executive",
+        "Hospital Housekeeping Attendant",
+        "Homestay & Guesthouse Caretaker"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Hospital Housekeeping Attendant"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span"
+            ],
+            "lower": [
+              "extraversion",
+              "openness"
+            ],
+            "why": "Hospital housekeeping is infection control - biomedical waste segregation, disinfection protocols and isolation procedure. It carries clinical risk that hotel housekeeping does not and it is trained and audited differently."
+          },
+          {
+            "roles": [
+              "Housekeeping Supervisor",
+              "Facility Housekeeping Executive"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness",
+              "logical"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Supervision is rosters, inventory, contract staff and inspection standards. It is the step off the floor and it is the only reliable progression in this profession."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "THSC",
+        "DWSSC",
+        "HSSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "None. Class 8 or 10 is typical."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "On-the-job, or a short THSC-aligned housekeeping certification. Hospital housekeeping requires infection-control training."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Hotel, hospital, facility management contractor, corporate office or serviced apartment. Most of it is contract employment through an agency rather than direct."
+        },
+        {
+          "step": 4,
+          "stage": "progression",
+          "requirement": "Supervisor, then executive. Or run a homestay or a small housekeeping contract of your own."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.2,
+        "early_earnings_lpa": "1.2-2.7",
+        "mid_career_lpa": "1.8-4.5",
+        "mid_career_midpoint": 3.15,
+        "payback_years": 0.1,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": false,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "A small housekeeping or facility services contract - a team, supplies and a client. It is a low-capital services business and it is how supervisors in this trade raise their income.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 10,
+          "knowledge_retrievable": 10,
+          "skill_physical": 75,
+          "skill_digital": 0,
+          "clarity": 5
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "Effectively unexposed to AI, and this is another case where naming AI is the wrong risk. Cleaning a room is physical work in an unstructured space. The technology that matters is mechanised cleaning equipment, which raises output per worker rather than replacing the worker, and scheduling software, which has already changed how contract housekeeping is managed."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "economics",
+          "statement": "Fails the compensation filter, and it is one of the largest formal-sector entry occupations available to Indian women without qualifications. Almost all of it is CONTRACT employment through a facility management agency rather than direct employment by the hotel or hospital, which determines pay, benefits and job security more than the employer's name does."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High and growing with organised retail, hospitals, offices and hotels. It is also one of the few occupations in this dataset where formalisation is genuinely increasing - facility management contracting has moved a large amount of this work from informal to at least nominally formal employment."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "No sourced wage figure for Indian housekeeping staff, and the more important missing distinction is between direct hotel employment and agency contract employment, which is where pay, provident fund and security actually differ. No figure either for what a small housekeeping contract earns, which is the named route up."
+      }
+    },
+    {
+      "id": "hos-hotel-manager",
+      "profession": "Hotel & Restaurant Manager",
+      "one_liner": "Runs the place - rooms, covers, staff, cost, and what happens when a guest is unhappy.",
+      "job_roles": [
+        "Front Office Executive",
+        "Guest Relations Executive",
+        "Duty Manager",
+        "Restaurant Manager",
+        "Food & Beverage Manager",
+        "Revenue & Reservations Executive",
+        "Banquet & Events Manager",
+        "Resort Operations Executive",
+        "Hostel & Homestay Manager"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Revenue & Reservations Executive"
+            ],
+            "higher": [
+              "logical",
+              "reasoning",
+              "attention_span"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Revenue management is pricing and inventory analytics - deciding what a room should cost tonight across a dozen booking channels. It is a quantitative desk job inside a hospitality profession and it transfers to airline and travel pricing."
+          },
+          {
+            "roles": [
+              "Front Office Executive",
+              "Guest Relations Executive"
+            ],
+            "higher": [
+              "extraversion",
+              "emotional_intelligence",
+              "confidence"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "The desk is the hotel's face - check-in, complaints, and the person a guest asks for when something is wrong. It runs on shifts including nights and it is the standard entry role for a hotel management graduate."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "THSC",
+        "MEPSC",
+        "RASCI"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "NCHMCT JEE for the Institutes of Hotel Management, or a state or private institute admission."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Sc Hospitality and Hotel Administration (3 years), or any degree plus hotel experience."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Management trainee or front office executive, then a section. Progression is by rotating through departments."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "NCHMCT JEE",
+          "State hotel management institute admissions"
+        ],
+        "private_entrances": [],
+        "note": "NCHMCT JEE is the main national route and it is not restrictive - over 12,000 seats across about 80 institutes."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-14.0",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Own restaurant, homestay, boutique hotel or cloud kitchen brand. Very common in this profession, and the operational knowledge transfers directly - which is why hospitality graduates start businesses at a higher rate than most.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 20,
+          "skill_physical": 20,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Moderately exposed on the desk and protected on the floor. Revenue & Reservations Executive is the most exposed role - dynamic pricing is already algorithmic and improving - and routine reservations and enquiry handling have largely moved to booking platforms and chat. Duty Manager, Front Office Executive and Restaurant Manager are protected by being the person physically accountable when something goes wrong at eleven at night."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entry_competition",
+          "statement": "Null. NCHMCT JEE was recorded here on the first pass and removed on review: this record is mid_stream_entry 'after_any_degree', its own path_to_entry says 'any degree plus hotel experience', and the exam offers over 12,000 seats. A gate that admits any graduate and is not scarce is not the thing that determines who reaches the profession."
+        },
+        {
+          "field": "economics",
+          "statement": "The employed range is Indian. The profession's real economics for many people are overseas - Gulf hotels, cruise lines and international chains - and that pathway is a large part of why students choose hotel management. It is why pathway is 'any' and it is not visible in these numbers."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and unusually resilient in a specific way: hospitality collapsed completely during the pandemic and rebuilt, and the sector's hiring now runs ahead of the supply of trained people because a cohort left the industry and did not return."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hos-travel-tourism",
+      "profession": "Travel & Tourism Professional",
+      "one_liner": "Plans, sells and guides travel - itineraries, tickets, tours and the people on them.",
+      "job_roles": [
+        "Travel Consultant",
+        "Tour Operator",
+        "Tour Guide",
+        "Destination Specialist",
+        "Ticketing & Reservations Executive",
+        "Travel Sales Executive",
+        "Tour Manager",
+        "Pilgrimage & Cultural Tour Coordinator",
+        "Corporate Travel Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Tour Guide",
+              "Pilgrimage & Cultural Tour Coordinator"
+            ],
+            "higher": [
+              "verbal",
+              "long_term_memory",
+              "extraversion"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Guiding is performance and knowledge on foot, in a language the visitor speaks. Regional-language and foreign-language guides are licensed by the Ministry of Tourism at monument level, which is the only credential in this profession."
+          },
+          {
+            "roles": [
+              "Ticketing & Reservations Executive",
+              "Corporate Travel Coordinator"
+            ],
+            "higher": [
+              "conscientiousness",
+              "attention_span",
+              "logical"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Ticketing is systems work against fare rules and policy. It was the industry's largest entry job and it is the one online booking has most comprehensively taken."
+          },
+          {
+            "roles": [
+              "Tour Manager"
+            ],
+            "higher": [
+              "extraversion",
+              "conscientiousness",
+              "neuroticism"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Escorting a group for two weeks means being responsible for thirty strangers, their luggage, their illnesses and their complaints, away from home. It is logistics under continuous social pressure."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "THSC",
+        "RASCI",
+        "MEPSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. A second language is worth more than a stream in this profession."
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "BA or diploma in Travel and Tourism, an IATA-recognised course for ticketing, or a Ministry of Tourism guide training programme."
+        },
+        {
+          "step": 3,
+          "stage": "licence",
+          "requirement": "For guiding at protected monuments, a Ministry of Tourism or state tourism department guide licence."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Travel agency, tour operator, online travel platform, a hotel's travel desk, or independent guiding."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "Ministry of Tourism regional guide training and licensing"
+        ],
+        "private_entrances": [
+          "IATA and travel agency certifications"
+        ],
+        "note": "Guide licensing is the only real credential and it is monument- and region-specific. Everything else in this profession is entered without an examination."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "1.8-4.2",
+        "mid_career_lpa": "3.6-11.0",
+        "mid_career_midpoint": 7.3,
+        "payback_years": 0.5,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "An independent tour operation, a niche travel business - wildlife, pilgrimage, adventure, weddings abroad - or freelance guiding. Low capital and high dependence on repeat customers and reviews.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 25,
+          "skill_physical": 20,
+          "skill_digital": 25,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 50,
+        "band": "medium",
+        "reason": "The most AI-exposed profession in this sector, and the damage arrived before AI did. Ticketing & Reservations Executive and Travel Consultant lost their market to online booking over two decades, and language models finish the job on itinerary planning and destination advice - both are high-retrievable-knowledge tasks. What survives is physical presence and accountability: Tour Guide, licensed and standing in front of the monument, and Tour Manager, responsible for thirty people in a foreign country when something goes wrong."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and the composition has changed completely rather than the level. Indian domestic and outbound travel volumes are at record highs while the number of people employed selling travel has fallen - the value moved to platforms. Growth is in experiences and guiding, not in agency work."
+        },
+        {
+          "field": "licensing_body",
+          "statement": "Null at profession level, but guiding at protected monuments does require a Ministry of Tourism or state licence. It is a permission to work at specific sites rather than a professional register, which is why the field stays null."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hos-event-manager",
+      "profession": "Event Manager",
+      "one_liner": "Makes an event happen - weddings, conferences, concerts, exhibitions, sport.",
+      "job_roles": [
+        "Event Coordinator",
+        "Wedding Planner",
+        "Conference & MICE Executive",
+        "Exhibition & Trade Fair Coordinator",
+        "Venue Operations Executive",
+        "Sponsorship & Partnerships Executive",
+        "Production Coordinator (Events)",
+        "Sports Event Coordinator",
+        "Catering Sales Executive"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Wedding Planner"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "extraversion",
+              "neuroticism"
+            ],
+            "lower": [
+              "logical"
+            ],
+            "why": "Indian weddings are the largest single event market in the country and the most emotionally loaded. The planner manages two families, a budget nobody will state honestly, and an event that cannot be rescheduled."
+          },
+          {
+            "roles": [
+              "Sponsorship & Partnerships Executive",
+              "Catering Sales Executive"
+            ],
+            "higher": [
+              "verbal",
+              "confidence",
+              "extraversion"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "These are sales roles inside events - finding the money rather than spending it. They carry targets and commission and sit closer to Sector 5's Sales Professional."
+          },
+          {
+            "roles": [
+              "Production Coordinator (Events)",
+              "Venue Operations Executive"
+            ],
+            "higher": [
+              "conscientiousness",
+              "spatial",
+              "bodily"
+            ],
+            "lower": [
+              "openness"
+            ],
+            "why": "Production is load-in, power, staging, permissions and safety, executed overnight to a fixed doors-open time. It is the operational half and it is where events actually fail."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "THSC",
+        "MEPSC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream."
+        },
+        {
+          "step": 2,
+          "stage": "degree",
+          "requirement": "Any bachelor's degree; event management, hospitality and mass communication are common. None is required."
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Event company, a hotel's banquet team, a wedding planning firm, an exhibition organiser, or a brand's activation team. Entry is usually as a coordinator on live events."
+        },
+        {
+          "step": 4,
+          "stage": "independence",
+          "requirement": "Own event or wedding planning business - the standard destination, and one that needs relationships with vendors more than capital."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "None. Entry is on executed events, not on an examination."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 3,
+      "economics": {
+        "cost_of_entry_lakh": 3.0,
+        "early_earnings_lpa": "2.4-5.0",
+        "mid_career_lpa": "5.0-14.0",
+        "mid_career_midpoint": 9.5,
+        "payback_years": 0.81,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Own event or wedding planning business. Extremely common in this profession, needs little capital, and runs on a vendor network and referrals rather than on marketing.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 20,
+          "skill_physical": 25,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Low to moderate exposure. Planning documents, run sheets, budgets and vendor briefs generate well, and Conference & MICE Executive work is the most exposed. But an event is a physical thing that happens once at a fixed time, and Production Coordinator (Events) and Venue Operations Executive are protected absolutely by that. Wedding Planner is protected by managing two families through the most emotionally loaded purchase of their lives, which no model is going to be trusted with."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Promised here from Sector 5, and the placement is arguable in the other direction. An event company is a business and event management is project management - but the object of concern is a HOSTED EXPERIENCE for guests, which is what this sector is about, and event management in India sits inside hospitality commercially, in hotels and banquet venues."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "High, and it rests substantially on the Indian wedding market rather than on corporate events. That makes the work seasonal, family-facing and spread across smaller cities rather than concentrated in metros."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hos-cabin-crew",
+      "profession": "Cabin Crew",
+      "one_liner": "Keeps an aircraft cabin safe and its passengers looked after - a safety job that serves food.",
+      "job_roles": [
+        "Cabin Crew",
+        "Flight Attendant",
+        "In-flight Service Attendant",
+        "Cabin Crew Trainer",
+        "In-flight Supervisor",
+        "Ground Service & Guest Handling Executive",
+        "Charter & Private Jet Cabin Attendant"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Cabin Crew Trainer"
+            ],
+            "higher": [
+              "verbal",
+              "conscientiousness",
+              "confidence"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Training is classroom and simulator instruction on safety and emergency procedure, against a DGCA-approved syllabus. It is the standard route off the roster and out of shift work."
+          },
+          {
+            "roles": [
+              "Ground Service & Guest Handling Executive"
+            ],
+            "higher": [
+              "extraversion",
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Ground handling is check-in, boarding and disruption management at the airport. It shares the airline and the customer but none of the safety role, and it is often the fallback for people who do not clear cabin crew medicals."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "THSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Class 12 in any stream. English fluency is required and a second language helps."
+        },
+        {
+          "step": 2,
+          "stage": "physical_eligibility",
+          "requirement": "Airline height, reach, weight and medical criteria, including vision and swimming. These are absolute and screen out a large number of applicants before anything else is assessed."
+        },
+        {
+          "step": 3,
+          "stage": "selection",
+          "requirement": "Airline assessment day - group activity, personal interview, grooming and communication. Not an examination and not published."
+        },
+        {
+          "step": 4,
+          "stage": "training",
+          "requirement": "Airline ab-initio training against a DGCA-approved syllabus, ending in a Cabin Crew Member certification. Safety and emergency procedure is the bulk of it."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "Airline cabin crew recruitment (DGCA-approved training)"
+        ],
+        "private_entrances": [
+          "Private aviation academy courses"
+        ],
+        "note": "There is no entrance examination. Selection is by airline assessment against physical and communication criteria, and PRIVATE AVIATION ACADEMIES SELLING PLACEMENT ARE NOT A ROUTE - airlines recruit and train directly."
+      },
+      "entry_competition": null,
+      "entry_window": {
+        "max_age": 27,
+        "max_years_since_class12": null,
+        "is_hard_block": false,
+        "constrained_route": "Most Indian airlines set an upper age of about 27 for ab-initio cabin crew recruitment, and physical criteria including height and reach are applied absolutely.",
+        "bypass": "Experienced crew are recruited at higher ages, and ground services, airport operations and in-flight training roles have no such limit. The age bar applies to first entry, not to the industry."
+      },
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 1.5,
+        "early_earnings_lpa": "3.0-6.0",
+        "mid_career_lpa": "5.0-12.0",
+        "mid_career_midpoint": 8.5,
+        "payback_years": 0.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 55,
+          "skill_digital": 5,
+          "clarity": 10
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Low exposure, and the reason is the one most people get wrong about this job. It looks like service work; it is legally a SAFETY role. Cabin crew are on board because regulation requires trained humans to evacuate an aircraft in ninety seconds, and no amount of automation changes that requirement. The service element could be reduced; the safety minimum cannot."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entry_window",
+          "statement": "The only meaningful age window in this sector and it is real. Indian airlines recruit ab-initio cabin crew up to roughly 27, and the physical criteria - height, reach, vision, swimming - are applied absolutely. It is not a hard block because the wider industry has no such limit, but for THIS entry it closes early and a student should plan on that."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Rare, and correctly so - this work exists only inside a certificated airline. Any offer of independent cabin crew work should be treated as a warning sign, and so should any academy charging for a course that promises placement."
+        },
+        {
+          "field": "economics",
+          "statement": "Indian carrier pay is modest at entry and rises with flying hours and allowances rather than with a salary scale. The Gulf carriers pay substantially more with accommodation provided, which is why pathway is 'any' and why a large number of Indian cabin crew work abroad."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "id": "hos-merchant-navy",
+      "profession": "Merchant Navy Deck Officer",
+      "one_liner": "Navigates and commands a cargo ship - the deck side of the merchant marine.",
+      "job_roles": [
+        "Deck Cadet",
+        "Third Officer",
+        "Second Officer",
+        "Navigating Officer",
+        "Cargo Officer",
+        "Marine Pilot Trainee",
+        "Port Operations Officer",
+        "Marine Surveyor Trainee"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Port Operations Officer",
+              "Marine Surveyor Trainee"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "verbal"
+            ],
+            "lower": [
+              "neuroticism"
+            ],
+            "why": "Shore roles - port operations, surveying, ship chartering and management - are where deck officers go after they stop sailing. They pay less than sea time and are the reason the certificate matters beyond the ship."
+          },
+          {
+            "roles": [
+              "Deck Cadet"
+            ],
+            "higher": [
+              "conscientiousness",
+              "bodily",
+              "neuroticism"
+            ],
+            "lower": [
+              "confidence"
+            ],
+            "why": "Eighteen months at sea as a trainee, away from home, on a working ship. It is the hardest filter in this profession and it cannot begin without a shipping company sponsoring the berth."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "LSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Mathematics with 60 percent aggregate and 50 percent in English. Medical standard is absolute: 6/6 vision without aids and no colour blindness."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "IMU CET or a DG Shipping approved institute's admission, plus a company sponsorship test."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "Either a one-year Diploma in Nautical Science or a three-year B.Sc Nautical Science, at a DG Shipping approved institute. Both lead to the same certificate and both cost like a degree - the DNS is a one-year course priced in lakhs."
+        },
+        {
+          "step": 4,
+          "stage": "sea_time",
+          "requirement": "18 months of Structured Shipboard Training as a Deck Cadet. THIS REQUIRES A COMPANY SPONSORSHIP and is the real bottleneck."
+        },
+        {
+          "step": 5,
+          "stage": "certification",
+          "requirement": "Four months post-sea shore training, the STCW courses, and the Second Mates examination conducted by the Directorate General of Shipping. Passing awards the Second Mates (FG) Certificate of Competency."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "IMU CET",
+          "DG Shipping approved pre-sea training admissions"
+        ],
+        "private_entrances": [
+          "Company-sponsored cadet schemes"
+        ],
+        "note": "The examination is not the constraint. COMPANY SPONSORSHIP for the 18 months of shipboard training is, and a student can complete the diploma and still be unable to proceed."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Directorate General of Shipping",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "6.0-12.0",
+        "mid_career_lpa": "13.0-32.0",
+        "mid_career_midpoint": 22.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Very low exposure. Ships are increasingly automated and crewed by fewer people, but a certificated officer must be aboard and personally answerable for the safe navigation of the vessel under international convention. Autonomous shipping is real and slow, and the regulatory requirement for a licensed human on watch is what this profession rests on. Marine Surveyor Trainee and Port Operations Officer carry more exposure through documentation and inspection tooling."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dns-second-mate-coc",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Tier A. The Second Mates (Foreign Going) Certificate of Competency is issued by the Directorate General of Shipping after its own examination, and serving as a deck officer without one is unlawful. This is the same statutory structure as the MEO certificates recorded for Marine Engineer in Sector 2.",
+          "source": "data/verified_facts.json#dns-second-mate-coc"
+        },
+        {
+          "field": "path_to_entry",
+          "statement": "The binding constraint is not academic. Eighteen months of shipboard training requires a shipping company to sponsor a cadet berth, and the number of berths is far smaller than the number of people completing pre-sea courses. Students routinely pay for a diploma and then cannot proceed. Any institute that does not guarantee sponsorship in writing should be treated with suspicion."
+        },
+        {
+          "field": "economics",
+          "statement": "The cost of entry is the part students underestimate. A DG Shipping approved pre-sea course is priced in lakhs whether it is the one-year diploma or the three-year degree, it is paid up front, and it does not guarantee the cadet berth that the certificate depends on. Money spent before sponsorship is money at risk."
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "PCM is required and so is a MEDICAL standard that no other profession in this dataset imposes: uncorrected 6/6 vision and no colour blindness. That excludes a large number of academically eligible students, and it should be checked before any money is spent."
+        },
+        {
+          "field": "economics",
+          "statement": "Set level with Marine Engineer in Sector 2 rather than above it. Deck and engine officers hold parallel Certificates of Competency on the same ship under the same international convention, and a gap between them was not defensible. The highest earnings in this sector by a wide margin, and they are earned at sea in tax-advantaged foreign-going service, away from home for months. Shore roles after sailing pay substantially less, which is the trade every officer eventually makes."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The highest figure and the widest spread anywhere in Sectors 8 to 18 - 13 to 32 lakh - and entirely unsourced. A fetchable anchor exists and should be used: the NUSI-MUI and INSA collective bargaining wage scales publish monthly rates for a Third Officer on Indian-flag foreign-going ships, and ITF minimum scales cover the international floor. Sourcing it would make this the sector's one statutory-style anchor, as the Majithia award is for Sector 9."
+      }
+    }
+  ],
+  "routed_elsewhere": [
+    {
+      "profession": "Marine Engineer",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "AASSC",
+      "why": "Already built in Sector 2 under the MEO Certificate of Competency. Engine side is engineering; deck side is navigation and command, and the two have separate certificates, separate training and separate careers."
+    },
+    {
+      "profession": "Commercial Pilot",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "AASSC",
+      "why": "Already built in Sector 2 under the DGCA Commercial Pilot Licence."
+    },
+    {
+      "profession": "Adventure Sports & Outdoor Instructor",
+      "goes_to": "11. Sports & Fitness",
+      "tag_here_instead": "THSC",
+      "why": "Already built in Sector 11 and kept there. Adventure tourism is the EMPLOYER; the object of concern is physical performance and safety in a demanding environment. Named here because a trekking guide's day is largely hospitality and the boundary could reasonably be read the other way."
+    },
+    {
+      "profession": "Food Technologist",
+      "goes_to": "15. Agriculture & Food Systems",
+      "tag_here_instead": "FICSI",
+      "why": "Already built in Sector 15. Making food safe and shelf-stable at industrial scale is food science; cooking it for a guest is here."
+    },
+    {
+      "profession": "Digital Content Creator",
+      "goes_to": "9. Media, Film & Storytelling",
+      "tag_here_instead": "MESC",
+      "why": "Already built in Sector 9. Travel creators are content creators whose subject is travel - the subject is the tag, not the profession."
+    }
+  ],
+  "boundary_decisions_needing_your_signoff": [
+    "EVENT MANAGER WAS PROMISED HERE FROM SECTOR 5 and the placement is genuinely arguable. An event company is a business and event management is project management, which points at Sector 5. It is here because the object of concern is a hosted experience for guests, and because event management in India sits inside hospitality commercially - in hotels, banquet venues and catering. Sector 11's Sports Event Manager was routed here on the same reading.",
+    "CABIN CREW CARRIES THE ONLY ENTRY_WINDOW IN THIS SECTOR and it is unusual in kind. The constraint is not just age - Indian airlines recruit ab-initio crew to about 27 - but ABSOLUTE PHYSICAL CRITERIA: height, reach, uncorrected vision and swimming. Merchant Navy Deck Officer has a comparable medical bar. Neither is expressible in entry_window, which only understands time. Two professions in one sector now need a physical-eligibility concept the schema does not have.",
+    "THE OVERSEAS PATHWAY IS THIS SECTOR'S BIGGEST UNMEASURED FACT. Cruise lines, Gulf hotels, international chains and foreign-going ships are where a large share of the real income in cooking, food service, housekeeping, cabin crew and seafaring is earned - and pathway 'any' is far too weak a signal for something that can multiply earnings several times. Four records say so in nuances because no field can.",
+    "THREE PROFESSIONS HERE ARE ENTERED WITH NO QUALIFICATION AT ALL - Chef at certificate level, Food & Beverage Service, and Housekeeping at none. Together with Retail in Sector 5 they are the main formal-sector doors open to an Indian school-leaver, and two of the three fail or nearly fail the compensation filter."
+  ],
+  "changelog": {
+    "1.1": [
+      "v1.1 - INDEPENDENT REVIEW, two findings accepted. Hotel & Restaurant Manager carried NCHMCT JEE as primary_gate while being mid_stream_entry 'after_any_degree' behind a 12,000-seat exam - a gate that admits any graduate and is not scarce cannot be what determines access. Nulled, the same call already made for Chef. And Merchant Navy Deck Officer - the highest figure and widest spread in eleven sectors at 13 to 32 lakh, entirely unsourced - now carries a required admin_review naming the NUSI-MUI and INSA collective bargaining scales as the fetch target.",
+      "Sector 16 built. 8 professions, 70 job roles. Three iterations.",
+      "ITERATION 1 caught a certificate-tier profession carrying a degree-sized cost. Merchant Navy Deck Officer showed 8 lakh at 'certificate' tier, which the validator correctly questioned. The route is a DG Shipping approved pre-sea course - either a one-year diploma or a three-year B.Sc - and both are priced in lakhs. Tier corrected to undergrad and an economics nuance added, because a one-year diploma costing 8 lakh with no guaranteed cadet berth is exactly what a student needs told.",
+      "ITERATION 2 CAUGHT THE GATE REFLEX A FOURTH TIME. Chef & Professional Cook carried primary_gate 'nchmct-jee' while its own entrance_exams note said most working Indian chefs never sat it. Both could not be true. Cooking is entered through a kitchen; the gate stays only on Hotel & Restaurant Manager, where the IHM degree really is the main route. Across Sectors 13, 15 and 16 this same error has now been made four times and caught four times - the pull is always toward the most famous exam a profession touches.",
+      "ITERATION 3 LEVELLED MERCHANT NAVY DECK OFFICER WITH MARINE ENGINEER. The first pass showed 27.5 lakh against Sector 2's 22.5 for the engine side. Deck and engine officers hold parallel Certificates of Competency, on the same ship, under the same international convention - a five-lakh gap between them was not defensible. Now 22.5.",
+      "ALL FOUR INHERITED PROMISES KEPT as professions: Cabin Crew, Merchant Navy Deck Officer, Hotel & Restaurant Manager and Event Manager. The base-layer gap recorded in DECISIONS.md 2.06 is closed - Cook inside Chef & Professional Cook, Steward inside Food & Beverage Service Professional, and Housekeeping as a profession of its own.",
+      "ONE GATE ADDED: nchmct-jee, and it points the OPPOSITE way to most gates in this registry. More than 12,000 seats across about 80 institutes makes hospitality one of the more open national routes rather than one of the closed ones. The applicant count was not found and is null; the seat count is the useful number and it is reassuring rather than alarming.",
+      "ONE TIER A PROFESSION, VERIFIED FROM THE ROUTE ITSELF. The Second Mates (FG) Certificate of Competency is issued by the Directorate General of Shipping and serving as a deck officer without one is unlawful. The fact recorded also captures the two things that actually stop people: an absolute medical standard of uncorrected 6/6 vision and no colour blindness, and the requirement for COMPANY SPONSORSHIP of 18 months of shipboard training - which is the real bottleneck and which students routinely discover after paying for a diploma.",
+      "TRAVEL & TOURISM PROFESSIONAL is the most AI-exposed profession here at 50, and it is the clearest case in the dataset of a profession that was disrupted BEFORE AI arrived. Online booking took ticketing and agency work over two decades; language models finish the job on itinerary planning. What survives is standing in front of the monument or being responsible for thirty people abroad.",
+      "TWO PROFESSIONS CARRY A REQUIRED ADMIN_REVIEW - Food & Beverage Service and Housekeeping - both for the same two missing numbers: Indian wage data, and the direct-versus-agency employment distinction that determines pay and benefits more than the employer's name."
+    ]
+  },
+  "sector_admin_review": {
+    "required": true,
+    "priority": "high",
+    "reason": "All eight economics blocks are 'judgment' with no sources. Three gaps stand out and all three are fetchable. First, THE OVERSEAS PREMIUM: cruise line, Gulf hotel and foreign-going ship pay is what makes this sector's economics work for a large number of Indians, and no figure for any of it was found - it is the single most decision-relevant number in the sector. Second, the DIRECT-VERSUS-CONTRACT split in housekeeping and service, where the same job through a facility management agency pays differently and carries different benefits from direct employment. Third, tips and service charge, which are material in hotels and premium restaurants and are invisible here. Beyond money, a schema gap this sector makes unavoidable: Cabin Crew and Merchant Navy Deck Officer both impose ABSOLUTE PHYSICAL ELIGIBILITY criteria - uncorrected vision, colour vision, height, reach - which exclude students irreversibly and which entry_window cannot express because it only understands time."
+  }
+}

@@ -96,9 +96,19 @@ def audit(p):
 
     # --- the derived filter flag ---
     mid = ec["mid_career_midpoint"]
-    expect = not (mid < RULES["mid_career_floor_lpa"]
-                  or (mid < RULES["ai_penalty_clause"]["mid_career_below_lpa"]
-                      and ai["band"] == RULES["ai_penalty_clause"]["when_ai_exposure"]))
+    # power_law records are exempt: their midpoint is arithmetic over a distribution with no
+    # middle, and filtering on it deletes a profession on a number the record calls meaningless.
+    # owner-income exemption: 'common' self-employment PLUS an open admin_review means the record
+    # itself says the midpoint understates the profession. Filtering on it would delete a career on
+    # a number we have already written down as incomplete.
+    # It exempts the PAY FLOOR ONLY. Ownership says the figure is incomplete; it says nothing
+    # about the work disappearing, so the AI clause still fires through it.
+    owner_exempt = (p["self_employment"].get("likelihood") == "common"
+                    and p["admin_review"]["required"])
+    expect = ec.get("distribution") == "power_law" or not (
+        (mid < RULES["mid_career_floor_lpa"] and not owner_exempt)
+        or (mid < RULES["ai_penalty_clause"]["mid_career_below_lpa"]
+            and ai["band"] == RULES["ai_penalty_clause"]["when_ai_exposure"]))
     if p.get("filter") is not expect:
         e.append(f"filter is {p.get('filter')} but the rule gives {expect}")
 
@@ -134,6 +144,11 @@ def audit(p):
         e.append("masters_required makes no sense at certificate tier")
     if p["verification"]["status"] == "verified" and not p["verification"].get("source"):
         e.append("verified with no source")
+    # A record that says its own money is power-law or bimodal is describing an UNSETTLED schema
+    # problem, which §9 says belongs to a human.
+    if ec.get("distribution", "range") != "range" and not p["admin_review"]["required"]:
+        e.append(f"economics.distribution is '{ec['distribution']}' but no admin_review is "
+                 f"required — a midpoint that describes nobody is a decision owed to a human")
 
     # --- role_spread: factors must be real, roles must exist on this profession ---
     rs = p.get("role_spread")
@@ -326,6 +341,36 @@ def money_sources():
     return out
 
 
+def orphaned_facts():
+    """A verified fact nothing cites is a profession-shaped hole with a receipt attached.
+
+    verified_facts.json carried jee-main-paper2b-bplan — "B.Planning requires Maths only" — and
+    §4 used it as the WORKED EXAMPLE of the class12_prerequisite rule, while no profession in any
+    of the eighteen sectors consumed it. Somebody had verified a fact for a career the taxonomy
+    did not contain, and nothing noticed for eleven sectors.
+
+    Reported, not errored: a fact may legitimately serve a gate, a sector note or a rule rather
+    than a profession record. The point is that an orphan should have to be looked at.
+    """
+    facts = json.loads((ROOT / "data" / "verified_facts.json").read_text(encoding="utf-8"))
+    cited = set()
+    for f in sorted((ROOT / "data" / "professions").glob("*.json")):
+        blob = f.read_text(encoding="utf-8")
+        for x in facts["facts"]:
+            if x["key"] in blob or (x.get("source") and x["source"] in blob):
+                cited.add(x["key"])
+    # A fact may honestly belong to a GATE or to the industrial-sector roster rather than to any
+    # one profession — the CAT eligibility rule is a property of CAT, not of Management Consultant.
+    # Scan those files too, and match on the KEY as well as the URL: the first version matched
+    # gates by source URL only, so citing a fact by key inside a gate still read as orphaned.
+    for other in ("entrance_gates.json", "industrial_sectors.json"):
+        blob = (ROOT / "data" / other).read_text(encoding="utf-8")
+        for x in facts["facts"]:
+            if x["key"] in blob or (x.get("source") and x["source"] in blob):
+                cited.add(x["key"])
+    return [x["key"] for x in facts["facts"] if x["key"] not in cited]
+
+
 def duplicate_job_roles():
     """The same job-role string under two professions is either a duplicate or an ambiguity.
 
@@ -370,9 +415,13 @@ def reconcile():
             # promise, and landing either half keeps it. Treating the slash as a conjunction
             # required one job role to contain 'project' AND 'scrum' AND 'master', which no honest
             # title does, and reported two kept promises as broken.
-            entries = sectors[target][0]
+            # Punctuation is not part of a word. "Teacher (government school)" tokenised to
+            # '(government' and 'school)', neither of which appears in any honest job title, so a
+            # promise that WAS kept — Sector 12 lists "Government School Teacher" — was reported
+            # broken. Strip non-alphanumerics from both sides before comparing.
+            entries = [re.sub(r"[^a-z0-9 ]", " ", e) for e in sectors[target][0]]
             found = False
-            for alt in r["profession"].lower().split("/"):
+            for alt in re.sub(r"[^a-z0-9 /]", " ", r["profession"].lower()).split("/"):
                 # Within one alternative, ALL distinctive words must appear in ONE entry, so
                 # "Computer Science Researcher" still cannot match "Research Scientist (Life Sciences)".
                 words = [w for w in alt.split()
@@ -474,6 +523,15 @@ def main():
     print(f"  {len(broken)} broken promise(s), {len(pending)} awaiting an unbuilt sector")
     for b in broken:
         print(f"  BROKEN  {b}")
+    orphans = orphaned_facts()
+    if orphans:
+        print(f"\n{'=' * 60}\nVERIFIED FACTS NOTHING CITES")
+        print("  Somebody went and verified these, and no profession record consumes them.")
+        print("  Usually a MISSING PROFESSION, and the cheapest coverage-gap signal there is —")
+        print("  it found Urban & Regional Planner. See DECISIONS.md §10, correction 21.")
+        for k in orphans:
+            print(f"  ORPHAN  {k}")
+
     print(f"\n{'=' * 60}\nOPEN QUEUES")
     print(f"  {counts['boundary']} boundary decision(s) awaiting sign-off  ·  "
           f"{counts['routed']} routed  ·  {counts['merged']} merged")
