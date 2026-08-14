@@ -14,6 +14,7 @@ Also validates:
 """
 
 import csv
+import datetime
 import json
 import sys
 from pathlib import Path
@@ -468,6 +469,68 @@ def combine(files):
         w.writeheader()
         w.writerows(rows)
     print(f"{compact.as_posix()}  ({len(COMPACT_COLUMNS)} columns, sized to paste into a chat)")
+    combine_json(files)
+
+
+def combine_json(files):
+    """build/ALL-professions.json — every sector in one file, LOSSLESS.
+
+    The CSV flattens: nuances collapse to one pipe-joined cell, work_composition becomes four
+    columns, entry_window and entry_competition become two. That is right for a spreadsheet and
+    wrong for anything that consumes the data — a psychometric pipeline keyed on profession.id
+    needs the nested objects back, and reconstructing them from CSV is guesswork.
+
+    So this is the CSV's opposite number: no flattening, no dropped keys, every record exactly as
+    it sits in its sector file, with the two sector fields folded in so a record still knows where
+    it came from once the eighteen files are gone.
+
+    GENERATED on every full run, never hand-edited — same rule as the CSVs, for the same reason
+    the hand-written COMPACT sheet went stale in an hour.
+    """
+    payload = {
+        "generated_on": datetime.date.today().isoformat(),
+        "generated_by": "tools/export_csv.py — do not hand-edit; edit data/professions/*.json",
+        "spec": "DECISIONS.md",
+        "note": "Lossless union of the 18 sector files. Every profession carries every field, "
+                "nested structures intact. `filter` and `ship` are DERIVED from "
+                "data/filter_rules.json and recomputed on every run — read the rule there rather "
+                "than trusting the flag. Shared registries are NOT inlined: entrance_exams and "
+                "entry_competition reference data/entrance_gates.json, and verification.source "
+                "references data/verified_facts.json, both by key.",
+        "counts": {},
+        "sectors": [],
+        "professions": [],
+    }
+    for f in files:
+        d = json.loads(f.read_text(encoding="utf-8"))
+        payload["sectors"].append({
+            "professional_sector_id": d["professional_sector_id"],
+            "professional_sector": d["professional_sector"],
+            "version": d["version"],
+            "profession_count": d["profession_count"],
+            "source_file": f"data/professions/{f.name}",
+            "sector_verification_note": d.get("sector_verification_note"),
+        })
+        for p in d["professions"]:
+            payload["professions"].append({
+                "professional_sector_id": d["professional_sector_id"],
+                "professional_sector": d["professional_sector"],
+                **p,
+            })
+    ps = payload["professions"]
+    payload["counts"] = {
+        "sectors": len(payload["sectors"]),
+        "professions": len(ps),
+        "job_roles": sum(len(p["job_roles"]) for p in ps),
+        "nuances": sum(len(p["nuances"]) for p in ps),
+        "ships": sum(1 for p in ps if p["filter"]),
+        "fails_compensation_filter": sum(1 for p in ps if not p["filter"]),
+        "admin_review_required": sum(1 for p in ps if p["admin_review"]["required"]),
+    }
+    target = OUT / "ALL-professions.json"
+    target.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    kb = target.stat().st_size // 1024
+    print(f"{target.as_posix()}  ({len(ps)} professions, nested structures intact, {kb} KB)")
 
 
 def main():

@@ -30,6 +30,8 @@ tools/
   audit.py                      cross-field consistency + cross-FILE reconciliation
   probe.py                      is this candidate already covered? Run BEFORE adding anything.
 build/*.csv                     generated, never hand-edited
+build/ALL-professions.json      all 18 sectors in one LOSSLESS file — nested structures
+                                intact, unlike the CSV. Also generated.
 ```
 
 ## Workflow

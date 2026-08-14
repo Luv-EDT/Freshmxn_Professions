@@ -106,6 +106,9 @@ data/
 tools/
   export_csv.py               validate + export      tools/audit.py   cross-field audit
 build/*.csv                   generated, never hand-edited
+build/ALL-professions.json    all 18 sectors in one LOSSLESS file — nested structures
+                              intact. The CSV flattens; this does not. Use it for any
+                              consumer keyed on profession.id. Also generated.
 ```
 
 ## Verification tiers
