@@ -1629,11 +1629,11 @@
             ],
             "higher": [
               "conscientiousness",
-              "logical",
-              "neuroticism"
+              "logical"
             ],
             "lower": [
-              "extraversion"
+              "extraversion",
+              "emotional_stability"
             ],
             "why": "Carrying fuel, chemicals or explosives requires a hazardous goods endorsement, specific training and route restrictions. It is the best-paid driving work and the consequence of a mistake is not a delayed delivery."
           },
@@ -1809,6 +1809,36 @@
       "goes_to": "12. Education & Training",
       "tag_here_instead": "MEPSC",
       "why": "Teaching-anything rule. L&D Specialist is retained here as a job role."
+    },
+    {
+      "profession": "Mail Carrier / Postman",
+      "goes_to": "declined - already covered by Logistics & Warehouse Operator (S5)",
+      "tag_here_instead": "LSC",
+      "why": "NCO family 4412. Real government employment through India Post, and declined as a separate profession because the skill set is delivery and routing - Logistics & Warehouse Operator is the neighbour. Reconsider if postal work diverges from general logistics."
+    },
+    {
+      "profession": "Street Vendor / Hawker",
+      "goes_to": "declined - already covered by Entrepreneur & Small Business Owner (S5)",
+      "tag_here_instead": "RASCI",
+      "why": "NCO family 9520. Enormous in India and genuinely absent as a name, but it is micro-entrepreneurship rather than a separate skill set - Entrepreneur & Small Business Owner covers the work."
+    },
+    {
+      "profession": "Pawnbroker / Moneylender",
+      "goes_to": "declined - gold loan appraisal belongs as a job role under Banking Professional (S6)",
+      "tag_here_instead": "BFSI",
+      "why": "NCO family 4213. A BUSINESS rather than a profession, in the same way a shop owner is. Gold loan appraisal is the part with a distinct skill and belongs as a job role under finance if it is wanted."
+    },
+    {
+      "profession": "Vehicle Cleaner",
+      "goes_to": "nowhere - declined",
+      "tag_here_instead": "ASCI",
+      "why": "NCO family 9122. Declined on the second half of the profession test: no separate skill set. Washing vehicles does not carry a distinct body of skill that a student could train into."
+    },
+    {
+      "profession": "Usher",
+      "goes_to": "nowhere - declined",
+      "tag_here_instead": "MESC",
+      "why": "NCO family 9629, a single title in an 'Elementary Workers Not Elsewhere Classified' residual bucket. No distinct skill set."
     }
   ],
   "boundary_decisions_needing_your_signoff": [

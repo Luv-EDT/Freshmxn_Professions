@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-08-16",
+  "generated_by": "scratchpad/anchors.py — GENERATED, and NOT YET REVIEWED",
+  "review_status": "reviewed",
+  "purpose": "Fixed reference points for the Baseline_Rating scoring pass. A profession's score on a factor is chosen against these bands, so the scale means the same thing on run 1 and run 3 and for profession 1 and profession 223. Without them a model invents a private scale each time and the same profession drifts.",
+  "how_to_read": "Every band answers the factor's `asks` question about THE WORK, never about a person. Conscientiousness 9-10 is 'one missed detail kills someone', not 'very careful people'. Each band names real professions from data/professions/*.json, validated on generation.",
+  "construction_rules": [
+    "Concrete profession as the referent, never an adjective — an adjective scale cannot be checked and two readers place it differently.",
+    "Rate the DEMAND OF THE WORK, not the person.",
+    "Extremes written first, then the middle, then 3-4 and 7-8 filled between — writing top-down produces escalating adjectives with no real distance between bands.",
+    "One short line per band, naming a recognisable referent."
+  ],
+  "open_questions_for_review": [
+    "RESOLVED, and kept here because it is the reason the factor list changed: NEUROTICISM was replaced by its inverse EMOTIONAL STABILITY. It was the only factor of the nineteen pointing the opposite way - no profession requires high neuroticism, so a student scoring high would have needed matching to LOW-scoring professions while every other factor matched high to high. A matching engine treating all nineteen alike would have handed anxious students air traffic control. Forty role_spread references were inverted with it. Nothing detects this class of bug except writing the rubric out and reading it.",
+    "DOGMATISM was re-anchored to the definition the user gave: strength of PRIOR CONVICTION held before attempting a task, not 'how rule-bound the work is'. Those two diverge and the first version was wrong in a way worth keeping on record - it put Judicial Services Officer at 7-8 because a judge is bound by a written code, when a judge must in fact stay OPEN on the facts, and it missed Lawyer entirely, whose whole job is to advance a position decided before the evidence is heard. High is still not better: confirm the matching engine treats this as fit, not quality.",
+    "MUSICAL and NATURALISTIC are near-zero for most of the 223. That is correct and is exactly what the weights are for — an irrelevant factor should drop out of matching with weight 0 rather than dilute it at score 1."
+  ],
+  "bands": [
+    "0-2",
+    "3-4",
+    "5-6",
+    "7-8",
+    "9-10"
+  ],
+  "factors": [
+    {
+      "slug": "openness",
+      "name": "Openness",
+      "group": "Personality",
+      "asks": "How much does this work require receptiveness to the new — unfamiliar ideas, aesthetic judgment, and doing it differently than last time?",
+      "anchors": {
+        "0-2": "Work whose whole value is that it comes out identical every time — Accounts & Bookkeeping Executive, where a ledger that surprises you is a mistake.",
+        "3-4": "Fixed procedure with occasional novelty — Laboratory Technician running established assays, or Radiology & Imaging Technologist.",
+        "5-6": "A known method applied to a new situation each time — Architect on a residential brief, Marketing Specialist planning a campaign.",
+        "7-8": "Work that must be visibly different from the last one to be any good — Advertising Creative & Copywriter, Game Designer.",
+        "9-10": "Work that FAILS if it repeats itself, and where the frame itself is the output — Fine Artist, Filmmaker & Director."
+      }
+    },
+    {
+      "slug": "conscientiousness",
+      "name": "Conscientiousness",
+      "group": "Personality",
+      "asks": "How much does this work require care and thoroughness — what does ONE missed detail cost?",
+      "anchors": {
+        "0-2": "Errors are cheap and instantly reversible — Model on a shoot, where a bad frame costs another frame.",
+        "3-4": "Mistakes are visible and fixable the same day — Digital Content Creator, Retail & Store Operations.",
+        "5-6": "Errors cost other people time and are caught downstream — School Teacher, Content Writer & Editor.",
+        "7-8": "One missed detail costs money that cannot be recovered, or a legal consequence — Chartered Accountant, Pharmacist dispensing.",
+        "9-10": "One missed detail kills someone, and there is no undo — Aircraft Maintenance Engineer, Air Traffic Controller, Anaesthesia Technologist."
+      }
+    },
+    {
+      "slug": "agreeableness",
+      "name": "Agreeableness",
+      "group": "Personality",
+      "asks": "How much does this work require accommodating other people - cooperation, warmth, and yielding to what they need? LOW covers two different jobs that share a score: work done alone, with nobody to accommodate, and work that is adversarial by design.",
+      "anchors": {
+        "0-2": "Nobody to accommodate, or accommodation is a professional failure - Data Engineer working alone, and Lawyer in litigation, whose job is to contest.",
+        "3-4": "Authority exercised over people who did not ask for it - Police Officer, Auditor work under Chartered Accountant.",
+        "5-6": "Ordinary professional give-and-take - Operations & Administration Manager, Hotel & Restaurant Manager, Civil Engineer.",
+        "7-8": "Sustained patience with people who are struggling and cannot reciprocate - Nurse, Special Educator.",
+        "9-10": "The relationship IS the service and warmth cannot be faked - Counsellor & Psychotherapist, Elder & Home Care Attendant."
+      }
+    },
+    {
+      "slug": "extraversion",
+      "name": "Extraversion",
+      "group": "Personality",
+      "asks": "How much of this work happens in front of, and through, other people?",
+      "anchors": {
+        "0-2": "Long stretches alone with the material — Handloom Weaver, Data Engineer.",
+        "3-4": "Mostly solitary with scheduled contact — Software Developer, Film Editor & Post-Production Professional.",
+        "5-6": "Continuous contact with the same known group — School Teacher, Civil Engineer on site.",
+        "7-8": "Continuous contact with strangers, initiated by you — Journalist & Reporter, Travel & Tourism Professional.",
+        "9-10": "Performing to a room, and the energy is the product — Actor & Performer, Sales Professional."
+      }
+    },
+    {
+      "slug": "emotional_stability",
+      "name": "Emotional stability (calm under pressure)",
+      "group": "Personality",
+      "asks": "How much calm under pressure does this work DEMAND? High means composure is mandatory and emotional reactivity is disqualifying; low means the work tolerates reactivity, or that intense feeling is material to it. This replaced NEUROTICISM, its inverse, so that every one of the nineteen factors points the same way - more is more.",
+      "anchors": {
+        "0-2": "Intense inner feeling is the raw material and volatility costs nothing - Fine Artist, Musician & Instrumentalist.",
+        "3-4": "Emotional intensity is visible in the work and is not a problem - Actor & Performer, Digital Content Creator.",
+        "5-6": "Ordinary working stress, no special demand either way - Financial Analyst, Project Manager, Graphic & Visual Designer.",
+        "7-8": "Composure under routine pressure is a job requirement and others depend on it - Doctor, Emergency Medical Technician, Nurse.",
+        "9-10": "Panic is disqualifying, screened for at entry, and a lapse kills people - Air Traffic Controller, Commercial Pilot, Firefighter, Armed Forces Officer."
+      }
+    },
+    {
+      "slug": "short_term_memory",
+      "name": "Short term memory",
+      "group": "Cognitive Skills (processing and memory)",
+      "asks": "How many separate live things must be held in the head at once, right now?",
+      "anchors": {
+        "0-2": "One repeating operation, nothing to hold — Handloom Weaver, Waste Management & Sanitation Worker.",
+        "3-4": "A short sequence, re-checkable at any time — Mason & Construction Technician.",
+        "5-6": "Several parallel tasks with a written fallback — Chef & Professional Cook on service, Retail & Store Operations.",
+        "7-8": "Multiple live cases simultaneously, where forgetting one causes harm — Emergency Medical Technician, Nurse on a ward.",
+        "9-10": "Many moving objects tracked continuously, with no written aid and no pause - Air Traffic Controller, and live interpreting under Content Writer & Editor."
+      }
+    },
+    {
+      "slug": "reasoning",
+      "name": "Reasoning / inferring / accommodating / assimilation",
+      "group": "Cognitive Skills (processing and memory)",
+      "asks": "How much does this work require inferring what is not stated — building a model from incomplete evidence and revising it?",
+      "anchors": {
+        "0-2": "The task states itself completely and nothing must be inferred - Housekeeping & Accommodation Services Professional, Waste Management & Sanitation Worker.",
+        "3-4": "Known rules applied to clear cases — Accounts & Bookkeeping Executive.",
+        "5-6": "Judgment inside a familiar framework — Financial Analyst, Human Resources Professional.",
+        "7-8": "Diagnosis from incomplete and misleading evidence — Doctor, Lawyer, Forensic Scientist.",
+        "9-10": "Building the framework itself, where no one knows the answer — Mathematician, Computer Science Researcher, Physicist."
+      }
+    },
+    {
+      "slug": "long_term_memory",
+      "name": "Long term memory",
+      "group": "Cognitive Skills (processing and memory)",
+      "asks": "How large a body of retained knowledge must be carried in the head, available without looking it up?",
+      "anchors": {
+        "0-2": "Nothing to retain past the task itself - Model, Housekeeping & Accommodation Services Professional.",
+        "3-4": "A trade's working knowledge, learned once — Electrician, Plumber.",
+        "5-6": "A discipline's core, with reference material at hand — Historian & Heritage Researcher, Civil Engineer.",
+        "7-8": "A large corpus that must be recalled under time pressure — Lawyer, Pharmacist.",
+        "9-10": "Years of memorised material recalled instantly, where looking it up is too slow or impossible — Doctor, Classical Language & Manuscript Scholar."
+      }
+    },
+    {
+      "slug": "verbal",
+      "name": "Verbal",
+      "group": "Intelligence Application",
+      "asks": "How much does this work turn on precise use of language?",
+      "anchors": {
+        "0-2": "Almost none — Handloom Weaver, Fitter & Machine Operator.",
+        "3-4": "Clear instructions and records — Welder, Land Surveyor.",
+        "5-6": "Explaining to people who do not share your training — Human Resources Professional, Sales Professional.",
+        "7-8": "Writing and speaking is the deliverable — Journalist & Reporter, School Teacher.",
+        "9-10": "A single wrong word changes the outcome — Lawyer drafting, Content Writer & Editor, Patent Agent."
+      }
+    },
+    {
+      "slug": "spatial",
+      "name": "Spatial",
+      "group": "Intelligence Application",
+      "asks": "How much does this work require seeing and manipulating shape, volume and position in the mind?",
+      "anchors": {
+        "0-2": "Nothing spatial — Economist, Counsellor & Psychotherapist.",
+        "3-4": "Reading a diagram someone else made — Journalist & Reporter, Banking Professional.",
+        "5-6": "Working accurately in three dimensions by hand — Carpenter & Furniture Maker, Dentist.",
+        "7-8": "Holding a whole assembly in the head and reasoning about it — Mechanical Engineer, Land Surveyor, Animator & VFX Artist.",
+        "9-10": "Inventing three-dimensional space that does not exist yet — Architect, Interior Designer, Industrial & Product Designer."
+      }
+    },
+    {
+      "slug": "musical",
+      "name": "Musical",
+      "group": "Intelligence Application",
+      "asks": "How much does this work require hearing pitch, rhythm, timbre and structure in sound?",
+      "anchors": {
+        "0-2": "None — Civil Engineer, Chartered Accountant.",
+        "3-4": "Timing and delivery, not sound itself — Voice Artist & Broadcast Presenter.",
+        "5-6": "Working to music and to rhythm without producing the sound - Dancer & Choreographer, Theatre Practitioner & Director.",
+        "7-8": "Shaping recorded or amplified sound — Sound Designer & Audio Engineer, Live Sound & Stage Technician, Music Producer & Composer.",
+        "9-10": "The ear IS the instrument — Musician & Instrumentalist, Musical Instrument Maker & Repairer."
+      }
+    },
+    {
+      "slug": "bodily",
+      "name": "Bodily",
+      "group": "Intelligence Application",
+      "asks": "How much does this work require physical control, stamina and trained movement?",
+      "anchors": {
+        "0-2": "Seated, still — Economist, Data Analyst.",
+        "3-4": "On your feet, no trained movement — Retail & Store Operations, School Teacher.",
+        "5-6": "Sustained physical work with skill in the hands — Nurse, Chef & Professional Cook, Beautician & Cosmetologist.",
+        "7-8": "Strength, endurance and trained technique under difficult conditions — Firefighter, Welder, Merchant Navy Deck Officer.",
+        "9-10": "The trained body IS the profession, at the limit of what it can do — Professional Athlete, Dancer & Choreographer."
+      }
+    },
+    {
+      "slug": "naturalistic",
+      "name": "Naturalistic",
+      "group": "Intelligence Application",
+      "asks": "How much does this work require reading living systems, land, weather and seasons?",
+      "anchors": {
+        "0-2": "Entirely indoors and abstract — Software Developer, Actuary.",
+        "3-4": "Outdoors, but nature is terrain rather than subject — Civil Engineer, Land Surveyor.",
+        "5-6": "Managing an environmental system through instruments and rules — Environmental Engineer, GIS & Remote Sensing Analyst.",
+        "7-8": "Working directly with living systems as the subject — Agricultural Scientist & Agronomist, Horticulture & Plantation Professional, Veterinary Doctor.",
+        "9-10": "Reading land, weather and living things daily, with the outcome depending on it — Farmer, Forest, Wildlife & Conservation Professional."
+      }
+    },
+    {
+      "slug": "existential",
+      "name": "Existential",
+      "group": "Intelligence Application",
+      "asks": "How much does this work engage meaning, mortality, belief and what a life is for?",
+      "anchors": {
+        "0-2": "Nothing of the kind arises — Data Engineer, Fitter & Machine Operator.",
+        "3-4": "Occasionally touches human significance — Journalist & Reporter, Historian & Heritage Researcher.",
+        "5-6": "Confronts hard human circumstances regularly — Social Worker, Doctor.",
+        "7-8": "The person's sense of their own life is the working material — Counsellor & Psychotherapist, Anthropologist & Sociologist.",
+        "9-10": "Death, belief and ultimate meaning ARE the subject — Religious & Ritual Professional, Funeral & Mortuary Services Professional."
+      }
+    },
+    {
+      "slug": "logical",
+      "name": "Logical",
+      "group": "Intelligence Application",
+      "asks": "How much does this work require formal, rule-governed, quantitative reasoning?",
+      "anchors": {
+        "0-2": "None — Model, Makeup Artist.",
+        "3-4": "Arithmetic and procedure — Chef & Professional Cook costing a menu, Retail & Store Operations.",
+        "5-6": "Structured quantitative work with set methods — Accounts & Bookkeeping Executive, Market Research Analyst.",
+        "7-8": "Formal systems built and debugged daily — Software Developer, Statistician, Electronics & Communication Engineer.",
+        "9-10": "Proof, formal derivation and mathematical modelling as the core output — Mathematician, Actuary, Artificial Intelligence & Machine Learning Engineer."
+      }
+    },
+    {
+      "slug": "confidence",
+      "name": "Confidence",
+      "group": "Confidence",
+      "asks": "How much does this work require acting and being believed without external backing?",
+      "anchors": {
+        "0-2": "The work speaks for itself and nobody must be convinced — Handloom Weaver, Laboratory Technician.",
+        "3-4": "Standing behind your own technical work — Software Tester, Civil Engineer.",
+        "5-6": "Holding a room that is required to be there — School Teacher, Project Manager.",
+        "7-8": "Persuading people who can refuse, with consequences if they do — Lawyer, Police Officer, Management Consultant.",
+        "9-10": "Committing your own money, reputation or body on your own judgment — Entrepreneur & Small Business Owner, Actor & Performer, Political & Electoral Professional."
+      }
+    },
+    {
+      "slug": "emotional_intelligence",
+      "name": "Emotional intelligence / quotient",
+      "group": "Perspective (crystallised-intelligence based)",
+      "asks": "How much does this work require reading what another person is feeling and responding to it correctly?",
+      "anchors": {
+        "0-2": "No human counterpart in the work — Data Engineer, Chip Design Engineer.",
+        "3-4": "Colleagues, not clients — Software Developer, Mechanical Engineer.",
+        "5-6": "Managing people and their friction — Human Resources Professional, Operations & Administration Manager.",
+        "7-8": "Sustained work with people at their most vulnerable — Nurse, Social Worker, Special Educator.",
+        "9-10": "Misreading the person IS the professional failure — Counsellor & Psychotherapist, Clinical Psychologist, Funeral & Mortuary Services Professional."
+      }
+    },
+    {
+      "slug": "attention_span",
+      "name": "Attention span / ability to concentrate / focus",
+      "group": "Perspective (crystallised-intelligence based)",
+      "asks": "How long must concentration be held unbroken, and what does breaking it cost?",
+      "anchors": {
+        "0-2": "Constant interruption is normal and costs nothing — Retail & Store Operations, Sales Professional.",
+        "3-4": "Short focused stretches — Beautician & Cosmetologist, Travel & Tourism Professional.",
+        "5-6": "An hour at a time, resumable — School Teacher, Content Writer & Editor.",
+        "7-8": "Hours of unbroken vigilance where a lapse is expensive — Software Tester, Radiology & Imaging Technologist, Film Editor & Post-Production Professional.",
+        "9-10": "Continuous vigilance where a lapse of seconds is catastrophic and rest breaks are mandated by law - Air Traffic Controller, Anaesthesia work under Operation Theatre & Anaesthesia Technologist, Railway Operations Professional in the cab."
+      }
+    },
+    {
+      "slug": "dogmatism",
+      "name": "Dogmatism / firm belief system",
+      "group": "Perspective (crystallised-intelligence based)",
+      "asks": "How much does this work require acting from FIRM PRIOR CONVICTION - a settled belief system or theory held BEFORE the task begins - as against starting from doubt and letting the evidence decide? NOTE: high is not better. This measures how strongly held a position the work demands you begin from, and it is a FIT dimension, never a quality one.",
+      "anchors": {
+        "0-2": "Abandoning your position the moment evidence contradicts it IS the discipline - Research Psychologist, Physicist, Chemist.",
+        "3-4": "Begins from doubt and actively hunts for disconfirmation - Journalist & Reporter, Market Research Analyst, Forensic Scientist.",
+        "5-6": "Works from settled standards but revises on evidence - Doctor, Civil Engineer, Data Analyst.",
+        "7-8": "Advances a position you are committed to before you begin, and holds it under attack - Lawyer, Political & Electoral Professional.",
+        "9-10": "Acts from a received body of belief that is transmitted rather than questioned - Religious & Ritual Professional, Classical Language & Manuscript Scholar."
+      }
+    }
+  ],
+  "reviewed_on": "2026-08-17",
+  "review_note": "TWO PASSES. The first wrote the 19 factors; the second re-read every band and changed six. The one that mattered: AGREEABLENESS 0-2 said 'the work IS opposition', which describes a litigator and describes nothing at all about a data engineer who simply has no one to accommodate - most solitary technical work had no home on the scale and would have drifted upward by default. It now names both cases explicitly. The other five were referents that pointed at a job role through its parent profession and read as riddles, a band resting on a single example, and a musical anchor that named yoga, which requires no ear. The user delegated the sign-off after ruling on the two open questions - neuroticism, now inverted to emotional_stability, and dogmatism, re-anchored to strength of prior conviction."
+}

@@ -1,8 +1,8 @@
 {
   "professional_sector": "8. Design & Creative Arts",
   "professional_sector_id": 8,
-  "version": "1.0",
-  "profession_count": 16,
+  "version": "1.1",
+  "profession_count": 15,
   "sector_verification_note": "TIER C BY NATURE, for the same structural reason as Sector 1: nothing in Indian design is licensed. The Architects Act 1972 protects the title 'architect' and stops there - no statute registers an interior designer, a graphic designer, a product designer, an animator or a fashion designer, and none of them can be struck off. What DOES exist is a set of degree-granting institutes - NIFT under the NIFT Act 2006, NID, the IITs through UCEED, FDDI under the FDDI Act 2017 - which control who gets a qualification but not who may practise. Every profession here is therefore Tier C on entry, and the two Tier B facts in the sector are about institutes, not licences. ECONOMICS ARE JUDGMENT THROUGHOUT except Handloom Weaver, which is the one record in this sector standing on a government earnings survey - and it is a subsistence one.",
   "professions": [
     {
@@ -903,161 +903,6 @@
       }
     },
     {
-      "id": "des-industrial-designer",
-      "profession": "Industrial & Product Designer",
-      "one_liner": "Designs physical products - appliances, tools, vehicles, medical devices, furniture.",
-      "job_roles": [
-        "Industrial Designer",
-        "Product Designer (Hardware)",
-        "Furniture Designer",
-        "Transportation Designer",
-        "Toy Designer",
-        "CMF Designer",
-        "Packaging Structure Designer",
-        "Design Researcher",
-        "Model Maker & Prototyper"
-      ],
-      "role_spread": {
-        "spread": "wide",
-        "deviating_roles": [
-          {
-            "roles": [
-              "Design Researcher"
-            ],
-            "higher": [
-              "verbal",
-              "emotional_intelligence",
-              "reasoning"
-            ],
-            "lower": [
-              "spatial"
-            ],
-            "why": "Research is fieldwork and interviews - watching how people actually use a stove or a wheelchair. It sets the brief rather than answering it."
-          },
-          {
-            "roles": [
-              "Model Maker & Prototyper"
-            ],
-            "higher": [
-              "bodily",
-              "attention_span"
-            ],
-            "lower": [
-              "verbal"
-            ],
-            "why": "Prototyping is workshop craft - foam, wood, 3D printing and finishing. It is the hands-on trade inside a profession that is otherwise screen-based."
-          }
-        ]
-      },
-      "industrial_sectors": [
-        "CGSC",
-        "FFSC",
-        "ASDC",
-        "MESC"
-      ],
-      "degree_dependency": "undergrad",
-      "mid_stream_entry": "after_any_degree",
-      "class12_prerequisite": "any",
-      "path_to_entry": [
-        {
-          "step": 1,
-          "stage": "class_11_12",
-          "requirement": "Any stream. Physics and Maths help with the engineering side but are not required."
-        },
-        {
-          "step": 2,
-          "stage": "entrance_exam",
-          "requirement": "UCEED for the IITs, or NID DAT. Private design colleges admit on their own tests."
-        },
-        {
-          "step": 3,
-          "stage": "degree",
-          "requirement": "B.Des in Industrial or Product Design (4 years), or M.Des after any degree via CEED."
-        },
-        {
-          "step": 4,
-          "stage": "work",
-          "requirement": "In-house design team at a manufacturer, or a product design consultancy."
-        }
-      ],
-      "entrance_exams": {
-        "public_routes": [
-          "UCEED",
-          "NID DAT",
-          "CEED"
-        ],
-        "private_entrances": [],
-        "note": "UCEED and NID DAT are the undergraduate routes; CEED is the postgraduate one and takes graduates of any discipline, which is how many engineers enter design."
-      },
-      "entry_competition": {
-        "primary_gate": "uceed",
-        "alternative_gates": []
-      },
-      "entry_window": null,
-      "licensing_body": null,
-      "years_to_qualify": 4,
-      "economics": {
-        "cost_of_entry_lakh": 8.0,
-        "early_earnings_lpa": "4-8",
-        "mid_career_lpa": "8-18",
-        "mid_career_midpoint": 13.0,
-        "payback_years": 1.33,
-        "distribution": "range",
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
-        "verification": {
-          "status": "judgment",
-          "sources": [],
-          "checked_on": "2026-08-11"
-        }
-      },
-      "demand_signal": {
-        "india_demand": "moderate",
-        "pathway": "any"
-      },
-      "filter": true,
-      "after_undergrad": "masters_advantage",
-      "self_employment": {
-        "likelihood": "possible_later",
-        "ceiling_lpa": null,
-        "route": "Independent design consultancy serving manufacturers, normally after 5-8 years in-house - the work comes from a network, not a portfolio site.",
-        "verification": null
-      },
-      "ai_exposure": {
-        "work_composition": {
-          "knowledge_foundational": 25,
-          "knowledge_retrievable": 10,
-          "skill_physical": 10,
-          "skill_digital": 25,
-          "clarity": 30
-        },
-        "legal_accountability": false,
-        "exposure_raw": 35,
-        "band": "low",
-        "reason": "The least exposed design profession here, because the output has to survive manufacture. A model can generate a beautiful kettle; it cannot know the tooling budget, the draft angles, the certification regime or what the factory can actually make. CMF Designer and Packaging Structure Designer are the more exposed roles; Design Researcher and Model Maker & Prototyper are the least."
-      },
-      "verification": {
-        "tier": "C",
-        "status": "judgment",
-        "source": null,
-        "checked_on": "2026-08-11"
-      },
-      "nuances": [
-        {
-          "field": "entry_competition",
-          "statement": "UCEED is named as primary because for THIS profession the public design institutes really are the dominant route into the good jobs - unlike graphic or UI design, where entry is portfolio-led and the exam is irrelevant. 15,408 candidates for 245 seats is 62.9 to 1, harder than JEE Main."
-        },
-        {
-          "field": "demand_signal",
-          "statement": "Moderate, and the reason is structural: India manufactures at enormous scale but designs comparatively little of what it makes, because design authority for many products sits with the foreign brand owner. That is a real ceiling on the profession's size, not a comment on its quality."
-        }
-      ],
-      "admin_review": {
-        "required": false,
-        "priority": "none",
-        "reason": null
-      }
-    },
-    {
       "id": "des-fashion-designer",
       "profession": "Fashion Designer",
       "one_liner": "Designs clothing and textiles - from mass-market ranges to couture and costume.",
@@ -1401,11 +1246,10 @@
             "higher": [
               "spatial",
               "bodily",
-              "long_term_memory"
+              "long_term_memory",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Cutting from measurements with no paper pattern is the high skill of the trade, held by relatively few people and learned over a decade at a bench."
           }
         ]
@@ -2109,11 +1953,10 @@
             "higher": [
               "extraversion",
               "bodily",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Public art is commissioned, scheduled, physically large and negotiated with a client or a municipality. It is project work with deadlines, unlike studio practice."
           },
           {
@@ -2432,6 +2275,12 @@
       "goes_to": "2. Engineering & Making",
       "tag_here_instead": "CGSC",
       "why": "Already built in Sector 2. Draughting produces a manufacturing or construction document to a standard, not a designed proposal."
+    },
+    {
+      "profession": "Industrial & Product Designer",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "MESC",
+      "why": "Built here and moved on review. Strip the styling and the object still has to be manufacturable, safe and to cost - the engineering constraint is what survives. Named here because NID DAT and UCEED are its entrances and students reasonably look for it under design."
     }
   ],
   "boundary_decisions_needing_your_signoff": [
@@ -2453,6 +2302,10 @@
       "ONLY TWO PROFESSIONS carry an entry_competition at all. Design entry is overwhelmingly portfolio-led, and pointing every record at UCEED would have repeated the CUET mistake corrected in Sector 3.",
       "ITERATION 3 CORRECTION - SIX ECONOMICS BLOCKS RE-BASED. Written in isolation, this sector had UI/UX Designer at 18.5, Game Designer at 17.0, Industrial Designer at 16.0 and Advertising Creative at 15.5, all ABOVE Software Developer at 14.0 in Sector 1. That is not the Indian market: at 5-8 years a software developer out-earns a designer at almost every employer. Each figure looked defensible alone and the set was wrong, which is exactly what the cross-sector pass exists to catch. UI/UX, Industrial and Game Designer now sit at 13.0, Interior and Advertising at 11.5, Fashion at 10.0 - design below software and core engineering, which is the truth. Game Designer's cost also dropped from 5.0 to 3.0 to match its own stated route, which is any bachelor's degree.",
       "THREE PROFESSIONS SIT AT HIGH AI EXPOSURE - Graphic & Visual Designer, Illustrator & Concept Artist and Advertising Creative & Copywriter. None is dropped. The rule for dropping is obsolescence of the NEED, and people still want drawn worlds, brands and advertisements. What has collapsed is the price of one competent image or one block of copy, and the damage lands on the junior rung that used to train people."
+    ],
+    "1.1": [
+      "INDUSTRIAL & PRODUCT DESIGNER MOVED TO SECTOR 2 on review, with approval. Sector 8's object of concern is how things look, read and feel; a product designer is bounded by whether the thing can be made, survives use and meets cost. Sector 8 is now 15 professions.",
+      "It stays visible from here through routed_elsewhere, because NID DAT and UCEED are design entrances and students look for this work under design."
     ]
   },
   "sector_admin_review": {

@@ -1,5 +1,5 @@
 {
-  "version": "1.3",
+  "version": "1.4",
   "note": "Shipping thresholds live HERE, in one place, not baked into profession records. Professions that fail are flagged ship:false, never deleted — a flag can be rendered as a delete, a delete cannot be rendered as a flag. Change a number here and re-run tools/export_csv.py to re-derive every shipping block.",
   "compensation_filter": {
     "mid_career_floor_lpa": 4.5,
@@ -32,7 +32,8 @@
       "credentialed": "degree_dependency in ('undergrad', 'professional')",
       "manual": "ai_exposure.work_composition.skill_physical > 50",
       "own_account": "self_employment.likelihood == 'common'",
-      "government_entry": "'EXT-GOVT' in industrial_sectors AND entrance_exams.public_routes is non-empty"
+      "government_entry": "'EXT-GOVT' in industrial_sectors AND entrance_exams.public_routes is non-empty",
+      "engineering_gated": "professional_sector_id == 2 OR (class12_prerequisite includes physics AND maths) OR an ENGINEERING route in path_to_entry: B.Tech, B.E., polytechnic, or an ITI in an engineering trade (fitter, turner, electrician, mechanic, welder, machinist, draughtsman, instrumentation, refrigeration, plumbing, carpentry, electronics). WHAT THIS RULE DELIBERATELY DOES NOT USE: industrial_sectors tags. A first version admitted any profession carrying two or more manufacturing-side councils and let in Firefighter, Cybersecurity Specialist and Laboratory Technician - because a fire officer works at a refinery and a security specialist has manufacturing clients. That is the cross-cutting rule in DECISIONS.md 2.2 broken by its own author: a tag names an EMPLOYER, and 'engineers hire this person' is not 'this person does engineering'. Bare 'ITI' and bare 'diploma' went the same way, having matched Tailor & Garment Maker."
     },
     "presets": {
       "formal_workplace_track": {
@@ -66,6 +67,22 @@
         "intent": "The inverse. For a student who wants short training, low entry cost and a path to running their own thing. Surfaces exactly what the filter above hides.",
         "rule": "KEEP if NOT credentialed AND own_account",
         "why_it_matters": "Lowest cost_of_entry_lakh and best payback_years in the dataset, and the self_employment.route on each record is the answer to 'is this a dead end'."
+      },
+      "core_engineering_track": {
+        "intent": "For a student who wants CORE ENGINEERING and the fields that surround it, including supply chain. Rendered by tools/track_view.py as a three-tier view - professional sector, profession, job roles - with each profession's industry domains expanded from its industrial_sectors codes.",
+        "rule": "KEEP if engineering_gated OR in also_include",
+        "also_include": {
+          "Patent Agent": "The Patents Act REQUIRES a science or engineering degree to sit the Patent Agent Examination. One of the very few professions in this taxonomy closed to non-engineers by statute, and the strongest engineering-gated record outside Sector 2.",
+          "Supply Chain & Logistics Manager": "Asked for explicitly. The industrial-operations destination for engineers, and the sheet's 'Supply Chain & Logistics (Support)' discipline.",
+          "Logistics & Warehouse Operator": "The non-degree half of the same work, kept so the track does not show only the graduate route into logistics.",
+          "Project Manager": "The sheet's 'Project & Program Management (Support)' discipline. A management profession rather than an engineering one, which is precisely why it needs naming here rather than being caught by a rule.",
+          "Product Manager": "Where engineers go when they stop building the thing and start deciding what it should be.",
+          "Operations & Administration Manager": "Plant and operations management, the commonest non-technical destination for a working engineer.",
+          "Vocational & Skill Trainer": "ITI instructor - one of the few stable government paths open to a DIPLOMA engineer, which no other record in the track offers.",
+          "College & University Teacher": "Engineering faculty. An ordinary B.Tech destination that the rule cannot see because the record's own gate is a doctorate, not PCM."
+        },
+        "why_a_named_list": "Six of these eight fail the rule and belong anyway. The same visible-exception pattern as sweep.py's EXEMPT dict: a judgment call that is written down can be argued with, and one buried inside a regex cannot. Anything added here must carry its reason.",
+        "THE COST - SHOW THIS TO THE STUDENT": "This track is a FILTER and hides most of the taxonomy. It keeps the ITI trades deliberately - Welder scores 7 on AI exposure and Mason 5, the two safest careers in the dataset - because filter_rules.json already records what happened the last time a preset quietly dropped them. A student who asks for core engineering should still be told that 180-odd professions were removed to build this view."
       }
     }
   }

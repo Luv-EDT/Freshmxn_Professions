@@ -1,51 +1,108 @@
 {
   "version": "1.0",
-  "note": "The 19 factors the psychometric pipeline scores. This file is the controlled vocabulary ONLY — no scores live here and none live on profession records. Its single job in this dataset is to constrain role_spread.deviating_roles, so that variance between job roles inside one profession is expressed in the same language the pipeline already speaks.",
+  "note": "The 19 factors the psychometric pipeline scores. This file is the controlled vocabulary ONLY — no scores live here and none live on profession records. Its single job in this dataset is to constrain role_spread.deviating_roles, so that variance between job roles inside one profession is expressed in the same language the pipeline already speaks. NEUROTICISM WAS REPLACED BY ITS INVERSE, EMOTIONAL STABILITY, on 2026-08-16. It was the only factor pointing the opposite way from the other eighteen: no profession requires high neuroticism, so a student scoring high on it would have had to be matched to LOW-scoring professions while every other factor matched high to high. A matching engine treating all nineteen alike would have handed anxious students air traffic control. Inverted, every factor now means the same thing - more is more.",
   "usage": "role_spread.deviating_roles[].higher / .lower may name ONLY these slugs, and always RELATIVE to the profession's own baseline — never as absolute scores. The validator rejects unknown slugs.",
   "groups": [
     {
       "group": "Personality",
       "factors": [
-        { "slug": "openness", "name": "Openness" },
-        { "slug": "conscientiousness", "name": "Conscientiousness" },
-        { "slug": "agreeableness", "name": "Agreeableness" },
-        { "slug": "extraversion", "name": "Extraversion" },
-        { "slug": "neuroticism", "name": "Neuroticism" }
+        {
+          "slug": "openness",
+          "name": "Openness"
+        },
+        {
+          "slug": "conscientiousness",
+          "name": "Conscientiousness"
+        },
+        {
+          "slug": "agreeableness",
+          "name": "Agreeableness"
+        },
+        {
+          "slug": "extraversion",
+          "name": "Extraversion"
+        },
+        {
+          "slug": "emotional_stability",
+          "name": "Emotional stability (calm under pressure)"
+        }
       ]
     },
     {
       "group": "Cognitive Skills (processing and memory)",
       "factors": [
-        { "slug": "short_term_memory", "name": "Short term memory" },
-        { "slug": "reasoning", "name": "Reasoning / inferring / accommodating / assimilation" },
-        { "slug": "long_term_memory", "name": "Long term memory" }
+        {
+          "slug": "short_term_memory",
+          "name": "Short term memory"
+        },
+        {
+          "slug": "reasoning",
+          "name": "Reasoning / inferring / accommodating / assimilation"
+        },
+        {
+          "slug": "long_term_memory",
+          "name": "Long term memory"
+        }
       ]
     },
     {
       "group": "Intelligence Application",
       "note": "Combinations of the personality and cognitive factors above.",
       "factors": [
-        { "slug": "verbal", "name": "Verbal" },
-        { "slug": "spatial", "name": "Spatial" },
-        { "slug": "musical", "name": "Musical" },
-        { "slug": "bodily", "name": "Bodily" },
-        { "slug": "naturalistic", "name": "Naturalistic" },
-        { "slug": "existential", "name": "Existential" },
-        { "slug": "logical", "name": "Logical" }
+        {
+          "slug": "verbal",
+          "name": "Verbal"
+        },
+        {
+          "slug": "spatial",
+          "name": "Spatial"
+        },
+        {
+          "slug": "musical",
+          "name": "Musical"
+        },
+        {
+          "slug": "bodily",
+          "name": "Bodily"
+        },
+        {
+          "slug": "naturalistic",
+          "name": "Naturalistic"
+        },
+        {
+          "slug": "existential",
+          "name": "Existential"
+        },
+        {
+          "slug": "logical",
+          "name": "Logical"
+        }
       ]
     },
     {
       "group": "Confidence",
       "factors": [
-        { "slug": "confidence", "name": "Confidence" }
+        {
+          "slug": "confidence",
+          "name": "Confidence"
+        }
       ]
     },
     {
       "group": "Perspective (crystallised-intelligence based)",
       "factors": [
-        { "slug": "emotional_intelligence", "name": "Emotional intelligence / quotient" },
-        { "slug": "attention_span", "name": "Attention span / ability to concentrate / focus" },
-        { "slug": "dogmatism", "name": "Dogmatism / firm belief system" }
+        {
+          "slug": "emotional_intelligence",
+          "name": "Emotional intelligence / quotient"
+        },
+        {
+          "slug": "attention_span",
+          "name": "Attention span / ability to concentrate / focus"
+        },
+        {
+          "slug": "dogmatism",
+          "name": "Dogmatism / firm belief system"
+        }
       ]
     }
   ]

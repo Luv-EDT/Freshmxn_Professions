@@ -7,6 +7,7 @@ AGREE WITH EACH OTHER — which is where real errors hide. Run both before shipp
     python tools/audit.py 01         # one sector
 """
 
+import hashlib
 import json
 import re
 import sys
@@ -371,6 +372,94 @@ def orphaned_facts():
     return [x["key"] for x in facts["facts"] if x["key"] not in cited]
 
 
+def embedding_index():
+    """Is data/profession_embeddings.json current with the taxonomy it indexes?
+
+    Reported as a WARNING queue, not an error, and absent-is-fine: the taxonomy must stay buildable
+    on a machine with no API key. But a stale vector index is a genuinely dangerous artifact — it
+    does not crash, it just answers coverage questions using a taxonomy that no longer exists.
+    Step 3 reads this index to decide which professions we are MISSING, so a drifted index produces
+    confident, wrong gaps.
+
+    Returns (missing, drifted, orphaned, header) — professions with no vector, professions whose
+    source text changed since embedding, and vectors for ids the taxonomy no longer has.
+    """
+    path = ROOT / "data" / "profession_embeddings.json"
+    if not path.exists():
+        return None
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    by_id = {e["id"]: e for e in doc.get("embeddings", [])}
+    # Mirrors content_hash() in tools/embed_professions.py — model, dimension, then text. Read from
+    # the file's own header rather than hardcoded, so changing either there re-flags every record
+    # here instead of silently passing.
+    model, dim = doc.get("model"), doc.get("dimensions")
+
+    def text_of(p):
+        return f"{p['profession']}. {p['one_liner']} Job roles include: {', '.join(p['job_roles'])}."
+
+    live, missing, drifted = set(), [], []
+    for f in sorted((ROOT / "data" / "professions").glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for p in d["professions"]:
+            live.add(p["id"])
+            e = by_id.get(p["id"])
+            if not e:
+                missing.append(p["id"])
+                continue
+            h = hashlib.sha256(
+                f"{model}\x00{dim}\x00{text_of(p)}".encode("utf-8")).hexdigest()
+            if e.get("content_hash") != h:
+                drifted.append(p["id"])
+    orphaned = sorted(set(by_id) - live)
+    return missing, drifted, orphaned, doc
+
+
+def factor_anchors():
+    """Is the Step 4 scoring rubric complete, in-vocabulary, and checkable?
+
+    Absent-is-fine — the taxonomy predates the psychometric layer and must stay buildable without
+    it. But if the file exists it is about to be used to score 223 professions, and three things
+    make it worthless without warning:
+
+      - a factor missing an anchor, so the model scores that one on a private scale
+      - a factor slug that is not in psychometric_factors.json, so the join silently drops it
+      - a band that names no profession from our own list, which is the failure the whole rubric
+        exists to prevent: "9-10 = very high logical ability" cannot be checked by anyone, and two
+        readers place it differently. A named referent can be argued with.
+
+    Errors, not warnings. A rubric that is wrong produces 223 records of confidently wrong numbers.
+    """
+    path = ROOT / "data" / "factor_anchors.json"
+    if not path.exists():
+        return None
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    e = []
+    slugs = [f["slug"] for f in doc.get("factors", [])]
+    missing = sorted(FACTORS - set(slugs))
+    unknown = sorted(set(slugs) - FACTORS)
+    if missing:
+        e.append(f"no anchors for factor(s): {', '.join(missing)}")
+    if unknown:
+        e.append(f"anchors for factor(s) not in psychometric_factors.json: {', '.join(unknown)}")
+
+    names = set()
+    for f in sorted((ROOT / "data" / "professions").glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for p in d["professions"]:
+            names.add(p["profession"])
+    for f in doc.get("factors", []):
+        anchors = f.get("anchors", {})
+        if sorted(anchors) != sorted(doc.get("bands", [])):
+            e.append(f"{f['slug']}: bands are {sorted(anchors)}, expected {sorted(doc.get('bands', []))}")
+        if not (f.get("asks") or "").strip():
+            e.append(f"{f['slug']}: no 'asks' question — the band text cannot be read without it")
+        for b, text in anchors.items():
+            if not any(n in text for n in names):
+                e.append(f"{f['slug']} band {b} names no profession from the taxonomy — "
+                         f"an adjective scale cannot be checked")
+    return e, doc
+
+
 def duplicate_job_roles():
     """The same job-role string under two professions is either a duplicate or an ambiguity.
 
@@ -407,6 +496,14 @@ def reconcile():
     broken, pending = [], []
     for n, (_, d) in sorted(sectors.items()):
         for r in d.get("routed_elsewhere", []):
+            # `routed_elsewhere` now holds two different kinds of entry. A ROUTE is a promise:
+            # "this belongs in Sector 3", and Sector 3 must eventually contain it. A DECLINE is
+            # the opposite — considered and deliberately not kept ANYWHERE, which the Step 3
+            # coverage audit produced eleven of. Both belong in the same list because probe.py
+            # reads it as the graveyard, and the only question a graveyard answers is "was this
+            # already decided?". A decline promises nothing, so there is nothing to reconcile.
+            if not r["goes_to"].split(".")[0].strip().isdigit():
+                continue
             target = int(r["goes_to"].split(".")[0])
             if target not in built:
                 pending.append(f"S{n} -> S{target}: {r['profession']}")
@@ -532,6 +629,37 @@ def main():
         for k in orphans:
             print(f"  ORPHAN  {k}")
 
+    anchor_errs = []
+    fa = factor_anchors()
+    if fa is not None:
+        anchor_errs, adoc = fa
+        print(f"\n{'=' * 60}\nFACTOR ANCHORS  ({len(adoc.get('factors', []))} factors x "
+              f"{len(adoc.get('bands', []))} bands, review_status="
+              f"{adoc.get('review_status')})")
+        for x in anchor_errs:
+            print(f"  ERROR  {x}")
+        if not anchor_errs:
+            print("  complete, in-vocabulary, and every band names a real profession")
+        if adoc.get("review_status") != "reviewed":
+            print("  -> NOT REVIEWED. Nothing should be scored against this rubric until a human "
+                  "has read it; see open_questions_for_review in the file.")
+
+    idx = embedding_index()
+    if idx is not None:
+        missing, drifted, orph, doc = idx
+        print(f"\n{'=' * 60}\nEMBEDDING INDEX  ({doc.get('model')}, {doc.get('dimensions')}-d, "
+              f"generated {doc.get('generated_on')})")
+        if not (missing or drifted or orph):
+            print(f"  current — all {doc.get('count')} professions indexed against their live text")
+        for i in missing:
+            print(f"  MISSING   {i} has no vector")
+        for i in drifted:
+            print(f"  DRIFTED   {i} was edited after it was embedded")
+        for i in orph:
+            print(f"  ORPHANED  {i} has a vector but is no longer in the taxonomy")
+        if missing or drifted or orph:
+            print("  -> python tools/embed_professions.py    (re-embeds only what changed)")
+
     print(f"\n{'=' * 60}\nOPEN QUEUES")
     print(f"  {counts['boundary']} boundary decision(s) awaiting sign-off  ·  "
           f"{counts['routed']} routed  ·  {counts['merged']} merged")
@@ -539,7 +667,8 @@ def main():
           + (f"  ·  unused in the registry: {', '.join(unused_gates)}" if unused_gates else ""))
     print(f"\ntotal: {total_e + len(broken) + len(money) + len(struct) + len(gate_errs)} error(s), "
           f"{total_w} warning(s)")
-    return 1 if (total_e or broken or undoc or stale or dups or money or struct or gate_errs) else 0
+    return 1 if (total_e or broken or undoc or stale or dups or money or struct or gate_errs
+                 or anchor_errs) else 0
 
 
 if __name__ == "__main__":

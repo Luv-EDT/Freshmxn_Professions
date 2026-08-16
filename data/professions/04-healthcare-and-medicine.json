@@ -1,7 +1,7 @@
 {
   "professional_sector": "Healthcare & Medicine",
   "professional_sector_id": 4,
-  "version": "1.9",
+  "version": "2.0",
   "profession_count": 20,
   "sector_verification_note": "The most heavily Tier A sector in the taxonomy — the mirror image of Sector 1, where nothing is licensed. 18 of 20 professions name a statutory licensing body. Two verified facts shape everything: NEET applies equally to government, private AND deemed colleges, so there is NO private bypass for medicine; and the NCAHP Act 2021 moved allied health from unregulated to statutorily licensed, making physiotherapy, optometry, MLT and the imaging and OT technologist roles Tier A rather than open-market.",
   "professions": [
@@ -2315,11 +2315,11 @@
             ],
             "higher": [
               "emotional_intelligence",
-              "agreeableness",
-              "neuroticism"
+              "agreeableness"
             ],
             "lower": [
-              "confidence"
+              "confidence",
+              "emotional_stability"
             ],
             "why": "End-of-life care is physically and emotionally the hardest work here - pain, distress, families and death, sustained over weeks in someone's home with no clinical team present."
           },
@@ -2456,7 +2456,8 @@
         "Operation Theatre Attendant",
         "Patient Transport Attendant",
         "Emergency Department Attendant",
-        "Geriatric Care Assistant"
+        "Geriatric Care Assistant",
+        "Mortuary Attendant"
       ],
       "role_spread": {
         "spread": "wide",
@@ -2481,11 +2482,11 @@
             ],
             "higher": [
               "bodily",
-              "confidence",
-              "neuroticism"
+              "confidence"
             ],
             "lower": [
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
             "why": "Emergency work is unpredictable, physically heavy and frequently distressing - trauma, intoxication, families in crisis - with no control over what arrives."
           },
@@ -2747,6 +2748,9 @@
       "GENERAL DUTY ASSISTANT ADDED, asked and approved. This CLOSES the healthcare base-layer gap DECISIONS.md 2.06 has carried open since this sector was built. Both halves are now here: General Duty Assistant for the hospital ward, and Elder & Home Care Attendant for the home, which was built in Sector 18 and moved in at v1.8.",
       "It is the most accessible entry into an Indian hospital - a three-to-six-month HSSC/NSQF certificate, no degree, no entrance examination - and it fails the compensation filter. Both facts belong on the record together.",
       "self_employment is 'rare', which is unusual in this dataset and deliberate: the role exists inside a hospital's clinical hierarchy under nursing supervision. Anyone offering freelance ward-attendant work is describing home care, which is the separate record beside it."
+    ],
+    "2.0": [
+      "Job roles added from the STEP 3 coverage audit against NCO-2015, approved before any built sector was touched. Each is work this profession already does under a name the National Classification of Occupations uses and this taxonomy did not - a job role costs one line, a profession costs economics, verification, AI scoring and review. Nothing else on these records changed."
     ]
   },
   "sector_admin_review": {

@@ -1,7 +1,7 @@
 {
   "professional_sector": "9. Media, Film & Storytelling",
   "professional_sector_id": 9,
-  "version": "1.0",
+  "version": "1.1",
   "profession_count": 12,
   "sector_verification_note": "TIER C THROUGHOUT, and unusually well evidenced for it. Nothing in Indian media is licensed: the Press Council of India is statutory but regulates newspapers' CONDUCT rather than journalists' right to practise, and it cannot strike anyone off. PIB accreditation is routinely mistaken for a licence and is only access to government premises. Against that, this sector holds something no other unlicensed sector has - a STATUTORY PAY SCHEDULE. The Majithia Wage Board, notified in 2011 and upheld by the Supreme Court in 2014, fixes basic pay for working journalists by class of newspaper. It anchors one economics block properly and carries two limits that matter: the figures have never been revised, and the Act covers newspapers only, not television or digital.",
   "professions": [
@@ -200,7 +200,11 @@
         "Ghostwriter",
         "Translator & Localisation Specialist",
         "Commissioning Editor",
-        "Author"
+        "Author",
+        "Translator",
+        "Interpreter",
+        "Subtitler",
+        "Localisation Specialist"
       ],
       "role_spread": {
         "spread": "wide",
@@ -1341,11 +1345,11 @@
             ],
             "higher": [
               "extraversion",
-              "confidence",
-              "neuroticism"
+              "confidence"
             ],
             "lower": [
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
             "why": "Live and short-form work is continuous public performance with immediate feedback. It is the highest-visibility and least stable end of the profession."
           }
@@ -1654,11 +1658,10 @@
             "higher": [
               "reasoning",
               "confidence",
-              "emotional_intelligence"
+              "emotional_intelligence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Crisis work is judgment under legal and reputational risk, usually at speed and out of hours. It is the highest-consequence version of this job and pays accordingly."
           }
         ]
@@ -1951,6 +1954,9 @@
       "NO NEW GATES. FTII JET and the IIMC entrance were both investigated and both DEFERRED to pending_gates: neither publishes applicant or seat numbers, and FTII JET is by reputation one of the hardest entrances in the country, which makes an estimated ratio more dangerous here than almost anywhere. Every profession in this sector therefore carries entry_competition null, which is the truth - media is entered on a portfolio, a reel or published clips, not on a rank.",
       "TWO PROFESSIONS AT HIGH AI EXPOSURE: Content Writer & Editor at 70 and nothing else above 60 except by a narrow margin. Voice Artist & Broadcast Presenter is rated medium at 55 but carries a nuance warning that the band understates it - synthetic voice is the one commercially deployed technology in this sector that substitutes for the core output rather than the work around it.",
       "DIGITAL CONTENT CREATOR carries a required admin_review on the same grounds as Entrepreneur in Sector 5: the income distribution is a power law and a range may be the wrong format entirely."
+    ],
+    "1.1": [
+      "Job roles added from the STEP 3 coverage audit against NCO-2015, approved before any built sector was touched. Each is work this profession already does under a name the National Classification of Occupations uses and this taxonomy did not - a job role costs one line, a profession costs economics, verification, AI scoring and review. Nothing else on these records changed."
     ]
   },
   "sector_admin_review": {

@@ -51,11 +51,10 @@
             "higher": [
               "extraversion",
               "confidence",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "The league sports. These are the only three in India with genuine professional contracts and public visibility, which changes both the money and the pressure."
           },
           {
@@ -63,12 +62,12 @@
               "Para-Athlete"
             ],
             "higher": [
-              "neuroticism",
               "conscientiousness",
               "existential"
             ],
             "lower": [
-              "extraversion"
+              "extraversion",
+              "emotional_stability"
             ],
             "why": "Para sport carries the same training demands with a fraction of the funding, the coaching infrastructure and the commercial attention - and a classification system that can reclassify an athlete out of their event."
           },
@@ -80,11 +79,10 @@
             "higher": [
               "spatial",
               "confidence",
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Motorsport is spatial judgment and reaction at speed with a real and continuous risk of injury, sustained for hours. A rally co-driver does not drive at all - they read pace notes aloud at the exact moment the driver needs them, which is a navigation and nerve discipline of its own."
           }
         ]
@@ -259,11 +257,10 @@
             "higher": [
               "agreeableness",
               "emotional_intelligence",
-              "extraversion"
+              "extraversion",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Coaching children is about keeping them in the sport, managing parents and building confidence. Winning is not the objective, which inverts the rest of the profession."
           }
         ]
@@ -575,11 +572,11 @@
             ],
             "higher": [
               "confidence",
-              "neuroticism",
               "bodily"
             ],
             "lower": [
-              "agreeableness"
+              "agreeableness",
+              "emotional_stability"
             ],
             "why": "On-field officiating is authority under open hostility from players, coaches and a crowd, while physically keeping up with the game. Being liked is not part of it."
           }
@@ -863,11 +860,10 @@
             "higher": [
               "verbal",
               "extraversion",
-              "short_term_memory"
+              "short_term_memory",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Broadcast roles are live commentary and vision-mixing over a match nobody controls. They are the most transferable jobs in esports and the only ones with an obvious career outside it."
           },
           {

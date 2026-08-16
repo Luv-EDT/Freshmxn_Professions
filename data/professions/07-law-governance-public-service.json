@@ -1,8 +1,8 @@
 {
   "professional_sector": "Law, Governance & Public Service",
   "professional_sector_id": 7,
-  "version": "1.1",
-  "profession_count": 10,
+  "version": "1.2",
+  "profession_count": 11,
   "sector_verification_note": "THE MOST STRUCTURALLY PROTECTED SECTOR IN THE TAXONOMY. Six of eight professions carry legal_accountability true — a person signs, and answers for it personally. Three name statutory licensing bodies (Bar Council of India, ICSI) and three more are entered only through state examinations. The single exception, Paralegal, is both the only unlicensed record and by far the most AI-exposed one, which is the sector's own argument about what licensing protects.",
   "professions": [
     {
@@ -1333,6 +1333,160 @@
         "priority": "none",
         "reason": null
       }
+    },
+    {
+      "id": "law-political-electoral",
+      "profession": "Political & Electoral Professional",
+      "one_liner": "Runs the campaigns, research and ground operations that politics is fought with.",
+      "job_roles": [
+        "Campaign Manager",
+        "Political Consultant",
+        "Constituency Field Manager",
+        "Election Data Analyst",
+        "Party Research Associate",
+        "Advocacy & Lobbying Specialist",
+        "Political Communications Manager",
+        "Voter Outreach Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Election Data Analyst"
+            ],
+            "higher": [
+              "logical",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Constituency modelling, survey analysis and booth-level targeting are quantitative desk work. The rest of this profession is persuasion and organisation carried out in person."
+          },
+          {
+            "roles": [
+              "Constituency Field Manager",
+              "Voter Outreach Coordinator"
+            ],
+            "higher": [
+              "extraversion",
+              "bodily"
+            ],
+            "lower": [],
+            "why": "Field organisation is months of travel, long days and constant contact with people who owe you nothing."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-GOVT",
+        "MESC",
+        "EXT-DEV"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "entry",
+          "requirement": "No qualification gates this work. Entry is by working on a campaign, usually as a volunteer or field associate first"
+        },
+        {
+          "step": 2,
+          "stage": "undergrad",
+          "requirement": "A degree in politics, economics, statistics, law or communication helps and is not required. Data roles in practice expect statistics"
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "A cycle with a political consulting firm, a party research cell, or a legislator's office"
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Campaign-to-campaign progression. The work is cyclical and follows the election calendar"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "There is no entrance examination and no licence. Political consulting firms, party research cells and legislative offices hire directly, and a campaign cycle is the credential."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 0,
+      "economics": {
+        "cost_of_entry_lakh": 0.0,
+        "early_earnings_lpa": "6.0-9.0",
+        "mid_career_lpa": "11.0-16.0",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.0,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://in.indeed.com/cmp/Indian-Political-Action-Committee-(i--pac)/salaries"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent political consultants and small campaign shops are common, and a consultant who has delivered a state campaign can bill directly. The work is cyclical, so income arrives in bursts around elections rather than monthly.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 15,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Polling analysis, message testing and voter targeting absorb automation quickly, and generative tools already draft political content at scale. What does not automate is the part that decides elections: knowing a constituency, holding a coalition of local workers together, and being trusted by people who will do unglamorous work for you."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "judgment",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "No degree grants this work and none is required to do it. Entry is through campaign work itself. This is a real 'none' and not a placeholder: political consulting firms recruit graduates from every discipline, and the qualification that counts is having run something."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Law, Governance & Public Service, whose object of concern is the state and public power. It sits beside Public Policy Professional deliberately: policy work designs what a government does, this profession contests who gets to. The skill sets are different enough - field organisation, persuasion and voter data against research and drafting - that the merge test in DECISIONS.md 8.95 keeps them apart."
+        },
+        {
+          "field": "self_employment",
+          "statement": "ELECTED OFFICE IS NOT WHAT THIS RECORD DESCRIBES. Becoming an MLA, MP or Sarpanch is the outcome many people in this work aim at, and no route in this record or anywhere else guarantees it - there is no course, no entrance examination and no qualification for being elected. What this profession describes is the paid, learnable work that surrounds politics and exists whether or not any individual ever stands for office. A student who wants to be a politician should be told both halves of that."
+        },
+        {
+          "field": "economics",
+          "statement": "Anchored on reported pay at India's largest political consulting firm - Analyst around 6.7 lakh, Campaign Manager around 11.1 lakh, Lead Analyst around 15.6 lakh, from Indeed's employer page. It is a salary aggregator, which CLAUDE.md says never to trust alone, and there is no statutory pay for this work to anchor on instead. Party and legislative-office roles pay materially less than consulting firms and are not represented in that figure."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The pay figures come from a single commercial aggregator covering ONE employer, and this profession has no statutory pay anywhere to anchor against. Party research cells, legislative offices and small state-level consultancies almost certainly pay far less than the national firms these numbers describe, and none of that is sourced. Also unresolved: the record deliberately excludes elected office, and the application must decide how to present a profession whose most visible outcome is one the data explicitly refuses to promise."
+      }
     }
   ],
   "routed_elsewhere": [
@@ -1359,6 +1513,12 @@
       "goes_to": "12. Education & Training",
       "tag_here_instead": "EXT-GOVT",
       "why": "Teaching-anything rule; the employer is a tag."
+    },
+    {
+      "profession": "Legislator / Elected Representative",
+      "goes_to": "nowhere - declined",
+      "tag_here_instead": "EXT-GOVT",
+      "why": "NCO family 1111 was wholly uncovered by the Step 3 audit and is declined deliberately. Elected office fails the first half of the profession test in DECISIONS.md 8.95: it is not a field a student can PURSUE. There is no course, no entrance examination and no qualification - you are elected. What was genuinely missing is the paid, learnable work around politics, and that is now Political & Electoral Professional on this sector."
     }
   ],
   "boundary_decisions_needing_your_signoff": [
@@ -1386,6 +1546,11 @@
       "CORRECTION - JUDICIAL SERVICES OFFICER WAS NOT TIER A AND THE BAR COUNCIL OF INDIA IS NOT ITS LICENSING BODY. A judge does not practise under a BCI licence: an advocate who takes full-time service is moved to the non-practising list and surrenders their enrolment certificate, and the BCI cannot strike off a judge. BCI enrolment is a prerequisite for ELIGIBILITY - a path_to_entry step - not a licence.",
       "Now licensing_body null, Tier B, degree_dependency 'undergrad', on the same statutory-office footing as Civil Services Officer, Police Officer and Armed Forces Officer in this same sector - all three of which were already modelled correctly. This record was the outlier and nothing had noticed.",
       "The deeper point, recorded in DECISIONS.md 10: THERE IS NO UNLICENSED VERSION OF BEING A JUDGE. You can practise medicine or law without a licence, illegally; you cannot practise as a judge without being appointed one. The licensing frame simply does not apply, and treating office as licence had produced a false Tier A."
+    ],
+    "1.2": [
+      "POLITICAL & ELECTORAL PROFESSIONAL added. The coverage audit found NCO family 1111 Legislators wholly uncovered; 'Politician' fails the profession test outright - no course, no entrance, no qualification, you are elected - but the paid and learnable work AROUND politics is real, large and was genuinely missing. Campaign management, political consulting, constituency field operations, election data and party research.",
+      "The record carries a self_employment nuance stating plainly that elected office is the outcome many aim at and that NO route guarantees it. That is the same honesty rule as entrance_gates.json's if_unsuccessful: never let a record imply a promise it cannot keep.",
+      "NCO family 1111 Legislators is recorded in routed_elsewhere as considered and declined, so probe.py and coverage_audit.py both report it as ALREADY DECIDED."
     ]
   },
   "sector_admin_review": {

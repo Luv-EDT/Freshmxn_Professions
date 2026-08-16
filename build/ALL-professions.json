@@ -1,16 +1,16 @@
 {
-  "generated_on": "2026-08-12",
+  "generated_on": "2026-08-17",
   "generated_by": "tools/export_csv.py — do not hand-edit; edit data/professions/*.json",
   "spec": "DECISIONS.md",
   "note": "Lossless union of the 18 sector files. Every profession carries every field, nested structures intact. `filter` and `ship` are DERIVED from data/filter_rules.json and recomputed on every run — read the rule there rather than trusting the flag. Shared registries are NOT inlined: entrance_exams and entry_competition reference data/entrance_gates.json, and verification.source references data/verified_facts.json, both by key.",
   "counts": {
     "sectors": 18,
-    "professions": 218,
-    "job_roles": 1639,
-    "nuances": 415,
-    "ships": 206,
+    "professions": 223,
+    "job_roles": 1716,
+    "nuances": 438,
+    "ships": 211,
     "fails_compensation_filter": 12,
-    "admin_review_required": 51
+    "admin_review_required": 56
   },
   "sectors": [
     {
@@ -24,8 +24,8 @@
     {
       "professional_sector_id": 2,
       "professional_sector": "Engineering & Making",
-      "version": "20.1",
-      "profession_count": 33,
+      "version": "20.5",
+      "profession_count": 37,
       "source_file": "data/professions/02-engineering-and-making.json",
       "sector_verification_note": "Unlike Sector 1, this sector has real Tier A licensing — DGCA for pilots and aircraft engineers, DG Shipping for marine engineers, Council of Architecture for architects. Class 12 subject gates and ITI entry rules are Tier B verified. Salary bands remain judgment throughout; India has no authoritative free source for them. NOTE: the AMIE / Institution of Engineers route named in the brief is deliberately EXCLUDED from every path_to_entry — recognition for post-2013 enrolments is unresolved in the Delhi High Court and it is not safe to recommend. Source: data/verified_facts.json#amie-iei-recognition."
     },
@@ -40,7 +40,7 @@
     {
       "professional_sector_id": 4,
       "professional_sector": "Healthcare & Medicine",
-      "version": "1.9",
+      "version": "2.0",
       "profession_count": 20,
       "source_file": "data/professions/04-healthcare-and-medicine.json",
       "sector_verification_note": "The most heavily Tier A sector in the taxonomy — the mirror image of Sector 1, where nothing is licensed. 18 of 20 professions name a statutory licensing body. Two verified facts shape everything: NEET applies equally to government, private AND deemed colleges, so there is NO private bypass for medicine; and the NCAHP Act 2021 moved allied health from unregulated to statutorily licensed, making physiotherapy, optometry, MLT and the imaging and OT technologist roles Tier A rather than open-market."
@@ -56,7 +56,7 @@
     {
       "professional_sector_id": 6,
       "professional_sector": "Finance & Economics",
-      "version": "1.0",
+      "version": "1.1",
       "profession_count": 8,
       "source_file": "data/professions/06-finance-and-economics.json",
       "sector_verification_note": "SPLIT TIER. The statutory half is real — ICAI governs Chartered Accountancy and its route was verified — but most of the sector is open market: nobody licenses a financial analyst, a banker or a wealth manager's employer. SEBI and IRDAI impose REGISTRATION on advisers and surveyors, which is a lighter thing than a licence to practise a profession. The Actuary record is deliberately left Tier B judgment rather than asserting IAI's statutory status unverified."
@@ -64,23 +64,23 @@
     {
       "professional_sector_id": 7,
       "professional_sector": "Law, Governance & Public Service",
-      "version": "1.1",
-      "profession_count": 10,
+      "version": "1.2",
+      "profession_count": 11,
       "source_file": "data/professions/07-law-governance-public-service.json",
       "sector_verification_note": "THE MOST STRUCTURALLY PROTECTED SECTOR IN THE TAXONOMY. Six of eight professions carry legal_accountability true — a person signs, and answers for it personally. Three name statutory licensing bodies (Bar Council of India, ICSI) and three more are entered only through state examinations. The single exception, Paralegal, is both the only unlicensed record and by far the most AI-exposed one, which is the sector's own argument about what licensing protects."
     },
     {
       "professional_sector_id": 8,
       "professional_sector": "8. Design & Creative Arts",
-      "version": "1.0",
-      "profession_count": 16,
+      "version": "1.1",
+      "profession_count": 15,
       "source_file": "data/professions/08-design-and-creative-arts.json",
       "sector_verification_note": "TIER C BY NATURE, for the same structural reason as Sector 1: nothing in Indian design is licensed. The Architects Act 1972 protects the title 'architect' and stops there - no statute registers an interior designer, a graphic designer, a product designer, an animator or a fashion designer, and none of them can be struck off. What DOES exist is a set of degree-granting institutes - NIFT under the NIFT Act 2006, NID, the IITs through UCEED, FDDI under the FDDI Act 2017 - which control who gets a qualification but not who may practise. Every profession here is therefore Tier C on entry, and the two Tier B facts in the sector are about institutes, not licences. ECONOMICS ARE JUDGMENT THROUGHOUT except Handloom Weaver, which is the one record in this sector standing on a government earnings survey - and it is a subsistence one."
     },
     {
       "professional_sector_id": 9,
       "professional_sector": "9. Media, Film & Storytelling",
-      "version": "1.0",
+      "version": "1.1",
       "profession_count": 12,
       "source_file": "data/professions/09-media-film-and-storytelling.json",
       "sector_verification_note": "TIER C THROUGHOUT, and unusually well evidenced for it. Nothing in Indian media is licensed: the Press Council of India is statutory but regulates newspapers' CONDUCT rather than journalists' right to practise, and it cannot strike anyone off. PIB accreditation is routinely mistaken for a licence and is only access to government premises. Against that, this sector holds something no other unlicensed sector has - a STATUTORY PAY SCHEDULE. The Majithia Wage Board, notified in 2011 and upheld by the Supreme Court in 2014, fixes basic pay for working journalists by class of newspaper. It anchors one economics block properly and carries two limits that matter: the figures have never been revised, and the Act covers newspapers only, not television or digital."
@@ -88,8 +88,8 @@
     {
       "professional_sector_id": 10,
       "professional_sector": "10. Performing Arts & Music",
-      "version": "1.1",
-      "profession_count": 9,
+      "version": "1.2",
+      "profession_count": 10,
       "source_file": "data/professions/10-performing-arts-and-music.json",
       "sector_verification_note": "TIER C THROUGHOUT, and this sector tests the schema harder than any before it. Nothing is licensed: the Sangeet Natak Akademi is the apex body and it promotes, funds and honours rather than registers, and Akashvani's artist grading is a voluntary broadcast credential that bars nobody from performing. Two Tier B facts were fetched and both describe bodies that do NOT control entry. The real problem here is not verification but FORMAT: eight of nine professions have essentially no employed version in India, so mid_career_lpa - which is employed-only by design - describes almost nobody. Six of nine carry a required admin_review for that reason, which is the highest proportion in the dataset and is a deliberate signal rather than an oversight."
     },
@@ -120,7 +120,7 @@
     {
       "professional_sector_id": 14,
       "professional_sector": "14. Environment & Sustainability",
-      "version": "1.2",
+      "version": "1.3",
       "profession_count": 8,
       "source_file": "data/professions/14-environment-and-sustainability.json",
       "sector_verification_note": "TIER C THROUGHOUT, with two gates that are not licences but behave like them. NABET/QCI accreditation decides who may SIGN an Environmental Impact Assessment report - an empanelment created by the clearance process rather than by any professions statute - and the UPSC Indian Forest Service examination controls entry to a 150-post cadre with statutory powers. Two verified facts anchor the sector at opposite ends of it: SEBI's BRSR mandate, which is the regulation that turned corporate sustainability into a job with a deadline, and the NAMASTE scheme and the Manual Scavengers Act, which document a base layer the law abolished and that still employs roughly a lakh people in urban India. This sector contains both the most fashionable white-collar profession in the dataset and its most dangerous manual one."
@@ -128,7 +128,7 @@
     {
       "professional_sector_id": 15,
       "professional_sector": "15. Agriculture & Food Systems",
-      "version": "1.2",
+      "version": "1.3",
       "profession_count": 8,
       "source_file": "data/professions/15-agriculture-and-food-systems.json",
       "sector_verification_note": "TIER C THROUGHOUT - nothing in Indian farming is licensed, and the only statutory register adjacent to this sector is veterinary, which is Sector 4. What this sector has instead is the BEST GOVERNMENT DATA in the dataset. The NSS 77th round Situation Assessment Survey gives an agricultural household's monthly income decomposed by source, and the decomposition carries the sector's central finding: since 2019 Indian farming households have earned more from WAGES than from cultivation. A second verified fact corrects a common misunderstanding - the ICAR national entrance fills only 15 percent of bachelor's seats at agricultural universities, so the famous exam is not the ordinary door. Six of eight professions here are self-employment at their core, which puts this sector with 10 and 11 in straining the employed-only salary format."
@@ -136,16 +136,16 @@
     {
       "professional_sector_id": 16,
       "professional_sector": "16. Hospitality, Travel & Culinary",
-      "version": "1.1",
-      "profession_count": 8,
+      "version": "1.3",
+      "profession_count": 7,
       "source_file": "data/professions/16-hospitality-travel-and-culinary.json",
       "sector_verification_note": "MOSTLY TIER C WITH ONE HARD TIER A. Merchant Navy Deck Officer sits under the Directorate General of Shipping exactly as Marine Engineer does in Sector 2 - a Certificate of Competency issued after a statutory examination, without which serving is unlawful. Everything else in this sector is unlicensed: nothing registers a chef, a housekeeper, a hotel manager or an event planner, and the only other credential is a Ministry of Tourism guide licence tied to specific monuments. The sector's structural feature is that it is unusually OPEN - NCHMCT JEE offers over 12,000 seats, and three of eight professions are entered with no qualification at all - and unusually dependent on an OVERSEAS pathway, which is where much of the real income in cooking, service and seafaring actually is and which no field here captures."
     },
     {
       "professional_sector_id": 17,
       "professional_sector": "17. Humanities, Culture & Belief",
-      "version": "1.0",
-      "profession_count": 8,
+      "version": "1.1",
+      "profession_count": 9,
       "source_file": "data/professions/17-humanities-culture-and-belief.json",
       "sector_verification_note": "TIER C THROUGHOUT EXCEPT ARCHAEOLOGY, and even there the regulation is of an ACTIVITY rather than of practitioners: the AMASR Act 1958 regulates archaeological excavation, but no council registers archaeologists and survey, museum and teaching work needs no authorisation. That fact was written deliberately narrowly - the India Code and ASI primary texts returned 403 and were not opened, so no section numbers or penalties are stated, because stating unopened statutory detail is the NCAHP error recorded in DECISIONS.md 10. The sector's structural feature is a consistent mismatch between NEED and FUNDED POSTS: India holds several million uncatalogued manuscripts, a vast quantity of deteriorating material and an enormous archaeological record, and trains a handful of people a year to work on any of it. Seven of eight professions carry demand_signal 'low', which is the highest concentration in the dataset and is a statement about budgets, not about need."
     },
@@ -2140,7 +2140,16 @@
         "Vehicle Design Engineer",
         "Powertrain Engineer",
         "EV Systems Engineer",
-        "Vehicle Testing Engineer"
+        "Vehicle Testing Engineer",
+        "Analysis & Simulation Engineer (FEA/CFD)",
+        "Manufacturing Engineer",
+        "Product Development Engineer",
+        "Prototype & Testing Engineer",
+        "R&D Engineer",
+        "Project Engineer",
+        "Commissioning Engineer",
+        "Interface Engineer",
+        "Ergonomics Engineer"
       ],
       "role_spread": {
         "spread": "wide",
@@ -2291,6 +2300,10 @@
         {
           "field": "job_roles",
           "statement": "Automobile engineering is folded in here. It shares the same skill set as mechanical engineering — thermodynamics, mechanics, CAD, materials, manufacturing — and differs only by industry. Two professions with the same skill profile would always surface together in a psychometric recommender, adding noise without information. Students drawn to vehicles should find this through the automotive industrial tag and the vehicle job roles."
+        },
+        {
+          "field": "job_roles",
+          "statement": "This record carries the CROSS-CUTTING engineering roles - analysis and simulation, manufacturing, prototyping, R&D, project, commissioning and interface engineering - because they exist inside every discipline and a mechanical degree is the most common route into them. They are listed once here rather than repeated on Civil, Chemical, Electrical and the rest, which would duplicate a job role across professions and is rejected by audit.py. A student reading Civil Engineer should understand that Design, Quality and Project roles exist there too."
         }
       ],
       "admin_review": {
@@ -3211,7 +3224,9 @@
         "Failure Analysis Engineer",
         "Foundry Engineer",
         "Welding Engineer",
-        "Heat Treatment Engineer"
+        "Heat Treatment Engineer",
+        "Fabrication Engineer",
+        "Inspection Engineer (NDT)"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -3349,7 +3364,9 @@
         "Engine Room Watchkeeper",
         "Shipyard Engineer",
         "Port & Dock Engineer",
-        "Marine Surveyor"
+        "Marine Surveyor",
+        "Naval Architect",
+        "Ship Design Engineer"
       ],
       "role_spread": {
         "spread": "wide",
@@ -3362,11 +3379,11 @@
             ],
             "higher": [
               "verbal",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
             "lower": [
-              "bodily",
-              "neuroticism"
+              "bodily"
             ],
             "why": "Shore roles are inspection, documentation and report-writing on a normal schedule. Sailing as an engine-room officer means months away, confined machinery spaces and emotional steadiness under isolation."
           }
@@ -3375,7 +3392,9 @@
       "industrial_sectors": [
         "LSC",
         "SMSSC",
-        "HYSSC"
+        "HYSSC",
+        "IISSSC",
+        "EXT-DEFENCE"
       ],
       "degree_dependency": "professional",
       "mid_stream_entry": "restart_undergrad",
@@ -3503,7 +3522,11 @@
         "Reservoir Engineer",
         "Oil & Gas Production Engineer",
         "Well Logging Engineer",
-        "Completion Engineer"
+        "Completion Engineer",
+        "Pipeline Engineer (Onshore)",
+        "Subsea Engineer (SURF)",
+        "Flow Assurance Engineer",
+        "Offshore Installation Engineer"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -3622,7 +3645,12 @@
         "source": "data/verified_facts.json#jee-main-paper1-btech",
         "checked_on": "2026-07-31"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Piping and layout, onshore pipeline, subsea (SURF) and flow assurance are often presented as separate INDUSTRY DOMAINS in oil and gas hiring. They are not industries - they are specialisations of this profession's work, and the substitution test settles it: nobody is employed BY flow assurance, they are employed by an operator or an EPC contractor to do it. They are recorded here as job roles, which is what they are."
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -4633,7 +4661,9 @@
         "Pipe Fitter",
         "Sanitary Technician",
         "Water Supply Technician",
-        "Gas Pipeline Fitter"
+        "Gas Pipeline Fitter",
+        "Pipe Insulator",
+        "Acoustical Insulator"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -4885,7 +4915,8 @@
         "Tile & Marble Layer",
         "Concrete Technician",
         "Scaffolder",
-        "Waterproofing Technician"
+        "Waterproofing Technician",
+        "Building Insulator"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -5009,7 +5040,8 @@
         "Refrigeration Mechanic",
         "HVAC Installation Technician",
         "Chiller Technician",
-        "Cold Chain Technician"
+        "Cold Chain Technician",
+        "Refrigeration Insulator"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -6730,6 +6762,663 @@
         {
           "field": "profession",
           "statement": "Kept separate from Architect rather than folded in as job roles, on the merge test in DECISIONS.md 8.95. The object of concern differs - a building against a settlement - and so does the skill set: zoning law, transport modelling, demographic projection and statutory development control have no counterpart in structural design. The entry gates differ too, which is decisive: PCM and a protected title for one, Mathematics alone and no register for the other."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
+    },
+    {
+      "professional_sector_id": 2,
+      "professional_sector": "Engineering & Making",
+      "id": "eng-air-traffic-controller",
+      "profession": "Air Traffic Controller",
+      "one_liner": "Keeps aircraft apart and moving, from a tower or a radar room.",
+      "job_roles": [
+        "Air Traffic Control Officer",
+        "Aerodrome (Tower) Controller",
+        "Approach Radar Controller",
+        "Area Control Centre Controller",
+        "Flight Information Officer",
+        "Ground Movement Controller"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Flight Information Officer"
+            ],
+            "higher": [
+              "verbal"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Flight information is an advisory desk - it answers and briefs. Radar control is continuous live separation of aircraft, which is where the concentration load sits."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "IASC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths at class 12"
+        },
+        {
+          "step": 2,
+          "stage": "undergrad",
+          "requirement": "B.Sc with Physics and Maths, or B.E./B.Tech"
+        },
+        {
+          "step": 3,
+          "stage": "exams",
+          "requirement": "AAI Junior Executive (Air Traffic Control) computer-based test, followed by a voice test and a psychoactive substance test"
+        },
+        {
+          "step": 4,
+          "stage": "medical",
+          "requirement": "Class 1 medical fitness"
+        },
+        {
+          "step": 5,
+          "stage": "training",
+          "requirement": "Ab-initio training at an AAI Civil Aviation Training College, then on-the-job ratings for each control position"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "AAI Junior Executive (Air Traffic Control) recruitment examination"
+        ],
+        "private_entrances": [],
+        "note": "One employer for practical purposes. Air traffic services in India are provided by the Airports Authority of India, so the AAI recruitment examination is the route."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "11.0-13.0",
+        "mid_career_lpa": "16.0-24.0",
+        "mid_career_midpoint": 20.0,
+        "payback_years": 0.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://www.aai.aero/sites/default/files/examdashboard_advertisement/Detailed%20ATC%20Advertisement%2002-2025-CHQ.pdf"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Automation assists heavily - conflict alerting, data-link, arrival sequencing - and none of it removes the controller, because the accountability for separation is personal and the job is live judgment under time pressure with no undo. What automation has changed is the volume one controller can handle, not whether one is present."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#aai-atc-junior-executive-pay",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Placed in Engineering & Making beside Commercial Pilot and Aircraft Maintenance Engineer, which is the precedent for licensed technical operation of aviation systems. The tension worth knowing: Merchant Navy Deck Officer, who does the equivalent job on a ship, sits in Sector 16 while Marine Engineer sits here. That inconsistency predates this record and is carried on Sector 2's sector_admin_review rather than resolved by moving a built record."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body named. A controller's instructions are mandatory in controlled airspace and responsibility for separation is personal and individually attributable after an incident - the same statutory-office pattern as Civil Services Officer and Police Officer, where accountability rests on the office rather than on a council's licence. Whether DGCA additionally issues an air traffic controller licence under the Aircraft Rules is a Tier A question carried on this record's admin_review."
+        },
+        {
+          "field": "economics",
+          "statement": "early_earnings is anchored on a document, not an aggregator: AAI Advertisement 02/2025/CHQ gives the approximate CTC for Junior Executive as Rs. 13 lakhs per annum on the E-1 scale of Rs.40000 - 3% - 140000. mid_career is NOT in that document and is judgment. Source: data/verified_facts.json#aai-atc-junior-executive-pay."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Two open items. (1) Does DGCA issue an air traffic controller LICENCE under the Aircraft Rules? If it does, this record is Tier A with a named licensing_body, not Tier B. (2) No sourced mid-career figure exists - AAI's advertisement gives entry CTC only, and the E-1 scale's progression to E-2 and above is not quantified in it. The mid_career band is built outward from the sourced entry figure and the published 3% increment, and should be replaced with a fetched figure."
+      }
+    },
+    {
+      "professional_sector_id": 2,
+      "professional_sector": "Engineering & Making",
+      "id": "eng-railway-operations",
+      "profession": "Railway Operations Professional",
+      "one_liner": "Drives the trains, controls their movement and keeps the section safe.",
+      "job_roles": [
+        "Assistant Loco Pilot",
+        "Loco Pilot",
+        "Station Master",
+        "Train Manager (Guard)",
+        "Section Controller",
+        "Signal & Telecommunication Operator",
+        "Yard Master",
+        "Train Examiner (Rolling Stock)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Station Master",
+              "Section Controller"
+            ],
+            "higher": [
+              "verbal",
+              "confidence"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Station and section control is coordination by voice and record under pressure - authorising movements, sequencing trains, handling failures. Driving is a solitary, physical, intensely procedural job in a cab."
+          },
+          {
+            "roles": [
+              "Signal & Telecommunication Operator",
+              "Train Examiner (Rolling Stock)"
+            ],
+            "higher": [
+              "spatial",
+              "logical"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Signalling and rolling-stock examination are diagnostic trades - circuits, interlocks and mechanical fault-finding rather than train handling."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSC",
+        "IISSSC",
+        "IESC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI in a relevant trade, or a three-year diploma in mechanical, electrical or electronics engineering, for the Assistant Loco Pilot route. Station Master is recruited at graduate level"
+        },
+        {
+          "step": 3,
+          "stage": "exams",
+          "requirement": "RRB Assistant Loco Pilot computer-based tests, followed by a computer-based aptitude test"
+        },
+        {
+          "step": 4,
+          "stage": "medical",
+          "requirement": "Railway medical standard A-1, which is the strictest vision standard the Railways apply"
+        },
+        {
+          "step": 5,
+          "stage": "training",
+          "requirement": "Zonal training school, then footplate experience before independent charge of a locomotive"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "RRB Assistant Loco Pilot (CEN 01/2026)",
+          "RRB Non-Technical Popular Categories (Station Master)",
+          "RRB Technician"
+        ],
+        "private_entrances": [],
+        "note": "Indian Railways recruits through the Railway Recruitment Boards and almost nowhere else. CEN 01/2026 alone advertised 11,127 Assistant Loco Pilot posts."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.6,
+        "early_earnings_lpa": "2.4-4.2",
+        "mid_career_lpa": "4.8-9.0",
+        "mid_career_midpoint": 6.9,
+        "payback_years": 0.18,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://rrbajmer.gov.in/Upload_PDF/CEN%2001-2026%20Eng-639143539720035538.pdf"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 10,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Driving is physical, procedural and safety-critical, and Indian Railways runs a vast legacy network where automatic train protection is being fitted rather than assumed. Signalling and control absorb more automation than the cab does. The binding constraint is not technology but accountability: a signal passed at danger is attributed to a person."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#rrb-alp-cen-01-2026",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Engineering & Making, on the Commercial Pilot precedent - licensed, technical operation of a machine on which other people's lives depend. It is NOT Sector 5 beside Commercial Vehicle Driver: a loco pilot works inside a signalling and control system rather than driving on open road, which is why the section controller and the signal operator belong on the same record and no equivalent exists for road transport."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body. Railway operating staff hold competency certificates issued by the Railways themselves and are personally answerable under the Railways Act for signal and safety violations - accountability by office and employer certification rather than by an external council's licence."
+        },
+        {
+          "field": "economics",
+          "statement": "The sourced figure is BASIC PAY ONLY: Rs. 19,900 per month at Pay Level-2, from Railway Board CEN 01/2026. Gross pay is materially higher because Dearness Allowance, HRA and the Running Allowance specific to loco staff are added on top, and the Running Allowance can be a large share of a loco pilot's packet. The bands here are built outward from the sourced basic and are judgment. Source: data/verified_facts.json#rrb-alp-cen-01-2026."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "One notification, CEN 01/2026, advertised 11,127 Assistant Loco Pilot posts. Indian Railways is among the largest employers in the country and recruits in tens of thousands across categories, which is why india_demand is high and pathway is india - this is domestic public employment, not a transferable international qualification."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "No sourced figure for GROSS pay or for mid-career earnings. Basic pay at entry is documented (Rs. 19,900, Level-2) but the Running Allowance - which materially changes what a loco pilot actually earns - is not, and neither is the pay level after promotion from Assistant Loco Pilot to Loco Pilot to Mail/Express. Fetch the Railway Board's running allowance rules and the Level-4/Level-6 matrix before treating these bands as reliable."
+      }
+    },
+    {
+      "professional_sector_id": 2,
+      "professional_sector": "Engineering & Making",
+      "id": "eng-merchant-navy-deck-officer",
+      "profession": "Merchant Navy Deck Officer",
+      "one_liner": "Navigates and commands a cargo ship - the deck side of the merchant marine.",
+      "job_roles": [
+        "Deck Cadet",
+        "Third Officer",
+        "Second Officer",
+        "Navigating Officer",
+        "Cargo Officer",
+        "Marine Pilot Trainee",
+        "Port Operations Officer",
+        "Marine Surveyor Trainee"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Port Operations Officer",
+              "Marine Surveyor Trainee"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "verbal",
+              "emotional_stability"
+            ],
+            "lower": [],
+            "why": "Shore roles - port operations, surveying, ship chartering and management - are where deck officers go after they stop sailing. They pay less than sea time and are the reason the certificate matters beyond the ship."
+          },
+          {
+            "roles": [
+              "Deck Cadet"
+            ],
+            "higher": [
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "confidence",
+              "emotional_stability"
+            ],
+            "why": "Eighteen months at sea as a trainee, away from home, on a working ship. It is the hardest filter in this profession and it cannot begin without a shipping company sponsoring the berth."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSC",
+        "HYSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Mathematics with 60 percent aggregate and 50 percent in English. Medical standard is absolute: 6/6 vision without aids and no colour blindness."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "IMU CET or a DG Shipping approved institute's admission, plus a company sponsorship test."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "Either a one-year Diploma in Nautical Science or a three-year B.Sc Nautical Science, at a DG Shipping approved institute. Both lead to the same certificate and both cost like a degree - the DNS is a one-year course priced in lakhs."
+        },
+        {
+          "step": 4,
+          "stage": "sea_time",
+          "requirement": "18 months of Structured Shipboard Training as a Deck Cadet. THIS REQUIRES A COMPANY SPONSORSHIP and is the real bottleneck."
+        },
+        {
+          "step": 5,
+          "stage": "certification",
+          "requirement": "Four months post-sea shore training, the STCW courses, and the Second Mates examination conducted by the Directorate General of Shipping. Passing awards the Second Mates (FG) Certificate of Competency."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "IMU CET",
+          "DG Shipping approved pre-sea training admissions"
+        ],
+        "private_entrances": [
+          "Company-sponsored cadet schemes"
+        ],
+        "note": "The examination is not the constraint. COMPANY SPONSORSHIP for the 18 months of shipboard training is, and a student can complete the diploma and still be unable to proceed."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Directorate General of Shipping",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "6.0-12.0",
+        "mid_career_lpa": "13.0-32.0",
+        "mid_career_midpoint": 22.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Very low exposure. Ships are increasingly automated and crewed by fewer people, but a certificated officer must be aboard and personally answerable for the safe navigation of the vessel under international convention. Autonomous shipping is real and slow, and the regulatory requirement for a licensed human on watch is what this profession rests on. Marine Surveyor Trainee and Port Operations Officer carry more exposure through documentation and inspection tooling."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dns-second-mate-coc",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Tier A. The Second Mates (Foreign Going) Certificate of Competency is issued by the Directorate General of Shipping after its own examination, and serving as a deck officer without one is unlawful. This is the same statutory structure as the MEO certificates recorded for Marine Engineer in Sector 2.",
+          "source": "data/verified_facts.json#dns-second-mate-coc"
+        },
+        {
+          "field": "path_to_entry",
+          "statement": "The binding constraint is not academic. Eighteen months of shipboard training requires a shipping company to sponsor a cadet berth, and the number of berths is far smaller than the number of people completing pre-sea courses. Students routinely pay for a diploma and then cannot proceed. Any institute that does not guarantee sponsorship in writing should be treated with suspicion."
+        },
+        {
+          "field": "economics",
+          "statement": "The cost of entry is the part students underestimate. A DG Shipping approved pre-sea course is priced in lakhs whether it is the one-year diploma or the three-year degree, it is paid up front, and it does not guarantee the cadet berth that the certificate depends on. Money spent before sponsorship is money at risk."
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "PCM is required and so is a MEDICAL standard that no other profession in this dataset imposes: uncorrected 6/6 vision and no colour blindness. That excludes a large number of academically eligible students, and it should be checked before any money is spent."
+        },
+        {
+          "field": "economics",
+          "statement": "Set level with Marine Engineer in Sector 2 rather than above it. Deck and engine officers hold parallel Certificates of Competency on the same ship under the same international convention, and a gap between them was not defensible. The highest earnings in this sector by a wide margin, and they are earned at sea in tax-advantaged foreign-going service, away from home for months. Shore roles after sailing pay substantially less, which is the trade every officer eventually makes."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Built in Sector 16 and moved here on review. The substitution test decided it: remove travel and hospitality and a deck officer's work - navigation, watchkeeping, cargo, safety - survives completely unchanged, because a cargo ship carries no passengers to host. The setting was doing the work of a sector. It also ends a split that should never have existed: MARINE ENGINEER was already here, and the deck officer holds the parallel Certificate of Competency on the same ship. Two halves of one crew were in two different sectors."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The highest figure and the widest spread anywhere in Sectors 8 to 18 - 13 to 32 lakh - and entirely unsourced. A fetchable anchor exists and should be used: the NUSI-MUI and INSA collective bargaining wage scales publish monthly rates for a Third Officer on Indian-flag foreign-going ships, and ITF minimum scales cover the international floor. Sourcing it would make this the sector's one statutory-style anchor, as the Majithia award is for Sector 9."
+      }
+    },
+    {
+      "professional_sector_id": 2,
+      "professional_sector": "Engineering & Making",
+      "id": "eng-industrial-product-designer",
+      "profession": "Industrial & Product Designer",
+      "one_liner": "Designs physical products - appliances, tools, vehicles, medical devices, furniture.",
+      "job_roles": [
+        "Industrial Designer",
+        "Product Designer (Hardware)",
+        "Furniture Designer",
+        "Transportation Designer",
+        "Toy Designer",
+        "CMF Designer",
+        "Packaging Structure Designer",
+        "Design Researcher",
+        "Model Maker & Prototyper"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Design Researcher"
+            ],
+            "higher": [
+              "verbal",
+              "emotional_intelligence",
+              "reasoning"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Research is fieldwork and interviews - watching how people actually use a stove or a wheelchair. It sets the brief rather than answering it."
+          },
+          {
+            "roles": [
+              "Model Maker & Prototyper"
+            ],
+            "higher": [
+              "bodily",
+              "attention_span"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Prototyping is workshop craft - foam, wood, 3D printing and finishing. It is the hands-on trade inside a profession that is otherwise screen-based."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CGSC",
+        "FFSC",
+        "ASDC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Physics and Maths help with the engineering side but are not required."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "UCEED for the IITs, or NID DAT. Private design colleges admit on their own tests."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Des in Industrial or Product Design (4 years), or M.Des after any degree via CEED."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "In-house design team at a manufacturer, or a product design consultancy."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UCEED",
+          "NID DAT",
+          "CEED"
+        ],
+        "private_entrances": [],
+        "note": "UCEED and NID DAT are the undergraduate routes; CEED is the postgraduate one and takes graduates of any discipline, which is how many engineers enter design."
+      },
+      "entry_competition": {
+        "primary_gate": "uceed",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 1.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent design consultancy serving manufacturers, normally after 5-8 years in-house - the work comes from a network, not a portfolio site.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "The least exposed design profession here, because the output has to survive manufacture. A model can generate a beautiful kettle; it cannot know the tooling budget, the draft angles, the certification regime or what the factory can actually make. CMF Designer and Packaging Structure Designer are the more exposed roles; Design Researcher and Model Maker & Prototyper are the least."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entry_competition",
+          "statement": "UCEED is named as primary because for THIS profession the public design institutes really are the dominant route into the good jobs - unlike graphic or UI design, where entry is portfolio-led and the exam is irrelevant. 15,408 candidates for 245 seats is 62.9 to 1, harder than JEE Main."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and the reason is structural: India manufactures at enormous scale but designs comparatively little of what it makes, because design authority for many products sits with the foreign brand owner. That is a real ceiling on the profession's size, not a comment on its quality."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Built in Sector 8 and moved here on review. The substitution test decides it: strip the styling and the object still has to be manufacturable, safe, durable and to cost - the engineering constraint is what survives, and it is what the job is actually bounded by. Its industrial tags were already CGSC, FFSC and ASDC: capital goods, furniture and automotive. THE COUNTER-ARGUMENT IS REAL AND IS WHY SECTOR 8 STILL POINTS HERE: the entrances are NID DAT and UCEED, which are design examinations, and a 15-year-old looking for this work will look under design, not under engineering. Placement follows the work; discoverability is the application's job."
         }
       ],
       "admin_review": {
@@ -11701,11 +12390,11 @@
             ],
             "higher": [
               "emotional_intelligence",
-              "agreeableness",
-              "neuroticism"
+              "agreeableness"
             ],
             "lower": [
-              "confidence"
+              "confidence",
+              "emotional_stability"
             ],
             "why": "End-of-life care is physically and emotionally the hardest work here - pain, distress, families and death, sustained over weeks in someone's home with no clinical team present."
           },
@@ -11844,7 +12533,8 @@
         "Operation Theatre Attendant",
         "Patient Transport Attendant",
         "Emergency Department Attendant",
-        "Geriatric Care Assistant"
+        "Geriatric Care Assistant",
+        "Mortuary Attendant"
       ],
       "role_spread": {
         "spread": "wide",
@@ -11869,11 +12559,11 @@
             ],
             "higher": [
               "bodily",
-              "confidence",
-              "neuroticism"
+              "confidence"
             ],
             "lower": [
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
             "why": "Emergency work is unpredictable, physically heavy and frequently distressing - trauma, intoxication, families in crisis - with no control over what arrives."
           },
@@ -13648,11 +14338,11 @@
             ],
             "higher": [
               "conscientiousness",
-              "logical",
-              "neuroticism"
+              "logical"
             ],
             "lower": [
-              "extraversion"
+              "extraversion",
+              "emotional_stability"
             ],
             "why": "Carrying fuel, chemicals or explosives requires a hazardous goods endorsement, specific training and route restrictions. It is the best-paid driving work and the consequence of a mistake is not a delayed delivery."
           },
@@ -13950,7 +14640,9 @@
         "Accounts Receivable Executive",
         "Payroll Executive",
         "GST Return Preparer",
-        "Billing Executive"
+        "Billing Executive",
+        "Debt Recovery Agent",
+        "Collections Officer"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -14080,11 +14772,10 @@
             ],
             "higher": [
               "conscientiousness",
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Investment banking analysis runs on extreme hours and deadline pressure against live transactions. FP&A and credit analysis in the same profession are ordinary corporate jobs."
           }
         ]
@@ -16168,6 +16859,162 @@
       }
     },
     {
+      "professional_sector_id": 7,
+      "professional_sector": "Law, Governance & Public Service",
+      "id": "law-political-electoral",
+      "profession": "Political & Electoral Professional",
+      "one_liner": "Runs the campaigns, research and ground operations that politics is fought with.",
+      "job_roles": [
+        "Campaign Manager",
+        "Political Consultant",
+        "Constituency Field Manager",
+        "Election Data Analyst",
+        "Party Research Associate",
+        "Advocacy & Lobbying Specialist",
+        "Political Communications Manager",
+        "Voter Outreach Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Election Data Analyst"
+            ],
+            "higher": [
+              "logical",
+              "reasoning"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Constituency modelling, survey analysis and booth-level targeting are quantitative desk work. The rest of this profession is persuasion and organisation carried out in person."
+          },
+          {
+            "roles": [
+              "Constituency Field Manager",
+              "Voter Outreach Coordinator"
+            ],
+            "higher": [
+              "extraversion",
+              "bodily"
+            ],
+            "lower": [],
+            "why": "Field organisation is months of travel, long days and constant contact with people who owe you nothing."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "EXT-GOVT",
+        "MESC",
+        "EXT-DEV"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "entry",
+          "requirement": "No qualification gates this work. Entry is by working on a campaign, usually as a volunteer or field associate first"
+        },
+        {
+          "step": 2,
+          "stage": "undergrad",
+          "requirement": "A degree in politics, economics, statistics, law or communication helps and is not required. Data roles in practice expect statistics"
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "A cycle with a political consulting firm, a party research cell, or a legislator's office"
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Campaign-to-campaign progression. The work is cyclical and follows the election calendar"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "There is no entrance examination and no licence. Political consulting firms, party research cells and legislative offices hire directly, and a campaign cycle is the credential."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 0,
+      "economics": {
+        "cost_of_entry_lakh": 0.0,
+        "early_earnings_lpa": "6.0-9.0",
+        "mid_career_lpa": "11.0-16.0",
+        "mid_career_midpoint": 13.5,
+        "payback_years": 0.0,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://in.indeed.com/cmp/Indian-Political-Action-Committee-(i--pac)/salaries"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent political consultants and small campaign shops are common, and a consultant who has delivered a state campaign can bill directly. The work is cyclical, so income arrives in bursts around elections rather than monthly.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 20,
+          "skill_physical": 15,
+          "skill_digital": 15,
+          "clarity": 25
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Polling analysis, message testing and voter targeting absorb automation quickly, and generative tools already draft political content at scale. What does not automate is the part that decides elections: knowing a constituency, holding a coalition of local workers together, and being trusted by people who will do unglamorous work for you."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "judgment",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "degree_dependency",
+          "statement": "No degree grants this work and none is required to do it. Entry is through campaign work itself. This is a real 'none' and not a placeholder: political consulting firms recruit graduates from every discipline, and the qualification that counts is having run something."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Law, Governance & Public Service, whose object of concern is the state and public power. It sits beside Public Policy Professional deliberately: policy work designs what a government does, this profession contests who gets to. The skill sets are different enough - field organisation, persuasion and voter data against research and drafting - that the merge test in DECISIONS.md 8.95 keeps them apart."
+        },
+        {
+          "field": "self_employment",
+          "statement": "ELECTED OFFICE IS NOT WHAT THIS RECORD DESCRIBES. Becoming an MLA, MP or Sarpanch is the outcome many people in this work aim at, and no route in this record or anywhere else guarantees it - there is no course, no entrance examination and no qualification for being elected. What this profession describes is the paid, learnable work that surrounds politics and exists whether or not any individual ever stands for office. A student who wants to be a politician should be told both halves of that."
+        },
+        {
+          "field": "economics",
+          "statement": "Anchored on reported pay at India's largest political consulting firm - Analyst around 6.7 lakh, Campaign Manager around 11.1 lakh, Lead Analyst around 15.6 lakh, from Indeed's employer page. It is a salary aggregator, which CLAUDE.md says never to trust alone, and there is no statutory pay for this work to anchor on instead. Party and legislative-office roles pay materially less than consulting firms and are not represented in that figure."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The pay figures come from a single commercial aggregator covering ONE employer, and this profession has no statutory pay anywhere to anchor against. Party research cells, legislative offices and small state-level consultancies almost certainly pay far less than the national firms these numbers describe, and none of that is sourced. Also unresolved: the record deliberately excludes elected office, and the application must decide how to present a profession whose most visible outcome is one the data explicitly refuses to promise."
+      }
+    },
+    {
       "professional_sector_id": 8,
       "professional_sector": "8. Design & Creative Arts",
       "id": "des-graphic-designer",
@@ -17079,163 +17926,6 @@
     {
       "professional_sector_id": 8,
       "professional_sector": "8. Design & Creative Arts",
-      "id": "des-industrial-designer",
-      "profession": "Industrial & Product Designer",
-      "one_liner": "Designs physical products - appliances, tools, vehicles, medical devices, furniture.",
-      "job_roles": [
-        "Industrial Designer",
-        "Product Designer (Hardware)",
-        "Furniture Designer",
-        "Transportation Designer",
-        "Toy Designer",
-        "CMF Designer",
-        "Packaging Structure Designer",
-        "Design Researcher",
-        "Model Maker & Prototyper"
-      ],
-      "role_spread": {
-        "spread": "wide",
-        "deviating_roles": [
-          {
-            "roles": [
-              "Design Researcher"
-            ],
-            "higher": [
-              "verbal",
-              "emotional_intelligence",
-              "reasoning"
-            ],
-            "lower": [
-              "spatial"
-            ],
-            "why": "Research is fieldwork and interviews - watching how people actually use a stove or a wheelchair. It sets the brief rather than answering it."
-          },
-          {
-            "roles": [
-              "Model Maker & Prototyper"
-            ],
-            "higher": [
-              "bodily",
-              "attention_span"
-            ],
-            "lower": [
-              "verbal"
-            ],
-            "why": "Prototyping is workshop craft - foam, wood, 3D printing and finishing. It is the hands-on trade inside a profession that is otherwise screen-based."
-          }
-        ]
-      },
-      "industrial_sectors": [
-        "CGSC",
-        "FFSC",
-        "ASDC",
-        "MESC"
-      ],
-      "degree_dependency": "undergrad",
-      "mid_stream_entry": "after_any_degree",
-      "class12_prerequisite": "any",
-      "path_to_entry": [
-        {
-          "step": 1,
-          "stage": "class_11_12",
-          "requirement": "Any stream. Physics and Maths help with the engineering side but are not required."
-        },
-        {
-          "step": 2,
-          "stage": "entrance_exam",
-          "requirement": "UCEED for the IITs, or NID DAT. Private design colleges admit on their own tests."
-        },
-        {
-          "step": 3,
-          "stage": "degree",
-          "requirement": "B.Des in Industrial or Product Design (4 years), or M.Des after any degree via CEED."
-        },
-        {
-          "step": 4,
-          "stage": "work",
-          "requirement": "In-house design team at a manufacturer, or a product design consultancy."
-        }
-      ],
-      "entrance_exams": {
-        "public_routes": [
-          "UCEED",
-          "NID DAT",
-          "CEED"
-        ],
-        "private_entrances": [],
-        "note": "UCEED and NID DAT are the undergraduate routes; CEED is the postgraduate one and takes graduates of any discipline, which is how many engineers enter design."
-      },
-      "entry_competition": {
-        "primary_gate": "uceed",
-        "alternative_gates": []
-      },
-      "entry_window": null,
-      "licensing_body": null,
-      "years_to_qualify": 4,
-      "economics": {
-        "cost_of_entry_lakh": 8.0,
-        "early_earnings_lpa": "4-8",
-        "mid_career_lpa": "8-18",
-        "mid_career_midpoint": 13.0,
-        "payback_years": 1.33,
-        "distribution": "range",
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
-        "verification": {
-          "status": "judgment",
-          "sources": [],
-          "checked_on": "2026-08-11"
-        }
-      },
-      "demand_signal": {
-        "india_demand": "moderate",
-        "pathway": "any"
-      },
-      "filter": true,
-      "after_undergrad": "masters_advantage",
-      "self_employment": {
-        "likelihood": "possible_later",
-        "ceiling_lpa": null,
-        "route": "Independent design consultancy serving manufacturers, normally after 5-8 years in-house - the work comes from a network, not a portfolio site.",
-        "verification": null
-      },
-      "ai_exposure": {
-        "work_composition": {
-          "knowledge_foundational": 25,
-          "knowledge_retrievable": 10,
-          "skill_physical": 10,
-          "skill_digital": 25,
-          "clarity": 30
-        },
-        "legal_accountability": false,
-        "exposure_raw": 35,
-        "band": "low",
-        "reason": "The least exposed design profession here, because the output has to survive manufacture. A model can generate a beautiful kettle; it cannot know the tooling budget, the draft angles, the certification regime or what the factory can actually make. CMF Designer and Packaging Structure Designer are the more exposed roles; Design Researcher and Model Maker & Prototyper are the least."
-      },
-      "verification": {
-        "tier": "C",
-        "status": "judgment",
-        "source": null,
-        "checked_on": "2026-08-11"
-      },
-      "nuances": [
-        {
-          "field": "entry_competition",
-          "statement": "UCEED is named as primary because for THIS profession the public design institutes really are the dominant route into the good jobs - unlike graphic or UI design, where entry is portfolio-led and the exam is irrelevant. 15,408 candidates for 245 seats is 62.9 to 1, harder than JEE Main."
-        },
-        {
-          "field": "demand_signal",
-          "statement": "Moderate, and the reason is structural: India manufactures at enormous scale but designs comparatively little of what it makes, because design authority for many products sits with the foreign brand owner. That is a real ceiling on the profession's size, not a comment on its quality."
-        }
-      ],
-      "admin_review": {
-        "required": false,
-        "priority": "none",
-        "reason": null
-      }
-    },
-    {
-      "professional_sector_id": 8,
-      "professional_sector": "8. Design & Creative Arts",
       "id": "des-fashion-designer",
       "profession": "Fashion Designer",
       "one_liner": "Designs clothing and textiles - from mass-market ranges to couture and costume.",
@@ -17583,11 +18273,10 @@
             "higher": [
               "spatial",
               "bodily",
-              "long_term_memory"
+              "long_term_memory",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Cutting from measurements with no paper pattern is the high skill of the trade, held by relatively few people and learned over a decade at a bench."
           }
         ]
@@ -18301,11 +18990,10 @@
             "higher": [
               "extraversion",
               "bodily",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Public art is commissioned, scheduled, physically large and negotiated with a client or a municipality. It is project work with deadlines, unlike studio practice."
           },
           {
@@ -18776,7 +19464,11 @@
         "Ghostwriter",
         "Translator & Localisation Specialist",
         "Commissioning Editor",
-        "Author"
+        "Author",
+        "Translator",
+        "Interpreter",
+        "Subtitler",
+        "Localisation Specialist"
       ],
       "role_spread": {
         "spread": "wide",
@@ -19931,11 +20623,11 @@
             ],
             "higher": [
               "extraversion",
-              "confidence",
-              "neuroticism"
+              "confidence"
             ],
             "lower": [
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
             "why": "Live and short-form work is continuous public performance with immediate feedback. It is the highest-visibility and least stable end of the profession."
           }
@@ -20248,11 +20940,10 @@
             "higher": [
               "reasoning",
               "confidence",
-              "emotional_intelligence"
+              "emotional_intelligence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Crisis work is judgment under legal and reputational risk, usually at speed and out of hours. It is the highest-consequence version of this job and pays accordingly."
           }
         ]
@@ -20867,11 +21558,10 @@
             "higher": [
               "spatial",
               "extraversion",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Choreography for screen is directing bodies to camera on a schedule, with dozens of dancers and a producer's budget. It is leadership and logistics as much as movement."
           },
           {
@@ -21034,11 +21724,10 @@
             "higher": [
               "long_term_memory",
               "conscientiousness",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Theatre is ensemble work with months of rehearsal, a whole play held in memory and a live audience with no second take. Repertory is also the only salaried acting work in India, and it pays modestly."
           },
           {
@@ -21062,11 +21751,10 @@
             "higher": [
               "extraversion",
               "confidence",
-              "existential"
+              "existential",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Street theatre is performance without a stage, a ticket or a captive audience, usually carrying a social message. Holding a crowd that did not choose to watch is a distinct skill."
           }
         ]
@@ -21955,6 +22643,149 @@
       }
     },
     {
+      "professional_sector_id": 10,
+      "professional_sector": "10. Performing Arts & Music",
+      "id": "prf-model",
+      "profession": "Model",
+      "one_liner": "The person in the photograph or on the ramp - the presence is the product.",
+      "job_roles": [
+        "Fashion Model",
+        "Ramp & Runway Model",
+        "Print & Commercial Model",
+        "Advertising Model",
+        "Fit Model",
+        "Promotional Model",
+        "Catalogue Model",
+        "Parts Model"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Fit Model"
+            ],
+            "higher": [
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Fit modelling is technical and repetitive - standing for hours while garments are adjusted to a body that matches a size standard. It is the one role here that is steady, private and paid by the hour rather than by visibility."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AMHSSC",
+        "MESC",
+        "THSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "entry",
+          "requirement": "A portfolio, a comp card and physical criteria set by the client. There is no course and no qualification"
+        },
+        {
+          "step": 2,
+          "stage": "work",
+          "requirement": "Registration with a modelling agency, or direct casting calls"
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Portfolio built through test shoots, then paid catalogue and commercial work"
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Ramp, campaign and brand work for the small number who reach it"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance examination exists and no institution certifies a model. Agencies and casting directors are the gate, and their criteria are physical and commercial."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 0,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "0.5-3.0",
+        "mid_career_lpa": "1.5-12.0",
+        "mid_career_midpoint": 6.75,
+        "payback_years": 0.29,
+        "distribution": "power_law",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://www.dazzlerr.com/how-much-do-models-get-paid-per-shoot-in-india/"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Almost every model is independent - paid per shoot or per show, through an agency that takes a commission, with no employment relationship. There is no salaried version of this work.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "The exposure model here measures retrievable knowledge and digital skill, and by that measure modelling scores low because the work is physical presence. That understates a real and already-arrived threat: generative image models are replacing catalogue and e-commerce modelling, where the client needs a body wearing a garment and does not need it to be a particular person. Ramp, campaign and celebrity-adjacent work is far less substitutable."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "judgment",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Performing Arts & Music, beside Actor & Performer, because in both the person IS the instrument and the work is presence in front of an audience or a camera. Two alternatives were considered: Sector 8 beside Fashion Designer, rejected because a model designs nothing; and Sector 9 beside Voice Artist & Broadcast Presenter, which is defensible and was not chosen because ramp work is not media production."
+        },
+        {
+          "field": "economics",
+          "statement": "There is no annual salary for this work and quoting one would be false. What is sourced is PER-ENGAGEMENT: roughly 2,000 to 30,000 rupees per shoot for most commercial work in India, with international brand campaigns reaching a lakh and above, from an Indian modelling platform's published rate guide. The annual bands here are that per-shoot rate multiplied by an assumed and unsourced number of bookings, which is why distribution is power_law and an admin_review is open."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The low band is correct by this repo's model and misleading on its own. Generative image tools are already substituting for catalogue and e-commerce modelling - the segment where most working models actually earn - because the client needs a garment shown on a body, not a specific person. The composition model cannot express substitution of a physical presence by a generated image, and the application should carry that warning from this nuance rather than from the band."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Booking-to-booking independent work with an agency commission is the normal arrangement, not the exception. There is no employed version of this profession to compare against, which is part of why the earnings bands describe nobody in particular."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "economics.distribution is power_law and the bands are a per-shoot rate multiplied by an assumed booking frequency that is not sourced. A handful of models earn very large sums, a thin layer earn a living from catalogue and commercial work, and most people who describe themselves as models earn very little from modelling in any given year. Decide how the application presents this - and note the second risk on the record: generative image models are already displacing the catalogue segment that most working models depend on."
+      }
+    },
+    {
       "professional_sector_id": 11,
       "professional_sector": "11. Sports & Fitness",
       "id": "spt-athlete",
@@ -22002,11 +22833,10 @@
             "higher": [
               "extraversion",
               "confidence",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "The league sports. These are the only three in India with genuine professional contracts and public visibility, which changes both the money and the pressure."
           },
           {
@@ -22014,12 +22844,12 @@
               "Para-Athlete"
             ],
             "higher": [
-              "neuroticism",
               "conscientiousness",
               "existential"
             ],
             "lower": [
-              "extraversion"
+              "extraversion",
+              "emotional_stability"
             ],
             "why": "Para sport carries the same training demands with a fraction of the funding, the coaching infrastructure and the commercial attention - and a classification system that can reclassify an athlete out of their event."
           },
@@ -22031,11 +22861,10 @@
             "higher": [
               "spatial",
               "confidence",
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Motorsport is spatial judgment and reaction at speed with a real and continuous risk of injury, sustained for hours. A rally co-driver does not drive at all - they read pace notes aloud at the exact moment the driver needs them, which is a navigation and nerve discipline of its own."
           }
         ]
@@ -22212,11 +23041,10 @@
             "higher": [
               "agreeableness",
               "emotional_intelligence",
-              "extraversion"
+              "extraversion",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Coaching children is about keeping them in the sport, managing parents and building confidence. Winning is not the objective, which inverts the rest of the profession."
           }
         ]
@@ -22532,11 +23360,11 @@
             ],
             "higher": [
               "confidence",
-              "neuroticism",
               "bodily"
             ],
             "lower": [
-              "agreeableness"
+              "agreeableness",
+              "emotional_stability"
             ],
             "why": "On-field officiating is authority under open hostility from players, coaches and a crowd, while physically keeping up with the game. Being liked is not part of it."
           }
@@ -22824,11 +23652,10 @@
             "higher": [
               "verbal",
               "extraversion",
-              "short_term_memory"
+              "short_term_memory",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Broadcast roles are live commentary and vision-mixing over a match nobody controls. They are the most transferable jobs in esports and the only ones with an obvious career outside it."
           },
           {
@@ -24009,11 +24836,10 @@
             "higher": [
               "openness",
               "musical",
-              "emotional_intelligence"
+              "emotional_intelligence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Private preschool teaching is curriculum-led, parent-facing and urban. It shares an age group with anganwadi work and almost nothing else - different employer, different pay, different expectations."
           }
         ]
@@ -25145,11 +25971,11 @@
             ],
             "higher": [
               "confidence",
-              "neuroticism",
               "conscientiousness"
             ],
             "lower": [
-              "agreeableness"
+              "agreeableness",
+              "emotional_stability"
             ],
             "why": "Addiction work involves relapse, deception and confrontation, often in residential settings, and a large share of practitioners are themselves in recovery. It is the least gentle work in this profession."
           },
@@ -25320,11 +26146,11 @@
             ],
             "higher": [
               "bodily",
-              "confidence",
-              "neuroticism"
+              "confidence"
             ],
             "lower": [
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
             "why": "Relief work is physically hard field deployment at short notice into unsafe places. It is the least desk-bound social work there is."
           },
@@ -26128,11 +26954,10 @@
             "higher": [
               "confidence",
               "verbal",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "These roles accompany a child through a criminal process - police, medical examination, court testimony. They are statutory appointments with defined legal duties and they require holding steady in an adversarial setting."
           },
           {
@@ -26820,11 +27645,11 @@
             ],
             "higher": [
               "bodily",
-              "attention_span",
-              "neuroticism"
+              "attention_span"
             ],
             "lower": [
-              "verbal"
+              "verbal",
+              "emotional_stability"
             ],
             "why": "The base layer, and the most dangerous work in this sector. Patrolling on foot in difficult terrain against armed poachers, usually on contract or daily wage, is what protection actually consists of."
           },
@@ -26836,11 +27661,10 @@
             "higher": [
               "extraversion",
               "agreeableness",
-              "verbal"
+              "verbal",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "These roles work WITH the people living around a forest rather than policing them, and the skill is negotiation with communities whose livelihood the forest law restricts."
           }
         ]
@@ -27308,7 +28132,9 @@
         "Composting Unit Operator",
         "Sanitation Supervisor",
         "Waste Picker",
-        "Sanitation Entrepreneur (Mechanised Cleaning)"
+        "Sanitation Entrepreneur (Mechanised Cleaning)",
+        "Street Sweeper",
+        "Sewer Sweeper"
       ],
       "role_spread": {
         "spread": "wide",
@@ -27335,11 +28161,10 @@
             "higher": [
               "logical",
               "attention_span",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Facility operation is machinery, process and quality of output rather than collection. It is the formal, safer end of waste work and it has a technical skill ladder."
           },
           {
@@ -27347,12 +28172,12 @@
               "Sewer & Septic Tank Worker"
             ],
             "higher": [
-              "bodily",
-              "neuroticism"
+              "bodily"
             ],
             "lower": [
               "verbal",
-              "openness"
+              "openness",
+              "emotional_stability"
             ],
             "why": "The most dangerous work in this dataset. Entry into confined spaces with toxic gas kills workers every year in India despite the practice being unlawful, and the deaths are recorded as hazardous cleaning rather than as manual scavenging."
           }
@@ -27490,11 +28315,11 @@
             ],
             "higher": [
               "confidence",
-              "extraversion",
-              "neuroticism"
+              "extraversion"
             ],
             "lower": [
-              "openness"
+              "openness",
+              "emotional_stability"
             ],
             "why": "Response work is command and logistics under time pressure with incomplete information, often for weeks without rest. It is a completely different temperament from the analytical planning half of this profession."
           },
@@ -27661,11 +28486,10 @@
             "higher": [
               "logical",
               "conscientiousness",
-              "reasoning"
+              "reasoning",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Managing land for a company or under a buyback contract is agronomy plus record keeping against a specification. The risk shifts to the buyer and so does much of the decision-making."
           },
           {
@@ -28495,7 +29319,9 @@
         "Nursery Manager",
         "Post-Harvest & Cold Chain Specialist",
         "Landscape & Garden Supervisor",
-        "Mushroom & Speciality Crop Grower"
+        "Mushroom & Speciality Crop Grower",
+        "Arborist",
+        "Tree Pruner"
       ],
       "role_spread": {
         "spread": "wide",
@@ -28662,7 +29488,10 @@
         "Fish Processing Supervisor",
         "Aquatic Health Specialist",
         "Ornamental Fish Breeder",
-        "Fish Seed Producer"
+        "Fish Seed Producer",
+        "Pearl Diver",
+        "Shell Gatherer",
+        "Chank Diver"
       ],
       "role_spread": {
         "spread": "wide",
@@ -28673,11 +29502,11 @@
             ],
             "higher": [
               "bodily",
-              "naturalistic",
-              "neuroticism"
+              "naturalistic"
             ],
             "lower": [
-              "logical"
+              "logical",
+              "emotional_stability"
             ],
             "why": "Marine capture fishing is among the most dangerous occupations in India - long voyages, weather, debt to boat owners and a catch that may not come. It is traditional, community-based and almost entirely informal."
           },
@@ -28689,11 +29518,10 @@
             "higher": [
               "logical",
               "attention_span",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Aquaculture is water chemistry, feed management and disease control on a capital-intensive pond. Shrimp in particular is a high-margin, high-risk export business where one disease outbreak wipes out a crop."
           },
           {
@@ -29223,11 +30051,10 @@
             "higher": [
               "extraversion",
               "emotional_intelligence",
-              "confidence"
+              "confidence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Running a section means reading tables, handling complaints and directing staff during a service that cannot be paused. It is the first role with real judgment in it."
           }
         ]
@@ -29350,7 +30177,10 @@
         "Public Area Attendant",
         "Facility Housekeeping Executive",
         "Hospital Housekeeping Attendant",
-        "Homestay & Guesthouse Caretaker"
+        "Homestay & Guesthouse Caretaker",
+        "Hospital Cleaner",
+        "Office Cleaner",
+        "Building Caretaker"
       ],
       "role_spread": {
         "spread": "wide",
@@ -29700,11 +30530,11 @@
             ],
             "higher": [
               "extraversion",
-              "conscientiousness",
-              "neuroticism"
+              "conscientiousness"
             ],
             "lower": [
-              "openness"
+              "openness",
+              "emotional_stability"
             ],
             "why": "Escorting a group for two weeks means being responsible for thirty strangers, their luggage, their illnesses and their complaints, away from home. It is logistics under continuous social pressure."
           }
@@ -29840,11 +30670,11 @@
             ],
             "higher": [
               "emotional_intelligence",
-              "extraversion",
-              "neuroticism"
+              "extraversion"
             ],
             "lower": [
-              "logical"
+              "logical",
+              "emotional_stability"
             ],
             "why": "Indian weddings are the largest single event market in the country and the most emotionally loaded. The planner manages two families, a budget nobody will state honestly, and an event that cannot be rescheduled."
           },
@@ -30005,11 +30835,10 @@
             "higher": [
               "verbal",
               "conscientiousness",
-              "confidence"
+              "confidence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Training is classroom and simulator instruction on safety and emergency procedure, against a DGCA-approved syllabus. It is the standard route off the roster and out of shift work."
           },
           {
@@ -30019,11 +30848,10 @@
             "higher": [
               "extraversion",
               "conscientiousness",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Ground handling is check-in, boarding and disruption management at the airport. It shares the airline and the customer but none of the safety role, and it is often the fallback for people who do not clear cabin crew medicals."
           }
         ]
@@ -30142,183 +30970,6 @@
       }
     },
     {
-      "professional_sector_id": 16,
-      "professional_sector": "16. Hospitality, Travel & Culinary",
-      "id": "hos-merchant-navy",
-      "profession": "Merchant Navy Deck Officer",
-      "one_liner": "Navigates and commands a cargo ship - the deck side of the merchant marine.",
-      "job_roles": [
-        "Deck Cadet",
-        "Third Officer",
-        "Second Officer",
-        "Navigating Officer",
-        "Cargo Officer",
-        "Marine Pilot Trainee",
-        "Port Operations Officer",
-        "Marine Surveyor Trainee"
-      ],
-      "role_spread": {
-        "spread": "wide",
-        "deviating_roles": [
-          {
-            "roles": [
-              "Port Operations Officer",
-              "Marine Surveyor Trainee"
-            ],
-            "higher": [
-              "conscientiousness",
-              "logical",
-              "verbal"
-            ],
-            "lower": [
-              "neuroticism"
-            ],
-            "why": "Shore roles - port operations, surveying, ship chartering and management - are where deck officers go after they stop sailing. They pay less than sea time and are the reason the certificate matters beyond the ship."
-          },
-          {
-            "roles": [
-              "Deck Cadet"
-            ],
-            "higher": [
-              "conscientiousness",
-              "bodily",
-              "neuroticism"
-            ],
-            "lower": [
-              "confidence"
-            ],
-            "why": "Eighteen months at sea as a trainee, away from home, on a working ship. It is the hardest filter in this profession and it cannot begin without a shipping company sponsoring the berth."
-          }
-        ]
-      },
-      "industrial_sectors": [
-        "AASSC",
-        "LSC",
-        "EXT-GOVT"
-      ],
-      "degree_dependency": "undergrad",
-      "mid_stream_entry": "restart_undergrad",
-      "class12_prerequisite": [
-        "physics",
-        "chemistry",
-        "maths"
-      ],
-      "path_to_entry": [
-        {
-          "step": 1,
-          "stage": "class_11_12",
-          "requirement": "Physics, Chemistry and Mathematics with 60 percent aggregate and 50 percent in English. Medical standard is absolute: 6/6 vision without aids and no colour blindness."
-        },
-        {
-          "step": 2,
-          "stage": "entrance_exam",
-          "requirement": "IMU CET or a DG Shipping approved institute's admission, plus a company sponsorship test."
-        },
-        {
-          "step": 3,
-          "stage": "training",
-          "requirement": "Either a one-year Diploma in Nautical Science or a three-year B.Sc Nautical Science, at a DG Shipping approved institute. Both lead to the same certificate and both cost like a degree - the DNS is a one-year course priced in lakhs."
-        },
-        {
-          "step": 4,
-          "stage": "sea_time",
-          "requirement": "18 months of Structured Shipboard Training as a Deck Cadet. THIS REQUIRES A COMPANY SPONSORSHIP and is the real bottleneck."
-        },
-        {
-          "step": 5,
-          "stage": "certification",
-          "requirement": "Four months post-sea shore training, the STCW courses, and the Second Mates examination conducted by the Directorate General of Shipping. Passing awards the Second Mates (FG) Certificate of Competency."
-        }
-      ],
-      "entrance_exams": {
-        "public_routes": [
-          "IMU CET",
-          "DG Shipping approved pre-sea training admissions"
-        ],
-        "private_entrances": [
-          "Company-sponsored cadet schemes"
-        ],
-        "note": "The examination is not the constraint. COMPANY SPONSORSHIP for the 18 months of shipboard training is, and a student can complete the diploma and still be unable to proceed."
-      },
-      "entry_competition": null,
-      "entry_window": null,
-      "licensing_body": "Directorate General of Shipping",
-      "years_to_qualify": 4,
-      "economics": {
-        "cost_of_entry_lakh": 8.0,
-        "early_earnings_lpa": "6.0-12.0",
-        "mid_career_lpa": "13.0-32.0",
-        "mid_career_midpoint": 22.5,
-        "payback_years": 0.89,
-        "distribution": "range",
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
-        "verification": {
-          "status": "judgment",
-          "sources": [],
-          "checked_on": "2026-08-11"
-        }
-      },
-      "demand_signal": {
-        "india_demand": "moderate",
-        "pathway": "any"
-      },
-      "filter": true,
-      "after_undergrad": "work_first",
-      "self_employment": {
-        "likelihood": "rare",
-        "ceiling_lpa": null,
-        "route": null,
-        "verification": null
-      },
-      "ai_exposure": {
-        "work_composition": {
-          "knowledge_foundational": 25,
-          "knowledge_retrievable": 10,
-          "skill_physical": 45,
-          "skill_digital": 5,
-          "clarity": 15
-        },
-        "legal_accountability": true,
-        "exposure_raw": 15,
-        "band": "low",
-        "reason": "Very low exposure. Ships are increasingly automated and crewed by fewer people, but a certificated officer must be aboard and personally answerable for the safe navigation of the vessel under international convention. Autonomous shipping is real and slow, and the regulatory requirement for a licensed human on watch is what this profession rests on. Marine Surveyor Trainee and Port Operations Officer carry more exposure through documentation and inspection tooling."
-      },
-      "verification": {
-        "tier": "A",
-        "status": "verified",
-        "source": "data/verified_facts.json#dns-second-mate-coc",
-        "checked_on": "2026-08-11"
-      },
-      "nuances": [
-        {
-          "field": "licensing_body",
-          "statement": "Tier A. The Second Mates (Foreign Going) Certificate of Competency is issued by the Directorate General of Shipping after its own examination, and serving as a deck officer without one is unlawful. This is the same statutory structure as the MEO certificates recorded for Marine Engineer in Sector 2.",
-          "source": "data/verified_facts.json#dns-second-mate-coc"
-        },
-        {
-          "field": "path_to_entry",
-          "statement": "The binding constraint is not academic. Eighteen months of shipboard training requires a shipping company to sponsor a cadet berth, and the number of berths is far smaller than the number of people completing pre-sea courses. Students routinely pay for a diploma and then cannot proceed. Any institute that does not guarantee sponsorship in writing should be treated with suspicion."
-        },
-        {
-          "field": "economics",
-          "statement": "The cost of entry is the part students underestimate. A DG Shipping approved pre-sea course is priced in lakhs whether it is the one-year diploma or the three-year degree, it is paid up front, and it does not guarantee the cadet berth that the certificate depends on. Money spent before sponsorship is money at risk."
-        },
-        {
-          "field": "class12_prerequisite",
-          "statement": "PCM is required and so is a MEDICAL standard that no other profession in this dataset imposes: uncorrected 6/6 vision and no colour blindness. That excludes a large number of academically eligible students, and it should be checked before any money is spent."
-        },
-        {
-          "field": "economics",
-          "statement": "Set level with Marine Engineer in Sector 2 rather than above it. Deck and engine officers hold parallel Certificates of Competency on the same ship under the same international convention, and a gap between them was not defensible. The highest earnings in this sector by a wide margin, and they are earned at sea in tax-advantaged foreign-going service, away from home for months. Shore roles after sailing pay substantially less, which is the trade every officer eventually makes."
-        }
-      ],
-      "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "The highest figure and the widest spread anywhere in Sectors 8 to 18 - 13 to 32 lakh - and entirely unsourced. A fetchable anchor exists and should be used: the NUSI-MUI and INSA collective bargaining wage scales publish monthly rates for a Third Officer on Indian-flag foreign-going ships, and ITF minimum scales cover the international floor. Sourcing it would make this the sector's one statutory-style anchor, as the Majithia award is for Sector 9."
-      }
-    },
-    {
       "professional_sector_id": 17,
       "professional_sector": "17. Humanities, Culture & Belief",
       "id": "hum-archaeologist",
@@ -30333,7 +30984,8 @@
         "Archaeobotanist & Archaeozoologist",
         "Underwater Archaeologist",
         "Archaeological Draughtsman",
-        "Site Documentation Officer"
+        "Site Documentation Officer",
+        "Monument Caretaker"
       ],
       "role_spread": {
         "spread": "wide",
@@ -30375,11 +31027,10 @@
             "higher": [
               "bodily",
               "spatial",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Field archaeology is months in a trench in the dry season, managing labour, recording stratigraphy and living on site. It is physically demanding outdoor work that the public image of the profession does not convey."
           }
         ]
@@ -31669,6 +32320,157 @@
       }
     },
     {
+      "professional_sector_id": 17,
+      "professional_sector": "17. Humanities, Culture & Belief",
+      "id": "hum-funeral-mortuary",
+      "profession": "Funeral & Mortuary Services Professional",
+      "one_liner": "Prepares the dead, and runs the cremation, burial and rites that follow.",
+      "job_roles": [
+        "Embalmer",
+        "Funeral Director",
+        "Crematorium Operator",
+        "Mortuary Technician",
+        "Grave Digger",
+        "Funeral Home Manager",
+        "Bereavement Support Coordinator",
+        "Body Transport & Repatriation Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Embalmer",
+              "Mortuary Technician"
+            ],
+            "higher": [
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Preservation and mortuary work is a clinical technical skill practised away from families - anatomy, chemicals, infection control and record-keeping."
+          },
+          {
+            "roles": [
+              "Funeral Director",
+              "Bereavement Support Coordinator"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "agreeableness"
+            ],
+            "lower": [],
+            "why": "Dealing with a family on the worst day of their life is the larger half of this profession, and it is the part that cannot be trained by procedure alone."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-CULT",
+        "BWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "entry",
+          "requirement": "No qualification is required to enter funeral work in India. Most people enter through a family business, a municipal crematorium job or a hospital mortuary"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A diploma or certificate in mortuary science or embalming for the technical roles. Hospital mortuary technicians are often trained on the job"
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Municipal crematoria and burial grounds, hospital mortuaries, private funeral service firms, or an independent practice"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance examination and no licence. Embalming for international repatriation is the one part of this work with formal documentation requirements."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "2.0-5.3",
+        "mid_career_lpa": "2.3-9.0",
+        "mid_career_midpoint": 5.65,
+        "payback_years": 0.14,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://paycheck.in/career-tips/role-income/india-undertakers-and-embalmers"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Funeral services in India are overwhelmingly small family firms and independent operators working alongside municipal crematoria, and setting up independently is the normal path rather than an exception.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Nothing about this work is retrievable or digital. It is physical handling, chemical preparation, ritual knowledge that varies by community, and sitting with people in grief - the last of which is the clearest example in this dataset of work where being human is not incidental to the service, it IS the service."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "judgment",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Humanities, Culture & Belief. The substitution test decides it: remove the belief and ritual surrounding death and the work collapses into handling a body. Which rites are performed, by whom, and in what order is determined by community and religion, which is this sector's object of concern. It sits beside Religious & Ritual Professional, who conducts the rites this profession makes possible - the two are complementary and the skill sets are distinct."
+        },
+        {
+          "field": "job_roles",
+          "statement": "This record covers the FUNERAL side. The hospital ward counterpart - handling a body before it is released to a family - is a job role on General Duty Assistant in Sector 4, where mortuary duty genuinely sits in Indian hospitals, and not on Nurse, because body handling is not licensed nursing practice."
+        },
+        {
+          "field": "economics",
+          "statement": "Anchored on WageIndicator's Indian pay data for undertakers and embalmers: roughly 16,500 to 44,400 rupees a month at entry, and 19,150 to 75,300 rupees a month after five years. The upper end of that range describes established funeral directors in metros; the lower end describes municipal crematorium and burial-ground workers, which is where most of the employment is. One band cannot say that, which is what the admin_review is for."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Demand is structurally guaranteed and geographically universal - every death requires this work, in every district, and the requirement cannot be deferred, imported or consolidated into a city. What varies is whether the work is paid formally or absorbed into caste-based and community arrangements, which is a labour-market question this record cannot answer."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Two gaps. (1) The earnings range spans nearly four times from bottom to top and the two ends describe different jobs - a municipal crematorium worker and an urban funeral director - with no sourced split between them. (2) No sourced figure exists for what an independent funeral business earns, which is the normal form this work takes. Separately, and not a money question: the caste dimension of who does this work in India is real, unrecorded here, and materially affects what a student is choosing."
+      }
+    },
+    {
       "professional_sector_id": 18,
       "professional_sector": "18. Personal Care & Wellness",
       "id": "pcw-yoga-instructor",
@@ -31869,11 +32671,10 @@
             "higher": [
               "openness",
               "extraversion",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Bridal work is seasonal, high-value and done to a deadline that cannot move, often starting before dawn at a client's home. It is where almost all the money in Indian beauty work is and it runs entirely on reputation and photographs."
           },
           {
@@ -32236,11 +33037,10 @@
             "higher": [
               "conscientiousness",
               "emotional_intelligence",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Bridal work is the Indian market. It is seasonal, starts before dawn, is done at the client's home under pressure, and carries the emotional weight of an event that cannot be redone."
           }
         ]

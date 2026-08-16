@@ -1,8 +1,8 @@
 {
   "professional_sector": "10. Performing Arts & Music",
   "professional_sector_id": 10,
-  "version": "1.1",
-  "profession_count": 9,
+  "version": "1.2",
+  "profession_count": 10,
   "sector_verification_note": "TIER C THROUGHOUT, and this sector tests the schema harder than any before it. Nothing is licensed: the Sangeet Natak Akademi is the apex body and it promotes, funds and honours rather than registers, and Akashvani's artist grading is a voluntary broadcast credential that bars nobody from performing. Two Tier B facts were fetched and both describe bodies that do NOT control entry. The real problem here is not verification but FORMAT: eight of nine professions have essentially no employed version in India, so mid_career_lpa - which is employed-only by design - describes almost nobody. Six of nine carry a required admin_review for that reason, which is the highest proportion in the dataset and is a deliberate signal rather than an oversight.",
   "professions": [
     {
@@ -367,11 +367,10 @@
             "higher": [
               "spatial",
               "extraversion",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Choreography for screen is directing bodies to camera on a schedule, with dozens of dancers and a producer's budget. It is leadership and logistics as much as movement."
           },
           {
@@ -532,11 +531,10 @@
             "higher": [
               "long_term_memory",
               "conscientiousness",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Theatre is ensemble work with months of rehearsal, a whole play held in memory and a live audience with no second take. Repertory is also the only salaried acting work in India, and it pays modestly."
           },
           {
@@ -560,11 +558,10 @@
             "higher": [
               "extraversion",
               "confidence",
-              "existential"
+              "existential",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Street theatre is performance without a stage, a ticket or a captive audience, usually carrying a social message. Holding a crowd that did not choose to watch is a distinct skill."
           }
         ]
@@ -1441,6 +1438,147 @@
         "priority": "high",
         "reason": "No sourced figure for Indian theatre grant, commission or facilitation rates, which are the actual income here. The record also cannot show what proportion of practitioners hold a second job, which for this profession is the most decision-relevant fact there is."
       }
+    },
+    {
+      "id": "prf-model",
+      "profession": "Model",
+      "one_liner": "The person in the photograph or on the ramp - the presence is the product.",
+      "job_roles": [
+        "Fashion Model",
+        "Ramp & Runway Model",
+        "Print & Commercial Model",
+        "Advertising Model",
+        "Fit Model",
+        "Promotional Model",
+        "Catalogue Model",
+        "Parts Model"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Fit Model"
+            ],
+            "higher": [
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Fit modelling is technical and repetitive - standing for hours while garments are adjusted to a body that matches a size standard. It is the one role here that is steady, private and paid by the hour rather than by visibility."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AMHSSC",
+        "MESC",
+        "THSC"
+      ],
+      "degree_dependency": "none",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "entry",
+          "requirement": "A portfolio, a comp card and physical criteria set by the client. There is no course and no qualification"
+        },
+        {
+          "step": 2,
+          "stage": "work",
+          "requirement": "Registration with a modelling agency, or direct casting calls"
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Portfolio built through test shoots, then paid catalogue and commercial work"
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "Ramp, campaign and brand work for the small number who reach it"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance examination exists and no institution certifies a model. Agencies and casting directors are the gate, and their criteria are physical and commercial."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 0,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "0.5-3.0",
+        "mid_career_lpa": "1.5-12.0",
+        "mid_career_midpoint": 6.75,
+        "payback_years": 0.29,
+        "distribution": "power_law",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://www.dazzlerr.com/how-much-do-models-get-paid-per-shoot-in-india/"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "low",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Almost every model is independent - paid per shoot or per show, through an agency that takes a commission, with no employment relationship. There is no salaried version of this work.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 15,
+          "knowledge_retrievable": 5,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 10,
+        "band": "low",
+        "reason": "The exposure model here measures retrievable knowledge and digital skill, and by that measure modelling scores low because the work is physical presence. That understates a real and already-arrived threat: generative image models are replacing catalogue and e-commerce modelling, where the client needs a body wearing a garment and does not need it to be a particular person. Ramp, campaign and celebrity-adjacent work is far less substitutable."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "judgment",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Performing Arts & Music, beside Actor & Performer, because in both the person IS the instrument and the work is presence in front of an audience or a camera. Two alternatives were considered: Sector 8 beside Fashion Designer, rejected because a model designs nothing; and Sector 9 beside Voice Artist & Broadcast Presenter, which is defensible and was not chosen because ramp work is not media production."
+        },
+        {
+          "field": "economics",
+          "statement": "There is no annual salary for this work and quoting one would be false. What is sourced is PER-ENGAGEMENT: roughly 2,000 to 30,000 rupees per shoot for most commercial work in India, with international brand campaigns reaching a lakh and above, from an Indian modelling platform's published rate guide. The annual bands here are that per-shoot rate multiplied by an assumed and unsourced number of bookings, which is why distribution is power_law and an admin_review is open."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "The low band is correct by this repo's model and misleading on its own. Generative image tools are already substituting for catalogue and e-commerce modelling - the segment where most working models actually earn - because the client needs a garment shown on a body, not a specific person. The composition model cannot express substitution of a physical presence by a generated image, and the application should carry that warning from this nuance rather than from the band."
+        },
+        {
+          "field": "self_employment",
+          "statement": "Booking-to-booking independent work with an agency commission is the normal arrangement, not the exception. There is no employed version of this profession to compare against, which is part of why the earnings bands describe nobody in particular."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "economics.distribution is power_law and the bands are a per-shoot rate multiplied by an assumed booking frequency that is not sourced. A handful of models earn very large sums, a thin layer earn a living from catalogue and commercial work, and most people who describe themselves as models earn very little from modelling in any given year. Decide how the application presents this - and note the second risk on the record: generative image models are already displacing the catalogue segment that most working models depend on."
+      }
     }
   ],
   "routed_elsewhere": [
@@ -1479,6 +1617,11 @@
       "NSD'S STIPEND IS NOT RECORDED. Sources disagreed - figures from Rs 3,000 to Rs 9,500 a month were seen - so no amount was written. Under the money rule a contested figure is the same as an unsourced one.",
       "SIX OF NINE PROFESSIONS CARRY A REQUIRED ADMIN_REVIEW, the highest proportion of any sector. In every case it is the same defect: the profession has no employed version at scale in India, so the schema's employed-only salary field describes almost nobody, and no per-performance, per-session or per-booking rate was sourced anywhere.",
       "MUSIC PRODUCER & COMPOSER is the sector's only medium-plus AI exposure at 50, and the exposure has an unusual shape: it hits FUNCTIONAL music - advertising beds, library tracks, corporate scores - which is precisely the reliable commercial work that funds an Indian composer's career. Performance-based professions here sit at 5 to 15, among the lowest in the dataset."
+    ],
+    "1.2": [
+      "MODEL added. Like the Sector 2 additions this was a gap the coverage audit scored as covered - 'Model, Fashion' matched 'Fashion Designer' at 0.845, which is a different job entirely. It surfaced from the user's earlier profession list instead.",
+      "Placed here beside Actor & Performer because in both the person is the instrument. economics.distribution is power_law: the sourced figure is per-shoot, not annual, and the annual bands are that rate multiplied by an unsourced booking frequency.",
+      "The ai_exposure nuance carries a warning the band cannot: generative image models are already replacing catalogue and e-commerce modelling, which is where most working models actually earn."
     ]
   },
   "sector_admin_review": {

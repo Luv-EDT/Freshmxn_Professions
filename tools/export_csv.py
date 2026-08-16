@@ -64,14 +64,6 @@ COLUMNS = [
     "nuances",
 ]
 
-# The subset that fits in a chat window alongside the spec. Chosen to answer the four questions a
-# student actually asks: can I get in, what does it cost, what does it pay, is it safe.
-COMPACT_COLUMNS = [
-    "professional_sector", "profession", "one_liner", "degree_dependency",
-    "class12_prerequisite", "years_to_qualify", "cost_of_entry_lakh", "early_earnings_lpa",
-    "mid_career_lpa", "ai_exposure", "india_demand", "self_employment", "licensing_body", "ship",
-]
-
 DEGREE_VALUES = {"none", "certificate", "undergrad", "professional"}
 ENTRY_VALUES = {"open", "after_any_degree", "restart_undergrad"}
 AFTER_UG = {"masters_required", "masters_is_the_entry", "masters_advantage", "work_first"}
@@ -459,16 +451,6 @@ def combine(files):
         w.writerows(rows)
     print(f"{target.as_posix()}  ({len(rows)} professions, all sectors, for cross-sector sorting)")
 
-    # A paste-sized cut for pasting into a chat window — the full sheet is ~480 KB and will not
-    # fit alongside the spec. GENERATED, never hand-made: the first version of this was written
-    # by hand and went stale within an hour, still naming the Bar Council of India as the
-    # Judicial Services Officer's licensing body after that had been corrected everywhere else.
-    compact = OUT / "ALL-professions-COMPACT.csv"
-    with compact.open("w", newline="", encoding="utf-8-sig") as fh:
-        w = csv.DictWriter(fh, fieldnames=COMPACT_COLUMNS, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(rows)
-    print(f"{compact.as_posix()}  ({len(COMPACT_COLUMNS)} columns, sized to paste into a chat)")
     combine_json(files)
 
 
@@ -484,8 +466,10 @@ def combine_json(files):
     it sits in its sector file, with the two sector fields folded in so a record still knows where
     it came from once the eighteen files are gone.
 
-    GENERATED on every full run, never hand-edited — same rule as the CSVs, for the same reason
-    the hand-written COMPACT sheet went stale in an hour.
+    GENERATED on every full run, never hand-edited — same rule as the CSVs. A hand-maintained
+    second sheet was tried and removed: it went stale within an hour, still naming the Bar Council
+    of India as the Judicial Services Officer's licensing body after that was corrected everywhere
+    else. Two views of one dataset means one of them is always wrong.
     """
     payload = {
         "generated_on": datetime.date.today().isoformat(),

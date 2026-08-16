@@ -202,11 +202,10 @@
             "higher": [
               "openness",
               "extraversion",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Bridal work is seasonal, high-value and done to a deadline that cannot move, often starting before dawn at a client's home. It is where almost all the money in Indian beauty work is and it runs entirely on reputation and photographs."
           },
           {
@@ -565,11 +564,10 @@
             "higher": [
               "conscientiousness",
               "emotional_intelligence",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Bridal work is the Indian market. It is seasonal, starts before dawn, is done at the client's home under pressure, and carries the emotional weight of an event that cannot be redone."
           }
         ]

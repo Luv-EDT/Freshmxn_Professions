@@ -224,11 +224,11 @@
             ],
             "higher": [
               "confidence",
-              "neuroticism",
               "conscientiousness"
             ],
             "lower": [
-              "agreeableness"
+              "agreeableness",
+              "emotional_stability"
             ],
             "why": "Addiction work involves relapse, deception and confrontation, often in residential settings, and a large share of practitioners are themselves in recovery. It is the least gentle work in this profession."
           },
@@ -397,11 +397,11 @@
             ],
             "higher": [
               "bodily",
-              "confidence",
-              "neuroticism"
+              "confidence"
             ],
             "lower": [
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
             "why": "Relief work is physically hard field deployment at short notice into unsafe places. It is the least desk-bound social work there is."
           },
@@ -1195,11 +1195,10 @@
             "higher": [
               "confidence",
               "verbal",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "These roles accompany a child through a criminal process - police, medical examination, court testimony. They are statutory appointments with defined legal duties and they require holding steady in an adversarial setting."
           },
           {

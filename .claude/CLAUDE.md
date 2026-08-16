@@ -103,8 +103,15 @@ data/
   entrance_gates.json         competition, seats and preparation cost per EXAM, shared by the
                               professions behind it. Fetch once, reuse.
   professions/NN-<sector>.json
+  profession_embeddings.json  218 meaning-vectors, one per profession.id. GENERATED.
+  nco_2015_titles.json        NCO-2015, India's official occupation list (3,128 titles, 433
+                              families) - the EXTERNAL ground truth for coverage. GENERATED.
 tools/
   export_csv.py               validate + export      tools/audit.py   cross-field audit
+  probe.py                    is this already a job role?    nco_titles.py   parse the NCO PDF
+  embed_professions.py        build the vector index (idempotent; re-embeds only what changed)
+  coverage_audit.py           STEP 3 - what whole professions are we missing? Writes
+                              build/coverage_gaps.json, A REVIEW QUEUE. Adds nothing, ever.
 build/*.csv                   generated, never hand-edited
 build/ALL-professions.json    all 18 sectors in one LOSSLESS file — nested structures
                               intact. The CSV flattens; this does not. Use it for any
@@ -130,25 +137,25 @@ NCAHP council names were written from plausibility and three of them did not exi
 | # | sector | professions | verified | ships | version |
 |---|---|---|---|---|---|
 | 1 | Software & Computing | 14 | 1 | 13 | v16.1 |
-| 2 | Engineering & Making | 33 | 32 | 31 | v20.1 |
+| 2 | Engineering & Making | 37 | 35 | 35 | v20.5 |
 | 3 | Science & Research | 19 | 7 | 19 | v7.1 |
-| 4 | Healthcare & Medicine | 20 | 17 | 18 | v1.9 |
+| 4 | Healthcare & Medicine | 20 | 17 | 18 | v2.0 |
 | 5 | Business, Management & Entrepreneurship | 13 | 0 | 12 | v1.2 |
-| 6 | Finance & Economics | 8 | 2 | 8 | v1.0 |
-| 7 | Law, Governance & Public Service | 10 | 7 | 10 | v1.1 |
-| 8 | Design & Creative Arts | 16 | 0 | 16 | v1.0 |
-| 9 | Media, Film & Storytelling | 12 | 0 | 11 | v1.0 |
-| 10 | Performing Arts & Music | 9 | 0 | 9 | v1.1 |
+| 6 | Finance & Economics | 8 | 2 | 8 | v1.1 |
+| 7 | Law, Governance & Public Service | 11 | 7 | 11 | v1.2 |
+| 8 | Design & Creative Arts | 15 | 0 | 15 | v1.1 |
+| 9 | Media, Film & Storytelling | 12 | 0 | 11 | v1.1 |
+| 10 | Performing Arts & Music | 10 | 0 | 10 | v1.2 |
 | 11 | Sports & Fitness | 8 | 0 | 7 | v1.1 |
 | 12 | Education & Training | 10 | 3 | 9 | v1.1 |
 | 13 | Social Impact & Psychology | 8 | 1 | 7 | v1.1 |
-| 14 | Environment & Sustainability | 8 | 0 | 7 | v1.2 |
-| 15 | Agriculture & Food Systems | 8 | 0 | 8 | v1.2 |
-| 16 | Hospitality, Travel & Culinary | 8 | 1 | 7 | v1.1 |
-| 17 | Humanities, Culture & Belief | 8 | 1 | 8 | v1.0 |
+| 14 | Environment & Sustainability | 8 | 0 | 7 | v1.3 |
+| 15 | Agriculture & Food Systems | 8 | 0 | 8 | v1.3 |
+| 16 | Hospitality, Travel & Culinary | 7 | 0 | 6 | v1.3 |
+| 17 | Humanities, Culture & Belief | 9 | 1 | 9 | v1.1 |
 | 18 | Personal Care & Wellness | 6 | 1 | 6 | v1.2 |
 
-**218 professions · 1639 job roles · 415 nuances · 56 verified facts · 51 profession-level and 15 sector-level admin reviews open.**
+**223 professions · 1716 job roles · 438 nuances · 59 verified facts · 56 profession-level and 15 sector-level admin reviews open.**
 
 The 7 open items are all the same thing: a profession where going independent is normal, employed
 mid-career is under ₹6 lakh, and **no sourced figure exists for what owners actually earn**. Until

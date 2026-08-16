@@ -1,8 +1,8 @@
 {
   "professional_sector": "17. Humanities, Culture & Belief",
   "professional_sector_id": 17,
-  "version": "1.0",
-  "profession_count": 8,
+  "version": "1.1",
+  "profession_count": 9,
   "sector_verification_note": "TIER C THROUGHOUT EXCEPT ARCHAEOLOGY, and even there the regulation is of an ACTIVITY rather than of practitioners: the AMASR Act 1958 regulates archaeological excavation, but no council registers archaeologists and survey, museum and teaching work needs no authorisation. That fact was written deliberately narrowly - the India Code and ASI primary texts returned 403 and were not opened, so no section numbers or penalties are stated, because stating unopened statutory detail is the NCAHP error recorded in DECISIONS.md 10. The sector's structural feature is a consistent mismatch between NEED and FUNDED POSTS: India holds several million uncatalogued manuscripts, a vast quantity of deteriorating material and an enormous archaeological record, and trains a handful of people a year to work on any of it. Seven of eight professions carry demand_signal 'low', which is the highest concentration in the dataset and is a statement about budgets, not about need.",
   "professions": [
     {
@@ -18,7 +18,8 @@
         "Archaeobotanist & Archaeozoologist",
         "Underwater Archaeologist",
         "Archaeological Draughtsman",
-        "Site Documentation Officer"
+        "Site Documentation Officer",
+        "Monument Caretaker"
       ],
       "role_spread": {
         "spread": "wide",
@@ -60,11 +61,10 @@
             "higher": [
               "bodily",
               "spatial",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Field archaeology is months in a trench in the dry season, managing labour, recording stratigraphy and living on site. It is physically demanding outdoor work that the public image of the profession does not convey."
           }
         ]
@@ -1338,6 +1338,155 @@
         "priority": "none",
         "reason": null
       }
+    },
+    {
+      "id": "hum-funeral-mortuary",
+      "profession": "Funeral & Mortuary Services Professional",
+      "one_liner": "Prepares the dead, and runs the cremation, burial and rites that follow.",
+      "job_roles": [
+        "Embalmer",
+        "Funeral Director",
+        "Crematorium Operator",
+        "Mortuary Technician",
+        "Grave Digger",
+        "Funeral Home Manager",
+        "Bereavement Support Coordinator",
+        "Body Transport & Repatriation Coordinator"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Embalmer",
+              "Mortuary Technician"
+            ],
+            "higher": [
+              "conscientiousness"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Preservation and mortuary work is a clinical technical skill practised away from families - anatomy, chemicals, infection control and record-keeping."
+          },
+          {
+            "roles": [
+              "Funeral Director",
+              "Bereavement Support Coordinator"
+            ],
+            "higher": [
+              "emotional_intelligence",
+              "agreeableness"
+            ],
+            "lower": [],
+            "why": "Dealing with a family on the worst day of their life is the larger half of this profession, and it is the part that cannot be trained by procedure alone."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "HSSC",
+        "EXT-CULT",
+        "BWSSC"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "entry",
+          "requirement": "No qualification is required to enter funeral work in India. Most people enter through a family business, a municipal crematorium job or a hospital mortuary"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "A diploma or certificate in mortuary science or embalming for the technical roles. Hospital mortuary technicians are often trained on the job"
+        },
+        {
+          "step": 3,
+          "stage": "work",
+          "requirement": "Municipal crematoria and burial grounds, hospital mortuaries, private funeral service firms, or an independent practice"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [],
+        "private_entrances": [],
+        "note": "No entrance examination and no licence. Embalming for international repatriation is the one part of this work with formal documentation requirements."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 1,
+      "economics": {
+        "cost_of_entry_lakh": 0.5,
+        "early_earnings_lpa": "2.0-5.3",
+        "mid_career_lpa": "2.3-9.0",
+        "mid_career_midpoint": 5.65,
+        "payback_years": 0.14,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://paycheck.in/career-tips/role-income/india-undertakers-and-embalmers"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "common",
+        "ceiling_lpa": null,
+        "route": "Funeral services in India are overwhelmingly small family firms and independent operators working alongside municipal crematoria, and setting up independently is the normal path rather than an exception.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 5,
+          "clarity": 20
+        },
+        "legal_accountability": false,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Nothing about this work is retrievable or digital. It is physical handling, chemical preparation, ritual knowledge that varies by community, and sitting with people in grief - the last of which is the clearest example in this dataset of work where being human is not incidental to the service, it IS the service."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": "judgment",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Humanities, Culture & Belief. The substitution test decides it: remove the belief and ritual surrounding death and the work collapses into handling a body. Which rites are performed, by whom, and in what order is determined by community and religion, which is this sector's object of concern. It sits beside Religious & Ritual Professional, who conducts the rites this profession makes possible - the two are complementary and the skill sets are distinct."
+        },
+        {
+          "field": "job_roles",
+          "statement": "This record covers the FUNERAL side. The hospital ward counterpart - handling a body before it is released to a family - is a job role on General Duty Assistant in Sector 4, where mortuary duty genuinely sits in Indian hospitals, and not on Nurse, because body handling is not licensed nursing practice."
+        },
+        {
+          "field": "economics",
+          "statement": "Anchored on WageIndicator's Indian pay data for undertakers and embalmers: roughly 16,500 to 44,400 rupees a month at entry, and 19,150 to 75,300 rupees a month after five years. The upper end of that range describes established funeral directors in metros; the lower end describes municipal crematorium and burial-ground workers, which is where most of the employment is. One band cannot say that, which is what the admin_review is for."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Demand is structurally guaranteed and geographically universal - every death requires this work, in every district, and the requirement cannot be deferred, imported or consolidated into a city. What varies is whether the work is paid formally or absorbed into caste-based and community arrangements, which is a labour-market question this record cannot answer."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "Two gaps. (1) The earnings range spans nearly four times from bottom to top and the two ends describe different jobs - a municipal crematorium worker and an urban funeral director - with no sourced split between them. (2) No sourced figure exists for what an independent funeral business earns, which is the normal form this work takes. Separately, and not a money question: the caste dimension of who does this work in India is real, unrecorded here, and materially affects what a student is choosing."
+      }
     }
   ],
   "routed_elsewhere": [
@@ -1389,6 +1538,11 @@
       "NO NEW GATES. Two are recorded as pending and both matter more here than elsewhere: UGC NET in the humanities, because in this sector the academic post IS the profession for most graduates, and ASI recruitment, because it decides whether archaeology is a career or a degree.",
       "THE SECTOR'S CENTRAL FINDING IS A MISMATCH. Need is enormous and funded posts are almost absent - several million uncatalogued manuscripts against a handful of trained manuscriptologists, a vast deteriorating material heritage against a few conservators trained each year. Scarcity has not produced high pay, because the people who hold the material cannot fund the work.",
       "TWO PROFESSIONS FOUND GENUINELY NEW AI-DRIVEN DEMAND, which is unusual in this dataset. Classical Language & Manuscript Scholar is growing BECAUSE of language technology - building Indian language corpora and evaluating model output requires people who can read the scripts - and Digital Collections Officer grew once description became cheap and deciding what to digitise became the job."
+    ],
+    "1.1": [
+      "FUNERAL & MORTUARY SERVICES PROFESSIONAL added - the single clearest finding of the Step 3 coverage audit. NCO family 5163 Undertakers and Embalmers was wholly uncovered, probe.py returned NO OVERLAP against all 218 professions, and the nearest names the taxonomy could offer for 'Grave Digger' and 'Undertaker' were 'Butcher' and 'Wrestler'. Death care exists in every district of India and had no record anywhere.",
+      "Placed here on the substitution test: remove the belief and ritual surrounding death and the work collapses into handling a body. It sits beside Religious & Ritual Professional, who conducts the rites this profession makes possible.",
+      "The hospital counterpart is deliberately NOT here - Mortuary Attendant is a job role on General Duty Assistant in Sector 4, where mortuary duty genuinely sits, and not on Nurse, because body handling is not licensed nursing practice."
     ]
   },
   "sector_admin_review": {

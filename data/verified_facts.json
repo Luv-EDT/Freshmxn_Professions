@@ -574,6 +574,37 @@
       "checked_on": "2026-08-11",
       "source": "https://www.ayushmanyog.com/post/what-is-ycb-certification",
       "authority": "Yoga Certification Board, Ministry of AYUSH"
+    },
+    {
+      "key": "nco-2015-occupation-list",
+      "statement": "The National Classification of Occupations 2015 is India's official occupation classification, maintained by the Directorate General of Employment, Ministry of Labour & Employment. It covers about 3,600 occupations across 52 divisions on an 8-digit code, and is published only as PDF volumes - there is no CSV, API or bulk download. Volume I (Code Structure) contains the Concordance Table mapping every NCO-2015 code to its occupation title and to the older NCO-2004 code.",
+      "implication": "This is the external ground truth for the STEP 3 coverage audit: the only list that can tell us what whole professions our 218 might be missing, because a taxonomy cannot see its own gaps. Parsed to data/nco_2015_titles.json by tools/nco_titles.py, which recovered 3,128 occupation titles plus 313 residual '..., Other' buckets. That is FEWER than the published 3,600 because titles broken across a PDF page boundary are dropped rather than reconstructed - so the extract is a FLOOR on NCO coverage and can under-report a gap, never invent one. NCO granularity is far below a profession in this repo's sense: 'Boiler, Tindal' is a job role and 'Elected Official, Union Government' is a post. A distant NCO title is a QUESTION for a human, never an instruction to add anything.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-15",
+      "source": "https://dge.gov.in/sites/default/files/2024-05/National_Classification_of_Occupations_Vol_I-2015.pdf",
+      "authority": "Directorate General of Employment, Ministry of Labour & Employment, Government of India",
+      "note": "A state mirror (https://employment.kerala.gov.in/wp-content/uploads/2021/03/NCO-2015.pdf) was opened first and carries the same document with the job descriptors appended; the DGE original is cited because a mirror is not a source. Both were downloaded and agree."
+    },
+    {
+      "key": "aai-atc-junior-executive-pay",
+      "statement": "Airports Authority of India Advertisement 02/2025/CHQ, recruiting Junior Executives (Air Traffic Control), states the pay scale (IDA) for Junior Executive [Group-B: E-1 level] as Rs.40000 - 3% - 140000, with Dearness Allowance, Perks at 35% of Basic pay, HRA, CPF, Gratuity and medical benefits in addition, and gives the approximate CTC for the post as Rs. 13 lakhs per annum.",
+      "implication": "The only STATUTORY-GRADE anchor available for an Indian air traffic controller's pay: a public-sector enterprise's own recruitment advertisement, not a salary aggregator. It fixes ENTRY pay at roughly 13 LPA CTC. It does NOT give a mid-career figure - the E-1 scale's 3% annual increment and promotion to E-2 and above are not quantified in the advertisement, so the mid_career band on the profession record is judgment and carries an admin_review.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-16",
+      "source": "https://www.aai.aero/sites/default/files/examdashboard_advertisement/Detailed%20ATC%20Advertisement%2002-2025-CHQ.pdf",
+      "authority": "Airports Authority of India, Advertisement No. 02/2025/CHQ"
+    },
+    {
+      "key": "rrb-alp-cen-01-2026",
+      "statement": "Railway Recruitment Boards Centralised Employment Notice CEN No. 01/2026 recruits Assistant Loco Pilot (ALP) at Pay Level-2 of the 7th CPC with initial pay Rs. 19,900 per month, medical standard A-1, age 18-30 years as on 01-07-2026, and 11,127 total vacancies across all RRBs.",
+      "implication": "The entry anchor for Indian railway operations, from the Railway Board's own notice. Two things it settles: the post is reachable at 18 with a school-plus-ITI qualification, and the scale of recruitment is large - 11,127 posts in a single notification. What it does NOT give is gross pay: 19,900 is BASIC only, before Dearness Allowance, HRA and the Running Allowance specific to loco staff, so the record's earnings bands are judgment built outward from a sourced basic and carry an admin_review. Applicant numbers are not in the notice, so no competition ratio is claimed.",
+      "tier": "B",
+      "status": "verified",
+      "checked_on": "2026-08-16",
+      "source": "https://rrbajmer.gov.in/Upload_PDF/CEN%2001-2026%20Eng-639143539720035538.pdf",
+      "authority": "Ministry of Railways, Railway Recruitment Boards, CEN No. 01/2026"
     }
   ],
   "pending_verification": [

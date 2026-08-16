@@ -1847,6 +1847,12 @@
       "goes_to": "8. Design & Creative Arts",
       "tag_here_instead": "IT-ITES",
       "why": "Held here as job roles until Sector 8 was built, which was an over-claim. Remove the game from the developer and a software engineer remains; remove it from the designer and nothing does. The object of concern is the designed experience, not computing."
+    },
+    {
+      "profession": "Telephone Switchboard Operator",
+      "goes_to": "nowhere - declined",
+      "tag_here_instead": "IT-ITES",
+      "why": "NCO family 4223, wholly uncovered and declined on the ONE legitimate ground for dropping a profession in CLAUDE.md: demand collapsing through technological obsolescence. PBX and trunk switchboard operation has gone the way of the typewriter mechanic. Not declined for low pay, AI exposure or oversupply, none of which are permitted reasons."
     }
   ],
   "removed_in_v3": [

@@ -1,8 +1,8 @@
 {
   "professional_sector": "16. Hospitality, Travel & Culinary",
   "professional_sector_id": 16,
-  "version": "1.1",
-  "profession_count": 8,
+  "version": "1.3",
+  "profession_count": 7,
   "sector_verification_note": "MOSTLY TIER C WITH ONE HARD TIER A. Merchant Navy Deck Officer sits under the Directorate General of Shipping exactly as Marine Engineer does in Sector 2 - a Certificate of Competency issued after a statutory examination, without which serving is unlawful. Everything else in this sector is unlicensed: nothing registers a chef, a housekeeper, a hotel manager or an event planner, and the only other credential is a Ministry of Tourism guide licence tied to specific monuments. The sector's structural feature is that it is unusually OPEN - NCHMCT JEE offers over 12,000 seats, and three of eight professions are entered with no qualification at all - and unusually dependent on an OVERSEAS pathway, which is where much of the real income in cooking, service and seafaring actually is and which no field here captures.",
   "professions": [
     {
@@ -232,11 +232,10 @@
             "higher": [
               "extraversion",
               "emotional_intelligence",
-              "confidence"
+              "confidence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Running a section means reading tables, handling complaints and directing staff during a service that cannot be paused. It is the first role with real judgment in it."
           }
         ]
@@ -357,7 +356,10 @@
         "Public Area Attendant",
         "Facility Housekeeping Executive",
         "Hospital Housekeeping Attendant",
-        "Homestay & Guesthouse Caretaker"
+        "Homestay & Guesthouse Caretaker",
+        "Hospital Cleaner",
+        "Office Cleaner",
+        "Building Caretaker"
       ],
       "role_spread": {
         "spread": "wide",
@@ -703,11 +705,11 @@
             ],
             "higher": [
               "extraversion",
-              "conscientiousness",
-              "neuroticism"
+              "conscientiousness"
             ],
             "lower": [
-              "openness"
+              "openness",
+              "emotional_stability"
             ],
             "why": "Escorting a group for two weeks means being responsible for thirty strangers, their luggage, their illnesses and their complaints, away from home. It is logistics under continuous social pressure."
           }
@@ -841,11 +843,11 @@
             ],
             "higher": [
               "emotional_intelligence",
-              "extraversion",
-              "neuroticism"
+              "extraversion"
             ],
             "lower": [
-              "logical"
+              "logical",
+              "emotional_stability"
             ],
             "why": "Indian weddings are the largest single event market in the country and the most emotionally loaded. The planner manages two families, a budget nobody will state honestly, and an event that cannot be rescheduled."
           },
@@ -1004,11 +1006,10 @@
             "higher": [
               "verbal",
               "conscientiousness",
-              "confidence"
+              "confidence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Training is classroom and simulator instruction on safety and emergency procedure, against a DGCA-approved syllabus. It is the standard route off the roster and out of shift work."
           },
           {
@@ -1018,11 +1019,10 @@
             "higher": [
               "extraversion",
               "conscientiousness",
-              "bodily"
+              "bodily",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Ground handling is check-in, boarding and disruption management at the airport. It shares the airline and the customer but none of the safety role, and it is often the fallback for people who do not clear cabin crew medicals."
           }
         ]
@@ -1139,181 +1139,6 @@
         "priority": "none",
         "reason": null
       }
-    },
-    {
-      "id": "hos-merchant-navy",
-      "profession": "Merchant Navy Deck Officer",
-      "one_liner": "Navigates and commands a cargo ship - the deck side of the merchant marine.",
-      "job_roles": [
-        "Deck Cadet",
-        "Third Officer",
-        "Second Officer",
-        "Navigating Officer",
-        "Cargo Officer",
-        "Marine Pilot Trainee",
-        "Port Operations Officer",
-        "Marine Surveyor Trainee"
-      ],
-      "role_spread": {
-        "spread": "wide",
-        "deviating_roles": [
-          {
-            "roles": [
-              "Port Operations Officer",
-              "Marine Surveyor Trainee"
-            ],
-            "higher": [
-              "conscientiousness",
-              "logical",
-              "verbal"
-            ],
-            "lower": [
-              "neuroticism"
-            ],
-            "why": "Shore roles - port operations, surveying, ship chartering and management - are where deck officers go after they stop sailing. They pay less than sea time and are the reason the certificate matters beyond the ship."
-          },
-          {
-            "roles": [
-              "Deck Cadet"
-            ],
-            "higher": [
-              "conscientiousness",
-              "bodily",
-              "neuroticism"
-            ],
-            "lower": [
-              "confidence"
-            ],
-            "why": "Eighteen months at sea as a trainee, away from home, on a working ship. It is the hardest filter in this profession and it cannot begin without a shipping company sponsoring the berth."
-          }
-        ]
-      },
-      "industrial_sectors": [
-        "AASSC",
-        "LSC",
-        "EXT-GOVT"
-      ],
-      "degree_dependency": "undergrad",
-      "mid_stream_entry": "restart_undergrad",
-      "class12_prerequisite": [
-        "physics",
-        "chemistry",
-        "maths"
-      ],
-      "path_to_entry": [
-        {
-          "step": 1,
-          "stage": "class_11_12",
-          "requirement": "Physics, Chemistry and Mathematics with 60 percent aggregate and 50 percent in English. Medical standard is absolute: 6/6 vision without aids and no colour blindness."
-        },
-        {
-          "step": 2,
-          "stage": "entrance_exam",
-          "requirement": "IMU CET or a DG Shipping approved institute's admission, plus a company sponsorship test."
-        },
-        {
-          "step": 3,
-          "stage": "training",
-          "requirement": "Either a one-year Diploma in Nautical Science or a three-year B.Sc Nautical Science, at a DG Shipping approved institute. Both lead to the same certificate and both cost like a degree - the DNS is a one-year course priced in lakhs."
-        },
-        {
-          "step": 4,
-          "stage": "sea_time",
-          "requirement": "18 months of Structured Shipboard Training as a Deck Cadet. THIS REQUIRES A COMPANY SPONSORSHIP and is the real bottleneck."
-        },
-        {
-          "step": 5,
-          "stage": "certification",
-          "requirement": "Four months post-sea shore training, the STCW courses, and the Second Mates examination conducted by the Directorate General of Shipping. Passing awards the Second Mates (FG) Certificate of Competency."
-        }
-      ],
-      "entrance_exams": {
-        "public_routes": [
-          "IMU CET",
-          "DG Shipping approved pre-sea training admissions"
-        ],
-        "private_entrances": [
-          "Company-sponsored cadet schemes"
-        ],
-        "note": "The examination is not the constraint. COMPANY SPONSORSHIP for the 18 months of shipboard training is, and a student can complete the diploma and still be unable to proceed."
-      },
-      "entry_competition": null,
-      "entry_window": null,
-      "licensing_body": "Directorate General of Shipping",
-      "years_to_qualify": 4,
-      "economics": {
-        "cost_of_entry_lakh": 8.0,
-        "early_earnings_lpa": "6.0-12.0",
-        "mid_career_lpa": "13.0-32.0",
-        "mid_career_midpoint": 22.5,
-        "payback_years": 0.89,
-        "distribution": "range",
-        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
-        "verification": {
-          "status": "judgment",
-          "sources": [],
-          "checked_on": "2026-08-11"
-        }
-      },
-      "demand_signal": {
-        "india_demand": "moderate",
-        "pathway": "any"
-      },
-      "filter": true,
-      "after_undergrad": "work_first",
-      "self_employment": {
-        "likelihood": "rare",
-        "ceiling_lpa": null,
-        "route": null,
-        "verification": null
-      },
-      "ai_exposure": {
-        "work_composition": {
-          "knowledge_foundational": 25,
-          "knowledge_retrievable": 10,
-          "skill_physical": 45,
-          "skill_digital": 5,
-          "clarity": 15
-        },
-        "legal_accountability": true,
-        "exposure_raw": 15,
-        "band": "low",
-        "reason": "Very low exposure. Ships are increasingly automated and crewed by fewer people, but a certificated officer must be aboard and personally answerable for the safe navigation of the vessel under international convention. Autonomous shipping is real and slow, and the regulatory requirement for a licensed human on watch is what this profession rests on. Marine Surveyor Trainee and Port Operations Officer carry more exposure through documentation and inspection tooling."
-      },
-      "verification": {
-        "tier": "A",
-        "status": "verified",
-        "source": "data/verified_facts.json#dns-second-mate-coc",
-        "checked_on": "2026-08-11"
-      },
-      "nuances": [
-        {
-          "field": "licensing_body",
-          "statement": "Tier A. The Second Mates (Foreign Going) Certificate of Competency is issued by the Directorate General of Shipping after its own examination, and serving as a deck officer without one is unlawful. This is the same statutory structure as the MEO certificates recorded for Marine Engineer in Sector 2.",
-          "source": "data/verified_facts.json#dns-second-mate-coc"
-        },
-        {
-          "field": "path_to_entry",
-          "statement": "The binding constraint is not academic. Eighteen months of shipboard training requires a shipping company to sponsor a cadet berth, and the number of berths is far smaller than the number of people completing pre-sea courses. Students routinely pay for a diploma and then cannot proceed. Any institute that does not guarantee sponsorship in writing should be treated with suspicion."
-        },
-        {
-          "field": "economics",
-          "statement": "The cost of entry is the part students underestimate. A DG Shipping approved pre-sea course is priced in lakhs whether it is the one-year diploma or the three-year degree, it is paid up front, and it does not guarantee the cadet berth that the certificate depends on. Money spent before sponsorship is money at risk."
-        },
-        {
-          "field": "class12_prerequisite",
-          "statement": "PCM is required and so is a MEDICAL standard that no other profession in this dataset imposes: uncorrected 6/6 vision and no colour blindness. That excludes a large number of academically eligible students, and it should be checked before any money is spent."
-        },
-        {
-          "field": "economics",
-          "statement": "Set level with Marine Engineer in Sector 2 rather than above it. Deck and engine officers hold parallel Certificates of Competency on the same ship under the same international convention, and a gap between them was not defensible. The highest earnings in this sector by a wide margin, and they are earned at sea in tax-advantaged foreign-going service, away from home for months. Shore roles after sailing pay substantially less, which is the trade every officer eventually makes."
-        }
-      ],
-      "admin_review": {
-        "required": true,
-        "priority": "high",
-        "reason": "The highest figure and the widest spread anywhere in Sectors 8 to 18 - 13 to 32 lakh - and entirely unsourced. A fetchable anchor exists and should be used: the NUSI-MUI and INSA collective bargaining wage scales publish monthly rates for a Third Officer on Indian-flag foreign-going ships, and ITF minimum scales cover the international floor. Sourcing it would make this the sector's one statutory-style anchor, as the Majithia award is for Sector 9."
-      }
     }
   ],
   "routed_elsewhere": [
@@ -1346,6 +1171,12 @@
       "goes_to": "9. Media, Film & Storytelling",
       "tag_here_instead": "MESC",
       "why": "Already built in Sector 9. Travel creators are content creators whose subject is travel - the subject is the tag, not the profession."
+    },
+    {
+      "profession": "Merchant Navy Deck Officer",
+      "goes_to": "2. Engineering & Making",
+      "tag_here_instead": "THSC",
+      "why": "Built here and moved on review. Swap out travel and hospitality and the work survives unchanged - navigation, watchkeeping, cargo and safety on a vessel that may carry no passengers at all. It belongs beside Marine Engineer, who holds the parallel certificate on the same ship."
     }
   ],
   "boundary_decisions_needing_your_signoff": [
@@ -1366,6 +1197,13 @@
       "ONE TIER A PROFESSION, VERIFIED FROM THE ROUTE ITSELF. The Second Mates (FG) Certificate of Competency is issued by the Directorate General of Shipping and serving as a deck officer without one is unlawful. The fact recorded also captures the two things that actually stop people: an absolute medical standard of uncorrected 6/6 vision and no colour blindness, and the requirement for COMPANY SPONSORSHIP of 18 months of shipboard training - which is the real bottleneck and which students routinely discover after paying for a diploma.",
       "TRAVEL & TOURISM PROFESSIONAL is the most AI-exposed profession here at 50, and it is the clearest case in the dataset of a profession that was disrupted BEFORE AI arrived. Online booking took ticketing and agency work over two decades; language models finish the job on itinerary planning. What survives is standing in front of the monument or being responsible for thirty people abroad.",
       "TWO PROFESSIONS CARRY A REQUIRED ADMIN_REVIEW - Food & Beverage Service and Housekeeping - both for the same two missing numbers: Indian wage data, and the direct-versus-agency employment distinction that determines pay and benefits more than the employer's name."
+    ],
+    "1.2": [
+      "Job roles added from the STEP 3 coverage audit against NCO-2015, approved before any built sector was touched. Each is work this profession already does under a name the National Classification of Occupations uses and this taxonomy did not - a job role costs one line, a profession costs economics, verification, AI scoring and review. Nothing else on these records changed."
+    ],
+    "1.3": [
+      "MERCHANT NAVY DECK OFFICER MOVED TO SECTOR 2 on review, with approval. Sector 16's object of concern is hospitality and travel - hosting people who are away from home. A deck officer navigates a ship, which survives the removal of both. It now sits beside Marine Engineer, its counterpart on the same vessel. Sector 16 is now 7 professions.",
+      "Job roles added from the Step 3 coverage audit: Hospital Cleaner, Office Cleaner and Building Caretaker on Housekeeping & Accommodation Services Professional."
     ]
   },
   "sector_admin_review": {

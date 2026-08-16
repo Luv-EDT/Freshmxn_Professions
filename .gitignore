@@ -1,0 +1,12 @@
+# Intermediate vector caches for the Step 3 coverage audit. Regenerable from
+# tools/coverage_audit.py, checkpointed after every batch, and ~68 MB of float arrays that
+# would otherwise sit permanently in the history of a repo that is entirely hand-reviewed text.
+data/nco_2015_embeddings.json
+data/surface_embeddings.json
+
+# NOT ignored, deliberately: data/profession_embeddings.json (3 MB). Step 4 and the application
+# consume it, so it is a deliverable rather than a cache.
+
+__pycache__/
+*.pyc
+data_backup_*/

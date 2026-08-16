@@ -1,8 +1,8 @@
 {
   "professional_sector": "Engineering & Making",
   "professional_sector_id": 2,
-  "version": "20.1",
-  "profession_count": 33,
+  "version": "20.5",
+  "profession_count": 37,
   "sector_verification_note": "Unlike Sector 1, this sector has real Tier A licensing — DGCA for pilots and aircraft engineers, DG Shipping for marine engineers, Council of Architecture for architects. Class 12 subject gates and ITI entry rules are Tier B verified. Salary bands remain judgment throughout; India has no authoritative free source for them. NOTE: the AMIE / Institution of Engineers route named in the brief is deliberately EXCLUDED from every path_to_entry — recognition for post-2013 enrolments is unresolved in the Delhi High Court and it is not safe to recommend. Source: data/verified_facts.json#amie-iei-recognition.",
   "professions": [
     {
@@ -185,7 +185,16 @@
         "Vehicle Design Engineer",
         "Powertrain Engineer",
         "EV Systems Engineer",
-        "Vehicle Testing Engineer"
+        "Vehicle Testing Engineer",
+        "Analysis & Simulation Engineer (FEA/CFD)",
+        "Manufacturing Engineer",
+        "Product Development Engineer",
+        "Prototype & Testing Engineer",
+        "R&D Engineer",
+        "Project Engineer",
+        "Commissioning Engineer",
+        "Interface Engineer",
+        "Ergonomics Engineer"
       ],
       "role_spread": {
         "spread": "wide",
@@ -336,6 +345,10 @@
         {
           "field": "job_roles",
           "statement": "Automobile engineering is folded in here. It shares the same skill set as mechanical engineering — thermodynamics, mechanics, CAD, materials, manufacturing — and differs only by industry. Two professions with the same skill profile would always surface together in a psychometric recommender, adding noise without information. Students drawn to vehicles should find this through the automotive industrial tag and the vehicle job roles."
+        },
+        {
+          "field": "job_roles",
+          "statement": "This record carries the CROSS-CUTTING engineering roles - analysis and simulation, manufacturing, prototyping, R&D, project, commissioning and interface engineering - because they exist inside every discipline and a mechanical degree is the most common route into them. They are listed once here rather than repeated on Civil, Chemical, Electrical and the rest, which would duplicate a job role across professions and is rejected by audit.py. A student reading Civil Engineer should understand that Design, Quality and Project roles exist there too."
         }
       ],
       "admin_review": {
@@ -1242,7 +1255,9 @@
         "Failure Analysis Engineer",
         "Foundry Engineer",
         "Welding Engineer",
-        "Heat Treatment Engineer"
+        "Heat Treatment Engineer",
+        "Fabrication Engineer",
+        "Inspection Engineer (NDT)"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -1378,7 +1393,9 @@
         "Engine Room Watchkeeper",
         "Shipyard Engineer",
         "Port & Dock Engineer",
-        "Marine Surveyor"
+        "Marine Surveyor",
+        "Naval Architect",
+        "Ship Design Engineer"
       ],
       "role_spread": {
         "spread": "wide",
@@ -1391,11 +1408,11 @@
             ],
             "higher": [
               "verbal",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
             "lower": [
-              "bodily",
-              "neuroticism"
+              "bodily"
             ],
             "why": "Shore roles are inspection, documentation and report-writing on a normal schedule. Sailing as an engine-room officer means months away, confined machinery spaces and emotional steadiness under isolation."
           }
@@ -1404,7 +1421,9 @@
       "industrial_sectors": [
         "LSC",
         "SMSSC",
-        "HYSSC"
+        "HYSSC",
+        "IISSSC",
+        "EXT-DEFENCE"
       ],
       "degree_dependency": "professional",
       "mid_stream_entry": "restart_undergrad",
@@ -1530,7 +1549,11 @@
         "Reservoir Engineer",
         "Oil & Gas Production Engineer",
         "Well Logging Engineer",
-        "Completion Engineer"
+        "Completion Engineer",
+        "Pipeline Engineer (Onshore)",
+        "Subsea Engineer (SURF)",
+        "Flow Assurance Engineer",
+        "Offshore Installation Engineer"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -1649,7 +1672,12 @@
         "source": "data/verified_facts.json#jee-main-paper1-btech",
         "checked_on": "2026-07-31"
       },
-      "nuances": [],
+      "nuances": [
+        {
+          "field": "job_roles",
+          "statement": "Piping and layout, onshore pipeline, subsea (SURF) and flow assurance are often presented as separate INDUSTRY DOMAINS in oil and gas hiring. They are not industries - they are specialisations of this profession's work, and the substitution test settles it: nobody is employed BY flow assurance, they are employed by an operator or an EPC contractor to do it. They are recorded here as job roles, which is what they are."
+        }
+      ],
       "admin_review": {
         "required": false,
         "priority": null,
@@ -2644,7 +2672,9 @@
         "Pipe Fitter",
         "Sanitary Technician",
         "Water Supply Technician",
-        "Gas Pipeline Fitter"
+        "Gas Pipeline Fitter",
+        "Pipe Insulator",
+        "Acoustical Insulator"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -2892,7 +2922,8 @@
         "Tile & Marble Layer",
         "Concrete Technician",
         "Scaffolder",
-        "Waterproofing Technician"
+        "Waterproofing Technician",
+        "Building Insulator"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -3014,7 +3045,8 @@
         "Refrigeration Mechanic",
         "HVAC Installation Technician",
         "Chiller Technician",
-        "Cold Chain Technician"
+        "Cold Chain Technician",
+        "Refrigeration Insulator"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -4720,6 +4752,655 @@
         "priority": "none",
         "reason": null
       }
+    },
+    {
+      "id": "eng-air-traffic-controller",
+      "profession": "Air Traffic Controller",
+      "one_liner": "Keeps aircraft apart and moving, from a tower or a radar room.",
+      "job_roles": [
+        "Air Traffic Control Officer",
+        "Aerodrome (Tower) Controller",
+        "Approach Radar Controller",
+        "Area Control Centre Controller",
+        "Flight Information Officer",
+        "Ground Movement Controller"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Flight Information Officer"
+            ],
+            "higher": [
+              "verbal"
+            ],
+            "lower": [
+              "attention_span"
+            ],
+            "why": "Flight information is an advisory desk - it answers and briefs. Radar control is continuous live separation of aircraft, which is where the concentration load sits."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "AASSC",
+        "IASC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics and Maths at class 12"
+        },
+        {
+          "step": 2,
+          "stage": "undergrad",
+          "requirement": "B.Sc with Physics and Maths, or B.E./B.Tech"
+        },
+        {
+          "step": 3,
+          "stage": "exams",
+          "requirement": "AAI Junior Executive (Air Traffic Control) computer-based test, followed by a voice test and a psychoactive substance test"
+        },
+        {
+          "step": 4,
+          "stage": "medical",
+          "requirement": "Class 1 medical fitness"
+        },
+        {
+          "step": 5,
+          "stage": "training",
+          "requirement": "Ab-initio training at an AAI Civil Aviation Training College, then on-the-job ratings for each control position"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "AAI Junior Executive (Air Traffic Control) recruitment examination"
+        ],
+        "private_entrances": [],
+        "note": "One employer for practical purposes. Air traffic services in India are provided by the Airports Authority of India, so the AAI recruitment examination is the route."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 4.0,
+        "early_earnings_lpa": "11.0-13.0",
+        "mid_career_lpa": "16.0-24.0",
+        "mid_career_midpoint": 20.0,
+        "payback_years": 0.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://www.aai.aero/sites/default/files/examdashboard_advertisement/Detailed%20ATC%20Advertisement%2002-2025-CHQ.pdf"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 5,
+          "skill_digital": 25,
+          "clarity": 35
+        },
+        "legal_accountability": true,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "Automation assists heavily - conflict alerting, data-link, arrival sequencing - and none of it removes the controller, because the accountability for separation is personal and the job is live judgment under time pressure with no undo. What automation has changed is the volume one controller can handle, not whether one is present."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#aai-atc-junior-executive-pay",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Placed in Engineering & Making beside Commercial Pilot and Aircraft Maintenance Engineer, which is the precedent for licensed technical operation of aviation systems. The tension worth knowing: Merchant Navy Deck Officer, who does the equivalent job on a ship, sits in Sector 16 while Marine Engineer sits here. That inconsistency predates this record and is carried on Sector 2's sector_admin_review rather than resolved by moving a built record."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body named. A controller's instructions are mandatory in controlled airspace and responsibility for separation is personal and individually attributable after an incident - the same statutory-office pattern as Civil Services Officer and Police Officer, where accountability rests on the office rather than on a council's licence. Whether DGCA additionally issues an air traffic controller licence under the Aircraft Rules is a Tier A question carried on this record's admin_review."
+        },
+        {
+          "field": "economics",
+          "statement": "early_earnings is anchored on a document, not an aggregator: AAI Advertisement 02/2025/CHQ gives the approximate CTC for Junior Executive as Rs. 13 lakhs per annum on the E-1 scale of Rs.40000 - 3% - 140000. mid_career is NOT in that document and is judgment. Source: data/verified_facts.json#aai-atc-junior-executive-pay."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "Two open items. (1) Does DGCA issue an air traffic controller LICENCE under the Aircraft Rules? If it does, this record is Tier A with a named licensing_body, not Tier B. (2) No sourced mid-career figure exists - AAI's advertisement gives entry CTC only, and the E-1 scale's progression to E-2 and above is not quantified in it. The mid_career band is built outward from the sourced entry figure and the published 3% increment, and should be replaced with a fetched figure."
+      }
+    },
+    {
+      "id": "eng-railway-operations",
+      "profession": "Railway Operations Professional",
+      "one_liner": "Drives the trains, controls their movement and keeps the section safe.",
+      "job_roles": [
+        "Assistant Loco Pilot",
+        "Loco Pilot",
+        "Station Master",
+        "Train Manager (Guard)",
+        "Section Controller",
+        "Signal & Telecommunication Operator",
+        "Yard Master",
+        "Train Examiner (Rolling Stock)"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Station Master",
+              "Section Controller"
+            ],
+            "higher": [
+              "verbal",
+              "confidence"
+            ],
+            "lower": [
+              "bodily"
+            ],
+            "why": "Station and section control is coordination by voice and record under pressure - authorising movements, sequencing trains, handling failures. Driving is a solitary, physical, intensely procedural job in a cab."
+          },
+          {
+            "roles": [
+              "Signal & Telecommunication Operator",
+              "Train Examiner (Rolling Stock)"
+            ],
+            "higher": [
+              "spatial",
+              "logical"
+            ],
+            "lower": [
+              "extraversion"
+            ],
+            "why": "Signalling and rolling-stock examination are diagnostic trades - circuits, interlocks and mechanical fault-finding rather than train handling."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSC",
+        "IISSSC",
+        "IESC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "certificate",
+      "mid_stream_entry": "open",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_10",
+          "requirement": "Class 10 pass"
+        },
+        {
+          "step": 2,
+          "stage": "training",
+          "requirement": "ITI in a relevant trade, or a three-year diploma in mechanical, electrical or electronics engineering, for the Assistant Loco Pilot route. Station Master is recruited at graduate level"
+        },
+        {
+          "step": 3,
+          "stage": "exams",
+          "requirement": "RRB Assistant Loco Pilot computer-based tests, followed by a computer-based aptitude test"
+        },
+        {
+          "step": 4,
+          "stage": "medical",
+          "requirement": "Railway medical standard A-1, which is the strictest vision standard the Railways apply"
+        },
+        {
+          "step": 5,
+          "stage": "training",
+          "requirement": "Zonal training school, then footplate experience before independent charge of a locomotive"
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "RRB Assistant Loco Pilot (CEN 01/2026)",
+          "RRB Non-Technical Popular Categories (Station Master)",
+          "RRB Technician"
+        ],
+        "private_entrances": [],
+        "note": "Indian Railways recruits through the Railway Recruitment Boards and almost nowhere else. CEN 01/2026 alone advertised 11,127 Assistant Loco Pilot posts."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 2,
+      "economics": {
+        "cost_of_entry_lakh": 0.6,
+        "early_earnings_lpa": "2.4-4.2",
+        "mid_career_lpa": "4.8-9.0",
+        "mid_career_midpoint": 6.9,
+        "payback_years": 0.18,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [
+            "https://rrbajmer.gov.in/Upload_PDF/CEN%2001-2026%20Eng-639143539720035538.pdf"
+          ],
+          "checked_on": "2026-08-16"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "high",
+        "pathway": "india"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 20,
+          "knowledge_retrievable": 10,
+          "skill_physical": 40,
+          "skill_digital": 10,
+          "clarity": 20
+        },
+        "legal_accountability": true,
+        "exposure_raw": 20,
+        "band": "low",
+        "reason": "Driving is physical, procedural and safety-critical, and Indian Railways runs a vast legacy network where automatic train protection is being fitted rather than assumed. Signalling and control absorb more automation than the cab does. The binding constraint is not technology but accountability: a signal passed at danger is attributed to a person."
+      },
+      "verification": {
+        "tier": "B",
+        "status": "verified",
+        "source": "data/verified_facts.json#rrb-alp-cen-01-2026",
+        "checked_on": "2026-08-16"
+      },
+      "nuances": [
+        {
+          "field": "professional_sector",
+          "statement": "Engineering & Making, on the Commercial Pilot precedent - licensed, technical operation of a machine on which other people's lives depend. It is NOT Sector 5 beside Commercial Vehicle Driver: a loco pilot works inside a signalling and control system rather than driving on open road, which is why the section controller and the signal operator belong on the same record and no equivalent exists for road transport."
+        },
+        {
+          "field": "ai_exposure",
+          "statement": "legal_accountability is true with no licensing_body. Railway operating staff hold competency certificates issued by the Railways themselves and are personally answerable under the Railways Act for signal and safety violations - accountability by office and employer certification rather than by an external council's licence."
+        },
+        {
+          "field": "economics",
+          "statement": "The sourced figure is BASIC PAY ONLY: Rs. 19,900 per month at Pay Level-2, from Railway Board CEN 01/2026. Gross pay is materially higher because Dearness Allowance, HRA and the Running Allowance specific to loco staff are added on top, and the Running Allowance can be a large share of a loco pilot's packet. The bands here are built outward from the sourced basic and are judgment. Source: data/verified_facts.json#rrb-alp-cen-01-2026."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "One notification, CEN 01/2026, advertised 11,127 Assistant Loco Pilot posts. Indian Railways is among the largest employers in the country and recruits in tens of thousands across categories, which is why india_demand is high and pathway is india - this is domestic public employment, not a transferable international qualification."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "medium",
+        "reason": "No sourced figure for GROSS pay or for mid-career earnings. Basic pay at entry is documented (Rs. 19,900, Level-2) but the Running Allowance - which materially changes what a loco pilot actually earns - is not, and neither is the pay level after promotion from Assistant Loco Pilot to Loco Pilot to Mail/Express. Fetch the Railway Board's running allowance rules and the Level-4/Level-6 matrix before treating these bands as reliable."
+      }
+    },
+    {
+      "id": "eng-merchant-navy-deck-officer",
+      "profession": "Merchant Navy Deck Officer",
+      "one_liner": "Navigates and commands a cargo ship - the deck side of the merchant marine.",
+      "job_roles": [
+        "Deck Cadet",
+        "Third Officer",
+        "Second Officer",
+        "Navigating Officer",
+        "Cargo Officer",
+        "Marine Pilot Trainee",
+        "Port Operations Officer",
+        "Marine Surveyor Trainee"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Port Operations Officer",
+              "Marine Surveyor Trainee"
+            ],
+            "higher": [
+              "conscientiousness",
+              "logical",
+              "verbal",
+              "emotional_stability"
+            ],
+            "lower": [],
+            "why": "Shore roles - port operations, surveying, ship chartering and management - are where deck officers go after they stop sailing. They pay less than sea time and are the reason the certificate matters beyond the ship."
+          },
+          {
+            "roles": [
+              "Deck Cadet"
+            ],
+            "higher": [
+              "conscientiousness",
+              "bodily"
+            ],
+            "lower": [
+              "confidence",
+              "emotional_stability"
+            ],
+            "why": "Eighteen months at sea as a trainee, away from home, on a working ship. It is the hardest filter in this profession and it cannot begin without a shipping company sponsoring the berth."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "LSC",
+        "HYSSC",
+        "EXT-GOVT"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "restart_undergrad",
+      "class12_prerequisite": [
+        "physics",
+        "chemistry",
+        "maths"
+      ],
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Physics, Chemistry and Mathematics with 60 percent aggregate and 50 percent in English. Medical standard is absolute: 6/6 vision without aids and no colour blindness."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "IMU CET or a DG Shipping approved institute's admission, plus a company sponsorship test."
+        },
+        {
+          "step": 3,
+          "stage": "training",
+          "requirement": "Either a one-year Diploma in Nautical Science or a three-year B.Sc Nautical Science, at a DG Shipping approved institute. Both lead to the same certificate and both cost like a degree - the DNS is a one-year course priced in lakhs."
+        },
+        {
+          "step": 4,
+          "stage": "sea_time",
+          "requirement": "18 months of Structured Shipboard Training as a Deck Cadet. THIS REQUIRES A COMPANY SPONSORSHIP and is the real bottleneck."
+        },
+        {
+          "step": 5,
+          "stage": "certification",
+          "requirement": "Four months post-sea shore training, the STCW courses, and the Second Mates examination conducted by the Directorate General of Shipping. Passing awards the Second Mates (FG) Certificate of Competency."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "IMU CET",
+          "DG Shipping approved pre-sea training admissions"
+        ],
+        "private_entrances": [
+          "Company-sponsored cadet schemes"
+        ],
+        "note": "The examination is not the constraint. COMPANY SPONSORSHIP for the 18 months of shipboard training is, and a student can complete the diploma and still be unable to proceed."
+      },
+      "entry_competition": null,
+      "entry_window": null,
+      "licensing_body": "Directorate General of Shipping",
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "6.0-12.0",
+        "mid_career_lpa": "13.0-32.0",
+        "mid_career_midpoint": 22.5,
+        "payback_years": 0.89,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and business ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "work_first",
+      "self_employment": {
+        "likelihood": "rare",
+        "ceiling_lpa": null,
+        "route": null,
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 45,
+          "skill_digital": 5,
+          "clarity": 15
+        },
+        "legal_accountability": true,
+        "exposure_raw": 15,
+        "band": "low",
+        "reason": "Very low exposure. Ships are increasingly automated and crewed by fewer people, but a certificated officer must be aboard and personally answerable for the safe navigation of the vessel under international convention. Autonomous shipping is real and slow, and the regulatory requirement for a licensed human on watch is what this profession rests on. Marine Surveyor Trainee and Port Operations Officer carry more exposure through documentation and inspection tooling."
+      },
+      "verification": {
+        "tier": "A",
+        "status": "verified",
+        "source": "data/verified_facts.json#dns-second-mate-coc",
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "licensing_body",
+          "statement": "Tier A. The Second Mates (Foreign Going) Certificate of Competency is issued by the Directorate General of Shipping after its own examination, and serving as a deck officer without one is unlawful. This is the same statutory structure as the MEO certificates recorded for Marine Engineer in Sector 2.",
+          "source": "data/verified_facts.json#dns-second-mate-coc"
+        },
+        {
+          "field": "path_to_entry",
+          "statement": "The binding constraint is not academic. Eighteen months of shipboard training requires a shipping company to sponsor a cadet berth, and the number of berths is far smaller than the number of people completing pre-sea courses. Students routinely pay for a diploma and then cannot proceed. Any institute that does not guarantee sponsorship in writing should be treated with suspicion."
+        },
+        {
+          "field": "economics",
+          "statement": "The cost of entry is the part students underestimate. A DG Shipping approved pre-sea course is priced in lakhs whether it is the one-year diploma or the three-year degree, it is paid up front, and it does not guarantee the cadet berth that the certificate depends on. Money spent before sponsorship is money at risk."
+        },
+        {
+          "field": "class12_prerequisite",
+          "statement": "PCM is required and so is a MEDICAL standard that no other profession in this dataset imposes: uncorrected 6/6 vision and no colour blindness. That excludes a large number of academically eligible students, and it should be checked before any money is spent."
+        },
+        {
+          "field": "economics",
+          "statement": "Set level with Marine Engineer in Sector 2 rather than above it. Deck and engine officers hold parallel Certificates of Competency on the same ship under the same international convention, and a gap between them was not defensible. The highest earnings in this sector by a wide margin, and they are earned at sea in tax-advantaged foreign-going service, away from home for months. Shore roles after sailing pay substantially less, which is the trade every officer eventually makes."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Built in Sector 16 and moved here on review. The substitution test decided it: remove travel and hospitality and a deck officer's work - navigation, watchkeeping, cargo, safety - survives completely unchanged, because a cargo ship carries no passengers to host. The setting was doing the work of a sector. It also ends a split that should never have existed: MARINE ENGINEER was already here, and the deck officer holds the parallel Certificate of Competency on the same ship. Two halves of one crew were in two different sectors."
+        }
+      ],
+      "admin_review": {
+        "required": true,
+        "priority": "high",
+        "reason": "The highest figure and the widest spread anywhere in Sectors 8 to 18 - 13 to 32 lakh - and entirely unsourced. A fetchable anchor exists and should be used: the NUSI-MUI and INSA collective bargaining wage scales publish monthly rates for a Third Officer on Indian-flag foreign-going ships, and ITF minimum scales cover the international floor. Sourcing it would make this the sector's one statutory-style anchor, as the Majithia award is for Sector 9."
+      }
+    },
+    {
+      "id": "eng-industrial-product-designer",
+      "profession": "Industrial & Product Designer",
+      "one_liner": "Designs physical products - appliances, tools, vehicles, medical devices, furniture.",
+      "job_roles": [
+        "Industrial Designer",
+        "Product Designer (Hardware)",
+        "Furniture Designer",
+        "Transportation Designer",
+        "Toy Designer",
+        "CMF Designer",
+        "Packaging Structure Designer",
+        "Design Researcher",
+        "Model Maker & Prototyper"
+      ],
+      "role_spread": {
+        "spread": "wide",
+        "deviating_roles": [
+          {
+            "roles": [
+              "Design Researcher"
+            ],
+            "higher": [
+              "verbal",
+              "emotional_intelligence",
+              "reasoning"
+            ],
+            "lower": [
+              "spatial"
+            ],
+            "why": "Research is fieldwork and interviews - watching how people actually use a stove or a wheelchair. It sets the brief rather than answering it."
+          },
+          {
+            "roles": [
+              "Model Maker & Prototyper"
+            ],
+            "higher": [
+              "bodily",
+              "attention_span"
+            ],
+            "lower": [
+              "verbal"
+            ],
+            "why": "Prototyping is workshop craft - foam, wood, 3D printing and finishing. It is the hands-on trade inside a profession that is otherwise screen-based."
+          }
+        ]
+      },
+      "industrial_sectors": [
+        "CGSC",
+        "FFSC",
+        "ASDC",
+        "MESC"
+      ],
+      "degree_dependency": "undergrad",
+      "mid_stream_entry": "after_any_degree",
+      "class12_prerequisite": "any",
+      "path_to_entry": [
+        {
+          "step": 1,
+          "stage": "class_11_12",
+          "requirement": "Any stream. Physics and Maths help with the engineering side but are not required."
+        },
+        {
+          "step": 2,
+          "stage": "entrance_exam",
+          "requirement": "UCEED for the IITs, or NID DAT. Private design colleges admit on their own tests."
+        },
+        {
+          "step": 3,
+          "stage": "degree",
+          "requirement": "B.Des in Industrial or Product Design (4 years), or M.Des after any degree via CEED."
+        },
+        {
+          "step": 4,
+          "stage": "work",
+          "requirement": "In-house design team at a manufacturer, or a product design consultancy."
+        }
+      ],
+      "entrance_exams": {
+        "public_routes": [
+          "UCEED",
+          "NID DAT",
+          "CEED"
+        ],
+        "private_entrances": [],
+        "note": "UCEED and NID DAT are the undergraduate routes; CEED is the postgraduate one and takes graduates of any discipline, which is how many engineers enter design."
+      },
+      "entry_competition": {
+        "primary_gate": "uceed",
+        "alternative_gates": []
+      },
+      "entry_window": null,
+      "licensing_body": null,
+      "years_to_qualify": 4,
+      "economics": {
+        "cost_of_entry_lakh": 8.0,
+        "early_earnings_lpa": "4-8",
+        "mid_career_lpa": "8-18",
+        "mid_career_midpoint": 13.0,
+        "payback_years": 1.33,
+        "distribution": "range",
+        "basis": "mid_career is 5-8 years of EMPLOYMENT after entering the field, EMPLOYED only. Independent practice and studio ownership are excluded - that income is entrepreneurship, and self_employment carries it separately.",
+        "verification": {
+          "status": "judgment",
+          "sources": [],
+          "checked_on": "2026-08-11"
+        }
+      },
+      "demand_signal": {
+        "india_demand": "moderate",
+        "pathway": "any"
+      },
+      "filter": true,
+      "after_undergrad": "masters_advantage",
+      "self_employment": {
+        "likelihood": "possible_later",
+        "ceiling_lpa": null,
+        "route": "Independent design consultancy serving manufacturers, normally after 5-8 years in-house - the work comes from a network, not a portfolio site.",
+        "verification": null
+      },
+      "ai_exposure": {
+        "work_composition": {
+          "knowledge_foundational": 25,
+          "knowledge_retrievable": 10,
+          "skill_physical": 10,
+          "skill_digital": 25,
+          "clarity": 30
+        },
+        "legal_accountability": false,
+        "exposure_raw": 35,
+        "band": "low",
+        "reason": "The least exposed design profession here, because the output has to survive manufacture. A model can generate a beautiful kettle; it cannot know the tooling budget, the draft angles, the certification regime or what the factory can actually make. CMF Designer and Packaging Structure Designer are the more exposed roles; Design Researcher and Model Maker & Prototyper are the least."
+      },
+      "verification": {
+        "tier": "C",
+        "status": "judgment",
+        "source": null,
+        "checked_on": "2026-08-11"
+      },
+      "nuances": [
+        {
+          "field": "entry_competition",
+          "statement": "UCEED is named as primary because for THIS profession the public design institutes really are the dominant route into the good jobs - unlike graphic or UI design, where entry is portfolio-led and the exam is irrelevant. 15,408 candidates for 245 seats is 62.9 to 1, harder than JEE Main."
+        },
+        {
+          "field": "demand_signal",
+          "statement": "Moderate, and the reason is structural: India manufactures at enormous scale but designs comparatively little of what it makes, because design authority for many products sits with the foreign brand owner. That is a real ceiling on the profession's size, not a comment on its quality."
+        },
+        {
+          "field": "professional_sector",
+          "statement": "Built in Sector 8 and moved here on review. The substitution test decides it: strip the styling and the object still has to be manufacturable, safe, durable and to cost - the engineering constraint is what survives, and it is what the job is actually bounded by. Its industrial tags were already CGSC, FFSC and ASDC: capital goods, furniture and automotive. THE COUNTER-ARGUMENT IS REAL AND IS WHY SECTOR 8 STILL POINTS HERE: the entrances are NID DAT and UCEED, which are design examinations, and a 15-year-old looking for this work will look under design, not under engineering. Placement follows the work; discoverability is the application's job."
+        }
+      ],
+      "admin_review": {
+        "required": false,
+        "priority": "none",
+        "reason": null
+      }
     }
   ],
   "routed_elsewhere": [
@@ -4728,12 +5409,6 @@
       "goes_to": "8. Design & Creative Arts",
       "tag_here_instead": "FFSC",
       "why": "Craft is aesthetic and spatial design, not structural making. Architect stays here because it is licensed and structural."
-    },
-    {
-      "profession": "Industrial / Product Designer",
-      "goes_to": "8. Design & Creative Arts",
-      "tag_here_instead": "CGSC",
-      "why": "Designs how a product looks and feels; the engineer designs how it works."
     },
     {
       "profession": "Goldsmith / Bench Jeweller",
@@ -4766,12 +5441,6 @@
       "why": "Hosting people. Pilot stays here as licensed technical operation of complex machinery."
     },
     {
-      "profession": "Merchant Navy Deck Officer",
-      "goes_to": "16. Hospitality, Travel & Culinary",
-      "tag_here_instead": "LSC",
-      "why": "PROVISIONAL — navigation and cargo command rather than machinery. May belong here instead; flagged for review."
-    },
-    {
       "profession": "Fashion & Apparel Production Technician",
       "goes_to": "8. Design & Creative Arts",
       "tag_here_instead": "AMHSSC",
@@ -4782,6 +5451,12 @@
       "goes_to": "7. Law, Governance & Public Service",
       "tag_here_instead": "EXT-DEFENCE",
       "why": "Uniformed public service under the cross-cutting rule, like Police Officer. The industrial fire prevention side stays here as Fire & Safety Engineer."
+    },
+    {
+      "profession": "Saw Grinder / Tool Sharpener",
+      "goes_to": "declined - already covered by Tool & Die Maker and Fitter & Machine Operator (S2)",
+      "tag_here_instead": "CSDCI",
+      "why": "NCO family 8190. Tool & Die Maker and Fitter & Machine Operator already carry this work; sharpening and grinding is a task inside a trade, not a trade of its own."
     }
   ],
   "merged_into": [
@@ -4919,6 +5594,28 @@
     "20.1": [
       "ARCHITECT now cites verified_facts.json#barch-eligibility on class12_prerequisite. The fact was fetched and verified but no profession referenced it, so audit.py's orphaned_facts() reported it. The PCM gate on this record was correct but uncited - the source for WHY Physics is compulsory lived only in the facts file.",
       "sector_verification_note now cites verified_facts.json#amie-iei-recognition. The AMIE exclusion was stated here and enforced across every path_to_entry, but the fetched fact behind it was cited only in DECISIONS.md - the data asserted the exclusion without pointing at its evidence."
+    ],
+    "20.2": [
+      "AIR TRAFFIC CONTROLLER and RAILWAY OPERATIONS PROFESSIONAL added, from the Step 3 coverage audit and the user's own earlier profession list. Neither was reported as a gap by coverage_audit.py, and that is the finding: 'Air Traffic Controller Specialist' scored 0.781 against 'Cargo Pilot' and 'Locomotive Driver' scored 0.856 against 'Truck Driver', so both read as COVERED. Shared aviation and driving vocabulary, not shared work. See DECISIONS.md 10, correction 26.",
+      "Both are placed here on the Commercial Pilot precedent - licensed technical operation of a machine other people's lives depend on. Both carry a professional_sector nuance recording the unresolved tension with Merchant Navy Deck Officer sitting in Sector 16 while Marine Engineer sits here.",
+      "Money for both is anchored on official documents rather than aggregators: AAI Advertisement 02/2025/CHQ gives the ATC entry CTC of about 13 lakh on the E-1 scale, and Railway Board CEN 01/2026 gives Assistant Loco Pilot initial pay of Rs. 19,900 at Pay Level-2 with 11,127 vacancies. Neither document gives a mid-career figure, so both records carry an admin_review saying so.",
+      "Job roles added from the coverage audit: Pipe Insulator and Acoustical Insulator on Plumber, Building Insulator on AC & Refrigeration Technician and Mason & Construction Technician."
+    ],
+    "20.3": [
+      "MERCHANT NAVY DECK OFFICER MOVED IN FROM SECTOR 16, with approval. The substitution test: remove travel and hospitality and the work - navigation, watchkeeping, cargo, safety - survives unchanged. A cargo ship has no passengers to host, so the setting was deciding the sector, which DECISIONS.md 8.95 forbids.",
+      "It also closes a split that should never have existed: Marine Engineer was already in this sector and the deck officer holds the parallel DG Shipping Certificate of Competency on the same ship. The tension was recorded on Air Traffic Controller and Railway Operations Professional when they were added in v20.2, because both were placed here on the Commercial Pilot precedent while this record contradicted it. Resolved rather than carried.",
+      "The stale route is removed: Sector 2 had listed Merchant Navy Deck Officer under routed_elsewhere as belonging to Sector 16, written when this sector was built. That is now false in both directions and audit.py caught it immediately - a profession cannot be routed away and listed as a profession in the same file."
+    ],
+    "20.4": [
+      "SECTOR 2 RECONCILED against the engineering discipline / industry domain / job role sheet the user supplied. All 22 disciplines on that sheet were already present - here, or in S1, S3, S14, S15 for the applied sciences, or S5 for the three '(Support)' entries, which are management professions rather than engineering disciplines.",
+      "17 CROSS-CUTTING ENGINEERING JOB ROLES ADDED, which is where the real gap was. The sector carried Design, Production, Quality and Maintenance and stopped; the sheet correctly listed analysis and simulation, manufacturing, prototyping, R&D, project, commissioning, interface, fabrication and inspection as roles that exist inside every discipline. They sit on Mechanical Engineer rather than being repeated across every engineering record, because a duplicated job role is rejected by audit.py and because a mechanical degree is the commonest route into all of them.",
+      "SIX OF THE 26 'INDUSTRY DOMAINS' WERE NOT ADDED AS TAGS, deliberately. Piping & Layout, Onshore Pipeline, Subsea (SURF), Flow Assurance, Mechanics & Turbomachinery and HVAC & Refrigeration are specialisations of engineering work, not employers of it - you are not employed BY flow assurance. They are now job roles on Petroleum Engineer and Mechanical Engineer. The other 20 domains already map onto NSDC councils or EXT- tags, and no new tag was invented: industrial_sectors.json is only useful while every entry names somebody who hires.",
+      "THREE INDUSTRIAL TAGS WERE WRONG and the exercise is what caught them. Railway Operations Professional carried ASCI, the AGRICULTURE council, written three days ago. Merchant Navy Deck Officer carried AASSC, the AEROSPACE & AVIATION council, wrong since Sector 16 was built and carried along when the record moved here. Air Traffic Controller carried THSC, Tourism & Hospitality - the same setting-versus-work confusion that moved the deck officer out of Sector 16 in v20.3. All three corrected."
+    ],
+    "20.5": [
+      "INDUSTRIAL & PRODUCT DESIGNER MOVED IN FROM SECTOR 8, with approval. The substitution test: strip the styling and the object must still be manufacturable, safe, durable and to cost. Its tags were already CGSC, FFSC and ASDC - capital goods, furniture, automotive - which is the sector reading its own employer column and disagreeing with its own placement.",
+      "The counter-argument is recorded rather than buried: this profession's entrances are NID DAT and UCEED, design examinations, and Sector 8 keeps a routed_elsewhere entry pointing here because that is where a student will look for it.",
+      "This sector now holds the full core-engineering surface a student can be shown: 37 professions from B.Tech disciplines through diploma routes to the ITI trades."
     ]
   }
 }

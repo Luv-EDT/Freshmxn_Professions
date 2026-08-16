@@ -1181,3 +1181,142 @@ profession re-enters the filter on the next run. 23 cuts → 12.
 **The general lesson: an exemption written from one motivating example will over-fire.** Check it
 against the record the original rule was written to catch, not only against the records you want
 rescued.
+
+**Twenty-fourth correction — a similarity audit that measured text LENGTH and called it meaning.**
+The Step 3 coverage audit first compared each NCO-2015 occupation title against the 218 profession
+*documents* in `data/profession_embeddings.json`. Those documents are ~250 characters — name plus
+one-liner plus every job role. An NCO title is two or three words.
+
+**Cosine similarity between texts of very different length and specificity is depressed by that
+asymmetry alone, independently of meaning.** The planned 0.75 threshold therefore cut 2,997 of
+3,128 titles, and the "most missing occupations" came back as **`Lac Treater -> Lawyer`** and
+**`Miller -> Lawyer`**. Nothing errored. The numbers looked like numbers.
+
+The fix was to compare **like with like**: NCO titles against the 1,857 NAMES this taxonomy
+exposes — 218 profession names plus 1,639 job roles. Title against title is symmetric, and it asks
+the question actually meant: *not* "is this occupation near our description of a profession" but
+**"is this occupation already one of the names we list?"** — the same question `tools/probe.py`
+asks by string match, done in meaning-space so `Auto Service Technician` can find `Automobile
+Mechanic`. On that scale identical titles score 1.000, and 813 of 3,128 fall below 0.75.
+
+**The lesson generalises past embeddings: a metric that returns a plausible number for every input
+never announces that it is measuring the wrong thing.** The tell was the OUTPUT being absurd, not
+the tool failing — which is why the lowest-scoring results were read by a human before the
+threshold was tuned. Tuning first would have buried it.
+
+**Twenty-fifth correction — clustering that chained, and a display that hid it.** The same audit
+grouped candidate titles by single-link clustering at 0.72. Single-link merges A with C whenever
+any B sits between them, and short job titles all sit between each other: **624 of 813 candidates
+landed in ONE cluster.** Loosening the threshold made it worse, not better — 811 of 813 by 0.56.
+
+Worse, **the printed summary showed a largest cluster of 8**, because clusters were sorted with
+already-decided ones last and the 624-title blob happened to match the graveyard. The bug and the
+display that concealed it were written in the same function, half an hour apart.
+
+Two rules came out of it:
+
+- **The grouping parameter was mine to invent, and this repo forbids that everywhere else.**
+  NCO-2015 already groups its own occupations into **433 published families**. Using the reference
+  set's own structure replaced a tuned hyperparameter with an authority, and the finding got
+  sharper: not "we are missing this job title" but **"we cover none of this official occupation
+  family"** — 16 such families, against 200 touched.
+- **Never sort a summary by a field that can move the biggest item out of view.** Size is now
+  printed alongside coverage ratio so a 2-title family cannot masquerade as a 40-title one.
+
+What the audit actually found, as a review queue in `build/coverage_gaps.json` and NOT as an edit:
+**Undertakers and Embalmers (5163)** is the clearest — death care exists everywhere in India, is
+skilled, needed, and has no record anywhere in the 218. **Underwater Divers (7541)**, **Pawnbrokers
+and Moneylenders (4213)**, **Mail Carriers (4412)** and **Legislators (1111)** are the other
+wholly-uncovered families with a defensible claim. Each is a question for a human against
+§8.95, not an instruction.
+
+**Twenty-sixth correction — the coverage audit is blind to gaps inside a domain it already has
+words for.** Step 3 compared 3,128 NCO-2015 occupation titles against the 1,857 names this
+taxonomy exposes and reported 16 wholly-uncovered occupation families. It found
+**Undertakers and Embalmers**, whose nearest names here were `Butcher` and `Wrestler` — a genuine
+hole, and the strongest finding of the exercise.
+
+Then the user supplied their own earlier profession list, and it caught four things the audit had
+scored as **covered**:
+
+```
+"Air Traffic Controller Specialist" -> 0.781  "Cargo Pilot"
+"Locomotive Driver"                 -> 0.856  "Truck Driver"
+"Model, Fashion"                    -> 0.845  "Fashion Designer"
+"Station Master, Railway"           -> 0.795  "State Transport Driver"
+```
+
+**None of those is coverage.** An air traffic controller does not fly the plane, a loco pilot is
+not a truck driver, and a model is not a designer. The scores are high because the **vocabulary**
+overlaps, not the work — and a similarity score cannot tell those apart.
+
+So the audit has a shape: **it finds what we have no words for, and misses what we have the wrong
+words for.** The Undertaker was findable precisely because the taxonomy had nothing near it; Air
+Traffic Controller was invisible precisely because we already talk about aviation. That is stated
+in `coverage_audit.py`'s docstring now, because a tool whose failure mode is silent must carry the
+warning in the place someone reads before trusting it.
+
+**The rule this produces:** *an automated coverage check is a floor on what is missing, never a
+ceiling.* It cannot replace someone who knows the domain reading the list. This is also the
+strongest argument yet for the queue being **advisory only** — had it been allowed to auto-add,
+it would have added Grave Digger and silently confirmed that Indian Railways was already covered.
+
+**What came of it:** five professions — Funeral & Mortuary Services (S17), Political & Electoral
+(S7), Air Traffic Controller (S2), Railway Operations (S2), Model (S10) — 22 job roles, and eleven
+declines recorded in the graveyard so the same questions do not return. **223 professions.**
+
+**A seventh correction rode along with it.** Placing Air Traffic Controller and Railway Operations
+in Sector 2 on the Commercial Pilot precedent exposed that **Merchant Navy Deck Officer was in
+Sector 16** while **Marine Engineer was in Sector 2** — two halves of one ship's crew, holding
+parallel DG Shipping certificates, in different sectors. The substitution test settles it: remove
+travel and hospitality and a deck officer's work survives unchanged, because a cargo ship carries
+no passengers to host. Moved to Sector 2 with approval. **The new records did not create this
+inconsistency; they made it impossible to keep ignoring** — which is what a precedent is for.
+
+**Twenty-seventh correction — one factor of nineteen pointed the wrong way, and no tool could have
+found it.** `neuroticism` sat in `psychometric_factors.json` beside eighteen factors that all mean
+*more is more*. Writing the Step 4 scoring rubric forced the question nobody had asked: **what does
+a HIGH score on neuroticism mean for a profession?**
+
+Nothing. **No work requires high neuroticism.** So the factor could only be read as *how much
+reactivity the work tolerates* — which means a student scoring high on it must be matched to
+**LOW**-scoring professions, the reverse of every other factor. A matching engine treating all
+nineteen alike would have **handed anxious students air traffic control.**
+
+Replaced by its inverse, **`emotional_stability`**, on the user's instruction. The bands invert —
+`0-2` is Fine Artist, where intense feeling is the raw material; `9-10` is Air Traffic Controller,
+where panic is disqualifying and screened for at entry. **Forty `role_spread` references across
+thirty professions were inverted with it**, `higher: neuroticism` becoming `lower:
+emotional_stability`, each one printed as a before/after line for review. Still nineteen factors.
+
+**Why this matters beyond the one field:** the bug was in the *vocabulary*, not in any value. Every
+tool passed. `export_csv.py` validated the slug against the controlled list; `audit.py` recomputed
+every derived number; `sweep.py` checked all thirteen never-do rules. **A factor that means the
+opposite of its siblings is invisible to all of them, because each one is internally consistent.**
+It surfaced only when a human wrote out what a 9 would mean and could not answer.
+
+**Twenty-eighth correction — the core-engineering track filtered on the EMPLOYER column.** The
+first `engineering_gated` rule admitted any profession carrying two or more manufacturing-side
+skill councils. It let in **Firefighter, Cybersecurity Specialist, Laboratory Technician and Game &
+Interactive Media Developer** — because a fire officer works at a refinery and a security
+specialist has manufacturing clients.
+
+That is **§2.2's cross-cutting rule broken by its own author.** An `industrial_sectors` tag names
+somebody who *hires*; *"engineers hire this person"* is not *"this person does engineering"*. The
+clause was deleted rather than patched. Bare `ITI` and bare `diploma` went with it, having matched
+**Tailor & Garment Maker** (ITI in sewing).
+
+The surviving rule is sector 2, a PCM class-12 gate, or a genuine engineering route — B.Tech, B.E.,
+polytechnic, or an ITI in an engineering trade. **63 of 223 professions**, across nine sectors,
+grouped by entry level so the diploma and ITI ladders stay visible beside the degree one.
+
+Two design points worth keeping. **The track is a generated VIEW, never a second dataset** — §8.7b,
+and the COMPACT sheet that went stale in an hour is why. And **every member carries
+`in_track_because`**, naming the clause or the written reason that admitted it: a view whose
+membership cannot be interrogated is a hand-list with extra steps.
+
+**Industrial & Product Designer moved S8 → S2** in the same pass. Strip the styling and the object
+must still be manufacturable, safe and to cost — the engineering constraint is what survives, and
+its tags were already CGSC, FFSC and ASDC. The counter-argument is recorded rather than buried: its
+entrances are NID DAT and UCEED, design examinations, and Sector 8 keeps a `routed_elsewhere` entry
+pointing here because that is where a student will look for it.

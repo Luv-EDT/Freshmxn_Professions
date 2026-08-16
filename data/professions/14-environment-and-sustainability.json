@@ -1,7 +1,7 @@
 {
   "professional_sector": "14. Environment & Sustainability",
   "professional_sector_id": 14,
-  "version": "1.2",
+  "version": "1.3",
   "profession_count": 8,
   "sector_verification_note": "TIER C THROUGHOUT, with two gates that are not licences but behave like them. NABET/QCI accreditation decides who may SIGN an Environmental Impact Assessment report - an empanelment created by the clearance process rather than by any professions statute - and the UPSC Indian Forest Service examination controls entry to a 150-post cadre with statutory powers. Two verified facts anchor the sector at opposite ends of it: SEBI's BRSR mandate, which is the regulation that turned corporate sustainability into a job with a deadline, and the NAMASTE scheme and the Manual Scavengers Act, which document a base layer the law abolished and that still employs roughly a lakh people in urban India. This sector contains both the most fashionable white-collar profession in the dataset and its most dangerous manual one.",
   "professions": [
@@ -559,11 +559,11 @@
             ],
             "higher": [
               "bodily",
-              "attention_span",
-              "neuroticism"
+              "attention_span"
             ],
             "lower": [
-              "verbal"
+              "verbal",
+              "emotional_stability"
             ],
             "why": "The base layer, and the most dangerous work in this sector. Patrolling on foot in difficult terrain against armed poachers, usually on contract or daily wage, is what protection actually consists of."
           },
@@ -575,11 +575,10 @@
             "higher": [
               "extraversion",
               "agreeableness",
-              "verbal"
+              "verbal",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "These roles work WITH the people living around a forest rather than policing them, and the skill is negotiation with communities whose livelihood the forest law restricts."
           }
         ]
@@ -1041,7 +1040,9 @@
         "Composting Unit Operator",
         "Sanitation Supervisor",
         "Waste Picker",
-        "Sanitation Entrepreneur (Mechanised Cleaning)"
+        "Sanitation Entrepreneur (Mechanised Cleaning)",
+        "Street Sweeper",
+        "Sewer Sweeper"
       ],
       "role_spread": {
         "spread": "wide",
@@ -1068,11 +1069,10 @@
             "higher": [
               "logical",
               "attention_span",
-              "conscientiousness"
+              "conscientiousness",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Facility operation is machinery, process and quality of output rather than collection. It is the formal, safer end of waste work and it has a technical skill ladder."
           },
           {
@@ -1080,12 +1080,12 @@
               "Sewer & Septic Tank Worker"
             ],
             "higher": [
-              "bodily",
-              "neuroticism"
+              "bodily"
             ],
             "lower": [
               "verbal",
-              "openness"
+              "openness",
+              "emotional_stability"
             ],
             "why": "The most dangerous work in this dataset. Entry into confined spaces with toxic gas kills workers every year in India despite the practice being unlawful, and the deaths are recorded as hazardous cleaning rather than as manual scavenging."
           }
@@ -1221,11 +1221,11 @@
             ],
             "higher": [
               "confidence",
-              "extraversion",
-              "neuroticism"
+              "extraversion"
             ],
             "lower": [
-              "openness"
+              "openness",
+              "emotional_stability"
             ],
             "why": "Response work is command and logistics under time pressure with incomplete information, often for weeks without rest. It is a completely different temperament from the analytical planning half of this profession."
           },
@@ -1400,6 +1400,9 @@
       "TWO VERIFIED FACTS AT OPPOSITE ENDS OF THE SECTOR. SEBI's BRSR mandate explains why Sustainability & ESG is one of very few genuinely growing white-collar professions here - the top 1,000 listed companies must report, and third-party assurance extends to all of them by FY 2026-27. The NAMASTE scheme and the Manual Scavengers Act 2013 document the opposite end: about 38,000 sewer and septic tank workers profiled against a ministry estimate of 100,000 in urban India, doing work the law has already prohibited.",
       "GIS & REMOTE SENSING ANALYST is the most AI-exposed profession here at 55 - automated feature extraction and change detection are what computer vision does - and the exposure is concentrated in the middle of the profession rather than at the entry rung, which is unusual and worse.",
       "THE SANITATION RECORD'S AI SECTION MAKES A POINT THAT GENERALISES: the technology threatening this profession is not AI but MECHANISATION, and it is the same mechanisation that policy is funding to stop workers dying. A dataset that only tracks AI exposure will miss displacement risks of this kind entirely."
+    ],
+    "1.3": [
+      "Job roles added from the STEP 3 coverage audit against NCO-2015, approved before any built sector was touched. Each is work this profession already does under a name the National Classification of Occupations uses and this taxonomy did not - a job role costs one line, a profession costs economics, verification, AI scoring and review. Nothing else on these records changed."
     ]
   },
   "sector_admin_review": {

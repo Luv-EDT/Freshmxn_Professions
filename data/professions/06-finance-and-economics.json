@@ -1,7 +1,7 @@
 {
   "professional_sector": "Finance & Economics",
   "professional_sector_id": 6,
-  "version": "1.0",
+  "version": "1.1",
   "profession_count": 8,
   "sector_verification_note": "SPLIT TIER. The statutory half is real — ICAI governs Chartered Accountancy and its route was verified — but most of the sector is open market: nobody licenses a financial analyst, a banker or a wealth manager's employer. SEBI and IRDAI impose REGISTRATION on advisers and surveyors, which is a lighter thing than a licence to practise a profession. The Actuary record is deliberately left Tier B judgment rather than asserting IAI's statutory status unverified.",
   "professions": [
@@ -166,7 +166,9 @@
         "Accounts Receivable Executive",
         "Payroll Executive",
         "GST Return Preparer",
-        "Billing Executive"
+        "Billing Executive",
+        "Debt Recovery Agent",
+        "Collections Officer"
       ],
       "role_spread": {
         "spread": "narrow",
@@ -294,11 +296,10 @@
             ],
             "higher": [
               "conscientiousness",
-              "attention_span"
+              "attention_span",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Investment banking analysis runs on extreme hours and deadline pressure against live transactions. FP&A and credit analysis in the same profession are ordinary corporate jobs."
           }
         ]
@@ -1049,6 +1050,9 @@
       "Actuary upgraded Tier B -> TIER A after verifying the Actuaries Act 2006. IAI named as licensing_body and legal_accountability set true. Two speculative routed_elsewhere entries removed — they promised professions to Sectors 1 and 5 that do not and should not exist there.",
       "ITERATION 2. Economist corrected from restart_undergrad to after_any_degree — the audit warned that a subject gate of 'any' contradicts forcing a restart, and it was right: an MA Economics takes graduates of other disciplines.",
       "Accounts & Bookkeeping Executive flagged high — mid-career 6.0 with AI exposure 75 sits exactly on the compensation filter boundary and survives by rounding."
+    ],
+    "1.1": [
+      "Job roles added from the STEP 3 coverage audit against NCO-2015, approved before any built sector was touched. Each is work this profession already does under a name the National Classification of Occupations uses and this taxonomy did not - a job role costs one line, a profession costs economics, verification, AI scoring and review. Nothing else on these records changed."
     ]
   },
   "sector_admin_review": {

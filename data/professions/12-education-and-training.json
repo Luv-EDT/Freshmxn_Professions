@@ -747,11 +747,10 @@
             "higher": [
               "openness",
               "musical",
-              "emotional_intelligence"
+              "emotional_intelligence",
+              "emotional_stability"
             ],
-            "lower": [
-              "neuroticism"
-            ],
+            "lower": [],
             "why": "Private preschool teaching is curriculum-led, parent-facing and urban. It shares an age group with anganwadi work and almost nothing else - different employer, different pay, different expectations."
           }
         ]
