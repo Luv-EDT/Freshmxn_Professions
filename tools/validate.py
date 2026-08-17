@@ -1,19 +1,27 @@
-"""Export profession JSON to per-sector CSV for spreadsheet review.
+"""Validate every profession record, and build the combined JSON.
 
-    python tools/export_csv.py          # every sector file present
-    python tools/export_csv.py 01 03    # only those sector numbers
+    python tools/validate.py          # every sector file present
+    python tools/validate.py 01 03    # only those sector numbers
 
-JSON under data/professions/ is the source of truth; build/*.csv is generated.
+RUN THIS FIRST, ALWAYS, AND CHECK THE EXIT CODE — errors are prefixed with `!`, not the word
+ERROR, so a text grep reads clean while the tool is failing. A stale rule survived three whole
+sectors that way.
 
-Also validates:
+It was called export_csv.py until the CSVs were removed. Nineteen spreadsheets were a second view
+of build/ALL-professions.json, which is lossless, and this repo has already recorded what a second
+view costs: the COMPACT sheet went stale within an hour. The checking never had anything to do
+with the CSVs and is untouched.
+
+Validates:
   - industrial_sectors tags exist in the master list
   - degree_dependency / mid_stream_entry values are legal
   - class12_prerequisite is "any" or a list of known subjects
   - verification block is present and internally consistent
   - profession_count matches reality
+
+And writes build/ALL-professions.json, the lossless union of all 18 sector files.
 """
 
-import csv
 import datetime
 import json
 import sys
@@ -311,147 +319,28 @@ def check(p, valid_tags):
     return out
 
 
-def export(path, valid_tags):
-    data = json.loads(path.read_text(encoding="utf-8"))
-    sector = data["professional_sector"]
-    problems = []
+def validate(path, valid_tags):
+    """Run every per-field check over one sector file. Returns the problem count.
 
-    OUT.mkdir(exist_ok=True)
-    target = OUT / f"{path.stem}.csv"
-    with target.open("w", newline="", encoding="utf-8-sig") as fh:
-        writer = csv.DictWriter(fh, fieldnames=COLUMNS)
-        writer.writeheader()
-        for p in data["professions"]:
-            problems += check(p, valid_tags)
-            prereq = p["class12_prerequisite"]
-            v = p.get("verification", {})
-            r = p.get("admin_review", {})
-            w = p.get("entry_window")
-            writer.writerow(
-                {
-                    "professional_sector": sector,
-                    "id": p["id"],
-                    "profession": p["profession"],
-                    "one_liner": p.get("one_liner", ""),
-                    "job_roles": " | ".join(p["job_roles"]),
-                    "industrial_sectors": " | ".join(p["industrial_sectors"]),
-                    "degree_dependency": p["degree_dependency"],
-                    "mid_stream_entry": p["mid_stream_entry"],
-                    "class12_prerequisite": prereq if prereq == "any" else " + ".join(prereq),
-                    "entry_gate": ((p.get("entry_competition") or {}).get("primary_gate") or ""),
-                    "applicants_per_seat": (
-                        GATES.get(((p.get("entry_competition") or {}).get("primary_gate") or ""), {})
-                        .get("applicants_per_seat") or ""),
-                    "prep_years": (
-                        GATES.get(((p.get("entry_competition") or {}).get("primary_gate") or ""), {})
-                        .get("preparation_years") or ""),
-                    "entrance_exams": " | ".join(
-                        p.get("entrance_exams", {}).get("public_routes", [])
-                        + p.get("entrance_exams", {}).get("private_entrances", [])
-                    ) or "none",
-                    "licensing_body": p.get("licensing_body") or "",
-                    "after_undergrad": p.get("after_undergrad", ""),
-                    "self_employment": (p.get("self_employment") or {}).get("likelihood", ""),
-                    "self_emp_ceiling_lpa": (p.get("self_employment") or {}).get("ceiling_lpa") or "",
-                    "self_emp_route": (p.get("self_employment") or {}).get("route") or "",
-                    "india_demand": (p.get("demand_signal") or {}).get("india_demand", ""),
-                    "pathway": (p.get("demand_signal") or {}).get("pathway", ""),
-                    "ai_exposure": (p.get("ai_exposure") or {}).get("band", ""),
-                    "ai_reason": (p.get("ai_exposure") or {}).get("reason", ""),
-                    "role_spread": " || ".join(
-                        f"[{', '.join(g['roles'])}] higher: {', '.join(g['higher']) or '-'}"
-                        f" / lower: {', '.join(g['lower']) or '-'}"
-                        for g in (p.get("role_spread") or {}).get("deviating_roles", [])),
-                    "years_to_qualify": p.get("years_to_qualify", ""),
-                    "cost_of_entry_lakh": (p.get("economics") or {}).get("cost_of_entry_lakh", ""),
-                    "early_earnings_lpa": (p.get("economics") or {}).get("early_earnings_lpa", ""),
-                    "mid_career_lpa": (p.get("economics") or {}).get("mid_career_lpa", ""),
-                    "payback_years": (p.get("economics") or {}).get("payback_years", ""),
-                    "ship": "yes" if ships(p)[0] else "NO",
-                    "failed_rules": " ; ".join(ships(p)[1]),
-                    "path_to_entry": " -> ".join(
-                        f"{s['stage']}: {s['requirement']}" for s in p.get("path_to_entry", [])
-                    ),
-                    "entry_window": (
-                        ""
-                        if not w
-                        else ("HARD BLOCK: " if w.get("is_hard_block") else "route limit: ")
-                        + str(w.get("constrained_route", ""))
-                        + (" | bypass: " + "; ".join(w.get("bypass", [])) if w.get("bypass") else "")
-                    ),
-                    "verified": v.get("status", ""),
-                    "source": v.get("source") or "",
-                    "admin_review": "REVIEW" if r.get("required") else "",
-                    "review_priority": r.get("priority") or "",
-                    "review_reason": r.get("reason") or "",
-                    "nuances": " || ".join(
-                        f"[{n['field']}] {n['statement']}" for n in p.get("nuances", [])),
-                }
-            )
-
-    count = len(data["professions"])
-    declared = data.get("profession_count")
-    if declared is not None and declared != count:
-        problems.append(f"profession_count says {declared}, file has {count}")
-
-    filtered = [p for p in data["professions"] if not ships(p)[0]]
-    verified = sum(
-        1 for p in data["professions"] if p.get("verification", {}).get("status") == "verified"
-    )
-    print(f"{target.relative_to(ROOT)}  ({count} professions, {verified} verified, {count - verified} judgment)")
-    for issue in problems:
-        print(f"  ! {issue}")
-
-    if filtered:
-        print(f"  filtered by compensation rule ({len(filtered)} of {count}, derived not stored):")
-        for p in filtered:
-            print(f"    x {p['profession']:42} {' ; '.join(ships(p)[1])}")
-    order = {"high": 0, "medium": 1, "low": 2}
-    queue = sorted(
-        (p for p in data["professions"] if p.get("admin_review", {}).get("required")),
-        key=lambda p: order.get(p["admin_review"].get("priority"), 9),
-    )
-    if queue:
-        print(f"\n  ADMIN REVIEW QUEUE ({len(queue)} of {count}):")
-        for p in queue:
-            print(f"    [{p['admin_review']['priority']:6}] {p['profession']}")
-            print(f"             {p['admin_review']['reason']}")
-    return len(problems)
-
-
-def combine(files):
-    """Also emit build/ALL-professions.csv — every sector in one sheet.
-
-    The per-sector files stay, because a sector is the unit a human reviews. This is for the
-    check they cannot do: comparing ACROSS sectors. That pass caught three real defects in the
-    18-sector build and every one of them was invisible inside a single file — Sector 8 pricing
-    designers above Sector 1's software developers, Sector 15 pricing agricultural engineers above
-    Sector 2's mechanical ones, and Sector 16 putting a deck officer five lakh above the marine
-    engineer holding the parallel certificate on the same ship.
-
-    A number can be individually valid and collectively false, and you cannot see that with
-    eighteen files open. `professional_sector` is already the first column, so it sorts.
-
-    Only written when exporting the whole dataset — a partial run would produce a misleading
-    "ALL" sheet containing two sectors.
+    THIS FUNCTION USED TO ALSO WRITE A CSV, and the CSV is what the file was named after. The
+    sheets are gone — build/ALL-professions.json is lossless and the spreadsheets were a second
+    view of it — but the CHECKING is the reason this tool is run before anything ships, and it
+    is untouched.
     """
-    if len(files) < len(list(SRC.glob("*.json"))):
-        return
-    target = OUT / "ALL-professions.csv"
-    rows = []
-    for f in files:
-        csv_path = OUT / f"{f.stem}.csv"
-        if not csv_path.exists():
-            continue
-        with csv_path.open(encoding="utf-8-sig", newline="") as fh:
-            rows += list(csv.DictReader(fh))
-    with target.open("w", newline="", encoding="utf-8-sig") as fh:
-        w = csv.DictWriter(fh, fieldnames=COLUMNS)
-        w.writeheader()
-        w.writerows(rows)
-    print(f"{target.as_posix()}  ({len(rows)} professions, all sectors, for cross-sector sorting)")
-
-    combine_json(files)
+    data = json.loads(path.read_text(encoding="utf-8"))
+    problems = []
+    for p in data["professions"]:
+        problems += check(p, valid_tags)
+    n = data.get("profession_count")
+    if n is not None and n != len(data["professions"]):
+        problems.append(f"{path.name}: profession_count says {n}, file has "
+                        f"{len(data['professions'])}")
+    print(f"{data['professional_sector']}  ({len(data['professions'])} professions)")
+    for x in problems:
+        print(f"  ! {x}")
+    if not problems:
+        print("  ok")
+    return len(problems)
 
 
 def combine_json(files):
@@ -471,9 +360,11 @@ def combine_json(files):
     of India as the Judicial Services Officer's licensing body after that was corrected everywhere
     else. Two views of one dataset means one of them is always wrong.
     """
+    if len(files) < len(list(SRC.glob("*.json"))):
+        return
     payload = {
         "generated_on": datetime.date.today().isoformat(),
-        "generated_by": "tools/export_csv.py — do not hand-edit; edit data/professions/*.json",
+        "generated_by": "tools/validate.py — do not hand-edit; edit data/professions/*.json",
         "spec": "DECISIONS.md",
         "note": "Lossless union of the 18 sector files. Every profession carries every field, "
                 "nested structures intact. `filter` and `ship` are DERIVED from "
@@ -527,8 +418,8 @@ def main():
         return 1
 
     valid_tags = known_tags()
-    issues = sum(export(f, valid_tags) for f in files)
-    combine(files)
+    issues = sum(validate(f, valid_tags) for f in files)
+    combine_json(files)
     if issues:
         print(f"\n{issues} issue(s) found.")
     return 1 if issues else 0

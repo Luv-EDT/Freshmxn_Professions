@@ -32,7 +32,7 @@ most recently changed `data/professions/NN-*.json` (check `git status` / `git di
 Run both and read the output:
 
 ```bash
-python tools/export_csv.py
+python tools/validate.py
 python tools/audit.py
 ```
 

@@ -1,6 +1,6 @@
 {
   "track": "core_engineering_track",
-  "generated_on": "2026-08-16",
+  "generated_on": "2026-08-17",
   "generated_by": "tools/track_view.py — GENERATED VIEW, do not hand-edit. Membership is recomputed from data/professions/*.json on every run.",
   "source_of_truth": "data/professions/*.json — this file is a query result, not a dataset",
   "intent": "For a student who wants CORE ENGINEERING and the fields that surround it, including supply chain. Rendered by tools/track_view.py as a three-tier view - professional sector, profession, job roles - with each profession's industry domains expanded from its industrial_sectors codes.",

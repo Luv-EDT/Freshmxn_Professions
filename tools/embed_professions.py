@@ -5,7 +5,7 @@
     python tools/embed_professions.py --force     # re-embed everything
 
 Writes data/profession_embeddings.json, keyed by profession.id. GENERATED DATA — never
-hand-edited, same rule as build/*.csv. It lives under data/ rather than build/ because Step 3
+hand-edited, same rule as build/ALL-professions.json. It lives under data/ rather than build/ because Step 3
 consumes it and a coverage audit must not depend on a directory the repo treats as disposable.
 
 WHY voyage-4-large: this is a one-time index of 218 short documents. Volume is trivial, so the

@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-17",
-  "generated_by": "tools/export_csv.py — do not hand-edit; edit data/professions/*.json",
+  "generated_by": "tools/validate.py — do not hand-edit; edit data/professions/*.json",
   "spec": "DECISIONS.md",
   "note": "Lossless union of the 18 sector files. Every profession carries every field, nested structures intact. `filter` and `ship` are DERIVED from data/filter_rules.json and recomputed on every run — read the rule there rather than trusting the flag. Shared registries are NOT inlined: entrance_exams and entry_competition reference data/entrance_gates.json, and verification.source references data/verified_facts.json, both by key.",
   "counts": {

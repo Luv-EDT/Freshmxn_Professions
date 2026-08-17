@@ -274,7 +274,7 @@ Some entrance exams expire. **JEE Main admits roughly a 3-year window from class
 }
 ```
 
-**Exactly these five keys**, pinned in `export_csv.py` as `ENTRY_WINDOW_KEYS`.
+**Exactly these five keys**, pinned in `validate.py` as `ENTRY_WINDOW_KEYS`.
 
 **Engine rule:**
 - `null` → no time constraint
@@ -515,7 +515,7 @@ eating the drawing work itself.
 
 **`declining` is not a filter and never removes anything.** A declining profession still pays today
 and is still listed; the tag lets the application say so. Because it is a claim that someone's field
-is shrinking, `export_csv.py` **rejects `declining` unless a `nuance` on `demand_signal` explains
+is shrinking, `validate.py` **rejects `declining` unless a `nuance` on `demand_signal` explains
 why** — the assertion may never be made bare.
 
 ### Industry size is NOT profession size
@@ -875,7 +875,7 @@ Flag `required: true` when any of these hold:
 
 `priority` is `high` / `medium` / `low`. `reason` is mandatory when `required` is true — the validator enforces it.
 
-`python tools/export_csv.py` prints the queue, highest priority first. Sector 1: **8 of 17 flagged** — 3 high, 5 medium.
+`python tools/validate.py` prints the queue, highest priority first. Sector 1: **8 of 17 flagged** — 3 high, 5 medium.
 
 Expect this ratio to *fall* in regulated sectors, where a statutory body settles most questions, and to stay high in emerging or unregulated fields.
 
@@ -937,7 +937,7 @@ inside a nested object.
 The same section also predicted hard blocks in Sector 7 that turned out not to exist — state PSCs
 and CDS/AFCAT both provide real bypasses.
 
-Fixed by rewriting §4.3 to the shape in use and pinning `ENTRY_WINDOW_KEYS` in `export_csv.py`, so
+Fixed by rewriting §4.3 to the shape in use and pinning `ENTRY_WINDOW_KEYS` in `validate.py`, so
 a nested shape can now drift only once before something catches it. **The lesson generalises: a
 documentation check that only compares key NAMES will miss every disagreement about key SHAPE.**
 
@@ -1290,7 +1290,7 @@ thirty professions were inverted with it**, `higher: neuroticism` becoming `lowe
 emotional_stability`, each one printed as a before/after line for review. Still nineteen factors.
 
 **Why this matters beyond the one field:** the bug was in the *vocabulary*, not in any value. Every
-tool passed. `export_csv.py` validated the slug against the controlled list; `audit.py` recomputed
+tool passed. `validate.py` validated the slug against the controlled list; `audit.py` recomputed
 every derived number; `sweep.py` checked all thirteen never-do rules. **A factor that means the
 opposite of its siblings is invisible to all of them, because each one is internally consistent.**
 It surfaced only when a human wrote out what a 9 would mean and could not answer.

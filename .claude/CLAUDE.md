@@ -6,15 +6,15 @@ specification — read it before touching data.** This file is the working contr
 ## Before every change
 
 ```bash
-python tools/export_csv.py    # per-field validation + CSV export
+python tools/validate.py    # per-field validation + CSV export
 python tools/audit.py         # cross-field consistency + cross-FILE reconciliation
 ```
 
-**Check the EXIT CODE, not the printed output.** `export_csv.py` prefixes its errors with `!`,
+**Check the EXIT CODE, not the printed output.** `validate.py` prefixes its errors with `!`,
 not the word ERROR, so a text grep can read clean while the tool is failing. A stale rule
 survived three whole sectors that way.
 
-**Both must be clean.** They check different things: `export_csv` checks each field is legal
+**Both must be clean.** They check different things: `validate` checks each field is legal
 on its own; `audit` checks the fields agree with each other. Real errors hide in the second.
 `audit.py` caught three wrong verification tiers on its first run, and a whole missing profession on its second.
 
@@ -107,15 +107,17 @@ data/
   nco_2015_titles.json        NCO-2015, India's official occupation list (3,128 titles, 433
                               families) - the EXTERNAL ground truth for coverage. GENERATED.
 tools/
-  export_csv.py               validate + export      tools/audit.py   cross-field audit
+  validate.py                 per-field validation + build/ALL-professions.json
+  audit.py                    cross-field audit + embedding-index freshness
   probe.py                    is this already a job role?    nco_titles.py   parse the NCO PDF
   embed_professions.py        build the vector index (idempotent; re-embeds only what changed)
   coverage_audit.py           STEP 3 - what whole professions are we missing? Writes
                               build/coverage_gaps.json, A REVIEW QUEUE. Adds nothing, ever.
-build/*.csv                   generated, never hand-edited
-build/ALL-professions.json    all 18 sectors in one LOSSLESS file — nested structures
-                              intact. The CSV flattens; this does not. Use it for any
-                              consumer keyed on profession.id. Also generated.
+build/ALL-professions.json    all 18 sectors in one LOSSLESS file, nested structures intact.
+                              THE deliverable. Nineteen per-sector CSVs used to sit beside it
+                              and were removed: a second view of one dataset is a second thing
+                              to keep in sync, and this repo has already paid for that once.
+build/core-engineering-track.json   generated view; see tools/track_view.py
 ```
 
 ## Verification tiers

@@ -1,6 +1,6 @@
 """Second-pass audit. Cross-field consistency the per-field validator cannot see.
 
-export_csv.py checks each field is legal on its own. This checks whether the fields
+validate.py checks each field is legal on its own. This checks whether the fields
 AGREE WITH EACH OTHER — which is where real errors hide. Run both before shipping a sector.
 
     python tools/audit.py            # every sector

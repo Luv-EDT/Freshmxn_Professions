@@ -26,24 +26,23 @@ data/
   entrance_gates.json           competition and seats per EXAM, shared across professions
   professions/NN-<sector>.json  one file per professional sector
 tools/
-  export_csv.py                 per-field validation + CSV export
+  validate.py                 per-field validation + CSV export
   audit.py                      cross-field consistency + cross-FILE reconciliation
   probe.py                      is this candidate already covered? Run BEFORE adding anything.
-build/*.csv                     generated, never hand-edited
-build/ALL-professions.json      all 18 sectors in one LOSSLESS file — nested structures
-                                intact, unlike the CSV. Also generated.
+build/ALL-professions.json      all 18 sectors in one LOSSLESS file, nested structures
+                                intact. Generated; the per-sector CSVs were removed.
 ```
 
 ## Workflow
 
 ```bash
-python tools/export_csv.py                        # validate + export, all sectors
-python tools/export_csv.py 01 03                  # just those
+python tools/validate.py                        # validate + export, all sectors
+python tools/validate.py 01 03                  # just those
 python tools/audit.py                             # cross-field + cross-file
 python tools/probe.py "<name>" <defining skills>  # before adding a profession
 ```
 
-**Both tools must be clean before any change ships.** They check different things: `export_csv`
+**Both tools must be clean before any change ships.** They check different things: `validate`
 checks each field is legal on its own, `audit` checks the fields agree with each other. Real
 errors hide in the second — it has caught three wrong verification tiers, a whole missing
 profession, invented statutory body names, and a merge filed in the wrong sector.
